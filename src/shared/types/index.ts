@@ -11,3 +11,14 @@ export type {
   BreakingEntry,
   BreakingData,
 } from './changelog';
+
+export type {
+  DiffData,
+  GroupDiff,
+  RawDiff,
+  PathDiff,
+  OperationDiff,
+  SchemaModification,
+  StringChange,
+  AddedDeleted,
+} from './diff';

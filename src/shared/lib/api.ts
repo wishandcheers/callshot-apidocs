@@ -1,4 +1,4 @@
-import type { VersionManifest, ChangelogData, BreakingData } from '@/shared/types';
+import type { VersionManifest, ChangelogData, BreakingData, DiffData } from '@/shared/types';
 
 const DATA_BASE = '/data';
 
@@ -18,4 +18,10 @@ export async function fetchBreaking(from: string, to: string): Promise<BreakingD
   const res = await fetch(`${DATA_BASE}/breaking/${from}_${to}.json`);
   if (!res.ok) throw new Error(`Failed to fetch breaking ${from}_${to}: ${res.status}`);
   return res.json() as Promise<BreakingData>;
+}
+
+export async function fetchDiff(from: string, to: string): Promise<DiffData> {
+  const res = await fetch(`${DATA_BASE}/diffs/${from}_${to}.json`);
+  if (!res.ok) throw new Error(`Failed to fetch diff ${from}_${to}: ${res.status}`);
+  return res.json() as Promise<DiffData>;
 }

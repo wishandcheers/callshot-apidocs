@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { AppShell } from '@/widgets/app-shell';
 import { DashboardPage } from '@/pages/dashboard';
 import { ChangelogPage } from '@/pages/changelog';
+import { DiffPage } from '@/pages/diff';
 
 export const router = createBrowserRouter([
   {
@@ -10,22 +11,8 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <DashboardPage /> },
       { path: 'changelog', element: <ChangelogPage /> },
-      {
-        path: 'diff',
-        element: (
-          <div className="text-muted-foreground">
-            Diff View — coming in Phase 3
-          </div>
-        ),
-      },
-      {
-        path: 'diff/:from/:to',
-        element: (
-          <div className="text-muted-foreground">
-            Diff View — coming in Phase 3
-          </div>
-        ),
-      },
+      { path: 'diff', element: <DiffPage /> },
+      { path: 'diff/:from/:to', element: <DiffPage /> },
       {
         path: 'reference',
         element: (
