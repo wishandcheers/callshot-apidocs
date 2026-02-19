@@ -1,0 +1,133 @@
+name: Process Incoming Specs
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'incoming/**'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to process (e.g. v1.0.0). Leave empty to auto-detect from incoming/'
+        required: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.detect.outputs.version }}
+      has_specs: ${{ steps.detect.outputs.has_specs }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect version from incoming specs
+        id: detect
+        run: |
+          if [ -n "${{ inputs.version }}" ]; then
+            echo "version=${{ inputs.version }}" >> "$GITHUB_OUTPUT"
+            echo "has_specs=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [ ! -d incoming ] || [ -z "$(ls -A incoming/ 2>/dev/null)" ]; then
+            echo "No incoming specs found"
+            echo "has_specs=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          VERSION=$(ls incoming/ | head -1)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "has_specs=true" >> "$GITHUB_OUTPUT"
+          echo "Detected version: $VERSION"
+
+      - name: Move specs to specs directory
+        if: steps.detect.outputs.has_specs == 'true'
+        run: |
+          VERSION="${{ steps.detect.outputs.version }}"
+          echo "Processing specs for $VERSION"
+          mkdir -p "specs/$VERSION"
+          cp -r "incoming/$VERSION/"* "specs/$VERSION/"
+          rm -rf "incoming/$VERSION"
+          # Clean up incoming if empty
+          rmdir incoming 2>/dev/null || true
+          echo "Moved specs to specs/$VERSION/"
+          ls -la "specs/$VERSION/"
+
+      - name: Install oasdiff
+        if: steps.detect.outputs.has_specs == 'true'
+        run: go install github.com/tufin/oasdiff@latest
+
+      - uses: actions/setup-node@v4
+        if: steps.detect.outputs.has_specs == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.detect.outputs.has_specs == 'true'
+        run: npm ci
+
+      - name: Regenerate data
+        if: steps.detect.outputs.has_specs == 'true'
+        run: npm run generate
+
+      - name: Commit updated specs and data
+        if: steps.detect.outputs.has_specs == 'true'
+        run: |
+          VERSION="${{ steps.detect.outputs.version }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add specs/ public/data/ incoming/
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore(specs): add $VERSION and regenerate data"
+          git push
+
+  build-deploy:
+    needs: process
+    if: needs.process.outputs.has_specs == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Pull latest (includes new specs commit)
+        run: git pull origin master
+
+      - name: Install oasdiff
+        run: go install github.com/tufin/oasdiff@latest
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Add .nojekyll
+        run: touch dist/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build-deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
