@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0a0a0a;
-  --color-foreground: #fafafa;
+  /* Light mode (default) */
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
   --color-primary: #3b82f6;
   --color-primary-foreground: #ffffff;
-  --color-muted: #1e293b;
-  --color-muted-foreground: #94a3b8;
-  --color-border: #1e293b;
-  --color-card: #111827;
-  --color-card-foreground: #f1f5f9;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  --color-border: #e2e8f0;
+  --color-card: #f8fafc;
+  --color-card-foreground: #1e293b;
   --color-destructive: #ef4444;
   --color-success: #22c55e;
   --color-warning: #f59e0b;
@@ -18,8 +19,81 @@
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
+/* Dark mode overrides */
+.dark {
+  --color-background: #0a0a0a;
+  --color-foreground: #fafafa;
+  --color-muted: #1e293b;
+  --color-muted-foreground: #94a3b8;
+  --color-border: #1e293b;
+  --color-card: #111827;
+  --color-card-foreground: #f1f5f9;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--color-background);
   color: var(--color-foreground);
+}
+
+/* Dark mode Redoc overrides — targets elements that ignore theme options */
+.dark .redoc-wrap {
+  color: #e2e8f0;
+}
+
+.dark .redoc-wrap h1,
+.dark .redoc-wrap h2,
+.dark .redoc-wrap h3,
+.dark .redoc-wrap h4 {
+  color: #f1f5f9;
+}
+
+.dark .redoc-wrap h5 {
+  color: #cbd5e1;
+  border-color: #334155;
+}
+
+.dark .redoc-wrap p,
+.dark .redoc-wrap li,
+.dark .redoc-wrap td,
+.dark .redoc-wrap span {
+  color: inherit;
+}
+
+.dark .redoc-wrap table {
+  color: #e2e8f0;
+}
+
+.dark .redoc-wrap table th {
+  color: #94a3b8;
+}
+
+.dark .redoc-wrap tr {
+  border-color: #1e293b;
+}
+
+.dark .redoc-wrap hr {
+  border-color: #334155;
+}
+
+/* Right panel buttons, tabs, and labels —
+   styled-components inject inline styles, so !important is needed */
+.dark .redoc-wrap button,
+.dark .redoc-wrap [role="tab"],
+.dark .redoc-wrap li[role="tab"] {
+  color: #f1f5f9 !important;
+  background-color: #1e293b !important;
+}
+
+.dark .redoc-wrap button:hover,
+.dark .redoc-wrap [role="tab"]:hover {
+  color: #ffffff !important;
+  background-color: #334155 !important;
+}
+
+/* Active tab in right panel */
+.dark .redoc-wrap [role="tab"][aria-selected="true"] {
+  color: #ffffff !important;
+  background-color: #334155 !important;
+  border-color: #3b82f6 !important;
 }

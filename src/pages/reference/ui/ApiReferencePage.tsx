@@ -1,7 +1,7 @@
-import { useState, useEffect, Suspense, lazy } from 'react';
+import { useState, useEffect, useMemo, Suspense, lazy } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
-import { useVersions } from '@/shared/hooks';
+import { useVersions, useTheme } from '@/shared/hooks';
 import { cn } from '@/shared/lib/cn';
 
 import { SpecTypeTabs, type SpecType } from './SpecTypeTabs';
@@ -10,27 +10,77 @@ const RedocStandalone = lazy(() =>
   import('redoc').then((m) => ({ default: m.RedocStandalone })),
 );
 
-const REDOC_OPTIONS = {
-  theme: {
-    colors: { primary: { main: '#3b82f6' } },
-    typography: {
-      fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif',
-      headings: { fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif' },
-      code: { fontFamily: 'JetBrains Mono, ui-monospace, monospace' },
-    },
-    sidebar: {
-      backgroundColor: '#111827',
-      textColor: '#94a3b8',
-      activeTextColor: '#ffffff',
-      groupItems: { activeBackgroundColor: '#1e293b', activeTextColor: '#ffffff' },
-    },
-    rightPanel: { backgroundColor: '#0a0a0a' },
-    schema: { nestedBackground: '#111827' },
-  },
+const REDOC_SHARED = {
   hideDownloadButton: true,
   nativeScrollbars: true,
   sortTagsAlphabetically: true,
 } as const;
+
+const REDOC_TYPOGRAPHY = {
+  fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif',
+  headings: { fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif' },
+  code: { fontFamily: 'JetBrains Mono, ui-monospace, monospace' },
+} as const;
+
+function buildRedocOptions(resolved: 'light' | 'dark') {
+  if (resolved === 'dark') {
+    return {
+      ...REDOC_SHARED,
+      theme: {
+        colors: {
+          primary: { main: '#3b82f6' },
+          text: { primary: '#e2e8f0', secondary: '#94a3b8' },
+          border: { dark: '#334155', light: '#1e293b' },
+        },
+        typography: {
+          ...REDOC_TYPOGRAPHY,
+          code: {
+            ...REDOC_TYPOGRAPHY.code,
+            color: '#e2e8f0',
+            backgroundColor: '#1e293b',
+          },
+          links: { color: '#60a5fa', visited: '#60a5fa', hover: '#93bbfd' },
+        },
+        sidebar: {
+          backgroundColor: '#111827',
+          textColor: '#94a3b8',
+          activeTextColor: '#ffffff',
+          groupItems: {
+            activeBackgroundColor: '#1e293b',
+            activeTextColor: '#ffffff',
+          },
+        },
+        rightPanel: { backgroundColor: '#0a0a0a', textColor: '#e2e8f0' },
+        schema: {
+          nestedBackground: '#111827',
+          linesColor: '#334155',
+          typeNameColor: '#93c5fd',
+          typeTitleColor: '#e2e8f0',
+          requireLabelColor: '#ef4444',
+        },
+      },
+    };
+  }
+
+  return {
+    ...REDOC_SHARED,
+    theme: {
+      colors: { primary: { main: '#3b82f6' } },
+      typography: REDOC_TYPOGRAPHY,
+      sidebar: {
+        backgroundColor: '#f8fafc',
+        textColor: '#64748b',
+        activeTextColor: '#0f172a',
+        groupItems: {
+          activeBackgroundColor: '#e2e8f0',
+          activeTextColor: '#0f172a',
+        },
+      },
+      rightPanel: { backgroundColor: '#263238' },
+      schema: { nestedBackground: '#f1f5f9' },
+    },
+  };
+}
 
 function buildSpecUrl(version: string, specType: SpecType): string {
   const fileName = specType === 'api' ? 'apiDocs-api.json' : 'apiDocs-internal.json';
@@ -41,7 +91,10 @@ export function ApiReferencePage() {
   const { version } = useParams<{ version: string }>();
   const navigate = useNavigate();
   const versionsState = useVersions();
+  const { resolved } = useTheme();
   const [specType, setSpecType] = useState<SpecType>('api');
+
+  const redocOptions = useMemo(() => buildRedocOptions(resolved), [resolved]);
 
   // Auto-redirect to latest version when no version param
   useEffect(() => {
@@ -121,9 +174,9 @@ export function ApiReferencePage() {
           }
         >
           <RedocStandalone
-            key={`${currentVersion}-${specType}`}
+            key={`${currentVersion}-${specType}-${resolved}`}
             specUrl={specUrl}
-            options={REDOC_OPTIONS}
+            options={redocOptions}
           />
         </Suspense>
       </div>
