@@ -52,7 +52,7 @@ Implement the CallShot API Changelog project from PLAN.md — an interactive SPA
 - `public/404.html` — GitHub Pages SPA redirect
 
 ## Notes
-- Run `npm run generate` to rebuild all data files from specs
+- Run `pnpm run generate` to rebuild all data files from specs
 - oasdiff must be installed (`brew install oasdiff`)
 - Build output: ~350KB JS (main) + ~350KB JS (redoc chunk) + 24KB CSS
 - v0.9.0→v0.9.1 has 21 breaking changes (largest diff)

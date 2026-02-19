@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate && tsc -b && vite build",
+    "build": "pnpm run generate && tsc -b && vite build",
     "preview": "vite preview",
     "generate": "node scripts/generate-version-meta.mjs && node scripts/generate-diffs.mjs && node scripts/generate-versions-index.mjs && node scripts/copy-specs-to-public.mjs",
     "generate:specs": "node scripts/copy-specs-to-public.mjs",

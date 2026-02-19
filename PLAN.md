@@ -233,11 +233,11 @@ done
 
 # 2. oasdiff 설치 + 초기 diff 생성
 brew install oasdiff
-npm install
+pnpm install
 node scripts/generate-diffs.mjs
 
 # 3. 로컬 확인
-npm run dev  # http://localhost:5173
+pnpm run dev  # http://localhost:5173
 ```
 
 ---
@@ -280,10 +280,10 @@ npm run dev  # http://localhost:5173
 ## 검증 방법
 
 1. **데이터 파이프라인**: `node scripts/generate-diffs.mjs` 실행 후 `public/data/diffs/` 내 JSON 검증 (9개 연속 diff 파일)
-2. **로컬 개발**: `npm run dev`로 React 앱 실행, 각 페이지 동작 확인
+2. **로컬 개발**: `pnpm run dev`로 React 앱 실행, 각 페이지 동작 확인
 3. **Diff 정확성**: v0.8.0→v0.9.0 diff에서 engagement 3개 endpoint 추가 확인 (기존 changes-report와 대조)
-4. **빌드**: `npm run build` 성공 여부, `dist/` 출력물 확인
-5. **GitHub Pages**: `npx serve dist`로 프로덕션 빌드 로컬 서빙 테스트
+4. **빌드**: `pnpm run build` 성공 여부, `dist/` 출력물 확인
+5. **GitHub Pages**: `pnpm dlx serve dist`로 프로덕션 빌드 로컬 서빙 테스트
 
 ---
 
