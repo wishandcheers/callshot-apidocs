@@ -1,0 +1,8 @@
+[REQUIRED BEFORE ACTION - Frontend]
+1. New feature/page? → Use fsd-architect agent (opus)
+2. UI component? → Check a11y-auditor + ui-component-reviewer agents
+3. Multiple approaches? → AskUserQuestion with trade-offs
+4. Test failures? → vitest-runner → frontend-debugger (sequential)
+5. Bundle size concern? → frontend-performance-engineer agent
+
+Flow: Analyze existing patterns → Clarify if multiple options → Execute
