@@ -5,6 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CallShot API Changelog</title>
+    <!-- GitHub Pages SPA redirect handler -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, '', redirect);
+        }
+      })();
+      (function () {
+        var l = window.location;
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          history.replaceState(null, '', l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

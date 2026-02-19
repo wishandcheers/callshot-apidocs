@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CallShot API Changelog</title>
+    <script>
+      // GitHub Pages SPA redirect
+      // Encodes the current path + query into a query param and redirects to /
+      // The main index.html will decode it and restore the URL via history.replaceState
+      var pathSegmentsToKeep = 0; // Change to 1 if using a project subpath (e.g. /repo-name/)
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

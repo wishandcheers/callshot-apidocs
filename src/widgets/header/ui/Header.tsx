@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Menu } from 'lucide-react';
 
 const PAGE_TITLES: Record<string, string> = {
   '/': 'Dashboard',
@@ -8,14 +8,30 @@ const PAGE_TITLES: Record<string, string> = {
   '/reference': 'API Reference',
 };
 
-export function Header() {
+type HeaderProps = {
+  onMenuClick?: () => void;
+};
+
+export function Header({ onMenuClick }: HeaderProps) {
   const { pathname } = useLocation();
   const baseRoute = '/' + (pathname.split('/')[1] ?? '');
   const title = PAGE_TITLES[baseRoute] ?? 'CallShot API Docs';
 
   return (
-    <header className="flex h-14 items-center justify-between border-b border-border bg-card px-6">
-      <h1 className="text-lg font-semibold text-foreground">{title}</h1>
+    <header className="flex h-14 items-center justify-between border-b border-border bg-card px-4 md:px-6">
+      <div className="flex items-center gap-3">
+        {onMenuClick && (
+          <button
+            type="button"
+            onClick={onMenuClick}
+            className="rounded-md p-1.5 text-muted-foreground hover:text-foreground md:hidden"
+            aria-label="Open menu"
+          >
+            <Menu className="h-5 w-5" />
+          </button>
+        )}
+        <h1 className="text-lg font-semibold text-foreground">{title}</h1>
+      </div>
       <a
         href="https://github.com/kodari-corp/gloview"
         target="_blank"
