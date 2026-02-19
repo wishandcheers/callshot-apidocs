@@ -22,8 +22,6 @@ export type VersionEntry = {
   version: string;
   specVersion: string;
   releasedAt: string | null;
-  commitSha: string | null;
-  sourceUrl: string | null;
   stats: VersionStats;
   diff: {
     previousVersion: string;

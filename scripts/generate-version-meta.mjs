@@ -53,8 +53,6 @@ for (const version of versions) {
     version,
     specVersion: apiSpec.info?.version ?? version.replace('v', ''),
     releasedAt: serviceMetadata?.generated_at ?? null,
-    commitSha: serviceMetadata?.commit_sha ?? null,
-    sourceUrl: serviceMetadata?.source_url ?? null,
     stats: {
       api: {
         pathCount: apiPaths.length,

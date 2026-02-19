@@ -59,8 +59,6 @@ for (const file of metaFiles) {
     version,
     specVersion: meta.specVersion,
     releasedAt: meta.releasedAt,
-    commitSha: meta.commitSha,
-    sourceUrl: meta.sourceUrl,
     stats: meta.stats,
     diff: diffSummary,
   });
