@@ -9,7 +9,7 @@
 
 ### Setup
 ```bash
-npm install vite-plugin-pwa -D
+pnpm add -D vite-plugin-pwa
 ```
 
 ### Configuration

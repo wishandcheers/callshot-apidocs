@@ -59,7 +59,7 @@ du -sh node_modules/* 2>/dev/null | sort -rh | head -20
 npx bundle-phobia <package-name>
 
 # Find duplicate packages
-npm ls --all 2>/dev/null | grep -E "deduped|@" | head -20
+pnpm ls --all 2>/dev/null | grep -E "deduped|@" | head -20
 
 # Analyze imports
 npx knip  # Find unused exports/dependencies

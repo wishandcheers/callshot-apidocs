@@ -215,25 +215,25 @@ VITE_APP_TITLE=My App
 
 ```bash
 # Development server
-pnpm run dev
+pnpm dev
 
 # Type checking
-pnpm tsc --noEmit
+npx tsc --noEmit
 
 # Build for production
-pnpm run build
+pnpm build
 
 # Run tests
-pnpm vitest run
+npx vitest run
 
 # Run tests with coverage
-pnpm vitest run --coverage
+npx vitest run --coverage
 
 # Lint
-pnpm eslint src/
+npx eslint src/
 
 # Preview production build
-pnpm run preview
+pnpm preview
 ```
 
 ## Important Notes

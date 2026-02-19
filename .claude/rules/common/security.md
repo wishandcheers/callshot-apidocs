@@ -137,12 +137,10 @@ console.log('User authenticated:', userId);
 
 ### Audit Commands
 ```bash
-npm audit
 pnpm audit
-yarn audit
 
 # Auto-fix
-npm audit fix
+pnpm audit --fix
 ```
 
 ### Rules

@@ -130,7 +130,7 @@ shared/ui/atoms/Button/
 
 ## Commands
 ```bash
-npm run storybook            # Dev server
-npm run build-storybook      # Static build
+pnpm storybook            # Dev server
+pnpm build-storybook      # Static build
 npx storybook test           # Interaction tests
 ```

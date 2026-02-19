@@ -52,7 +52,7 @@ TS18046: 'X' is of type 'unknown'
 #### Vite Build Errors
 ```
 Module not found
-→ Check: npm ls <package>, import path, vite aliases
+→ Check: pnpm ls <package>, import path, vite aliases
 
 Pre-transform error
 → Check: Syntax error in source, invalid JSX/TSX
@@ -100,10 +100,10 @@ ls node_modules/@types/ | grep <package>
 ```bash
 # Step 1: Clean build
 rm -rf node_modules/.vite dist
-npm run build 2>&1
+pnpm build 2>&1
 
 # Step 2: Check dependencies
-npm ls --depth=0 2>&1 | grep -E "(ERR|WARN|missing)"
+pnpm ls --depth=0 2>&1 | grep -E "(ERR|WARN|missing)"
 
 # Step 3: Verify import paths
 # Read the failing file and check imports
@@ -157,7 +157,7 @@ package.json           # Dependencies and scripts
 # - Hydration mismatch
 
 # Build output analysis
-npm run build 2>&1 | tail -30
+pnpm build 2>&1 | tail -30
 ```
 
 ## Output Format
@@ -195,7 +195,7 @@ npm run build 2>&1 | tail -30
 ### Common Fixes
 | Error | Quick Fix |
 |-------|-----------|
-| Module not found | `npm install <pkg>` or fix import path |
+| Module not found | `pnpm add <pkg>` or fix import path |
 | Type not assignable | Add type annotation or type guard |
 | Cannot find name | Add import statement |
 | Act warning | Wrap state updates in `act()` or use `findBy` |
