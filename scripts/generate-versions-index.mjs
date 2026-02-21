@@ -64,11 +64,16 @@ for (const file of metaFiles) {
   });
 }
 
+// Scan diff files to build available pairs list
+const diffFiles = readdirSync(DIFF_DIR).filter((f) => f.endsWith('.json'));
+const availableDiffPairs = diffFiles.map((f) => f.replace('.json', ''));
+
 const manifest = {
   serviceName: 'gloview-api',
   generatedAt: new Date().toISOString(),
   totalVersions: versions.length,
   versions,
+  availableDiffPairs,
 };
 
 const outPath = join(DATA_DIR, 'versions.json');

@@ -2,7 +2,7 @@ import { Plus, Minus, Pencil } from 'lucide-react';
 
 import { cn } from '@/shared/lib/cn';
 
-import type { GroupDiff, ChangelogEntry } from '@/shared/types';
+import type { GroupDiff, ChangelogEntry, PathDiff, OperationDiff } from '@/shared/types';
 
 import { EndpointDiffCard } from './EndpointDiffCard';
 
@@ -196,7 +196,7 @@ function buildRemovedEndpoints(
 }
 
 function buildModifiedEndpoints(
-  modifiedPaths: Record<string, unknown> | undefined,
+  modifiedPaths: Record<string, PathDiff> | undefined,
   changelog: ChangelogEntry[],
 ): EndpointGroup[] {
   if (!modifiedPaths) return [];
@@ -209,9 +209,8 @@ function buildModifiedEndpoints(
 
   // Initialize from modified paths
   for (const path of pathKeys) {
-    const pathDiff = modifiedPaths[path] as Record<string, unknown> | undefined;
-    const ops = pathDiff?.operations as Record<string, unknown> | undefined;
-    const modifiedOps = ops?.modified as Record<string, unknown> | undefined;
+    const pathDiff = modifiedPaths[path];
+    const modifiedOps = pathDiff?.operations?.modified;
     const methods = modifiedOps ? Object.keys(modifiedOps) : [];
     groups.set(path, { path, methods, changes: [] });
   }
@@ -228,5 +227,129 @@ function buildModifiedEndpoints(
     }
   }
 
+  // For endpoints with no changelog entries, extract from diff structure
+  for (const [path, group] of groups) {
+    if (group.changes.length > 0) continue;
+
+    const pathDiff = modifiedPaths[path];
+    if (!pathDiff) continue;
+    const extracted = extractChangesFromDiff(path, pathDiff);
+    group.changes.push(...extracted);
+  }
+
   return [...groups.values()];
+}
+
+function extractChangesFromDiff(path: string, pathDiff: PathDiff): ChangelogEntry[] {
+  const entries: ChangelogEntry[] = [];
+
+  const ops = pathDiff?.operations;
+  if (!ops) return entries;
+
+  // Added operations
+  for (const method of ops.added ?? []) {
+    entries.push(makeSyntheticEntry(path, method, `${method} operation added`, 1));
+  }
+
+  // Deleted operations
+  for (const method of ops.deleted ?? []) {
+    entries.push(makeSyntheticEntry(path, method, `${method} operation removed`, 2));
+  }
+
+  // Modified operations
+  const modified = ops.modified;
+  if (modified) {
+    for (const [method, opDiff] of Object.entries(modified)) {
+      entries.push(...extractOpChanges(path, method, opDiff));
+    }
+  }
+
+  return entries;
+}
+
+function extractOpChanges(path: string, method: string, opDiff: OperationDiff): ChangelogEntry[] {
+  const entries: ChangelogEntry[] = [];
+
+  if (opDiff.summary) {
+    entries.push(makeSyntheticEntry(
+      path, method,
+      `summary changed: "${opDiff.summary.from}" → "${opDiff.summary.to}"`,
+      1,
+    ));
+  }
+
+  if (opDiff.description) {
+    const fromSnippet = opDiff.description.from?.slice(0, 50) || '(empty)';
+    const toSnippet = opDiff.description.to?.slice(0, 50) || '(empty)';
+    entries.push(makeSyntheticEntry(
+      path, method,
+      `description changed: "${fromSnippet}" → "${toSnippet}"`,
+      1,
+    ));
+  }
+
+  if (opDiff.operationID) {
+    entries.push(makeSyntheticEntry(
+      path, method,
+      `operationId changed: ${opDiff.operationID.from} → ${opDiff.operationID.to}`,
+      1,
+    ));
+  }
+
+  if (opDiff.tags) {
+    for (const tag of opDiff.tags.added ?? []) {
+      entries.push(makeSyntheticEntry(path, method, `tag added: ${tag}`, 1));
+    }
+    for (const tag of opDiff.tags.deleted ?? []) {
+      entries.push(makeSyntheticEntry(path, method, `tag removed: ${tag}`, 1));
+    }
+  }
+
+  if (opDiff.parameters?.modified) {
+    const paramCount = Object.keys(opDiff.parameters.modified).length;
+    entries.push(makeSyntheticEntry(
+      path, method,
+      `${paramCount} parameter(s) modified`,
+      1,
+    ));
+  }
+
+  if (opDiff.requestBody) {
+    entries.push(makeSyntheticEntry(path, method, 'request body modified', 1));
+  }
+
+  if (opDiff.responses?.modified) {
+    const statusCodes = Object.keys(opDiff.responses.modified);
+    entries.push(makeSyntheticEntry(
+      path, method,
+      `response modified: ${statusCodes.join(', ')}`,
+      1,
+    ));
+  }
+
+  // If we found modified operations but couldn't extract specific changes,
+  // add a generic entry so the card isn't empty
+  if (entries.length === 0) {
+    entries.push(makeSyntheticEntry(path, method, 'endpoint modified (structural changes)', 1));
+  }
+
+  return entries;
+}
+
+function makeSyntheticEntry(
+  path: string,
+  operation: string,
+  text: string,
+  level: number,
+): ChangelogEntry {
+  return {
+    id: 'diff-extracted',
+    text,
+    level,
+    operation,
+    operationId: '',
+    path,
+    source: '',
+    section: 'paths',
+  };
 }

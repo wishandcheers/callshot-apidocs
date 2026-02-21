@@ -48,11 +48,11 @@ export function DiffPage() {
     );
   }
 
-  const { versions } = versionsState.data;
+  const { versions, availableDiffPairs } = versionsState.data;
 
   return (
     <div className="space-y-4">
-      <VersionPicker versions={versions} from={from ?? null} to={to ?? null} />
+      <VersionPicker versions={versions} from={from ?? null} to={to ?? null} availableDiffPairs={availableDiffPairs} />
 
       {!from || !to ? (
         <p className="py-8 text-center text-sm text-muted-foreground">

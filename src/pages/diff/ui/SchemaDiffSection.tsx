@@ -1,4 +1,5 @@
-import { Layers } from 'lucide-react';
+import { useState } from 'react';
+import { Layers, ChevronDown, ChevronRight } from 'lucide-react';
 
 import { cn } from '@/shared/lib/cn';
 import { Badge } from '@/shared/ui/atoms';
@@ -41,7 +42,7 @@ export function SchemaDiffSection({ diff }: SchemaDiffSectionProps) {
             <p className="mb-2 text-xs font-medium text-warning">
               Modified ({modifiedKeys.length})
             </p>
-            <div className="space-y-3">
+            <div className="space-y-1">
               {modifiedKeys.map((name) => (
                 <SchemaModDetail
                   key={name}
@@ -82,6 +83,60 @@ function SchemaList({
   );
 }
 
+type ChangeEntry = {
+  path: string;
+  type: 'added' | 'deleted' | 'required-added' | 'required-deleted' | 'description' | 'modified';
+};
+
+function collectChanges(mod: SchemaModification, prefix: string): ChangeEntry[] {
+  const entries: ChangeEntry[] = [];
+
+  const addedProps = mod.properties?.added ?? [];
+  const deletedProps = mod.properties?.deleted ?? [];
+  const addedRequired = mod.required?.added ?? [];
+  const deletedRequired = mod.required?.deleted ?? [];
+
+  for (const p of addedProps) {
+    entries.push({ path: prefix ? `${prefix}.${p}` : p, type: 'added' });
+  }
+  for (const p of deletedProps) {
+    entries.push({ path: prefix ? `${prefix}.${p}` : p, type: 'deleted' });
+  }
+  for (const r of addedRequired) {
+    entries.push({ path: prefix ? `${prefix}.${r}` : r, type: 'required-added' });
+  }
+  for (const r of deletedRequired) {
+    entries.push({ path: prefix ? `${prefix}.${r}` : r, type: 'required-deleted' });
+  }
+  if (mod.description) {
+    entries.push({ path: prefix || '(root)', type: 'description' });
+  }
+
+  // Recurse into modified properties
+  const modifiedProps = mod.properties?.modified;
+  if (modifiedProps) {
+    for (const [propName, propMod] of Object.entries(modifiedProps)) {
+      const childPrefix = prefix ? `${prefix}.${propName}` : propName;
+      const childEntries = collectChanges(propMod, childPrefix);
+      if (childEntries.length > 0) {
+        entries.push(...childEntries);
+      } else {
+        // Property is marked modified but has no extractable detail
+        entries.push({ path: childPrefix, type: 'modified' });
+      }
+    }
+  }
+
+  // Recurse into items (array schema)
+  if (mod.items) {
+    const itemsPrefix = prefix ? `${prefix}[]` : '[]';
+    const itemEntries = collectChanges(mod.items, itemsPrefix);
+    entries.push(...itemEntries);
+  }
+
+  return entries;
+}
+
 function SchemaModDetail({
   name,
   modification,
@@ -89,58 +144,82 @@ function SchemaModDetail({
   name: string;
   modification: SchemaModification;
 }) {
-  const addedProps = modification.properties?.added ?? [];
-  const deletedProps = modification.properties?.deleted ?? [];
-  const addedRequired = modification.required?.added ?? [];
-  const deletedRequired = modification.required?.deleted ?? [];
-  const descChange = modification.description;
-
-  const hasChanges =
-    addedProps.length > 0 ||
-    deletedProps.length > 0 ||
-    addedRequired.length > 0 ||
-    deletedRequired.length > 0 ||
-    descChange;
-
-  if (!hasChanges) {
-    return (
-      <div>
-        <span className="font-mono text-xs text-foreground">{name}</span>
-        <span className="ml-2 text-xs text-muted-foreground">(internal changes)</span>
-      </div>
-    );
-  }
+  const [expanded, setExpanded] = useState(false);
+  const changes = collectChanges(modification, '');
+  const hasChanges = changes.length > 0;
 
   return (
     <div>
-      <span className="font-mono text-xs font-medium text-foreground">{name}</span>
-      <div className="mt-1 space-y-0.5 pl-3">
-        {addedProps.map((p) => (
-          <p key={`add-${p}`} className="font-mono text-xs text-success">
-            + {p}
-          </p>
-        ))}
-        {deletedProps.map((p) => (
-          <p key={`del-${p}`} className="font-mono text-xs text-destructive">
-            - {p}
-          </p>
-        ))}
-        {addedRequired.map((r) => (
-          <p key={`req-add-${r}`} className="font-mono text-xs text-success">
-            + required: {r}
-          </p>
-        ))}
-        {deletedRequired.map((r) => (
-          <p key={`req-del-${r}`} className="font-mono text-xs text-destructive">
-            - required: {r}
-          </p>
-        ))}
-        {descChange && (
-          <p className="text-xs text-muted-foreground">
-            description changed
-          </p>
+      <button
+        type="button"
+        onClick={() => hasChanges && setExpanded(!expanded)}
+        className={cn(
+          'flex items-center gap-1.5 text-left',
+          hasChanges && 'cursor-pointer hover:bg-muted/30 -mx-1 px-1 rounded',
+          !hasChanges && 'cursor-default',
         )}
-      </div>
+      >
+        {hasChanges && (
+          expanded
+            ? <ChevronDown className="h-3 w-3 shrink-0 text-muted-foreground" />
+            : <ChevronRight className="h-3 w-3 shrink-0 text-muted-foreground" />
+        )}
+        <span className="font-mono text-xs text-foreground">{name}</span>
+        {hasChanges && (
+          <span className="text-xs text-muted-foreground">
+            ({changes.length} {changes.length === 1 ? 'change' : 'changes'})
+          </span>
+        )}
+      </button>
+
+      {expanded && hasChanges && (
+        <div className="mt-1 space-y-0.5 pl-5">
+          {changes.map((entry, i) => (
+            <ChangeEntryLine key={`${entry.path}-${entry.type}-${i}`} entry={entry} />
+          ))}
+        </div>
+      )}
     </div>
   );
+}
+
+function ChangeEntryLine({ entry }: { entry: ChangeEntry }) {
+  switch (entry.type) {
+    case 'added':
+      return (
+        <p className="font-mono text-xs text-success">
+          + {entry.path}
+        </p>
+      );
+    case 'deleted':
+      return (
+        <p className="font-mono text-xs text-destructive">
+          - {entry.path}
+        </p>
+      );
+    case 'required-added':
+      return (
+        <p className="font-mono text-xs text-success">
+          + required: {entry.path}
+        </p>
+      );
+    case 'required-deleted':
+      return (
+        <p className="font-mono text-xs text-destructive">
+          - required: {entry.path}
+        </p>
+      );
+    case 'description':
+      return (
+        <p className="font-mono text-xs text-muted-foreground">
+          ~ description changed: {entry.path}
+        </p>
+      );
+    case 'modified':
+      return (
+        <p className="font-mono text-xs text-warning">
+          ~ {entry.path} modified
+        </p>
+      );
+  }
 }

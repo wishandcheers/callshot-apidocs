@@ -1,7 +1,7 @@
 /**
  * generate-diffs.mjs
  *
- * For each consecutive version pair, runs oasdiff to generate:
+ * For each version, runs oasdiff against the previous WINDOW_SIZE versions to generate:
  *   - diff JSON (full structural diff)
  *   - changelog JSON (structured change entries)
  *   - breaking JSON (breaking changes only)
@@ -28,17 +28,25 @@ mkdirSync(CHANGELOG_DIR, { recursive: true });
 mkdirSync(BREAKING_DIR, { recursive: true });
 
 const SPEC_GROUPS = ['apiDocs-api.json', 'apiDocs-internal.json'];
+const WINDOW_SIZE = 3;
 
 const versions = readdirSync(SPECS_DIR)
   .filter((d) => d.startsWith('v'))
   .sort(compareVersions);
 
-console.log(`Processing ${versions.length} versions: ${versions.join(', ')}`);
-console.log(`Will generate ${versions.length - 1} diff pairs\n`);
+// Build version pairs: for each version, compare against previous WINDOW_SIZE versions
+const pairs = [];
+for (let i = 1; i < versions.length; i++) {
+  const maxLookback = Math.min(WINDOW_SIZE, i);
+  for (let j = 1; j <= maxLookback; j++) {
+    pairs.push({ from: versions[i - j], to: versions[i] });
+  }
+}
 
-for (let i = 0; i < versions.length - 1; i++) {
-  const from = versions[i];
-  const to = versions[i + 1];
+console.log(`Processing ${versions.length} versions: ${versions.join(', ')}`);
+console.log(`Window size: ${WINDOW_SIZE} → generating ${pairs.length} diff pairs\n`);
+
+for (const { from, to } of pairs) {
   const pairKey = `${from}_${to}`;
 
   console.log(`--- ${from} → ${to} ---`);
@@ -103,7 +111,7 @@ for (let i = 0; i < versions.length - 1; i++) {
   writeFileSync(join(BREAKING_DIR, `${pairKey}.json`), JSON.stringify(breakingOut, null, 2));
 }
 
-console.log(`\nGenerated ${versions.length - 1} diff pairs in public/data/`);
+console.log(`\nGenerated ${pairs.length} diff pairs in public/data/`);
 
 function runOasdiff(command, fromSpec, toSpec, format) {
   try {

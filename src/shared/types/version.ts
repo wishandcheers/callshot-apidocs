@@ -34,4 +34,5 @@ export type VersionManifest = {
   generatedAt: string;
   totalVersions: number;
   versions: VersionEntry[];
+  availableDiffPairs: string[];
 };
