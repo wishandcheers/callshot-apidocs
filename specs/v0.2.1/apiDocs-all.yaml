@@ -10,16 +10,16 @@ info:
 
     ## CDN Guide
     - CDN URL 형식: `https://{cdn_host}/{path}`
-        - cdn_host: `gloview-alpha-cdn.duckdns.org`
+        - cdn_host: `dev-cdn.call-shot.com`
     - Original URL path: `/origin/{file_path}`
-        - ex: https://gloview-alpha-cdn.duckdns.org/origin/times_square.jpg
+        - ex: https://dev-cdn.call-shot.com/origin/times_square.jpg
     - Thumbnail URL path: /thumb/{file_path}?w={size}
         - Thumbnail URL의 경우 QueryString 없이 내려감
         - size: 썸네일 크기
-        - ex: https://gloview-alpha-cdn.duckdns.org/thumb/gloview-alpha/times_square.jpg?w=200
+        - ex: https://dev-cdn.call-shot.com/thumb/callshot/times_square.jpg?w=200
   version: 0.2.1
 servers:
-- url: https://gloview-alpha.duckdns.org
+- url: https://dev-api.call-shot.com
   description: Development server
 - url: http://localhost:8080
   description: Local server
