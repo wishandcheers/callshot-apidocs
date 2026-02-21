@@ -76,6 +76,6 @@ export type DiffData = {
   toVersion: string;
   groups: {
     api: GroupDiff;
-    internal: GroupDiff;
+    admin: GroupDiff;
   };
 };

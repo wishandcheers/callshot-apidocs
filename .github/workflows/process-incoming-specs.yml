@@ -2,7 +2,7 @@ name: Process Incoming Specs
 
 on:
   push:
-    branches: [master]
+    branches: [main]
     paths:
       - 'incoming/**'
   workflow_dispatch:
@@ -113,10 +113,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: master
+          ref: main
 
       - name: Pull latest (includes new specs commit)
-        run: git pull origin master
+        run: git pull origin main
 
       - name: Install oasdiff
         run: go install github.com/tufin/oasdiff@latest

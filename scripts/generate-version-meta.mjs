@@ -27,12 +27,12 @@ for (const version of versions) {
 
   // Read API spec
   const apiSpecPath = join(specDir, 'apiDocs-api.json');
-  const internalSpecPath = join(specDir, 'apiDocs-internal.json');
+  const adminSpecPath = join(specDir, 'apiDocs-admin.json');
   const metadataPath = join(specDir, 'service-metadata.json');
 
   const apiSpec = JSON.parse(readFileSync(apiSpecPath, 'utf-8'));
-  const internalSpec = existsSync(internalSpecPath)
-    ? JSON.parse(readFileSync(internalSpecPath, 'utf-8'))
+  const adminSpec = existsSync(adminSpecPath)
+    ? JSON.parse(readFileSync(adminSpecPath, 'utf-8'))
     : null;
 
   const serviceMetadata = existsSync(metadataPath)
@@ -40,11 +40,11 @@ for (const version of versions) {
     : null;
 
   const apiPaths = Object.keys(apiSpec.paths ?? {});
-  const internalPaths = internalSpec ? Object.keys(internalSpec.paths ?? {}) : [];
+  const adminPaths = adminSpec ? Object.keys(adminSpec.paths ?? {}) : [];
 
   // Count unique endpoints (method + path)
   const apiEndpointCount = countEndpoints(apiSpec);
-  const internalEndpointCount = internalSpec ? countEndpoints(internalSpec) : 0;
+  const adminEndpointCount = adminSpec ? countEndpoints(adminSpec) : 0;
 
   const schemas = apiSpec.components?.schemas ?? {};
   const tags = apiSpec.tags ?? [];
@@ -58,9 +58,9 @@ for (const version of versions) {
         pathCount: apiPaths.length,
         endpointCount: apiEndpointCount,
       },
-      internal: {
-        pathCount: internalPaths.length,
-        endpointCount: internalEndpointCount,
+      admin: {
+        pathCount: adminPaths.length,
+        endpointCount: adminEndpointCount,
       },
       schemaCount: Object.keys(schemas).length,
       tagCount: tags.length,
@@ -70,7 +70,7 @@ for (const version of versions) {
   const outPath = join(META_DIR, `${version}.json`);
   writeFileSync(outPath, JSON.stringify(meta, null, 2));
   console.log(
-    `  ${version}: ${apiEndpointCount} API + ${internalEndpointCount} internal endpoints, ${Object.keys(schemas).length} schemas`,
+    `  ${version}: ${apiEndpointCount} API + ${adminEndpointCount} admin endpoints, ${Object.keys(schemas).length} schemas`,
   );
 }
 

@@ -14,7 +14,7 @@ export type ChangelogData = {
   toVersion: string;
   groups: {
     api: ChangelogEntry[];
-    internal: ChangelogEntry[];
+    admin: ChangelogEntry[];
   };
 };
 
@@ -34,6 +34,6 @@ export type BreakingData = {
   toVersion: string;
   groups: {
     api: BreakingEntry[];
-    internal: BreakingEntry[];
+    admin: BreakingEntry[];
   };
 };

@@ -112,7 +112,7 @@ function ExpandedChanges({
   }
 
   const { data } = state;
-  const allEntries = [...data.groups.api, ...data.groups.internal];
+  const allEntries = [...data.groups.api, ...data.groups.admin];
   const filtered = filterEntries(allEntries, filter);
 
   if (filtered.length === 0) {

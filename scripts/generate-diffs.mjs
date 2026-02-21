@@ -27,7 +27,7 @@ mkdirSync(DIFF_DIR, { recursive: true });
 mkdirSync(CHANGELOG_DIR, { recursive: true });
 mkdirSync(BREAKING_DIR, { recursive: true });
 
-const SPEC_GROUPS = ['apiDocs-api.json', 'apiDocs-internal.json'];
+const SPEC_GROUPS = ['apiDocs-api.json', 'apiDocs-admin.json'];
 const WINDOW_SIZE = 3;
 
 const versions = readdirSync(SPECS_DIR)

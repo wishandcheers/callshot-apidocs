@@ -97,7 +97,7 @@ function DiffContent({
   const { data } = diffState;
   const group = data.groups[activeGroup];
   const apiChanges = totalChanges(data.groups.api.summary);
-  const internalChanges = totalChanges(data.groups.internal.summary);
+  const adminChanges = totalChanges(data.groups.admin.summary);
 
   return (
     <div className="space-y-4">
@@ -108,7 +108,7 @@ function DiffContent({
         active={activeGroup}
         onChange={onGroupChange}
         apiCount={apiChanges}
-        internalCount={internalChanges}
+        adminCount={adminChanges}
       />
 
       <EndpointDiffList group={group} />

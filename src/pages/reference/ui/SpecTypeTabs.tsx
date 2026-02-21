@@ -1,6 +1,6 @@
 import { cn } from '@/shared/lib/cn';
 
-export type SpecType = 'api' | 'internal';
+export type SpecType = 'api' | 'admin';
 
 type SpecTypeTabsProps = {
   active: SpecType;
@@ -16,9 +16,9 @@ export function SpecTypeTabs({ active, onChange }: SpecTypeTabsProps) {
         label="API"
       />
       <TabButton
-        active={active === 'internal'}
-        onClick={() => onChange('internal')}
-        label="Internal"
+        active={active === 'admin'}
+        onClick={() => onChange('admin')}
+        label="Admin"
       />
     </div>
   );

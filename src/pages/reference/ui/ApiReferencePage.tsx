@@ -83,7 +83,7 @@ function buildRedocOptions(resolved: 'light' | 'dark') {
 }
 
 function buildSpecUrl(version: string, specType: SpecType): string {
-  const fileName = specType === 'api' ? 'apiDocs-api.json' : 'apiDocs-internal.json';
+  const fileName = specType === 'api' ? 'apiDocs-api.json' : 'apiDocs-admin.json';
   return `/data/specs/${version}/${fileName}`;
 }
 

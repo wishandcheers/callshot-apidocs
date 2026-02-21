@@ -1,15 +1,15 @@
 import { cn } from '@/shared/lib/cn';
 
-export type DiffGroup = 'api' | 'internal';
+export type DiffGroup = 'api' | 'admin';
 
 type GroupTabsProps = {
   active: DiffGroup;
   onChange: (group: DiffGroup) => void;
   apiCount: number;
-  internalCount: number;
+  adminCount: number;
 };
 
-export function GroupTabs({ active, onChange, apiCount, internalCount }: GroupTabsProps) {
+export function GroupTabs({ active, onChange, apiCount, adminCount }: GroupTabsProps) {
   return (
     <div className="flex gap-1 rounded-lg bg-muted/50 p-1">
       <TabButton
@@ -19,10 +19,10 @@ export function GroupTabs({ active, onChange, apiCount, internalCount }: GroupTa
         count={apiCount}
       />
       <TabButton
-        active={active === 'internal'}
-        onClick={() => onChange('internal')}
-        label="Internal"
-        count={internalCount}
+        active={active === 'admin'}
+        onClick={() => onChange('admin')}
+        label="Admin"
+        count={adminCount}
       />
     </div>
   );

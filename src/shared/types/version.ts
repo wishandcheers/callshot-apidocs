@@ -3,7 +3,7 @@ export type VersionStats = {
     pathCount: number;
     endpointCount: number;
   };
-  internal: {
+  admin: {
     pathCount: number;
     endpointCount: number;
   };

@@ -14,7 +14,7 @@ const ROOT = join(__dirname, '..');
 const SPECS_DIR = join(ROOT, 'specs');
 const OUT_DIR = join(ROOT, 'public', 'data', 'specs');
 
-const SPEC_FILES = ['apiDocs-api.json', 'apiDocs-internal.json'];
+const SPEC_FILES = ['apiDocs-api.json', 'apiDocs-admin.json'];
 
 const versions = readdirSync(SPECS_DIR).filter((d) =>
   d.startsWith('v') && existsSync(join(SPECS_DIR, d, SPEC_FILES[0]))
