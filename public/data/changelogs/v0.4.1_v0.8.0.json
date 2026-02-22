@@ -1,0 +1,376 @@
+{
+  "fromVersion": "v0.4.1",
+  "toVersion": "v0.8.0",
+  "groups": {
+    "api": [
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto_1",
+        "path": "/api/my/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/publishPhotos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotos_1",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos_1",
+        "path": "/api/my/photos/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos_1",
+        "path": "/api/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea_1",
+        "path": "/api/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto",
+        "path": "/api/photos/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/publishPhotos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/photos/my",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos",
+        "path": "/api/photos/my/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/api/public/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto_1",
+        "path": "/api/my/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotoRequests",
+        "path": "/api/my/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "createPhotoRequest",
+        "path": "/api/my/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "cancelPhotoRequest",
+        "path": "/api/my/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updatePhotoRequest",
+        "path": "/api/my/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "closePhotoRequest",
+        "path": "/api/my/photo-requests/{id}/close",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getSubmissionsForRequest",
+        "path": "/api/my/photo-requests/{id}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "reviewSubmission",
+        "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/publishPhotos/items/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotos_1",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos_1",
+        "path": "/api/my/photos/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMySubmissions",
+        "path": "/api/my/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoRequests",
+        "path": "/api/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoRequestClusters",
+        "path": "/api/photo-requests/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoRequestDetail",
+        "path": "/api/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "submitPhoto",
+        "path": "/api/photo-requests/{requestId}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "withdrawSubmission",
+        "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotos_1",
+        "path": "/api/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea_1",
+        "path": "/api/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto",
+        "path": "/api/photos/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/publishPhotos/items/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/photos/my",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos",
+        "path": "/api/photos/my/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/api/public/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetails",
+        "path": "/api/public/photos/bulk",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      }
+    ],
+    "admin": [
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/internal/admin/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'ThumbnailResponse'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/internal/admin/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-admin.json",
+        "section": "paths"
+      }
+    ]
+  }
+}

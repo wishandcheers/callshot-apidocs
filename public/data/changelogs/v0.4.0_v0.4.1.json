@@ -1,0 +1,19 @@
+{
+  "fromVersion": "v0.4.0",
+  "toVersion": "v0.4.1",
+  "groups": {
+    "api": [
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetail",
+        "path": "/api/public/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+        "section": "paths"
+      }
+    ],
+    "admin": []
+  }
+}

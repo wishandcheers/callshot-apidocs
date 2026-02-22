@@ -1,0 +1,1694 @@
+{
+  "fromVersion": "v0.8.0",
+  "toVersion": "v0.9.0",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.8.0",
+            "to": "0.9.0"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/photos/{photoId}/dislike",
+            "/api/photos/{photoId}/engagement",
+            "/api/photos/{photoId}/like"
+          ],
+          "modified": {
+            "/api/my/drafts/{id}/publish": {
+              "operations": {
+                "modified": {
+                  "POST": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "likeCount",
+                                            "viewCount"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/my/photo-requests": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "requests": {
+                                              "items": {
+                                                "properties": {
+                                                  "modified": {
+                                                    "thumbnailUrl": {
+                                                      "description": {
+                                                        "from": "",
+                                                        "to": "미션 요청 정보중, 참고 스타일 첫번째 이미지에 대한 썸네일"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/my/photos": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "publishPhotos": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "viewCount",
+                                                    "likeCount"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/my/photos/published": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "photos": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "viewCount",
+                                                    "likeCount"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/my/photos/{id}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "PATCH": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photo-requests": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "requests": {
+                                              "items": {
+                                                "properties": {
+                                                  "modified": {
+                                                    "thumbnailUrl": {
+                                                      "description": {
+                                                        "from": "",
+                                                        "to": "미션 요청 정보중, 참고 스타일 첫번째 이미지에 대한 썸네일"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "photos": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/cluster-area": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "photos": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/drafts/{id}/publish": {
+              "operations": {
+                "modified": {
+                  "POST": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "likeCount",
+                                            "viewCount"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/my": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "publishPhotos": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "viewCount",
+                                                    "likeCount"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/my/published": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "photos": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "viewCount",
+                                                    "likeCount"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/{id}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "PATCH": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "photos": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/bulk": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "items": {
+                                          "required": {
+                                            "added": [
+                                              "likeCount",
+                                              "viewCount"
+                                            ]
+                                          },
+                                          "properties": {
+                                            "added": [
+                                              "viewCount",
+                                              "likeCount"
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/cluster-area": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "photos": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/{id}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "viewCount",
+                                            "likeCount"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": {
+          "added": [
+            "Engagement"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "BaseResponseToggleLikeResponse",
+              "BaseResponseToggleDislikeResponse",
+              "EngagementResponse",
+              "BaseResponseEngagementResponse",
+              "ToggleDislikeResponse",
+              "ToggleLikeResponse"
+            ],
+            "modified": {
+              "BaseResponseListPublishedPhotoDetailResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "items": {
+                        "required": {
+                          "added": [
+                            "likeCount",
+                            "viewCount"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "likeCount",
+                            "viewCount"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponseMyPhotoRequestsResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "requests": {
+                            "items": {
+                              "properties": {
+                                "modified": {
+                                  "thumbnailUrl": {
+                                    "description": {
+                                      "from": "",
+                                      "to": "미션 요청 정보중, 참고 스타일 첫번째 이미지에 대한 썸네일"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponseMyPhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "publishPhotos": {
+                            "items": {
+                              "required": {
+                                "added": [
+                                  "likeCount",
+                                  "viewCount"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "likeCount",
+                                  "viewCount"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePhotoRequestsResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "requests": {
+                            "items": {
+                              "properties": {
+                                "modified": {
+                                  "thumbnailUrl": {
+                                    "description": {
+                                      "from": "",
+                                      "to": "미션 요청 정보중, 참고 스타일 첫번째 이미지에 대한 썸네일"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePhotoResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "required": {
+                        "added": [
+                          "viewCount",
+                          "likeCount"
+                        ]
+                      },
+                      "properties": {
+                        "added": [
+                          "viewCount",
+                          "likeCount"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "photos": {
+                            "items": {
+                              "required": {
+                                "added": [
+                                  "likeCount",
+                                  "viewCount"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "likeCount",
+                                  "viewCount"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePublishedPhotoDetailResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "required": {
+                        "added": [
+                          "likeCount",
+                          "viewCount"
+                        ]
+                      },
+                      "properties": {
+                        "added": [
+                          "likeCount",
+                          "viewCount"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePublishedPhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "photos": {
+                            "items": {
+                              "required": {
+                                "added": [
+                                  "likeCount",
+                                  "viewCount"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "likeCount",
+                                  "viewCount"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "MyPhotoRequestsResponse": {
+                "properties": {
+                  "modified": {
+                    "requests": {
+                      "items": {
+                        "properties": {
+                          "modified": {
+                            "thumbnailUrl": {
+                              "description": {
+                                "from": "",
+                                "to": "미션 요청 정보중, 참고 스타일 첫번째 이미지에 대한 썸네일"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "MyPhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "publishPhotos": {
+                      "items": {
+                        "required": {
+                          "added": [
+                            "likeCount",
+                            "viewCount"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "likeCount",
+                            "viewCount"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "PhotoRequestListItemDto": {
+                "properties": {
+                  "modified": {
+                    "thumbnailUrl": {
+                      "description": {
+                        "from": "",
+                        "to": "미션 요청 정보중, 참고 스타일 첫번째 이미지에 대한 썸네일"
+                      }
+                    }
+                  }
+                }
+              },
+              "PhotoRequestsResponse": {
+                "properties": {
+                  "modified": {
+                    "requests": {
+                      "items": {
+                        "properties": {
+                          "modified": {
+                            "thumbnailUrl": {
+                              "description": {
+                                "from": "",
+                                "to": "미션 요청 정보중, 참고 스타일 첫번째 이미지에 대한 썸네일"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "PhotoResponse": {
+                "required": {
+                  "added": [
+                    "likeCount",
+                    "viewCount"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "likeCount",
+                    "viewCount"
+                  ]
+                }
+              },
+              "PhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "photos": {
+                      "items": {
+                        "required": {
+                          "added": [
+                            "likeCount",
+                            "viewCount"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "likeCount",
+                            "viewCount"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "PublishedPhotoDetailResponse": {
+                "required": {
+                  "added": [
+                    "likeCount",
+                    "viewCount"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "likeCount",
+                    "viewCount"
+                  ]
+                }
+              },
+              "PublishedPhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "photos": {
+                      "items": {
+                        "required": {
+                          "added": [
+                            "likeCount",
+                            "viewCount"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "likeCount",
+                            "viewCount"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto_1",
+          "path": "/api/my/drafts/{id}/publish",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto_1",
+          "path": "/api/my/drafts/{id}/publish",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/publishPhotos/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos_1",
+          "path": "/api/my/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/publishPhotos/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos_1",
+          "path": "/api/my/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos_1",
+          "path": "/api/my/photos/published",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos_1",
+          "path": "/api/my/photos/published",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto_1",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto_1",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto_1",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto_1",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos_1",
+          "path": "/api/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos_1",
+          "path": "/api/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea_1",
+          "path": "/api/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea_1",
+          "path": "/api/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto",
+          "path": "/api/photos/drafts/{id}/publish",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto",
+          "path": "/api/photos/drafts/{id}/publish",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/publishPhotos/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/photos/my",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/publishPhotos/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/photos/my",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos",
+          "path": "/api/photos/my/published",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos",
+          "path": "/api/photos/my/published",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "toggleDislike",
+          "path": "/api/photos/{photoId}/dislike",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getEngagement",
+          "path": "/api/photos/{photoId}/engagement",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "toggleLike",
+          "path": "/api/photos/{photoId}/like",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/public/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/public/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetails",
+          "path": "/api/public/photos/bulk",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetails",
+          "path": "/api/public/photos/bulk",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetail",
+          "path": "/api/public/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetail",
+          "path": "/api/public/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+          "section": "paths"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 3,
+        "removed": 0,
+        "modified": 16,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.8.0",
+            "to": "0.9.0"
+          }
+        },
+        "paths": {
+          "modified": {
+            "/internal/admin/photos": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "photos": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "likeCount",
+                                                    "viewCount"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "viewCount",
+                                                    "likeCount"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "modified": {
+              "BaseResponsePhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "photos": {
+                            "items": {
+                              "required": {
+                                "added": [
+                                  "viewCount",
+                                  "likeCount"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "likeCount",
+                                  "viewCount"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "PhotoResponse": {
+                "required": {
+                  "added": [
+                    "likeCount",
+                    "viewCount"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "viewCount",
+                    "likeCount"
+                  ]
+                }
+              },
+              "PhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "photos": {
+                      "items": {
+                        "required": {
+                          "added": [
+                            "viewCount",
+                            "likeCount"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "likeCount",
+                            "viewCount"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/likeCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/internal/admin/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/photos/items/viewCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/internal/admin/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
+          "section": "paths"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 1,
+        "breaking": 0
+      }
+    }
+  }
+}

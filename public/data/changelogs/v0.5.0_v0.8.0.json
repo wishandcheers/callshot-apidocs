@@ -1,0 +1,139 @@
+{
+  "fromVersion": "v0.5.0",
+  "toVersion": "v0.8.0",
+  "groups": {
+    "api": [
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotoRequests",
+        "path": "/api/my/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "createPhotoRequest",
+        "path": "/api/my/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "cancelPhotoRequest",
+        "path": "/api/my/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updatePhotoRequest",
+        "path": "/api/my/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "closePhotoRequest",
+        "path": "/api/my/photo-requests/{id}/close",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getSubmissionsForRequest",
+        "path": "/api/my/photo-requests/{id}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "reviewSubmission",
+        "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMySubmissions",
+        "path": "/api/my/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoRequests",
+        "path": "/api/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoRequestClusters",
+        "path": "/api/photo-requests/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoRequestDetail",
+        "path": "/api/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "submitPhoto",
+        "path": "/api/photo-requests/{requestId}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "withdrawSubmission",
+        "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
+        "section": "paths"
+      }
+    ],
+    "admin": []
+  }
+}

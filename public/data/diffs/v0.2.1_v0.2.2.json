@@ -1,0 +1,65 @@
+{
+  "fromVersion": "v0.2.1",
+  "toVersion": "v0.2.2",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.2.1",
+            "to": "0.2.2"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/photos/cluster-area"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "ClusterAreaRequest"
+            ]
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.2.2/apiDocs-api.json",
+          "section": "paths"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 1,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.2.1",
+            "to": "0.2.2"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    }
+  }
+}

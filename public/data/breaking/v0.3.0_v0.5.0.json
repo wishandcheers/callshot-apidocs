@@ -1,0 +1,70 @@
+{
+  "fromVersion": "v0.3.0",
+  "toVersion": "v0.5.0",
+  "groups": {
+    "api": [
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos_1",
+        "path": "/api/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea_1",
+        "path": "/api/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto",
+        "path": "/api/photos/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/publishPhotos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/photos/my",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos",
+        "path": "/api/photos/my/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
+        "section": "paths"
+      }
+    ],
+    "admin": [
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/internal/admin/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-admin.json",
+        "section": "paths"
+      }
+    ]
+  }
+}

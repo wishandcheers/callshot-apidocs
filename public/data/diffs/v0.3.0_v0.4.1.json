@@ -1,0 +1,1010 @@
+{
+  "fromVersion": "v0.3.0",
+  "toVersion": "v0.4.1",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.3.0",
+            "to": "0.4.1"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/my/photos/{id}",
+            "/api/my/drafts",
+            "/api/public/photos/{id}",
+            "/api/public/photos/clusters",
+            "/api/my/photos/published",
+            "/api/public/photos/cluster-area",
+            "/api/my/drafts/{id}",
+            "/api/my/drafts/{id}/publish",
+            "/api/my/photos",
+            "/api/public/photos"
+          ],
+          "modified": {
+            "/api/photos": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "지역 내 사진 목록 조회",
+                      "to": "[Deprecated] 지역 내 사진 목록 조회"
+                    },
+                    "description": {
+                      "from": "지정된 영역(BoundingBox) 내의 사진 목록을 조회합니다.",
+                      "to": "지정된 영역(BoundingBox) 내의 사진 목록을 조회합니다. PublicPhotoController로 이동 권장"
+                    },
+                    "operationID": {
+                      "from": "getPhotos",
+                      "to": "getPhotos_1"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "query": {
+                          "boundingBox": {
+                            "description": {
+                              "from": "조회할 영역(범위)",
+                              "to": ""
+                            }
+                          },
+                          "sort": {
+                            "description": {
+                              "from": "정렬 옵션",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "조회 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/cluster-area": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "클러스터 영역 내 사진 목록 조회",
+                      "to": "[Deprecated] 클러스터 영역 내 사진 목록 조회"
+                    },
+                    "description": {
+                      "from": "지정된 클러스터 영역(중심점 + 반지름) 내의 모든 사진을 조회합니다.",
+                      "to": "지정된 클러스터 영역(중심점 + 반지름) 내의 모든 사진을 조회합니다. PublicPhotoController로 이동 권장"
+                    },
+                    "operationID": {
+                      "from": "getPhotosInClusterArea",
+                      "to": "getPhotosInClusterArea_1"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "query": {
+                          "request": {
+                            "description": {
+                              "from": "클러스터 영역 조회 요청 파라미터",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "조회 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/clusters": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "사진 클러스터 조회",
+                      "to": "[Deprecated] 사진 클러스터 조회"
+                    },
+                    "description": {
+                      "from": "지도에 표시할 사진 클러스터를 조회합니다.",
+                      "to": "지도에 표시할 사진 클러스터를 조회합니다. PublicPhotoController로 이동 권장"
+                    },
+                    "operationID": {
+                      "from": "getPhotoClusters",
+                      "to": "getPhotoClusters_1"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "query": {
+                          "request": {
+                            "description": {
+                              "from": "클러스터 조회 요청 파라미터",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "클러스터 조회 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/drafts/{id}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "임시저장 사진 상세 조회",
+                      "to": "[Deprecated] 임시저장 사진 상세 조회"
+                    },
+                    "description": {
+                      "from": "특정 임시저장 사진의 상세 정보를 조회합니다. 유효성 검사 결과도 포함됩니다.",
+                      "to": "특정 임시저장 사진의 상세 정보를 조회합니다. /api/my/drafts/{id}로 이동 권장"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "path": {
+                          "id": {
+                            "description": {
+                              "from": "임시저장 사진 ID",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "조회 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "PATCH": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "임시저장 사진 수정",
+                      "to": "[Deprecated] 임시저장 사진 수정"
+                    },
+                    "description": {
+                      "from": "임시저장 사진의 메타데이터를 수정합니다. 필수 필드를 모두 채우면 발행 가능한 상태가 됩니다.",
+                      "to": "임시저장 사진의 메타데이터를 수정합니다. /api/my/drafts/{id}로 이동 권장"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "path": {
+                          "id": {
+                            "description": {
+                              "from": "임시저장 사진 ID",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "수정 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/drafts/{id}/publish": {
+              "operations": {
+                "modified": {
+                  "POST": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "임시저장 사진 발행",
+                      "to": "[Deprecated] 임시저장 사진 발행"
+                    },
+                    "description": {
+                      "from": "임시저장 사진을 발행된 사진으로 변환합니다. 모든 필수 필드가 입력되어야 합니다.",
+                      "to": "임시저장 사진을 발행된 사진으로 변환합니다. /api/my/drafts/{id}/publish로 이동 권장"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "path": {
+                          "id": {
+                            "description": {
+                              "from": "임시저장 사진 ID",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "발행 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/my": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "업로드 사진 조회 (기존 API)",
+                      "to": "[Deprecated] 업로드 사진 조회"
+                    },
+                    "description": {
+                      "from": "내가 업로드한 사진들을 조회합니다. (하위 호환성을 위한 기존 API)",
+                      "to": "내가 업로드한 사진들을 조회합니다. /api/my/photos로 이동 권장"
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "조회 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/my/drafts": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "임시저장 사진 목록 조회",
+                      "to": "[Deprecated] 임시저장 사진 목록 조회"
+                    },
+                    "description": {
+                      "from": "내가 업로드한 임시저장 사진들을 커서 기반 페이징으로 조회합니다.",
+                      "to": "내가 업로드한 임시저장 사진들을 커서 기반 페이징으로 조회합니다. /api/my/drafts로 이동 권장"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "query": {
+                          "request": {
+                            "description": {
+                              "from": "커서 기반 페이지네이션 파라미터",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "조회 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/my/published": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "발행된 사진 목록 조회",
+                      "to": "[Deprecated] 발행된 사진 목록 조회"
+                    },
+                    "description": {
+                      "from": "내가 업로드한 발행된 사진들을 커서 기반 페이징으로 조회합니다.",
+                      "to": "내가 업로드한 발행된 사진들을 커서 기반 페이징으로 조회합니다. /api/my/photos/published로 이동 권장"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "query": {
+                          "request": {
+                            "description": {
+                              "from": "커서 기반 페이지네이션 파라미터",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "조회 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photos/{id}": {
+              "operations": {
+                "modified": {
+                  "DELETE": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "발행된 사진 삭제",
+                      "to": "[Deprecated] 발행된 사진 삭제"
+                    },
+                    "description": {
+                      "from": "발행된 사진을 삭제합니다 (소프트 삭제). 사진 소유자만 삭제 가능합니다.",
+                      "to": "발행된 사진을 삭제합니다 (소프트 삭제). /api/my/photos/{id}로 이동 권장"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "path": {
+                          "id": {
+                            "description": {
+                              "from": "발행된 사진 ID",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "삭제 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "GET": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "발행된 사진 상세 조회",
+                      "to": "[Deprecated] 발행된 사진 상세 조회"
+                    },
+                    "description": {
+                      "from": "특정 발행된 사진의 상세 정보를 조회합니다. 사진 소유자만 조회 가능합니다.",
+                      "to": "특정 발행된 사진의 상세 정보를 조회합니다. /api/my/photos/{id}로 이동 권장"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "path": {
+                          "id": {
+                            "description": {
+                              "from": "발행된 사진 ID",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "조회 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "PATCH": {
+                    "tags": {
+                      "added": [
+                        "사진 (Deprecated)"
+                      ],
+                      "deleted": [
+                        "사진"
+                      ]
+                    },
+                    "summary": {
+                      "from": "발행된 사진 수정",
+                      "to": "[Deprecated] 발행된 사진 수정"
+                    },
+                    "description": {
+                      "from": "발행된 사진의 메타데이터를 수정합니다. 사진 소유자만 수정 가능합니다.",
+                      "to": "발행된 사진의 메타데이터를 수정합니다. /api/my/photos/{id}로 이동 권장"
+                    },
+                    "parameters": {
+                      "modified": {
+                        "path": {
+                          "id": {
+                            "description": {
+                              "from": "발행된 사진 ID",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "description": {
+                            "from": "수정 성공",
+                            "to": "OK"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": {
+          "added": [
+            "개인 사진",
+            "사진 (Deprecated)",
+            "공개 사진",
+            "임시저장 사진"
+          ],
+          "deleted": [
+            "사진"
+          ]
+        }
+      },
+      "changelog": [
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyDraftPhotos_1",
+          "path": "/api/my/drafts",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getDraftPhoto_1",
+          "path": "/api/my/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateDraftPhoto_1",
+          "path": "/api/my/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto_1",
+          "path": "/api/my/drafts/{id}/publish",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos_1",
+          "path": "/api/my/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos_1",
+          "path": "/api/my/photos/published",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "DELETE",
+          "operationId": "deletePublishedPhoto_1",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto_1",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto_1",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-operation-id-removed",
+          "text": "api operation id 'getPhotos' removed and replaced with 'getPhotos_1'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-operation-id-removed",
+          "text": "api operation id 'getPhotosInClusterArea' removed and replaced with 'getPhotosInClusterArea_1'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-operation-id-removed",
+          "text": "api operation id 'getPhotoClusters' removed and replaced with 'getPhotoClusters_1'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getDraftPhoto",
+          "path": "/api/photos/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getDraftPhoto",
+          "path": "/api/photos/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateDraftPhoto",
+          "path": "/api/photos/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateDraftPhoto",
+          "path": "/api/photos/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto",
+          "path": "/api/photos/drafts/{id}/publish",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto",
+          "path": "/api/photos/drafts/{id}/publish",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/photos/my",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/photos/my",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyDraftPhotos",
+          "path": "/api/photos/my/drafts",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyDraftPhotos",
+          "path": "/api/photos/my/drafts",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos",
+          "path": "/api/photos/my/published",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos",
+          "path": "/api/photos/my/published",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "DELETE",
+          "operationId": "deletePublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "DELETE",
+          "operationId": "deletePublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-added",
+          "text": "api tag '사진 (Deprecated)' added",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-tag-removed",
+          "text": "api tag '사진' removed",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto",
+          "path": "/api/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/public/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetail",
+          "path": "/api/public/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.4.1/apiDocs-api.json",
+          "section": "paths"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 10,
+        "removed": 0,
+        "modified": 9,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.3.0",
+            "to": "0.4.1"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    }
+  }
+}
