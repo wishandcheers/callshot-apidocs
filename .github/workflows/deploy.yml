@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install oasdiff
-        run: go install github.com/tufin/oasdiff@latest
+        run: go install github.com/oasdiff/oasdiff@latest
 
       - uses: pnpm/action-setup@v4
 
