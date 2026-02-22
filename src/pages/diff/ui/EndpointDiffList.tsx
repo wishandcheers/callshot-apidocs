@@ -134,7 +134,7 @@ function buildAddedEndpoints(
   const groups = new Map<string, EndpointGroup>();
 
   for (const entry of changelog) {
-    if (!pathSet.has(entry.path)) continue;
+    if (!entry.path || !pathSet.has(entry.path)) continue;
     const existing = groups.get(entry.path);
     if (existing) {
       if (entry.operation && !existing.methods.includes(entry.operation)) {
@@ -170,7 +170,7 @@ function buildRemovedEndpoints(
   const groups = new Map<string, EndpointGroup>();
 
   for (const entry of changelog) {
-    if (!pathSet.has(entry.path)) continue;
+    if (!entry.path || !pathSet.has(entry.path)) continue;
     const existing = groups.get(entry.path);
     if (existing) {
       if (entry.operation && !existing.methods.includes(entry.operation)) {
@@ -217,7 +217,7 @@ function buildModifiedEndpoints(
 
   // Attach changelog entries to their paths
   for (const entry of changelog) {
-    if (!pathSet.has(entry.path)) continue;
+    if (!entry.path || !pathSet.has(entry.path)) continue;
     const group = groups.get(entry.path);
     if (group) {
       group.changes.push(entry);

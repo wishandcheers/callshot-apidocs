@@ -155,7 +155,7 @@ function ChangeEntryRow({ entry }: { entry: ChangelogEntry }) {
       {entry.operation ? (
         <MethodBadge method={entry.operation} />
       ) : (
-        <Badge variant="outline" className="shrink-0 text-[10px]">
+        <Badge variant="muted" className="shrink-0 text-[10px]">
           {entry.section?.toUpperCase() ?? 'SCHEMA'}
         </Badge>
       )}
