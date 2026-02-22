@@ -23,7 +23,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install oasdiff
-        run: go install github.com/oasdiff/oasdiff@latest
+        run: |
+          go install github.com/oasdiff/oasdiff@latest
+          echo "$HOME/go/bin" >> "$GITHUB_PATH"
 
       - uses: pnpm/action-setup@v4
 

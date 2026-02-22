@@ -76,7 +76,9 @@ jobs:
 
       - name: Install oasdiff
         if: steps.detect.outputs.has_specs == 'true'
-        run: go install github.com/oasdiff/oasdiff@latest
+        run: |
+          go install github.com/oasdiff/oasdiff@latest
+          echo "$HOME/go/bin" >> "$GITHUB_PATH"
 
       - uses: pnpm/action-setup@v4
         if: steps.detect.outputs.has_specs == 'true'
@@ -101,7 +103,7 @@ jobs:
           VERSION="${{ steps.detect.outputs.version }}"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add specs/ public/data/ incoming/
+          git add -f specs/ public/data/ incoming/
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore(specs): add $VERSION and regenerate data"
           git push
@@ -119,7 +121,9 @@ jobs:
         run: git pull origin main
 
       - name: Install oasdiff
-        run: go install github.com/oasdiff/oasdiff@latest
+        run: |
+          go install github.com/oasdiff/oasdiff@latest
+          echo "$HOME/go/bin" >> "$GITHUB_PATH"
 
       - uses: pnpm/action-setup@v4
 
