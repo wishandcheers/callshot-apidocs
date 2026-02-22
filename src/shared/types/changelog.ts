@@ -2,10 +2,10 @@ export type ChangelogEntry = {
   id: string;
   text: string;
   level: number;
-  operation: string;
-  operationId: string;
-  path: string;
-  source: string;
+  operation?: string;
+  operationId?: string;
+  path?: string;
+  source?: string;
   section: string;
 };
 
@@ -22,10 +22,10 @@ export type BreakingEntry = {
   id: string;
   text: string;
   level: number;
-  operation: string;
-  operationId: string;
-  path: string;
-  source: string;
+  operation?: string;
+  operationId?: string;
+  path?: string;
+  source?: string;
   section: string;
 };
 

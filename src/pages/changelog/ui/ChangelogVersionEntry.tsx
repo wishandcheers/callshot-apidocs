@@ -152,10 +152,20 @@ function ChangeEntryRow({ entry }: { entry: ChangelogEntry }) {
         isBreaking && 'bg-destructive/5',
       )}
     >
-      <MethodBadge method={entry.operation} />
+      {entry.operation ? (
+        <MethodBadge method={entry.operation} />
+      ) : (
+        <Badge variant="outline" className="shrink-0 text-[10px]">
+          {entry.section?.toUpperCase() ?? 'SCHEMA'}
+        </Badge>
+      )}
       <div className="min-w-0 flex-1">
-        <p className="font-mono text-xs text-foreground">{entry.path}</p>
-        <p className="mt-0.5 text-xs text-muted-foreground">{entry.text}</p>
+        {entry.path && (
+          <p className="font-mono text-xs text-foreground">{entry.path}</p>
+        )}
+        <p className={cn('text-xs text-muted-foreground', entry.path && 'mt-0.5')}>
+          {entry.text}
+        </p>
       </div>
       {isBreaking && (
         <Badge variant="destructive" className="shrink-0">
