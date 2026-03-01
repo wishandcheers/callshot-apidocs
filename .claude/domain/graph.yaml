@@ -5,31 +5,111 @@
 version: 1
 project: "callshot-apidocs"
 
-# Bounded Contexts (mapped from FSD entities/ and features/)
-contexts: {}
-#  identity:
-#    description: "User authentication and profile"
-#    aggregates: [user]
-#    file: contexts/identity.md
+# Bounded Contexts (mapped from FSD layers)
+contexts:
+  versioning:
+    description: "Version management — manifest, version entries, stats, spec group metadata"
+    aggregates: [version-manifest, version-entry]
+    file: contexts/versioning.md
+  comparison:
+    description: "Diff computation — structural diffs, changelogs, breaking changes between version pairs"
+    aggregates: [diff-data, changelog-data, breaking-data]
+    file: contexts/comparison.md
+  documentation:
+    description: "API reference rendering — Redoc viewer with version/spec-type selection"
+    aggregates: [spec]
+    file: contexts/documentation.md
 
 # Entity Graph (adjacency list)
-entities: {}
-#  user:
-#    context: identity
-#    type: aggregate-root
-#    summary: "User account with profile info"
-#    file: entities/user.md
-#    relationships:
-#      - { target: order, type: "1:N", label: "places" }
-#    rules:
-#      - "Must be authenticated to access profile"
+entities:
+  version-manifest:
+    context: versioning
+    type: aggregate-root
+    summary: "Root manifest containing all versions, service name, and available diff pairs"
+    file: entities/version-manifest.md
+    relationships:
+      - { target: version-entry, type: "1:N", label: "contains" }
+    rules:
+      - "Fetched from /data/versions.json at runtime"
+      - "Generated at build time by generate-versions-index.mjs"
+
+  version-entry:
+    context: versioning
+    type: entity
+    summary: "Single API version with stats (path/endpoint counts per group) and optional diff summary"
+    file: entities/version-entry.md
+    relationships:
+      - { target: version-manifest, type: "N:1", label: "belongs to" }
+      - { target: diff-data, type: "1:N", label: "participates in (as from or to)" }
+    rules:
+      - "Stats split by spec group: api + admin"
+      - "diff field is null for the earliest version"
+
+  diff-data:
+    context: comparison
+    type: aggregate-root
+    summary: "Full diff between two versions, containing per-group raw diff, changelog, and breaking entries"
+    file: entities/diff-data.md
+    relationships:
+      - { target: version-entry, type: "N:1", label: "compares from/to" }
+      - { target: group-diff, type: "1:2", label: "contains (api + admin)" }
+    rules:
+      - "Pre-computed at build time using oasdiff"
+      - "Windowed: each version diffed against previous WINDOW_SIZE=3 versions"
+
+  group-diff:
+    context: comparison
+    type: value-object
+    summary: "Per-group (api or admin) diff containing raw diff, changelog entries, breaking entries, and summary counts"
+    file: entities/group-diff.md
+    relationships:
+      - { target: diff-data, type: "N:1", label: "part of" }
+      - { target: changelog-entry, type: "1:N", label: "contains" }
+    rules:
+      - "summary has counts: added, removed, modified, breaking"
+
+  changelog-entry:
+    context: comparison
+    type: value-object
+    summary: "Single changelog item with id, text, level, operation, path, and section"
+    file: entities/changelog-entry.md
+    relationships:
+      - { target: group-diff, type: "N:1", label: "belongs to" }
+    rules:
+      - "operation field is optional (schema-level changes omit it)"
+      - "level indicates severity (used for breaking detection)"
+      - "section categorizes the type of change"
+
+  spec:
+    context: documentation
+    type: entity
+    summary: "OpenAPI spec file for a given version and spec type (api or admin)"
+    file: entities/spec.md
+    relationships:
+      - { target: version-entry, type: "N:1", label: "belongs to version" }
+    rules:
+      - "Two spec types per version: apiDocs-api.json and apiDocs-admin.json"
+      - "Rendered by Redoc at /reference/:version"
+      - "Stored in specs/:version/ (source) and public/data/specs/:version/ (built)"
 
 # Cross-Entity Business Rules
-cross_rules: []
+cross_rules:
+  - "Spec groups (api/admin) partition all data — diffs, changelogs, stats are per-group"
+  - "Diff pairs are windowed (WINDOW_SIZE=3): not all version combinations have diffs"
+  - "All data is static JSON generated at build time — no runtime API server"
+  - "oasdiff is the sole diff engine — generates diff, changelog, and breaking JSON"
 
 # Cross-Entity Workflows (user-facing flows)
-workflows: {}
-#  checkout:
-#    description: "Cart -> Order -> Payment -> Confirmation"
-#    entities: [user, cart, order, payment]
-#    file: workflows/checkout.md
+workflows:
+  version-comparison:
+    description: "Select two versions → load diff → view per-group changelog/breaking/endpoint changes"
+    entities: [version-manifest, version-entry, diff-data, group-diff, changelog-entry]
+    file: workflows/version-comparison.md
+  api-reference:
+    description: "Select version + spec type (api/admin) → render OpenAPI spec via Redoc"
+    entities: [version-manifest, version-entry, spec]
+    file: workflows/api-reference.md
+  build-pipeline:
+    description: "Build-time: copy specs → generate meta → generate diffs → generate versions index"
+    entities: [spec, version-entry, version-manifest, diff-data]
+    file: workflows/build-pipeline.md
