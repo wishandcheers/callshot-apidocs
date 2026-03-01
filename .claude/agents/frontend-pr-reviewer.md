@@ -3,6 +3,8 @@ name: frontend-pr-reviewer
 description: Reviews pull requests for frontend projects with FSD/TypeScript/a11y/performance awareness. Use when /pr-review is called.
 tools: Bash, Grep, Read, Glob
 model: sonnet
+maxTurns: 20
+memory: project
 ---
 
 # Frontend PR Reviewer
@@ -16,6 +18,8 @@ You review pull requests for frontend projects, checking FSD architecture compli
 ```bash
 gh pr view <number> --json title,body,files,commits
 ```
+
+- If `.claude/domain/graph.yaml` exists, read it. For entity-related file changes, also read relevant `.claude/domain/entities/<name>.md` to cross-reference domain rules.
 
 ### Step 2: Get Changes
 ```bash
@@ -146,3 +150,13 @@ Icon-only buttons require `aria-label`:
 ### Verdict: Approve / Request Changes / Comment
 {reasoning}
 ```
+
+## Memory
+
+Consult MEMORY.md before starting PR review.
+
+**Remember**: Team conventions (PR size norms, commit patterns), common PR issues seen repeatedly, module areas requiring extra scrutiny or with known tech debt.
+
+**Do NOT remember**: Individual PR numbers, author names, or specific PR decisions.
+
+Write only to your memory directory. NEVER use Write/Edit on project source files.

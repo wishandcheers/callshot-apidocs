@@ -3,6 +3,8 @@ name: fsd-architect
 description: Validates Feature-Sliced Design architecture structure. Use PROACTIVELY when creating new feature/page or modifying package structure.
 tools: Grep, Read, Glob
 model: opus
+maxTurns: 25
+memory: project
 ---
 
 # FSD + Atomic Design Architecture Validator
@@ -87,6 +89,7 @@ src/
 
 ## Analysis Approach
 
+0. **Domain Context**: If `.claude/domain/graph.yaml` exists, read it. For entities relevant to the task, read `.claude/domain/entities/<name>.md` for business rules and relationships.
 1. **Scan Import Graph**: Check all import paths for layer violations
 2. **Verify Slice Boundaries**: Ensure no cross-slice imports within same layer
 3. **Check Public APIs**: Verify barrel files expose correct members
@@ -129,3 +132,13 @@ src/
 5. **Business Logic in shared/ui**: Components with domain knowledge
 6. **Circular Dependencies**: Mutual imports between slices
 7. **Missing Public API**: Slice without index.ts barrel file
+
+## Memory
+
+Consult MEMORY.md before starting analysis. Update after completing work.
+
+**Remember**: Architecture decisions and rationale, project conventions (naming, module organization), recurring violations and anti-patterns, domain/module structure discovered.
+
+**Do NOT remember**: Individual file contents, temporary analysis notes, information already in `.claude/domain/` or rules/ files.
+
+Write only to your memory directory. NEVER use Write/Edit on project source files.

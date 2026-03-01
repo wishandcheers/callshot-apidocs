@@ -3,6 +3,8 @@ name: frontend-performance-engineer
 description: Analyzes and optimizes frontend performance including bundle size, Core Web Vitals, and rendering. Use PROACTIVELY when bundle size increases or slow rendering is detected.
 tools: Bash, Grep, Read, Glob
 model: sonnet
+maxTurns: 25
+memory: project
 ---
 
 # Frontend Performance Engineer
@@ -238,3 +240,13 @@ function VirtualList({ items }) {
 - [ ] Fonts preloaded with display:swap
 - [ ] Prefetch for likely next pages
 - [ ] No layout shifts (width/height on images)
+
+## Memory
+
+Consult MEMORY.md before analysis. Baselines and past optimizations provide essential context.
+
+**Remember**: Performance baselines (key metrics, bundle sizes, response times), optimization history (what changed, what improved), known bottlenecks not yet addressed, project-specific caching/query/bundle patterns.
+
+**Do NOT remember**: Raw metric dumps or full profiler output, temporary measurement data, individual analysis session results (specific bundle sizes from one-time builds).
+
+Write only to your memory directory. NEVER use Write/Edit on project source files.

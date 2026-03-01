@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-- **Project Name**: [PROJECT_NAME]
-- **Description**: [PROJECT_DESCRIPTION]
-- **Repository**: [REPO_URL]
+- **Project Name**: callshot-apidocs
+- **Description**: OpenAPI documentation viewer with versioned spec management, diff comparison, and changelog tracking
+- **Repository**: https://github.com/wishandcheers/callshot-apidocs.git
 
 ## Clarify Before Action (REQUIRED)
 
@@ -12,6 +12,7 @@
 
 ### Step 1: Light Analysis First
 Before asking questions, quickly analyze:
+- If `.claude/domain/graph.yaml` exists, read it first for entity/relationship overview
 - Scan relevant FSD slices and components
 - Check existing patterns (CVA, hooks, stores)
 - Identify concrete implementation options
@@ -64,17 +65,15 @@ Request → Analyze → Parallel Task tools → Integrate → Respond
 | `frontend-pr-reviewer` | PR review, diff analysis | sonnet |
 | `a11y-auditor` | UI component a11y compliance | sonnet |
 | `frontend-performance-engineer` | Bundle analysis, CWV, rendering optimization | sonnet |
+| `domain-scanner` | Codebase scan → domain knowledge generation | sonnet |
+| `domain-updater` | Incremental domain update after commit (additive only) | sonnet |
 
 ### How to Use
 
-Launch via Task tool with `general-purpose` subagent + agent prompt:
+Launch via subagent with agent prompt file:
 
 ```
-Task(
-  subagent_type: "general-purpose",
-  prompt: "Read @agents/fsd-architect.md and apply it to: [specific task]",
-  model: "opus"
-)
+@"fsd-architect (agent)" "[specific task description]"
 ```
 
 ### When to Orchestrate
@@ -87,55 +86,71 @@ Task(
 | "Review this PR" | frontend-pr-reviewer |
 | "Optimize performance" | frontend-performance-engineer |
 | "Implement {page}" | fsd-architect + ui-component-reviewer |
+| "Explain domain model" | `/domain` skill (no agent needed) |
+| "Scan domain knowledge" | domain-scanner |
+| `/commit` with domain changes | domain-updater (auto, background) |
 
 ### Execution Rules
 
 1. **Parallel when independent**: Architecture + accessibility can run together
 2. **Sequential when dependent**: Run tests → analyze failures (if any)
-3. **Always integrate**: Combine agent outputs before final implementation
+3. **Always integrate**: Combine agent outputs before responding — summarize key findings, resolve conflicts between agents, then implement
 4. **Model selection**: Use specified model for cost/quality balance
+
+### When NOT to Use Agents
+- Simple edits (typo, rename, small config change) → direct work
+- Single-file changes with clear scope → direct work
+- Quick explanations or exploration → direct work
+- Tasks needing iterative user dialogue → stay in main conversation
 
 ## Tech Stack
 
 ### Frontend
 - **Language**: TypeScript (strict mode)
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS + CVA (Class Variance Authority) + cn()
-- **Testing**: Vitest + Testing Library + MSW
-- **Validation**: Zod (runtime type validation)
+- **Framework**: React 19 + Vite 6 (SWC plugin)
+- **Routing**: React Router DOM v7
+- **Styling**: Tailwind CSS v4 + CVA + cn()
+- **API Docs Renderer**: Redoc
+- **Build Pipeline**: Vite build + spec generation scripts
 
 ### Key Libraries
+- `redoc` + `styled-components` - OpenAPI spec rendering
+- `react-router-dom` - Client-side routing
 - `class-variance-authority` - Component variant management
 - `clsx` + `tailwind-merge` - Class utility (cn())
-- `@testing-library/react` - Component testing
-- `msw` - API mocking for tests
-- `zod` - Schema validation
+- `lucide-react` - Icons
+- `js-yaml` - YAML parsing (build scripts)
+
+## Domain Knowledge
+
+Use `/domain` to load pre-indexed business context. Eliminates full codebase scans for domain understanding.
+- Graph + entity files in `.claude/domain/` | Run `/domain scan` to generate/update.
 
 ## Architecture
 
 This project follows **Feature-Sliced Design (FSD) + Atomic Design (shared/ui)**.
 
-@rules/frontend/architecture.md
+> Detail: `rules/frontend/architecture.md` (auto-loaded)
 
 ## Component Patterns
 
-@rules/frontend/component-patterns.md
+> Detail: `rules/frontend/component-patterns.md` (auto-loaded)
 
 ## TypeScript Standards
 
-@rules/frontend/typescript.md
+> Detail: `rules/frontend/typescript.md` (auto-loaded)
 
 ## Testing Standards
 
-@rules/common/testing.md
+> Detail: `rules/common/testing.md` (auto-loaded)
 
 ## Security Guidelines
 
-@rules/common/security.md
+> Detail: `rules/common/security.md` (auto-loaded)
 
 ## Git Workflow
 
-@rules/common/git.md
+> Detail: `rules/common/git.md` (auto-loaded)
 
 ## Memory Logging (REQUIRED)
 
@@ -154,33 +169,43 @@ Log significant work to `.claude/memories/` for context preservation.
 .claude/memories/YYYY-MM-DD_brief-title.md
 ```
 
-See @rules/common/memory-logging.md for details.
+See `rules/common/memory-logging.md` (auto-loaded) for details.
 
 ## Optional Rules
 
-Uncomment to include when project uses these technologies:
+Uncomment to include when project uses these technologies (located in `.claude/docs/optional-rules/`):
 
-<!-- @rules/optional/storybook.md -->
-<!-- @rules/optional/i18n.md -->
-<!-- @rules/optional/pwa.md -->
+<!-- @docs/optional-rules/storybook.md -->
+<!-- @docs/optional-rules/i18n.md -->
+<!-- @docs/optional-rules/pwa.md -->
 
 ## Project-Specific Conventions
 
 ### Directory Structure
 ```
 src/
-├── app/          # Initialization, providers, routing, global styles
-├── pages/        # Route entry points
-├── widgets/      # Large composite blocks (Header, Sidebar)
-├── features/     # User interactions (auth, search, cart)
-├── entities/     # Business entities (user, product)
-└── shared/       # Reusable infrastructure
-    ├── ui/       # Atomic Design (atoms/molecules/organisms)
-    ├── lib/      # cn(), formatDate(), debounce()
-    ├── api/      # API client, interceptors
-    ├── config/   # Environment, constants
-    ├── hooks/    # Shared custom hooks
-    └── types/    # Shared type definitions
+├── app/              # Routes definition (React Router)
+├── pages/            # Page slices (FSD)
+│   ├── dashboard/    # Overview — stats, timeline, recent changes
+│   ├── reference/    # API reference — Redoc viewer + spec type tabs
+│   ├── diff/         # Diff comparison — version picker, endpoint diffs
+│   └── changelog/    # Changelog — version entries, filters
+├── widgets/          # Layout composites
+│   ├── app-shell/    # Root layout wrapper
+│   ├── header/       # Top nav bar
+│   └── sidebar/      # Side navigation
+└── shared/           # Reusable infrastructure
+    ├── ui/atoms/     # Badge, MethodBadge
+    ├── lib/          # cn(), format(), api client
+    ├── hooks/        # useVersions, useDiff, useChangelog, useTheme
+    └── types/        # version, diff, changelog types
+
+specs/                # Versioned OpenAPI specs (v0.2.1 … v0.9.1)
+scripts/              # Build-time generators
+├── generate-version-meta.mjs
+├── generate-diffs.mjs
+├── generate-versions-index.mjs
+└── copy-specs-to-public.mjs
 ```
 
 ### Naming Conventions
@@ -207,8 +232,7 @@ import { cn } from '@/shared/lib/cn';
 
 ### Environment Variables
 ```
-VITE_API_URL=https://api.example.com
-VITE_APP_TITLE=My App
+VITE_BASE_PATH=/    # Base path for deployment (defaults to /)
 ```
 
 ## Critical Build Commands
@@ -217,24 +241,29 @@ VITE_APP_TITLE=My App
 # Development server
 pnpm dev
 
-# Type checking
-npx tsc --noEmit
-
-# Build for production
+# Build (generate specs + typecheck + vite build)
 pnpm build
 
-# Run tests
-npx vitest run
-
-# Run tests with coverage
-npx vitest run --coverage
-
-# Lint
-npx eslint src/
+# Generate spec assets only
+pnpm generate              # all generators
+pnpm generate:specs        # copy specs to public/
+pnpm generate:diffs        # compute version diffs
+pnpm generate:meta         # version metadata
+pnpm generate:index        # versions index
 
 # Preview production build
 pnpm preview
 ```
+
+## Testing (REQUIRED)
+
+**Always use the `/test` skill** to run tests. Do NOT run `npx vitest` directly via Bash.
+
+- After writing or modifying code, invoke `/test` via the Skill tool to verify changes
+- The `/test` skill provides: optimized output levels, automatic failure analysis (frontend-debugger), auto-fix & re-test loop (max 3 attempts)
+- Specific test: `/test LoginForm.test.tsx`
+- With coverage: `/test --coverage`
+- Failed only: `/test --failed`
 
 ## Important Notes
 

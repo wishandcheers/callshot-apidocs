@@ -2,173 +2,68 @@
 
 ## XSS Prevention
 
-### Content Rendering
+- **NEVER** use `dangerouslySetInnerHTML` without DOMPurify: `DOMPurify.sanitize(content)`
+- **BEST**: Use text content (`<p>{userInput}</p>`) -- framework auto-escapes
+- **Validate URLs**: Only allow `http:` / `https:` protocols (block `javascript:`)
+
 ```typescript
-// NEVER: dangerouslySetInnerHTML without sanitization
-<div dangerouslySetInnerHTML={{ __html: userInput }} />  // BAD
-
-// GOOD: Use DOMPurify for HTML content
-import DOMPurify from 'dompurify';
-<div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(content) }} />
-
-// BEST: Avoid HTML rendering, use text content
-<p>{userInput}</p>  // Framework auto-escapes
-```
-
-### URL Handling
-```typescript
-// NEVER: Unvalidated URLs
-<a href={userProvidedUrl}>Link</a>  // BAD (javascript: protocol)
-
-// GOOD: Validate URL protocol
 function isSafeUrl(url: string): boolean {
-  try {
-    const parsed = new URL(url);
-    return ['http:', 'https:'].includes(parsed.protocol);
-  } catch {
-    return false;
-  }
+  try { return ['http:', 'https:'].includes(new URL(url).protocol); }
+  catch { return false; }
 }
 ```
 
 ## Content Security Policy (CSP)
 
-### Meta Tag
-```html
-<meta http-equiv="Content-Security-Policy"
-  content="
-    default-src 'self';
-    script-src 'self';
-    style-src 'self' 'unsafe-inline';
-    img-src 'self' data: https:;
-    connect-src 'self' https://api.example.com;
-    font-src 'self';
-    object-src 'none';
-    frame-ancestors 'none';
-  "
-/>
-```
+Set via meta tag: `default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://api.example.com; object-src 'none'; frame-ancestors 'none'`
 
 ## Token Management
 
-### Storage Rules
-```typescript
-// NEVER: localStorage for tokens
-localStorage.setItem('token', accessToken);  // BAD (XSS accessible)
+| Method | Use |
+|--------|-----|
+| `httpOnly` cookie (server-set) | PREFERRED for auth tokens |
+| In-memory variable | OK for short-lived access tokens |
+| `localStorage` | NEVER for tokens (XSS accessible) |
 
-// GOOD: httpOnly cookie (server-set)
-// Server sets token as httpOnly, secure, sameSite cookie
-
-// OK: In-memory for short-lived access tokens
-let accessToken: string | null = null;
-
-export const tokenStore = {
-  set: (token: string) => { accessToken = token; },
-  get: () => accessToken,
-  clear: () => { accessToken = null; },
-};
-```
-
-### Auth Header
-```typescript
-// API client interceptor
-apiClient.interceptors.request.use((config) => {
-  const token = tokenStore.get();
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-  return config;
-});
-```
+Attach via interceptor: `config.headers.Authorization = \`Bearer ${token}\``
 
 ## Input Validation
 
-### Client-Side Validation
-```typescript
-// Always validate with Zod schema
-const loginSchema = z.object({
-  email: z.string().email('Valid email required'),
-  password: z.string().min(8, 'Minimum 8 characters'),
-});
+- **Always** validate with Zod schemas client-side
+- **Never** trust client validation alone -- server MUST validate independently
+- **File uploads**: Validate MIME type against allowlist + enforce max size
 
-// Never trust client validation alone
-// Server MUST validate independently
-```
-
-### File Upload
 ```typescript
-// Validate file type and size
 const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 const MAX_SIZE = 5 * 1024 * 1024; // 5MB
-
-function validateFile(file: File): boolean {
-  if (!ALLOWED_TYPES.includes(file.type)) return false;
-  if (file.size > MAX_SIZE) return false;
-  return true;
-}
 ```
 
 ## Sensitive Data
 
-### Environment Variables
-```typescript
-// .env files: NEVER commit to git
-// .env.example: Template without values
-
-// Vite: Only VITE_ prefixed vars are exposed
-VITE_API_URL=https://api.example.com     // OK: public
-DB_PASSWORD=secret                        // Safe: not exposed to client
-
-// NEVER: Sensitive data in client-side env vars
-VITE_API_SECRET=xxx  // BAD: visible in browser
-```
-
-### Logging
-```typescript
-// NEVER log sensitive data
-console.log('User token:', token);     // BAD
-console.log('Password:', password);    // BAD
-
-// GOOD: Log safe identifiers only
-console.log('User authenticated:', userId);
-```
+- `.env` files: NEVER commit to git (use `.env.example` as template)
+- Only `VITE_` prefixed vars are exposed to client -- NEVER put secrets in `VITE_` vars
+- NEVER log tokens, passwords, or PII -- log safe identifiers only
 
 ## Dependency Security
 
-### Audit Commands
 ```bash
-pnpm audit
-
-# Auto-fix
-pnpm audit --fix
+pnpm audit          # Check vulnerabilities
+pnpm audit --fix    # Auto-fix
 ```
 
-### Rules
-- Regularly update dependencies
-- Review changelogs before major updates
-- Avoid deprecated packages
-- Check bundle for unintended inclusions
+Regularly update deps, review changelogs before major updates, check bundle for unintended inclusions.
 
 ## Forbidden Patterns
 
+| Pattern | Why |
+|---------|-----|
+| `eval()` / `new Function()` | Code injection |
+| `document.write()` | XSS vector |
+| `element.setAttribute('onclick', userInput)` | Event handler injection |
+| `postMessage` without origin check | Cross-origin attack |
+
+Always verify `postMessage` origin:
 ```typescript
-// NEVER: eval or Function constructor
-eval(userInput);
-new Function(userInput);
-
-// NEVER: document.write
-document.write(content);
-
-// NEVER: Inline event handlers from user data
-element.setAttribute('onclick', userInput);
-
-// NEVER: postMessage without origin check
-window.addEventListener('message', (e) => {
-  // BAD: no origin verification
-  processData(e.data);
-});
-
-// GOOD: Always verify origin
 window.addEventListener('message', (e) => {
   if (e.origin !== 'https://trusted.example.com') return;
   processData(e.data);

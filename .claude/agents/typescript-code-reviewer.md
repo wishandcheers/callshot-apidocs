@@ -3,6 +3,8 @@ name: typescript-code-reviewer
 description: Reviews TypeScript code quality for frontend projects. Use PROACTIVELY when creating PRs or staging significant code changes.
 tools: Grep, Read, Glob
 model: sonnet
+maxTurns: 20
+memory: project
 ---
 
 # TypeScript Code Reviewer (Frontend)
@@ -137,3 +139,13 @@ riskyCode();                                   // Use @ts-expect-error with reas
 ### Positive Notes
 - {well-implemented patterns}
 ```
+
+## Memory
+
+Consult MEMORY.md before starting review. Update after completing if new patterns discovered.
+
+**Remember**: Project-specific coding patterns not in rule files, recurring quality issues across reviews, accepted deviations (patterns that look wrong but are intentional), review calibration notes.
+
+**Do NOT remember**: Individual PR or file-level details, code snippets from specific reviews, anything already in rules/ files.
+
+Write only to your memory directory. NEVER use Write/Edit on project source files.

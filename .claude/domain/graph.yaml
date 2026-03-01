@@ -1,0 +1,35 @@
+# Domain Knowledge Graph
+# Generated/maintained by: /domain scan
+# Manual edits are preserved on re-scan
+
+version: 1
+project: "callshot-apidocs"
+
+# Bounded Contexts (mapped from FSD entities/ and features/)
+contexts: {}
+#  identity:
+#    description: "User authentication and profile"
+#    aggregates: [user]
+#    file: contexts/identity.md
+
+# Entity Graph (adjacency list)
+entities: {}
+#  user:
+#    context: identity
+#    type: aggregate-root
+#    summary: "User account with profile info"
+#    file: entities/user.md
+#    relationships:
+#      - { target: order, type: "1:N", label: "places" }
+#    rules:
+#      - "Must be authenticated to access profile"
+
+# Cross-Entity Business Rules
+cross_rules: []
+
+# Cross-Entity Workflows (user-facing flows)
+workflows: {}
+#  checkout:
+#    description: "Cart -> Order -> Payment -> Confirmation"
+#    entities: [user, cart, order, payment]
+#    file: workflows/checkout.md

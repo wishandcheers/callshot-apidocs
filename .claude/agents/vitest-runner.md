@@ -3,6 +3,7 @@ name: vitest-runner
 description: Executes and analyzes Vitest tests for frontend projects. Use when running tests, analyzing coverage, or debugging test issues.
 tools: Bash, Grep, Read, Glob
 model: haiku
+maxTurns: 15
 ---
 
 # Vitest Test Runner & Analyzer

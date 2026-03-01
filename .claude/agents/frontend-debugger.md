@@ -3,6 +3,8 @@ name: frontend-debugger
 description: Systematic debugging for frontend build, runtime, and test failures. Use PROACTIVELY when tests fail, build errors occur, or runtime exceptions are detected.
 tools: Bash, Grep, Read, Glob
 model: sonnet
+maxTurns: 30
+memory: local
 ---
 
 # Frontend Debugger
@@ -201,3 +203,11 @@ pnpm build 2>&1 | tail -30
 | Act warning | Wrap state updates in `act()` or use `findBy` |
 | Tailwind class missing | Check `content` paths in tailwind.config |
 | Hydration mismatch | Check server/client rendering consistency |
+
+## Memory
+
+Consult MEMORY.md at start of debugging. Past solutions save time.
+
+**Remember**: Resolved issue patterns (generalized root cause → fix), environment quirks and configuration gotchas, effective debug commands/techniques for this project, common error signatures and their typical causes.
+
+**Do NOT remember**: Specific error messages with sensitive data, one-off typo fixes, issues already in project README or setup docs.

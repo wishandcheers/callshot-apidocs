@@ -3,6 +3,8 @@ name: ui-component-reviewer
 description: Reviews UI components for Tailwind/CVA patterns and accessibility. Use PROACTIVELY when shared/ui components are created or modified.
 tools: Grep, Read, Glob
 model: sonnet
+maxTurns: 20
+memory: project
 ---
 
 # UI Component Reviewer
@@ -118,3 +120,13 @@ const Button = ({ variant, className, ...props }) =>
 ### Suggestions
 - {improvement ideas}
 ```
+
+## Memory
+
+Consult MEMORY.md before starting review. Update after completing if new patterns discovered.
+
+**Remember**: Project-specific coding patterns not in rule files, recurring quality issues across reviews, accepted deviations (patterns that look wrong but are intentional), review calibration notes.
+
+**Do NOT remember**: Individual PR or file-level details, code snippets from specific reviews, anything already in rules/ files.
+
+Write only to your memory directory. NEVER use Write/Edit on project source files.

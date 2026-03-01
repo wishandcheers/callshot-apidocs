@@ -1,6 +1,6 @@
 ---
 name: commit
-description: Create conventional commit for frontend projects. Delegates analysis to subagent for token efficiency. Triggers /record for significant changes.
+description: Create conventional commit for frontend projects. Delegates analysis to subagent for token efficiency. Triggers /record for significant changes. Triggers domain sync for domain-related changes.
 ---
 
 # Git Commit Skill
@@ -29,7 +29,25 @@ Prompt: |
      - Body: bullet points of changes (if needed)
      - FileCount: number of files changed
      - IsSignificant: true/false (see criteria below)
+     - DomainImpact: none | additive | structural (see criteria below)
+     - DomainFiles: [list of changed files matching domain source paths]
 ```
+
+### DomainImpact Classification
+
+**Domain source file patterns** (TypeScript/FSD):
+- `src/entities/*/model/*.ts`
+- `src/entities/*/api/*.ts`
+- `src/shared/types/*.ts`
+- `src/features/*/model/*.ts`
+
+**Classification rules** (conservative — when ambiguous, choose `structural`):
+
+| Classification | Condition | Action |
+|----------------|-----------|--------|
+| `none` | No domain source files changed | Skip domain sync |
+| `additive` | Single entity + pure additions + no relationship changes | domain-updater agent (background) |
+| `structural` | All other cases: 2+ entities, deletions/renames, new cross-entity references, ambiguous | Recommend `/domain scan` |
 
 ### Step 2: Generate Commit
 Using subagent's analysis, create commit:
@@ -66,6 +84,24 @@ git commit -m "<type>(<scope>): <description>
 Skill(skill: "record")
 ```
 
+### Step 4: Domain Sync (Conditional)
+
+**Prerequisites**: `.claude/domain/graph.yaml` must exist and contain entity definitions.
+
+Based on the subagent's DomainImpact classification:
+
+- **`none`**: Skip — no domain files affected.
+- **`additive`**: Launch `domain-updater` agent in background:
+  ```
+  Task(subagent_type: "general-purpose", run_in_background: true)
+  Prompt: @"domain-updater (agent)" "Apply incremental domain update for the latest commit."
+  ```
+  The agent will self-assess and may escalate to recommend `/domain scan`.
+- **`structural`**: Do NOT auto-run. Inform the user:
+  ```
+  Domain-related structural changes detected. Run `/domain scan` to update domain knowledge.
+  ```
+
 ## Type/Scope Reference
 See [references/conventions.md](references/conventions.md) for:
 - Type selection guide
@@ -77,3 +113,4 @@ See [references/conventions.md](references/conventions.md) for:
 - Keep subject under 50 chars
 - Wrap body at 72 chars
 - Memory is automatic for significant commits
+- Domain sync is automatic for domain-related commits (requires .claude/domain/graph.yaml)

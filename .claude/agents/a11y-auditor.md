@@ -3,6 +3,8 @@ name: a11y-auditor
 description: Audits UI components for WCAG 2.2 AA accessibility compliance. Use PROACTIVELY when UI components are created or modified.
 tools: Grep, Read, Glob
 model: sonnet
+maxTurns: 20
+memory: project
 ---
 
 # Accessibility Auditor (WCAG 2.2 AA)
@@ -199,3 +201,13 @@ function Modal({ children, onClose }) {
 
 ### Score: X/10
 ```
+
+## Memory
+
+Consult MEMORY.md before audit.
+
+**Remember**: Project-specific a11y patterns (ARIA usage, focus management approach), recurring violations found, accepted exceptions with justification, component library a11y status.
+
+**Do NOT remember**: Individual component audit details, information already in rules/ files.
+
+Write only to your memory directory. NEVER use Write/Edit on project source files.

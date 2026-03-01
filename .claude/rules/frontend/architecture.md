@@ -1,72 +1,31 @@
 # Frontend Architecture: Feature-Sliced Design + Atomic Design
 
-## Overview
-
-A frontend architecture combining FSD (Feature-Sliced Design) with Atomic Design.
-Framework-agnostic: applicable to React, Vue, Svelte, or any framework.
+Framework-agnostic (React, Vue, Svelte). Combines FSD layers with Atomic Design in `shared/ui`.
 
 ## Layer Structure (FSD)
 
 ```
 src/
-├── app/                    # APPLICATION LAYER
-│   ├── providers/          # Global Provider/Context setup
-│   ├── routes/             # Routing configuration
-│   ├── styles/             # Global styles, Tailwind setup
-│   └── index.ts            # App entry point
-│
-├── pages/                  # PAGE LAYER
-│   └── [page-name]/
-│       ├── ui/             # Page components
-│       ├── model/          # Page state/logic
-│       ├── api/            # Page-specific API calls
-│       └── index.ts        # Public API
-│
-├── widgets/                # WIDGET LAYER
-│   └── [widget-name]/
-│       ├── ui/             # Widget components
-│       ├── model/          # Widget state/logic
-│       └── index.ts        # Public API
-│
-├── features/               # FEATURE LAYER
-│   └── [feature-name]/
-│       ├── ui/             # Feature UI
-│       ├── model/          # Business logic, state
-│       ├── api/            # API calls
-│       ├── lib/            # Feature-specific utilities
-│       └── index.ts        # Public API
-│
-├── entities/               # ENTITY LAYER
-│   └── [entity-name]/
-│       ├── ui/             # Entity UI (UserCard, ProductItem)
-│       ├── model/          # Entity types, stores
-│       ├── api/            # Entity CRUD API
-│       └── index.ts        # Public API
-│
-└── shared/                 # SHARED LAYER
-    ├── ui/                 # Atomic Design components
-    │   ├── atoms/          # Button, Input, Label, Icon
-    │   ├── molecules/      # SearchBar, FormField, Card
-    │   └── organisms/      # Header, DataTable, Modal
-    ├── lib/                # Utilities (cn(), formatDate(), debounce())
-    ├── api/                # API client, interceptors
-    ├── config/             # Environment config, constants
-    ├── hooks/              # Shared custom hooks
-    └── types/              # Shared type definitions
+├── app/          # Providers, routes, global styles, entry point
+├── pages/        # Route entry points (ui/, model/, api/, index.ts)
+├── widgets/      # Large composite blocks (ui/, model/, index.ts)
+├── features/     # User interactions (ui/, model/, api/, lib/, index.ts)
+├── entities/     # Business entities (ui/, model/, api/, index.ts)
+└── shared/
+    ├── ui/       # atoms/ → molecules/ → organisms/
+    ├── lib/      # cn(), formatDate(), debounce()
+    ├── api/      # API client, interceptors
+    ├── config/   # Environment, constants
+    ├── hooks/    # Shared custom hooks
+    └── types/    # Shared type definitions
 ```
 
 ## Dependency Rules (Critical)
 
-### The Golden Rule
-**Dependencies MUST flow top-to-bottom only.**
-
 ```
 app → pages → widgets → features → entities → shared
-───────────────────────────────────────────────────►
-                Higher to Lower ONLY
+                Higher to Lower ONLY ►
 ```
-
-### Layer Restrictions
 
 | Layer | Can Import | Cannot Import |
 |-------|-----------|---------------|
@@ -77,92 +36,43 @@ app → pages → widgets → features → entities → shared
 | pages | widgets, features, entities, shared | app |
 | app | All lower layers | - |
 
-### Cross-Slice Import Forbidden
-
-No direct import between slices within the same layer:
+**Cross-slice import forbidden** — no direct import between slices in the same layer:
 ```typescript
-// FORBIDDEN: feature importing from another feature
-// features/cart/model/cart.store.ts
-import { useAuth } from '@/features/auth/model';  // BAD
-
-// ALLOWED: compose in higher layer
-// widgets/checkout/ui/Checkout.tsx
+// BAD: features/cart importing from features/auth
+import { useAuth } from '@/features/auth/model';
+// GOOD: compose in higher layer (widgets/checkout)
 import { useAuth } from '@/features/auth';
 import { useCart } from '@/features/cart';
 ```
 
 ## Slice Structure
 
-Each slice follows the same segment structure:
+Each slice: `ui/` (components) + `model/` (state, types) + `api/` (queries) + `lib/` (utils) + `index.ts` (public API).
 
-```
-[slice-name]/
-├── ui/            # Components (presentation)
-│   ├── Component.tsx
-│   └── index.ts
-├── model/         # State, business logic
-│   ├── types.ts   # Type definitions
-│   ├── store.ts   # State management
-│   └── index.ts
-├── api/           # API calls
-│   ├── queries.ts # Data fetching
-│   └── index.ts
-├── lib/           # Slice-specific utilities
-└── index.ts       # Public API (barrel file)
-```
-
-### Public API (index.ts)
-
-Export only what is intentionally exposed:
 ```typescript
-// features/auth/index.ts
+// features/auth/index.ts — export only public API
 export { LoginForm } from './ui/LoginForm';
 export { useAuth } from './model/auth.store';
 export type { User, AuthState } from './model/types';
-
-// Internal implementation NOT exported
-// useTokenRefresh, parseJwt are internal only
+// Internal: useTokenRefresh, parseJwt NOT exported
 ```
 
 ## Atomic Design in shared/ui
 
-### Atoms
-- Smallest indivisible UI elements
-- No business logic, controlled by props only
-- Examples: Button, Input, Label, Badge, Icon, Spinner
+| Level | Description | Examples |
+|-------|-------------|---------|
+| **Atoms** | Smallest indivisible, no business logic | Button, Input, Label, Badge, Icon |
+| **Molecules** | Atom combinations, single purpose | SearchBar, FormField, Card |
+| **Organisms** | Complex blocks, independently meaningful | Header, DataTable, Modal |
 
-### Molecules
-- Combinations of atoms, single purpose
-- Examples: SearchBar (Input + Button), FormField (Label + Input + Error)
+Import rule: Atoms use primitives only → Molecules use atoms → Organisms use atoms + molecules.
 
-### Organisms
-- Complex UI blocks, independently meaningful
-- Examples: Header, DataTable, Modal, Sidebar
+## Anti-Patterns
 
-### Rules
-```typescript
-// Atoms: use only framework primitives
-// shared/ui/atoms/Button.tsx
-const Button = ({ children, ...props }) => (
-  <button {...props}>{children}</button>
-);
-
-// Molecules: use only atoms
-// shared/ui/molecules/SearchBar.tsx
-import { Button, Input } from '@/shared/ui/atoms';
-
-// Organisms: use atoms + molecules
-// shared/ui/organisms/Header.tsx
-import { Button } from '@/shared/ui/atoms';
-import { SearchBar } from '@/shared/ui/molecules';
-```
-
-## Anti-Patterns to Avoid
-
-1. **Circular Dependencies**: Circular references within same layer
-2. **God Component**: All logic concentrated in one component
-3. **Prop Drilling**: Deep props passing (use state management instead)
-4. **FSD Layer Bypass**: Skipping upper layers to import
-5. **Barrel File Bloat**: Unnecessary re-exports increasing bundle size
-6. **Business Logic in shared/ui**: Domain knowledge in shared UI components
-7. **Direct API Call in Component**: Calling fetch/axios directly in components
+1. **Circular Dependencies**: References within same layer
+2. **God Component**: All logic in one component
+3. **Prop Drilling**: Use state management instead
+4. **FSD Layer Bypass**: Importing from higher layers
+5. **Barrel File Bloat**: Unnecessary re-exports increasing bundle
+6. **Business Logic in shared/ui**: Domain knowledge in shared components
+7. **Direct API in Component**: Call fetch/axios directly in components
