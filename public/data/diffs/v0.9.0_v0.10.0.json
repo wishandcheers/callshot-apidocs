@@ -1,6 +1,6 @@
 {
   "fromVersion": "v0.9.0",
-  "toVersion": "v0.9.1",
+  "toVersion": "v0.10.0",
   "groups": {
     "api": {
       "diff": {
@@ -15,29 +15,29 @@
           },
           "version": {
             "from": "0.9.0",
-            "to": "0.9.1"
+            "to": "0.10.0"
           }
         },
         "paths": {
           "added": [
             "/api/shutter/statistics",
-            "/api/storage/presigned-url",
-            "/api/shutter/me",
-            "/api/shutter/leaderboard",
             "/api/storage/complete",
-            "/api/shutter/users/{userId}"
+            "/api/storage/presigned-url",
+            "/api/shutter/users/{userId}",
+            "/api/shutter/me",
+            "/api/shutter/leaderboard"
           ],
           "deleted": [
-            "/api/photos",
             "/api/photos/{id}",
-            "/api/photos/my/drafts",
-            "/api/photos/my/published",
-            "/api/my/submissions",
-            "/api/photos/clusters",
-            "/api/photos/drafts/{id}/publish",
+            "/api/photos",
             "/api/photos/drafts/{id}",
+            "/api/photos/my",
+            "/api/photos/drafts/{id}/publish",
             "/api/photos/cluster-area",
-            "/api/photos/my"
+            "/api/photos/my/published",
+            "/api/photos/clusters",
+            "/api/photos/my/drafts",
+            "/api/my/submissions"
           ],
           "modified": {
             "/api/hashtags": {
@@ -2833,72 +2833,22 @@
               "operations": {
                 "modified": {
                   "GET": {
+                    "description": {
+                      "from": "지정된 클러스터 영역(중심점 + 반지름) 내의 모든 사진을 조회합니다.",
+                      "to": "지정된 영역(BoundingBox) 내의 사진 목록을 정렬 기준에 따라 조회합니다."
+                    },
                     "parameters": {
-                      "modified": {
-                        "query": {
-                          "request": {
-                            "schema": {
-                              "description": {
-                                "from": "",
-                                "to": "클러스터 영역 내 사진 조회 요청"
-                              },
-                              "properties": {
-                                "modified": {
-                                  "latitude": {
-                                    "description": {
-                                      "from": "",
-                                      "to": "중심점 위도"
-                                    },
-                                    "example": {
-                                      "from": null,
-                                      "to": 37.5665
-                                    }
-                                  },
-                                  "longitude": {
-                                    "description": {
-                                      "from": "",
-                                      "to": "중심점 경도"
-                                    },
-                                    "example": {
-                                      "from": null,
-                                      "to": 126.978
-                                    }
-                                  },
-                                  "radius": {
-                                    "description": {
-                                      "from": "",
-                                      "to": "검색 반경 (미터)"
-                                    },
-                                    "example": {
-                                      "from": null,
-                                      "to": 100
-                                    }
-                                  },
-                                  "size": {
-                                    "description": {
-                                      "from": "",
-                                      "to": "조회 최대 수"
-                                    },
-                                    "example": {
-                                      "from": null,
-                                      "to": 100
-                                    }
-                                  },
-                                  "sort": {
-                                    "description": {
-                                      "from": "",
-                                      "to": "정렬 옵션"
-                                    },
-                                    "example": {
-                                      "from": null,
-                                      "to": "DISTANCE_ASC"
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
+                      "added": {
+                        "query": [
+                          "boundingBox",
+                          "sort",
+                          "size"
+                        ]
+                      },
+                      "deleted": {
+                        "query": [
+                          "request"
+                        ]
                       }
                     },
                     "responses": {
@@ -3057,62 +3007,21 @@
               "operations": {
                 "modified": {
                   "GET": {
+                    "description": {
+                      "from": "지도에 표시할 사진 클러스터를 조회합니다.",
+                      "to": "지도에 표시할 사진 클러스터를 조회합니다. BoundingBox와 zoomLevel 기반으로 tile 클러스터링합니다."
+                    },
                     "parameters": {
-                      "modified": {
-                        "query": {
-                          "request": {
-                            "schema": {
-                              "description": {
-                                "from": "",
-                                "to": "사진 클러스터 조회 요청"
-                              },
-                              "properties": {
-                                "modified": {
-                                  "clusterDistance": {
-                                    "description": {
-                                      "from": "",
-                                      "to": "클러스터링 거리 (미터)"
-                                    },
-                                    "example": {
-                                      "from": null,
-                                      "to": 100
-                                    }
-                                  },
-                                  "latitude": {
-                                    "description": {
-                                      "from": "",
-                                      "to": "중심점 위도"
-                                    },
-                                    "example": {
-                                      "from": null,
-                                      "to": 37.5665
-                                    }
-                                  },
-                                  "longitude": {
-                                    "description": {
-                                      "from": "",
-                                      "to": "중심점 경도"
-                                    },
-                                    "example": {
-                                      "from": null,
-                                      "to": 126.978
-                                    }
-                                  },
-                                  "searchDistance": {
-                                    "description": {
-                                      "from": "",
-                                      "to": "검색 반경 (미터)"
-                                    },
-                                    "example": {
-                                      "from": null,
-                                      "to": 5000
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
+                      "added": {
+                        "query": [
+                          "boundingBox",
+                          "zoomLevel"
+                        ]
+                      },
+                      "deleted": {
+                        "query": [
+                          "request"
+                        ]
                       }
                     },
                     "responses": {
@@ -3580,25 +3489,27 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseRankStatisticsResponse",
-              "BaseResponsePresignedUrlResponse",
-              "LeaderboardEntryResponse",
-              "BaseResponseShutterResponse",
-              "BaseResponseLeaderboardResponse",
               "LeaderboardResponse",
-              "ShutterResponse",
-              "RankStatisticsResponse",
               "PresignedUrlResponse",
+              "BaseResponseRankStatisticsResponse",
+              "RankStatisticsResponse",
+              "BaseResponseLeaderboardResponse",
+              "ShutterResponse",
               "CompleteUploadRequest",
-              "ShutterSummary",
-              "PresignedUrlRequest"
+              "BaseResponseShutterResponse",
+              "LeaderboardEntryResponse",
+              "BaseResponsePresignedUrlResponse",
+              "PresignedUrlRequest",
+              "ShutterSummaryInfo"
             ],
             "deleted": [
-              "SubmissionPhotoInfoDto",
-              "SubmissionRequestInfoDto",
               "MySubmissionsResponse",
+              "MySubmissionItemDto",
+              "ClusterAreaRequest",
               "BaseResponseMySubmissionsResponse",
-              "MySubmissionItemDto"
+              "SubmissionRequestInfoDto",
+              "SubmissionPhotoInfoDto",
+              "PhotoClusterRequest"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -5587,66 +5498,6 @@
                   }
                 }
               },
-              "ClusterAreaRequest": {
-                "description": {
-                  "from": "",
-                  "to": "클러스터 영역 내 사진 조회 요청"
-                },
-                "properties": {
-                  "modified": {
-                    "latitude": {
-                      "description": {
-                        "from": "",
-                        "to": "중심점 위도"
-                      },
-                      "example": {
-                        "from": null,
-                        "to": 37.5665
-                      }
-                    },
-                    "longitude": {
-                      "description": {
-                        "from": "",
-                        "to": "중심점 경도"
-                      },
-                      "example": {
-                        "from": null,
-                        "to": 126.978
-                      }
-                    },
-                    "radius": {
-                      "description": {
-                        "from": "",
-                        "to": "검색 반경 (미터)"
-                      },
-                      "example": {
-                        "from": null,
-                        "to": 100
-                      }
-                    },
-                    "size": {
-                      "description": {
-                        "from": "",
-                        "to": "조회 최대 수"
-                      },
-                      "example": {
-                        "from": null,
-                        "to": 100
-                      }
-                    },
-                    "sort": {
-                      "description": {
-                        "from": "",
-                        "to": "정렬 옵션"
-                      },
-                      "example": {
-                        "from": null,
-                        "to": "DISTANCE_ASC"
-                      }
-                    }
-                  }
-                }
-              },
               "DraftPhotoResponse": {
                 "description": {
                   "from": "",
@@ -5948,56 +5799,6 @@
                             }
                           }
                         }
-                      }
-                    }
-                  }
-                }
-              },
-              "PhotoClusterRequest": {
-                "description": {
-                  "from": "",
-                  "to": "사진 클러스터 조회 요청"
-                },
-                "properties": {
-                  "modified": {
-                    "clusterDistance": {
-                      "description": {
-                        "from": "",
-                        "to": "클러스터링 거리 (미터)"
-                      },
-                      "example": {
-                        "from": null,
-                        "to": 100
-                      }
-                    },
-                    "latitude": {
-                      "description": {
-                        "from": "",
-                        "to": "중심점 위도"
-                      },
-                      "example": {
-                        "from": null,
-                        "to": 37.5665
-                      }
-                    },
-                    "longitude": {
-                      "description": {
-                        "from": "",
-                        "to": "중심점 경도"
-                      },
-                      "example": {
-                        "from": null,
-                        "to": 126.978
-                      }
-                    },
-                    "searchDistance": {
-                      "description": {
-                        "from": "",
-                        "to": "검색 반경 (미터)"
-                      },
-                      "example": {
-                        "from": null,
-                        "to": 5000
                       }
                     }
                   }
@@ -6888,8 +6689,56 @@
           "section": "paths"
         },
         {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'boundingBox'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'boundingBox'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "request-parameter-removed",
+          "text": "deleted the 'query' request parameter 'request'",
+          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "request-parameter-removed",
+          "text": "deleted the 'query' request parameter 'request'",
+          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
           "id": "api-schema-removed",
           "text": "removed the schema 'BaseResponseMySubmissionsResponse'",
+          "level": 1,
+          "section": "components"
+        },
+        {
+          "id": "api-schema-removed",
+          "text": "removed the schema 'ClusterAreaRequest'",
           "level": 1,
           "section": "components"
         },
@@ -6902,6 +6751,12 @@
         {
           "id": "api-schema-removed",
           "text": "removed the schema 'MySubmissionsResponse'",
+          "level": 1,
+          "section": "components"
+        },
+        {
+          "id": "api-schema-removed",
+          "text": "removed the schema 'PhotoClusterRequest'",
           "level": 1,
           "section": "components"
         },
@@ -7074,7 +6929,37 @@
           "operation": "GET",
           "operationId": "profile",
           "path": "/api/profile",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-optional-request-parameter",
+          "text": "added the new optional 'query' request parameter 'size'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-optional-request-parameter",
+          "text": "added the new optional 'query' request parameter 'sort'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-optional-request-parameter",
+          "text": "added the new optional 'query' request parameter 'zoomLevel'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
           "section": "paths"
         },
         {
@@ -7084,7 +6969,7 @@
           "operation": "GET",
           "operationId": "getLeaderboard",
           "path": "/api/shutter/leaderboard",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
           "section": "paths"
         },
         {
@@ -7094,7 +6979,7 @@
           "operation": "GET",
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
           "section": "paths"
         },
         {
@@ -7104,7 +6989,7 @@
           "operation": "GET",
           "operationId": "getRankStatistics",
           "path": "/api/shutter/statistics",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
           "section": "paths"
         },
         {
@@ -7114,7 +6999,7 @@
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
           "section": "paths"
         },
         {
@@ -7124,7 +7009,7 @@
           "operation": "DELETE",
           "operationId": "signout",
           "path": "/api/signout",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
           "section": "paths"
         },
         {
@@ -7134,7 +7019,7 @@
           "operation": "POST",
           "operationId": "signup",
           "path": "/api/signup",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
           "section": "paths"
         },
         {
@@ -7144,7 +7029,7 @@
           "operation": "POST",
           "operationId": "completeUpload",
           "path": "/api/storage/complete",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
           "section": "paths"
         },
         {
@@ -7154,7 +7039,7 @@
           "operation": "POST",
           "operationId": "presignedUrl",
           "path": "/api/storage/presigned-url",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
           "section": "paths"
         }
       ],
@@ -7288,13 +7173,55 @@
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
           "section": "paths"
+        },
+        {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'boundingBox'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'boundingBox'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "request-parameter-removed",
+          "text": "deleted the 'query' request parameter 'request'",
+          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "request-parameter-removed",
+          "text": "deleted the 'query' request parameter 'request'",
+          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+          "section": "paths"
         }
       ],
       "summary": {
         "added": 6,
         "removed": 10,
         "modified": 30,
-        "breaking": 13
+        "breaking": 17
       }
     },
     "admin": {
@@ -7310,20 +7237,20 @@
           },
           "version": {
             "from": "0.9.0",
-            "to": "0.9.1"
+            "to": "0.10.0"
           }
         },
         "paths": {
           "added": [
+            "/api/admin/users/{id}/profile",
             "/api/admin/users",
-            "/api/admin/users/{id}",
-            "/api/admin/users/{id}/profile"
+            "/api/admin/users/{id}"
           ],
           "deleted": [
-            "/internal/admin/users/{id}",
             "/internal/admin/users/{id}/profile",
             "/internal/admin/photos",
-            "/internal/admin/users"
+            "/internal/admin/users",
+            "/internal/admin/users/{id}"
           ]
         },
         "tags": {
@@ -7342,14 +7269,14 @@
               "User"
             ],
             "deleted": [
-              "PhotosResponse",
-              "Gps",
               "Users",
               "BaseResponsePhotosResponse",
-              "BoundingBox",
               "PhotoResponse",
-              "UrlResult",
-              "UserAuthorities"
+              "PhotosResponse",
+              "UserAuthorities",
+              "BoundingBox",
+              "Gps",
+              "UrlResult"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -7375,8 +7302,8 @@
                         },
                         "properties": {
                           "added": [
-                            "createdAt",
-                            "user"
+                            "user",
+                            "createdAt"
                           ],
                           "deleted": [
                             "users"
@@ -7385,8 +7312,8 @@
                             "profile": {
                               "required": {
                                 "deleted": [
-                                  "createdAt",
-                                  "updatedAt"
+                                  "updatedAt",
+                                  "createdAt"
                                 ]
                               },
                               "properties": {
@@ -7519,12 +7446,12 @@
                       },
                       "required": {
                         "added": [
-                          "provider",
-                          "providerId"
+                          "providerId",
+                          "provider"
                         ],
                         "deleted": [
-                          "createdAt",
-                          "providerKey"
+                          "providerKey",
+                          "createdAt"
                         ]
                       },
                       "properties": {
@@ -7565,14 +7492,14 @@
                           "profile": {
                             "required": {
                               "deleted": [
-                                "createdAt",
-                                "updatedAt"
+                                "updatedAt",
+                                "createdAt"
                               ]
                             },
                             "properties": {
                               "deleted": [
-                                "updatedAt",
-                                "createdAt"
+                                "createdAt",
+                                "updatedAt"
                               ]
                             }
                           },
@@ -7727,12 +7654,12 @@
                 },
                 "required": {
                   "added": [
-                    "provider",
-                    "providerId"
+                    "providerId",
+                    "provider"
                   ],
                   "deleted": [
-                    "createdAt",
-                    "providerKey"
+                    "providerKey",
+                    "createdAt"
                   ]
                 },
                 "properties": {
@@ -7773,14 +7700,14 @@
                     "profile": {
                       "required": {
                         "deleted": [
-                          "createdAt",
-                          "updatedAt"
+                          "updatedAt",
+                          "createdAt"
                         ]
                       },
                       "properties": {
                         "deleted": [
-                          "updatedAt",
-                          "createdAt"
+                          "createdAt",
+                          "updatedAt"
                         ]
                       }
                     },
@@ -7814,8 +7741,8 @@
                     "profile": {
                       "required": {
                         "deleted": [
-                          "createdAt",
-                          "updatedAt"
+                          "updatedAt",
+                          "createdAt"
                         ]
                       },
                       "properties": {
@@ -7846,8 +7773,8 @@
                 },
                 "properties": {
                   "deleted": [
-                    "createdAt",
-                    "updatedAt"
+                    "updatedAt",
+                    "createdAt"
                   ]
                 }
               }
@@ -7951,7 +7878,7 @@
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-admin.json",
           "section": "paths"
         },
         {
@@ -7961,7 +7888,7 @@
           "operation": "GET",
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-admin.json",
           "section": "paths"
         },
         {
@@ -7971,7 +7898,7 @@
           "operation": "PUT",
           "operationId": "modifyProfile",
           "path": "/api/admin/users/{id}/profile",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-admin.json",
           "section": "paths"
         }
       ],
