@@ -1,0 +1,467 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "CallShot API",
+    "description": "# API Guide\nThis is a Api alpha-server for CallShot App.\n\n## Common Rules\n- 인증이 필요한 API는 `Authorization: Bearer {id_token}` 헤더를 포함해야 합니다.\n\n## CDN Guide\n- CDN URL 형식: `https://{cdn_host}/{path}`\n    - cdn_host: `dev-cdn.call-shot.com`\n- Original URL path: `/origin/{file_path}`\n    - ex: https://dev-cdn.call-shot.com/origin/times_square.jpg\n- Thumbnail URL path: /thumb/{file_path}?w\u003d{size}\n    - Thumbnail URL의 경우 QueryString 없이 내려감\n    - size: 썸네일 크기\n    - ex: https://dev-cdn.call-shot.com/thumb/callshot/times_square.jpg?w\u003d200\n",
+    "version": "0.10.0"
+  },
+  "servers": [
+    {
+      "url": "https://dev-api.call-shot.com",
+      "description": "Development server"
+    },
+    {
+      "url": "http://localhost:8080",
+      "description": "Local server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Admin",
+      "description": "관리자 전용 API"
+    }
+  ],
+  "paths": {
+    "/api/admin/users/{id}/profile": {
+      "put": {
+        "tags": [
+          "Admin"
+        ],
+        "operationId": "modifyProfile",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyUserProfileRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseResponseUnit"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/admin/users": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "operationId": "findAll",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0,
+              "maximum": 9223372036854775807,
+              "minimum": 0
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50,
+              "maximum": 9223372036854775807,
+              "minimum": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseResponseListUserDetailsResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/admin/users/{id}": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "operationId": "findById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseResponseUserDetailsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ModifyUserProfileRequest": {
+        "type": "object",
+        "description": "프로필 수정 요청 (관리자)",
+        "properties": {
+          "nickname": {
+            "type": "string",
+            "description": "닉네임",
+            "example": "callshot_user"
+          },
+          "avatarUrl": {
+            "type": "string",
+            "description": "아바타 이미지 URL"
+          },
+          "gender": {
+            "type": "string",
+            "description": "성별",
+            "enum": [
+              "MALE",
+              "FEMALE",
+              "UNKNOWN"
+            ],
+            "example": "MALE"
+          },
+          "birthdate": {
+            "type": "string",
+            "format": "date",
+            "description": "생년월일",
+            "example": "1995-03-15"
+          },
+          "bio": {
+            "type": "string",
+            "description": "자기소개"
+          }
+        },
+        "required": [
+          "nickname"
+        ]
+      },
+      "BaseResponseUnit": {
+        "type": "object",
+        "description": "API 공통 응답 래퍼",
+        "properties": {
+          "header": {
+            "$ref": "#/components/schemas/ResponseHeader",
+            "description": "응답 헤더 (성공 여부, 상태 코드)"
+          },
+          "body": {
+            "description": "응답 본문"
+          }
+        },
+        "required": [
+          "header"
+        ]
+      },
+      "ResponseHeader": {
+        "type": "object",
+        "description": "응답 헤더",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "description": "요청 성공 여부",
+            "example": true
+          },
+          "code": {
+            "type": "integer",
+            "format": "int32",
+            "description": "HTTP 상태 코드",
+            "example": 200
+          },
+          "errorMessage": {
+            "type": "string",
+            "description": "에러 메시지 (실패 시)",
+            "example": "잘못된 요청입니다"
+          }
+        },
+        "required": [
+          "code",
+          "success"
+        ]
+      },
+      "BaseResponseListUserDetailsResult": {
+        "type": "object",
+        "description": "API 공통 응답 래퍼",
+        "properties": {
+          "header": {
+            "$ref": "#/components/schemas/ResponseHeader",
+            "description": "응답 헤더 (성공 여부, 상태 코드)"
+          },
+          "body": {
+            "type": "array",
+            "description": "응답 본문",
+            "items": {
+              "$ref": "#/components/schemas/UserDetailsResult"
+            }
+          }
+        },
+        "required": [
+          "header"
+        ]
+      },
+      "ProviderKey": {
+        "type": "object",
+        "properties": {
+          "provider": {
+            "type": "string",
+            "enum": [
+              "GOOGLE",
+              "FACEBOOK",
+              "UNKNOWN"
+            ]
+          },
+          "providerId": {
+            "type": "string"
+          },
+          "userIdentifier": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "provider",
+          "providerId",
+          "userIdentifier"
+        ]
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "providerKey": {
+            "$ref": "#/components/schemas/ProviderKey"
+          },
+          "email": {
+            "type": "string"
+          },
+          "authorities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserAuthority"
+            },
+            "uniqueItems": true
+          },
+          "profile": {
+            "$ref": "#/components/schemas/UserProfile"
+          }
+        },
+        "required": [
+          "authorities",
+          "email",
+          "id",
+          "providerKey"
+        ]
+      },
+      "UserAuthority": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "ADMIN",
+              "USER",
+              "GUEST"
+            ]
+          }
+        },
+        "required": [
+          "role",
+          "userId"
+        ]
+      },
+      "UserDetailsResult": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "userAuthorities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserAuthority"
+            },
+            "uniqueItems": true
+          },
+          "profile": {
+            "$ref": "#/components/schemas/UserProfile"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "user",
+          "userAuthorities"
+        ]
+      },
+      "UserProfile": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nickname": {
+            "type": "string"
+          },
+          "avatarUrl": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "MALE",
+              "FEMALE",
+              "UNKNOWN"
+            ]
+          },
+          "birthdate": {
+            "type": "string",
+            "format": "date"
+          },
+          "bio": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nickname",
+          "userId"
+        ]
+      },
+      "BaseResponseUserDetailsResponse": {
+        "type": "object",
+        "description": "API 공통 응답 래퍼",
+        "properties": {
+          "header": {
+            "$ref": "#/components/schemas/ResponseHeader",
+            "description": "응답 헤더 (성공 여부, 상태 코드)"
+          },
+          "body": {
+            "$ref": "#/components/schemas/UserDetailsResponse",
+            "description": "응답 본문"
+          }
+        },
+        "required": [
+          "header"
+        ]
+      },
+      "UserDetailsResponse": {
+        "type": "object",
+        "description": "사용자 상세 정보 (관리자용)",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "description": "사용자 ID",
+            "example": 123456789
+          },
+          "provider": {
+            "type": "string",
+            "description": "인증 제공자",
+            "example": "GOOGLE"
+          },
+          "providerId": {
+            "type": "string",
+            "description": "제공자 사용자 ID",
+            "example": 108234567890
+          },
+          "email": {
+            "type": "string",
+            "description": "이메일",
+            "example": "user@example.com"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "가입 일시"
+          },
+          "roles": {
+            "type": "array",
+            "description": "사용자 권한 목록",
+            "items": {
+              "type": "string",
+              "enum": [
+                "ADMIN",
+                "USER",
+                "GUEST"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "profile": {
+            "$ref": "#/components/schemas/UserProfile",
+            "description": "프로필 정보"
+          }
+        },
+        "required": [
+          "email",
+          "id",
+          "provider",
+          "providerId",
+          "roles"
+        ]
+      }
+    },
+    "securitySchemes": {
+      "openIdScheme": {
+        "type": "openIdConnect",
+        "description": "OpenID Connect 인증",
+        "in": "header",
+        "scheme": "bearer",
+        "bearerFormat": "JWT ID Token",
+        "openIdConnectUrl": "https://accounts.google.com/.well-known/openid-configuration"
+      }
+    }
+  }
+}
