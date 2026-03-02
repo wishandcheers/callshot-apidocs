@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/public/photos/{id}",
-            "/api/public/photos/bulk"
+            "/api/public/photos/bulk",
+            "/api/public/photos/{id}"
           ],
           "modified": {
             "/api/my/drafts/{id}/publish": {
@@ -525,8 +525,8 @@
         "components": {
           "schemas": {
             "added": [
-              "UrlResult",
-              "BaseResponseListPublishedPhotoDetailResponse"
+              "BaseResponseListPublishedPhotoDetailResponse",
+              "UrlResult"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {

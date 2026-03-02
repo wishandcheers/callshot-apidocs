@@ -1,0 +1,702 @@
+{
+  "fromVersion": "v0.9.0",
+  "toVersion": "v0.11.0",
+  "groups": {
+    "api": [
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMySubmissions",
+        "path": "/api/my/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos_1",
+        "path": "/api/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea_1",
+        "path": "/api/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters_1",
+        "path": "/api/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getDraftPhoto",
+        "path": "/api/photos/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updateDraftPhoto",
+        "path": "/api/photos/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto",
+        "path": "/api/photos/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/photos/my",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyDraftPhotos",
+        "path": "/api/photos/my/drafts",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos",
+        "path": "/api/photos/my/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "DELETE",
+        "operationId": "deletePublishedPhoto",
+        "path": "/api/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublishedPhoto",
+        "path": "/api/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updatePublishedPhoto",
+        "path": "/api/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "new-required-request-parameter",
+        "text": "added the new required 'query' request parameter 'boundingBox'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "new-required-request-parameter",
+        "text": "added the new required 'query' request parameter 'boundingBox'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "new-required-request-parameter",
+        "text": "added the new required 'query' request parameter 'zoomLevel'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "signup",
+        "path": "/api/signup",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "request-parameter-removed",
+        "text": "deleted the 'query' request parameter 'request'",
+        "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+        "level": 2,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "request-parameter-removed",
+        "text": "deleted the 'query' request parameter 'request'",
+        "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+        "level": 2,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'BaseResponseMySubmissionsResponse'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'ClusterAreaRequest'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'MySubmissionItemDto'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'MySubmissionsResponse'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'PhotoClusterRequest'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'SubmissionPhotoInfoDto'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'SubmissionRequestInfoDto'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'UserSignUpRequest'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-operation-id-removed",
+        "text": "api operation id 'getMyDraftPhotos_1' removed and replaced with 'getMyDraftPhotos'",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyDraftPhotos_1",
+        "path": "/api/my/drafts",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-operation-id-removed",
+        "text": "api operation id 'getDraftPhoto_1' removed and replaced with 'getDraftPhoto'",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getDraftPhoto_1",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-operation-id-removed",
+        "text": "api operation id 'updateDraftPhoto_1' removed and replaced with 'updateDraftPhoto'",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateDraftPhoto_1",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-operation-id-removed",
+        "text": "api operation id 'publishDraftPhoto_1' removed and replaced with 'publishDraftPhoto'",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto_1",
+        "path": "/api/my/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-operation-id-removed",
+        "text": "api operation id 'getMyPhotos_1' removed and replaced with 'getMyPhotos'",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotos_1",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-operation-id-removed",
+        "text": "api operation id 'getMyPublishedPhotos_1' removed and replaced with 'getMyPublishedPhotos'",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos_1",
+        "path": "/api/my/photos/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-operation-id-removed",
+        "text": "api operation id 'deletePublishedPhoto_1' removed and replaced with 'deletePublishedPhoto'",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "deletePublishedPhoto_1",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-operation-id-removed",
+        "text": "api operation id 'getPublishedPhoto_1' removed and replaced with 'getPublishedPhoto'",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublishedPhoto_1",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-operation-id-removed",
+        "text": "api operation id 'updatePublishedPhoto_1' removed and replaced with 'updatePublishedPhoto'",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updatePublishedPhoto_1",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-tag-added",
+        "text": "api tag '반응' added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "toggleDislike",
+        "path": "/api/photos/{photoId}/dislike",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-tag-removed",
+        "text": "api tag 'Engagement' removed",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "toggleDislike",
+        "path": "/api/photos/{photoId}/dislike",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-tag-added",
+        "text": "api tag '반응' added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getEngagement",
+        "path": "/api/photos/{photoId}/engagement",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-tag-removed",
+        "text": "api tag 'Engagement' removed",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getEngagement",
+        "path": "/api/photos/{photoId}/engagement",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-tag-added",
+        "text": "api tag '반응' added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "toggleLike",
+        "path": "/api/photos/{photoId}/like",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-tag-removed",
+        "text": "api tag 'Engagement' removed",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "toggleLike",
+        "path": "/api/photos/{photoId}/like",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property 'body/shutter' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "profile",
+        "path": "/api/profile",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/status' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "profile",
+        "path": "/api/profile",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateProfile",
+        "path": "/api/profile",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "new-optional-request-parameter",
+        "text": "added the new optional 'query' request parameter 'size'",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "new-optional-request-parameter",
+        "text": "added the new optional 'query' request parameter 'sort'",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getLeaderboard",
+        "path": "/api/shutter/leaderboard",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyShutter",
+        "path": "/api/shutter/me",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getRankStatistics",
+        "path": "/api/shutter/statistics",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getUserShutter",
+        "path": "/api/shutter/users/{userId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property 'body' to the response with the '200' status",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "signout",
+        "path": "/api/signout",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "completeUpload",
+        "path": "/api/storage/complete",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "presignedUrl",
+        "path": "/api/storage/presigned-url",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      }
+    ],
+    "admin": [
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/internal/admin/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/internal/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "findById",
+        "path": "/internal/admin/users/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "PUT",
+        "operationId": "modifyProfile",
+        "path": "/internal/admin/users/{id}/profile",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'BaseResponsePhotosResponse'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'BoundingBox'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'PhotoResponse'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'PhotosResponse'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'UrlResult'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'UserAuthorities'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'Users'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getSystemMissions",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "createSystemMission",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "cancelMission",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getSystemMissionDetail",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "closeMission",
+        "path": "/api/admin/missions/{id}/close",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "reviewSubmission",
+        "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/api/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "findById",
+        "path": "/api/admin/users/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "modifyProfile",
+        "path": "/api/admin/users/{id}/profile",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      }
+    ]
+  }
+}

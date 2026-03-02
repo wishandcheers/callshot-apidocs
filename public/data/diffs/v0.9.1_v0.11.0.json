@@ -1,0 +1,801 @@
+{
+  "fromVersion": "v0.9.1",
+  "toVersion": "v0.11.0",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.9.1",
+            "to": "0.11.0"
+          }
+        },
+        "paths": {
+          "deleted": [
+            "/api/signup"
+          ],
+          "modified": {
+            "/api/profile": {
+              "operations": {
+                "added": [
+                  "PUT"
+                ],
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "status"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "status"
+                                          ],
+                                          "modified": {
+                                            "shutter": {
+                                              "description": {
+                                                "from": "Shots 요약 정보",
+                                                "to": ""
+                                              },
+                                              "properties": {
+                                                "modified": {
+                                                  "rank": {
+                                                    "description": {
+                                                      "from": "랭크",
+                                                      "to": ""
+                                                    },
+                                                    "enum": {
+                                                      "enumDeleted": true,
+                                                      "deleted": [
+                                                        "AMATEUR",
+                                                        "HOBBYIST",
+                                                        "SEMI_PRO",
+                                                        "PRO",
+                                                        "MASTER"
+                                                      ]
+                                                    },
+                                                    "example": {
+                                                      "from": "HOBBYIST",
+                                                      "to": null
+                                                    }
+                                                  },
+                                                  "rankDisplayName": {
+                                                    "description": {
+                                                      "from": "랭크 한글 이름",
+                                                      "to": ""
+                                                    },
+                                                    "example": {
+                                                      "from": "취미가",
+                                                      "to": null
+                                                    }
+                                                  },
+                                                  "shots": {
+                                                    "description": {
+                                                      "from": "현재 Shots",
+                                                      "to": ""
+                                                    },
+                                                    "example": {
+                                                      "from": 150,
+                                                      "to": null
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/cluster-area": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "description": {
+                      "from": "지정된 클러스터 영역(중심점 + 반지름) 내의 모든 사진을 조회합니다.",
+                      "to": "지정된 영역(BoundingBox) 내의 사진 목록을 정렬 기준에 따라 조회합니다."
+                    },
+                    "parameters": {
+                      "added": {
+                        "query": [
+                          "boundingBox",
+                          "sort",
+                          "size"
+                        ]
+                      },
+                      "deleted": {
+                        "query": [
+                          "request"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/clusters": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "description": {
+                      "from": "지도에 표시할 사진 클러스터를 조회합니다.",
+                      "to": "지도에 표시할 사진 클러스터를 조회합니다. BoundingBox와 zoomLevel 기반으로 tile 클러스터링합니다."
+                    },
+                    "parameters": {
+                      "added": {
+                        "query": [
+                          "boundingBox",
+                          "zoomLevel"
+                        ]
+                      },
+                      "deleted": {
+                        "query": [
+                          "request"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "UpdateUserProfileRequest",
+              "ShutterSummaryInfo"
+            ],
+            "deleted": [
+              "ClusterAreaRequest",
+              "ShutterSummary",
+              "UserSignUpRequest",
+              "PhotoClusterRequest"
+            ],
+            "modified": {
+              "BaseResponseUserProfileResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "required": {
+                        "added": [
+                          "status"
+                        ]
+                      },
+                      "properties": {
+                        "added": [
+                          "status"
+                        ],
+                        "modified": {
+                          "shutter": {
+                            "description": {
+                              "from": "Shots 요약 정보",
+                              "to": ""
+                            },
+                            "properties": {
+                              "modified": {
+                                "rank": {
+                                  "description": {
+                                    "from": "랭크",
+                                    "to": ""
+                                  },
+                                  "enum": {
+                                    "enumDeleted": true,
+                                    "deleted": [
+                                      "AMATEUR",
+                                      "HOBBYIST",
+                                      "SEMI_PRO",
+                                      "PRO",
+                                      "MASTER"
+                                    ]
+                                  },
+                                  "example": {
+                                    "from": "HOBBYIST",
+                                    "to": null
+                                  }
+                                },
+                                "rankDisplayName": {
+                                  "description": {
+                                    "from": "랭크 한글 이름",
+                                    "to": ""
+                                  },
+                                  "example": {
+                                    "from": "취미가",
+                                    "to": null
+                                  }
+                                },
+                                "shots": {
+                                  "description": {
+                                    "from": "현재 Shots",
+                                    "to": ""
+                                  },
+                                  "example": {
+                                    "from": 150,
+                                    "to": null
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "UserProfileResponse": {
+                "required": {
+                  "added": [
+                    "status"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "status"
+                  ],
+                  "modified": {
+                    "shutter": {
+                      "description": {
+                        "from": "Shots 요약 정보",
+                        "to": ""
+                      },
+                      "properties": {
+                        "modified": {
+                          "rank": {
+                            "description": {
+                              "from": "랭크",
+                              "to": ""
+                            },
+                            "enum": {
+                              "enumDeleted": true,
+                              "deleted": [
+                                "AMATEUR",
+                                "HOBBYIST",
+                                "SEMI_PRO",
+                                "PRO",
+                                "MASTER"
+                              ]
+                            },
+                            "example": {
+                              "from": "HOBBYIST",
+                              "to": null
+                            }
+                          },
+                          "rankDisplayName": {
+                            "description": {
+                              "from": "랭크 한글 이름",
+                              "to": ""
+                            },
+                            "example": {
+                              "from": "취미가",
+                              "to": null
+                            }
+                          },
+                          "shots": {
+                            "description": {
+                              "from": "현재 Shots",
+                              "to": ""
+                            },
+                            "example": {
+                              "from": 150,
+                              "to": null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'boundingBox'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'boundingBox'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'zoomLevel'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-path-removed-without-deprecation",
+          "text": "api path removed without deprecation",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "signup",
+          "path": "/api/signup",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "request-parameter-removed",
+          "text": "deleted the 'query' request parameter 'request'",
+          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "request-parameter-removed",
+          "text": "deleted the 'query' request parameter 'request'",
+          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-schema-removed",
+          "text": "removed the schema 'ClusterAreaRequest'",
+          "level": 1,
+          "section": "components"
+        },
+        {
+          "id": "api-schema-removed",
+          "text": "removed the schema 'PhotoClusterRequest'",
+          "level": 1,
+          "section": "components"
+        },
+        {
+          "id": "api-schema-removed",
+          "text": "removed the schema 'ShutterSummary'",
+          "level": 1,
+          "section": "components"
+        },
+        {
+          "id": "api-schema-removed",
+          "text": "removed the schema 'UserSignUpRequest'",
+          "level": 1,
+          "section": "components"
+        },
+        {
+          "id": "response-property-enum-value-removed",
+          "text": "removed the 'AMATEUR' enum value from the 'body/shutter/rank' response property for the response status '200'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "profile",
+          "path": "/api/profile",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-property-enum-value-removed",
+          "text": "removed the 'HOBBYIST' enum value from the 'body/shutter/rank' response property for the response status '200'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "profile",
+          "path": "/api/profile",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-property-enum-value-removed",
+          "text": "removed the 'MASTER' enum value from the 'body/shutter/rank' response property for the response status '200'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "profile",
+          "path": "/api/profile",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-property-enum-value-removed",
+          "text": "removed the 'PRO' enum value from the 'body/shutter/rank' response property for the response status '200'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "profile",
+          "path": "/api/profile",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-property-enum-value-removed",
+          "text": "removed the 'SEMI_PRO' enum value from the 'body/shutter/rank' response property for the response status '200'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "profile",
+          "path": "/api/profile",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/status' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "profile",
+          "path": "/api/profile",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "PUT",
+          "operationId": "updateProfile",
+          "path": "/api/profile",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-optional-request-parameter",
+          "text": "added the new optional 'query' request parameter 'size'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-optional-request-parameter",
+          "text": "added the new optional 'query' request parameter 'sort'",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        }
+      ],
+      "breaking": [
+        {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'boundingBox'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'boundingBox'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "new-required-request-parameter",
+          "text": "added the new required 'query' request parameter 'zoomLevel'",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "api-path-removed-without-deprecation",
+          "text": "api path removed without deprecation",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "signup",
+          "path": "/api/signup",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "request-parameter-removed",
+          "text": "deleted the 'query' request parameter 'request'",
+          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "request-parameter-removed",
+          "text": "deleted the 'query' request parameter 'request'",
+          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+          "section": "paths"
+        }
+      ],
+      "summary": {
+        "added": 0,
+        "removed": 1,
+        "modified": 3,
+        "breaking": 6
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.9.1",
+            "to": "0.11.0"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/admin/missions/{id}/close",
+            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
+            "/api/admin/missions",
+            "/api/admin/missions/{id}"
+          ],
+          "modified": {
+            "/api/admin/users": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "items": {
+                                          "properties": {
+                                            "modified": {
+                                              "user": {
+                                                "required": {
+                                                  "added": [
+                                                    "status"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "status"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": {
+          "added": [
+            "Admin 미션"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "CreateSystemMissionRequest",
+              "Absent",
+              "UpdateSystemMissionRequest",
+              "Gps",
+              "SystemMissionsResponse",
+              "Clear",
+              "Value",
+              "PatchString",
+              "BaseResponseSystemMissionsResponse",
+              "ReviewSystemMissionSubmissionRequest",
+              "SystemMissionResponse",
+              "BaseResponseSystemMissionResponse"
+            ],
+            "modified": {
+              "BaseResponseListUserDetailsResult": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "items": {
+                        "properties": {
+                          "modified": {
+                            "user": {
+                              "required": {
+                                "added": [
+                                  "status"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "status"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "User": {
+                "required": {
+                  "added": [
+                    "status"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "status"
+                  ]
+                }
+              },
+              "UserDetailsResult": {
+                "properties": {
+                  "modified": {
+                    "user": {
+                      "required": {
+                        "added": [
+                          "status"
+                        ]
+                      },
+                      "properties": {
+                        "added": [
+                          "status"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getSystemMissions",
+          "path": "/api/admin/missions",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "createSystemMission",
+          "path": "/api/admin/missions",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "DELETE",
+          "operationId": "cancelMission",
+          "path": "/api/admin/missions/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getSystemMissionDetail",
+          "path": "/api/admin/missions/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateSystemMission",
+          "path": "/api/admin/missions/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "closeMission",
+          "path": "/api/admin/missions/{id}/close",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "reviewSubmission",
+          "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/items/user/status' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "findAll",
+          "path": "/api/admin/users",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+          "section": "paths"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 4,
+        "removed": 0,
+        "modified": 1,
+        "breaking": 0
+      }
+    }
+  }
+}

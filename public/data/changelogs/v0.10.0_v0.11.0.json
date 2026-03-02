@@ -1,0 +1,136 @@
+{
+  "fromVersion": "v0.10.0",
+  "toVersion": "v0.11.0",
+  "groups": {
+    "api": [
+      {
+        "id": "request-parameter-became-required",
+        "text": "the 'query' request parameter 'zoomLevel' became required",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-path-removed-without-deprecation",
+        "text": "api path removed without deprecation",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "signup",
+        "path": "/api/signup",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema 'UserSignUpRequest'",
+        "level": 1,
+        "section": "components"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/status' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "profile",
+        "path": "/api/profile",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateProfile",
+        "path": "/api/profile",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
+        "section": "paths"
+      }
+    ],
+    "admin": [
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getSystemMissions",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "createSystemMission",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "cancelMission",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getSystemMissionDetail",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "closeMission",
+        "path": "/api/admin/missions/{id}/close",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "reviewSubmission",
+        "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/items/user/status' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/api/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
+        "section": "paths"
+      }
+    ]
+  }
+}
