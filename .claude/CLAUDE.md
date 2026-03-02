@@ -171,13 +171,18 @@ Log significant work to `.claude/memories/` for context preservation.
 
 See `rules/common/memory-logging.md` (auto-loaded) for details.
 
-## Optional Rules
+## Conditional Rules
 
-Uncomment to include when project uses these technologies (located in `.claude/docs/optional-rules/`):
-
-<!-- @docs/optional-rules/storybook.md -->
-<!-- @docs/optional-rules/i18n.md -->
-<!-- @docs/optional-rules/pwa.md -->
+Loaded automatically when editing matching files (`paths:` frontmatter):
+- `rules/common/git.md` — git workflow (`.github/`, `.gitignore`, `CHANGELOG*`)
+- `rules/common/testing.md` — testing standards (`*Test*`, `*Spec*`, `__tests__/`, `*.test.*`)
+- `rules/common/security.md` — security guidelines (`security/`, `auth/`, `.env*`)
+- `rules/frontend/architecture.md` — FSD architecture (`src/**/*.ts`, `src/**/*.tsx`, `src/**/*.vue`)
+- `rules/frontend/component-patterns.md` — CVA + composition (`*.tsx`, `*.vue`, `components/`, `ui/`)
+- `rules/frontend/typescript.md` — TypeScript strict mode (`*.ts`, `*.tsx`, `tsconfig*`)
+- `rules/frontend/i18n.md` — internationalization (`*i18n*`, `*locale*`, `translations/`)
+- `rules/frontend/storybook.md` — Storybook integration (`*.stories.*`, `.storybook/`)
+- `rules/frontend/pwa.md` — PWA patterns (`manifest.json`, `service-worker*`)
 
 ## Project-Specific Conventions
 

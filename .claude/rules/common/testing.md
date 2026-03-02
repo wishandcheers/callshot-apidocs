@@ -1,3 +1,14 @@
+---
+paths:
+  - "**/*Test*"
+  - "**/*test*"
+  - "**/*Spec*"
+  - "**/*spec*"
+  - "**/__tests__/**"
+  - "**/*.test.*"
+  - "**/*.spec.*"
+---
+
 # Testing: Vitest + Testing Library + MSW
 
 ## Stack & Pyramid

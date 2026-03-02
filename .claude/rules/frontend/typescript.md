@@ -1,3 +1,10 @@
+---
+paths:
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/tsconfig*"
+---
+
 # TypeScript Rules: Strict Mode Frontend
 
 ## tsconfig.json Requirements

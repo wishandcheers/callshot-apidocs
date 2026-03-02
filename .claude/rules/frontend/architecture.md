@@ -1,3 +1,11 @@
+---
+paths:
+  - "src/**/*.ts"
+  - "src/**/*.tsx"
+  - "src/**/*.vue"
+  - "src/**/*.astro"
+---
+
 # Frontend Architecture: Feature-Sliced Design + Atomic Design
 
 Framework-agnostic (React, Vue, Svelte). Combines FSD layers with Atomic Design in `shared/ui`.

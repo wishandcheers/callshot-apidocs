@@ -1,3 +1,11 @@
+---
+paths:
+  - "**/.github/**"
+  - "**/.gitignore"
+  - "**/.gitattributes"
+  - "**/CHANGELOG*"
+---
+
 # Git Workflow Guidelines
 
 ## Branch Naming

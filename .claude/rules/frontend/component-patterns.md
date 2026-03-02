@@ -1,3 +1,11 @@
+---
+paths:
+  - "**/*.tsx"
+  - "**/*.vue"
+  - "**/components/**"
+  - "**/ui/**"
+---
+
 # Component Patterns: CVA + Tailwind CSS + Composition
 
 ## CVA (Class Variance Authority)

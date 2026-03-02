@@ -1,3 +1,12 @@
+---
+paths:
+  - "**/security/**"
+  - "**/auth/**"
+  - "**/*Security*"
+  - "**/*Auth*"
+  - "**/.env*"
+---
+
 # Frontend Security Guidelines
 
 ## XSS Prevention
