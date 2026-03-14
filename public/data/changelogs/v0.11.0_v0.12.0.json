@@ -1,0 +1,81 @@
+{
+  "fromVersion": "v0.11.0",
+  "toVersion": "v0.12.0",
+  "groups": {
+    "api": [
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/clusters/items/avgDistanceMeters' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/clusters/items/maxDistanceMeters' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-deprecated",
+        "text": "endpoint deprecated",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/clusters/items/clusterId' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/clusters/items/tileBounds' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getClusterPhotos",
+        "path": "/api/public/photos/clusters/{clusterId}/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
+        "section": "paths"
+      }
+    ],
+    "admin": [
+      {
+        "id": "response-property-enum-value-added",
+        "text": "added the new 'SYSTEM' enum value to the 'body/items/user/providerKey/provider' response property for the response status '200'",
+        "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+        "level": 2,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/api/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
+        "section": "paths"
+      }
+    ]
+  }
+}

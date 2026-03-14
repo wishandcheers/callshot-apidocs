@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/public/photos/bulk",
-            "/api/public/photos/{id}"
+            "/api/public/photos/{id}",
+            "/api/public/photos/bulk"
           ],
           "modified": {
             "/api/my/drafts/{id}/publish": {

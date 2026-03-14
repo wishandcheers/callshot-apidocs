@@ -13,11 +13,11 @@
         "paths": {
           "added": [
             "/api/photos/drafts/{id}",
+            "/api/photos/my/drafts",
             "/api/signout",
             "/api/photos/my/published",
-            "/api/photos/my/drafts",
-            "/api/photos/{id}",
-            "/api/photos/drafts/{id}/publish"
+            "/api/photos/drafts/{id}/publish",
+            "/api/photos/{id}"
           ],
           "modified": {
             "/api/photos/my": {
@@ -78,22 +78,22 @@
         "components": {
           "schemas": {
             "added": [
-              "PublishedPhotosResponse",
-              "PageCursorResponse",
-              "UpdateDraftPhotoRequest",
-              "BaseResponsePublishedPhotoDetailResponse",
-              "UpdatePublishedPhotoRequest",
               "BaseResponsePublishedPhotosResponse",
+              "DraftPhotoDetailResponse",
+              "ImageResponse",
+              "PublishedPhotosResponse",
+              "DraftPhotosResponse",
+              "BaseResponsePublishedPhotoDetailResponse",
+              "BaseResponsePhotoResponse",
               "DeletePhotoResponse",
               "BaseResponseDraftPhotoDetailResponse",
-              "CursorPhotosRequest",
-              "DraftPhotosResponse",
-              "DraftPhotoDetailResponse",
-              "BaseResponseDeletePhotoResponse",
+              "UpdatePublishedPhotoRequest",
               "PublishedPhotoDetailResponse",
-              "BaseResponseDraftPhotosResponse",
-              "ImageResponse",
-              "BaseResponsePhotoResponse"
+              "UpdateDraftPhotoRequest",
+              "CursorPhotosRequest",
+              "BaseResponseDeletePhotoResponse",
+              "PageCursorResponse",
+              "BaseResponseDraftPhotosResponse"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {

@@ -20,27 +20,27 @@
         },
         "paths": {
           "added": [
-            "/api/shutter/me",
             "/api/photos/{photoId}/dislike",
-            "/api/shutter/statistics",
-            "/api/shutter/leaderboard",
-            "/api/photos/{photoId}/like",
-            "/api/storage/presigned-url",
-            "/api/photos/{photoId}/engagement",
             "/api/shutter/users/{userId}",
-            "/api/storage/complete"
+            "/api/shutter/me",
+            "/api/shutter/statistics",
+            "/api/photos/{photoId}/like",
+            "/api/shutter/leaderboard",
+            "/api/storage/presigned-url",
+            "/api/storage/complete",
+            "/api/photos/{photoId}/engagement"
           ],
           "deleted": [
             "/api/photos/{id}",
-            "/api/photos/drafts/{id}",
             "/api/photos/cluster-area",
-            "/api/my/submissions",
-            "/api/photos/my/drafts",
-            "/api/photos",
             "/api/photos/clusters",
-            "/api/photos/drafts/{id}/publish",
+            "/api/photos",
+            "/api/photos/my/published",
+            "/api/my/submissions",
             "/api/photos/my",
-            "/api/photos/my/published"
+            "/api/photos/my/drafts",
+            "/api/photos/drafts/{id}/publish",
+            "/api/photos/drafts/{id}"
           ],
           "modified": {
             "/api/hashtags": {
@@ -715,8 +715,8 @@
                                         },
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
@@ -1543,8 +1543,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ],
                                                   "modified": {
                                                     "id": {
@@ -1725,8 +1725,8 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         }
                                       },
@@ -1807,8 +1807,8 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         }
                                       },
@@ -2446,8 +2446,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ],
                                                   "modified": {
                                                     "id": {
@@ -2750,8 +2750,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ],
                                                   "modified": {
                                                     "id": {
@@ -3104,8 +3104,8 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         }
                                       },
@@ -3384,31 +3384,31 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponsePresignedUrlResponse",
-              "RankStatisticsResponse",
-              "BaseResponseToggleDislikeResponse",
-              "BaseResponseToggleLikeResponse",
-              "ShutterSummary",
-              "ToggleLikeResponse",
-              "PresignedUrlRequest",
-              "PresignedUrlResponse",
-              "BaseResponseLeaderboardResponse",
-              "ShutterResponse",
-              "BaseResponseRankStatisticsResponse",
-              "LeaderboardResponse",
-              "BaseResponseEngagementResponse",
-              "CompleteUploadRequest",
-              "EngagementResponse",
               "ToggleDislikeResponse",
               "BaseResponseShutterResponse",
-              "LeaderboardEntryResponse"
+              "RankStatisticsResponse",
+              "BaseResponseLeaderboardResponse",
+              "CompleteUploadRequest",
+              "BaseResponseToggleLikeResponse",
+              "EngagementResponse",
+              "ShutterResponse",
+              "PresignedUrlResponse",
+              "ToggleLikeResponse",
+              "LeaderboardResponse",
+              "BaseResponsePresignedUrlResponse",
+              "LeaderboardEntryResponse",
+              "BaseResponseEngagementResponse",
+              "BaseResponseToggleDislikeResponse",
+              "PresignedUrlRequest",
+              "BaseResponseRankStatisticsResponse",
+              "ShutterSummary"
             ],
             "deleted": [
-              "MySubmissionItemDto",
-              "BaseResponseMySubmissionsResponse",
+              "SubmissionPhotoInfoDto",
               "SubmissionRequestInfoDto",
               "MySubmissionsResponse",
-              "SubmissionPhotoInfoDto"
+              "MySubmissionItemDto",
+              "BaseResponseMySubmissionsResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3730,8 +3730,8 @@
                         },
                         "properties": {
                           "added": [
-                            "viewCount",
-                            "likeCount"
+                            "likeCount",
+                            "viewCount"
                           ]
                         }
                       }
@@ -3951,8 +3951,8 @@
                               },
                               "required": {
                                 "added": [
-                                  "viewCount",
-                                  "likeCount"
+                                  "likeCount",
+                                  "viewCount"
                                 ]
                               },
                               "properties": {
@@ -4533,14 +4533,14 @@
                               },
                               "required": {
                                 "added": [
-                                  "viewCount",
-                                  "likeCount"
+                                  "likeCount",
+                                  "viewCount"
                                 ]
                               },
                               "properties": {
                                 "added": [
-                                  "likeCount",
-                                  "viewCount"
+                                  "viewCount",
+                                  "likeCount"
                                 ],
                                 "modified": {
                                   "id": {
@@ -4633,14 +4633,14 @@
                     "body": {
                       "required": {
                         "added": [
-                          "likeCount",
-                          "viewCount"
+                          "viewCount",
+                          "likeCount"
                         ]
                       },
                       "properties": {
                         "added": [
-                          "viewCount",
-                          "likeCount"
+                          "likeCount",
+                          "viewCount"
                         ]
                       }
                     },
@@ -4711,8 +4711,8 @@
                               },
                               "properties": {
                                 "added": [
-                                  "viewCount",
-                                  "likeCount"
+                                  "likeCount",
+                                  "viewCount"
                                 ],
                                 "modified": {
                                   "id": {
@@ -5602,8 +5602,8 @@
                         },
                         "required": {
                           "added": [
-                            "viewCount",
-                            "likeCount"
+                            "likeCount",
+                            "viewCount"
                           ]
                         },
                         "properties": {
@@ -5904,8 +5904,8 @@
                 },
                 "required": {
                   "added": [
-                    "viewCount",
-                    "likeCount"
+                    "likeCount",
+                    "viewCount"
                   ]
                 },
                 "properties": {
@@ -5966,14 +5966,14 @@
                         },
                         "required": {
                           "added": [
-                            "viewCount",
-                            "likeCount"
+                            "likeCount",
+                            "viewCount"
                           ]
                         },
                         "properties": {
                           "added": [
-                            "likeCount",
-                            "viewCount"
+                            "viewCount",
+                            "likeCount"
                           ],
                           "modified": {
                             "id": {
@@ -6072,14 +6072,14 @@
               "PublishedPhotoDetailResponse": {
                 "required": {
                   "added": [
-                    "likeCount",
-                    "viewCount"
+                    "viewCount",
+                    "likeCount"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "viewCount",
-                    "likeCount"
+                    "likeCount",
+                    "viewCount"
                   ]
                 }
               },
@@ -6100,8 +6100,8 @@
                         },
                         "properties": {
                           "added": [
-                            "viewCount",
-                            "likeCount"
+                            "likeCount",
+                            "viewCount"
                           ],
                           "modified": {
                             "id": {
@@ -7167,15 +7167,15 @@
         },
         "paths": {
           "added": [
+            "/api/admin/users/{id}",
             "/api/admin/users/{id}/profile",
-            "/api/admin/users",
-            "/api/admin/users/{id}"
+            "/api/admin/users"
           ],
           "deleted": [
+            "/internal/admin/photos",
             "/internal/admin/users",
             "/internal/admin/users/{id}",
-            "/internal/admin/users/{id}/profile",
-            "/internal/admin/photos"
+            "/internal/admin/users/{id}/profile"
           ]
         },
         "tags": {
@@ -7190,17 +7190,17 @@
         "components": {
           "schemas": {
             "added": [
-              "UserAuthority",
-              "User"
+              "User",
+              "UserAuthority"
             ],
             "deleted": [
+              "PhotoResponse",
+              "Gps",
+              "BoundingBox",
+              "BaseResponsePhotosResponse",
               "PhotosResponse",
               "Users",
-              "Gps",
-              "PhotoResponse",
               "UrlResult",
-              "BaseResponsePhotosResponse",
-              "BoundingBox",
               "UserAuthorities"
             ],
             "modified": {
@@ -7227,8 +7227,8 @@
                         },
                         "properties": {
                           "added": [
-                            "createdAt",
-                            "user"
+                            "user",
+                            "createdAt"
                           ],
                           "deleted": [
                             "users"
@@ -7243,8 +7243,8 @@
                               },
                               "properties": {
                                 "deleted": [
-                                  "createdAt",
-                                  "updatedAt"
+                                  "updatedAt",
+                                  "createdAt"
                                 ]
                               }
                             },
@@ -7381,8 +7381,8 @@
                       },
                       "properties": {
                         "added": [
-                          "providerId",
-                          "provider"
+                          "provider",
+                          "providerId"
                         ],
                         "deleted": [
                           "providerKey"
@@ -7417,14 +7417,14 @@
                           "profile": {
                             "required": {
                               "deleted": [
-                                "updatedAt",
-                                "createdAt"
+                                "createdAt",
+                                "updatedAt"
                               ]
                             },
                             "properties": {
                               "deleted": [
-                                "createdAt",
-                                "updatedAt"
+                                "updatedAt",
+                                "createdAt"
                               ]
                             }
                           },
@@ -7625,14 +7625,14 @@
                     "profile": {
                       "required": {
                         "deleted": [
-                          "updatedAt",
-                          "createdAt"
+                          "createdAt",
+                          "updatedAt"
                         ]
                       },
                       "properties": {
                         "deleted": [
-                          "createdAt",
-                          "updatedAt"
+                          "updatedAt",
+                          "createdAt"
                         ]
                       }
                     },
@@ -7672,8 +7672,8 @@
                       },
                       "properties": {
                         "deleted": [
-                          "createdAt",
-                          "updatedAt"
+                          "updatedAt",
+                          "createdAt"
                         ]
                       }
                     },
@@ -7698,8 +7698,8 @@
                 },
                 "properties": {
                   "deleted": [
-                    "updatedAt",
-                    "createdAt"
+                    "createdAt",
+                    "updatedAt"
                   ]
                 }
               }
