@@ -4,6 +4,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useVersions, useTheme } from '@/shared/hooks';
 import { cn } from '@/shared/lib/cn';
 
+import { DownloadButton } from '@/shared/ui/atoms';
+
 import { SpecTypeTabs, type SpecType } from './SpecTypeTabs';
 
 const RedocStandalone = lazy(() =>
@@ -162,6 +164,12 @@ export function ApiReferencePage() {
         </select>
 
         <SpecTypeTabs active={specType} onChange={setSpecType} />
+
+        <DownloadButton
+          href={specUrl}
+          fileName={`${currentVersion}-apiDocs-${specType}.json`}
+          aria-label={`Download ${currentVersion} ${specType} spec`}
+        />
       </div>
 
       {/* Redoc container */}
