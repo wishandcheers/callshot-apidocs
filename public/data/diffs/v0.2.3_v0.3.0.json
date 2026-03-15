@@ -12,12 +12,12 @@
         },
         "paths": {
           "added": [
-            "/api/photos/my/drafts",
-            "/api/signout",
             "/api/photos/{id}",
-            "/api/photos/drafts/{id}",
+            "/api/photos/my/published",
+            "/api/signout",
+            "/api/photos/my/drafts",
             "/api/photos/drafts/{id}/publish",
-            "/api/photos/my/published"
+            "/api/photos/drafts/{id}"
           ],
           "modified": {
             "/api/photos/my": {
@@ -78,22 +78,22 @@
         "components": {
           "schemas": {
             "added": [
-              "PublishedPhotoDetailResponse",
-              "ImageResponse",
-              "PageCursorResponse",
-              "BaseResponsePublishedPhotoDetailResponse",
-              "DraftPhotosResponse",
-              "UpdatePublishedPhotoRequest",
-              "CursorPhotosRequest",
-              "BaseResponseDraftPhotoDetailResponse",
-              "UpdateDraftPhotoRequest",
-              "BaseResponseDeletePhotoResponse",
-              "PublishedPhotosResponse",
-              "BaseResponsePhotoResponse",
-              "BaseResponseDraftPhotosResponse",
-              "DraftPhotoDetailResponse",
               "BaseResponsePublishedPhotosResponse",
-              "DeletePhotoResponse"
+              "BaseResponseDeletePhotoResponse",
+              "BaseResponseDraftPhotosResponse",
+              "UpdatePublishedPhotoRequest",
+              "BaseResponsePhotoResponse",
+              "DraftPhotosResponse",
+              "DraftPhotoDetailResponse",
+              "PageCursorResponse",
+              "PublishedPhotosResponse",
+              "BaseResponsePublishedPhotoDetailResponse",
+              "BaseResponseDraftPhotoDetailResponse",
+              "CursorPhotosRequest",
+              "DeletePhotoResponse",
+              "ImageResponse",
+              "UpdateDraftPhotoRequest",
+              "PublishedPhotoDetailResponse"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {

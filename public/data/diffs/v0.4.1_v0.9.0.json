@@ -12,20 +12,20 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/engagement",
             "/api/my/photo-requests/{id}",
-            "/api/photo-requests/{id}",
-            "/api/public/photos/bulk",
-            "/api/photo-requests/clusters",
-            "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/photos/{photoId}/like",
-            "/api/photo-requests/{requestId}/submissions/{submissionId}",
-            "/api/photo-requests",
             "/api/photos/{photoId}/dislike",
-            "/api/my/photo-requests/{id}/submissions",
-            "/api/my/photo-requests",
-            "/api/photo-requests/{requestId}/submissions",
+            "/api/photo-requests",
+            "/api/public/photos/bulk",
             "/api/my/submissions",
+            "/api/photo-requests/{requestId}/submissions",
+            "/api/photo-requests/clusters",
+            "/api/photos/{photoId}/like",
+            "/api/photo-requests/{id}",
+            "/api/my/photo-requests/{id}/submissions",
+            "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/photos/{photoId}/engagement",
+            "/api/my/photo-requests",
+            "/api/photo-requests/{requestId}/submissions/{submissionId}",
             "/api/my/photo-requests/{id}/close"
           ],
           "modified": {
@@ -45,9 +45,9 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "viewCount",
                                             "likeCount",
-                                            "urls"
+                                            "urls",
+                                            "viewCount"
                                           ],
                                           "deleted": [
                                             "thumbnail"
@@ -55,9 +55,9 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "likeCount",
                                             "urls",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ],
                                           "deleted": [
                                             "thumbnail"
@@ -97,9 +97,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "urls",
                                                     "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "urls"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -107,9 +107,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
                                                     "likeCount",
-                                                    "urls"
+                                                    "urls",
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -153,9 +153,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
+                                                    "likeCount",
                                                     "urls",
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -163,9 +163,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
                                                     "likeCount",
-                                                    "urls"
+                                                    "urls",
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -205,8 +205,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
@@ -239,8 +239,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
@@ -293,9 +293,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
+                                                    "likeCount",
                                                     "urls",
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -349,9 +349,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
+                                                    "likeCount",
                                                     "urls",
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -391,9 +391,9 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "viewCount",
                                             "likeCount",
-                                            "urls"
+                                            "urls",
+                                            "viewCount"
                                           ],
                                           "deleted": [
                                             "thumbnail"
@@ -401,9 +401,9 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "likeCount",
                                             "urls",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ],
                                           "deleted": [
                                             "thumbnail"
@@ -443,9 +443,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "urls",
                                                     "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "urls"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -453,9 +453,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
                                                     "likeCount",
-                                                    "urls"
+                                                    "urls",
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -499,9 +499,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
+                                                    "likeCount",
                                                     "urls",
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -509,9 +509,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
                                                     "likeCount",
-                                                    "urls"
+                                                    "urls",
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -551,8 +551,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
@@ -585,8 +585,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
@@ -639,9 +639,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
+                                                    "likeCount",
                                                     "urls",
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -695,9 +695,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
+                                                    "likeCount",
                                                     "urls",
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -737,8 +737,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
@@ -774,50 +774,50 @@
         "components": {
           "schemas": {
             "added": [
-              "MySubmissionsResponse",
-              "SubmissionResponse",
-              "RequestSubmissionItemDto",
-              "SubmitPhotoRequest",
-              "BaseResponseMyPhotoRequestsResponse",
-              "BaseResponseRequestSubmissionsResponse",
-              "PhotoRequestsQueryRequest",
-              "RequirementInfoDto",
-              "BaseResponseSubmissionResponse",
-              "PhotoRequestClusterDto",
-              "BaseResponseMySubmissionsResponse",
-              "PhotoRequestResponse",
-              "PhotoRequestsResponse",
-              "ReviewSubmissionRequest",
-              "BaseResponsePhotoRequestDetailResponse",
-              "BaseResponseEngagementResponse",
-              "CreatePhotoRequestRequest",
-              "ToggleLikeResponse",
-              "PhotoRequestListItemDto",
-              "PhotoRequestClusterQueryRequest",
-              "CursorInfoDto",
-              "UpdatePhotoRequestRequest",
-              "BaseResponseToggleLikeResponse",
-              "ToggleDislikeResponse",
-              "RequestSubmissionsResponse",
-              "ReferenceInfoDto",
-              "RequestSubmissionPhotoInfoDto",
-              "RequesterInfoDto",
-              "PhotoRequestClustersResponse",
               "EngagementResponse",
-              "SubmitterInfoDto",
-              "SubmissionRequestInfoDto",
-              "MyPhotoRequestsResponse",
-              "BaseResponsePhotoRequestResponse",
-              "PhotoRequestCursorRequest",
-              "BaseResponsePhotoRequestsResponse",
               "SubmissionPhotoInfoDto",
-              "UrlResult",
-              "BaseResponsePhotoRequestClustersResponse",
-              "PhotoRequestDetailResponse",
-              "RequirementInputDto",
-              "BaseResponseListPublishedPhotoDetailResponse",
+              "PhotoRequestListItemDto",
               "BaseResponseToggleDislikeResponse",
-              "MySubmissionItemDto"
+              "SubmitterInfoDto",
+              "MySubmissionItemDto",
+              "PhotoRequestCursorRequest",
+              "BaseResponsePhotoRequestResponse",
+              "BaseResponseMyPhotoRequestsResponse",
+              "BaseResponseSubmissionResponse",
+              "MyPhotoRequestsResponse",
+              "PhotoRequestClusterQueryRequest",
+              "SubmitPhotoRequest",
+              "ReferenceInfoDto",
+              "ReviewSubmissionRequest",
+              "BaseResponseListPublishedPhotoDetailResponse",
+              "BaseResponseRequestSubmissionsResponse",
+              "MySubmissionsResponse",
+              "BaseResponseEngagementResponse",
+              "RequesterInfoDto",
+              "PhotoRequestsQueryRequest",
+              "UpdatePhotoRequestRequest",
+              "RequirementInfoDto",
+              "CursorInfoDto",
+              "SubmissionRequestInfoDto",
+              "BaseResponseMySubmissionsResponse",
+              "PhotoRequestClustersResponse",
+              "UrlResult",
+              "RequestSubmissionItemDto",
+              "PhotoRequestResponse",
+              "PhotoRequestDetailResponse",
+              "RequestSubmissionPhotoInfoDto",
+              "ToggleDislikeResponse",
+              "PhotoRequestsResponse",
+              "RequestSubmissionsResponse",
+              "BaseResponsePhotoRequestsResponse",
+              "SubmissionResponse",
+              "ToggleLikeResponse",
+              "CreatePhotoRequestRequest",
+              "BaseResponsePhotoRequestClustersResponse",
+              "BaseResponseToggleLikeResponse",
+              "PhotoRequestClusterDto",
+              "RequirementInputDto",
+              "BaseResponsePhotoRequestDetailResponse"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {
@@ -830,9 +830,9 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "viewCount",
                                   "likeCount",
-                                  "urls"
+                                  "urls",
+                                  "viewCount"
                                 ],
                                 "deleted": [
                                   "thumbnail"
@@ -862,9 +862,9 @@
                     "body": {
                       "required": {
                         "added": [
+                          "viewCount",
                           "likeCount",
-                          "urls",
-                          "viewCount"
+                          "urls"
                         ],
                         "deleted": [
                           "thumbnail"
@@ -872,9 +872,9 @@
                       },
                       "properties": {
                         "added": [
+                          "viewCount",
                           "likeCount",
-                          "urls",
-                          "viewCount"
+                          "urls"
                         ],
                         "deleted": [
                           "thumbnail"
@@ -894,9 +894,9 @@
                             "items": {
                               "required": {
                                 "added": [
+                                  "likeCount",
                                   "urls",
-                                  "viewCount",
-                                  "likeCount"
+                                  "viewCount"
                                 ],
                                 "deleted": [
                                   "thumbnail"
@@ -932,8 +932,8 @@
                       },
                       "properties": {
                         "added": [
-                          "viewCount",
-                          "likeCount"
+                          "likeCount",
+                          "viewCount"
                         ]
                       }
                     }
@@ -950,9 +950,9 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "likeCount",
                                   "urls",
-                                  "viewCount"
+                                  "viewCount",
+                                  "likeCount"
                                 ],
                                 "deleted": [
                                   "thumbnail"
@@ -983,9 +983,9 @@
                       "items": {
                         "required": {
                           "added": [
-                            "viewCount",
                             "likeCount",
-                            "urls"
+                            "urls",
+                            "viewCount"
                           ],
                           "deleted": [
                             "thumbnail"
@@ -1009,9 +1009,9 @@
               "PhotoResponse": {
                 "required": {
                   "added": [
+                    "likeCount",
                     "urls",
-                    "viewCount",
-                    "likeCount"
+                    "viewCount"
                   ],
                   "deleted": [
                     "thumbnail"
@@ -1035,9 +1035,9 @@
                       "items": {
                         "required": {
                           "added": [
+                            "likeCount",
                             "urls",
-                            "viewCount",
-                            "likeCount"
+                            "viewCount"
                           ],
                           "deleted": [
                             "thumbnail"
@@ -1061,8 +1061,8 @@
               "PublishedPhotoDetailResponse": {
                 "required": {
                   "added": [
-                    "viewCount",
-                    "likeCount"
+                    "likeCount",
+                    "viewCount"
                   ]
                 },
                 "properties": {
@@ -1079,9 +1079,9 @@
                       "items": {
                         "required": {
                           "added": [
-                            "likeCount",
                             "urls",
-                            "viewCount"
+                            "viewCount",
+                            "likeCount"
                           ],
                           "deleted": [
                             "thumbnail"
@@ -1968,9 +1968,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "likeCount",
                                                     "urls",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -2035,9 +2035,9 @@
                               },
                               "properties": {
                                 "added": [
-                                  "urls",
                                   "viewCount",
-                                  "likeCount"
+                                  "likeCount",
+                                  "urls"
                                 ],
                                 "deleted": [
                                   "thumbnail"
@@ -2054,9 +2054,9 @@
               "PhotoResponse": {
                 "required": {
                   "added": [
+                    "viewCount",
                     "likeCount",
-                    "urls",
-                    "viewCount"
+                    "urls"
                   ],
                   "deleted": [
                     "thumbnail"
@@ -2064,9 +2064,9 @@
                 },
                 "properties": {
                   "added": [
+                    "likeCount",
                     "urls",
-                    "viewCount",
-                    "likeCount"
+                    "viewCount"
                   ],
                   "deleted": [
                     "thumbnail"
@@ -2090,9 +2090,9 @@
                         },
                         "properties": {
                           "added": [
-                            "urls",
                             "viewCount",
-                            "likeCount"
+                            "likeCount",
+                            "urls"
                           ],
                           "deleted": [
                             "thumbnail"

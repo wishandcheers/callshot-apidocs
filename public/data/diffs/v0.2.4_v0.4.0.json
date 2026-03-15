@@ -12,19 +12,19 @@
         },
         "paths": {
           "added": [
-            "/api/my/photos",
-            "/api/photos/{id}",
-            "/api/photos/drafts/{id}/publish",
-            "/api/my/drafts/{id}/publish",
             "/api/my/photos/{id}",
+            "/api/public/photos/clusters",
+            "/api/my/drafts/{id}/publish",
+            "/api/photos/drafts/{id}",
+            "/api/my/photos",
+            "/api/my/photos/published",
             "/api/photos/my/drafts",
             "/api/my/drafts/{id}",
-            "/api/public/photos/clusters",
-            "/api/my/drafts",
-            "/api/my/photos/published",
-            "/api/public/photos",
+            "/api/photos/drafts/{id}/publish",
             "/api/photos/my/published",
-            "/api/photos/drafts/{id}",
+            "/api/photos/{id}",
+            "/api/public/photos",
+            "/api/my/drafts",
             "/api/public/photos/cluster-area"
           ],
           "modified": {
@@ -261,22 +261,22 @@
         "components": {
           "schemas": {
             "added": [
-              "PageCursorResponse",
+              "DraftPhotoDetailResponse",
+              "BaseResponsePublishedPhotosResponse",
               "DraftPhotosResponse",
+              "BaseResponseDeletePhotoResponse",
+              "BaseResponseDraftPhotoDetailResponse",
+              "PublishedPhotosResponse",
+              "BaseResponseDraftPhotosResponse",
+              "BaseResponsePublishedPhotoDetailResponse",
+              "UpdatePublishedPhotoRequest",
               "BaseResponsePhotoResponse",
               "UpdateDraftPhotoRequest",
-              "DraftPhotoDetailResponse",
-              "BaseResponseDraftPhotosResponse",
-              "ImageResponse",
-              "DeletePhotoResponse",
-              "PublishedPhotosResponse",
-              "BaseResponseDeletePhotoResponse",
+              "PageCursorResponse",
               "CursorPhotosRequest",
-              "BaseResponseDraftPhotoDetailResponse",
-              "UpdatePublishedPhotoRequest",
-              "BaseResponsePublishedPhotosResponse",
+              "ImageResponse",
               "PublishedPhotoDetailResponse",
-              "BaseResponsePublishedPhotoDetailResponse"
+              "DeletePhotoResponse"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {
