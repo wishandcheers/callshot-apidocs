@@ -38,8 +38,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           }
         ],
@@ -134,8 +133,7 @@
             "description": "미션 ID",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           },
           {
@@ -144,8 +142,7 @@
             "description": "제출 ID",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           }
         ],
@@ -188,8 +185,7 @@
             "description": "미션 ID",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           }
         ],
@@ -222,8 +218,7 @@
             "description": "미션 ID",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           }
         ],
@@ -254,8 +249,7 @@
             "description": "미션 ID",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           }
         ],
@@ -286,8 +280,7 @@
             "description": "미션 ID",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           }
         ],
@@ -373,8 +366,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           }
         ],
@@ -628,8 +620,7 @@
         "description": "시스템 미션 응답",
         "properties": {
           "id": {
-            "type": "integer",
-            "format": "int64"
+            "type": "string"
           },
           "title": {
             "type": "string"
@@ -675,12 +666,10 @@
             "type": "string"
           },
           "createdAtEpochMilli": {
-            "type": "integer",
-            "format": "int64"
+            "type": "string"
           },
           "updatedAtEpochMilli": {
-            "type": "integer",
-            "format": "int64"
+            "type": "string"
           }
         },
         "required": [
@@ -867,8 +856,7 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "integer",
-            "format": "int64"
+            "type": "string"
           },
           "providerKey": {
             "$ref": "#/components/schemas/ProviderKey"
@@ -908,8 +896,7 @@
         "type": "object",
         "properties": {
           "userId": {
-            "type": "integer",
-            "format": "int64"
+            "type": "string"
           },
           "role": {
             "type": "string",
@@ -955,8 +942,7 @@
         "type": "object",
         "properties": {
           "userId": {
-            "type": "integer",
-            "format": "int64"
+            "type": "string"
           },
           "nickname": {
             "type": "string"
@@ -1007,8 +993,7 @@
         "description": "사용자 상세 정보 (관리자용)",
         "properties": {
           "id": {
-            "type": "integer",
-            "format": "int64",
+            "type": "string",
             "description": "사용자 ID",
             "example": 123456789
           },

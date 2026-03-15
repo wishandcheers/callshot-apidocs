@@ -96,8 +96,7 @@ paths:
         in: path
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       requestBody:
         content:
           application/json:
@@ -229,8 +228,7 @@ paths:
         description: 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: OK
@@ -251,8 +249,7 @@ paths:
         description: 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: OK
@@ -273,8 +270,7 @@ paths:
         description: 촬영 의뢰 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       requestBody:
         content:
           application/json:
@@ -353,15 +349,13 @@ paths:
         description: 촬영 의뢰 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       - name: submissionId
         in: path
         description: 제출 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       requestBody:
         content:
           application/json:
@@ -388,8 +382,7 @@ paths:
         description: 촬영 의뢰 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 마감 성공
@@ -410,8 +403,7 @@ paths:
         description: 임시저장 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 발행 성공
@@ -466,15 +458,13 @@ paths:
         description: 미션 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       - name: submissionId
         in: path
         description: 제출 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       requestBody:
         content:
           application/json:
@@ -501,8 +491,7 @@ paths:
         description: 미션 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 마감 성공
@@ -523,8 +512,7 @@ paths:
         description: 발행된 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 조회 성공
@@ -544,8 +532,7 @@ paths:
         description: 발행된 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 삭제 성공
@@ -565,8 +552,7 @@ paths:
         description: 발행된 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       requestBody:
         content:
           application/json:
@@ -593,8 +579,7 @@ paths:
         description: 촬영 의뢰 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 취소 성공
@@ -614,8 +599,7 @@ paths:
         description: 촬영 의뢰 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       requestBody:
         content:
           application/json:
@@ -642,8 +626,7 @@ paths:
         description: 임시저장 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 조회 성공
@@ -663,8 +646,7 @@ paths:
         description: 임시저장 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       requestBody:
         content:
           application/json:
@@ -691,8 +673,7 @@ paths:
         description: 미션 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 조회 성공
@@ -712,8 +693,7 @@ paths:
         description: 미션 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 취소 성공
@@ -733,8 +713,7 @@ paths:
         description: 미션 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       requestBody:
         content:
           application/json:
@@ -761,8 +740,7 @@ paths:
         description: 조회할 사용자 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 조회 성공
@@ -846,8 +824,7 @@ paths:
         description: 사용자 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 조회 성공
@@ -901,8 +878,7 @@ paths:
         description: 공개 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 조회 성공
@@ -1047,8 +1023,7 @@ paths:
         description: 사진 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: OK
@@ -1090,8 +1065,7 @@ paths:
         description: 촬영 의뢰 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 조회 성공
@@ -1168,8 +1142,7 @@ paths:
         description: 촬영 의뢰 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 조회 성공
@@ -1294,8 +1267,7 @@ paths:
         in: path
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: OK
@@ -1330,15 +1302,13 @@ paths:
         description: 촬영 의뢰 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       - name: submissionId
         in: path
         description: 제출 ID
         required: true
         schema:
-          type: integer
-          format: int64
+          type: string
       responses:
         "200":
           description: 철회 성공
@@ -1566,8 +1536,7 @@ components:
           description: 업로드 파일 키 (업로드 완료 시 사용)
           example: callshot/photos/abc123.jpg
         expiresAt:
-          type: integer
-          format: int64
+          type: string
           description: URL 만료 시각 (epoch millis)
           example: 1708300800000
       required:
@@ -1604,8 +1573,7 @@ components:
           type: boolean
           description: "좋아요 상태 (true: 좋아요됨, false: 좋아요 취소됨)"
         likeCount:
-          type: integer
-          format: int64
+          type: string
           description: 현재 좋아요 수
       required:
       - isLiked
@@ -1630,8 +1598,7 @@ components:
           type: boolean
           description: "싫어요 상태 (true: 싫어요됨, false: 싫어요 취소됨)"
         dislikeCount:
-          type: integer
-          format: int64
+          type: string
           description: 현재 싫어요 수
       required:
       - dislikeCount
@@ -1694,8 +1661,7 @@ components:
       description: 제출 응답
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         status:
           type: string
           enum:
@@ -1706,8 +1672,7 @@ components:
         photoThumbnailUrl:
           type: string
         createdAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
         requestStatus:
           type: string
           enum:
@@ -1867,8 +1832,7 @@ components:
       description: 촬영 의뢰 기본 응답
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         title:
           type: string
         gps:
@@ -1884,8 +1848,7 @@ components:
           - CANCELLED
           - EXPIRED
         createdAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
       required:
       - createdAtEpochMilli
       - gps
@@ -1925,8 +1888,7 @@ components:
       description: 사진 정보
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
           description: 사진 ID
           example: 123456789
         type:
@@ -1945,13 +1907,11 @@ components:
           $ref: "#/components/schemas/UrlResult"
           description: 이미지 URL 정보
         viewCount:
-          type: integer
-          format: int64
+          type: string
           description: 조회수
           example: 150
         likeCount:
-          type: integer
-          format: int64
+          type: string
           description: 좋아요 수
           example: 23
       required:
@@ -1965,8 +1925,7 @@ components:
       type: object
       properties:
         photoId:
-          type: integer
-          format: int64
+          type: string
         thumbnail:
           type: string
         original:
@@ -2082,8 +2041,7 @@ components:
       description: 시스템 미션 응답
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         title:
           type: string
         description:
@@ -2116,11 +2074,9 @@ components:
         campaignId:
           type: string
         createdAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
         updatedAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
       required:
       - createdAtEpochMilli
       - gps
@@ -2217,8 +2173,7 @@ components:
       description: 원본 이미지 정보
       properties:
         photoId:
-          type: integer
-          format: int64
+          type: string
           description: 사진 ID
           example: 123456789
         url:
@@ -2233,8 +2188,7 @@ components:
       description: 사진 소유자 정보
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
           description: 소유자 ID
           example: 146235617408962560
         nickname:
@@ -2252,8 +2206,7 @@ components:
       description: 발행된 사진 상세 정보 응답
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
           description: 사진 ID
           example: 123456789
         type:
@@ -2287,23 +2240,19 @@ components:
           $ref: "#/components/schemas/OwnerResponse"
           description: 사진 소유자 정보
         viewCount:
-          type: integer
-          format: int64
+          type: string
           description: 조회수
           example: 1234
         likeCount:
-          type: integer
-          format: int64
+          type: string
           description: 좋아요 수
           example: 56
         createdAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
           description: 생성 시각 (epochMilli)
           example: 1630000000000
         updatedAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
           description: 수정 시각 (epochMilli)
           example: 1630000000000
       required:
@@ -2443,8 +2392,7 @@ components:
       description: 임시저장 사진 상세 정보 응답
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
           description: 사진 ID
           example: 123456789
         type:
@@ -2486,13 +2434,11 @@ components:
           items:
             type: string
         createdAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
           description: 생성 시각 (epochMilli)
           example: 1630000000000
         updatedAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
           description: 수정 시각 (epochMilli)
           example: 1630000000000
       required:
@@ -2584,8 +2530,7 @@ components:
       description: 사용자 Shots 정보
       properties:
         userId:
-          type: integer
-          format: int64
+          type: string
           description: 사용자 ID
         shots:
           type: integer
@@ -2612,8 +2557,7 @@ components:
           description: 업로드한 사진 수
           example: 5
         totalLikesReceived:
-          type: integer
-          format: int64
+          type: string
           description: 받은 총 좋아요 수
           example: 25
         streakDays:
@@ -2667,8 +2611,7 @@ components:
             format: int64
           description: 랭크별 사용자 수
         totalUsers:
-          type: integer
-          format: int64
+          type: string
           description: 전체 사용자 수
         rankPercentages:
           type: object
@@ -2702,8 +2645,7 @@ components:
           description: 순위
           example: 1
         userId:
-          type: integer
-          format: int64
+          type: string
           description: 사용자 ID
         shots:
           type: integer
@@ -2762,8 +2704,7 @@ components:
       description: 공개 프로필 응답
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
           description: 사용자 ID
           example: 146235617408962560
         nickname:
@@ -2840,8 +2781,7 @@ components:
           description: 전체 사진 수
           example: 42
         generatedAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
           description: 응답 생성 시각 (epoch millis)
           example: 1708300800000
       required:
@@ -2936,8 +2876,7 @@ components:
           description: 전체 클러스터 수
           example: 15
         generatedAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
           description: 응답 생성 시각 (epoch millis)
           example: 1708300800000
       required:
@@ -2949,8 +2888,7 @@ components:
       description: 썸네일 정보
       properties:
         photoId:
-          type: integer
-          format: int64
+          type: string
           description: 사진 ID
           example: 123456789
         url:
@@ -3021,8 +2959,7 @@ components:
       description: 사용자 프로필 응답
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
           description: 사용자 ID
           example: 123456789
         email:
@@ -3067,20 +3004,16 @@ components:
       description: 사진 반응 정보 응답
       properties:
         photoId:
-          type: integer
-          format: int64
+          type: string
           description: 사진 ID
         viewCount:
-          type: integer
-          format: int64
+          type: string
           description: 조회수
         likeCount:
-          type: integer
-          format: int64
+          type: string
           description: 좋아요 수
         dislikeCount:
-          type: integer
-          format: int64
+          type: string
           description: 싫어요 수
         isLikedByUser:
           type: boolean
@@ -3168,8 +3101,7 @@ components:
       description: 촬영 의뢰 목록 아이템
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         title:
           type: string
         gps:
@@ -3196,8 +3128,7 @@ components:
           type: string
           description: "미션 요청 정보중, 참고 스타일 첫번째 이미지에 대한 썸네일"
         createdAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
       required:
       - createdAtEpochMilli
       - gps
@@ -3237,8 +3168,7 @@ components:
       description: 촬영 의뢰 상세 응답
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         title:
           type: string
         description:
@@ -3279,11 +3209,9 @@ components:
         hasSubmitted:
           type: boolean
         createdAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
         updatedAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
       required:
       - createdAtEpochMilli
       - gps
@@ -3313,8 +3241,7 @@ components:
       description: 요청자 정보
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         nickname:
           type: string
         avatarUrl:
@@ -3452,8 +3379,7 @@ components:
       description: 임시저장 사진 정보
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
           description: 사진 ID
           example: 123456789
         type:
@@ -3490,8 +3416,7 @@ components:
           items:
             $ref: "#/components/schemas/DraftPhotoResponse"
         generatedAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
           description: 응답 생성 시각 (epoch millis)
           example: 1708300800000
       required:
@@ -3562,8 +3487,7 @@ components:
           format: int32
           description: 전체 개수 (선택적)
         generatedAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
           description: 생성 시각 (epochMilli)
       required:
       - cursor
@@ -3649,8 +3573,7 @@ components:
       description: 요청자용 제출 아이템
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         submitter:
           $ref: "#/components/schemas/SubmitterInfoDto"
         photo:
@@ -3665,8 +3588,7 @@ components:
         message:
           type: string
         createdAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
       required:
       - createdAtEpochMilli
       - id
@@ -3678,8 +3600,7 @@ components:
       description: 제출된 사진 정보
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         thumbnailUrl:
           type: string
         originalUrl:
@@ -3712,8 +3633,7 @@ components:
       description: 제출자 정보
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         nickname:
           type: string
         avatarUrl:
@@ -3750,8 +3670,7 @@ components:
           format: int32
           description: 전체 개수 (선택적)
         generatedAtEpochMilli:
-          type: integer
-          format: int64
+          type: string
           description: 생성 시각 (epochMilli)
       required:
       - cursor
@@ -3883,8 +3802,7 @@ components:
       type: object
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
         providerKey:
           $ref: "#/components/schemas/ProviderKey"
         email:
@@ -3913,8 +3831,7 @@ components:
       type: object
       properties:
         userId:
-          type: integer
-          format: int64
+          type: string
         role:
           type: string
           enum:
@@ -3946,8 +3863,7 @@ components:
       type: object
       properties:
         userId:
-          type: integer
-          format: int64
+          type: string
         nickname:
           type: string
         avatarUrl:
@@ -3983,8 +3899,7 @@ components:
       description: 사용자 상세 정보 (관리자용)
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
           description: 사용자 ID
           example: 123456789
         provider:
@@ -4065,8 +3980,7 @@ components:
       description: 사진 삭제 응답
       properties:
         photoId:
-          type: integer
-          format: int64
+          type: string
           description: 삭제된 사진 ID
           example: 123456789
         success:
