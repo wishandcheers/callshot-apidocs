@@ -20,24 +20,24 @@
         },
         "paths": {
           "added": [
-            "/api/storage/complete",
-            "/api/shutter/leaderboard",
             "/api/shutter/users/{userId}",
-            "/api/shutter/statistics",
+            "/api/shutter/leaderboard",
             "/api/storage/presigned-url",
+            "/api/storage/complete",
+            "/api/shutter/statistics",
             "/api/shutter/me"
           ],
           "deleted": [
-            "/api/photos/drafts/{id}",
+            "/api/photos/my/published",
+            "/api/my/submissions",
             "/api/photos/drafts/{id}/publish",
+            "/api/photos",
+            "/api/photos/clusters",
+            "/api/photos/drafts/{id}",
             "/api/photos/cluster-area",
             "/api/photos/{id}",
-            "/api/photos/clusters",
-            "/api/my/submissions",
             "/api/photos/my",
-            "/api/photos/my/drafts",
-            "/api/photos",
-            "/api/photos/my/published"
+            "/api/photos/my/drafts"
           ],
           "modified": {
             "/api/hashtags": {
@@ -3489,27 +3489,27 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseLeaderboardResponse",
+              "RankStatisticsResponse",
               "PresignedUrlResponse",
+              "PresignedUrlRequest",
+              "BaseResponseRankStatisticsResponse",
               "BaseResponseShutterResponse",
-              "LeaderboardResponse",
+              "LeaderboardEntryResponse",
+              "ShutterResponse",
               "CompleteUploadRequest",
               "BaseResponsePresignedUrlResponse",
-              "RankStatisticsResponse",
-              "LeaderboardEntryResponse",
+              "BaseResponseLeaderboardResponse",
               "ShutterSummaryInfo",
-              "PresignedUrlRequest",
-              "ShutterResponse",
-              "BaseResponseRankStatisticsResponse"
+              "LeaderboardResponse"
             ],
             "deleted": [
-              "SubmissionRequestInfoDto",
               "MySubmissionItemDto",
-              "SubmissionPhotoInfoDto",
+              "ClusterAreaRequest",
               "BaseResponseMySubmissionsResponse",
-              "MySubmissionsResponse",
+              "SubmissionPhotoInfoDto",
               "PhotoClusterRequest",
-              "ClusterAreaRequest"
+              "SubmissionRequestInfoDto",
+              "MySubmissionsResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -6566,7 +6566,10 @@
           "operationId": "getMySubmissions",
           "path": "/api/my/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6576,7 +6579,10 @@
           "operationId": "getPhotos_1",
           "path": "/api/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6586,7 +6592,10 @@
           "operationId": "getPhotosInClusterArea_1",
           "path": "/api/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6596,7 +6605,10 @@
           "operationId": "getPhotoClusters_1",
           "path": "/api/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6606,7 +6618,10 @@
           "operationId": "getDraftPhoto",
           "path": "/api/photos/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6616,7 +6631,10 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/photos/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6626,7 +6644,10 @@
           "operationId": "publishDraftPhoto",
           "path": "/api/photos/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6636,7 +6657,10 @@
           "operationId": "getMyPhotos",
           "path": "/api/photos/my",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6646,7 +6670,10 @@
           "operationId": "getMyDraftPhotos",
           "path": "/api/photos/my/drafts",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6656,7 +6683,10 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/photos/my/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6666,7 +6696,10 @@
           "operationId": "deletePublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6676,7 +6709,10 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -6686,7 +6722,10 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "new-required-request-parameter",
@@ -6970,7 +7009,10 @@
           "operationId": "getLeaderboard",
           "path": "/api/shutter/leaderboard",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -6980,7 +7022,10 @@
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -6990,7 +7035,10 @@
           "operationId": "getRankStatistics",
           "path": "/api/shutter/statistics",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -7000,7 +7048,10 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+          }
         },
         {
           "id": "response-optional-property-added",
@@ -7030,7 +7081,10 @@
           "operationId": "completeUpload",
           "path": "/api/storage/complete",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -7040,7 +7094,10 @@
           "operationId": "presignedUrl",
           "path": "/api/storage/presigned-url",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+          }
         }
       ],
       "breaking": [
@@ -7052,7 +7109,10 @@
           "operationId": "getMySubmissions",
           "path": "/api/my/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7062,7 +7122,10 @@
           "operationId": "getPhotos_1",
           "path": "/api/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7072,7 +7135,10 @@
           "operationId": "getPhotosInClusterArea_1",
           "path": "/api/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7082,7 +7148,10 @@
           "operationId": "getPhotoClusters_1",
           "path": "/api/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7092,7 +7161,10 @@
           "operationId": "getDraftPhoto",
           "path": "/api/photos/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7102,7 +7174,10 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/photos/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7112,7 +7187,10 @@
           "operationId": "publishDraftPhoto",
           "path": "/api/photos/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7122,7 +7200,10 @@
           "operationId": "getMyPhotos",
           "path": "/api/photos/my",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7132,7 +7213,10 @@
           "operationId": "getMyDraftPhotos",
           "path": "/api/photos/my/drafts",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7142,7 +7226,10 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/photos/my/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7152,7 +7239,10 @@
           "operationId": "deletePublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7162,7 +7252,10 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7172,7 +7265,10 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "new-required-request-parameter",
@@ -7242,15 +7338,15 @@
         },
         "paths": {
           "added": [
+            "/api/admin/users",
             "/api/admin/users/{id}",
-            "/api/admin/users/{id}/profile",
-            "/api/admin/users"
+            "/api/admin/users/{id}/profile"
           ],
           "deleted": [
-            "/internal/admin/users/{id}/profile",
-            "/internal/admin/photos",
             "/internal/admin/users",
-            "/internal/admin/users/{id}"
+            "/internal/admin/users/{id}",
+            "/internal/admin/users/{id}/profile",
+            "/internal/admin/photos"
           ]
         },
         "tags": {
@@ -7269,14 +7365,14 @@
               "UserAuthority"
             ],
             "deleted": [
+              "Users",
+              "PhotosResponse",
+              "Gps",
+              "PhotoResponse",
               "BaseResponsePhotosResponse",
               "BoundingBox",
-              "PhotoResponse",
-              "UrlResult",
-              "Gps",
               "UserAuthorities",
-              "Users",
-              "PhotosResponse"
+              "UrlResult"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -7302,8 +7398,8 @@
                         },
                         "properties": {
                           "added": [
-                            "user",
-                            "createdAt"
+                            "createdAt",
+                            "user"
                           ],
                           "deleted": [
                             "users"
@@ -7498,8 +7594,8 @@
                             },
                             "properties": {
                               "deleted": [
-                                "createdAt",
-                                "updatedAt"
+                                "updatedAt",
+                                "createdAt"
                               ]
                             }
                           },
@@ -7706,8 +7802,8 @@
                       },
                       "properties": {
                         "deleted": [
-                          "createdAt",
-                          "updatedAt"
+                          "updatedAt",
+                          "createdAt"
                         ]
                       }
                     },
@@ -7767,8 +7863,8 @@
               "UserProfile": {
                 "required": {
                   "deleted": [
-                    "updatedAt",
-                    "createdAt"
+                    "createdAt",
+                    "updatedAt"
                   ]
                 },
                 "properties": {
@@ -7791,7 +7887,10 @@
           "operationId": "getPhotos",
           "path": "/internal/admin/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7801,7 +7900,10 @@
           "operationId": "findAll",
           "path": "/internal/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7811,7 +7913,10 @@
           "operationId": "findById",
           "path": "/internal/admin/users/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7821,7 +7926,10 @@
           "operationId": "modifyProfile",
           "path": "/internal/admin/users/{id}/profile",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "api-schema-removed",
@@ -7879,7 +7987,10 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -7889,7 +8000,10 @@
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -7899,7 +8013,10 @@
           "operationId": "modifyProfile",
           "path": "/api/admin/users/{id}/profile",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-admin.json"
+          }
         }
       ],
       "breaking": [
@@ -7911,7 +8028,10 @@
           "operationId": "getPhotos",
           "path": "/internal/admin/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7921,7 +8041,10 @@
           "operationId": "findAll",
           "path": "/internal/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7931,7 +8054,10 @@
           "operationId": "findById",
           "path": "/internal/admin/users/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -7941,7 +8067,10 @@
           "operationId": "modifyProfile",
           "path": "/internal/admin/users/{id}/profile",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
+          }
         }
       ],
       "summary": {

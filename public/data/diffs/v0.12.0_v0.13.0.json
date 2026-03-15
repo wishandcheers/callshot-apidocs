@@ -1,0 +1,431 @@
+{
+  "fromVersion": "v0.12.0",
+  "toVersion": "v0.13.0",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.12.0",
+            "to": "0.13.0"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/public/profiles/{userId}"
+          ],
+          "modified": {
+            "/api/my/photos/{id}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "owner"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "owner"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "PATCH": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "owner"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "owner"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/bulk": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "items": {
+                                          "required": {
+                                            "added": [
+                                              "owner"
+                                            ]
+                                          },
+                                          "properties": {
+                                            "added": [
+                                              "owner"
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/clusters": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "clusters": {
+                                              "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "photoBounds"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "photoBounds"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/{id}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "owner"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "owner"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": {
+          "added": [
+            "공개 프로필"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "OwnerResponse",
+              "BaseResponsePublicProfileResponse",
+              "PublicProfileResponse"
+            ],
+            "modified": {
+              "BaseResponseListPublishedPhotoDetailResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "items": {
+                        "required": {
+                          "added": [
+                            "owner"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "owner"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePhotoClustersResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "clusters": {
+                            "items": {
+                              "required": {
+                                "added": [
+                                  "photoBounds"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "photoBounds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePublishedPhotoDetailResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "required": {
+                        "added": [
+                          "owner"
+                        ]
+                      },
+                      "properties": {
+                        "added": [
+                          "owner"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "PhotoClusterResponse": {
+                "required": {
+                  "added": [
+                    "photoBounds"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "photoBounds"
+                  ]
+                }
+              },
+              "PhotoClustersResponse": {
+                "properties": {
+                  "modified": {
+                    "clusters": {
+                      "items": {
+                        "required": {
+                          "added": [
+                            "photoBounds"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "photoBounds"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "PublishedPhotoDetailResponse": {
+                "required": {
+                  "added": [
+                    "owner"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "owner"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/owner' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/owner' to the response with the '200' status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/items/owner' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetails",
+          "path": "/api/public/photos/bulk",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/clusters/items/photoBounds' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/owner' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetail",
+          "path": "/api/public/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicProfile",
+          "path": "/api/public/profiles/{userId}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json"
+          }
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 1,
+        "removed": 0,
+        "modified": 4,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.12.0",
+            "to": "0.13.0"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    }
+  }
+}

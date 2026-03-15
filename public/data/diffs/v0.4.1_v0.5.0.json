@@ -947,7 +947,10 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
+          }
         },
         {
           "id": "response-required-property-added",

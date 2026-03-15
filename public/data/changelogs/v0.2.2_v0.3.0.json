@@ -11,7 +11,10 @@
         "operationId": "getDraftPhoto",
         "path": "/api/photos/drafts/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -21,7 +24,10 @@
         "operationId": "updateDraftPhoto",
         "path": "/api/photos/drafts/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -31,7 +37,10 @@
         "operationId": "publishDraftPhoto",
         "path": "/api/photos/drafts/{id}/publish",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+        }
       },
       {
         "id": "response-optional-property-added",
@@ -51,7 +60,10 @@
         "operationId": "getMyDraftPhotos",
         "path": "/api/photos/my/drafts",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -61,7 +73,10 @@
         "operationId": "getMyPublishedPhotos",
         "path": "/api/photos/my/published",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -71,7 +86,10 @@
         "operationId": "deletePublishedPhoto",
         "path": "/api/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -81,7 +99,10 @@
         "operationId": "getPublishedPhoto",
         "path": "/api/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -91,7 +112,10 @@
         "operationId": "updatePublishedPhoto",
         "path": "/api/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -101,7 +125,10 @@
         "operationId": "signout",
         "path": "/api/signout",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+        }
       }
     ],
     "admin": []

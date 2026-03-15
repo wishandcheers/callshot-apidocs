@@ -12,21 +12,21 @@
         },
         "paths": {
           "added": [
-            "/api/photo-requests/{requestId}/submissions/{submissionId}",
-            "/api/public/photos/bulk",
-            "/api/my/photo-requests",
-            "/api/photo-requests/{id}",
-            "/api/my/photo-requests/{id}/submissions",
-            "/api/photo-requests/clusters",
-            "/api/my/photo-requests/{id}/close",
-            "/api/photos/{photoId}/like",
-            "/api/photos/{photoId}/dislike",
-            "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/photos/{photoId}/engagement",
             "/api/my/photo-requests/{id}",
+            "/api/photo-requests/{id}",
+            "/api/public/photos/bulk",
+            "/api/photo-requests/clusters",
+            "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/photos/{photoId}/like",
+            "/api/photo-requests/{requestId}/submissions/{submissionId}",
+            "/api/photo-requests",
+            "/api/photos/{photoId}/dislike",
+            "/api/my/photo-requests/{id}/submissions",
+            "/api/my/photo-requests",
             "/api/photo-requests/{requestId}/submissions",
             "/api/my/submissions",
-            "/api/photos/{photoId}/engagement",
-            "/api/photo-requests"
+            "/api/my/photo-requests/{id}/close"
           ],
           "modified": {
             "/api/my/drafts/{id}/publish": {
@@ -45,9 +45,9 @@
                                       "body": {
                                         "required": {
                                           "added": [
+                                            "viewCount",
                                             "likeCount",
-                                            "urls",
-                                            "viewCount"
+                                            "urls"
                                           ],
                                           "deleted": [
                                             "thumbnail"
@@ -163,9 +163,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "urls",
                                                     "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "urls"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -391,9 +391,9 @@
                                       "body": {
                                         "required": {
                                           "added": [
+                                            "viewCount",
                                             "likeCount",
-                                            "urls",
-                                            "viewCount"
+                                            "urls"
                                           ],
                                           "deleted": [
                                             "thumbnail"
@@ -509,9 +509,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "urls",
                                                     "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "urls"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -774,50 +774,50 @@
         "components": {
           "schemas": {
             "added": [
+              "MySubmissionsResponse",
+              "SubmissionResponse",
               "RequestSubmissionItemDto",
-              "PhotoRequestClusterDto",
-              "ToggleDislikeResponse",
-              "BaseResponsePhotoRequestDetailResponse",
-              "PhotoRequestListItemDto",
-              "PhotoRequestClustersResponse",
-              "RequirementInputDto",
-              "BaseResponseSubmissionResponse",
+              "SubmitPhotoRequest",
+              "BaseResponseMyPhotoRequestsResponse",
+              "BaseResponseRequestSubmissionsResponse",
               "PhotoRequestsQueryRequest",
-              "ReferenceInfoDto",
+              "RequirementInfoDto",
+              "BaseResponseSubmissionResponse",
+              "PhotoRequestClusterDto",
+              "BaseResponseMySubmissionsResponse",
+              "PhotoRequestResponse",
+              "PhotoRequestsResponse",
+              "ReviewSubmissionRequest",
+              "BaseResponsePhotoRequestDetailResponse",
               "BaseResponseEngagementResponse",
               "CreatePhotoRequestRequest",
-              "ReviewSubmissionRequest",
-              "BaseResponsePhotoRequestsResponse",
-              "MyPhotoRequestsResponse",
-              "UrlResult",
-              "BaseResponsePhotoRequestResponse",
-              "PhotoRequestDetailResponse",
-              "RequesterInfoDto",
-              "EngagementResponse",
-              "PhotoRequestsResponse",
-              "BaseResponseRequestSubmissionsResponse",
-              "SubmissionRequestInfoDto",
-              "BaseResponseMySubmissionsResponse",
               "ToggleLikeResponse",
+              "PhotoRequestListItemDto",
               "PhotoRequestClusterQueryRequest",
-              "SubmissionPhotoInfoDto",
-              "SubmitPhotoRequest",
-              "PhotoRequestResponse",
-              "PhotoRequestCursorRequest",
-              "RequestSubmissionsResponse",
-              "RequirementInfoDto",
-              "MySubmissionItemDto",
               "CursorInfoDto",
               "UpdatePhotoRequestRequest",
-              "BaseResponsePhotoRequestClustersResponse",
-              "BaseResponseToggleDislikeResponse",
-              "BaseResponseListPublishedPhotoDetailResponse",
-              "SubmitterInfoDto",
-              "MySubmissionsResponse",
+              "BaseResponseToggleLikeResponse",
+              "ToggleDislikeResponse",
+              "RequestSubmissionsResponse",
+              "ReferenceInfoDto",
               "RequestSubmissionPhotoInfoDto",
-              "BaseResponseMyPhotoRequestsResponse",
-              "SubmissionResponse",
-              "BaseResponseToggleLikeResponse"
+              "RequesterInfoDto",
+              "PhotoRequestClustersResponse",
+              "EngagementResponse",
+              "SubmitterInfoDto",
+              "SubmissionRequestInfoDto",
+              "MyPhotoRequestsResponse",
+              "BaseResponsePhotoRequestResponse",
+              "PhotoRequestCursorRequest",
+              "BaseResponsePhotoRequestsResponse",
+              "SubmissionPhotoInfoDto",
+              "UrlResult",
+              "BaseResponsePhotoRequestClustersResponse",
+              "PhotoRequestDetailResponse",
+              "RequirementInputDto",
+              "BaseResponseListPublishedPhotoDetailResponse",
+              "BaseResponseToggleDislikeResponse",
+              "MySubmissionItemDto"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {
@@ -830,9 +830,9 @@
                             "items": {
                               "required": {
                                 "added": [
+                                  "viewCount",
                                   "likeCount",
-                                  "urls",
-                                  "viewCount"
+                                  "urls"
                                 ],
                                 "deleted": [
                                   "thumbnail"
@@ -840,9 +840,9 @@
                               },
                               "properties": {
                                 "added": [
-                                  "likeCount",
                                   "urls",
-                                  "viewCount"
+                                  "viewCount",
+                                  "likeCount"
                                 ],
                                 "deleted": [
                                   "thumbnail"
@@ -862,9 +862,9 @@
                     "body": {
                       "required": {
                         "added": [
-                          "viewCount",
                           "likeCount",
-                          "urls"
+                          "urls",
+                          "viewCount"
                         ],
                         "deleted": [
                           "thumbnail"
@@ -872,9 +872,9 @@
                       },
                       "properties": {
                         "added": [
-                          "viewCount",
                           "likeCount",
-                          "urls"
+                          "urls",
+                          "viewCount"
                         ],
                         "deleted": [
                           "thumbnail"
@@ -885,62 +885,6 @@
                 }
               },
               "BaseResponsePhotosResponse": {
-                "properties": {
-                  "modified": {
-                    "body": {
-                      "properties": {
-                        "modified": {
-                          "photos": {
-                            "items": {
-                              "required": {
-                                "added": [
-                                  "likeCount",
-                                  "urls",
-                                  "viewCount"
-                                ],
-                                "deleted": [
-                                  "thumbnail"
-                                ]
-                              },
-                              "properties": {
-                                "added": [
-                                  "viewCount",
-                                  "likeCount",
-                                  "urls"
-                                ],
-                                "deleted": [
-                                  "thumbnail"
-                                ]
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "BaseResponsePublishedPhotoDetailResponse": {
-                "properties": {
-                  "modified": {
-                    "body": {
-                      "required": {
-                        "added": [
-                          "likeCount",
-                          "viewCount"
-                        ]
-                      },
-                      "properties": {
-                        "added": [
-                          "likeCount",
-                          "viewCount"
-                        ]
-                      }
-                    }
-                  }
-                }
-              },
-              "BaseResponsePublishedPhotosResponse": {
                 "properties": {
                   "modified": {
                     "body": {
@@ -976,6 +920,62 @@
                   }
                 }
               },
+              "BaseResponsePublishedPhotoDetailResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "required": {
+                        "added": [
+                          "likeCount",
+                          "viewCount"
+                        ]
+                      },
+                      "properties": {
+                        "added": [
+                          "viewCount",
+                          "likeCount"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePublishedPhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "photos": {
+                            "items": {
+                              "required": {
+                                "added": [
+                                  "likeCount",
+                                  "urls",
+                                  "viewCount"
+                                ],
+                                "deleted": [
+                                  "thumbnail"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "urls",
+                                  "viewCount",
+                                  "likeCount"
+                                ],
+                                "deleted": [
+                                  "thumbnail"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "MyPhotosResponse": {
                 "properties": {
                   "modified": {
@@ -983,9 +983,9 @@
                       "items": {
                         "required": {
                           "added": [
+                            "viewCount",
                             "likeCount",
-                            "urls",
-                            "viewCount"
+                            "urls"
                           ],
                           "deleted": [
                             "thumbnail"
@@ -993,9 +993,9 @@
                         },
                         "properties": {
                           "added": [
-                            "likeCount",
                             "urls",
-                            "viewCount"
+                            "viewCount",
+                            "likeCount"
                           ],
                           "deleted": [
                             "thumbnail"
@@ -1019,9 +1019,9 @@
                 },
                 "properties": {
                   "added": [
-                    "viewCount",
                     "likeCount",
-                    "urls"
+                    "urls",
+                    "viewCount"
                   ],
                   "deleted": [
                     "thumbnail"
@@ -1035,9 +1035,9 @@
                       "items": {
                         "required": {
                           "added": [
-                            "likeCount",
                             "urls",
-                            "viewCount"
+                            "viewCount",
+                            "likeCount"
                           ],
                           "deleted": [
                             "thumbnail"
@@ -1045,9 +1045,9 @@
                         },
                         "properties": {
                           "added": [
-                            "viewCount",
                             "likeCount",
-                            "urls"
+                            "urls",
+                            "viewCount"
                           ],
                           "deleted": [
                             "thumbnail"
@@ -1079,9 +1079,9 @@
                       "items": {
                         "required": {
                           "added": [
+                            "likeCount",
                             "urls",
-                            "viewCount",
-                            "likeCount"
+                            "viewCount"
                           ],
                           "deleted": [
                             "thumbnail"
@@ -1089,9 +1089,9 @@
                         },
                         "properties": {
                           "added": [
-                            "likeCount",
                             "urls",
-                            "viewCount"
+                            "viewCount",
+                            "likeCount"
                           ],
                           "deleted": [
                             "thumbnail"
@@ -1245,7 +1245,10 @@
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1255,7 +1258,10 @@
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1265,7 +1271,10 @@
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1275,7 +1284,10 @@
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1285,7 +1297,10 @@
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1295,7 +1310,10 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1305,7 +1323,10 @@
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "response-required-property-added",
@@ -1415,7 +1436,10 @@
           "operationId": "getMySubmissions",
           "path": "/api/my/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1425,7 +1449,10 @@
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1435,7 +1462,10 @@
           "operationId": "getPhotoRequestClusters",
           "path": "/api/photo-requests/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1445,7 +1475,10 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1455,7 +1488,10 @@
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1465,7 +1501,10 @@
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "response-required-property-added",
@@ -1665,7 +1704,10 @@
           "operationId": "toggleDislike",
           "path": "/api/photos/{photoId}/dislike",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1675,7 +1717,10 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1685,7 +1730,10 @@
           "operationId": "toggleLike",
           "path": "/api/photos/{photoId}/like",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "response-required-property-added",
@@ -1725,7 +1773,10 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
+          }
         },
         {
           "id": "response-required-property-added",
@@ -1917,9 +1968,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "viewCount",
                                                     "likeCount",
-                                                    "urls"
+                                                    "urls",
+                                                    "viewCount"
                                                   ],
                                                   "deleted": [
                                                     "thumbnail"
@@ -2003,9 +2054,9 @@
               "PhotoResponse": {
                 "required": {
                   "added": [
+                    "likeCount",
                     "urls",
-                    "viewCount",
-                    "likeCount"
+                    "viewCount"
                   ],
                   "deleted": [
                     "thumbnail"
@@ -2013,9 +2064,9 @@
                 },
                 "properties": {
                   "added": [
-                    "likeCount",
                     "urls",
-                    "viewCount"
+                    "viewCount",
+                    "likeCount"
                   ],
                   "deleted": [
                     "thumbnail"

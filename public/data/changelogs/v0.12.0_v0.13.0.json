@@ -1,0 +1,72 @@
+{
+  "fromVersion": "v0.12.0",
+  "toVersion": "v0.13.0",
+  "groups": {
+    "api": [
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/owner' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/owner' to the response with the '200' status",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updatePublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/items/owner' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetails",
+        "path": "/api/public/photos/bulk",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/clusters/items/photoBounds' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property 'body/owner' to the response with the '200' status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetail",
+        "path": "/api/public/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublicProfile",
+        "path": "/api/public/profiles/{userId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json"
+        }
+      }
+    ],
+    "admin": []
+  }
+}

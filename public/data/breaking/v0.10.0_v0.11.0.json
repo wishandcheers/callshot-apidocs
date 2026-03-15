@@ -21,7 +21,10 @@
         "operationId": "signup",
         "path": "/api/signup",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "baseSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+        }
       }
     ],
     "admin": []

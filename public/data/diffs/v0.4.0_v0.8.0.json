@@ -13,18 +13,18 @@
         "paths": {
           "added": [
             "/api/public/photos/{id}",
-            "/api/my/photo-requests",
-            "/api/my/photo-requests/{id}/close",
-            "/api/public/photos/bulk",
-            "/api/photo-requests/{id}",
-            "/api/photo-requests/{requestId}/submissions",
-            "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/my/photo-requests/{id}/submissions",
             "/api/my/photo-requests/{id}",
+            "/api/my/photo-requests/{id}/close",
+            "/api/my/photo-requests/{id}/submissions",
+            "/api/photo-requests/clusters",
             "/api/photo-requests",
+            "/api/public/photos/bulk",
             "/api/my/submissions",
+            "/api/photo-requests/{id}",
+            "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/photo-requests/{requestId}/submissions",
             "/api/photo-requests/{requestId}/submissions/{submissionId}",
-            "/api/photo-requests/clusters"
+            "/api/my/photo-requests"
           ],
           "modified": {
             "/api/my/drafts/{id}/publish": {
@@ -543,44 +543,44 @@
         "components": {
           "schemas": {
             "added": [
+              "UrlResult",
+              "CursorInfoDto",
+              "MySubmissionsResponse",
+              "RequestSubmissionItemDto",
+              "PhotoRequestResponse",
+              "ReviewSubmissionRequest",
+              "PhotoRequestDetailResponse",
+              "SubmissionResponse",
               "PhotoRequestClusterDto",
+              "MySubmissionItemDto",
+              "PhotoRequestsResponse",
+              "RequestSubmissionsResponse",
+              "MyPhotoRequestsResponse",
+              "BaseResponseSubmissionResponse",
+              "BaseResponseRequestSubmissionsResponse",
               "RequirementInputDto",
               "BaseResponseMySubmissionsResponse",
+              "CreatePhotoRequestRequest",
+              "BaseResponseMyPhotoRequestsResponse",
               "UpdatePhotoRequestRequest",
-              "BaseResponsePhotoRequestDetailResponse",
               "SubmitterInfoDto",
-              "BaseResponseSubmissionResponse",
+              "PhotoRequestCursorRequest",
+              "PhotoRequestsQueryRequest",
+              "SubmitPhotoRequest",
+              "PhotoRequestClustersResponse",
+              "BaseResponsePhotoRequestResponse",
+              "BaseResponseListPublishedPhotoDetailResponse",
+              "BaseResponsePhotoRequestDetailResponse",
+              "ReferenceInfoDto",
+              "PhotoRequestClusterQueryRequest",
+              "RequirementInfoDto",
+              "RequestSubmissionPhotoInfoDto",
               "PhotoRequestListItemDto",
+              "BaseResponsePhotoRequestsResponse",
+              "SubmissionRequestInfoDto",
               "SubmissionPhotoInfoDto",
               "RequesterInfoDto",
-              "BaseResponsePhotoRequestResponse",
-              "BaseResponseMyPhotoRequestsResponse",
-              "PhotoRequestClustersResponse",
-              "SubmitPhotoRequest",
-              "UrlResult",
-              "PhotoRequestResponse",
-              "BaseResponseRequestSubmissionsResponse",
-              "PhotoRequestDetailResponse",
-              "SubmissionRequestInfoDto",
-              "RequirementInfoDto",
-              "PhotoRequestClusterQueryRequest",
-              "ReviewSubmissionRequest",
-              "RequestSubmissionsResponse",
-              "SubmissionResponse",
-              "CreatePhotoRequestRequest",
-              "RequestSubmissionItemDto",
-              "PhotoRequestCursorRequest",
-              "MySubmissionsResponse",
-              "BaseResponsePhotoRequestsResponse",
-              "BaseResponsePhotoRequestClustersResponse",
-              "PhotoRequestsQueryRequest",
-              "CursorInfoDto",
-              "MySubmissionItemDto",
-              "MyPhotoRequestsResponse",
-              "PhotoRequestsResponse",
-              "BaseResponseListPublishedPhotoDetailResponse",
-              "ReferenceInfoDto",
-              "RequestSubmissionPhotoInfoDto"
+              "BaseResponsePhotoRequestClustersResponse"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {
@@ -922,7 +922,10 @@
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -932,7 +935,10 @@
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -942,7 +948,10 @@
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -952,7 +961,10 @@
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -962,7 +974,10 @@
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -972,7 +987,10 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -982,7 +1000,10 @@
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "response-required-property-added",
@@ -1012,7 +1033,10 @@
           "operationId": "getMySubmissions",
           "path": "/api/my/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1022,7 +1046,10 @@
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1032,7 +1059,10 @@
           "operationId": "getPhotoRequestClusters",
           "path": "/api/photo-requests/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1042,7 +1072,10 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1052,7 +1085,10 @@
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -1062,7 +1098,10 @@
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "response-required-property-added",
@@ -1132,7 +1171,10 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         },
         {
           "id": "response-required-property-added",
@@ -1152,7 +1194,10 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+          }
         }
       ],
       "breaking": [

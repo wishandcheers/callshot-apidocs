@@ -109,8 +109,8 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "tileBounds",
-                                                    "clusterId"
+                                                    "clusterId",
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
                                                     "maxDistanceMeters",
@@ -119,8 +119,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "tileBounds",
-                                                    "clusterId"
+                                                    "clusterId",
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
                                                     "maxDistanceMeters",
@@ -158,8 +158,8 @@
         "components": {
           "schemas": {
             "added": [
-              "BoundingBoxResponse",
-              "UpdateUserProfileRequest"
+              "UpdateUserProfileRequest",
+              "BoundingBoxResponse"
             ],
             "deleted": [
               "UserSignUpRequest"
@@ -179,18 +179,18 @@
                                   "clusterId"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ]
                               },
                               "properties": {
                                 "added": [
-                                  "clusterId",
-                                  "tileBounds"
+                                  "tileBounds",
+                                  "clusterId"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ],
                                 "modified": {
                                   "count": {
@@ -230,22 +230,22 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
-                    "tileBounds",
-                    "clusterId"
+                    "clusterId",
+                    "tileBounds"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "tileBounds",
-                    "clusterId"
+                    "clusterId",
+                    "tileBounds"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ],
                   "modified": {
                     "count": {
@@ -268,18 +268,18 @@
                             "clusterId"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ]
                         },
                         "properties": {
                           "added": [
-                            "clusterId",
-                            "tileBounds"
+                            "tileBounds",
+                            "clusterId"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ],
                           "modified": {
                             "count": {
@@ -350,7 +350,10 @@
           "operationId": "signup",
           "path": "/api/signup",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+          }
         },
         {
           "id": "api-schema-removed",
@@ -376,7 +379,10 @@
           "operationId": "updateProfile",
           "path": "/api/profile",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
+          }
         },
         {
           "id": "endpoint-deprecated",
@@ -416,7 +422,10 @@
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
+          }
         }
       ],
       "breaking": [
@@ -458,7 +467,10 @@
           "operationId": "signup",
           "path": "/api/signup",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "baseSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+          }
         }
       ],
       "summary": {
@@ -555,18 +567,18 @@
         "components": {
           "schemas": {
             "added": [
+              "ReviewSystemMissionSubmissionRequest",
               "Gps",
+              "PatchString",
+              "UpdateSystemMissionRequest",
+              "BaseResponseSystemMissionsResponse",
               "Absent",
               "SystemMissionsResponse",
-              "SystemMissionResponse",
-              "ReviewSystemMissionSubmissionRequest",
-              "UpdateSystemMissionRequest",
-              "Value",
-              "BaseResponseSystemMissionsResponse",
-              "Clear",
               "BaseResponseSystemMissionResponse",
+              "Clear",
+              "SystemMissionResponse",
               "CreateSystemMissionRequest",
-              "PatchString"
+              "Value"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -707,7 +719,10 @@
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -717,7 +732,10 @@
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -727,7 +745,10 @@
           "operationId": "cancelMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -737,7 +758,10 @@
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -747,7 +771,10 @@
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -757,7 +784,10 @@
           "operationId": "closeMission",
           "path": "/api/admin/missions/{id}/close",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "endpoint-added",
@@ -767,7 +797,10 @@
           "operationId": "reviewSubmission",
           "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+          }
         },
         {
           "id": "response-required-property-added",

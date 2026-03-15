@@ -121,7 +121,10 @@
         "operationId": "getMyPhotoRequests",
         "path": "/api/my/photo-requests",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -131,7 +134,10 @@
         "operationId": "createPhotoRequest",
         "path": "/api/my/photo-requests",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -141,7 +147,10 @@
         "operationId": "cancelPhotoRequest",
         "path": "/api/my/photo-requests/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -151,7 +160,10 @@
         "operationId": "updatePhotoRequest",
         "path": "/api/my/photo-requests/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -161,7 +173,10 @@
         "operationId": "closePhotoRequest",
         "path": "/api/my/photo-requests/{id}/close",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -171,7 +186,10 @@
         "operationId": "getSubmissionsForRequest",
         "path": "/api/my/photo-requests/{id}/submissions",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -181,7 +199,10 @@
         "operationId": "reviewSubmission",
         "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "response-required-property-added",
@@ -211,7 +232,10 @@
         "operationId": "getMySubmissions",
         "path": "/api/my/submissions",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -221,7 +245,10 @@
         "operationId": "getPhotoRequests",
         "path": "/api/photo-requests",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -231,7 +258,10 @@
         "operationId": "getPhotoRequestClusters",
         "path": "/api/photo-requests/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -241,7 +271,10 @@
         "operationId": "getPhotoRequestDetail",
         "path": "/api/photo-requests/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -251,7 +284,10 @@
         "operationId": "submitPhoto",
         "path": "/api/photo-requests/{requestId}/submissions",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "endpoint-added",
@@ -261,7 +297,10 @@
         "operationId": "withdrawSubmission",
         "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "response-required-property-added",
@@ -331,7 +370,10 @@
         "operationId": "getPublicPhotoDetails",
         "path": "/api/public/photos/bulk",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       },
       {
         "id": "response-required-property-added",
@@ -351,7 +393,10 @@
         "operationId": "getPublicPhotoDetail",
         "path": "/api/public/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
+        }
       }
     ],
     "admin": [
