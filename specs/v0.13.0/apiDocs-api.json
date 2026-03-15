@@ -2193,12 +2193,14 @@
             "description": "이미지 URL 정보"
           },
           "viewCount": {
-            "type": "string",
+            "type": "integer",
+            "format": "int32",
             "description": "조회수",
             "example": 150
           },
           "likeCount": {
-            "type": "string",
+            "type": "integer",
+            "format": "int32",
             "description": "좋아요 수",
             "example": 23
           }
@@ -2408,12 +2410,14 @@
             "description": "사진 소유자 정보"
           },
           "viewCount": {
-            "type": "string",
+            "type": "integer",
+            "format": "int32",
             "description": "조회수",
             "example": 1234
           },
           "likeCount": {
-            "type": "string",
+            "type": "integer",
+            "format": "int32",
             "description": "좋아요 수",
             "example": 56
           },

@@ -382,17 +382,9 @@
                                               }
                                             },
                                             "likeCount": {
-                                              "type": {
-                                                "added": [
-                                                  "string"
-                                                ],
-                                                "deleted": [
-                                                  "integer"
-                                                ]
-                                              },
                                               "format": {
                                                 "from": "int64",
-                                                "to": ""
+                                                "to": "int32"
                                               }
                                             },
                                             "urls": {
@@ -416,17 +408,9 @@
                                               }
                                             },
                                             "viewCount": {
-                                              "type": {
-                                                "added": [
-                                                  "string"
-                                                ],
-                                                "deleted": [
-                                                  "integer"
-                                                ]
-                                              },
                                               "format": {
                                                 "from": "int64",
-                                                "to": ""
+                                                "to": "int32"
                                               }
                                             }
                                           }
@@ -1126,17 +1110,9 @@
                                                       }
                                                     },
                                                     "likeCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     },
                                                     "urls": {
@@ -1160,17 +1136,9 @@
                                                       }
                                                     },
                                                     "viewCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     }
                                                   }
@@ -1242,17 +1210,9 @@
                                                       }
                                                     },
                                                     "likeCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     },
                                                     "urls": {
@@ -1276,17 +1236,9 @@
                                                       }
                                                     },
                                                     "viewCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     }
                                                   }
@@ -1466,17 +1418,9 @@
                                               }
                                             },
                                             "likeCount": {
-                                              "type": {
-                                                "added": [
-                                                  "string"
-                                                ],
-                                                "deleted": [
-                                                  "integer"
-                                                ]
-                                              },
                                               "format": {
                                                 "from": "int64",
-                                                "to": ""
+                                                "to": "int32"
                                               }
                                             },
                                             "updatedAtEpochMilli": {
@@ -1494,17 +1438,9 @@
                                               }
                                             },
                                             "viewCount": {
-                                              "type": {
-                                                "added": [
-                                                  "string"
-                                                ],
-                                                "deleted": [
-                                                  "integer"
-                                                ]
-                                              },
                                               "format": {
                                                 "from": "int64",
-                                                "to": ""
+                                                "to": "int32"
                                               }
                                             }
                                           }
@@ -1612,17 +1548,9 @@
                                               }
                                             },
                                             "likeCount": {
-                                              "type": {
-                                                "added": [
-                                                  "string"
-                                                ],
-                                                "deleted": [
-                                                  "integer"
-                                                ]
-                                              },
                                               "format": {
                                                 "from": "int64",
-                                                "to": ""
+                                                "to": "int32"
                                               }
                                             },
                                             "updatedAtEpochMilli": {
@@ -1640,17 +1568,9 @@
                                               }
                                             },
                                             "viewCount": {
-                                              "type": {
-                                                "added": [
-                                                  "string"
-                                                ],
-                                                "deleted": [
-                                                  "integer"
-                                                ]
-                                              },
                                               "format": {
                                                 "from": "int64",
-                                                "to": ""
+                                                "to": "int32"
                                               }
                                             }
                                           }
@@ -2374,17 +2294,9 @@
                                                       }
                                                     },
                                                     "likeCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     },
                                                     "urls": {
@@ -2408,17 +2320,9 @@
                                                       }
                                                     },
                                                     "viewCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     }
                                                   }
@@ -2515,17 +2419,9 @@
                                                 }
                                               },
                                               "likeCount": {
-                                                "type": {
-                                                  "added": [
-                                                    "string"
-                                                  ],
-                                                  "deleted": [
-                                                    "integer"
-                                                  ]
-                                                },
                                                 "format": {
                                                   "from": "int64",
-                                                  "to": ""
+                                                  "to": "int32"
                                                 }
                                               },
                                               "updatedAtEpochMilli": {
@@ -2543,17 +2439,9 @@
                                                 }
                                               },
                                               "viewCount": {
-                                                "type": {
-                                                  "added": [
-                                                    "string"
-                                                  ],
-                                                  "deleted": [
-                                                    "integer"
-                                                  ]
-                                                },
                                                 "format": {
                                                   "from": "int64",
-                                                  "to": ""
+                                                  "to": "int32"
                                                 }
                                               }
                                             }
@@ -2622,17 +2510,9 @@
                                                       }
                                                     },
                                                     "likeCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     },
                                                     "urls": {
@@ -2656,17 +2536,9 @@
                                                       }
                                                     },
                                                     "viewCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     }
                                                   }
@@ -2820,17 +2692,9 @@
                                                       }
                                                     },
                                                     "likeCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     },
                                                     "urls": {
@@ -2854,17 +2718,9 @@
                                                       }
                                                     },
                                                     "viewCount": {
-                                                      "type": {
-                                                        "added": [
-                                                          "string"
-                                                        ],
-                                                        "deleted": [
-                                                          "integer"
-                                                        ]
-                                                      },
                                                       "format": {
                                                         "from": "int64",
-                                                        "to": ""
+                                                        "to": "int32"
                                                       }
                                                     }
                                                   }
@@ -2982,17 +2838,9 @@
                                               }
                                             },
                                             "likeCount": {
-                                              "type": {
-                                                "added": [
-                                                  "string"
-                                                ],
-                                                "deleted": [
-                                                  "integer"
-                                                ]
-                                              },
                                               "format": {
                                                 "from": "int64",
-                                                "to": ""
+                                                "to": "int32"
                                               }
                                             },
                                             "updatedAtEpochMilli": {
@@ -3010,17 +2858,9 @@
                                               }
                                             },
                                             "viewCount": {
-                                              "type": {
-                                                "added": [
-                                                  "string"
-                                                ],
-                                                "deleted": [
-                                                  "integer"
-                                                ]
-                                              },
                                               "format": {
                                                 "from": "int64",
-                                                "to": ""
+                                                "to": "int32"
                                               }
                                             }
                                           }
@@ -3434,8 +3274,8 @@
           "schemas": {
             "added": [
               "OwnerResponse",
-              "BaseResponsePublicProfileResponse",
-              "PublicProfileResponse"
+              "PublicProfileResponse",
+              "BaseResponsePublicProfileResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3772,17 +3612,9 @@
                               }
                             },
                             "likeCount": {
-                              "type": {
-                                "added": [
-                                  "string"
-                                ],
-                                "deleted": [
-                                  "integer"
-                                ]
-                              },
                               "format": {
                                 "from": "int64",
-                                "to": ""
+                                "to": "int32"
                               }
                             },
                             "updatedAtEpochMilli": {
@@ -3800,17 +3632,9 @@
                               }
                             },
                             "viewCount": {
-                              "type": {
-                                "added": [
-                                  "string"
-                                ],
-                                "deleted": [
-                                  "integer"
-                                ]
-                              },
                               "format": {
                                 "from": "int64",
-                                "to": ""
+                                "to": "int32"
                               }
                             }
                           }
@@ -3949,17 +3773,9 @@
                                     }
                                   },
                                   "likeCount": {
-                                    "type": {
-                                      "added": [
-                                        "string"
-                                      ],
-                                      "deleted": [
-                                        "integer"
-                                      ]
-                                    },
                                     "format": {
                                       "from": "int64",
-                                      "to": ""
+                                      "to": "int32"
                                     }
                                   },
                                   "urls": {
@@ -3983,17 +3799,9 @@
                                     }
                                   },
                                   "viewCount": {
-                                    "type": {
-                                      "added": [
-                                        "string"
-                                      ],
-                                      "deleted": [
-                                        "integer"
-                                      ]
-                                    },
                                     "format": {
                                       "from": "int64",
-                                      "to": ""
+                                      "to": "int32"
                                     }
                                   }
                                 }
@@ -4251,17 +4059,9 @@
                             }
                           },
                           "likeCount": {
-                            "type": {
-                              "added": [
-                                "string"
-                              ],
-                              "deleted": [
-                                "integer"
-                              ]
-                            },
                             "format": {
                               "from": "int64",
-                              "to": ""
+                              "to": "int32"
                             }
                           },
                           "urls": {
@@ -4285,17 +4085,9 @@
                             }
                           },
                           "viewCount": {
-                            "type": {
-                              "added": [
-                                "string"
-                              ],
-                              "deleted": [
-                                "integer"
-                              ]
-                            },
                             "format": {
                               "from": "int64",
-                              "to": ""
+                              "to": "int32"
                             }
                           }
                         }
@@ -4343,17 +4135,9 @@
                                     }
                                   },
                                   "likeCount": {
-                                    "type": {
-                                      "added": [
-                                        "string"
-                                      ],
-                                      "deleted": [
-                                        "integer"
-                                      ]
-                                    },
                                     "format": {
                                       "from": "int64",
-                                      "to": ""
+                                      "to": "int32"
                                     }
                                   },
                                   "urls": {
@@ -4377,17 +4161,9 @@
                                     }
                                   },
                                   "viewCount": {
-                                    "type": {
-                                      "added": [
-                                        "string"
-                                      ],
-                                      "deleted": [
-                                        "integer"
-                                      ]
-                                    },
                                     "format": {
                                       "from": "int64",
-                                      "to": ""
+                                      "to": "int32"
                                     }
                                   }
                                 }
@@ -4489,17 +4265,9 @@
                             }
                           },
                           "likeCount": {
-                            "type": {
-                              "added": [
-                                "string"
-                              ],
-                              "deleted": [
-                                "integer"
-                              ]
-                            },
                             "format": {
                               "from": "int64",
-                              "to": ""
+                              "to": "int32"
                             }
                           },
                           "updatedAtEpochMilli": {
@@ -4517,17 +4285,9 @@
                             }
                           },
                           "viewCount": {
-                            "type": {
-                              "added": [
-                                "string"
-                              ],
-                              "deleted": [
-                                "integer"
-                              ]
-                            },
                             "format": {
                               "from": "int64",
-                              "to": ""
+                              "to": "int32"
                             }
                           }
                         }
@@ -4575,17 +4335,9 @@
                                     }
                                   },
                                   "likeCount": {
-                                    "type": {
-                                      "added": [
-                                        "string"
-                                      ],
-                                      "deleted": [
-                                        "integer"
-                                      ]
-                                    },
                                     "format": {
                                       "from": "int64",
-                                      "to": ""
+                                      "to": "int32"
                                     }
                                   },
                                   "urls": {
@@ -4609,17 +4361,9 @@
                                     }
                                   },
                                   "viewCount": {
-                                    "type": {
-                                      "added": [
-                                        "string"
-                                      ],
-                                      "deleted": [
-                                        "integer"
-                                      ]
-                                    },
                                     "format": {
                                       "from": "int64",
-                                      "to": ""
+                                      "to": "int32"
                                     }
                                   }
                                 }
@@ -5344,17 +5088,9 @@
                               }
                             },
                             "likeCount": {
-                              "type": {
-                                "added": [
-                                  "string"
-                                ],
-                                "deleted": [
-                                  "integer"
-                                ]
-                              },
                               "format": {
                                 "from": "int64",
-                                "to": ""
+                                "to": "int32"
                               }
                             },
                             "urls": {
@@ -5378,17 +5114,9 @@
                               }
                             },
                             "viewCount": {
-                              "type": {
-                                "added": [
-                                  "string"
-                                ],
-                                "deleted": [
-                                  "integer"
-                                ]
-                              },
                               "format": {
                                 "from": "int64",
-                                "to": ""
+                                "to": "int32"
                               }
                             }
                           }
@@ -5684,17 +5412,9 @@
                       }
                     },
                     "likeCount": {
-                      "type": {
-                        "added": [
-                          "string"
-                        ],
-                        "deleted": [
-                          "integer"
-                        ]
-                      },
                       "format": {
                         "from": "int64",
-                        "to": ""
+                        "to": "int32"
                       }
                     },
                     "urls": {
@@ -5718,17 +5438,9 @@
                       }
                     },
                     "viewCount": {
-                      "type": {
-                        "added": [
-                          "string"
-                        ],
-                        "deleted": [
-                          "integer"
-                        ]
-                      },
                       "format": {
                         "from": "int64",
-                        "to": ""
+                        "to": "int32"
                       }
                     }
                   }
@@ -5770,17 +5482,9 @@
                               }
                             },
                             "likeCount": {
-                              "type": {
-                                "added": [
-                                  "string"
-                                ],
-                                "deleted": [
-                                  "integer"
-                                ]
-                              },
                               "format": {
                                 "from": "int64",
-                                "to": ""
+                                "to": "int32"
                               }
                             },
                             "urls": {
@@ -5804,17 +5508,9 @@
                               }
                             },
                             "viewCount": {
-                              "type": {
-                                "added": [
-                                  "string"
-                                ],
-                                "deleted": [
-                                  "integer"
-                                ]
-                              },
                               "format": {
                                 "from": "int64",
-                                "to": ""
+                                "to": "int32"
                               }
                             }
                           }
@@ -5904,17 +5600,9 @@
                       }
                     },
                     "likeCount": {
-                      "type": {
-                        "added": [
-                          "string"
-                        ],
-                        "deleted": [
-                          "integer"
-                        ]
-                      },
                       "format": {
                         "from": "int64",
-                        "to": ""
+                        "to": "int32"
                       }
                     },
                     "updatedAtEpochMilli": {
@@ -5932,17 +5620,9 @@
                       }
                     },
                     "viewCount": {
-                      "type": {
-                        "added": [
-                          "string"
-                        ],
-                        "deleted": [
-                          "integer"
-                        ]
-                      },
                       "format": {
                         "from": "int64",
-                        "to": ""
+                        "to": "int32"
                       }
                     }
                   }
@@ -5984,17 +5664,9 @@
                               }
                             },
                             "likeCount": {
-                              "type": {
-                                "added": [
-                                  "string"
-                                ],
-                                "deleted": [
-                                  "integer"
-                                ]
-                              },
                               "format": {
                                 "from": "int64",
-                                "to": ""
+                                "to": "int32"
                               }
                             },
                             "urls": {
@@ -6018,17 +5690,9 @@
                               }
                             },
                             "viewCount": {
-                              "type": {
-                                "added": [
-                                  "string"
-                                ],
-                                "deleted": [
-                                  "integer"
-                                ]
-                              },
                               "format": {
                                 "from": "int64",
-                                "to": ""
+                                "to": "int32"
                               }
                             }
                           }
@@ -6569,27 +6233,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "POST",
-          "operationId": "publishDraftPhoto",
-          "path": "/api/my/drafts/{id}/publish",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "POST",
-          "operationId": "publishDraftPhoto",
-          "path": "/api/my/drafts/{id}/publish",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "POST",
           "operationId": "publishDraftPhoto",
@@ -6799,27 +6443,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/publishPhotos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getMyPhotos",
-          "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/publishPhotos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getMyPhotos",
-          "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/publishPhotos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
@@ -6849,27 +6473,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getMyPublishedPhotos",
-          "path": "/api/my/photos/published",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getMyPublishedPhotos",
-          "path": "/api/my/photos/published",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
@@ -6919,27 +6523,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublishedPhoto",
-          "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublishedPhoto",
-          "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
@@ -6979,27 +6563,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "PATCH",
-          "operationId": "updatePublishedPhoto",
-          "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "PATCH",
-          "operationId": "updatePublishedPhoto",
-          "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
@@ -7199,27 +6763,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPhotos",
-          "path": "/api/public/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPhotos",
-          "path": "/api/public/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotos",
@@ -7259,27 +6803,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublicPhotoDetails",
-          "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/items/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublicPhotoDetails",
-          "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
@@ -7309,27 +6833,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPhotosInClusterArea",
-          "path": "/api/public/photos/cluster-area",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPhotosInClusterArea",
-          "path": "/api/public/photos/cluster-area",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
@@ -7379,27 +6883,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getClusterPhotos",
-          "path": "/api/public/photos/clusters/{clusterId}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getClusterPhotos",
-          "path": "/api/public/photos/clusters/{clusterId}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getClusterPhotos",
@@ -7439,27 +6923,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublicPhotoDetail",
-          "path": "/api/public/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublicPhotoDetail",
-          "path": "/api/public/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
@@ -7974,27 +7438,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "POST",
-          "operationId": "publishDraftPhoto",
-          "path": "/api/my/drafts/{id}/publish",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "POST",
-          "operationId": "publishDraftPhoto",
-          "path": "/api/my/drafts/{id}/publish",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "POST",
           "operationId": "publishDraftPhoto",
@@ -8204,27 +7648,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/publishPhotos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getMyPhotos",
-          "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/publishPhotos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getMyPhotos",
-          "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/publishPhotos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
@@ -8254,27 +7678,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getMyPublishedPhotos",
-          "path": "/api/my/photos/published",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getMyPublishedPhotos",
-          "path": "/api/my/photos/published",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
@@ -8324,27 +7728,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublishedPhoto",
-          "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublishedPhoto",
-          "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
@@ -8384,27 +7768,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "PATCH",
-          "operationId": "updatePublishedPhoto",
-          "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "PATCH",
-          "operationId": "updatePublishedPhoto",
-          "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
@@ -8604,27 +7968,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPhotos",
-          "path": "/api/public/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPhotos",
-          "path": "/api/public/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotos",
@@ -8664,27 +8008,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublicPhotoDetails",
-          "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/items/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublicPhotoDetails",
-          "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
@@ -8714,27 +8038,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPhotosInClusterArea",
-          "path": "/api/public/photos/cluster-area",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPhotosInClusterArea",
-          "path": "/api/public/photos/cluster-area",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
@@ -8784,27 +8088,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getClusterPhotos",
-          "path": "/api/public/photos/clusters/{clusterId}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getClusterPhotos",
-          "path": "/api/public/photos/clusters/{clusterId}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/photos/items/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getClusterPhotos",
@@ -8844,27 +8128,7 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublicPhotoDetail",
-          "path": "/api/public/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
           "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
-          "level": 3,
-          "operation": "GET",
-          "operationId": "getPublicPhotoDetail",
-          "path": "/api/public/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json",
-          "section": "paths"
-        },
-        {
-          "id": "response-property-type-changed",
-          "text": "the 'body/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
@@ -8987,7 +8251,7 @@
         "added": 1,
         "removed": 0,
         "modified": 30,
-        "breaking": 113
+        "breaking": 93
       }
     },
     "admin": {
