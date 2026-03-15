@@ -1,0 +1,1131 @@
+{
+  "fromVersion": "v0.11.0",
+  "toVersion": "v0.14.0",
+  "groups": {
+    "api": [
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/generatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyDraftPhotos",
+        "path": "/api/my/drafts",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photos/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyDraftPhotos",
+        "path": "/api/my/drafts",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photos/items/thumbnail/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyDraftPhotos",
+        "path": "/api/my/drafts",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getDraftPhoto",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getDraftPhoto",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/image/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getDraftPhoto",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getDraftPhoto",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updateDraftPhoto",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updateDraftPhoto",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/image/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updateDraftPhoto",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updateDraftPhoto",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto",
+        "path": "/api/my/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto",
+        "path": "/api/my/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/requests/items/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotoRequests",
+        "path": "/api/my/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/requests/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotoRequests",
+        "path": "/api/my/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "createPhotoRequest",
+        "path": "/api/my/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "createPhotoRequest",
+        "path": "/api/my/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "DELETE",
+        "operationId": "cancelPhotoRequest",
+        "path": "/api/my/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "DELETE",
+        "operationId": "cancelPhotoRequest",
+        "path": "/api/my/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updatePhotoRequest",
+        "path": "/api/my/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updatePhotoRequest",
+        "path": "/api/my/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "closePhotoRequest",
+        "path": "/api/my/photo-requests/{id}/close",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "closePhotoRequest",
+        "path": "/api/my/photo-requests/{id}/close",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/submissions/items/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSubmissionsForRequest",
+        "path": "/api/my/photo-requests/{id}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/submissions/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSubmissionsForRequest",
+        "path": "/api/my/photo-requests/{id}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/submissions/items/photo/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSubmissionsForRequest",
+        "path": "/api/my/photo-requests/{id}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/submissions/items/submitter/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSubmissionsForRequest",
+        "path": "/api/my/photo-requests/{id}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "reviewSubmission",
+        "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "reviewSubmission",
+        "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/draftPhotos/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/draftPhotos/items/thumbnail/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/generatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/publishPhotos/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/publishPhotos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/generatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos",
+        "path": "/api/my/photos/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photos/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos",
+        "path": "/api/my/photos/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos",
+        "path": "/api/my/photos/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "DELETE",
+        "operationId": "deletePublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/image/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updatePublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updatePublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/image/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updatePublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updatePublishedPhoto",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/requests/items/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoRequests",
+        "path": "/api/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/requests/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoRequests",
+        "path": "/api/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoRequestDetail",
+        "path": "/api/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoRequestDetail",
+        "path": "/api/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/requester/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoRequestDetail",
+        "path": "/api/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoRequestDetail",
+        "path": "/api/photo-requests/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "submitPhoto",
+        "path": "/api/photo-requests/{requestId}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "submitPhoto",
+        "path": "/api/photo-requests/{requestId}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "DELETE",
+        "operationId": "withdrawSubmission",
+        "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "DELETE",
+        "operationId": "withdrawSubmission",
+        "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/dislikeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "toggleDislike",
+        "path": "/api/photos/{photoId}/dislike",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/dislikeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getEngagement",
+        "path": "/api/photos/{photoId}/engagement",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getEngagement",
+        "path": "/api/photos/{photoId}/engagement",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getEngagement",
+        "path": "/api/photos/{photoId}/engagement",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/viewCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getEngagement",
+        "path": "/api/photos/{photoId}/engagement",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/likeCount' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "toggleLike",
+        "path": "/api/photos/{photoId}/like",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "profile",
+        "path": "/api/profile",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/generatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/api/public/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photos/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/api/public/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/api/public/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/items/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetails",
+        "path": "/api/public/photos/bulk",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetails",
+        "path": "/api/public/photos/bulk",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/items/image/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetails",
+        "path": "/api/public/photos/bulk",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/items/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetails",
+        "path": "/api/public/photos/bulk",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/generatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photos/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/photos/items/urls/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/clusters/items/thumbnail/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/generatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/clusters/items/avgDistanceMeters' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property 'body/clusters/items/maxDistanceMeters' from the response with the '200' status",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetail",
+        "path": "/api/public/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetail",
+        "path": "/api/public/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/image/photoId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetail",
+        "path": "/api/public/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetail",
+        "path": "/api/public/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/entries/items/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getLeaderboard",
+        "path": "/api/shutter/leaderboard",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/totalLikesReceived' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyShutter",
+        "path": "/api/shutter/me",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/totalLikesReceived' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '401'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyShutter",
+        "path": "/api/shutter/me",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyShutter",
+        "path": "/api/shutter/me",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '401'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getMyShutter",
+        "path": "/api/shutter/me",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/totalUsers' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getRankStatistics",
+        "path": "/api/shutter/statistics",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/totalLikesReceived' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getUserShutter",
+        "path": "/api/shutter/users/{userId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/totalLikesReceived' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '404'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getUserShutter",
+        "path": "/api/shutter/users/{userId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getUserShutter",
+        "path": "/api/shutter/users/{userId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '404'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getUserShutter",
+        "path": "/api/shutter/users/{userId}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/expiresAt' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "presignedUrl",
+        "path": "/api/storage/presigned-url",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+        "section": "paths"
+      }
+    ],
+    "admin": [
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/missions/items/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSystemMissions",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/missions/items/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSystemMissions",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/missions/items/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSystemMissions",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "createSystemMission",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "createSystemMission",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "createSystemMission",
+        "path": "/api/admin/missions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSystemMissionDetail",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSystemMissionDetail",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "getSystemMissionDetail",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/createdAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/updatedAtEpochMilli' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission",
+        "path": "/api/admin/missions/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/items/profile/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/api/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/items/user/authorities/items/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/api/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/items/user/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/api/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/items/user/profile/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/api/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/items/userAuthorities/items/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/api/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/id' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "findById",
+        "path": "/api/admin/users/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the 'body/profile/userId' response's property type/format changed from 'integer'/'int64' to 'string'/'' for status '200'",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "findById",
+        "path": "/api/admin/users/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      },
+      {
+        "id": "response-property-enum-value-added",
+        "text": "added the new 'SYSTEM' enum value to the 'body/items/user/providerKey/provider' response property for the response status '200'",
+        "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+        "level": 2,
+        "operation": "GET",
+        "operationId": "findAll",
+        "path": "/api/admin/users",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
+        "section": "paths"
+      }
+    ]
+  }
+}

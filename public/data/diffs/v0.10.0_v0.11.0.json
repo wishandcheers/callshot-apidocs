@@ -285,18 +285,18 @@
         "components": {
           "schemas": {
             "added": [
+              "Gps",
+              "Value",
               "BaseResponseSystemMissionsResponse",
-              "UpdateSystemMissionRequest",
+              "ReviewSystemMissionSubmissionRequest",
+              "Absent",
+              "CreateSystemMissionRequest",
               "BaseResponseSystemMissionResponse",
               "SystemMissionsResponse",
-              "ReviewSystemMissionSubmissionRequest",
-              "PatchString",
-              "CreateSystemMissionRequest",
-              "Gps",
-              "SystemMissionResponse",
-              "Absent",
               "Clear",
-              "Value"
+              "UpdateSystemMissionRequest",
+              "SystemMissionResponse",
+              "PatchString"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

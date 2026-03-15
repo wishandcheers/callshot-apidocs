@@ -1,0 +1,190 @@
+{
+  "fromVersion": "v0.13.0",
+  "toVersion": "v0.14.0",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.13.0",
+            "to": "0.14.0"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/my/bookmarks",
+            "/api/photos/{photoId}/bookmark"
+          ],
+          "modified": {
+            "/api/photos/{photoId}/engagement": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "bookmarkCount",
+                                            "isBookmarkedByUser"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": {
+          "added": [
+            "즐겨찾기"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "PageCursor",
+              "ToggleBookmarkResponse",
+              "BaseResponseToggleBookmarkResponse",
+              "BookmarkedPhotosResponse",
+              "BookmarkedPhotoItem",
+              "BaseResponseBookmarkedPhotosResponse"
+            ],
+            "modified": {
+              "BaseResponseEngagementResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "required": {
+                        "added": [
+                          "bookmarkCount",
+                          "isBookmarkedByUser"
+                        ]
+                      },
+                      "properties": {
+                        "added": [
+                          "bookmarkCount",
+                          "isBookmarkedByUser"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "EngagementResponse": {
+                "required": {
+                  "added": [
+                    "bookmarkCount",
+                    "isBookmarkedByUser"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "bookmarkCount",
+                    "isBookmarkedByUser"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyBookmarks",
+          "path": "/api/my/bookmarks",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
+          }
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "toggleBookmark",
+          "path": "/api/photos/{photoId}/bookmark",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
+          }
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/bookmarkCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getEngagement",
+          "path": "/api/photos/{photoId}/engagement",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+          "section": "paths"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/isBookmarkedByUser' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getEngagement",
+          "path": "/api/photos/{photoId}/engagement",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
+          "section": "paths"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 2,
+        "removed": 0,
+        "modified": 1,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.13.0",
+            "to": "0.14.0"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    }
+  }
+}
