@@ -13,16 +13,16 @@
         "paths": {
           "added": [
             "/api/photo-requests",
-            "/api/my/submissions",
-            "/api/my/photo-requests/{id}",
-            "/api/photo-requests/{requestId}/submissions",
-            "/api/photo-requests/{requestId}/submissions/{submissionId}",
-            "/api/my/photo-requests/{id}/submissions",
-            "/api/my/photo-requests",
-            "/api/photo-requests/clusters",
             "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/my/photo-requests/{id}/close",
-            "/api/photo-requests/{id}"
+            "/api/photo-requests/{requestId}/submissions/{submissionId}",
+            "/api/photo-requests/{id}",
+            "/api/my/photo-requests/{id}/submissions",
+            "/api/photo-requests/{requestId}/submissions",
+            "/api/my/photo-requests/{id}",
+            "/api/my/photo-requests",
+            "/api/photo-requests/clusters",
+            "/api/my/submissions"
           ]
         },
         "tags": {
@@ -35,42 +35,42 @@
         "components": {
           "schemas": {
             "added": [
-              "SubmissionResponse",
+              "RequesterInfoDto",
               "PhotoRequestCursorRequest",
-              "BaseResponseMySubmissionsResponse",
-              "PhotoRequestClusterQueryRequest",
-              "PhotoRequestClustersResponse",
-              "CursorInfoDto",
-              "MySubmissionsResponse",
-              "MyPhotoRequestsResponse",
               "ReviewSubmissionRequest",
+              "PhotoRequestResponse",
+              "PhotoRequestListItemDto",
+              "RequestSubmissionPhotoInfoDto",
               "ReferenceInfoDto",
-              "PhotoRequestDetailResponse",
-              "PhotoRequestClusterDto",
+              "RequestSubmissionItemDto",
               "BaseResponsePhotoRequestsResponse",
-              "BaseResponsePhotoRequestClustersResponse",
-              "PhotoRequestsQueryRequest",
-              "SubmitPhotoRequest",
+              "MyPhotoRequestsResponse",
+              "CursorInfoDto",
+              "PhotoRequestClustersResponse",
+              "PhotoRequestsResponse",
               "SubmitterInfoDto",
               "BaseResponsePhotoRequestResponse",
-              "RequestSubmissionPhotoInfoDto",
               "UpdatePhotoRequestRequest",
-              "PhotoRequestResponse",
-              "CreatePhotoRequestRequest",
-              "RequirementInfoDto",
-              "PhotoRequestsResponse",
-              "BaseResponseRequestSubmissionsResponse",
-              "MySubmissionItemDto",
-              "RequirementInputDto",
-              "PhotoRequestListItemDto",
               "RequestSubmissionsResponse",
+              "BaseResponseRequestSubmissionsResponse",
+              "CreatePhotoRequestRequest",
+              "PhotoRequestsQueryRequest",
               "SubmissionRequestInfoDto",
-              "BaseResponsePhotoRequestDetailResponse",
-              "RequestSubmissionItemDto",
-              "SubmissionPhotoInfoDto",
+              "RequirementInputDto",
               "BaseResponseMyPhotoRequestsResponse",
+              "PhotoRequestClusterDto",
+              "SubmitPhotoRequest",
+              "PhotoRequestDetailResponse",
+              "BaseResponsePhotoRequestDetailResponse",
+              "PhotoRequestClusterQueryRequest",
+              "SubmissionPhotoInfoDto",
+              "BaseResponseMySubmissionsResponse",
+              "RequirementInfoDto",
+              "MySubmissionsResponse",
+              "BaseResponsePhotoRequestClustersResponse",
               "BaseResponseSubmissionResponse",
-              "RequesterInfoDto"
+              "SubmissionResponse",
+              "MySubmissionItemDto"
             ]
           }
         }
@@ -87,7 +87,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "281d247f46ad"
         },
         {
           "id": "endpoint-added",
@@ -100,7 +101,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "146f4d896079"
         },
         {
           "id": "endpoint-added",
@@ -113,7 +115,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "eccbeff6155d"
         },
         {
           "id": "endpoint-added",
@@ -126,7 +129,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "3ab6b476ee68"
         },
         {
           "id": "endpoint-added",
@@ -139,7 +143,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "7f048d02843a"
         },
         {
           "id": "endpoint-added",
@@ -152,7 +157,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "17d3f01a9fa8"
         },
         {
           "id": "endpoint-added",
@@ -165,7 +171,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "e597937f75cb"
         },
         {
           "id": "endpoint-added",
@@ -178,7 +185,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "b79f90e6bbbd"
         },
         {
           "id": "endpoint-added",
@@ -191,7 +199,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "b6737eaa40ae"
         },
         {
           "id": "endpoint-added",
@@ -204,7 +213,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "c506d6306a18"
         },
         {
           "id": "endpoint-added",
@@ -217,7 +227,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "7f080fb9dbeb"
         },
         {
           "id": "endpoint-added",
@@ -230,7 +241,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "f93f9c2c929f"
         },
         {
           "id": "endpoint-added",
@@ -243,7 +255,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "a1b0b79ec7cd"
         }
       ],
       "breaking": [],

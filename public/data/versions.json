@@ -1,7 +1,7 @@
 {
   "serviceName": "gloview-api",
-  "generatedAt": "2026-03-15T11:17:37.038Z",
-  "totalVersions": 16,
+  "generatedAt": "2026-03-22T07:08:16.206Z",
+  "totalVersions": 17,
   "versions": [
     {
       "version": "v0.2.1",
@@ -410,6 +410,32 @@
           "breaking": 0
         }
       }
+    },
+    {
+      "version": "v0.15.0",
+      "specVersion": "0.15.0",
+      "releasedAt": "2026-03-22T06:58:11Z",
+      "stats": {
+        "api": {
+          "pathCount": 42,
+          "endpointCount": 50
+        },
+        "admin": {
+          "pathCount": 7,
+          "endpointCount": 10
+        },
+        "schemaCount": 108,
+        "tagCount": 13
+      },
+      "diff": {
+        "previousVersion": "v0.14.0",
+        "summary": {
+          "added": 3,
+          "removed": 0,
+          "modified": 1,
+          "breaking": 0
+        }
+      }
     }
   ],
   "availableDiffPairs": [
@@ -421,7 +447,10 @@
     "v0.11.0_v0.14.0",
     "v0.12.0_v0.13.0",
     "v0.12.0_v0.14.0",
+    "v0.12.0_v0.15.0",
     "v0.13.0_v0.14.0",
+    "v0.13.0_v0.15.0",
+    "v0.14.0_v0.15.0",
     "v0.2.1_v0.2.2",
     "v0.2.1_v0.2.3",
     "v0.2.1_v0.2.4",

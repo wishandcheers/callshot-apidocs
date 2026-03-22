@@ -113,14 +113,14 @@
                                                     "tileBounds"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "clusterId",
-                                                    "tileBounds"
+                                                    "tileBounds",
+                                                    "clusterId"
                                                   ],
                                                   "deleted": [
                                                     "maxDistanceMeters",
@@ -185,12 +185,12 @@
                               },
                               "properties": {
                                 "added": [
-                                  "tileBounds",
-                                  "clusterId"
+                                  "clusterId",
+                                  "tileBounds"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ],
                                 "modified": {
                                   "count": {
@@ -230,8 +230,8 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
-                    "clusterId",
-                    "tileBounds"
+                    "tileBounds",
+                    "clusterId"
                   ],
                   "deleted": [
                     "maxDistanceMeters",
@@ -240,8 +240,8 @@
                 },
                 "properties": {
                   "added": [
-                    "tileBounds",
-                    "clusterId"
+                    "clusterId",
+                    "tileBounds"
                   ],
                   "deleted": [
                     "maxDistanceMeters",
@@ -274,12 +274,12 @@
                         },
                         "properties": {
                           "added": [
-                            "tileBounds",
-                            "clusterId"
+                            "clusterId",
+                            "tileBounds"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ],
                           "modified": {
                             "count": {
@@ -320,7 +320,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "bfa90f070418"
         },
         {
           "id": "response-required-property-removed",
@@ -330,7 +331,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "b69a8ab16a9e"
         },
         {
           "id": "response-required-property-removed",
@@ -340,7 +342,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9ffd2606787f"
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -353,13 +356,15 @@
           "section": "paths",
           "baseSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "60e7c61735d3"
         },
         {
           "id": "api-schema-removed",
           "text": "removed the schema 'UserSignUpRequest'",
           "level": 1,
-          "section": "components"
+          "section": "components",
+          "fingerprint": "d43afc26364f"
         },
         {
           "id": "response-required-property-added",
@@ -369,7 +374,8 @@
           "operationId": "profile",
           "path": "/api/profile",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "e039bd634cb0"
         },
         {
           "id": "endpoint-added",
@@ -382,7 +388,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "78bb9c68346a"
         },
         {
           "id": "endpoint-deprecated",
@@ -392,7 +399,8 @@
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "391745702470"
         },
         {
           "id": "response-required-property-added",
@@ -402,7 +410,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "cff3dc21645c"
         },
         {
           "id": "response-required-property-added",
@@ -412,7 +421,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a115d7509a06"
         },
         {
           "id": "endpoint-added",
@@ -425,7 +435,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "d380673c5c73"
         }
       ],
       "breaking": [
@@ -437,7 +448,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "bfa90f070418"
         },
         {
           "id": "response-required-property-removed",
@@ -447,7 +459,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "b69a8ab16a9e"
         },
         {
           "id": "response-required-property-removed",
@@ -457,7 +470,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9ffd2606787f"
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -470,7 +484,8 @@
           "section": "paths",
           "baseSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "60e7c61735d3"
         }
       ],
       "summary": {
@@ -490,10 +505,10 @@
         },
         "paths": {
           "added": [
-            "/api/admin/missions",
             "/api/admin/missions/{id}",
             "/api/admin/missions/{id}/close",
-            "/api/admin/missions/{missionId}/submissions/{submissionId}/review"
+            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
+            "/api/admin/missions"
           ],
           "modified": {
             "/api/admin/users": {
@@ -567,18 +582,18 @@
         "components": {
           "schemas": {
             "added": [
-              "Clear",
-              "Value",
-              "SystemMissionsResponse",
-              "Absent",
-              "PatchString",
-              "UpdateSystemMissionRequest",
-              "ReviewSystemMissionSubmissionRequest",
-              "SystemMissionResponse",
               "BaseResponseSystemMissionsResponse",
-              "BaseResponseSystemMissionResponse",
+              "Absent",
+              "Value",
+              "SystemMissionResponse",
+              "SystemMissionsResponse",
+              "PatchString",
               "Gps",
-              "CreateSystemMissionRequest"
+              "CreateSystemMissionRequest",
+              "UpdateSystemMissionRequest",
+              "BaseResponseSystemMissionResponse",
+              "Clear",
+              "ReviewSystemMissionSubmissionRequest"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -709,7 +724,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "358328688c2e"
         },
         {
           "id": "endpoint-added",
@@ -722,7 +738,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
-          }
+          },
+          "fingerprint": "93b4a7ef5151"
         },
         {
           "id": "endpoint-added",
@@ -735,7 +752,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
-          }
+          },
+          "fingerprint": "39fee2cd3add"
         },
         {
           "id": "endpoint-added",
@@ -748,7 +766,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
-          }
+          },
+          "fingerprint": "daff3abb281f"
         },
         {
           "id": "endpoint-added",
@@ -761,7 +780,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
-          }
+          },
+          "fingerprint": "b40a1a63266f"
         },
         {
           "id": "endpoint-added",
@@ -774,7 +794,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
-          }
+          },
+          "fingerprint": "ebebbe726f84"
         },
         {
           "id": "endpoint-added",
@@ -787,7 +808,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
-          }
+          },
+          "fingerprint": "1136e0470549"
         },
         {
           "id": "endpoint-added",
@@ -800,7 +822,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
-          }
+          },
+          "fingerprint": "37f9574c9eee"
         },
         {
           "id": "response-required-property-added",
@@ -810,7 +833,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "e1e98a57e426"
         }
       ],
       "breaking": [
@@ -823,7 +847,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "358328688c2e"
         }
       ],
       "summary": {

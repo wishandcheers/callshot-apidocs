@@ -11,7 +11,8 @@
         "operationId": "getPhotos_1",
         "path": "/api/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "2e67911e02b4"
       },
       {
         "id": "response-required-property-removed",
@@ -21,7 +22,8 @@
         "operationId": "getPhotosInClusterArea_1",
         "path": "/api/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "e795977bba53"
       },
       {
         "id": "response-required-property-removed",
@@ -31,7 +33,8 @@
         "operationId": "publishDraftPhoto",
         "path": "/api/photos/drafts/{id}/publish",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "3e4ceb65e1eb"
       },
       {
         "id": "response-required-property-removed",
@@ -41,7 +44,8 @@
         "operationId": "getMyPhotos",
         "path": "/api/photos/my",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "c32f1473630b"
       },
       {
         "id": "response-required-property-removed",
@@ -51,7 +55,8 @@
         "operationId": "getMyPublishedPhotos",
         "path": "/api/photos/my/published",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "f7493035bbf8"
       },
       {
         "id": "endpoint-added",
@@ -64,7 +69,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "4dccc1919f26"
       },
       {
         "id": "endpoint-added",
@@ -77,7 +83,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "aab7a39bb422"
       },
       {
         "id": "endpoint-added",
@@ -90,7 +97,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "22e947b5dfce"
       },
       {
         "id": "endpoint-added",
@@ -103,7 +111,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "40d98df5c3ea"
       },
       {
         "id": "endpoint-added",
@@ -116,7 +125,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "d348bb071df8"
       },
       {
         "id": "endpoint-added",
@@ -129,7 +139,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "4a9df51e03f3"
       },
       {
         "id": "endpoint-added",
@@ -142,7 +153,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "340039d074d3"
       },
       {
         "id": "endpoint-added",
@@ -155,7 +167,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "9bb3c2a037a7"
       },
       {
         "id": "endpoint-added",
@@ -168,7 +181,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "5cdfe0698607"
       },
       {
         "id": "api-operation-id-removed",
@@ -178,7 +192,8 @@
         "operationId": "getPhotos",
         "path": "/api/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "5126159af30a"
       },
       {
         "id": "api-tag-added",
@@ -188,7 +203,8 @@
         "operationId": "getPhotos",
         "path": "/api/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "3905425467cf"
       },
       {
         "id": "api-tag-removed",
@@ -198,7 +214,8 @@
         "operationId": "getPhotos",
         "path": "/api/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "4a4954ece132"
       },
       {
         "id": "response-required-property-added",
@@ -208,7 +225,8 @@
         "operationId": "getPhotos_1",
         "path": "/api/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "48e5054a622d"
       },
       {
         "id": "api-operation-id-removed",
@@ -218,7 +236,8 @@
         "operationId": "getPhotosInClusterArea",
         "path": "/api/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "33fa7457e7c9"
       },
       {
         "id": "api-tag-added",
@@ -228,7 +247,8 @@
         "operationId": "getPhotosInClusterArea",
         "path": "/api/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "f1bb37548a3d"
       },
       {
         "id": "api-tag-removed",
@@ -238,7 +258,8 @@
         "operationId": "getPhotosInClusterArea",
         "path": "/api/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "639393a2dac9"
       },
       {
         "id": "response-required-property-added",
@@ -248,7 +269,8 @@
         "operationId": "getPhotosInClusterArea_1",
         "path": "/api/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "5b523cf8829f"
       },
       {
         "id": "api-operation-id-removed",
@@ -258,7 +280,8 @@
         "operationId": "getPhotoClusters",
         "path": "/api/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "e52c0de6e499"
       },
       {
         "id": "api-tag-added",
@@ -268,7 +291,8 @@
         "operationId": "getPhotoClusters",
         "path": "/api/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "6ecf5e0d7bb8"
       },
       {
         "id": "api-tag-removed",
@@ -278,7 +302,8 @@
         "operationId": "getPhotoClusters",
         "path": "/api/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "42e261ab10ba"
       },
       {
         "id": "api-tag-added",
@@ -288,7 +313,8 @@
         "operationId": "getDraftPhoto",
         "path": "/api/photos/drafts/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "859c1a29733f"
       },
       {
         "id": "api-tag-removed",
@@ -298,7 +324,8 @@
         "operationId": "getDraftPhoto",
         "path": "/api/photos/drafts/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "1b70cc4649a6"
       },
       {
         "id": "api-tag-added",
@@ -308,7 +335,8 @@
         "operationId": "updateDraftPhoto",
         "path": "/api/photos/drafts/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "c35807085a52"
       },
       {
         "id": "api-tag-removed",
@@ -318,7 +346,8 @@
         "operationId": "updateDraftPhoto",
         "path": "/api/photos/drafts/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "02d4d0cc091d"
       },
       {
         "id": "api-tag-added",
@@ -328,7 +357,8 @@
         "operationId": "publishDraftPhoto",
         "path": "/api/photos/drafts/{id}/publish",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "8d2b7f20fd0e"
       },
       {
         "id": "api-tag-removed",
@@ -338,7 +368,8 @@
         "operationId": "publishDraftPhoto",
         "path": "/api/photos/drafts/{id}/publish",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "6ff2fca1cc4a"
       },
       {
         "id": "response-required-property-added",
@@ -348,7 +379,8 @@
         "operationId": "publishDraftPhoto",
         "path": "/api/photos/drafts/{id}/publish",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "6bfe73da7f78"
       },
       {
         "id": "api-tag-added",
@@ -358,7 +390,8 @@
         "operationId": "getMyPhotos",
         "path": "/api/photos/my",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "d480817f974a"
       },
       {
         "id": "api-tag-removed",
@@ -368,7 +401,8 @@
         "operationId": "getMyPhotos",
         "path": "/api/photos/my",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "b5ae05400460"
       },
       {
         "id": "response-required-property-added",
@@ -378,7 +412,8 @@
         "operationId": "getMyPhotos",
         "path": "/api/photos/my",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "c0456fe1838f"
       },
       {
         "id": "api-tag-added",
@@ -388,7 +423,8 @@
         "operationId": "getMyDraftPhotos",
         "path": "/api/photos/my/drafts",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "d9359754f3fd"
       },
       {
         "id": "api-tag-removed",
@@ -398,7 +434,8 @@
         "operationId": "getMyDraftPhotos",
         "path": "/api/photos/my/drafts",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "a0701977d289"
       },
       {
         "id": "api-tag-added",
@@ -408,7 +445,8 @@
         "operationId": "getMyPublishedPhotos",
         "path": "/api/photos/my/published",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "379981e3823d"
       },
       {
         "id": "api-tag-removed",
@@ -418,7 +456,8 @@
         "operationId": "getMyPublishedPhotos",
         "path": "/api/photos/my/published",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "49d74f971f79"
       },
       {
         "id": "response-required-property-added",
@@ -428,7 +467,8 @@
         "operationId": "getMyPublishedPhotos",
         "path": "/api/photos/my/published",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "642b2fd12657"
       },
       {
         "id": "api-tag-added",
@@ -438,7 +478,8 @@
         "operationId": "deletePublishedPhoto",
         "path": "/api/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "c2aaa0b398fe"
       },
       {
         "id": "api-tag-removed",
@@ -448,7 +489,8 @@
         "operationId": "deletePublishedPhoto",
         "path": "/api/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "d8c542d6c1e3"
       },
       {
         "id": "api-tag-added",
@@ -458,7 +500,8 @@
         "operationId": "getPublishedPhoto",
         "path": "/api/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "8ed4b2b27619"
       },
       {
         "id": "api-tag-removed",
@@ -468,7 +511,8 @@
         "operationId": "getPublishedPhoto",
         "path": "/api/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "0b724ab8e2ba"
       },
       {
         "id": "api-tag-added",
@@ -478,7 +522,8 @@
         "operationId": "updatePublishedPhoto",
         "path": "/api/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "95f66ad87cb5"
       },
       {
         "id": "api-tag-removed",
@@ -488,7 +533,8 @@
         "operationId": "updatePublishedPhoto",
         "path": "/api/photos/{id}",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "062874ef9b0e"
       },
       {
         "id": "endpoint-added",
@@ -501,7 +547,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "0f903c85b6d8"
       },
       {
         "id": "endpoint-added",
@@ -514,7 +561,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "7034a14e705f"
       },
       {
         "id": "endpoint-added",
@@ -527,7 +575,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "fd01b7e877fe"
       },
       {
         "id": "endpoint-added",
@@ -540,7 +589,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "6c627e54d05d"
       },
       {
         "id": "endpoint-added",
@@ -553,7 +603,8 @@
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "108e4ca70ae5"
       }
     ],
     "admin": [
@@ -565,13 +616,15 @@
         "operationId": "getPhotos",
         "path": "/internal/admin/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-admin.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "e052a67ec558"
       },
       {
         "id": "api-schema-removed",
         "text": "removed the schema 'ThumbnailResponse'",
         "level": 1,
-        "section": "components"
+        "section": "components",
+        "fingerprint": "93ab58ddb2c8"
       },
       {
         "id": "response-required-property-added",
@@ -581,7 +634,8 @@
         "operationId": "getPhotos",
         "path": "/internal/admin/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.5.0/apiDocs-admin.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "d791197fc6c3"
       }
     ]
   }

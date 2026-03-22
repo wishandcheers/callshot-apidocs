@@ -12,20 +12,20 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/like",
-            "/api/my/photo-requests/{id}/close",
-            "/api/my/photo-requests",
-            "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/photos/{photoId}/dislike",
+            "/api/my/photo-requests/{id}/submissions",
             "/api/photo-requests/{requestId}/submissions/{submissionId}",
             "/api/photo-requests/clusters",
-            "/api/photo-requests/{id}",
-            "/api/photos/{photoId}/dislike",
-            "/api/my/photo-requests/{id}",
+            "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/my/photo-requests",
             "/api/photo-requests/{requestId}/submissions",
+            "/api/my/submissions",
+            "/api/photos/{photoId}/like",
             "/api/photos/{photoId}/engagement",
-            "/api/my/photo-requests/{id}/submissions",
             "/api/photo-requests",
-            "/api/my/submissions"
+            "/api/photo-requests/{id}",
+            "/api/my/photo-requests/{id}",
+            "/api/my/photo-requests/{id}/close"
           ],
           "modified": {
             "/api/my/drafts/{id}/publish": {
@@ -94,8 +94,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ]
                                                 }
                                               }
@@ -142,8 +142,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 }
                                               }
@@ -180,8 +180,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         },
                                         "properties": {
@@ -214,8 +214,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         },
                                         "properties": {
@@ -258,14 +258,14 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 }
                                               }
@@ -306,14 +306,14 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 }
                                               }
@@ -400,8 +400,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ]
                                                 }
                                               }
@@ -448,8 +448,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 }
                                               }
@@ -486,8 +486,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         },
                                         "properties": {
@@ -520,8 +520,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         },
                                         "properties": {
@@ -564,14 +564,14 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 }
                                               }
@@ -609,14 +609,14 @@
                                         "items": {
                                           "required": {
                                             "added": [
-                                              "likeCount",
-                                              "viewCount"
+                                              "viewCount",
+                                              "likeCount"
                                             ]
                                           },
                                           "properties": {
                                             "added": [
-                                              "likeCount",
-                                              "viewCount"
+                                              "viewCount",
+                                              "likeCount"
                                             ]
                                           }
                                         }
@@ -654,14 +654,14 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 }
                                               }
@@ -698,8 +698,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         },
                                         "properties": {
@@ -735,48 +735,48 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseRequestSubmissionsResponse",
-              "PhotoRequestsResponse",
-              "SubmissionPhotoInfoDto",
-              "CreatePhotoRequestRequest",
-              "PhotoRequestClusterQueryRequest",
-              "ToggleDislikeResponse",
-              "MyPhotoRequestsResponse",
-              "RequestSubmissionsResponse",
-              "PhotoRequestDetailResponse",
-              "BaseResponseMyPhotoRequestsResponse",
-              "ToggleLikeResponse",
-              "CursorInfoDto",
-              "PhotoRequestClustersResponse",
-              "SubmitPhotoRequest",
-              "BaseResponseToggleDislikeResponse",
-              "EngagementResponse",
-              "RequesterInfoDto",
-              "SubmitterInfoDto",
-              "RequestSubmissionItemDto",
-              "BaseResponsePhotoRequestDetailResponse",
-              "BaseResponseMySubmissionsResponse",
-              "BaseResponseSubmissionResponse",
-              "UpdatePhotoRequestRequest",
-              "BaseResponseEngagementResponse",
               "PhotoRequestClusterDto",
-              "ReferenceInfoDto",
-              "MySubmissionItemDto",
-              "PhotoRequestListItemDto",
-              "ReviewSubmissionRequest",
-              "BaseResponseToggleLikeResponse",
-              "PhotoRequestCursorRequest",
-              "SubmissionResponse",
-              "BaseResponsePhotoRequestsResponse",
-              "RequirementInfoDto",
-              "PhotoRequestsQueryRequest",
-              "PhotoRequestResponse",
-              "SubmissionRequestInfoDto",
-              "MySubmissionsResponse",
+              "ToggleDislikeResponse",
+              "EngagementResponse",
+              "BaseResponseRequestSubmissionsResponse",
+              "BaseResponseSubmissionResponse",
+              "BaseResponseMyPhotoRequestsResponse",
               "RequirementInputDto",
+              "BaseResponsePhotoRequestDetailResponse",
+              "RequirementInfoDto",
+              "RequestSubmissionItemDto",
+              "BaseResponseMySubmissionsResponse",
+              "PhotoRequestClustersResponse",
+              "RequesterInfoDto",
+              "PhotoRequestResponse",
+              "PhotoRequestClusterQueryRequest",
+              "CreatePhotoRequestRequest",
+              "BaseResponsePhotoRequestResponse",
+              "SubmissionResponse",
+              "SubmissionRequestInfoDto",
+              "BaseResponseToggleDislikeResponse",
+              "BaseResponseEngagementResponse",
               "BaseResponsePhotoRequestClustersResponse",
+              "BaseResponsePhotoRequestsResponse",
+              "ToggleLikeResponse",
+              "MySubmissionItemDto",
+              "PhotoRequestsResponse",
+              "BaseResponseToggleLikeResponse",
+              "ReferenceInfoDto",
+              "ReviewSubmissionRequest",
+              "PhotoRequestListItemDto",
+              "MyPhotoRequestsResponse",
               "RequestSubmissionPhotoInfoDto",
-              "BaseResponsePhotoRequestResponse"
+              "SubmissionPhotoInfoDto",
+              "PhotoRequestsQueryRequest",
+              "SubmitterInfoDto",
+              "PhotoRequestCursorRequest",
+              "SubmitPhotoRequest",
+              "PhotoRequestDetailResponse",
+              "RequestSubmissionsResponse",
+              "UpdatePhotoRequestRequest",
+              "CursorInfoDto",
+              "MySubmissionsResponse"
             ],
             "modified": {
               "BaseResponseListPublishedPhotoDetailResponse": {
@@ -786,8 +786,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "viewCount",
-                            "likeCount"
+                            "likeCount",
+                            "viewCount"
                           ]
                         },
                         "properties": {
@@ -811,8 +811,8 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "likeCount",
-                                  "viewCount"
+                                  "viewCount",
+                                  "likeCount"
                                 ]
                               },
                               "properties": {
@@ -841,8 +841,8 @@
                       },
                       "properties": {
                         "added": [
-                          "likeCount",
-                          "viewCount"
+                          "viewCount",
+                          "likeCount"
                         ]
                       }
                     }
@@ -859,8 +859,8 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "likeCount",
-                                  "viewCount"
+                                  "viewCount",
+                                  "likeCount"
                                 ]
                               },
                               "properties": {
@@ -883,14 +883,14 @@
                     "body": {
                       "required": {
                         "added": [
-                          "likeCount",
-                          "viewCount"
+                          "viewCount",
+                          "likeCount"
                         ]
                       },
                       "properties": {
                         "added": [
-                          "viewCount",
-                          "likeCount"
+                          "likeCount",
+                          "viewCount"
                         ]
                       }
                     }
@@ -932,8 +932,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "likeCount",
-                            "viewCount"
+                            "viewCount",
+                            "likeCount"
                           ]
                         },
                         "properties": {
@@ -950,14 +950,14 @@
               "PhotoResponse": {
                 "required": {
                   "added": [
-                    "viewCount",
-                    "likeCount"
+                    "likeCount",
+                    "viewCount"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "likeCount",
-                    "viewCount"
+                    "viewCount",
+                    "likeCount"
                   ]
                 }
               },
@@ -968,8 +968,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "likeCount",
-                            "viewCount"
+                            "viewCount",
+                            "likeCount"
                           ]
                         },
                         "properties": {
@@ -1032,7 +1032,8 @@
           "operationId": "publishDraftPhoto_1",
           "path": "/api/my/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "fb3052b65136"
         },
         {
           "id": "response-required-property-added",
@@ -1042,7 +1043,8 @@
           "operationId": "publishDraftPhoto_1",
           "path": "/api/my/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ff924b409579"
         },
         {
           "id": "endpoint-added",
@@ -1055,7 +1057,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "281d247f46ad"
         },
         {
           "id": "endpoint-added",
@@ -1068,7 +1071,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "146f4d896079"
         },
         {
           "id": "endpoint-added",
@@ -1081,7 +1085,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "eccbeff6155d"
         },
         {
           "id": "endpoint-added",
@@ -1094,7 +1099,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "3ab6b476ee68"
         },
         {
           "id": "endpoint-added",
@@ -1107,7 +1113,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "7f048d02843a"
         },
         {
           "id": "endpoint-added",
@@ -1120,7 +1127,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "17d3f01a9fa8"
         },
         {
           "id": "endpoint-added",
@@ -1133,7 +1141,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "e597937f75cb"
         },
         {
           "id": "response-required-property-added",
@@ -1143,7 +1152,8 @@
           "operationId": "getMyPhotos_1",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2ae7803a969a"
         },
         {
           "id": "response-required-property-added",
@@ -1153,7 +1163,8 @@
           "operationId": "getMyPhotos_1",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "fbe08e58b980"
         },
         {
           "id": "response-required-property-added",
@@ -1163,7 +1174,8 @@
           "operationId": "getMyPublishedPhotos_1",
           "path": "/api/my/photos/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "3f00993ed312"
         },
         {
           "id": "response-required-property-added",
@@ -1173,7 +1185,8 @@
           "operationId": "getMyPublishedPhotos_1",
           "path": "/api/my/photos/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "eb6e074feb33"
         },
         {
           "id": "response-required-property-added",
@@ -1183,7 +1196,8 @@
           "operationId": "getPublishedPhoto_1",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f145536bd4eb"
         },
         {
           "id": "response-required-property-added",
@@ -1193,7 +1207,8 @@
           "operationId": "getPublishedPhoto_1",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "12aba8ee5ec1"
         },
         {
           "id": "response-required-property-added",
@@ -1203,7 +1218,8 @@
           "operationId": "updatePublishedPhoto_1",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "35c78919de70"
         },
         {
           "id": "response-required-property-added",
@@ -1213,7 +1229,8 @@
           "operationId": "updatePublishedPhoto_1",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6f823f4315ad"
         },
         {
           "id": "endpoint-added",
@@ -1226,7 +1243,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "b79f90e6bbbd"
         },
         {
           "id": "endpoint-added",
@@ -1239,7 +1257,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "b6737eaa40ae"
         },
         {
           "id": "endpoint-added",
@@ -1252,7 +1271,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "c506d6306a18"
         },
         {
           "id": "endpoint-added",
@@ -1265,7 +1285,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "7f080fb9dbeb"
         },
         {
           "id": "endpoint-added",
@@ -1278,7 +1299,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "f93f9c2c929f"
         },
         {
           "id": "endpoint-added",
@@ -1291,7 +1313,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "a1b0b79ec7cd"
         },
         {
           "id": "response-required-property-added",
@@ -1301,7 +1324,8 @@
           "operationId": "getPhotos_1",
           "path": "/api/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f6b46f6b630d"
         },
         {
           "id": "response-required-property-added",
@@ -1311,7 +1335,8 @@
           "operationId": "getPhotos_1",
           "path": "/api/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "865db8f2fbd6"
         },
         {
           "id": "response-required-property-added",
@@ -1321,7 +1346,8 @@
           "operationId": "getPhotosInClusterArea_1",
           "path": "/api/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "4f2c0977bb0d"
         },
         {
           "id": "response-required-property-added",
@@ -1331,7 +1357,8 @@
           "operationId": "getPhotosInClusterArea_1",
           "path": "/api/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "b3623da2e76b"
         },
         {
           "id": "response-required-property-added",
@@ -1341,7 +1368,8 @@
           "operationId": "publishDraftPhoto",
           "path": "/api/photos/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "523c308d5ff9"
         },
         {
           "id": "response-required-property-added",
@@ -1351,7 +1379,8 @@
           "operationId": "publishDraftPhoto",
           "path": "/api/photos/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "3deb2e2e81d3"
         },
         {
           "id": "response-required-property-added",
@@ -1361,7 +1390,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/photos/my",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ad5ea99d679b"
         },
         {
           "id": "response-required-property-added",
@@ -1371,7 +1401,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/photos/my",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "4ffc424f0641"
         },
         {
           "id": "response-required-property-added",
@@ -1381,7 +1412,8 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/photos/my/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "65321b9a1a07"
         },
         {
           "id": "response-required-property-added",
@@ -1391,7 +1423,8 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/photos/my/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "66084748a066"
         },
         {
           "id": "response-required-property-added",
@@ -1401,7 +1434,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "41f1c2a184a1"
         },
         {
           "id": "response-required-property-added",
@@ -1411,7 +1445,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "33dc7679edda"
         },
         {
           "id": "response-required-property-added",
@@ -1421,7 +1456,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "996eff26a299"
         },
         {
           "id": "response-required-property-added",
@@ -1431,7 +1467,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "1c60863170b7"
         },
         {
           "id": "endpoint-added",
@@ -1444,7 +1481,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "ddb4c4427002"
         },
         {
           "id": "endpoint-added",
@@ -1457,7 +1495,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "db798ee1641b"
         },
         {
           "id": "endpoint-added",
@@ -1470,7 +1509,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "8e75c8361647"
         },
         {
           "id": "response-required-property-added",
@@ -1480,7 +1520,8 @@
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "d34c8cb6ff65"
         },
         {
           "id": "response-required-property-added",
@@ -1490,7 +1531,8 @@
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "503b89e5ab03"
         },
         {
           "id": "response-required-property-added",
@@ -1500,7 +1542,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "19f9455c9d10"
         },
         {
           "id": "response-required-property-added",
@@ -1510,7 +1553,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "bf2c9025ea23"
         },
         {
           "id": "response-required-property-added",
@@ -1520,7 +1564,8 @@
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ee84d277bb7f"
         },
         {
           "id": "response-required-property-added",
@@ -1530,7 +1575,8 @@
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f96d690d8ce3"
         },
         {
           "id": "response-required-property-added",
@@ -1540,7 +1586,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0d94430c3a88"
         },
         {
           "id": "response-required-property-added",
@@ -1550,7 +1597,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "84a995267708"
         }
       ],
       "breaking": [],
@@ -1640,8 +1688,8 @@
                               },
                               "properties": {
                                 "added": [
-                                  "viewCount",
-                                  "likeCount"
+                                  "likeCount",
+                                  "viewCount"
                                 ]
                               }
                             }
@@ -1655,8 +1703,8 @@
               "PhotoResponse": {
                 "required": {
                   "added": [
-                    "likeCount",
-                    "viewCount"
+                    "viewCount",
+                    "likeCount"
                   ]
                 },
                 "properties": {
@@ -1679,8 +1727,8 @@
                         },
                         "properties": {
                           "added": [
-                            "viewCount",
-                            "likeCount"
+                            "likeCount",
+                            "viewCount"
                           ]
                         }
                       }
@@ -1701,7 +1749,8 @@
           "operationId": "getPhotos",
           "path": "/internal/admin/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "3eea51822e5a"
         },
         {
           "id": "response-required-property-added",
@@ -1711,7 +1760,8 @@
           "operationId": "getPhotos",
           "path": "/internal/admin/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "45f57078ea7f"
         }
       ],
       "breaking": [],

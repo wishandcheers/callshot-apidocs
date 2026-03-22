@@ -11,7 +11,8 @@
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "bfa90f070418"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -24,7 +25,8 @@
         "section": "paths",
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "60e7c61735d3"
       }
     ],
     "admin": []

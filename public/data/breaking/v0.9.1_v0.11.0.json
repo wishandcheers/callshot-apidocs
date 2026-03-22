@@ -11,7 +11,8 @@
         "operationId": "getPhotosInClusterArea",
         "path": "/api/public/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "37a0632cda69"
       },
       {
         "id": "new-required-request-parameter",
@@ -21,7 +22,8 @@
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "efd490c77725"
       },
       {
         "id": "new-required-request-parameter",
@@ -31,7 +33,8 @@
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "a97b356f3bc7"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -44,7 +47,8 @@
         "section": "paths",
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json"
-        }
+        },
+        "fingerprint": "60e7c61735d3"
       },
       {
         "id": "request-parameter-removed",
@@ -55,7 +59,8 @@
         "operationId": "getPhotosInClusterArea",
         "path": "/api/public/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "11bef7b97e76"
       },
       {
         "id": "request-parameter-removed",
@@ -66,7 +71,8 @@
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "d28cf5ff639e"
       }
     ],
     "admin": []

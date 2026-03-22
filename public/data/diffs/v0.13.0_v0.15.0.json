@@ -1,0 +1,291 @@
+{
+  "fromVersion": "v0.13.0",
+  "toVersion": "v0.15.0",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.13.0",
+            "to": "0.15.0"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/photos/{photoId}/comments",
+            "/api/photos/{photoId}/comments/{commentId}/replies",
+            "/api/my/bookmarks",
+            "/api/photos/{photoId}/comments/{commentId}",
+            "/api/photos/{photoId}/bookmark"
+          ],
+          "modified": {
+            "/api/photos/{photoId}/engagement": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "required": {
+                                          "added": [
+                                            "commentCount",
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
+                                          ]
+                                        },
+                                        "properties": {
+                                          "added": [
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount",
+                                            "commentCount"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": {
+          "added": [
+            "즐겨찾기",
+            "댓글"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "PageCursor",
+              "CommentPageResponse",
+              "BaseResponseBookmarkedPhotosResponse",
+              "UpdateCommentRequest",
+              "BookmarkedPhotoItem",
+              "CommentResponse",
+              "CreateCommentRequest",
+              "BaseResponseCommentResponse",
+              "ToggleBookmarkResponse",
+              "BookmarkedPhotosResponse",
+              "BaseResponseToggleBookmarkResponse",
+              "BaseResponseCommentPageResponse"
+            ],
+            "modified": {
+              "BaseResponseEngagementResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "required": {
+                        "added": [
+                          "isBookmarkedByUser",
+                          "bookmarkCount",
+                          "commentCount"
+                        ]
+                      },
+                      "properties": {
+                        "added": [
+                          "bookmarkCount",
+                          "commentCount",
+                          "isBookmarkedByUser"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "EngagementResponse": {
+                "required": {
+                  "added": [
+                    "bookmarkCount",
+                    "commentCount",
+                    "isBookmarkedByUser"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "bookmarkCount",
+                    "commentCount",
+                    "isBookmarkedByUser"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyBookmarks",
+          "path": "/api/my/bookmarks",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+          },
+          "fingerprint": "9afb1900cf7c"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "toggleBookmark",
+          "path": "/api/photos/{photoId}/bookmark",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+          },
+          "fingerprint": "53bc94755cbe"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getComments",
+          "path": "/api/photos/{photoId}/comments",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+          },
+          "fingerprint": "467f9add2962"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "createComment",
+          "path": "/api/photos/{photoId}/comments",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+          },
+          "fingerprint": "670f612d6cd5"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "DELETE",
+          "operationId": "deleteComment",
+          "path": "/api/photos/{photoId}/comments/{commentId}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+          },
+          "fingerprint": "c2b417d53869"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateComment",
+          "path": "/api/photos/{photoId}/comments/{commentId}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+          },
+          "fingerprint": "a213defb527e"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getReplies",
+          "path": "/api/photos/{photoId}/comments/{commentId}/replies",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+          },
+          "fingerprint": "c2da09e6b8ae"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/bookmarkCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getEngagement",
+          "path": "/api/photos/{photoId}/engagement",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "5ed8cd1de3bf"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/commentCount' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getEngagement",
+          "path": "/api/photos/{photoId}/engagement",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "2f2ff79ba4df"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property 'body/isBookmarkedByUser' to the response with the '200' status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getEngagement",
+          "path": "/api/photos/{photoId}/engagement",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "9a66d88e3add"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 5,
+        "removed": 0,
+        "modified": 1,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.13.0",
+            "to": "0.15.0"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    }
+  }
+}

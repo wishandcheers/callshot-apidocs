@@ -11,7 +11,8 @@
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "b69a8ab16a9e"
       },
       {
         "id": "response-required-property-removed",
@@ -21,7 +22,8 @@
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "9ffd2606787f"
       }
     ],
     "admin": [
@@ -34,7 +36,8 @@
         "operationId": "findAll",
         "path": "/api/admin/users",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
-        "section": "paths"
+        "section": "paths",
+        "fingerprint": "358328688c2e"
       }
     ]
   }

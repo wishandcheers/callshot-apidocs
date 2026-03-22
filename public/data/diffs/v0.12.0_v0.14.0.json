@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/bookmark",
             "/api/public/profiles/{userId}",
+            "/api/photos/{photoId}/bookmark",
             "/api/my/bookmarks"
           ],
           "modified": {
@@ -2067,8 +2067,8 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "isBookmarkedByUser",
-                                            "bookmarkCount"
+                                            "bookmarkCount",
+                                            "isBookmarkedByUser"
                                           ],
                                           "modified": {
                                             "dislikeCount": {
@@ -3286,15 +3286,15 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponsePublicProfileResponse",
-              "OwnerResponse",
-              "BookmarkedPhotoItem",
-              "BaseResponseToggleBookmarkResponse",
               "BaseResponseBookmarkedPhotosResponse",
+              "BookmarkedPhotosResponse",
               "PublicProfileResponse",
-              "PageCursor",
               "ToggleBookmarkResponse",
-              "BookmarkedPhotosResponse"
+              "BookmarkedPhotoItem",
+              "PageCursor",
+              "OwnerResponse",
+              "BaseResponsePublicProfileResponse",
+              "BaseResponseToggleBookmarkResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -4870,8 +4870,8 @@
               "EngagementResponse": {
                 "required": {
                   "added": [
-                    "bookmarkCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "bookmarkCount"
                   ]
                 },
                 "properties": {
@@ -6158,7 +6158,8 @@
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "68fbfb63051a"
         },
         {
           "id": "response-property-type-changed",
@@ -6168,7 +6169,8 @@
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ce0bd2673af9"
         },
         {
           "id": "response-property-type-changed",
@@ -6178,7 +6180,8 @@
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "20e903c70748"
         },
         {
           "id": "response-property-type-changed",
@@ -6188,7 +6191,8 @@
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2dd6b0fe3482"
         },
         {
           "id": "response-property-type-changed",
@@ -6198,7 +6202,8 @@
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "4e408120d6f5"
         },
         {
           "id": "response-property-type-changed",
@@ -6208,7 +6213,8 @@
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "4195660a8913"
         },
         {
           "id": "response-property-type-changed",
@@ -6218,7 +6224,8 @@
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "7069c2c4a891"
         },
         {
           "id": "response-property-type-changed",
@@ -6228,7 +6235,8 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "84fbdf4fe75f"
         },
         {
           "id": "response-property-type-changed",
@@ -6238,7 +6246,8 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "14f992eff4f0"
         },
         {
           "id": "response-property-type-changed",
@@ -6248,7 +6257,8 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ea5b9f29f808"
         },
         {
           "id": "response-property-type-changed",
@@ -6258,7 +6268,8 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "391289e0ab96"
         },
         {
           "id": "response-property-type-changed",
@@ -6268,7 +6279,8 @@
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "66fcbbaa2cc1"
         },
         {
           "id": "response-property-type-changed",
@@ -6278,7 +6290,8 @@
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a14cb4714d36"
         },
         {
           "id": "response-property-type-changed",
@@ -6288,7 +6301,8 @@
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "03799e32382d"
         },
         {
           "id": "response-property-type-changed",
@@ -6298,7 +6312,8 @@
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "bc86e2c7cee5"
         },
         {
           "id": "response-property-type-changed",
@@ -6308,7 +6323,8 @@
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5b644e21231d"
         },
         {
           "id": "response-property-type-changed",
@@ -6318,7 +6334,8 @@
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8871f95fce17"
         },
         {
           "id": "response-property-type-changed",
@@ -6328,7 +6345,8 @@
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "cb9259acf968"
         },
         {
           "id": "response-property-type-changed",
@@ -6338,7 +6356,8 @@
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "56f54c08fa12"
         },
         {
           "id": "response-property-type-changed",
@@ -6348,7 +6367,8 @@
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0a56f0a584a5"
         },
         {
           "id": "response-property-type-changed",
@@ -6358,7 +6378,8 @@
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "898547ab8140"
         },
         {
           "id": "response-property-type-changed",
@@ -6368,7 +6389,8 @@
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a90202bc43ae"
         },
         {
           "id": "response-property-type-changed",
@@ -6378,7 +6400,8 @@
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c3b17ea53f09"
         },
         {
           "id": "response-property-type-changed",
@@ -6388,7 +6411,8 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "1ce80d03972b"
         },
         {
           "id": "response-property-type-changed",
@@ -6398,7 +6422,8 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "21cf8830966b"
         },
         {
           "id": "response-property-type-changed",
@@ -6408,7 +6433,8 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f9fbfe900f7c"
         },
         {
           "id": "response-property-type-changed",
@@ -6418,7 +6444,8 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a3aec9a00f60"
         },
         {
           "id": "response-property-type-changed",
@@ -6428,7 +6455,8 @@
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ed1896e88fb1"
         },
         {
           "id": "response-property-type-changed",
@@ -6438,7 +6466,8 @@
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f44f0d99eaf3"
         },
         {
           "id": "response-property-type-changed",
@@ -6448,7 +6477,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2098b838142c"
         },
         {
           "id": "response-property-type-changed",
@@ -6458,7 +6488,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c8c165f974f9"
         },
         {
           "id": "response-property-type-changed",
@@ -6468,7 +6499,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "fd4edad63d61"
         },
         {
           "id": "response-property-type-changed",
@@ -6478,7 +6510,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a99f734ac446"
         },
         {
           "id": "response-property-type-changed",
@@ -6488,7 +6521,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "1f5d164da351"
         },
         {
           "id": "response-property-type-changed",
@@ -6498,7 +6532,8 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "084beab25235"
         },
         {
           "id": "response-property-type-changed",
@@ -6508,7 +6543,8 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c00798d01e7a"
         },
         {
           "id": "response-property-type-changed",
@@ -6518,7 +6554,8 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "e744ec4aae53"
         },
         {
           "id": "response-property-type-changed",
@@ -6528,7 +6565,8 @@
           "operationId": "deletePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0bf7bff1c6e3"
         },
         {
           "id": "response-property-type-changed",
@@ -6538,7 +6576,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5379e3e26a8c"
         },
         {
           "id": "response-property-type-changed",
@@ -6548,7 +6587,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a4540f794eac"
         },
         {
           "id": "response-property-type-changed",
@@ -6558,7 +6598,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "52005f957f78"
         },
         {
           "id": "response-property-type-changed",
@@ -6568,7 +6609,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "175f746baaa9"
         },
         {
           "id": "response-property-type-changed",
@@ -6578,7 +6620,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "de2f3e4565b1"
         },
         {
           "id": "response-property-type-changed",
@@ -6588,7 +6631,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "e22047312890"
         },
         {
           "id": "response-property-type-changed",
@@ -6598,7 +6642,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9640dd58df93"
         },
         {
           "id": "response-property-type-changed",
@@ -6608,7 +6653,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "155a5c3d21ae"
         },
         {
           "id": "response-property-type-changed",
@@ -6618,7 +6664,8 @@
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "b7b1c544409d"
         },
         {
           "id": "response-property-type-changed",
@@ -6628,7 +6675,8 @@
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5bae1ce78a3d"
         },
         {
           "id": "response-property-type-changed",
@@ -6638,7 +6686,8 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "660ee232af8d"
         },
         {
           "id": "response-property-type-changed",
@@ -6648,7 +6697,8 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "b550279cf0ee"
         },
         {
           "id": "response-property-type-changed",
@@ -6658,7 +6708,8 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0bfed209ce74"
         },
         {
           "id": "response-property-type-changed",
@@ -6668,7 +6719,8 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0af7946338ad"
         },
         {
           "id": "response-property-type-changed",
@@ -6678,7 +6730,8 @@
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "e7f07dd2c390"
         },
         {
           "id": "response-property-type-changed",
@@ -6688,7 +6741,8 @@
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "309aece08544"
         },
         {
           "id": "response-property-type-changed",
@@ -6698,7 +6752,8 @@
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "b0db24ccf9d3"
         },
         {
           "id": "response-property-type-changed",
@@ -6708,7 +6763,8 @@
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "73310f6b6115"
         },
         {
           "id": "response-property-type-changed",
@@ -6718,7 +6774,8 @@
           "operationId": "toggleDislike",
           "path": "/api/photos/{photoId}/dislike",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8d3d911e932a"
         },
         {
           "id": "response-property-type-changed",
@@ -6728,7 +6785,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "159c79d9a9ae"
         },
         {
           "id": "response-property-type-changed",
@@ -6738,7 +6796,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c9a9e84d9f5a"
         },
         {
           "id": "response-property-type-changed",
@@ -6748,7 +6807,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "263861822b12"
         },
         {
           "id": "response-property-type-changed",
@@ -6758,7 +6818,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "51b1b29622e2"
         },
         {
           "id": "response-property-type-changed",
@@ -6768,7 +6829,8 @@
           "operationId": "toggleLike",
           "path": "/api/photos/{photoId}/like",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8451d7cf6494"
         },
         {
           "id": "response-property-type-changed",
@@ -6778,7 +6840,8 @@
           "operationId": "profile",
           "path": "/api/profile",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "70e56772e017"
         },
         {
           "id": "response-property-type-changed",
@@ -6788,7 +6851,8 @@
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "1c55f6d1580a"
         },
         {
           "id": "response-property-type-changed",
@@ -6798,7 +6862,8 @@
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6b88b33f4dac"
         },
         {
           "id": "response-property-type-changed",
@@ -6808,7 +6873,8 @@
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c0f83592a6c1"
         },
         {
           "id": "response-property-type-changed",
@@ -6818,7 +6884,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "16d95f22daac"
         },
         {
           "id": "response-property-type-changed",
@@ -6828,7 +6895,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "75816b3ae2b8"
         },
         {
           "id": "response-property-type-changed",
@@ -6838,7 +6906,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6f507551f9dc"
         },
         {
           "id": "response-property-type-changed",
@@ -6848,7 +6917,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a303fcbd9f40"
         },
         {
           "id": "response-property-type-changed",
@@ -6858,7 +6928,8 @@
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "84edafb7ec63"
         },
         {
           "id": "response-property-type-changed",
@@ -6868,7 +6939,8 @@
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c662a760cc56"
         },
         {
           "id": "response-property-type-changed",
@@ -6878,7 +6950,8 @@
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "cadc65ba9c1c"
         },
         {
           "id": "response-property-type-changed",
@@ -6888,7 +6961,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "385a8b5244ef"
         },
         {
           "id": "response-property-type-changed",
@@ -6898,7 +6972,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "fa1a9207c4b0"
         },
         {
           "id": "response-property-type-changed",
@@ -6908,7 +6983,8 @@
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8d6e4d9a5ce9"
         },
         {
           "id": "response-property-type-changed",
@@ -6918,7 +6994,8 @@
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "043940d2f9b2"
         },
         {
           "id": "response-property-type-changed",
@@ -6928,7 +7005,8 @@
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2ef5909f8151"
         },
         {
           "id": "response-property-type-changed",
@@ -6938,7 +7016,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "26f3aef0f045"
         },
         {
           "id": "response-property-type-changed",
@@ -6948,7 +7027,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5767f80d151a"
         },
         {
           "id": "response-property-type-changed",
@@ -6958,7 +7038,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "76394c1555fc"
         },
         {
           "id": "response-property-type-changed",
@@ -6968,7 +7049,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "d1ef88002ac4"
         },
         {
           "id": "response-property-type-changed",
@@ -6978,7 +7060,8 @@
           "operationId": "getLeaderboard",
           "path": "/api/shutter/leaderboard",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c76bc3f2d214"
         },
         {
           "id": "response-property-type-changed",
@@ -6988,7 +7071,8 @@
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "7e1d0f29a04b"
         },
         {
           "id": "response-property-type-changed",
@@ -6998,7 +7082,8 @@
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "285b7e130f32"
         },
         {
           "id": "response-property-type-changed",
@@ -7008,7 +7093,8 @@
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5d8d02257083"
         },
         {
           "id": "response-property-type-changed",
@@ -7018,7 +7104,8 @@
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ec0245798365"
         },
         {
           "id": "response-property-type-changed",
@@ -7028,7 +7115,8 @@
           "operationId": "getRankStatistics",
           "path": "/api/shutter/statistics",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6a341be27b6e"
         },
         {
           "id": "response-property-type-changed",
@@ -7038,7 +7126,8 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "033cb130e6f1"
         },
         {
           "id": "response-property-type-changed",
@@ -7048,7 +7137,8 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "3e4509e06d6b"
         },
         {
           "id": "response-property-type-changed",
@@ -7058,7 +7148,8 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5c04a012341c"
         },
         {
           "id": "response-property-type-changed",
@@ -7068,7 +7159,8 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6bdef7da9f5a"
         },
         {
           "id": "response-property-type-changed",
@@ -7078,7 +7170,8 @@
           "operationId": "presignedUrl",
           "path": "/api/storage/presigned-url",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a3d403f9c080"
         },
         {
           "id": "endpoint-added",
@@ -7091,7 +7184,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "9afb1900cf7c"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7101,7 +7195,8 @@
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "462a22d7b3d8"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7111,7 +7206,8 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9c1c6e511475"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7121,7 +7217,8 @@
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "aa32be36b834"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7131,7 +7228,8 @@
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "635e2f31ed9b"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7141,7 +7239,8 @@
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "16e854d785fa"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7151,7 +7250,8 @@
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f5c832155b89"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7161,7 +7261,8 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "1b657ed10fb7"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7171,7 +7272,8 @@
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "77480397c431"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7181,7 +7283,8 @@
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "d7c730fc3586"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7191,7 +7294,8 @@
           "operationId": "deletePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8048fe5df079"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7201,7 +7305,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a9c67b5982a7"
         },
         {
           "id": "response-required-property-added",
@@ -7211,7 +7316,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9155467ed235"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7221,7 +7327,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "529f5f8f681c"
         },
         {
           "id": "response-required-property-added",
@@ -7231,7 +7338,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "188ef7e27fd3"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7241,7 +7349,8 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f1ce45d4ddd1"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7251,7 +7360,8 @@
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "3b7c44f48705"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7261,7 +7371,8 @@
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "47e9e69b2ff6"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7271,7 +7382,8 @@
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f077b751a45d"
         },
         {
           "id": "endpoint-added",
@@ -7284,7 +7396,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "53bc94755cbe"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7294,7 +7407,8 @@
           "operationId": "toggleDislike",
           "path": "/api/photos/{photoId}/dislike",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2e6a073e9193"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7304,7 +7418,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "91f19eeec9c0"
         },
         {
           "id": "response-required-property-added",
@@ -7314,7 +7429,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5ed8cd1de3bf"
         },
         {
           "id": "response-required-property-added",
@@ -7324,7 +7440,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9a66d88e3add"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7334,7 +7451,8 @@
           "operationId": "toggleLike",
           "path": "/api/photos/{photoId}/like",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f4e27e9bcb4e"
         },
         {
           "id": "response-required-property-added",
@@ -7344,7 +7462,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6f5302f82a58"
         },
         {
           "id": "response-required-property-added",
@@ -7354,7 +7473,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a147c3abc155"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7364,7 +7484,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "818a2634fc1e"
         },
         {
           "id": "response-required-property-added",
@@ -7374,7 +7495,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "cd069b0902de"
         },
         {
           "id": "endpoint-added",
@@ -7387,7 +7509,8 @@
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
-          }
+          },
+          "fingerprint": "07546456199f"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -7397,7 +7520,8 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "51f05c7a1ece"
         }
       ],
       "breaking": [
@@ -7409,7 +7533,8 @@
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "68fbfb63051a"
         },
         {
           "id": "response-property-type-changed",
@@ -7419,7 +7544,8 @@
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ce0bd2673af9"
         },
         {
           "id": "response-property-type-changed",
@@ -7429,7 +7555,8 @@
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "20e903c70748"
         },
         {
           "id": "response-property-type-changed",
@@ -7439,7 +7566,8 @@
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2dd6b0fe3482"
         },
         {
           "id": "response-property-type-changed",
@@ -7449,7 +7577,8 @@
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "4e408120d6f5"
         },
         {
           "id": "response-property-type-changed",
@@ -7459,7 +7588,8 @@
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "4195660a8913"
         },
         {
           "id": "response-property-type-changed",
@@ -7469,7 +7599,8 @@
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "7069c2c4a891"
         },
         {
           "id": "response-property-type-changed",
@@ -7479,7 +7610,8 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "84fbdf4fe75f"
         },
         {
           "id": "response-property-type-changed",
@@ -7489,7 +7621,8 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "14f992eff4f0"
         },
         {
           "id": "response-property-type-changed",
@@ -7499,7 +7632,8 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ea5b9f29f808"
         },
         {
           "id": "response-property-type-changed",
@@ -7509,7 +7643,8 @@
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "391289e0ab96"
         },
         {
           "id": "response-property-type-changed",
@@ -7519,7 +7654,8 @@
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "66fcbbaa2cc1"
         },
         {
           "id": "response-property-type-changed",
@@ -7529,7 +7665,8 @@
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a14cb4714d36"
         },
         {
           "id": "response-property-type-changed",
@@ -7539,7 +7676,8 @@
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "03799e32382d"
         },
         {
           "id": "response-property-type-changed",
@@ -7549,7 +7687,8 @@
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "bc86e2c7cee5"
         },
         {
           "id": "response-property-type-changed",
@@ -7559,7 +7698,8 @@
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5b644e21231d"
         },
         {
           "id": "response-property-type-changed",
@@ -7569,7 +7709,8 @@
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8871f95fce17"
         },
         {
           "id": "response-property-type-changed",
@@ -7579,7 +7720,8 @@
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "cb9259acf968"
         },
         {
           "id": "response-property-type-changed",
@@ -7589,7 +7731,8 @@
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "56f54c08fa12"
         },
         {
           "id": "response-property-type-changed",
@@ -7599,7 +7742,8 @@
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0a56f0a584a5"
         },
         {
           "id": "response-property-type-changed",
@@ -7609,7 +7753,8 @@
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "898547ab8140"
         },
         {
           "id": "response-property-type-changed",
@@ -7619,7 +7764,8 @@
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a90202bc43ae"
         },
         {
           "id": "response-property-type-changed",
@@ -7629,7 +7775,8 @@
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c3b17ea53f09"
         },
         {
           "id": "response-property-type-changed",
@@ -7639,7 +7786,8 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "1ce80d03972b"
         },
         {
           "id": "response-property-type-changed",
@@ -7649,7 +7797,8 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "21cf8830966b"
         },
         {
           "id": "response-property-type-changed",
@@ -7659,7 +7808,8 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f9fbfe900f7c"
         },
         {
           "id": "response-property-type-changed",
@@ -7669,7 +7819,8 @@
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a3aec9a00f60"
         },
         {
           "id": "response-property-type-changed",
@@ -7679,7 +7830,8 @@
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ed1896e88fb1"
         },
         {
           "id": "response-property-type-changed",
@@ -7689,7 +7841,8 @@
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f44f0d99eaf3"
         },
         {
           "id": "response-property-type-changed",
@@ -7699,7 +7852,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2098b838142c"
         },
         {
           "id": "response-property-type-changed",
@@ -7709,7 +7863,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c8c165f974f9"
         },
         {
           "id": "response-property-type-changed",
@@ -7719,7 +7874,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "fd4edad63d61"
         },
         {
           "id": "response-property-type-changed",
@@ -7729,7 +7885,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a99f734ac446"
         },
         {
           "id": "response-property-type-changed",
@@ -7739,7 +7896,8 @@
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "1f5d164da351"
         },
         {
           "id": "response-property-type-changed",
@@ -7749,7 +7907,8 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "084beab25235"
         },
         {
           "id": "response-property-type-changed",
@@ -7759,7 +7918,8 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c00798d01e7a"
         },
         {
           "id": "response-property-type-changed",
@@ -7769,7 +7929,8 @@
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "e744ec4aae53"
         },
         {
           "id": "response-property-type-changed",
@@ -7779,7 +7940,8 @@
           "operationId": "deletePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0bf7bff1c6e3"
         },
         {
           "id": "response-property-type-changed",
@@ -7789,7 +7951,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5379e3e26a8c"
         },
         {
           "id": "response-property-type-changed",
@@ -7799,7 +7962,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a4540f794eac"
         },
         {
           "id": "response-property-type-changed",
@@ -7809,7 +7973,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "52005f957f78"
         },
         {
           "id": "response-property-type-changed",
@@ -7819,7 +7984,8 @@
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "175f746baaa9"
         },
         {
           "id": "response-property-type-changed",
@@ -7829,7 +7995,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "de2f3e4565b1"
         },
         {
           "id": "response-property-type-changed",
@@ -7839,7 +8006,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "e22047312890"
         },
         {
           "id": "response-property-type-changed",
@@ -7849,7 +8017,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9640dd58df93"
         },
         {
           "id": "response-property-type-changed",
@@ -7859,7 +8028,8 @@
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "155a5c3d21ae"
         },
         {
           "id": "response-property-type-changed",
@@ -7869,7 +8039,8 @@
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "b7b1c544409d"
         },
         {
           "id": "response-property-type-changed",
@@ -7879,7 +8050,8 @@
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5bae1ce78a3d"
         },
         {
           "id": "response-property-type-changed",
@@ -7889,7 +8061,8 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "660ee232af8d"
         },
         {
           "id": "response-property-type-changed",
@@ -7899,7 +8072,8 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "b550279cf0ee"
         },
         {
           "id": "response-property-type-changed",
@@ -7909,7 +8083,8 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0bfed209ce74"
         },
         {
           "id": "response-property-type-changed",
@@ -7919,7 +8094,8 @@
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0af7946338ad"
         },
         {
           "id": "response-property-type-changed",
@@ -7929,7 +8105,8 @@
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "e7f07dd2c390"
         },
         {
           "id": "response-property-type-changed",
@@ -7939,7 +8116,8 @@
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "309aece08544"
         },
         {
           "id": "response-property-type-changed",
@@ -7949,7 +8127,8 @@
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "b0db24ccf9d3"
         },
         {
           "id": "response-property-type-changed",
@@ -7959,7 +8138,8 @@
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "73310f6b6115"
         },
         {
           "id": "response-property-type-changed",
@@ -7969,7 +8149,8 @@
           "operationId": "toggleDislike",
           "path": "/api/photos/{photoId}/dislike",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8d3d911e932a"
         },
         {
           "id": "response-property-type-changed",
@@ -7979,7 +8160,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "159c79d9a9ae"
         },
         {
           "id": "response-property-type-changed",
@@ -7989,7 +8171,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c9a9e84d9f5a"
         },
         {
           "id": "response-property-type-changed",
@@ -7999,7 +8182,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "263861822b12"
         },
         {
           "id": "response-property-type-changed",
@@ -8009,7 +8193,8 @@
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "51b1b29622e2"
         },
         {
           "id": "response-property-type-changed",
@@ -8019,7 +8204,8 @@
           "operationId": "toggleLike",
           "path": "/api/photos/{photoId}/like",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8451d7cf6494"
         },
         {
           "id": "response-property-type-changed",
@@ -8029,7 +8215,8 @@
           "operationId": "profile",
           "path": "/api/profile",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "70e56772e017"
         },
         {
           "id": "response-property-type-changed",
@@ -8039,7 +8226,8 @@
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "1c55f6d1580a"
         },
         {
           "id": "response-property-type-changed",
@@ -8049,7 +8237,8 @@
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6b88b33f4dac"
         },
         {
           "id": "response-property-type-changed",
@@ -8059,7 +8248,8 @@
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c0f83592a6c1"
         },
         {
           "id": "response-property-type-changed",
@@ -8069,7 +8259,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "16d95f22daac"
         },
         {
           "id": "response-property-type-changed",
@@ -8079,7 +8270,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "75816b3ae2b8"
         },
         {
           "id": "response-property-type-changed",
@@ -8089,7 +8281,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6f507551f9dc"
         },
         {
           "id": "response-property-type-changed",
@@ -8099,7 +8292,8 @@
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a303fcbd9f40"
         },
         {
           "id": "response-property-type-changed",
@@ -8109,7 +8303,8 @@
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "84edafb7ec63"
         },
         {
           "id": "response-property-type-changed",
@@ -8119,7 +8314,8 @@
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c662a760cc56"
         },
         {
           "id": "response-property-type-changed",
@@ -8129,7 +8325,8 @@
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "cadc65ba9c1c"
         },
         {
           "id": "response-property-type-changed",
@@ -8139,7 +8336,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "385a8b5244ef"
         },
         {
           "id": "response-property-type-changed",
@@ -8149,7 +8347,8 @@
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "fa1a9207c4b0"
         },
         {
           "id": "response-property-type-changed",
@@ -8159,7 +8358,8 @@
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8d6e4d9a5ce9"
         },
         {
           "id": "response-property-type-changed",
@@ -8169,7 +8369,8 @@
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "043940d2f9b2"
         },
         {
           "id": "response-property-type-changed",
@@ -8179,7 +8380,8 @@
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2ef5909f8151"
         },
         {
           "id": "response-property-type-changed",
@@ -8189,7 +8391,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "26f3aef0f045"
         },
         {
           "id": "response-property-type-changed",
@@ -8199,7 +8402,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5767f80d151a"
         },
         {
           "id": "response-property-type-changed",
@@ -8209,7 +8413,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "76394c1555fc"
         },
         {
           "id": "response-property-type-changed",
@@ -8219,7 +8424,8 @@
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "d1ef88002ac4"
         },
         {
           "id": "response-property-type-changed",
@@ -8229,7 +8435,8 @@
           "operationId": "getLeaderboard",
           "path": "/api/shutter/leaderboard",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c76bc3f2d214"
         },
         {
           "id": "response-property-type-changed",
@@ -8239,7 +8446,8 @@
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "7e1d0f29a04b"
         },
         {
           "id": "response-property-type-changed",
@@ -8249,7 +8457,8 @@
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "285b7e130f32"
         },
         {
           "id": "response-property-type-changed",
@@ -8259,7 +8468,8 @@
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5d8d02257083"
         },
         {
           "id": "response-property-type-changed",
@@ -8269,7 +8479,8 @@
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ec0245798365"
         },
         {
           "id": "response-property-type-changed",
@@ -8279,7 +8490,8 @@
           "operationId": "getRankStatistics",
           "path": "/api/shutter/statistics",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6a341be27b6e"
         },
         {
           "id": "response-property-type-changed",
@@ -8289,7 +8501,8 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "033cb130e6f1"
         },
         {
           "id": "response-property-type-changed",
@@ -8299,7 +8512,8 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "3e4509e06d6b"
         },
         {
           "id": "response-property-type-changed",
@@ -8309,7 +8523,8 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "5c04a012341c"
         },
         {
           "id": "response-property-type-changed",
@@ -8319,7 +8534,8 @@
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6bdef7da9f5a"
         },
         {
           "id": "response-property-type-changed",
@@ -8329,7 +8545,8 @@
           "operationId": "presignedUrl",
           "path": "/api/storage/presigned-url",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "a3d403f9c080"
         }
       ],
       "summary": {
@@ -9695,7 +9912,8 @@
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "d84d3caf727b"
         },
         {
           "id": "response-property-type-changed",
@@ -9705,7 +9923,8 @@
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "334cb9666a27"
         },
         {
           "id": "response-property-type-changed",
@@ -9715,7 +9934,8 @@
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "7fb3cd32359b"
         },
         {
           "id": "response-property-type-changed",
@@ -9725,7 +9945,8 @@
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6b23f307eb09"
         },
         {
           "id": "response-property-type-changed",
@@ -9735,7 +9956,8 @@
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "84ce96fbae71"
         },
         {
           "id": "response-property-type-changed",
@@ -9745,7 +9967,8 @@
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6761dfa50e9b"
         },
         {
           "id": "response-property-type-changed",
@@ -9755,7 +9978,8 @@
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "932c189baf5a"
         },
         {
           "id": "response-property-type-changed",
@@ -9765,7 +9989,8 @@
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f7251531bd2d"
         },
         {
           "id": "response-property-type-changed",
@@ -9775,7 +10000,8 @@
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "eb44c7f367fd"
         },
         {
           "id": "response-property-type-changed",
@@ -9785,7 +10011,8 @@
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "dcf5ba043f25"
         },
         {
           "id": "response-property-type-changed",
@@ -9795,7 +10022,8 @@
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "632b68b4eb0c"
         },
         {
           "id": "response-property-type-changed",
@@ -9805,7 +10033,8 @@
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "59afd7211b53"
         },
         {
           "id": "response-property-type-changed",
@@ -9815,7 +10044,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "7b0692a17b2e"
         },
         {
           "id": "response-property-type-changed",
@@ -9825,7 +10055,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2f2c1524ac33"
         },
         {
           "id": "response-property-type-changed",
@@ -9835,7 +10066,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9f395dd5f0f5"
         },
         {
           "id": "response-property-type-changed",
@@ -9845,7 +10077,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f4b01540df99"
         },
         {
           "id": "response-property-type-changed",
@@ -9855,7 +10088,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f647fa548a3c"
         },
         {
           "id": "response-property-type-changed",
@@ -9865,7 +10099,8 @@
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ba3d4f760794"
         },
         {
           "id": "response-property-type-changed",
@@ -9875,7 +10110,8 @@
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "032630e93faa"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -9885,7 +10121,8 @@
           "operationId": "cancelMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "dd36948f3e75"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -9895,7 +10132,8 @@
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "0063f9baf687"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -9905,7 +10143,8 @@
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "12f9c6001d21"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -9915,7 +10154,8 @@
           "operationId": "closeMission",
           "path": "/api/admin/missions/{id}/close",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9d26cea42135"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -9925,7 +10165,8 @@
           "operationId": "reviewSubmission",
           "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "76d5e3799fe0"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -9935,7 +10176,8 @@
           "operationId": "reviewSubmission",
           "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "c7b90757d54b"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -9945,7 +10187,8 @@
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "edd22f647259"
         },
         {
           "id": "request-parameter-type-generalized",
@@ -9955,7 +10198,8 @@
           "operationId": "modifyProfile",
           "path": "/api/admin/users/{id}/profile",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "8d6b2b6db266"
         }
       ],
       "breaking": [
@@ -9967,7 +10211,8 @@
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "d84d3caf727b"
         },
         {
           "id": "response-property-type-changed",
@@ -9977,7 +10222,8 @@
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "334cb9666a27"
         },
         {
           "id": "response-property-type-changed",
@@ -9987,7 +10233,8 @@
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "7fb3cd32359b"
         },
         {
           "id": "response-property-type-changed",
@@ -9997,7 +10244,8 @@
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6b23f307eb09"
         },
         {
           "id": "response-property-type-changed",
@@ -10007,7 +10255,8 @@
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "84ce96fbae71"
         },
         {
           "id": "response-property-type-changed",
@@ -10017,7 +10266,8 @@
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "6761dfa50e9b"
         },
         {
           "id": "response-property-type-changed",
@@ -10027,7 +10277,8 @@
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "932c189baf5a"
         },
         {
           "id": "response-property-type-changed",
@@ -10037,7 +10288,8 @@
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f7251531bd2d"
         },
         {
           "id": "response-property-type-changed",
@@ -10047,7 +10299,8 @@
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "eb44c7f367fd"
         },
         {
           "id": "response-property-type-changed",
@@ -10057,7 +10310,8 @@
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "dcf5ba043f25"
         },
         {
           "id": "response-property-type-changed",
@@ -10067,7 +10321,8 @@
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "632b68b4eb0c"
         },
         {
           "id": "response-property-type-changed",
@@ -10077,7 +10332,8 @@
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "59afd7211b53"
         },
         {
           "id": "response-property-type-changed",
@@ -10087,7 +10343,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "7b0692a17b2e"
         },
         {
           "id": "response-property-type-changed",
@@ -10097,7 +10354,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "2f2c1524ac33"
         },
         {
           "id": "response-property-type-changed",
@@ -10107,7 +10365,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "9f395dd5f0f5"
         },
         {
           "id": "response-property-type-changed",
@@ -10117,7 +10376,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f4b01540df99"
         },
         {
           "id": "response-property-type-changed",
@@ -10127,7 +10387,8 @@
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "f647fa548a3c"
         },
         {
           "id": "response-property-type-changed",
@@ -10137,7 +10398,8 @@
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "ba3d4f760794"
         },
         {
           "id": "response-property-type-changed",
@@ -10147,7 +10409,8 @@
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-admin.json",
-          "section": "paths"
+          "section": "paths",
+          "fingerprint": "032630e93faa"
         }
       ],
       "summary": {
