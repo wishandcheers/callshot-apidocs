@@ -66,12 +66,12 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseToggleBookmarkResponse",
-              "ToggleBookmarkResponse",
-              "PageCursor",
-              "BaseResponseBookmarkedPhotosResponse",
               "BookmarkedPhotoItem",
-              "BookmarkedPhotosResponse"
+              "BaseResponseBookmarkedPhotosResponse",
+              "BaseResponseToggleBookmarkResponse",
+              "BookmarkedPhotosResponse",
+              "ToggleBookmarkResponse",
+              "PageCursor"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -103,8 +103,8 @@
                 },
                 "properties": {
                   "added": [
-                    "isBookmarkedByUser",
-                    "bookmarkCount"
+                    "bookmarkCount",
+                    "isBookmarkedByUser"
                   ]
                 }
               }

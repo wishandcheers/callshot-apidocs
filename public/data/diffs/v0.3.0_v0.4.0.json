@@ -12,15 +12,15 @@
         },
         "paths": {
           "added": [
+            "/api/my/photos/{id}",
             "/api/my/drafts/{id}",
+            "/api/my/photos/published",
+            "/api/public/photos/cluster-area",
             "/api/my/photos",
             "/api/public/photos",
-            "/api/public/photos/clusters",
-            "/api/public/photos/cluster-area",
             "/api/my/drafts",
-            "/api/my/drafts/{id}/publish",
-            "/api/my/photos/{id}",
-            "/api/my/photos/published"
+            "/api/public/photos/clusters",
+            "/api/my/drafts/{id}/publish"
           ],
           "modified": {
             "/api/photos": {

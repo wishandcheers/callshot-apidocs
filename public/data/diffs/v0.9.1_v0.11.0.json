@@ -164,14 +164,14 @@
         "components": {
           "schemas": {
             "added": [
-              "UpdateUserProfileRequest",
-              "ShutterSummaryInfo"
+              "ShutterSummaryInfo",
+              "UpdateUserProfileRequest"
             ],
             "deleted": [
-              "ShutterSummary",
+              "PhotoClusterRequest",
               "UserSignUpRequest",
-              "ClusterAreaRequest",
-              "PhotoClusterRequest"
+              "ShutterSummary",
+              "ClusterAreaRequest"
             ],
             "modified": {
               "BaseResponseUserProfileResponse": {
@@ -605,10 +605,10 @@
         },
         "paths": {
           "added": [
-            "/api/admin/missions/{id}",
-            "/api/admin/missions/{id}/close",
             "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions"
+            "/api/admin/missions",
+            "/api/admin/missions/{id}",
+            "/api/admin/missions/{id}/close"
           ],
           "modified": {
             "/api/admin/users": {
@@ -668,17 +668,17 @@
           "schemas": {
             "added": [
               "CreateSystemMissionRequest",
-              "ReviewSystemMissionSubmissionRequest",
-              "PatchString",
               "Value",
-              "SystemMissionResponse",
+              "Clear",
+              "Gps",
               "SystemMissionsResponse",
               "Absent",
               "UpdateSystemMissionRequest",
-              "Clear",
-              "BaseResponseSystemMissionsResponse",
               "BaseResponseSystemMissionResponse",
-              "Gps"
+              "BaseResponseSystemMissionsResponse",
+              "ReviewSystemMissionSubmissionRequest",
+              "SystemMissionResponse",
+              "PatchString"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

@@ -1,0 +1,23 @@
+{
+  "fromVersion": "v0.15.0",
+  "toVersion": "v0.16.0",
+  "groups": {
+    "api": [
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getExploreFeed",
+        "path": "/api/explore/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
+        },
+        "fingerprint": "e87d24c7940e"
+      }
+    ],
+    "admin": []
+  }
+}

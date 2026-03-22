@@ -1,0 +1,77 @@
+{
+  "fromVersion": "v0.15.0",
+  "toVersion": "v0.16.0",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.15.0",
+            "to": "0.16.0"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/explore/photos"
+          ]
+        },
+        "tags": {
+          "added": [
+            "탐색"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "FeedOwnerResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "ExplorePhotoResponse",
+              "CursorPageExplorePhotoResponse"
+            ]
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getExploreFeed",
+          "path": "/api/explore/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
+          },
+          "fingerprint": "e87d24c7940e"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 1,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.15.0",
+            "to": "0.16.0"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    }
+  }
+}

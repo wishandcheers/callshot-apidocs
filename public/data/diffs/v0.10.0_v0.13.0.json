@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/public/profiles/{userId}",
-            "/api/public/photos/clusters/{clusterId}/photos"
+            "/api/public/photos/clusters/{clusterId}/photos",
+            "/api/public/profiles/{userId}"
           ],
           "deleted": [
             "/api/signup"
@@ -2618,9 +2618,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
+                                                    "photoBounds",
                                                     "tileBounds",
-                                                    "clusterId",
-                                                    "photoBounds"
+                                                    "clusterId"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -2629,13 +2629,13 @@
                                                 },
                                                 "properties": {
                                                   "added": [
+                                                    "clusterId",
                                                     "photoBounds",
-                                                    "tileBounds",
-                                                    "clusterId"
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "count": {
@@ -3228,11 +3228,11 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponsePublicProfileResponse",
+              "PublicProfileResponse",
+              "UpdateUserProfileRequest",
               "BoundingBoxResponse",
               "OwnerResponse",
-              "UpdateUserProfileRequest",
-              "PublicProfileResponse"
+              "BaseResponsePublicProfileResponse"
             ],
             "deleted": [
               "UserSignUpRequest"
@@ -3784,9 +3784,9 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "clusterId",
                                   "photoBounds",
-                                  "tileBounds"
+                                  "tileBounds",
+                                  "clusterId"
                                 ],
                                 "deleted": [
                                   "maxDistanceMeters",
@@ -3795,13 +3795,13 @@
                               },
                               "properties": {
                                 "added": [
+                                  "clusterId",
                                   "photoBounds",
-                                  "tileBounds",
-                                  "clusterId"
+                                  "tileBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ],
                                 "modified": {
                                   "count": {
@@ -5115,20 +5115,20 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
-                    "photoBounds",
                     "tileBounds",
-                    "clusterId"
+                    "clusterId",
+                    "photoBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ]
                 },
                 "properties": {
                   "added": [
+                    "photoBounds",
                     "tileBounds",
-                    "clusterId",
-                    "photoBounds"
+                    "clusterId"
                   ],
                   "deleted": [
                     "avgDistanceMeters",
@@ -5171,9 +5171,9 @@
                       "items": {
                         "required": {
                           "added": [
-                            "clusterId",
                             "photoBounds",
-                            "tileBounds"
+                            "tileBounds",
+                            "clusterId"
                           ],
                           "deleted": [
                             "maxDistanceMeters",
@@ -5182,13 +5182,13 @@
                         },
                         "properties": {
                           "added": [
+                            "clusterId",
                             "photoBounds",
-                            "tileBounds",
-                            "clusterId"
+                            "tileBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ],
                           "modified": {
                             "count": {
@@ -8907,18 +8907,18 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseSystemMissionResponse",
-              "UpdateSystemMissionRequest",
               "Value",
-              "PatchString",
+              "BaseResponseSystemMissionsResponse",
               "CreateSystemMissionRequest",
-              "SystemMissionsResponse",
-              "ReviewSystemMissionSubmissionRequest",
               "Absent",
-              "SystemMissionResponse",
               "Gps",
-              "Clear",
-              "BaseResponseSystemMissionsResponse"
+              "PatchString",
+              "SystemMissionsResponse",
+              "BaseResponseSystemMissionResponse",
+              "ReviewSystemMissionSubmissionRequest",
+              "SystemMissionResponse",
+              "UpdateSystemMissionRequest",
+              "Clear"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

@@ -123,8 +123,8 @@
                                                     "clusterId"
                                                   ],
                                                   "deleted": [
-                                                    "maxDistanceMeters",
-                                                    "avgDistanceMeters"
+                                                    "avgDistanceMeters",
+                                                    "maxDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "count": {
@@ -175,22 +175,22 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "tileBounds",
-                                  "clusterId"
-                                ],
-                                "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
-                                ]
-                              },
-                              "properties": {
-                                "added": [
                                   "clusterId",
                                   "tileBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "tileBounds",
+                                  "clusterId"
+                                ],
+                                "deleted": [
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ],
                                 "modified": {
                                   "count": {
@@ -234,8 +234,8 @@
                     "clusterId"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ]
                 },
                 "properties": {
@@ -264,22 +264,22 @@
                       "items": {
                         "required": {
                           "added": [
-                            "tileBounds",
-                            "clusterId"
-                          ],
-                          "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
-                          ]
-                        },
-                        "properties": {
-                          "added": [
                             "clusterId",
                             "tileBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "tileBounds",
+                            "clusterId"
+                          ],
+                          "deleted": [
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ],
                           "modified": {
                             "count": {
@@ -582,18 +582,18 @@
         "components": {
           "schemas": {
             "added": [
+              "SystemMissionResponse",
+              "CreateSystemMissionRequest",
+              "PatchString",
+              "SystemMissionsResponse",
+              "Gps",
+              "Clear",
               "BaseResponseSystemMissionsResponse",
               "Absent",
-              "Value",
-              "SystemMissionResponse",
-              "SystemMissionsResponse",
-              "PatchString",
-              "Gps",
-              "CreateSystemMissionRequest",
-              "UpdateSystemMissionRequest",
+              "ReviewSystemMissionSubmissionRequest",
               "BaseResponseSystemMissionResponse",
-              "Clear",
-              "ReviewSystemMissionSubmissionRequest"
+              "Value",
+              "UpdateSystemMissionRequest"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
