@@ -3273,9 +3273,9 @@
         "components": {
           "schemas": {
             "added": [
-              "OwnerResponse",
               "BaseResponsePublicProfileResponse",
-              "PublicProfileResponse"
+              "PublicProfileResponse",
+              "OwnerResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {

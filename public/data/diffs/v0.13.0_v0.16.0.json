@@ -12,12 +12,12 @@
         },
         "paths": {
           "added": [
+            "/api/photos/{photoId}/comments",
             "/api/explore/photos",
-            "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/photos/{photoId}/bookmark",
-            "/api/photos/{photoId}/comments/{commentId}",
             "/api/my/bookmarks",
-            "/api/photos/{photoId}/comments"
+            "/api/photos/{photoId}/comments/{commentId}",
+            "/api/photos/{photoId}/bookmark",
+            "/api/photos/{photoId}/comments/{commentId}/replies"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -36,16 +36,16 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "bookmarkCount",
                                             "isBookmarkedByUser",
+                                            "bookmarkCount",
                                             "commentCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "isBookmarkedByUser",
                                             "bookmarkCount",
-                                            "commentCount"
+                                            "commentCount",
+                                            "isBookmarkedByUser"
                                           ]
                                         }
                                       }
@@ -74,22 +74,22 @@
         "components": {
           "schemas": {
             "added": [
-              "ToggleBookmarkResponse",
-              "BookmarkedPhotosResponse",
               "BaseResponseCommentResponse",
-              "UpdateCommentRequest",
-              "PageCursor",
-              "CreateCommentRequest",
-              "BookmarkedPhotoItem",
-              "BaseResponseToggleBookmarkResponse",
-              "CursorPageExplorePhotoResponse",
-              "ExplorePhotoResponse",
-              "BaseResponseBookmarkedPhotosResponse",
-              "BaseResponseCursorPageExplorePhotoResponse",
               "CommentPageResponse",
+              "CursorPageExplorePhotoResponse",
+              "BookmarkedPhotoItem",
+              "BookmarkedPhotosResponse",
+              "PageCursor",
+              "UpdateCommentRequest",
+              "ToggleBookmarkResponse",
+              "CommentResponse",
+              "BaseResponseBookmarkedPhotosResponse",
               "FeedOwnerResponse",
-              "BaseResponseCommentPageResponse",
-              "CommentResponse"
+              "CreateCommentRequest",
+              "BaseResponseToggleBookmarkResponse",
+              "ExplorePhotoResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "BaseResponseCommentPageResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -105,9 +105,9 @@
                       },
                       "properties": {
                         "added": [
-                          "isBookmarkedByUser",
                           "bookmarkCount",
-                          "commentCount"
+                          "commentCount",
+                          "isBookmarkedByUser"
                         ]
                       }
                     }
@@ -117,16 +117,16 @@
               "EngagementResponse": {
                 "required": {
                   "added": [
-                    "isBookmarkedByUser",
                     "bookmarkCount",
-                    "commentCount"
+                    "commentCount",
+                    "isBookmarkedByUser"
                   ]
                 },
                 "properties": {
                   "added": [
+                    "bookmarkCount",
                     "commentCount",
-                    "isBookmarkedByUser",
-                    "bookmarkCount"
+                    "isBookmarkedByUser"
                   ]
                 }
               }

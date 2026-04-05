@@ -230,10 +230,10 @@
         },
         "paths": {
           "added": [
+            "/api/admin/missions/{id}",
             "/api/admin/missions/{id}/close",
             "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions",
-            "/api/admin/missions/{id}"
+            "/api/admin/missions"
           ],
           "modified": {
             "/api/admin/users": {
@@ -292,17 +292,17 @@
         "components": {
           "schemas": {
             "added": [
-              "Value",
-              "BaseResponseSystemMissionsResponse",
               "Gps",
-              "CreateSystemMissionRequest",
-              "PatchString",
-              "ReviewSystemMissionSubmissionRequest",
               "UpdateSystemMissionRequest",
               "SystemMissionResponse",
-              "Absent",
+              "CreateSystemMissionRequest",
+              "ReviewSystemMissionSubmissionRequest",
               "Clear",
+              "BaseResponseSystemMissionsResponse",
               "BaseResponseSystemMissionResponse",
+              "Absent",
+              "Value",
+              "PatchString",
               "SystemMissionsResponse"
             ],
             "modified": {

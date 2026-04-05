@@ -113,8 +113,8 @@
                                                     "tileBounds"
                                                   ],
                                                   "deleted": [
-                                                    "maxDistanceMeters",
-                                                    "avgDistanceMeters"
+                                                    "avgDistanceMeters",
+                                                    "maxDistanceMeters"
                                                   ]
                                                 },
                                                 "properties": {
@@ -123,8 +123,8 @@
                                                     "clusterId"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "count": {
@@ -175,8 +175,8 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "clusterId",
-                                  "tileBounds"
+                                  "tileBounds",
+                                  "clusterId"
                                 ],
                                 "deleted": [
                                   "maxDistanceMeters",
@@ -189,8 +189,8 @@
                                   "clusterId"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ],
                                 "modified": {
                                   "count": {
@@ -234,14 +234,14 @@
                     "clusterId"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "clusterId",
-                    "tileBounds"
+                    "tileBounds",
+                    "clusterId"
                   ],
                   "deleted": [
                     "maxDistanceMeters",
@@ -264,8 +264,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "clusterId",
-                            "tileBounds"
+                            "tileBounds",
+                            "clusterId"
                           ],
                           "deleted": [
                             "maxDistanceMeters",
@@ -278,8 +278,8 @@
                             "clusterId"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ],
                           "modified": {
                             "count": {
@@ -505,10 +505,10 @@
         },
         "paths": {
           "added": [
+            "/api/admin/missions",
             "/api/admin/missions/{id}",
             "/api/admin/missions/{id}/close",
-            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions"
+            "/api/admin/missions/{missionId}/submissions/{submissionId}/review"
           ],
           "modified": {
             "/api/admin/users": {
@@ -582,18 +582,18 @@
         "components": {
           "schemas": {
             "added": [
-              "SystemMissionResponse",
+              "BaseResponseSystemMissionsResponse",
               "CreateSystemMissionRequest",
-              "PatchString",
+              "SystemMissionResponse",
+              "BaseResponseSystemMissionResponse",
+              "Clear",
+              "Value",
               "SystemMissionsResponse",
               "Gps",
-              "Clear",
-              "BaseResponseSystemMissionsResponse",
               "Absent",
               "ReviewSystemMissionSubmissionRequest",
-              "BaseResponseSystemMissionResponse",
-              "Value",
-              "UpdateSystemMissionRequest"
+              "UpdateSystemMissionRequest",
+              "PatchString"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

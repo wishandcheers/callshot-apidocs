@@ -12,9 +12,9 @@
         },
         "paths": {
           "added": [
+            "/api/my/bookmarks",
             "/api/photos/{photoId}/bookmark",
-            "/api/public/profiles/{userId}",
-            "/api/my/bookmarks"
+            "/api/public/profiles/{userId}"
           ],
           "modified": {
             "/api/my/drafts": {
@@ -2061,14 +2061,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "bookmarkCount",
-                                            "isBookmarkedByUser"
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "bookmarkCount",
-                                            "isBookmarkedByUser"
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
                                           ],
                                           "modified": {
                                             "dislikeCount": {
@@ -3286,15 +3286,15 @@
         "components": {
           "schemas": {
             "added": [
+              "BaseResponsePublicProfileResponse",
               "PublicProfileResponse",
-              "ToggleBookmarkResponse",
-              "BookmarkedPhotoItem",
-              "BaseResponseBookmarkedPhotosResponse",
-              "BookmarkedPhotosResponse",
-              "OwnerResponse",
-              "PageCursor",
               "BaseResponseToggleBookmarkResponse",
-              "BaseResponsePublicProfileResponse"
+              "BaseResponseBookmarkedPhotosResponse",
+              "ToggleBookmarkResponse",
+              "BookmarkedPhotosResponse",
+              "BookmarkedPhotoItem",
+              "OwnerResponse",
+              "PageCursor"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3471,14 +3471,14 @@
                     "body": {
                       "required": {
                         "added": [
-                          "bookmarkCount",
-                          "isBookmarkedByUser"
+                          "isBookmarkedByUser",
+                          "bookmarkCount"
                         ]
                       },
                       "properties": {
                         "added": [
-                          "bookmarkCount",
-                          "isBookmarkedByUser"
+                          "isBookmarkedByUser",
+                          "bookmarkCount"
                         ],
                         "modified": {
                           "dislikeCount": {

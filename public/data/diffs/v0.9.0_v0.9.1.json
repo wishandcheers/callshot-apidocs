@@ -21,23 +21,23 @@
         "paths": {
           "added": [
             "/api/shutter/me",
-            "/api/storage/complete",
-            "/api/storage/presigned-url",
-            "/api/shutter/statistics",
+            "/api/shutter/users/{userId}",
             "/api/shutter/leaderboard",
-            "/api/shutter/users/{userId}"
+            "/api/shutter/statistics",
+            "/api/storage/complete",
+            "/api/storage/presigned-url"
           ],
           "deleted": [
-            "/api/photos/clusters",
-            "/api/photos/cluster-area",
-            "/api/my/submissions",
-            "/api/photos",
             "/api/photos/{id}",
-            "/api/photos/my/drafts",
-            "/api/photos/drafts/{id}",
-            "/api/photos/drafts/{id}/publish",
+            "/api/photos/cluster-area",
             "/api/photos/my",
-            "/api/photos/my/published"
+            "/api/photos/my/drafts",
+            "/api/photos",
+            "/api/photos/my/published",
+            "/api/photos/clusters",
+            "/api/my/submissions",
+            "/api/photos/drafts/{id}/publish",
+            "/api/photos/drafts/{id}"
           ],
           "modified": {
             "/api/hashtags": {
@@ -3580,25 +3580,25 @@
         "components": {
           "schemas": {
             "added": [
-              "LeaderboardEntryResponse",
-              "CompleteUploadRequest",
-              "BaseResponseShutterResponse",
-              "BaseResponseLeaderboardResponse",
-              "ShutterResponse",
-              "PresignedUrlRequest",
-              "BaseResponseRankStatisticsResponse",
-              "RankStatisticsResponse",
-              "LeaderboardResponse",
-              "BaseResponsePresignedUrlResponse",
               "PresignedUrlResponse",
-              "ShutterSummary"
+              "BaseResponseLeaderboardResponse",
+              "LeaderboardEntryResponse",
+              "BaseResponseShutterResponse",
+              "PresignedUrlRequest",
+              "BaseResponsePresignedUrlResponse",
+              "BaseResponseRankStatisticsResponse",
+              "ShutterSummary",
+              "LeaderboardResponse",
+              "CompleteUploadRequest",
+              "ShutterResponse",
+              "RankStatisticsResponse"
             ],
             "deleted": [
-              "SubmissionRequestInfoDto",
-              "MySubmissionsResponse",
               "BaseResponseMySubmissionsResponse",
+              "SubmissionPhotoInfoDto",
+              "MySubmissionsResponse",
               "MySubmissionItemDto",
-              "SubmissionPhotoInfoDto"
+              "SubmissionRequestInfoDto"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -7466,15 +7466,15 @@
         },
         "paths": {
           "added": [
+            "/api/admin/users",
             "/api/admin/users/{id}",
-            "/api/admin/users/{id}/profile",
-            "/api/admin/users"
+            "/api/admin/users/{id}/profile"
           ],
           "deleted": [
-            "/internal/admin/users/{id}",
-            "/internal/admin/users/{id}/profile",
             "/internal/admin/photos",
-            "/internal/admin/users"
+            "/internal/admin/users",
+            "/internal/admin/users/{id}",
+            "/internal/admin/users/{id}/profile"
           ]
         },
         "tags": {
@@ -7493,14 +7493,14 @@
               "UserAuthority"
             ],
             "deleted": [
-              "UserAuthorities",
-              "UrlResult",
-              "BaseResponsePhotosResponse",
+              "Gps",
               "Users",
+              "BaseResponsePhotosResponse",
               "BoundingBox",
+              "UrlResult",
               "PhotoResponse",
               "PhotosResponse",
-              "Gps"
+              "UserAuthorities"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -7526,8 +7526,8 @@
                         },
                         "properties": {
                           "added": [
-                            "createdAt",
-                            "user"
+                            "user",
+                            "createdAt"
                           ],
                           "deleted": [
                             "users"
@@ -7542,8 +7542,8 @@
                               },
                               "properties": {
                                 "deleted": [
-                                  "updatedAt",
-                                  "createdAt"
+                                  "createdAt",
+                                  "updatedAt"
                                 ]
                               }
                             },
@@ -7670,8 +7670,8 @@
                       },
                       "required": {
                         "added": [
-                          "providerId",
-                          "provider"
+                          "provider",
+                          "providerId"
                         ],
                         "deleted": [
                           "createdAt",
@@ -7716,8 +7716,8 @@
                           "profile": {
                             "required": {
                               "deleted": [
-                                "createdAt",
-                                "updatedAt"
+                                "updatedAt",
+                                "createdAt"
                               ]
                             },
                             "properties": {
@@ -7882,8 +7882,8 @@
                     "providerId"
                   ],
                   "deleted": [
-                    "providerKey",
-                    "createdAt"
+                    "createdAt",
+                    "providerKey"
                   ]
                 },
                 "properties": {
@@ -7924,8 +7924,8 @@
                     "profile": {
                       "required": {
                         "deleted": [
-                          "createdAt",
-                          "updatedAt"
+                          "updatedAt",
+                          "createdAt"
                         ]
                       },
                       "properties": {
@@ -7971,8 +7971,8 @@
                       },
                       "properties": {
                         "deleted": [
-                          "updatedAt",
-                          "createdAt"
+                          "createdAt",
+                          "updatedAt"
                         ]
                       }
                     },
@@ -7991,8 +7991,8 @@
               "UserProfile": {
                 "required": {
                   "deleted": [
-                    "updatedAt",
-                    "createdAt"
+                    "createdAt",
+                    "updatedAt"
                   ]
                 },
                 "properties": {

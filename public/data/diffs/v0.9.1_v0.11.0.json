@@ -164,14 +164,14 @@
         "components": {
           "schemas": {
             "added": [
-              "ShutterSummaryInfo",
-              "UpdateUserProfileRequest"
+              "UpdateUserProfileRequest",
+              "ShutterSummaryInfo"
             ],
             "deleted": [
-              "PhotoClusterRequest",
               "UserSignUpRequest",
-              "ShutterSummary",
-              "ClusterAreaRequest"
+              "PhotoClusterRequest",
+              "ClusterAreaRequest",
+              "ShutterSummary"
             ],
             "modified": {
               "BaseResponseUserProfileResponse": {
@@ -605,10 +605,10 @@
         },
         "paths": {
           "added": [
-            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions",
             "/api/admin/missions/{id}",
-            "/api/admin/missions/{id}/close"
+            "/api/admin/missions/{id}/close",
+            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
+            "/api/admin/missions"
           ],
           "modified": {
             "/api/admin/users": {
@@ -667,18 +667,18 @@
         "components": {
           "schemas": {
             "added": [
-              "CreateSystemMissionRequest",
-              "Value",
-              "Clear",
-              "Gps",
-              "SystemMissionsResponse",
-              "Absent",
-              "UpdateSystemMissionRequest",
-              "BaseResponseSystemMissionResponse",
-              "BaseResponseSystemMissionsResponse",
-              "ReviewSystemMissionSubmissionRequest",
               "SystemMissionResponse",
-              "PatchString"
+              "BaseResponseSystemMissionsResponse",
+              "PatchString",
+              "Gps",
+              "ReviewSystemMissionSubmissionRequest",
+              "SystemMissionsResponse",
+              "UpdateSystemMissionRequest",
+              "Value",
+              "Absent",
+              "CreateSystemMissionRequest",
+              "Clear",
+              "BaseResponseSystemMissionResponse"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

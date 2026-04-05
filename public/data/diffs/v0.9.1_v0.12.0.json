@@ -188,8 +188,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "tileBounds",
-                                                    "clusterId"
+                                                    "clusterId",
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
                                                     "maxDistanceMeters",
@@ -227,15 +227,15 @@
         "components": {
           "schemas": {
             "added": [
-              "ShutterSummaryInfo",
               "BoundingBoxResponse",
-              "UpdateUserProfileRequest"
+              "UpdateUserProfileRequest",
+              "ShutterSummaryInfo"
             ],
             "deleted": [
-              "ShutterSummary",
-              "ClusterAreaRequest",
               "UserSignUpRequest",
-              "PhotoClusterRequest"
+              "ShutterSummary",
+              "PhotoClusterRequest",
+              "ClusterAreaRequest"
             ],
             "modified": {
               "BaseResponsePhotoClustersResponse": {
@@ -252,8 +252,8 @@
                                   "tileBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ]
                               },
                               "properties": {
@@ -359,8 +359,8 @@
                     "clusterId"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ]
                 },
                 "properties": {
@@ -369,8 +369,8 @@
                     "clusterId"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ],
                   "modified": {
                     "count": {
@@ -393,8 +393,8 @@
                             "tileBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ]
                         },
                         "properties": {
@@ -872,10 +872,10 @@
         },
         "paths": {
           "added": [
+            "/api/admin/missions",
             "/api/admin/missions/{id}",
             "/api/admin/missions/{id}/close",
-            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions"
+            "/api/admin/missions/{missionId}/submissions/{submissionId}/review"
           ],
           "modified": {
             "/api/admin/users": {
@@ -949,18 +949,18 @@
         "components": {
           "schemas": {
             "added": [
+              "ReviewSystemMissionSubmissionRequest",
               "Absent",
-              "PatchString",
-              "Value",
-              "Gps",
-              "UpdateSystemMissionRequest",
-              "BaseResponseSystemMissionsResponse",
-              "CreateSystemMissionRequest",
               "Clear",
-              "SystemMissionResponse",
+              "BaseResponseSystemMissionsResponse",
               "BaseResponseSystemMissionResponse",
+              "CreateSystemMissionRequest",
+              "Gps",
+              "PatchString",
+              "UpdateSystemMissionRequest",
               "SystemMissionsResponse",
-              "ReviewSystemMissionSubmissionRequest"
+              "SystemMissionResponse",
+              "Value"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
