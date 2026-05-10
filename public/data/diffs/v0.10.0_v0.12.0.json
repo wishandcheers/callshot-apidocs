@@ -123,10 +123,16 @@
                                                     "clusterId"
                                                   ],
                                                   "deleted": [
-                                                    "maxDistanceMeters",
-                                                    "avgDistanceMeters"
+                                                    "avgDistanceMeters",
+                                                    "maxDistanceMeters"
                                                   ],
                                                   "modified": {
+                                                    "center": {
+                                                      "description": {
+                                                        "from": "클러스터 중심 좌표",
+                                                        "to": "클러스터 중심 좌표 (tileBounds 중심)"
+                                                      }
+                                                    },
                                                     "count": {
                                                       "example": {
                                                         "from": 5,
@@ -179,20 +185,26 @@
                                   "clusterId"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ]
                               },
                               "properties": {
                                 "added": [
-                                  "tileBounds",
-                                  "clusterId"
+                                  "clusterId",
+                                  "tileBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ],
                                 "modified": {
+                                  "center": {
+                                    "description": {
+                                      "from": "클러스터 중심 좌표",
+                                      "to": "클러스터 중심 좌표 (tileBounds 중심)"
+                                    }
+                                  },
                                   "count": {
                                     "example": {
                                       "from": 5,
@@ -240,14 +252,20 @@
                 },
                 "properties": {
                   "added": [
-                    "tileBounds",
-                    "clusterId"
+                    "clusterId",
+                    "tileBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ],
                   "modified": {
+                    "center": {
+                      "description": {
+                        "from": "클러스터 중심 좌표",
+                        "to": "클러스터 중심 좌표 (tileBounds 중심)"
+                      }
+                    },
                     "count": {
                       "example": {
                         "from": 5,
@@ -268,20 +286,26 @@
                             "clusterId"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ]
                         },
                         "properties": {
                           "added": [
-                            "tileBounds",
-                            "clusterId"
+                            "clusterId",
+                            "tileBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ],
                           "modified": {
+                            "center": {
+                              "description": {
+                                "from": "클러스터 중심 좌표",
+                                "to": "클러스터 중심 좌표 (tileBounds 중심)"
+                              }
+                            },
                             "count": {
                               "example": {
                                 "from": 5,
@@ -314,36 +338,36 @@
       "changelog": [
         {
           "id": "request-parameter-became-required",
-          "text": "the 'query' request parameter 'zoomLevel' became required",
+          "text": "the `query` request parameter `zoomLevel` became required",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "bfa90f070418"
+          "fingerprint": "1e026d2cf9a9"
         },
         {
           "id": "response-required-property-removed",
-          "text": "removed the required property 'body/clusters/items/avgDistanceMeters' from the response with the '200' status",
+          "text": "removed the required property `body/clusters/items/avgDistanceMeters` from the response with the `200` status",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "b69a8ab16a9e"
+          "fingerprint": "36e649431185"
         },
         {
           "id": "response-required-property-removed",
-          "text": "removed the required property 'body/clusters/items/maxDistanceMeters' from the response with the '200' status",
+          "text": "removed the required property `body/clusters/items/maxDistanceMeters` from the response with the `200` status",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "9ffd2606787f"
+          "fingerprint": "bd54450af7ef"
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -357,25 +381,25 @@
           "baseSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
           },
-          "fingerprint": "60e7c61735d3"
+          "fingerprint": "73f1e114ef49"
         },
         {
           "id": "api-schema-removed",
-          "text": "removed the schema 'UserSignUpRequest'",
+          "text": "removed the schema `UserSignUpRequest`",
           "level": 1,
           "section": "components",
-          "fingerprint": "d43afc26364f"
+          "fingerprint": "5498de993b2e"
         },
         {
           "id": "response-required-property-added",
-          "text": "added the required property 'body/status' to the response with the '200' status",
+          "text": "added the required property `body/status` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "profile",
           "path": "/api/profile",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "e039bd634cb0"
+          "fingerprint": "62835e915788"
         },
         {
           "id": "endpoint-added",
@@ -389,7 +413,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
           },
-          "fingerprint": "78bb9c68346a"
+          "fingerprint": "eb03e8322710"
         },
         {
           "id": "endpoint-deprecated",
@@ -400,29 +424,29 @@
           "path": "/api/public/photos/cluster-area",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "391745702470"
+          "fingerprint": "dd30ca12705a"
         },
         {
           "id": "response-required-property-added",
-          "text": "added the required property 'body/clusters/items/clusterId' to the response with the '200' status",
+          "text": "added the required property `body/clusters/items/clusterId` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "cff3dc21645c"
+          "fingerprint": "3c6524a77a88"
         },
         {
           "id": "response-required-property-added",
-          "text": "added the required property 'body/clusters/items/tileBounds' to the response with the '200' status",
+          "text": "added the required property `body/clusters/items/tileBounds` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "a115d7509a06"
+          "fingerprint": "59e39ccfad70"
         },
         {
           "id": "endpoint-added",
@@ -436,42 +460,42 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
           },
-          "fingerprint": "d380673c5c73"
+          "fingerprint": "ccd74ca77626"
         }
       ],
       "breaking": [
         {
           "id": "request-parameter-became-required",
-          "text": "the 'query' request parameter 'zoomLevel' became required",
+          "text": "the `query` request parameter `zoomLevel` became required",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "bfa90f070418"
+          "fingerprint": "1e026d2cf9a9"
         },
         {
           "id": "response-required-property-removed",
-          "text": "removed the required property 'body/clusters/items/avgDistanceMeters' from the response with the '200' status",
+          "text": "removed the required property `body/clusters/items/avgDistanceMeters` from the response with the `200` status",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "b69a8ab16a9e"
+          "fingerprint": "36e649431185"
         },
         {
           "id": "response-required-property-removed",
-          "text": "removed the required property 'body/clusters/items/maxDistanceMeters' from the response with the '200' status",
+          "text": "removed the required property `body/clusters/items/maxDistanceMeters` from the response with the `200` status",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "9ffd2606787f"
+          "fingerprint": "bd54450af7ef"
         },
         {
           "id": "api-path-removed-without-deprecation",
@@ -485,7 +509,7 @@
           "baseSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
           },
-          "fingerprint": "60e7c61735d3"
+          "fingerprint": "73f1e114ef49"
         }
       ],
       "summary": {
@@ -505,10 +529,10 @@
         },
         "paths": {
           "added": [
+            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
             "/api/admin/missions",
             "/api/admin/missions/{id}",
-            "/api/admin/missions/{id}/close",
-            "/api/admin/missions/{missionId}/submissions/{submissionId}/review"
+            "/api/admin/missions/{id}/close"
           ],
           "modified": {
             "/api/admin/users": {
@@ -582,18 +606,18 @@
         "components": {
           "schemas": {
             "added": [
+              "Value",
+              "Absent",
               "BaseResponseSystemMissionsResponse",
               "CreateSystemMissionRequest",
-              "SystemMissionResponse",
-              "BaseResponseSystemMissionResponse",
-              "Clear",
-              "Value",
-              "SystemMissionsResponse",
-              "Gps",
-              "Absent",
               "ReviewSystemMissionSubmissionRequest",
+              "Clear",
+              "PatchString",
+              "SystemMissionsResponse",
+              "BaseResponseSystemMissionResponse",
+              "SystemMissionResponse",
               "UpdateSystemMissionRequest",
-              "PatchString"
+              "Gps"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -717,7 +741,7 @@
       "changelog": [
         {
           "id": "response-property-enum-value-added",
-          "text": "added the new 'SYSTEM' enum value to the 'body/items/user/providerKey/provider' response property for the response status '200'",
+          "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
           "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
@@ -725,7 +749,7 @@
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
           "section": "paths",
-          "fingerprint": "358328688c2e"
+          "fingerprint": "e067983e4bf8"
         },
         {
           "id": "endpoint-added",
@@ -739,7 +763,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
-          "fingerprint": "93b4a7ef5151"
+          "fingerprint": "fcf417febacc"
         },
         {
           "id": "endpoint-added",
@@ -753,7 +777,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
-          "fingerprint": "39fee2cd3add"
+          "fingerprint": "19233def30e2"
         },
         {
           "id": "endpoint-added",
@@ -767,7 +791,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
-          "fingerprint": "daff3abb281f"
+          "fingerprint": "2b65f294ce1f"
         },
         {
           "id": "endpoint-added",
@@ -781,7 +805,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
-          "fingerprint": "b40a1a63266f"
+          "fingerprint": "a1af7e9a77b0"
         },
         {
           "id": "endpoint-added",
@@ -795,7 +819,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
-          "fingerprint": "ebebbe726f84"
+          "fingerprint": "71390c29e2a2"
         },
         {
           "id": "endpoint-added",
@@ -809,7 +833,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
-          "fingerprint": "1136e0470549"
+          "fingerprint": "57674685b23e"
         },
         {
           "id": "endpoint-added",
@@ -823,24 +847,24 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
-          "fingerprint": "37f9574c9eee"
+          "fingerprint": "664d08088634"
         },
         {
           "id": "response-required-property-added",
-          "text": "added the required property 'body/items/user/status' to the response with the '200' status",
+          "text": "added the required property `body/items/user/status` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
           "section": "paths",
-          "fingerprint": "e1e98a57e426"
+          "fingerprint": "ec58497b7797"
         }
       ],
       "breaking": [
         {
           "id": "response-property-enum-value-added",
-          "text": "added the new 'SYSTEM' enum value to the 'body/items/user/providerKey/provider' response property for the response status '200'",
+          "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
           "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
@@ -848,7 +872,7 @@
           "path": "/api/admin/users",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
           "section": "paths",
-          "fingerprint": "358328688c2e"
+          "fingerprint": "e067983e4bf8"
         }
       ],
       "summary": {

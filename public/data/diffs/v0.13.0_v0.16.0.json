@@ -12,12 +12,12 @@
         },
         "paths": {
           "added": [
+            "/api/photos/{photoId}/comments/{commentId}/replies",
+            "/api/photos/{photoId}/comments/{commentId}",
             "/api/photos/{photoId}/comments",
             "/api/explore/photos",
             "/api/my/bookmarks",
-            "/api/photos/{photoId}/comments/{commentId}",
-            "/api/photos/{photoId}/bookmark",
-            "/api/photos/{photoId}/comments/{commentId}/replies"
+            "/api/photos/{photoId}/bookmark"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -36,16 +36,16 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "isBookmarkedByUser",
                                             "bookmarkCount",
-                                            "commentCount"
+                                            "commentCount",
+                                            "isBookmarkedByUser"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "bookmarkCount",
+                                            "isBookmarkedByUser",
                                             "commentCount",
-                                            "isBookmarkedByUser"
+                                            "bookmarkCount"
                                           ]
                                         }
                                       }
@@ -74,21 +74,21 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseCommentResponse",
-              "CommentPageResponse",
-              "CursorPageExplorePhotoResponse",
-              "BookmarkedPhotoItem",
-              "BookmarkedPhotosResponse",
               "PageCursor",
-              "UpdateCommentRequest",
-              "ToggleBookmarkResponse",
-              "CommentResponse",
-              "BaseResponseBookmarkedPhotosResponse",
-              "FeedOwnerResponse",
-              "CreateCommentRequest",
-              "BaseResponseToggleBookmarkResponse",
-              "ExplorePhotoResponse",
               "BaseResponseCursorPageExplorePhotoResponse",
+              "BaseResponseToggleBookmarkResponse",
+              "FeedOwnerResponse",
+              "CursorPageExplorePhotoResponse",
+              "BookmarkedPhotosResponse",
+              "CommentPageResponse",
+              "CreateCommentRequest",
+              "UpdateCommentRequest",
+              "CommentResponse",
+              "BaseResponseCommentResponse",
+              "BaseResponseBookmarkedPhotosResponse",
+              "ExplorePhotoResponse",
+              "BookmarkedPhotoItem",
+              "ToggleBookmarkResponse",
               "BaseResponseCommentPageResponse"
             ],
             "modified": {
@@ -98,16 +98,16 @@
                     "body": {
                       "required": {
                         "added": [
-                          "isBookmarkedByUser",
                           "bookmarkCount",
-                          "commentCount"
+                          "commentCount",
+                          "isBookmarkedByUser"
                         ]
                       },
                       "properties": {
                         "added": [
                           "bookmarkCount",
-                          "commentCount",
-                          "isBookmarkedByUser"
+                          "isBookmarkedByUser",
+                          "commentCount"
                         ]
                       }
                     }
@@ -125,8 +125,8 @@
                 "properties": {
                   "added": [
                     "bookmarkCount",
-                    "commentCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "commentCount"
                   ]
                 }
               }
@@ -147,7 +147,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
           },
-          "fingerprint": "e87d24c7940e"
+          "fingerprint": "b078be2e13d4"
         },
         {
           "id": "endpoint-added",
@@ -161,7 +161,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
           },
-          "fingerprint": "9afb1900cf7c"
+          "fingerprint": "66e836a0295e"
         },
         {
           "id": "endpoint-added",
@@ -175,7 +175,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
           },
-          "fingerprint": "53bc94755cbe"
+          "fingerprint": "bdd42eb2a952"
         },
         {
           "id": "endpoint-added",
@@ -189,7 +189,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
           },
-          "fingerprint": "467f9add2962"
+          "fingerprint": "97d13f016941"
         },
         {
           "id": "endpoint-added",
@@ -203,7 +203,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
           },
-          "fingerprint": "670f612d6cd5"
+          "fingerprint": "816a40c705bf"
         },
         {
           "id": "endpoint-added",
@@ -217,7 +217,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
           },
-          "fingerprint": "c2b417d53869"
+          "fingerprint": "01a82c0eaeb1"
         },
         {
           "id": "endpoint-added",
@@ -231,7 +231,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
           },
-          "fingerprint": "a213defb527e"
+          "fingerprint": "274495a3567d"
         },
         {
           "id": "endpoint-added",
@@ -245,40 +245,40 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
           },
-          "fingerprint": "c2da09e6b8ae"
+          "fingerprint": "a2085245736b"
         },
         {
           "id": "response-required-property-added",
-          "text": "added the required property 'body/bookmarkCount' to the response with the '200' status",
+          "text": "added the required property `body/bookmarkCount` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "5ed8cd1de3bf"
+          "fingerprint": "94c29ae24b53"
         },
         {
           "id": "response-required-property-added",
-          "text": "added the required property 'body/commentCount' to the response with the '200' status",
+          "text": "added the required property `body/commentCount` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "2f2ff79ba4df"
+          "fingerprint": "cce356bf1927"
         },
         {
           "id": "response-required-property-added",
-          "text": "added the required property 'body/isBookmarkedByUser' to the response with the '200' status",
+          "text": "added the required property `body/isBookmarkedByUser` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "9a66d88e3add"
+          "fingerprint": "c4c58ea21c06"
         }
       ],
       "breaking": [],

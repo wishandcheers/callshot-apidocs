@@ -12,13 +12,13 @@
         },
         "paths": {
           "added": [
-            "/api/explore/photos",
-            "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/public/profiles/{userId}/review-summary",
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/photos/{photoId}/comments/{commentId}",
             "/api/photos/{photoId}/comments",
-            "/api/public/profiles/{userId}/reviews"
+            "/api/public/profiles/{userId}/reviews",
+            "/api/photos/{photoId}/comments/{commentId}/replies",
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/explore/photos",
+            "/api/public/profiles/{userId}/review-summary"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -105,26 +105,26 @@
         "components": {
           "schemas": {
             "added": [
-              "CommentPageResponse",
-              "BaseResponseCommentPageResponse",
-              "CursorPageExplorePhotoResponse",
-              "CreateCommentRequest",
-              "CursorPageSubmissionReviewResponse",
-              "BaseResponseSubmissionReviewResponse",
-              "BaseResponseReviewSummaryResponse",
-              "CreateSubmissionReviewRequest",
-              "UpdateSubmissionReviewRequest",
-              "BaseResponseCommentResponse",
-              "ReviewSummaryInfo",
-              "UpdateCommentRequest",
-              "SubmissionReviewResponse",
               "FeedOwnerResponse",
-              "ReviewSummaryResponse",
-              "BaseResponseCursorPageExplorePhotoResponse",
               "BaseResponseCursorPageSubmissionReviewResponse",
-              "ExplorePhotoResponse",
+              "CursorPageExplorePhotoResponse",
               "CommentResponse",
-              "CursorRequest"
+              "ExplorePhotoResponse",
+              "SubmissionReviewResponse",
+              "BaseResponseReviewSummaryResponse",
+              "BaseResponseSubmissionReviewResponse",
+              "CursorRequest",
+              "UpdateCommentRequest",
+              "ReviewSummaryResponse",
+              "UpdateSubmissionReviewRequest",
+              "BaseResponseCommentPageResponse",
+              "CreateSubmissionReviewRequest",
+              "CursorPageSubmissionReviewResponse",
+              "BaseResponseCommentResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "CreateCommentRequest",
+              "CommentPageResponse",
+              "ReviewSummaryInfo"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -194,7 +194,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "e87d24c7940e"
+          "fingerprint": "b078be2e13d4"
         },
         {
           "id": "endpoint-added",
@@ -208,7 +208,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "133ad7f0ee6c"
+          "fingerprint": "1f719ed0d618"
         },
         {
           "id": "endpoint-added",
@@ -222,7 +222,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "81c0fc1ef4e2"
+          "fingerprint": "7982f437fea8"
         },
         {
           "id": "endpoint-added",
@@ -236,7 +236,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "467f9add2962"
+          "fingerprint": "97d13f016941"
         },
         {
           "id": "endpoint-added",
@@ -250,7 +250,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "670f612d6cd5"
+          "fingerprint": "816a40c705bf"
         },
         {
           "id": "endpoint-added",
@@ -264,7 +264,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "c2b417d53869"
+          "fingerprint": "01a82c0eaeb1"
         },
         {
           "id": "endpoint-added",
@@ -278,7 +278,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "a213defb527e"
+          "fingerprint": "274495a3567d"
         },
         {
           "id": "endpoint-added",
@@ -292,29 +292,29 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "c2da09e6b8ae"
+          "fingerprint": "a2085245736b"
         },
         {
           "id": "response-required-property-added",
-          "text": "added the required property 'body/commentCount' to the response with the '200' status",
+          "text": "added the required property `body/commentCount` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "2f2ff79ba4df"
+          "fingerprint": "cce356bf1927"
         },
         {
           "id": "response-optional-property-added",
-          "text": "added the optional property 'body/reviewSummary' to the response with the '200' status",
+          "text": "added the optional property `body/reviewSummary` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "getPublicProfile",
           "path": "/api/public/profiles/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "0e496e2c5169"
+          "fingerprint": "f66838a93928"
         },
         {
           "id": "endpoint-added",
@@ -328,7 +328,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "89dbfd8d53c4"
+          "fingerprint": "fb30c69629dd"
         },
         {
           "id": "endpoint-added",
@@ -342,7 +342,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "7809df021aea"
+          "fingerprint": "500f37450a0d"
         }
       ],
       "breaking": [],

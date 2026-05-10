@@ -5,58 +5,58 @@
     "api": [
       {
         "id": "new-required-request-parameter",
-        "text": "added the new required 'query' request parameter 'boundingBox'",
+        "text": "added the new required `query` request parameter `boundingBox`",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotosInClusterArea",
         "path": "/api/public/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "37a0632cda69"
+        "fingerprint": "56d52b176e1a"
       },
       {
         "id": "new-required-request-parameter",
-        "text": "added the new required 'query' request parameter 'boundingBox'",
+        "text": "added the new required `query` request parameter `boundingBox`",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "efd490c77725"
+        "fingerprint": "2eb1c98204b4"
       },
       {
         "id": "new-required-request-parameter",
-        "text": "added the new required 'query' request parameter 'zoomLevel'",
+        "text": "added the new required `query` request parameter `zoomLevel`",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "a97b356f3bc7"
+        "fingerprint": "144b0e5ed166"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/clusters/items/avgDistanceMeters' from the response with the '200' status",
+        "text": "removed the required property `body/clusters/items/avgDistanceMeters` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "b69a8ab16a9e"
+        "fingerprint": "36e649431185"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/clusters/items/maxDistanceMeters' from the response with the '200' status",
+        "text": "removed the required property `body/clusters/items/maxDistanceMeters` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "9ffd2606787f"
+        "fingerprint": "bd54450af7ef"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -70,11 +70,11 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json"
         },
-        "fingerprint": "60e7c61735d3"
+        "fingerprint": "73f1e114ef49"
       },
       {
         "id": "request-parameter-removed",
-        "text": "deleted the 'query' request parameter 'request'",
+        "text": "deleted the `query` request parameter `request`",
         "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
         "level": 2,
         "operation": "GET",
@@ -82,11 +82,11 @@
         "path": "/api/public/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "11bef7b97e76"
+        "fingerprint": "f985072e5eb0"
       },
       {
         "id": "request-parameter-removed",
-        "text": "deleted the 'query' request parameter 'request'",
+        "text": "deleted the `query` request parameter `request`",
         "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
         "level": 2,
         "operation": "GET",
@@ -94,13 +94,13 @@
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "d28cf5ff639e"
+        "fingerprint": "a1c63b8a9452"
       }
     ],
     "admin": [
       {
         "id": "response-property-enum-value-added",
-        "text": "added the new 'SYSTEM' enum value to the 'body/items/user/providerKey/provider' response property for the response status '200'",
+        "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
         "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
         "level": 2,
         "operation": "GET",
@@ -108,7 +108,7 @@
         "path": "/api/admin/users",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
         "section": "paths",
-        "fingerprint": "358328688c2e"
+        "fingerprint": "e067983e4bf8"
       }
     ]
   }

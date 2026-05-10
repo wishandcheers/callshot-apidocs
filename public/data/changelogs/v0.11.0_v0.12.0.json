@@ -5,25 +5,25 @@
     "api": [
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/clusters/items/avgDistanceMeters' from the response with the '200' status",
+        "text": "removed the required property `body/clusters/items/avgDistanceMeters` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "b69a8ab16a9e"
+        "fingerprint": "36e649431185"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/clusters/items/maxDistanceMeters' from the response with the '200' status",
+        "text": "removed the required property `body/clusters/items/maxDistanceMeters` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "9ffd2606787f"
+        "fingerprint": "bd54450af7ef"
       },
       {
         "id": "endpoint-deprecated",
@@ -34,29 +34,29 @@
         "path": "/api/public/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "391745702470"
+        "fingerprint": "dd30ca12705a"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/clusters/items/clusterId' to the response with the '200' status",
+        "text": "added the required property `body/clusters/items/clusterId` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "cff3dc21645c"
+        "fingerprint": "3c6524a77a88"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/clusters/items/tileBounds' to the response with the '200' status",
+        "text": "added the required property `body/clusters/items/tileBounds` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "a115d7509a06"
+        "fingerprint": "59e39ccfad70"
       },
       {
         "id": "endpoint-added",
@@ -70,13 +70,13 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
         },
-        "fingerprint": "d380673c5c73"
+        "fingerprint": "ccd74ca77626"
       }
     ],
     "admin": [
       {
         "id": "response-property-enum-value-added",
-        "text": "added the new 'SYSTEM' enum value to the 'body/items/user/providerKey/provider' response property for the response status '200'",
+        "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
         "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
         "level": 2,
         "operation": "GET",
@@ -84,7 +84,7 @@
         "path": "/api/admin/users",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json",
         "section": "paths",
-        "fingerprint": "358328688c2e"
+        "fingerprint": "e067983e4bf8"
       }
     ]
   }

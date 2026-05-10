@@ -12,9 +12,9 @@
         },
         "paths": {
           "added": [
+            "/api/public/profiles/{userId}/reviews",
             "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/public/profiles/{userId}/review-summary",
-            "/api/public/profiles/{userId}/reviews"
+            "/api/public/profiles/{userId}/review-summary"
           ],
           "modified": {
             "/api/public/profiles/{userId}": {
@@ -61,16 +61,16 @@
         "components": {
           "schemas": {
             "added": [
-              "ReviewSummaryInfo",
+              "SubmissionReviewResponse",
+              "CreateSubmissionReviewRequest",
               "ReviewSummaryResponse",
               "CursorRequest",
-              "CreateSubmissionReviewRequest",
-              "CursorPageSubmissionReviewResponse",
-              "UpdateSubmissionReviewRequest",
+              "BaseResponseReviewSummaryResponse",
               "BaseResponseSubmissionReviewResponse",
-              "SubmissionReviewResponse",
-              "BaseResponseCursorPageSubmissionReviewResponse",
-              "BaseResponseReviewSummaryResponse"
+              "ReviewSummaryInfo",
+              "UpdateSubmissionReviewRequest",
+              "CursorPageSubmissionReviewResponse",
+              "BaseResponseCursorPageSubmissionReviewResponse"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {
@@ -110,7 +110,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "133ad7f0ee6c"
+          "fingerprint": "1f719ed0d618"
         },
         {
           "id": "endpoint-added",
@@ -124,18 +124,18 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "81c0fc1ef4e2"
+          "fingerprint": "7982f437fea8"
         },
         {
           "id": "response-optional-property-added",
-          "text": "added the optional property 'body/reviewSummary' to the response with the '200' status",
+          "text": "added the optional property `body/reviewSummary` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
           "operationId": "getPublicProfile",
           "path": "/api/public/profiles/{userId}",
           "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "0e496e2c5169"
+          "fingerprint": "f66838a93928"
         },
         {
           "id": "endpoint-added",
@@ -149,7 +149,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "89dbfd8d53c4"
+          "fingerprint": "fb30c69629dd"
         },
         {
           "id": "endpoint-added",
@@ -163,7 +163,7 @@
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
           },
-          "fingerprint": "7809df021aea"
+          "fingerprint": "500f37450a0d"
         }
       ],
       "breaking": [],

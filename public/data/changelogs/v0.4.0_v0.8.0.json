@@ -5,124 +5,124 @@
     "api": [
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "POST",
         "operationId": "publishDraftPhoto_1",
         "path": "/api/my/drafts/{id}/publish",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "c021f5e81bc7"
+        "fingerprint": "4bad90672dda"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/publishPhotos/items/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/publishPhotos/items/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getMyPhotos_1",
         "path": "/api/my/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "03accd3a67a2"
+        "fingerprint": "165d179a6883"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/photos/items/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getMyPublishedPhotos_1",
         "path": "/api/my/photos/published",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "c5df28a234d0"
+        "fingerprint": "ba933b83e8e4"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/photos/items/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotos_1",
         "path": "/api/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "2e67911e02b4"
+        "fingerprint": "e336ca02143b"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/photos/items/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotosInClusterArea_1",
         "path": "/api/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "e795977bba53"
+        "fingerprint": "4d6e739784b3"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "POST",
         "operationId": "publishDraftPhoto",
         "path": "/api/photos/drafts/{id}/publish",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "3e4ceb65e1eb"
+        "fingerprint": "1569da2b2440"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/publishPhotos/items/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/publishPhotos/items/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getMyPhotos",
         "path": "/api/photos/my",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "c32f1473630b"
+        "fingerprint": "86246b302a36"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/photos/items/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getMyPublishedPhotos",
         "path": "/api/photos/my/published",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "f7493035bbf8"
+        "fingerprint": "912f102868fc"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/photos/items/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotos",
         "path": "/api/public/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "6ee1634bcf25"
+        "fingerprint": "bd307473a51f"
       },
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/photos/items/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotosInClusterArea",
         "path": "/api/public/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "dec8ed6e2833"
+        "fingerprint": "73e0b364154d"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/urls' to the response with the '200' status",
+        "text": "added the required property `body/urls` to the response with the `200` status",
         "level": 1,
         "operation": "POST",
         "operationId": "publishDraftPhoto_1",
         "path": "/api/my/drafts/{id}/publish",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "e319ea8cc804"
+        "fingerprint": "03af041af310"
       },
       {
         "id": "endpoint-added",
@@ -136,7 +136,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "281d247f46ad"
+        "fingerprint": "a59d693b29f1"
       },
       {
         "id": "endpoint-added",
@@ -150,7 +150,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "146f4d896079"
+        "fingerprint": "cd7a154d9818"
       },
       {
         "id": "endpoint-added",
@@ -164,7 +164,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "eccbeff6155d"
+        "fingerprint": "035297afd181"
       },
       {
         "id": "endpoint-added",
@@ -178,7 +178,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "3ab6b476ee68"
+        "fingerprint": "a1d93013b3f4"
       },
       {
         "id": "endpoint-added",
@@ -192,7 +192,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "7f048d02843a"
+        "fingerprint": "bf9bf941e44e"
       },
       {
         "id": "endpoint-added",
@@ -206,7 +206,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "17d3f01a9fa8"
+        "fingerprint": "3dcd8f6b41de"
       },
       {
         "id": "endpoint-added",
@@ -220,29 +220,29 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "e597937f75cb"
+        "fingerprint": "29e300794ffc"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/publishPhotos/items/urls' to the response with the '200' status",
+        "text": "added the required property `body/publishPhotos/items/urls` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getMyPhotos_1",
         "path": "/api/my/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "b31241f676b0"
+        "fingerprint": "5b6c97df722d"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "text": "added the required property `body/photos/items/urls` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getMyPublishedPhotos_1",
         "path": "/api/my/photos/published",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "4d99752026e4"
+        "fingerprint": "dd7d8b7a53f9"
       },
       {
         "id": "endpoint-added",
@@ -256,7 +256,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "b79f90e6bbbd"
+        "fingerprint": "b882c81a4149"
       },
       {
         "id": "endpoint-added",
@@ -270,7 +270,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "b6737eaa40ae"
+        "fingerprint": "620dd8ba9b7e"
       },
       {
         "id": "endpoint-added",
@@ -284,7 +284,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "c506d6306a18"
+        "fingerprint": "c7f94b9f90a8"
       },
       {
         "id": "endpoint-added",
@@ -298,7 +298,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "7f080fb9dbeb"
+        "fingerprint": "6e70e6f10cc7"
       },
       {
         "id": "endpoint-added",
@@ -312,7 +312,7 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "f93f9c2c929f"
+        "fingerprint": "57f7f927a6ee"
       },
       {
         "id": "endpoint-added",
@@ -326,73 +326,73 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "a1b0b79ec7cd"
+        "fingerprint": "b5319324404a"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "text": "added the required property `body/photos/items/urls` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getPhotos_1",
         "path": "/api/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "48e5054a622d"
+        "fingerprint": "911beed660ac"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "text": "added the required property `body/photos/items/urls` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getPhotosInClusterArea_1",
         "path": "/api/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "5b523cf8829f"
+        "fingerprint": "122289a87f99"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/urls' to the response with the '200' status",
+        "text": "added the required property `body/urls` to the response with the `200` status",
         "level": 1,
         "operation": "POST",
         "operationId": "publishDraftPhoto",
         "path": "/api/photos/drafts/{id}/publish",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "6bfe73da7f78"
+        "fingerprint": "29d81cf1f20f"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/publishPhotos/items/urls' to the response with the '200' status",
+        "text": "added the required property `body/publishPhotos/items/urls` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getMyPhotos",
         "path": "/api/photos/my",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "c0456fe1838f"
+        "fingerprint": "f191c9c8c205"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "text": "added the required property `body/photos/items/urls` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getMyPublishedPhotos",
         "path": "/api/photos/my/published",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "642b2fd12657"
+        "fingerprint": "4e131bac66a8"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "text": "added the required property `body/photos/items/urls` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getPhotos",
         "path": "/api/public/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "25831141c824"
+        "fingerprint": "239a9d233c2d"
       },
       {
         "id": "endpoint-added",
@@ -406,18 +406,18 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "7034a14e705f"
+        "fingerprint": "bffe79de2391"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "text": "added the required property `body/photos/items/urls` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getPhotosInClusterArea",
         "path": "/api/public/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "ee97047463ae"
+        "fingerprint": "35aca3de39af"
       },
       {
         "id": "endpoint-added",
@@ -431,38 +431,38 @@
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-api.json"
         },
-        "fingerprint": "108e4ca70ae5"
+        "fingerprint": "c1f387b40017"
       }
     ],
     "admin": [
       {
         "id": "response-required-property-removed",
-        "text": "removed the required property 'body/photos/items/thumbnail' from the response with the '200' status",
+        "text": "removed the required property `body/photos/items/thumbnail` from the response with the `200` status",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotos",
         "path": "/internal/admin/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-admin.json",
         "section": "paths",
-        "fingerprint": "e052a67ec558"
+        "fingerprint": "2163e7528516"
       },
       {
         "id": "api-schema-removed",
-        "text": "removed the schema 'ThumbnailResponse'",
+        "text": "removed the schema `ThumbnailResponse`",
         "level": 1,
         "section": "components",
-        "fingerprint": "93ab58ddb2c8"
+        "fingerprint": "184e11e9ecd8"
       },
       {
         "id": "response-required-property-added",
-        "text": "added the required property 'body/photos/items/urls' to the response with the '200' status",
+        "text": "added the required property `body/photos/items/urls` to the response with the `200` status",
         "level": 1,
         "operation": "GET",
         "operationId": "getPhotos",
         "path": "/internal/admin/photos",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.8.0/apiDocs-admin.json",
         "section": "paths",
-        "fingerprint": "d791197fc6c3"
+        "fingerprint": "808d9f8c4ce6"
       }
     ]
   }

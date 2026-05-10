@@ -15,7 +15,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "8af616dd1d7f"
+        "fingerprint": "228d5d8ed3cb"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -29,7 +29,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "17df0bf9b04a"
+        "fingerprint": "3eb6fa0a42c8"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -43,7 +43,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "f1babfe2ef7f"
+        "fingerprint": "2a472fe2226a"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -57,7 +57,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "2072be2ba9ee"
+        "fingerprint": "06482160cc51"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -71,7 +71,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "8f3939e5feda"
+        "fingerprint": "8dc0d5033e4e"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -85,7 +85,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "86fbb1b0ca3c"
+        "fingerprint": "324097ebbc37"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -99,7 +99,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "70f63295b85e"
+        "fingerprint": "33ed2bd540b2"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -113,7 +113,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "36a7f6e20ebb"
+        "fingerprint": "8f3dfd6a1962"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -127,7 +127,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "a4bc5a258c75"
+        "fingerprint": "3f8cfe36f3f4"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -141,7 +141,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "b840cb4ecf46"
+        "fingerprint": "e83fefc1f1c1"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -155,7 +155,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "6a062c08c71c"
+        "fingerprint": "96bfce463b79"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -169,7 +169,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "1f6d4d03cde8"
+        "fingerprint": "722cf3a6bd66"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -183,33 +183,33 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-api.json"
         },
-        "fingerprint": "935e2133992b"
+        "fingerprint": "cd6de2f0691c"
       },
       {
         "id": "new-required-request-parameter",
-        "text": "added the new required 'query' request parameter 'boundingBox'",
+        "text": "added the new required `query` request parameter `boundingBox`",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotosInClusterArea",
         "path": "/api/public/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "37a0632cda69"
+        "fingerprint": "56d52b176e1a"
       },
       {
         "id": "new-required-request-parameter",
-        "text": "added the new required 'query' request parameter 'boundingBox'",
+        "text": "added the new required `query` request parameter `boundingBox`",
         "level": 3,
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "efd490c77725"
+        "fingerprint": "2eb1c98204b4"
       },
       {
         "id": "request-parameter-removed",
-        "text": "deleted the 'query' request parameter 'request'",
+        "text": "deleted the `query` request parameter `request`",
         "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
         "level": 2,
         "operation": "GET",
@@ -217,11 +217,11 @@
         "path": "/api/public/photos/cluster-area",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "11bef7b97e76"
+        "fingerprint": "f985072e5eb0"
       },
       {
         "id": "request-parameter-removed",
-        "text": "deleted the 'query' request parameter 'request'",
+        "text": "deleted the `query` request parameter `request`",
         "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
         "level": 2,
         "operation": "GET",
@@ -229,7 +229,7 @@
         "path": "/api/public/photos/clusters",
         "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
         "section": "paths",
-        "fingerprint": "d28cf5ff639e"
+        "fingerprint": "a1c63b8a9452"
       }
     ],
     "admin": [
@@ -245,7 +245,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
         },
-        "fingerprint": "fc77a027de44"
+        "fingerprint": "70e1146857c1"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -259,7 +259,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
         },
-        "fingerprint": "0c39405649d5"
+        "fingerprint": "b47f5f0a605f"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -273,7 +273,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
         },
-        "fingerprint": "d6a6a6a164fa"
+        "fingerprint": "d61286fdbea6"
       },
       {
         "id": "api-path-removed-without-deprecation",
@@ -287,7 +287,7 @@
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.0/apiDocs-admin.json"
         },
-        "fingerprint": "4111ff9dda47"
+        "fingerprint": "6f66efe0cd77"
       }
     ]
   }

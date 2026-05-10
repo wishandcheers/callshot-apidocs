@@ -1,0 +1,338 @@
+{
+  "fromVersion": "v0.16.0",
+  "toVersion": "v0.19.0",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.16.0",
+            "to": "0.19.0"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/public/profiles/{userId}/review-summary",
+            "/api/settings",
+            "/api/public/profiles/{userId}/reviews",
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review"
+          ],
+          "modified": {
+            "/api/explore/photos": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "description": {
+                      "from": "지정된 위치 반경 내의 사진을 발견 점수 기반으로 조회합니다.",
+                      "to": "지정된 위치 반경 내의 사진을 정렬 옵션에 따라 조회합니다."
+                    },
+                    "parameters": {
+                      "added": {
+                        "query": [
+                          "sort"
+                        ]
+                      },
+                      "modified": {
+                        "query": {
+                          "cursor": {
+                            "description": {
+                              "from": "페이지네이션 커서",
+                              "to": "페이지네이션 커서 (동일 sort에서 발급된 커서만 사용 가능)"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/profile": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "added": [
+                                            "commissionStats"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/profiles/{userId}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "added": [
+                                            "reviewSummary"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": {
+          "added": [
+            "제출 리뷰",
+            "공개 리뷰",
+            "사용자 설정"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "CursorRequest",
+              "UserSettingsResponse",
+              "SubmissionReviewResponse",
+              "ReviewSummaryInfo",
+              "Absent",
+              "CreateSubmissionReviewRequest",
+              "Clear",
+              "BaseResponseReviewSummaryResponse",
+              "BaseResponseSubmissionReviewResponse",
+              "CursorPageSubmissionReviewResponse",
+              "BaseResponseUserSettingsResponse",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "PatchBoolean",
+              "Value",
+              "UpdateUserSettingsRequest",
+              "CommissionStatsInfo",
+              "UpdateSubmissionReviewRequest",
+              "ReviewSummaryResponse"
+            ],
+            "modified": {
+              "BaseResponsePublicProfileResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "added": [
+                          "reviewSummary"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponseUserProfileResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "added": [
+                          "commissionStats"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "PublicProfileResponse": {
+                "properties": {
+                  "added": [
+                    "reviewSummary"
+                  ]
+                }
+              },
+              "UserProfileResponse": {
+                "properties": {
+                  "added": [
+                    "commissionStats"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "new-optional-request-parameter",
+          "text": "added the new optional `query` request parameter `sort`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getExploreFeed",
+          "path": "/api/explore/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "bc28924dc1a6"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "createReview",
+          "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+          },
+          "fingerprint": "1f719ed0d618"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "PUT",
+          "operationId": "updateReview",
+          "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+          },
+          "fingerprint": "7982f437fea8"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/commissionStats` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "profile",
+          "path": "/api/profile",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "c15eb7377d61"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/reviewSummary` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicProfile",
+          "path": "/api/public/profiles/{userId}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "f66838a93928"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getReviewSummary",
+          "path": "/api/public/profiles/{userId}/review-summary",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+          },
+          "fingerprint": "fb30c69629dd"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getReviewsForUser",
+          "path": "/api/public/profiles/{userId}/reviews",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+          },
+          "fingerprint": "500f37450a0d"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getSettings",
+          "path": "/api/settings",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+          },
+          "fingerprint": "6a486a39aa50"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "PUT",
+          "operationId": "updateSettings",
+          "path": "/api/settings",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+          },
+          "fingerprint": "832acf4e4655"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 4,
+        "removed": 0,
+        "modified": 3,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.16.0",
+            "to": "0.19.0"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    }
+  }
+}
