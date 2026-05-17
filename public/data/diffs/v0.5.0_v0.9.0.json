@@ -12,20 +12,20 @@
         },
         "paths": {
           "added": [
-            "/api/my/submissions",
-            "/api/photo-requests/clusters",
-            "/api/photo-requests",
             "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/my/submissions",
+            "/api/my/photo-requests",
+            "/api/photo-requests",
+            "/api/my/photo-requests/{id}/submissions",
+            "/api/photo-requests/{requestId}/submissions",
+            "/api/photos/{photoId}/like",
+            "/api/photos/{photoId}/engagement",
             "/api/my/photo-requests/{id}",
             "/api/photo-requests/{requestId}/submissions/{submissionId}",
-            "/api/photo-requests/{id}",
-            "/api/photo-requests/{requestId}/submissions",
             "/api/my/photo-requests/{id}/close",
-            "/api/my/photo-requests",
-            "/api/photos/{photoId}/engagement",
-            "/api/my/photo-requests/{id}/submissions",
+            "/api/photo-requests/clusters",
             "/api/photos/{photoId}/dislike",
-            "/api/photos/{photoId}/like"
+            "/api/photo-requests/{id}"
           ],
           "modified": {
             "/api/my/drafts/{id}/publish": {
@@ -44,14 +44,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         }
                                       }
@@ -88,8 +88,8 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ]
                                                 },
                                                 "properties": {
@@ -136,8 +136,8 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 },
                                                 "properties": {
@@ -180,14 +180,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         }
                                       }
@@ -214,14 +214,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         }
                                       }
@@ -264,8 +264,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ]
                                                 }
                                               }
@@ -312,8 +312,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ]
                                                 }
                                               }
@@ -350,14 +350,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "viewCount",
-                                            "likeCount"
+                                            "likeCount",
+                                            "viewCount"
                                           ]
                                         }
                                       }
@@ -394,8 +394,8 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ]
                                                 },
                                                 "properties": {
@@ -442,8 +442,8 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 },
                                                 "properties": {
@@ -486,14 +486,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         }
                                       }
@@ -520,14 +520,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         }
                                       }
@@ -570,8 +570,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ]
                                                 }
                                               }
@@ -615,8 +615,8 @@
                                           },
                                           "properties": {
                                             "added": [
-                                              "likeCount",
-                                              "viewCount"
+                                              "viewCount",
+                                              "likeCount"
                                             ]
                                           }
                                         }
@@ -660,8 +660,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "viewCount",
-                                                    "likeCount"
+                                                    "likeCount",
+                                                    "viewCount"
                                                   ]
                                                 }
                                               }
@@ -698,14 +698,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "likeCount",
-                                            "viewCount"
+                                            "viewCount",
+                                            "likeCount"
                                           ]
                                         }
                                       }
@@ -735,48 +735,48 @@
         "components": {
           "schemas": {
             "added": [
-              "SubmitPhotoRequest",
+              "RequestSubmissionsResponse",
+              "CreatePhotoRequestRequest",
+              "ToggleLikeResponse",
+              "ReviewSubmissionRequest",
+              "PhotoRequestCursorRequest",
+              "RequestSubmissionPhotoInfoDto",
+              "BaseResponsePhotoRequestResponse",
+              "PhotoRequestDetailResponse",
+              "BaseResponseEngagementResponse",
               "PhotoRequestClustersResponse",
               "BaseResponseMySubmissionsResponse",
-              "PhotoRequestsQueryRequest",
-              "PhotoRequestClusterQueryRequest",
-              "ReferenceInfoDto",
-              "PhotoRequestCursorRequest",
-              "RequirementInfoDto",
-              "EngagementResponse",
-              "CreatePhotoRequestRequest",
-              "RequestSubmissionPhotoInfoDto",
-              "BaseResponseSubmissionResponse",
-              "ToggleLikeResponse",
-              "RequestSubmissionItemDto",
-              "ReviewSubmissionRequest",
-              "MySubmissionsResponse",
               "RequesterInfoDto",
-              "BaseResponsePhotoRequestDetailResponse",
+              "CursorInfoDto",
+              "SubmitterInfoDto",
+              "SubmissionPhotoInfoDto",
+              "ToggleDislikeResponse",
+              "ReferenceInfoDto",
               "BaseResponseRequestSubmissionsResponse",
-              "MySubmissionItemDto",
-              "BaseResponseEngagementResponse",
-              "PhotoRequestListItemDto",
+              "BaseResponsePhotoRequestDetailResponse",
               "PhotoRequestsResponse",
               "UpdatePhotoRequestRequest",
-              "BaseResponseToggleLikeResponse",
-              "SubmitterInfoDto",
-              "SubmissionRequestInfoDto",
-              "BaseResponseMyPhotoRequestsResponse",
-              "BaseResponsePhotoRequestsResponse",
-              "MyPhotoRequestsResponse",
-              "SubmissionPhotoInfoDto",
-              "PhotoRequestDetailResponse",
-              "RequestSubmissionsResponse",
-              "BaseResponsePhotoRequestClustersResponse",
-              "BaseResponsePhotoRequestResponse",
+              "PhotoRequestsQueryRequest",
               "SubmissionResponse",
-              "BaseResponseToggleDislikeResponse",
-              "CursorInfoDto",
-              "PhotoRequestClusterDto",
+              "SubmitPhotoRequest",
+              "BaseResponseToggleLikeResponse",
+              "BaseResponseMyPhotoRequestsResponse",
               "RequirementInputDto",
-              "ToggleDislikeResponse",
-              "PhotoRequestResponse"
+              "EngagementResponse",
+              "PhotoRequestResponse",
+              "RequestSubmissionItemDto",
+              "BaseResponseSubmissionResponse",
+              "MySubmissionItemDto",
+              "MySubmissionsResponse",
+              "BaseResponseToggleDislikeResponse",
+              "MyPhotoRequestsResponse",
+              "RequirementInfoDto",
+              "BaseResponsePhotoRequestClustersResponse",
+              "PhotoRequestClusterQueryRequest",
+              "SubmissionRequestInfoDto",
+              "PhotoRequestListItemDto",
+              "PhotoRequestClusterDto",
+              "BaseResponsePhotoRequestsResponse"
             ],
             "modified": {
               "BaseResponseListPublishedPhotoDetailResponse": {
@@ -786,8 +786,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "viewCount",
-                            "likeCount"
+                            "likeCount",
+                            "viewCount"
                           ]
                         },
                         "properties": {
@@ -811,8 +811,8 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "likeCount",
-                                  "viewCount"
+                                  "viewCount",
+                                  "likeCount"
                                 ]
                               },
                               "properties": {
@@ -835,8 +835,8 @@
                     "body": {
                       "required": {
                         "added": [
-                          "likeCount",
-                          "viewCount"
+                          "viewCount",
+                          "likeCount"
                         ]
                       },
                       "properties": {
@@ -932,8 +932,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "likeCount",
-                            "viewCount"
+                            "viewCount",
+                            "likeCount"
                           ]
                         },
                         "properties": {
@@ -956,8 +956,8 @@
                 },
                 "properties": {
                   "added": [
-                    "likeCount",
-                    "viewCount"
+                    "viewCount",
+                    "likeCount"
                   ]
                 }
               },
@@ -992,8 +992,8 @@
                 },
                 "properties": {
                   "added": [
-                    "likeCount",
-                    "viewCount"
+                    "viewCount",
+                    "likeCount"
                   ]
                 }
               },
@@ -1645,8 +1645,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "likeCount",
-                                                    "viewCount"
+                                                    "viewCount",
+                                                    "likeCount"
                                                   ]
                                                 }
                                               }
@@ -1688,8 +1688,8 @@
                               },
                               "properties": {
                                 "added": [
-                                  "likeCount",
-                                  "viewCount"
+                                  "viewCount",
+                                  "likeCount"
                                 ]
                               }
                             }
@@ -1727,8 +1727,8 @@
                         },
                         "properties": {
                           "added": [
-                            "likeCount",
-                            "viewCount"
+                            "viewCount",
+                            "likeCount"
                           ]
                         }
                       }

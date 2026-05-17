@@ -51,14 +51,14 @@
                                                     "clusterId"
                                                   ],
                                                   "deleted": [
-                                                    "maxDistanceMeters",
-                                                    "avgDistanceMeters"
+                                                    "avgDistanceMeters",
+                                                    "maxDistanceMeters"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "tileBounds",
-                                                    "clusterId"
+                                                    "clusterId",
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -115,22 +115,22 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "tileBounds",
-                                  "clusterId"
-                                ],
-                                "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
-                                ]
-                              },
-                              "properties": {
-                                "added": [
                                   "clusterId",
                                   "tileBounds"
                                 ],
                                 "deleted": [
                                   "avgDistanceMeters",
                                   "maxDistanceMeters"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "tileBounds",
+                                  "clusterId"
+                                ],
+                                "deleted": [
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ],
                                 "modified": {
                                   "center": {
@@ -198,22 +198,22 @@
                       "items": {
                         "required": {
                           "added": [
-                            "tileBounds",
-                            "clusterId"
-                          ],
-                          "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
-                          ]
-                        },
-                        "properties": {
-                          "added": [
                             "clusterId",
                             "tileBounds"
                           ],
                           "deleted": [
                             "avgDistanceMeters",
                             "maxDistanceMeters"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "tileBounds",
+                            "clusterId"
+                          ],
+                          "deleted": [
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ],
                           "modified": {
                             "center": {

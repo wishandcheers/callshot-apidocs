@@ -2061,8 +2061,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "bookmarkCount",
-                                            "isBookmarkedByUser"
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
                                           ]
                                         },
                                         "properties": {
@@ -3292,15 +3292,15 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseBookmarkedPhotosResponse",
-              "BookmarkedPhotoItem",
               "BaseResponseToggleBookmarkResponse",
-              "BaseResponsePublicProfileResponse",
-              "PublicProfileResponse",
-              "OwnerResponse",
-              "BookmarkedPhotosResponse",
+              "BookmarkedPhotoItem",
               "ToggleBookmarkResponse",
-              "PageCursor"
+              "BaseResponseBookmarkedPhotosResponse",
+              "PageCursor",
+              "PublicProfileResponse",
+              "BaseResponsePublicProfileResponse",
+              "BookmarkedPhotosResponse",
+              "OwnerResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3477,8 +3477,8 @@
                     "body": {
                       "required": {
                         "added": [
-                          "isBookmarkedByUser",
-                          "bookmarkCount"
+                          "bookmarkCount",
+                          "isBookmarkedByUser"
                         ]
                       },
                       "properties": {
@@ -4888,8 +4888,8 @@
                 },
                 "properties": {
                   "added": [
-                    "bookmarkCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "bookmarkCount"
                   ],
                   "modified": {
                     "dislikeCount": {

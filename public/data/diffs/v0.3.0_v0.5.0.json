@@ -12,17 +12,17 @@
         },
         "paths": {
           "added": [
-            "/api/public/photos/bulk",
-            "/api/my/drafts/{id}",
             "/api/public/photos",
-            "/api/public/photos/{id}",
-            "/api/my/drafts/{id}/publish",
-            "/api/my/photos/published",
             "/api/public/photos/clusters",
-            "/api/my/photos",
-            "/api/my/drafts",
             "/api/public/photos/cluster-area",
-            "/api/my/photos/{id}"
+            "/api/my/drafts/{id}",
+            "/api/public/photos/{id}",
+            "/api/my/drafts",
+            "/api/my/photos/published",
+            "/api/my/photos/{id}",
+            "/api/my/photos",
+            "/api/public/photos/bulk",
+            "/api/my/drafts/{id}/publish"
           ],
           "modified": {
             "/api/photos": {
@@ -763,8 +763,8 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseListPublishedPhotoDetailResponse",
-              "UrlResult"
+              "UrlResult",
+              "BaseResponseListPublishedPhotoDetailResponse"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {

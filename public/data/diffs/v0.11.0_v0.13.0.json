@@ -2597,13 +2597,13 @@
                                                 },
                                                 "properties": {
                                                   "added": [
+                                                    "tileBounds",
                                                     "clusterId",
-                                                    "photoBounds",
-                                                    "tileBounds"
+                                                    "photoBounds"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "center": {
@@ -3202,10 +3202,10 @@
         "components": {
           "schemas": {
             "added": [
+              "BoundingBoxResponse",
               "OwnerResponse",
-              "BaseResponsePublicProfileResponse",
               "PublicProfileResponse",
-              "BoundingBoxResponse"
+              "BaseResponsePublicProfileResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3754,13 +3754,13 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "photoBounds",
                                   "tileBounds",
-                                  "clusterId"
+                                  "clusterId",
+                                  "photoBounds"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ]
                               },
                               "properties": {
@@ -5088,19 +5088,19 @@
                     "tileBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ]
                 },
                 "properties": {
                   "added": [
+                    "clusterId",
                     "photoBounds",
-                    "tileBounds",
-                    "clusterId"
+                    "tileBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ],
                   "modified": {
                     "center": {
@@ -5145,13 +5145,13 @@
                       "items": {
                         "required": {
                           "added": [
-                            "photoBounds",
                             "tileBounds",
-                            "clusterId"
+                            "clusterId",
+                            "photoBounds"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ]
                         },
                         "properties": {

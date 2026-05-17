@@ -123,8 +123,8 @@
                                                     "clusterId"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "center": {
@@ -181,12 +181,12 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "tileBounds",
-                                  "clusterId"
+                                  "clusterId",
+                                  "tileBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ]
                               },
                               "properties": {
@@ -242,12 +242,12 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
-                    "tileBounds",
-                    "clusterId"
+                    "clusterId",
+                    "tileBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ]
                 },
                 "properties": {
@@ -282,12 +282,12 @@
                       "items": {
                         "required": {
                           "added": [
-                            "tileBounds",
-                            "clusterId"
+                            "clusterId",
+                            "tileBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ]
                         },
                         "properties": {
@@ -529,10 +529,10 @@
         },
         "paths": {
           "added": [
-            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions",
             "/api/admin/missions/{id}",
-            "/api/admin/missions/{id}/close"
+            "/api/admin/missions/{id}/close",
+            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
+            "/api/admin/missions"
           ],
           "modified": {
             "/api/admin/users": {
@@ -606,18 +606,18 @@
         "components": {
           "schemas": {
             "added": [
+              "Gps",
+              "SystemMissionResponse",
               "Value",
               "Absent",
-              "BaseResponseSystemMissionsResponse",
-              "CreateSystemMissionRequest",
               "ReviewSystemMissionSubmissionRequest",
+              "BaseResponseSystemMissionsResponse",
               "Clear",
-              "PatchString",
-              "SystemMissionsResponse",
-              "BaseResponseSystemMissionResponse",
-              "SystemMissionResponse",
               "UpdateSystemMissionRequest",
-              "Gps"
+              "PatchString",
+              "BaseResponseSystemMissionResponse",
+              "SystemMissionsResponse",
+              "CreateSystemMissionRequest"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
