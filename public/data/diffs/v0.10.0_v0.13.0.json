@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/public/photos/clusters/{clusterId}/photos",
-            "/api/public/profiles/{userId}"
+            "/api/public/profiles/{userId}",
+            "/api/public/photos/clusters/{clusterId}/photos"
           ],
           "deleted": [
             "/api/signup"
@@ -2618,9 +2618,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
+                                                    "photoBounds",
                                                     "tileBounds",
-                                                    "clusterId",
-                                                    "photoBounds"
+                                                    "clusterId"
                                                   ],
                                                   "deleted": [
                                                     "maxDistanceMeters",
@@ -2629,9 +2629,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "clusterId",
                                                     "photoBounds",
-                                                    "tileBounds"
+                                                    "tileBounds",
+                                                    "clusterId"
                                                   ],
                                                   "deleted": [
                                                     "maxDistanceMeters",
@@ -3234,11 +3234,11 @@
         "components": {
           "schemas": {
             "added": [
-              "PublicProfileResponse",
+              "OwnerResponse",
               "BaseResponsePublicProfileResponse",
               "BoundingBoxResponse",
-              "OwnerResponse",
-              "UpdateUserProfileRequest"
+              "UpdateUserProfileRequest",
+              "PublicProfileResponse"
             ],
             "deleted": [
               "UserSignUpRequest"
@@ -3795,8 +3795,8 @@
                                   "tileBounds"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ]
                               },
                               "properties": {
@@ -3806,8 +3806,8 @@
                                   "tileBounds"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ],
                                 "modified": {
                                   "center": {
@@ -5127,13 +5127,13 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
+                    "photoBounds",
                     "tileBounds",
-                    "clusterId",
-                    "photoBounds"
+                    "clusterId"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ]
                 },
                 "properties": {
@@ -5194,8 +5194,8 @@
                             "tileBounds"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ]
                         },
                         "properties": {
@@ -5205,8 +5205,8 @@
                             "tileBounds"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ],
                           "modified": {
                             "center": {
@@ -8931,18 +8931,18 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseSystemMissionResponse",
               "SystemMissionResponse",
               "BaseResponseSystemMissionsResponse",
+              "SystemMissionsResponse",
+              "Gps",
+              "Absent",
               "PatchString",
               "Value",
-              "Clear",
-              "SystemMissionsResponse",
-              "UpdateSystemMissionRequest",
-              "Absent",
+              "BaseResponseSystemMissionResponse",
               "CreateSystemMissionRequest",
-              "Gps",
-              "ReviewSystemMissionSubmissionRequest"
+              "ReviewSystemMissionSubmissionRequest",
+              "UpdateSystemMissionRequest",
+              "Clear"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

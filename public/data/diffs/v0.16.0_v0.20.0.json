@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/public/profiles/{userId}/review-summary",
             "/api/public/profiles/{userId}/reviews",
-            "/api/settings"
+            "/api/settings",
+            "/api/public/profiles/{userId}/review-summary",
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review"
           ],
           "modified": {
             "/api/explore/photos": {
@@ -3659,24 +3659,24 @@
         "components": {
           "schemas": {
             "added": [
-              "ReviewSummaryInfo",
-              "CursorRequest",
-              "BaseResponseSubmissionReviewResponse",
               "CreateSubmissionReviewRequest",
-              "UpdateSubmissionReviewRequest",
-              "CursorPageSubmissionReviewResponse",
-              "Value",
-              "BaseResponseReviewSummaryResponse",
+              "ReviewSummaryResponse",
               "PatchBoolean",
-              "BaseResponseCursorPageSubmissionReviewResponse",
-              "UserSettingsResponse",
+              "Value",
+              "CursorRequest",
               "Clear",
-              "UpdateUserSettingsRequest",
-              "BaseResponseUserSettingsResponse",
               "SubmissionReviewResponse",
-              "CommissionStatsInfo",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "BaseResponseUserSettingsResponse",
+              "CursorPageSubmissionReviewResponse",
+              "UpdateSubmissionReviewRequest",
               "Absent",
-              "ReviewSummaryResponse"
+              "BaseResponseSubmissionReviewResponse",
+              "CommissionStatsInfo",
+              "UserSettingsResponse",
+              "UpdateUserSettingsRequest",
+              "BaseResponseReviewSummaryResponse",
+              "ReviewSummaryInfo"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {

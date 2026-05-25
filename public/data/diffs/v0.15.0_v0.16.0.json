@@ -23,9 +23,9 @@
         "components": {
           "schemas": {
             "added": [
+              "ExplorePhotoResponse",
               "BaseResponseCursorPageExplorePhotoResponse",
               "FeedOwnerResponse",
-              "ExplorePhotoResponse",
               "CursorPageExplorePhotoResponse"
             ]
           }

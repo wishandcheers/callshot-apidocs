@@ -13,15 +13,15 @@
         "paths": {
           "added": [
             "/api/my/photos/{id}",
-            "/api/public/photos/cluster-area",
-            "/api/public/photos/clusters",
-            "/api/my/drafts/{id}/publish",
-            "/api/public/photos",
-            "/api/my/photos/published",
-            "/api/public/photos/{id}",
-            "/api/my/photos",
             "/api/my/drafts/{id}",
-            "/api/my/drafts"
+            "/api/public/photos",
+            "/api/my/photos",
+            "/api/my/drafts/{id}/publish",
+            "/api/my/drafts",
+            "/api/public/photos/{id}",
+            "/api/public/photos/cluster-area",
+            "/api/my/photos/published",
+            "/api/public/photos/clusters"
           ],
           "modified": {
             "/api/photos": {

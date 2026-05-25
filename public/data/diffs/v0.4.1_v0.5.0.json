@@ -524,8 +524,8 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseListPublishedPhotoDetailResponse",
-              "UrlResult"
+              "UrlResult",
+              "BaseResponseListPublishedPhotoDetailResponse"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {

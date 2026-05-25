@@ -13,9 +13,9 @@
         "paths": {
           "added": [
             "/api/explore/photos",
-            "/api/public/profiles/{userId}/review-summary",
             "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/public/profiles/{userId}/reviews",
+            "/api/public/profiles/{userId}/review-summary",
             "/api/settings"
           ],
           "modified": {
@@ -98,28 +98,28 @@
         "components": {
           "schemas": {
             "added": [
-              "Clear",
-              "Absent",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "Value",
               "UserSettingsResponse",
+              "ReviewSummaryInfo",
+              "UpdateSubmissionReviewRequest",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "Clear",
+              "CursorPageSubmissionReviewResponse",
+              "ReviewSummaryResponse",
+              "Absent",
+              "CommissionStatsInfo",
               "CreateSubmissionReviewRequest",
+              "SubmissionReviewResponse",
+              "CursorRequest",
+              "BaseResponseReviewSummaryResponse",
+              "CursorPageExplorePhotoResponse",
               "BaseResponseUserSettingsResponse",
               "UpdateUserSettingsRequest",
-              "Value",
-              "SubmissionReviewResponse",
-              "BaseResponseCursorPageSubmissionReviewResponse",
               "ExplorePhotoResponse",
-              "FeedOwnerResponse",
-              "UpdateSubmissionReviewRequest",
-              "CursorPageExplorePhotoResponse",
-              "BaseResponseCursorPageExplorePhotoResponse",
-              "CursorPageSubmissionReviewResponse",
-              "BaseResponseReviewSummaryResponse",
-              "PatchBoolean",
               "BaseResponseSubmissionReviewResponse",
-              "ReviewSummaryResponse",
-              "CommissionStatsInfo",
-              "ReviewSummaryInfo",
-              "CursorRequest"
+              "FeedOwnerResponse",
+              "PatchBoolean"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {

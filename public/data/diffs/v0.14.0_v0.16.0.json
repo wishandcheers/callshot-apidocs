@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/photos/{photoId}/comments",
             "/api/explore/photos",
-            "/api/photos/{photoId}/comments/{commentId}"
+            "/api/photos/{photoId}/comments/{commentId}",
+            "/api/photos/{photoId}/comments/{commentId}/replies",
+            "/api/photos/{photoId}/comments"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -69,14 +69,14 @@
             "added": [
               "BaseResponseCommentResponse",
               "CursorPageExplorePhotoResponse",
-              "CommentPageResponse",
-              "BaseResponseCursorPageExplorePhotoResponse",
-              "CreateCommentRequest",
-              "CommentResponse",
-              "UpdateCommentRequest",
               "BaseResponseCommentPageResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
               "FeedOwnerResponse",
-              "ExplorePhotoResponse"
+              "CreateCommentRequest",
+              "CommentPageResponse",
+              "CommentResponse",
+              "ExplorePhotoResponse",
+              "UpdateCommentRequest"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {

@@ -66,11 +66,11 @@
           "schemas": {
             "added": [
               "CommentPageResponse",
-              "BaseResponseCommentPageResponse",
-              "UpdateCommentRequest",
               "CommentResponse",
+              "CreateCommentRequest",
               "BaseResponseCommentResponse",
-              "CreateCommentRequest"
+              "BaseResponseCommentPageResponse",
+              "UpdateCommentRequest"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
