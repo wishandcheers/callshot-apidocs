@@ -61,16 +61,16 @@
         "components": {
           "schemas": {
             "added": [
-              "UpdateSubmissionReviewRequest",
               "BaseResponseReviewSummaryResponse",
-              "BaseResponseCursorPageSubmissionReviewResponse",
               "ReviewSummaryInfo",
-              "ReviewSummaryResponse",
-              "CursorPageSubmissionReviewResponse",
               "BaseResponseSubmissionReviewResponse",
-              "SubmissionReviewResponse",
+              "CursorPageSubmissionReviewResponse",
               "CursorRequest",
-              "CreateSubmissionReviewRequest"
+              "ReviewSummaryResponse",
+              "CreateSubmissionReviewRequest",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "SubmissionReviewResponse",
+              "UpdateSubmissionReviewRequest"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {

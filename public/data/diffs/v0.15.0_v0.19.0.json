@@ -12,11 +12,11 @@
         },
         "paths": {
           "added": [
-            "/api/explore/photos",
+            "/api/settings",
             "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/public/profiles/{userId}/reviews",
-            "/api/public/profiles/{userId}/review-summary",
-            "/api/settings"
+            "/api/explore/photos",
+            "/api/public/profiles/{userId}/review-summary"
           ],
           "modified": {
             "/api/profile": {
@@ -98,28 +98,28 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseCursorPageSubmissionReviewResponse",
+              "Absent",
+              "BaseResponseUserSettingsResponse",
+              "FeedOwnerResponse",
+              "SubmissionReviewResponse",
+              "PatchBoolean",
               "Value",
-              "UserSettingsResponse",
-              "ReviewSummaryInfo",
-              "UpdateSubmissionReviewRequest",
+              "CursorRequest",
               "BaseResponseCursorPageExplorePhotoResponse",
               "Clear",
+              "UpdateSubmissionReviewRequest",
+              "ExplorePhotoResponse",
+              "CursorPageExplorePhotoResponse",
               "CursorPageSubmissionReviewResponse",
               "ReviewSummaryResponse",
-              "Absent",
               "CommissionStatsInfo",
-              "CreateSubmissionReviewRequest",
-              "SubmissionReviewResponse",
-              "CursorRequest",
               "BaseResponseReviewSummaryResponse",
-              "CursorPageExplorePhotoResponse",
-              "BaseResponseUserSettingsResponse",
+              "CreateSubmissionReviewRequest",
               "UpdateUserSettingsRequest",
-              "ExplorePhotoResponse",
+              "ReviewSummaryInfo",
               "BaseResponseSubmissionReviewResponse",
-              "FeedOwnerResponse",
-              "PatchBoolean"
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "UserSettingsResponse"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {

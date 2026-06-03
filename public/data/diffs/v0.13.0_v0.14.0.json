@@ -32,8 +32,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "isBookmarkedByUser",
-                                            "bookmarkCount"
+                                            "bookmarkCount",
+                                            "isBookmarkedByUser"
                                           ]
                                         },
                                         "properties": {
@@ -66,12 +66,12 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseToggleBookmarkResponse",
-              "BookmarkedPhotosResponse",
               "BookmarkedPhotoItem",
               "PageCursor",
+              "BookmarkedPhotosResponse",
               "BaseResponseBookmarkedPhotosResponse",
-              "ToggleBookmarkResponse"
+              "ToggleBookmarkResponse",
+              "BaseResponseToggleBookmarkResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -86,8 +86,8 @@
                       },
                       "properties": {
                         "added": [
-                          "bookmarkCount",
-                          "isBookmarkedByUser"
+                          "isBookmarkedByUser",
+                          "bookmarkCount"
                         ]
                       }
                     }
@@ -103,8 +103,8 @@
                 },
                 "properties": {
                   "added": [
-                    "bookmarkCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "bookmarkCount"
                   ]
                 }
               }

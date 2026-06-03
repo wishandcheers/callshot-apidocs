@@ -1,48 +1,26 @@
 {
-  "fromVersion": "v0.16.0",
-  "toVersion": "v0.20.0",
+  "fromVersion": "v0.19.0",
+  "toVersion": "v0.25.0",
   "groups": {
     "api": {
       "diff": {
         "info": {
           "version": {
-            "from": "0.16.0",
-            "to": "0.20.0"
+            "from": "0.19.0",
+            "to": "0.25.0"
           }
         },
         "paths": {
           "added": [
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/public/profiles/{userId}/reviews",
-            "/api/settings",
-            "/api/public/profiles/{userId}/review-summary"
+            "/api/wallet/me/balance",
+            "/api/shutter/convert",
+            "/api/hashtags/{name}/photos"
           ],
           "modified": {
             "/api/explore/photos": {
               "operations": {
                 "modified": {
                   "GET": {
-                    "description": {
-                      "from": "지정된 위치 반경 내의 사진을 발견 점수 기반으로 조회합니다.",
-                      "to": "지정된 위치 반경 내의 사진을 정렬 옵션에 따라 조회합니다."
-                    },
-                    "parameters": {
-                      "added": {
-                        "query": [
-                          "sort"
-                        ]
-                      },
-                      "modified": {
-                        "query": {
-                          "cursor": {
-                            "description": {
-                              "from": "페이지네이션 커서",
-                              "to": "페이지네이션 커서 (동일 sort에서 발급된 커서만 사용 가능)"
-                            }
-                          }
-                        }
-                      }
-                    },
                     "responses": {
                       "modified": {
                         "200": {
@@ -212,6 +190,9 @@
                                             "items": {
                                               "items": {
                                                 "properties": {
+                                                  "added": [
+                                                    "photo"
+                                                  ],
                                                   "modified": {
                                                     "bookmarkedAt": {
                                                       "description": {
@@ -264,6 +245,10 @@
                                             "photos": {
                                               "items": {
                                                 "properties": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ],
                                                   "modified": {
                                                     "gps": {
                                                       "description": {
@@ -283,6 +268,10 @@
                                                     },
                                                     "thumbnail": {
                                                       "properties": {
+                                                        "added": [
+                                                          "height",
+                                                          "width"
+                                                        ],
                                                         "modified": {
                                                           "photoId": {
                                                             "description": {
@@ -418,6 +407,10 @@
                                             },
                                             "image": {
                                               "properties": {
+                                                "added": [
+                                                  "width",
+                                                  "height"
+                                                ],
                                                 "modified": {
                                                   "photoId": {
                                                     "description": {
@@ -565,6 +558,10 @@
                                             },
                                             "image": {
                                               "properties": {
+                                                "added": [
+                                                  "width",
+                                                  "height"
+                                                ],
                                                 "modified": {
                                                   "photoId": {
                                                     "description": {
@@ -655,7 +652,17 @@
                                   "properties": {
                                     "modified": {
                                       "body": {
+                                        "required": {
+                                          "added": [
+                                            "imageWidth",
+                                            "imageHeight"
+                                          ]
+                                        },
                                         "properties": {
+                                          "added": [
+                                            "imageHeight",
+                                            "imageWidth"
+                                          ],
                                           "modified": {
                                             "gps": {
                                               "description": {
@@ -767,6 +774,28 @@
                         }
                       }
                     }
+                  },
+                  "POST": {
+                    "requestBody": {
+                      "content": {
+                        "modified": {
+                          "application/json": {
+                            "schema": {
+                              "required": {
+                                "added": [
+                                  "rewardAmount"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "rewardAmount"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -808,6 +837,52 @@
                     "operationID": {
                       "from": "getSubmissionsForRequest",
                       "to": "getSubmissionsForRequest-FO2Zqu0"
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "submissions": {
+                                              "items": {
+                                                "properties": {
+                                                  "modified": {
+                                                    "photo": {
+                                                      "required": {
+                                                        "added": [
+                                                          "width",
+                                                          "height"
+                                                        ]
+                                                      },
+                                                      "properties": {
+                                                        "added": [
+                                                          "width",
+                                                          "height"
+                                                        ]
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -844,6 +919,10 @@
                                             "draftPhotos": {
                                               "items": {
                                                 "properties": {
+                                                  "added": [
+                                                    "imageWidth",
+                                                    "imageHeight"
+                                                  ],
                                                   "modified": {
                                                     "gps": {
                                                       "description": {
@@ -863,6 +942,10 @@
                                                     },
                                                     "thumbnail": {
                                                       "properties": {
+                                                        "added": [
+                                                          "height",
+                                                          "width"
+                                                        ],
                                                         "modified": {
                                                           "photoId": {
                                                             "description": {
@@ -903,7 +986,17 @@
                                             },
                                             "publishPhotos": {
                                               "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ]
+                                                },
                                                 "properties": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ],
                                                   "modified": {
                                                     "gps": {
                                                       "description": {
@@ -995,7 +1088,17 @@
                                           "modified": {
                                             "photos": {
                                               "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ]
+                                                },
                                                 "properties": {
+                                                  "added": [
+                                                    "imageWidth",
+                                                    "imageHeight"
+                                                  ],
                                                   "modified": {
                                                     "gps": {
                                                       "description": {
@@ -1200,6 +1303,10 @@
                                             },
                                             "image": {
                                               "properties": {
+                                                "added": [
+                                                  "width",
+                                                  "height"
+                                                ],
                                                 "modified": {
                                                   "photoId": {
                                                     "description": {
@@ -1377,6 +1484,10 @@
                                             },
                                             "image": {
                                               "properties": {
+                                                "added": [
+                                                  "width",
+                                                  "height"
+                                                ],
                                                 "modified": {
                                                   "photoId": {
                                                     "description": {
@@ -1566,6 +1677,156 @@
                     "operationID": {
                       "from": "withdrawSubmission",
                       "to": "withdrawSubmission-shnmnJ8"
+                    }
+                  }
+                }
+              }
+            },
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review": {
+              "operations": {
+                "modified": {
+                  "POST": {
+                    "operationID": {
+                      "from": "createReview",
+                      "to": "createReview-WqCzmk8"
+                    },
+                    "responses": {
+                      "modified": {
+                        "201": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "content": {
+                                              "description": {
+                                                "from": "리뷰 내용",
+                                                "to": ""
+                                              }
+                                            },
+                                            "createdAt": {
+                                              "description": {
+                                                "from": "작성일시",
+                                                "to": ""
+                                              }
+                                            },
+                                            "id": {
+                                              "description": {
+                                                "from": "리뷰 ID",
+                                                "to": ""
+                                              }
+                                            },
+                                            "rating": {
+                                              "description": {
+                                                "from": "별점",
+                                                "to": ""
+                                              }
+                                            },
+                                            "reviewerId": {
+                                              "description": {
+                                                "from": "작성자 ID",
+                                                "to": ""
+                                              }
+                                            },
+                                            "submissionId": {
+                                              "description": {
+                                                "from": "제출물 ID",
+                                                "to": ""
+                                              }
+                                            },
+                                            "updatedAt": {
+                                              "description": {
+                                                "from": "수정일시",
+                                                "to": ""
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "PUT": {
+                    "operationID": {
+                      "from": "updateReview",
+                      "to": "updateReview-WqCzmk8"
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "content": {
+                                              "description": {
+                                                "from": "리뷰 내용",
+                                                "to": ""
+                                              }
+                                            },
+                                            "createdAt": {
+                                              "description": {
+                                                "from": "작성일시",
+                                                "to": ""
+                                              }
+                                            },
+                                            "id": {
+                                              "description": {
+                                                "from": "리뷰 ID",
+                                                "to": ""
+                                              }
+                                            },
+                                            "rating": {
+                                              "description": {
+                                                "from": "별점",
+                                                "to": ""
+                                              }
+                                            },
+                                            "reviewerId": {
+                                              "description": {
+                                                "from": "작성자 ID",
+                                                "to": ""
+                                              }
+                                            },
+                                            "submissionId": {
+                                              "description": {
+                                                "from": "제출물 ID",
+                                                "to": ""
+                                              }
+                                            },
+                                            "updatedAt": {
+                                              "description": {
+                                                "from": "수정일시",
+                                                "to": ""
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -2226,10 +2487,13 @@
                                     "modified": {
                                       "body": {
                                         "properties": {
-                                          "added": [
-                                            "commissionStats"
-                                          ],
                                           "modified": {
+                                            "commissionStats": {
+                                              "description": {
+                                                "from": "의뢰 통계 정보",
+                                                "to": ""
+                                              }
+                                            },
                                             "email": {
                                               "description": {
                                                 "from": "이메일",
@@ -2302,7 +2566,17 @@
                                           "modified": {
                                             "photos": {
                                               "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ]
+                                                },
                                                 "properties": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ],
                                                   "modified": {
                                                     "gps": {
                                                       "description": {
@@ -2468,6 +2742,10 @@
                                               },
                                               "image": {
                                                 "properties": {
+                                                  "added": [
+                                                    "width",
+                                                    "height"
+                                                  ],
                                                   "modified": {
                                                     "photoId": {
                                                       "description": {
@@ -2599,7 +2877,17 @@
                                           "modified": {
                                             "photos": {
                                               "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ]
+                                                },
                                                 "properties": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ],
                                                   "modified": {
                                                     "gps": {
                                                       "description": {
@@ -2695,6 +2983,10 @@
                                                   "modified": {
                                                     "thumbnail": {
                                                       "properties": {
+                                                        "added": [
+                                                          "height",
+                                                          "width"
+                                                        ],
                                                         "modified": {
                                                           "photoId": {
                                                             "description": {
@@ -2757,7 +3049,17 @@
                                           "modified": {
                                             "photos": {
                                               "items": {
+                                                "required": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ]
+                                                },
                                                 "properties": {
+                                                  "added": [
+                                                    "imageHeight",
+                                                    "imageWidth"
+                                                  ],
                                                   "modified": {
                                                     "gps": {
                                                       "description": {
@@ -2902,6 +3204,10 @@
                                             },
                                             "image": {
                                               "properties": {
+                                                "added": [
+                                                  "width",
+                                                  "height"
+                                                ],
                                                 "modified": {
                                                   "photoId": {
                                                     "description": {
@@ -3033,9 +3339,6 @@
                                     "modified": {
                                       "body": {
                                         "properties": {
-                                          "added": [
-                                            "reviewSummary"
-                                          ],
                                           "modified": {
                                             "avatarUrl": {
                                               "description": {
@@ -3063,10 +3366,114 @@
                                                 "to": null
                                               }
                                             },
+                                            "reviewSummary": {
+                                              "description": {
+                                                "from": "리뷰 요약 정보",
+                                                "to": ""
+                                              }
+                                            },
                                             "shutter": {
                                               "description": {
                                                 "from": "Shutter 정보",
                                                 "to": ""
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/profiles/{userId}/review-summary": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "operationID": {
+                      "from": "getReviewSummary",
+                      "to": "getReviewSummary-rQY-vZI"
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/profiles/{userId}/reviews": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "operationID": {
+                      "from": "getReviewsForUser",
+                      "to": "getReviewsForUser-2iI4lOo"
+                    },
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "items": {
+                                              "items": {
+                                                "properties": {
+                                                  "modified": {
+                                                    "content": {
+                                                      "description": {
+                                                        "from": "리뷰 내용",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "createdAt": {
+                                                      "description": {
+                                                        "from": "작성일시",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "id": {
+                                                      "description": {
+                                                        "from": "리뷰 ID",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "rating": {
+                                                      "description": {
+                                                        "from": "별점",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "reviewerId": {
+                                                      "description": {
+                                                        "from": "작성자 ID",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "submissionId": {
+                                                      "description": {
+                                                        "from": "제출물 ID",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "updatedAt": {
+                                                      "description": {
+                                                        "from": "수정일시",
+                                                        "to": ""
+                                                      }
+                                                    }
+                                                  }
+                                                }
                                               }
                                             }
                                           }
@@ -3651,32 +4058,22 @@
         },
         "tags": {
           "added": [
-            "제출 리뷰",
-            "공개 리뷰",
-            "사용자 설정"
+            "Wallet"
           ]
         },
         "components": {
           "schemas": {
             "added": [
-              "Value",
-              "CommissionStatsInfo",
-              "PatchBoolean",
-              "BaseResponseCursorPageSubmissionReviewResponse",
-              "Absent",
-              "BaseResponseReviewSummaryResponse",
-              "Clear",
-              "BaseResponseUserSettingsResponse",
-              "BaseResponseSubmissionReviewResponse",
-              "CursorPageSubmissionReviewResponse",
-              "CursorRequest",
-              "UserSettingsResponse",
-              "SubmissionReviewResponse",
-              "CreateSubmissionReviewRequest",
-              "UpdateUserSettingsRequest",
-              "ReviewSummaryInfo",
-              "ReviewSummaryResponse",
-              "UpdateSubmissionReviewRequest"
+              "WalletBalanceResponse",
+              "CursorPageHashtagPhotoResponse",
+              "BaseResponseCursorPageHashtagPhotoResponse",
+              "HashtagPhotoResponse",
+              "BookmarkedPhotoView",
+              "BaseResponseConvertShotsResponse",
+              "ConvertShotsResponse",
+              "HashtagPhotoOwnerResponse",
+              "BookmarkedPhotoUrls",
+              "BaseResponseWalletBalanceResponse"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {
@@ -3688,6 +4085,9 @@
                           "items": {
                             "items": {
                               "properties": {
+                                "added": [
+                                  "photo"
+                                ],
                                 "modified": {
                                   "bookmarkedAt": {
                                     "description": {
@@ -4033,6 +4433,68 @@
                   }
                 }
               },
+              "BaseResponseCursorPageSubmissionReviewResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "modified": {
+                                  "content": {
+                                    "description": {
+                                      "from": "리뷰 내용",
+                                      "to": ""
+                                    }
+                                  },
+                                  "createdAt": {
+                                    "description": {
+                                      "from": "작성일시",
+                                      "to": ""
+                                    }
+                                  },
+                                  "id": {
+                                    "description": {
+                                      "from": "리뷰 ID",
+                                      "to": ""
+                                    }
+                                  },
+                                  "rating": {
+                                    "description": {
+                                      "from": "별점",
+                                      "to": ""
+                                    }
+                                  },
+                                  "reviewerId": {
+                                    "description": {
+                                      "from": "작성자 ID",
+                                      "to": ""
+                                    }
+                                  },
+                                  "submissionId": {
+                                    "description": {
+                                      "from": "제출물 ID",
+                                      "to": ""
+                                    }
+                                  },
+                                  "updatedAt": {
+                                    "description": {
+                                      "from": "수정일시",
+                                      "to": ""
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "BaseResponseDeletePhotoResponse": {
                 "properties": {
                   "modified": {
@@ -4142,6 +4604,10 @@
                           },
                           "image": {
                             "properties": {
+                              "added": [
+                                "height",
+                                "width"
+                              ],
                               "modified": {
                                 "photoId": {
                                   "description": {
@@ -4213,6 +4679,10 @@
                           "photos": {
                             "items": {
                               "properties": {
+                                "added": [
+                                  "imageHeight",
+                                  "imageWidth"
+                                ],
                                 "modified": {
                                   "gps": {
                                     "description": {
@@ -4232,6 +4702,10 @@
                                   },
                                   "thumbnail": {
                                     "properties": {
+                                      "added": [
+                                        "width",
+                                        "height"
+                                      ],
                                       "modified": {
                                         "photoId": {
                                           "description": {
@@ -4466,6 +4940,10 @@
                             },
                             "image": {
                               "properties": {
+                                "added": [
+                                  "height",
+                                  "width"
+                                ],
                                 "modified": {
                                   "photoId": {
                                     "description": {
@@ -4604,6 +5082,10 @@
                           "draftPhotos": {
                             "items": {
                               "properties": {
+                                "added": [
+                                  "imageHeight",
+                                  "imageWidth"
+                                ],
                                 "modified": {
                                   "gps": {
                                     "description": {
@@ -4623,6 +5105,10 @@
                                   },
                                   "thumbnail": {
                                     "properties": {
+                                      "added": [
+                                        "width",
+                                        "height"
+                                      ],
                                       "modified": {
                                         "photoId": {
                                           "description": {
@@ -4663,7 +5149,17 @@
                           },
                           "publishPhotos": {
                             "items": {
+                              "required": {
+                                "added": [
+                                  "imageHeight",
+                                  "imageWidth"
+                                ]
+                              },
                               "properties": {
+                                "added": [
+                                  "imageHeight",
+                                  "imageWidth"
+                                ],
                                 "modified": {
                                   "gps": {
                                     "description": {
@@ -4739,6 +5235,10 @@
                                 "modified": {
                                   "thumbnail": {
                                     "properties": {
+                                      "added": [
+                                        "width",
+                                        "height"
+                                      ],
                                       "modified": {
                                         "photoId": {
                                           "description": {
@@ -4803,7 +5303,17 @@
                 "properties": {
                   "modified": {
                     "body": {
+                      "required": {
+                        "added": [
+                          "imageHeight",
+                          "imageWidth"
+                        ]
+                      },
                       "properties": {
+                        "added": [
+                          "imageHeight",
+                          "imageWidth"
+                        ],
                         "modified": {
                           "gps": {
                             "description": {
@@ -4871,7 +5381,17 @@
                         "modified": {
                           "photos": {
                             "items": {
+                              "required": {
+                                "added": [
+                                  "imageHeight",
+                                  "imageWidth"
+                                ]
+                              },
                               "properties": {
+                                "added": [
+                                  "imageHeight",
+                                  "imageWidth"
+                                ],
                                 "modified": {
                                   "gps": {
                                     "description": {
@@ -4940,9 +5460,6 @@
                   "modified": {
                     "body": {
                       "properties": {
-                        "added": [
-                          "reviewSummary"
-                        ],
                         "modified": {
                           "avatarUrl": {
                             "description": {
@@ -4968,6 +5485,12 @@
                             "example": {
                               "from": "빛나는카메라",
                               "to": null
+                            }
+                          },
+                          "reviewSummary": {
+                            "description": {
+                              "from": "리뷰 요약 정보",
+                              "to": ""
                             }
                           },
                           "shutter": {
@@ -5039,6 +5562,10 @@
                           },
                           "image": {
                             "properties": {
+                              "added": [
+                                "height",
+                                "width"
+                              ],
                               "modified": {
                                 "photoId": {
                                   "description": {
@@ -5149,7 +5676,17 @@
                         "modified": {
                           "photos": {
                             "items": {
+                              "required": {
+                                "added": [
+                                  "imageHeight",
+                                  "imageWidth"
+                                ]
+                              },
                               "properties": {
+                                "added": [
+                                  "imageHeight",
+                                  "imageWidth"
+                                ],
                                 "modified": {
                                   "gps": {
                                     "description": {
@@ -5201,6 +5738,40 @@
                                     "example": {
                                       "from": 150,
                                       "to": null
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponseRequestSubmissionsResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "submissions": {
+                            "items": {
+                              "properties": {
+                                "modified": {
+                                  "photo": {
+                                    "required": {
+                                      "added": [
+                                        "width",
+                                        "height"
+                                      ]
+                                    },
+                                    "properties": {
+                                      "added": [
+                                        "height",
+                                        "width"
+                                      ]
                                     }
                                   }
                                 }
@@ -5317,15 +5888,72 @@
                   }
                 }
               },
+              "BaseResponseSubmissionReviewResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "content": {
+                            "description": {
+                              "from": "리뷰 내용",
+                              "to": ""
+                            }
+                          },
+                          "createdAt": {
+                            "description": {
+                              "from": "작성일시",
+                              "to": ""
+                            }
+                          },
+                          "id": {
+                            "description": {
+                              "from": "리뷰 ID",
+                              "to": ""
+                            }
+                          },
+                          "rating": {
+                            "description": {
+                              "from": "별점",
+                              "to": ""
+                            }
+                          },
+                          "reviewerId": {
+                            "description": {
+                              "from": "작성자 ID",
+                              "to": ""
+                            }
+                          },
+                          "submissionId": {
+                            "description": {
+                              "from": "제출물 ID",
+                              "to": ""
+                            }
+                          },
+                          "updatedAt": {
+                            "description": {
+                              "from": "수정일시",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "BaseResponseUserProfileResponse": {
                 "properties": {
                   "modified": {
                     "body": {
                       "properties": {
-                        "added": [
-                          "commissionStats"
-                        ],
                         "modified": {
+                          "commissionStats": {
+                            "description": {
+                              "from": "의뢰 통계 정보",
+                              "to": ""
+                            }
+                          },
                           "email": {
                             "description": {
                               "from": "이메일",
@@ -5372,6 +6000,9 @@
               },
               "BookmarkedPhotoItem": {
                 "properties": {
+                  "added": [
+                    "photo"
+                  ],
                   "modified": {
                     "bookmarkedAt": {
                       "description": {
@@ -5394,6 +6025,9 @@
                     "items": {
                       "items": {
                         "properties": {
+                          "added": [
+                            "photo"
+                          ],
                           "modified": {
                             "bookmarkedAt": {
                               "description": {
@@ -5624,6 +6258,18 @@
                   }
                 }
               },
+              "CreatePhotoRequestRequest": {
+                "required": {
+                  "added": [
+                    "rewardAmount"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "rewardAmount"
+                  ]
+                }
+              },
               "CursorPageExplorePhotoResponse": {
                 "properties": {
                   "modified": {
@@ -5752,6 +6398,62 @@
                   }
                 }
               },
+              "CursorPageSubmissionReviewResponse": {
+                "properties": {
+                  "modified": {
+                    "items": {
+                      "items": {
+                        "properties": {
+                          "modified": {
+                            "content": {
+                              "description": {
+                                "from": "리뷰 내용",
+                                "to": ""
+                              }
+                            },
+                            "createdAt": {
+                              "description": {
+                                "from": "작성일시",
+                                "to": ""
+                              }
+                            },
+                            "id": {
+                              "description": {
+                                "from": "리뷰 ID",
+                                "to": ""
+                              }
+                            },
+                            "rating": {
+                              "description": {
+                                "from": "별점",
+                                "to": ""
+                              }
+                            },
+                            "reviewerId": {
+                              "description": {
+                                "from": "작성자 ID",
+                                "to": ""
+                              }
+                            },
+                            "submissionId": {
+                              "description": {
+                                "from": "제출물 ID",
+                                "to": ""
+                              }
+                            },
+                            "updatedAt": {
+                              "description": {
+                                "from": "수정일시",
+                                "to": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "DeletePhotoResponse": {
                 "properties": {
                   "modified": {
@@ -5852,6 +6554,10 @@
                     },
                     "image": {
                       "properties": {
+                        "added": [
+                          "height",
+                          "width"
+                        ],
                         "modified": {
                           "photoId": {
                             "description": {
@@ -5913,6 +6619,10 @@
               },
               "DraftPhotoResponse": {
                 "properties": {
+                  "added": [
+                    "imageHeight",
+                    "imageWidth"
+                  ],
                   "modified": {
                     "gps": {
                       "description": {
@@ -5932,6 +6642,10 @@
                     },
                     "thumbnail": {
                       "properties": {
+                        "added": [
+                          "width",
+                          "height"
+                        ],
                         "modified": {
                           "photoId": {
                             "description": {
@@ -5975,6 +6689,10 @@
                     "photos": {
                       "items": {
                         "properties": {
+                          "added": [
+                            "imageHeight",
+                            "imageWidth"
+                          ],
                           "modified": {
                             "gps": {
                               "description": {
@@ -5994,6 +6712,10 @@
                             },
                             "thumbnail": {
                               "properties": {
+                                "added": [
+                                  "width",
+                                  "height"
+                                ],
                                 "modified": {
                                   "photoId": {
                                     "description": {
@@ -6247,6 +6969,10 @@
               },
               "ImageResponse": {
                 "properties": {
+                  "added": [
+                    "width",
+                    "height"
+                  ],
                   "modified": {
                     "photoId": {
                       "description": {
@@ -6409,6 +7135,10 @@
                     "draftPhotos": {
                       "items": {
                         "properties": {
+                          "added": [
+                            "imageHeight",
+                            "imageWidth"
+                          ],
                           "modified": {
                             "gps": {
                               "description": {
@@ -6428,6 +7158,10 @@
                             },
                             "thumbnail": {
                               "properties": {
+                                "added": [
+                                  "width",
+                                  "height"
+                                ],
                                 "modified": {
                                   "photoId": {
                                     "description": {
@@ -6468,7 +7202,17 @@
                     },
                     "publishPhotos": {
                       "items": {
+                        "required": {
+                          "added": [
+                            "imageHeight",
+                            "imageWidth"
+                          ]
+                        },
                         "properties": {
+                          "added": [
+                            "imageHeight",
+                            "imageWidth"
+                          ],
                           "modified": {
                             "gps": {
                               "description": {
@@ -6566,6 +7310,10 @@
                   "modified": {
                     "thumbnail": {
                       "properties": {
+                        "added": [
+                          "width",
+                          "height"
+                        ],
                         "modified": {
                           "photoId": {
                             "description": {
@@ -6602,6 +7350,10 @@
                           "modified": {
                             "thumbnail": {
                               "properties": {
+                                "added": [
+                                  "width",
+                                  "height"
+                                ],
                                 "modified": {
                                   "photoId": {
                                     "description": {
@@ -6666,7 +7418,17 @@
                 }
               },
               "PhotoResponse": {
+                "required": {
+                  "added": [
+                    "imageHeight",
+                    "imageWidth"
+                  ]
+                },
                 "properties": {
+                  "added": [
+                    "imageWidth",
+                    "imageHeight"
+                  ],
                   "modified": {
                     "gps": {
                       "description": {
@@ -6728,7 +7490,17 @@
                   "modified": {
                     "photos": {
                       "items": {
+                        "required": {
+                          "added": [
+                            "imageHeight",
+                            "imageWidth"
+                          ]
+                        },
                         "properties": {
+                          "added": [
+                            "imageHeight",
+                            "imageWidth"
+                          ],
                           "modified": {
                             "gps": {
                               "description": {
@@ -6791,9 +7563,6 @@
               },
               "PublicProfileResponse": {
                 "properties": {
-                  "added": [
-                    "reviewSummary"
-                  ],
                   "modified": {
                     "avatarUrl": {
                       "description": {
@@ -6819,6 +7588,12 @@
                       "example": {
                         "from": "빛나는카메라",
                         "to": null
+                      }
+                    },
+                    "reviewSummary": {
+                      "description": {
+                        "from": "리뷰 요약 정보",
+                        "to": ""
                       }
                     },
                     "shutter": {
@@ -6884,6 +7659,10 @@
                     },
                     "image": {
                       "properties": {
+                        "added": [
+                          "height",
+                          "width"
+                        ],
                         "modified": {
                           "photoId": {
                             "description": {
@@ -6988,7 +7767,17 @@
                   "modified": {
                     "photos": {
                       "items": {
+                        "required": {
+                          "added": [
+                            "imageHeight",
+                            "imageWidth"
+                          ]
+                        },
                         "properties": {
+                          "added": [
+                            "imageHeight",
+                            "imageWidth"
+                          ],
                           "modified": {
                             "gps": {
                               "description": {
@@ -7040,6 +7829,68 @@
                               "example": {
                                 "from": 150,
                                 "to": null
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "RequestSubmissionItemDto": {
+                "properties": {
+                  "modified": {
+                    "photo": {
+                      "required": {
+                        "added": [
+                          "width",
+                          "height"
+                        ]
+                      },
+                      "properties": {
+                        "added": [
+                          "height",
+                          "width"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "RequestSubmissionPhotoInfoDto": {
+                "required": {
+                  "added": [
+                    "width",
+                    "height"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "height",
+                    "width"
+                  ]
+                }
+              },
+              "RequestSubmissionsResponse": {
+                "properties": {
+                  "modified": {
+                    "submissions": {
+                      "items": {
+                        "properties": {
+                          "modified": {
+                            "photo": {
+                              "required": {
+                                "added": [
+                                  "width",
+                                  "height"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "height",
+                                  "width"
+                                ]
                               }
                             }
                           }
@@ -7147,8 +7998,60 @@
                   }
                 }
               },
+              "SubmissionReviewResponse": {
+                "properties": {
+                  "modified": {
+                    "content": {
+                      "description": {
+                        "from": "리뷰 내용",
+                        "to": ""
+                      }
+                    },
+                    "createdAt": {
+                      "description": {
+                        "from": "작성일시",
+                        "to": ""
+                      }
+                    },
+                    "id": {
+                      "description": {
+                        "from": "리뷰 ID",
+                        "to": ""
+                      }
+                    },
+                    "rating": {
+                      "description": {
+                        "from": "별점",
+                        "to": ""
+                      }
+                    },
+                    "reviewerId": {
+                      "description": {
+                        "from": "작성자 ID",
+                        "to": ""
+                      }
+                    },
+                    "submissionId": {
+                      "description": {
+                        "from": "제출물 ID",
+                        "to": ""
+                      }
+                    },
+                    "updatedAt": {
+                      "description": {
+                        "from": "수정일시",
+                        "to": ""
+                      }
+                    }
+                  }
+                }
+              },
               "ThumbnailResponse": {
                 "properties": {
+                  "added": [
+                    "width",
+                    "height"
+                  ],
                   "modified": {
                     "photoId": {
                       "description": {
@@ -7175,10 +8078,13 @@
               },
               "UserProfileResponse": {
                 "properties": {
-                  "added": [
-                    "commissionStats"
-                  ],
                   "modified": {
+                    "commissionStats": {
+                      "description": {
+                        "from": "의뢰 통계 정보",
+                        "to": ""
+                      }
+                    },
                     "email": {
                       "description": {
                         "from": "이메일",
@@ -7226,13 +8132,24 @@
       },
       "changelog": [
         {
+          "id": "new-required-request-property",
+          "text": "added the new required request property `rewardAmount`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "createPhotoRequest",
+          "path": "/api/my/photo-requests",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "5aeb35befea3"
+        },
+        {
           "id": "response-property-type-changed",
           "text": "the `body/comments/items/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getComments-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "d473d0566799"
         },
@@ -7243,7 +8160,7 @@
           "operation": "POST",
           "operationId": "createComment-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "9c406a498bc2"
         },
@@ -7254,7 +8171,7 @@
           "operation": "POST",
           "operationId": "createComment-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a10c32327083"
         },
@@ -7265,7 +8182,7 @@
           "operation": "PATCH",
           "operationId": "updateComment-4pyTHqI",
           "path": "/api/photos/{photoId}/comments/{commentId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "b66260d43a52"
         },
@@ -7276,7 +8193,7 @@
           "operation": "GET",
           "operationId": "getReplies-4pyTHqI",
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "3489a2076cb4"
         },
@@ -7288,20 +8205,78 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "2d3c041f0924"
         },
         {
-          "id": "new-optional-request-parameter",
-          "text": "added the new optional `query` request parameter `sort`",
+          "id": "endpoint-added",
+          "text": "endpoint added",
           "level": 1,
           "operation": "GET",
-          "operationId": "getExploreFeed",
-          "path": "/api/explore/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "operationId": "getPhotosByHashtag",
+          "path": "/api/hashtags/{name}/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "bc28924dc1a6"
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
+          },
+          "fingerprint": "828d13345d57"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/items/items/photo` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyBookmarks",
+          "path": "/api/my/bookmarks",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "245eb1a1d5e3"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/photos/items/imageHeight` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyDraftPhotos",
+          "path": "/api/my/drafts",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "2f5bebf551d9"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/photos/items/imageWidth` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyDraftPhotos",
+          "path": "/api/my/drafts",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "ce8a8dc73dd7"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/photos/items/thumbnail/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyDraftPhotos",
+          "path": "/api/my/drafts",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "f5cc5dab0912"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/photos/items/thumbnail/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyDraftPhotos",
+          "path": "/api/my/drafts",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "f6e9b4e6b29c"
         },
         {
           "id": "api-operation-id-removed",
@@ -7310,9 +8285,31 @@
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "1e12d557801a"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getDraftPhoto-lYrMTg8",
+          "path": "/api/my/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "49fc2486ee59"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getDraftPhoto-lYrMTg8",
+          "path": "/api/my/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "e28fa862f9e3"
         },
         {
           "id": "api-operation-id-removed",
@@ -7321,9 +8318,31 @@
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "2bc7a93cc971"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateDraftPhoto-DTCb-Co",
+          "path": "/api/my/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "9b6f333ecd3e"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateDraftPhoto-DTCb-Co",
+          "path": "/api/my/drafts/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "f6b9e4e5f50d"
         },
         {
           "id": "api-operation-id-removed",
@@ -7332,9 +8351,31 @@
           "operation": "POST",
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "7992daed784e"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/imageHeight` to the response with the `200` status",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto-lYrMTg8",
+          "path": "/api/my/drafts/{id}/publish",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "74e1a0be9569"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/imageWidth` to the response with the `200` status",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto-lYrMTg8",
+          "path": "/api/my/drafts/{id}/publish",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "4810a13d5a10"
         },
         {
           "id": "api-operation-id-removed",
@@ -7343,7 +8384,7 @@
           "operation": "DELETE",
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "4edf00e07cd6"
         },
@@ -7354,7 +8395,7 @@
           "operation": "PATCH",
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "3b2e6af003aa"
         },
@@ -7365,7 +8406,7 @@
           "operation": "POST",
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "9c682980d78c"
         },
@@ -7376,9 +8417,31 @@
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a3eff11a2eb5"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/submissions/items/photo/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getSubmissionsForRequest-FO2Zqu0",
+          "path": "/api/my/photo-requests/{id}/submissions",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "de8ecf94e4c3"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/submissions/items/photo/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getSubmissionsForRequest-FO2Zqu0",
+          "path": "/api/my/photo-requests/{id}/submissions",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "4c467a5ff897"
         },
         {
           "id": "api-operation-id-removed",
@@ -7387,9 +8450,97 @@
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "f6d2a054ceab"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/draftPhotos/items/imageHeight` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/my/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "00e8a41684d1"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/draftPhotos/items/imageWidth` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/my/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "2707e3813d0d"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/draftPhotos/items/thumbnail/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/my/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "9ccea1fe8ce2"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/draftPhotos/items/thumbnail/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/my/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "cc62052b1836"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/publishPhotos/items/imageHeight` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/my/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "e5242776c33e"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/publishPhotos/items/imageWidth` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/my/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "a7c6bdd48ed5"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/photos/items/imageHeight` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos",
+          "path": "/api/my/photos/published",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "0f35af1db808"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/photos/items/imageWidth` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos",
+          "path": "/api/my/photos/published",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "3c667068a9d9"
         },
         {
           "id": "api-operation-id-removed",
@@ -7398,7 +8549,7 @@
           "operation": "DELETE",
           "operationId": "deletePublishedPhoto",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "eca0d5a8d55e"
         },
@@ -7409,9 +8560,31 @@
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "7f01e014089a"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto-lYrMTg8",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "650918b265e1"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto-lYrMTg8",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "02548cba8f7b"
         },
         {
           "id": "api-operation-id-removed",
@@ -7420,9 +8593,31 @@
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "5e2a3403ae8c"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto-DTCb-Co",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "a467811b1d7a"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto-DTCb-Co",
+          "path": "/api/my/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "21900cac5b52"
         },
         {
           "id": "api-operation-id-removed",
@@ -7431,7 +8626,7 @@
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "036ae4a0bbab"
         },
@@ -7442,7 +8637,7 @@
           "operation": "POST",
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a1d3bdba7949"
         },
@@ -7453,37 +8648,31 @@
           "operation": "DELETE",
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "8beec15b88a3"
         },
         {
-          "id": "endpoint-added",
-          "text": "endpoint added",
+          "id": "api-operation-id-removed",
+          "text": "api operation id `createReview` removed and replaced with `createReview-WqCzmk8`",
           "level": 1,
           "operation": "POST",
-          "operationId": "createReview-WqCzmk8",
+          "operationId": "createReview",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
-          "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
-          },
-          "fingerprint": "1f719ed0d618"
+          "fingerprint": "3f3bffabe8a1"
         },
         {
-          "id": "endpoint-added",
-          "text": "endpoint added",
+          "id": "api-operation-id-removed",
+          "text": "api operation id `updateReview` removed and replaced with `updateReview-WqCzmk8`",
           "level": 1,
           "operation": "PUT",
-          "operationId": "updateReview-WqCzmk8",
+          "operationId": "updateReview",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
-          "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
-          },
-          "fingerprint": "7982f437fea8"
+          "fingerprint": "5eb7996b71a1"
         },
         {
           "id": "api-operation-id-removed",
@@ -7492,7 +8681,7 @@
           "operation": "POST",
           "operationId": "toggleBookmark",
           "path": "/api/photos/{photoId}/bookmark",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "20eb4ad17f4c"
         },
@@ -7503,7 +8692,7 @@
           "operation": "GET",
           "operationId": "getComments",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "06d9e9fcb9a6"
         },
@@ -7514,7 +8703,7 @@
           "operation": "POST",
           "operationId": "createComment",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "c0d7e088a39e"
         },
@@ -7525,7 +8714,7 @@
           "operation": "DELETE",
           "operationId": "deleteComment",
           "path": "/api/photos/{photoId}/comments/{commentId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "5a9c469a167e"
         },
@@ -7536,7 +8725,7 @@
           "operation": "PATCH",
           "operationId": "updateComment",
           "path": "/api/photos/{photoId}/comments/{commentId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "33164fc2a4e4"
         },
@@ -7547,7 +8736,7 @@
           "operation": "GET",
           "operationId": "getReplies",
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "7c370930a34a"
         },
@@ -7558,7 +8747,7 @@
           "operation": "POST",
           "operationId": "toggleDislike",
           "path": "/api/photos/{photoId}/dislike",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "028cb4a1082f"
         },
@@ -7569,7 +8758,7 @@
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "62e052ab8515"
         },
@@ -7580,20 +8769,119 @@
           "operation": "POST",
           "operationId": "toggleLike",
           "path": "/api/photos/{photoId}/like",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "9664f9f99db2"
         },
         {
-          "id": "response-optional-property-added",
-          "text": "added the optional property `body/commissionStats` to the response with the `200` status",
+          "id": "response-required-property-added",
+          "text": "added the required property `body/photos/items/imageHeight` to the response with the `200` status",
           "level": 1,
           "operation": "GET",
-          "operationId": "profile",
-          "path": "/api/profile",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "operationId": "getPhotos",
+          "path": "/api/public/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
-          "fingerprint": "c15eb7377d61"
+          "fingerprint": "86757cdfa4ed"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/photos/items/imageWidth` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/public/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "464661d3db06"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/items/image/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetails",
+          "path": "/api/public/photos/bulk",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "44bb583aaff0"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/items/image/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetails",
+          "path": "/api/public/photos/bulk",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "8565527c3bcb"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/photos/items/imageHeight` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "4483bfbdde5d"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/photos/items/imageWidth` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "a1aa3d30364e"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/clusters/items/thumbnail/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "77e83d878b2e"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/clusters/items/thumbnail/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotoClusters",
+          "path": "/api/public/photos/clusters",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "51301b6e4f48"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/photos/items/imageHeight` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getClusterPhotos",
+          "path": "/api/public/photos/clusters/{clusterId}/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "1548814825eb"
+        },
+        {
+          "id": "response-required-property-added",
+          "text": "added the required property `body/photos/items/imageWidth` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getClusterPhotos",
+          "path": "/api/public/photos/clusters/{clusterId}/photos",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "bf319ddeb8e9"
         },
         {
           "id": "api-operation-id-removed",
@@ -7602,9 +8890,31 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "9ed7b7147954"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/height` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetail-DTCb-Co",
+          "path": "/api/public/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "69f56e8af83d"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/image/width` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetail-DTCb-Co",
+          "path": "/api/public/photos/{id}",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "30110a5a24d6"
         },
         {
           "id": "api-operation-id-removed",
@@ -7613,76 +8923,45 @@
           "operation": "GET",
           "operationId": "getPublicProfile",
           "path": "/api/public/profiles/{userId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "cdcf62116894"
         },
         {
-          "id": "response-optional-property-added",
-          "text": "added the optional property `body/reviewSummary` to the response with the `200` status",
+          "id": "api-operation-id-removed",
+          "text": "api operation id `getReviewSummary` removed and replaced with `getReviewSummary-rQY-vZI`",
           "level": 1,
           "operation": "GET",
-          "operationId": "getPublicProfile-rQY-vZI",
-          "path": "/api/public/profiles/{userId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
-          "section": "paths",
-          "fingerprint": "f66838a93928"
-        },
-        {
-          "id": "endpoint-added",
-          "text": "endpoint added",
-          "level": 1,
-          "operation": "GET",
-          "operationId": "getReviewSummary-rQY-vZI",
+          "operationId": "getReviewSummary",
           "path": "/api/public/profiles/{userId}/review-summary",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
-          "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
-          },
-          "fingerprint": "fb30c69629dd"
+          "fingerprint": "e53eb0a7f1e8"
         },
         {
-          "id": "endpoint-added",
-          "text": "endpoint added",
+          "id": "api-operation-id-removed",
+          "text": "api operation id `getReviewsForUser` removed and replaced with `getReviewsForUser-2iI4lOo`",
           "level": 1,
           "operation": "GET",
-          "operationId": "getReviewsForUser-2iI4lOo",
+          "operationId": "getReviewsForUser",
           "path": "/api/public/profiles/{userId}/reviews",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
-          "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
-          },
-          "fingerprint": "500f37450a0d"
+          "fingerprint": "051e7639717a"
         },
         {
           "id": "endpoint-added",
           "text": "endpoint added",
           "level": 1,
-          "operation": "GET",
-          "operationId": "getSettings",
-          "path": "/api/settings",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "operation": "POST",
+          "operationId": "convertShots",
+          "path": "/api/shutter/convert",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
           },
-          "fingerprint": "6a486a39aa50"
-        },
-        {
-          "id": "endpoint-added",
-          "text": "endpoint added",
-          "level": 1,
-          "operation": "PUT",
-          "operationId": "updateSettings",
-          "path": "/api/settings",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
-          "section": "paths",
-          "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
-          },
-          "fingerprint": "832acf4e4655"
+          "fingerprint": "81b82b697e83"
         },
         {
           "id": "api-operation-id-removed",
@@ -7691,12 +8970,37 @@
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "7554508a6ed6"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyBalance",
+          "path": "/api/wallet/me/balance",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
+          },
+          "fingerprint": "3d1acbc426e3"
         }
       ],
       "breaking": [
+        {
+          "id": "new-required-request-property",
+          "text": "added the new required request property `rewardAmount`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "createPhotoRequest",
+          "path": "/api/my/photo-requests",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "5aeb35befea3"
+        },
         {
           "id": "response-property-type-changed",
           "text": "the `body/comments/items/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
@@ -7704,7 +9008,7 @@
           "operation": "GET",
           "operationId": "getComments-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "d473d0566799"
         },
@@ -7715,7 +9019,7 @@
           "operation": "POST",
           "operationId": "createComment-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "9c406a498bc2"
         },
@@ -7726,7 +9030,7 @@
           "operation": "POST",
           "operationId": "createComment-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a10c32327083"
         },
@@ -7737,7 +9041,7 @@
           "operation": "PATCH",
           "operationId": "updateComment-4pyTHqI",
           "path": "/api/photos/{photoId}/comments/{commentId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "b66260d43a52"
         },
@@ -7748,7 +9052,7 @@
           "operation": "GET",
           "operationId": "getReplies-4pyTHqI",
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "3489a2076cb4"
         },
@@ -7760,24 +9064,24 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "2d3c041f0924"
         }
       ],
       "summary": {
-        "added": 4,
+        "added": 3,
         "removed": 0,
-        "modified": 35,
-        "breaking": 6
+        "modified": 38,
+        "breaking": 7
       }
     },
     "admin": {
       "diff": {
         "info": {
           "version": {
-            "from": "0.16.0",
-            "to": "0.20.0"
+            "from": "0.19.0",
+            "to": "0.25.0"
           }
         },
         "paths": {
@@ -8087,7 +9391,7 @@
           "operation": "DELETE",
           "operationId": "cancelMission",
           "path": "/api/admin/missions/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-admin.json",
           "section": "paths",
           "fingerprint": "a6346d3e3d5a"
         },
@@ -8098,7 +9402,7 @@
           "operation": "GET",
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-admin.json",
           "section": "paths",
           "fingerprint": "313d93772f74"
         },
@@ -8109,7 +9413,7 @@
           "operation": "PATCH",
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-admin.json",
           "section": "paths",
           "fingerprint": "41881c6c7120"
         },
@@ -8120,7 +9424,7 @@
           "operation": "POST",
           "operationId": "closeMission",
           "path": "/api/admin/missions/{id}/close",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-admin.json",
           "section": "paths",
           "fingerprint": "b508122c3760"
         },
@@ -8131,7 +9435,7 @@
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-admin.json",
           "section": "paths",
           "fingerprint": "b028b6ff136a"
         },
@@ -8142,7 +9446,7 @@
           "operation": "GET",
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-admin.json",
           "section": "paths",
           "fingerprint": "12310e2cfa4e"
         },
@@ -8153,7 +9457,7 @@
           "operation": "PUT",
           "operationId": "modifyProfile",
           "path": "/api/admin/users/{id}/profile",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-admin.json",
           "section": "paths",
           "fingerprint": "1ec2ed8ca124"
         }

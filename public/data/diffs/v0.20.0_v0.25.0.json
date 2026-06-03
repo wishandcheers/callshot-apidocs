@@ -1,20 +1,63 @@
 {
   "fromVersion": "v0.20.0",
-  "toVersion": "v0.22.0",
+  "toVersion": "v0.25.0",
   "groups": {
     "api": {
       "diff": {
         "info": {
           "version": {
             "from": "0.20.0",
-            "to": "0.22.0"
+            "to": "0.25.0"
           }
         },
         "paths": {
           "added": [
-            "/api/hashtags/{name}/photos"
+            "/api/hashtags/{name}/photos",
+            "/api/shutter/convert",
+            "/api/wallet/me/balance"
           ],
           "modified": {
+            "/api/my/bookmarks": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "items": {
+                                              "items": {
+                                                "properties": {
+                                                  "added": [
+                                                    "photo"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "/api/my/drafts": {
               "operations": {
                 "modified": {
@@ -42,8 +85,8 @@
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "width",
-                                                          "height"
+                                                          "height",
+                                                          "width"
                                                         ]
                                                       }
                                                     }
@@ -157,8 +200,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "imageWidth",
-                                            "imageHeight"
+                                            "imageHeight",
+                                            "imageWidth"
                                           ]
                                         },
                                         "properties": {
@@ -171,6 +214,34 @@
                                     }
                                   }
                                 }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/my/photo-requests": {
+              "operations": {
+                "modified": {
+                  "POST": {
+                    "requestBody": {
+                      "content": {
+                        "modified": {
+                          "application/json": {
+                            "schema": {
+                              "required": {
+                                "added": [
+                                  "rewardAmount"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "rewardAmount"
+                                ]
                               }
                             }
                           }
@@ -204,14 +275,14 @@
                                                     "photo": {
                                                       "required": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ]
                                                       },
                                                       "properties": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ]
                                                       }
                                                     }
@@ -262,8 +333,8 @@
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "width",
-                                                          "height"
+                                                          "height",
+                                                          "width"
                                                         ]
                                                       }
                                                     }
@@ -281,8 +352,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ]
                                                 }
                                               }
@@ -323,8 +394,8 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ]
                                                 },
                                                 "properties": {
@@ -451,8 +522,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ]
                                                 }
                                               }
@@ -541,8 +612,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ]
                                                 }
                                               }
@@ -586,8 +657,8 @@
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ]
                                                       }
                                                     }
@@ -637,8 +708,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ]
                                                 }
                                               }
@@ -701,15 +772,47 @@
             }
           }
         },
+        "tags": {
+          "added": [
+            "Wallet"
+          ]
+        },
         "components": {
           "schemas": {
             "added": [
-              "HashtagPhotoResponse",
-              "HashtagPhotoOwnerResponse",
               "BaseResponseCursorPageHashtagPhotoResponse",
-              "CursorPageHashtagPhotoResponse"
+              "WalletBalanceResponse",
+              "BookmarkedPhotoUrls",
+              "BaseResponseWalletBalanceResponse",
+              "BookmarkedPhotoView",
+              "BaseResponseConvertShotsResponse",
+              "HashtagPhotoOwnerResponse",
+              "HashtagPhotoResponse",
+              "CursorPageHashtagPhotoResponse",
+              "ConvertShotsResponse"
             ],
             "modified": {
+              "BaseResponseBookmarkedPhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "items": {
+                            "items": {
+                              "properties": {
+                                "added": [
+                                  "photo"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "BaseResponseDraftPhotoDetailResponse": {
                 "properties": {
                   "modified": {
@@ -719,8 +822,8 @@
                           "image": {
                             "properties": {
                               "added": [
-                                "height",
-                                "width"
+                                "width",
+                                "height"
                               ]
                             }
                           }
@@ -740,15 +843,15 @@
                             "items": {
                               "properties": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ],
                                 "modified": {
                                   "thumbnail": {
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -772,8 +875,8 @@
                             "image": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -794,15 +897,15 @@
                             "items": {
                               "properties": {
                                 "added": [
-                                  "imageWidth",
-                                  "imageHeight"
+                                  "imageHeight",
+                                  "imageWidth"
                                 ],
                                 "modified": {
                                   "thumbnail": {
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -845,8 +948,8 @@
                                   "thumbnail": {
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -896,8 +999,8 @@
                               },
                               "properties": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ]
                               }
                             }
@@ -917,8 +1020,8 @@
                           "image": {
                             "properties": {
                               "added": [
-                                "width",
-                                "height"
+                                "height",
+                                "width"
                               ]
                             }
                           }
@@ -938,8 +1041,8 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "imageWidth",
-                                  "imageHeight"
+                                  "imageHeight",
+                                  "imageWidth"
                                 ]
                               },
                               "properties": {
@@ -969,14 +1072,14 @@
                                   "photo": {
                                     "required": {
                                       "added": [
-                                        "height",
-                                        "width"
+                                        "width",
+                                        "height"
                                       ]
                                     },
                                     "properties": {
                                       "added": [
-                                        "height",
-                                        "width"
+                                        "width",
+                                        "height"
                                       ]
                                     }
                                   }
@@ -990,14 +1093,48 @@
                   }
                 }
               },
+              "BookmarkedPhotoItem": {
+                "properties": {
+                  "added": [
+                    "photo"
+                  ]
+                }
+              },
+              "BookmarkedPhotosResponse": {
+                "properties": {
+                  "modified": {
+                    "items": {
+                      "items": {
+                        "properties": {
+                          "added": [
+                            "photo"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "CreatePhotoRequestRequest": {
+                "required": {
+                  "added": [
+                    "rewardAmount"
+                  ]
+                },
+                "properties": {
+                  "added": [
+                    "rewardAmount"
+                  ]
+                }
+              },
               "DraftPhotoDetailResponse": {
                 "properties": {
                   "modified": {
                     "image": {
                       "properties": {
                         "added": [
-                          "height",
-                          "width"
+                          "width",
+                          "height"
                         ]
                       }
                     }
@@ -1014,8 +1151,8 @@
                     "thumbnail": {
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -1029,15 +1166,15 @@
                       "items": {
                         "properties": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ],
                           "modified": {
                             "thumbnail": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -1063,15 +1200,15 @@
                       "items": {
                         "properties": {
                           "added": [
-                            "imageWidth",
-                            "imageHeight"
+                            "imageHeight",
+                            "imageWidth"
                           ],
                           "modified": {
                             "thumbnail": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -1104,8 +1241,8 @@
                     "thumbnail": {
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -1122,8 +1259,8 @@
                             "thumbnail": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -1137,8 +1274,8 @@
               "PhotoResponse": {
                 "required": {
                   "added": [
-                    "imageHeight",
-                    "imageWidth"
+                    "imageWidth",
+                    "imageHeight"
                   ]
                 },
                 "properties": {
@@ -1161,8 +1298,8 @@
                         },
                         "properties": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ]
                         }
                       }
@@ -1176,8 +1313,8 @@
                     "image": {
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -1191,8 +1328,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "imageWidth",
-                            "imageHeight"
+                            "imageHeight",
+                            "imageWidth"
                           ]
                         },
                         "properties": {
@@ -1212,14 +1349,14 @@
                     "photo": {
                       "required": {
                         "added": [
-                          "height",
-                          "width"
+                          "width",
+                          "height"
                         ]
                       },
                       "properties": {
                         "added": [
-                          "height",
-                          "width"
+                          "width",
+                          "height"
                         ]
                       }
                     }
@@ -1235,8 +1372,8 @@
                 },
                 "properties": {
                   "added": [
-                    "height",
-                    "width"
+                    "width",
+                    "height"
                   ]
                 }
               },
@@ -1250,14 +1387,14 @@
                             "photo": {
                               "required": {
                                 "added": [
-                                  "height",
-                                  "width"
+                                  "width",
+                                  "height"
                                 ]
                               },
                               "properties": {
                                 "added": [
-                                  "height",
-                                  "width"
+                                  "width",
+                                  "height"
                                 ]
                               }
                             }
@@ -1282,18 +1419,40 @@
       },
       "changelog": [
         {
+          "id": "new-required-request-property",
+          "text": "added the new required request property `rewardAmount`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "createPhotoRequest",
+          "path": "/api/my/photo-requests",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "5aeb35befea3"
+        },
+        {
           "id": "endpoint-added",
           "text": "endpoint added",
           "level": 1,
           "operation": "GET",
           "operationId": "getPhotosByHashtag",
           "path": "/api/hashtags/{name}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
           },
           "fingerprint": "828d13345d57"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/items/items/photo` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyBookmarks",
+          "path": "/api/my/bookmarks",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "245eb1a1d5e3"
         },
         {
           "id": "response-optional-property-added",
@@ -1302,7 +1461,7 @@
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "2f5bebf551d9"
         },
@@ -1313,7 +1472,7 @@
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "ce8a8dc73dd7"
         },
@@ -1324,7 +1483,7 @@
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "f5cc5dab0912"
         },
@@ -1335,7 +1494,7 @@
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "f6e9b4e6b29c"
         },
@@ -1346,7 +1505,7 @@
           "operation": "GET",
           "operationId": "getDraftPhoto-lYrMTg8",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "49fc2486ee59"
         },
@@ -1357,7 +1516,7 @@
           "operation": "GET",
           "operationId": "getDraftPhoto-lYrMTg8",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "e28fa862f9e3"
         },
@@ -1368,7 +1527,7 @@
           "operation": "PATCH",
           "operationId": "updateDraftPhoto-DTCb-Co",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "9b6f333ecd3e"
         },
@@ -1379,7 +1538,7 @@
           "operation": "PATCH",
           "operationId": "updateDraftPhoto-DTCb-Co",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "f6b9e4e5f50d"
         },
@@ -1390,7 +1549,7 @@
           "operation": "POST",
           "operationId": "publishDraftPhoto-lYrMTg8",
           "path": "/api/my/drafts/{id}/publish",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "74e1a0be9569"
         },
@@ -1401,7 +1560,7 @@
           "operation": "POST",
           "operationId": "publishDraftPhoto-lYrMTg8",
           "path": "/api/my/drafts/{id}/publish",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "4810a13d5a10"
         },
@@ -1412,7 +1571,7 @@
           "operation": "GET",
           "operationId": "getSubmissionsForRequest-FO2Zqu0",
           "path": "/api/my/photo-requests/{id}/submissions",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "de8ecf94e4c3"
         },
@@ -1423,7 +1582,7 @@
           "operation": "GET",
           "operationId": "getSubmissionsForRequest-FO2Zqu0",
           "path": "/api/my/photo-requests/{id}/submissions",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "4c467a5ff897"
         },
@@ -1434,7 +1593,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "00e8a41684d1"
         },
@@ -1445,7 +1604,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "2707e3813d0d"
         },
@@ -1456,7 +1615,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "9ccea1fe8ce2"
         },
@@ -1467,7 +1626,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "cc62052b1836"
         },
@@ -1478,7 +1637,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "e5242776c33e"
         },
@@ -1489,7 +1648,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a7c6bdd48ed5"
         },
@@ -1500,7 +1659,7 @@
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "0f35af1db808"
         },
@@ -1511,7 +1670,7 @@
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "3c667068a9d9"
         },
@@ -1522,7 +1681,7 @@
           "operation": "GET",
           "operationId": "getPublishedPhoto-lYrMTg8",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "650918b265e1"
         },
@@ -1533,7 +1692,7 @@
           "operation": "GET",
           "operationId": "getPublishedPhoto-lYrMTg8",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "02548cba8f7b"
         },
@@ -1544,7 +1703,7 @@
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto-DTCb-Co",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a467811b1d7a"
         },
@@ -1555,7 +1714,7 @@
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto-DTCb-Co",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "21900cac5b52"
         },
@@ -1566,7 +1725,7 @@
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "86757cdfa4ed"
         },
@@ -1577,7 +1736,7 @@
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "464661d3db06"
         },
@@ -1588,7 +1747,7 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "44bb583aaff0"
         },
@@ -1599,7 +1758,7 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "8565527c3bcb"
         },
@@ -1610,7 +1769,7 @@
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "4483bfbdde5d"
         },
@@ -1621,7 +1780,7 @@
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a1aa3d30364e"
         },
@@ -1632,7 +1791,7 @@
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "77e83d878b2e"
         },
@@ -1643,7 +1802,7 @@
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "51301b6e4f48"
         },
@@ -1654,7 +1813,7 @@
           "operation": "GET",
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "1548814825eb"
         },
@@ -1665,7 +1824,7 @@
           "operation": "GET",
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "bf319ddeb8e9"
         },
@@ -1676,7 +1835,7 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetail-DTCb-Co",
           "path": "/api/public/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "69f56e8af83d"
         },
@@ -1687,17 +1846,57 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetail-DTCb-Co",
           "path": "/api/public/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.22.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "30110a5a24d6"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "convertShots",
+          "path": "/api/shutter/convert",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
+          },
+          "fingerprint": "81b82b697e83"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyBalance",
+          "path": "/api/wallet/me/balance",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
+          },
+          "fingerprint": "3d1acbc426e3"
         }
       ],
-      "breaking": [],
+      "breaking": [
+        {
+          "id": "new-required-request-property",
+          "text": "added the new required request property `rewardAmount`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "createPhotoRequest",
+          "path": "/api/my/photo-requests",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "section": "paths",
+          "fingerprint": "5aeb35befea3"
+        }
+      ],
       "summary": {
-        "added": 1,
+        "added": 3,
         "removed": 0,
-        "modified": 13,
-        "breaking": 0
+        "modified": 15,
+        "breaking": 1
       }
     },
     "admin": {
@@ -1705,7 +1904,7 @@
         "info": {
           "version": {
             "from": "0.20.0",
-            "to": "0.22.0"
+            "to": "0.25.0"
           }
         }
       },

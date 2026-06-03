@@ -3905,13 +3905,13 @@
         "components": {
           "schemas": {
             "added": [
+              "BaseResponseUserSettingsResponse",
+              "PatchBoolean",
+              "Absent",
               "UserSettingsResponse",
+              "Value",
               "CommissionStatsInfo",
               "Clear",
-              "PatchBoolean",
-              "Value",
-              "BaseResponseUserSettingsResponse",
-              "Absent",
               "UpdateUserSettingsRequest"
             ],
             "modified": {
