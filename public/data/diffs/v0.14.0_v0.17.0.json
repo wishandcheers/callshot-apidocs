@@ -12,13 +12,13 @@
         },
         "paths": {
           "added": [
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/photos/{photoId}/comments/{commentId}",
+            "/api/public/profiles/{userId}/reviews",
             "/api/public/profiles/{userId}/review-summary",
             "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/public/profiles/{userId}/reviews",
-            "/api/explore/photos",
-            "/api/photos/{photoId}/comments"
+            "/api/photos/{photoId}/comments",
+            "/api/explore/photos"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -105,26 +105,26 @@
         "components": {
           "schemas": {
             "added": [
-              "CommentResponse",
-              "BaseResponseCommentResponse",
-              "CreateCommentRequest",
-              "CursorPageSubmissionReviewResponse",
-              "CursorPageExplorePhotoResponse",
-              "ExplorePhotoResponse",
+              "SubmissionReviewResponse",
               "BaseResponseCursorPageSubmissionReviewResponse",
-              "UpdateCommentRequest",
+              "BaseResponseCommentResponse",
               "BaseResponseCommentPageResponse",
-              "CommentPageResponse",
               "BaseResponseReviewSummaryResponse",
+              "CommentPageResponse",
               "ReviewSummaryInfo",
-              "FeedOwnerResponse",
               "BaseResponseCursorPageExplorePhotoResponse",
               "CursorRequest",
+              "CursorPageSubmissionReviewResponse",
+              "CreateSubmissionReviewRequest",
+              "FeedOwnerResponse",
+              "CommentResponse",
+              "ExplorePhotoResponse",
+              "CursorPageExplorePhotoResponse",
+              "UpdateCommentRequest",
+              "CreateCommentRequest",
               "UpdateSubmissionReviewRequest",
-              "SubmissionReviewResponse",
               "ReviewSummaryResponse",
-              "BaseResponseSubmissionReviewResponse",
-              "CreateSubmissionReviewRequest"
+              "BaseResponseSubmissionReviewResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {

@@ -3906,13 +3906,13 @@
           "schemas": {
             "added": [
               "BaseResponseUserSettingsResponse",
-              "PatchBoolean",
-              "Absent",
-              "UserSettingsResponse",
+              "UpdateUserSettingsRequest",
               "Value",
+              "PatchBoolean",
               "CommissionStatsInfo",
-              "Clear",
-              "UpdateUserSettingsRequest"
+              "UserSettingsResponse",
+              "Absent",
+              "Clear"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {

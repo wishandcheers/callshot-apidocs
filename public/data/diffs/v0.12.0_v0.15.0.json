@@ -12,12 +12,12 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/photos/{photoId}/comments/{commentId}",
             "/api/my/bookmarks",
             "/api/photos/{photoId}/bookmark",
+            "/api/photos/{photoId}/comments",
+            "/api/photos/{photoId}/comments/{commentId}",
             "/api/public/profiles/{userId}",
-            "/api/photos/{photoId}/comments"
+            "/api/photos/{photoId}/comments/{commentId}/replies"
           ],
           "modified": {
             "/api/my/drafts": {
@@ -2064,16 +2064,16 @@
                                       "body": {
                                         "required": {
                                           "added": [
+                                            "isBookmarkedByUser",
                                             "bookmarkCount",
-                                            "commentCount",
-                                            "isBookmarkedByUser"
+                                            "commentCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "bookmarkCount",
                                             "commentCount",
-                                            "isBookmarkedByUser"
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
                                           ],
                                           "modified": {
                                             "dislikeCount": {
@@ -3298,21 +3298,21 @@
         "components": {
           "schemas": {
             "added": [
-              "BookmarkedPhotosResponse",
-              "BaseResponseCommentResponse",
               "CommentPageResponse",
               "PublicProfileResponse",
-              "OwnerResponse",
               "UpdateCommentRequest",
-              "PageCursor",
               "BookmarkedPhotoItem",
-              "BaseResponseCommentPageResponse",
               "CreateCommentRequest",
-              "BaseResponseBookmarkedPhotosResponse",
-              "BaseResponseToggleBookmarkResponse",
+              "OwnerResponse",
               "CommentResponse",
+              "BaseResponseCommentResponse",
+              "BookmarkedPhotosResponse",
+              "PageCursor",
               "ToggleBookmarkResponse",
-              "BaseResponsePublicProfileResponse"
+              "BaseResponseBookmarkedPhotosResponse",
+              "BaseResponsePublicProfileResponse",
+              "BaseResponseCommentPageResponse",
+              "BaseResponseToggleBookmarkResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3489,16 +3489,16 @@
                     "body": {
                       "required": {
                         "added": [
-                          "bookmarkCount",
                           "commentCount",
-                          "isBookmarkedByUser"
+                          "isBookmarkedByUser",
+                          "bookmarkCount"
                         ]
                       },
                       "properties": {
                         "added": [
+                          "isBookmarkedByUser",
                           "bookmarkCount",
-                          "commentCount",
-                          "isBookmarkedByUser"
+                          "commentCount"
                         ],
                         "modified": {
                           "dislikeCount": {
@@ -4896,8 +4896,8 @@
               "EngagementResponse": {
                 "required": {
                   "added": [
-                    "bookmarkCount",
                     "isBookmarkedByUser",
+                    "bookmarkCount",
                     "commentCount"
                   ]
                 },

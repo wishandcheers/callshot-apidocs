@@ -1,0 +1,484 @@
+{
+  "fromVersion": "v0.20.0",
+  "toVersion": "v0.26.0",
+  "groups": {
+    "api": [
+      {
+        "id": "new-required-request-property",
+        "text": "added the new required request property `rewardAmount`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "createPhotoRequest",
+        "path": "/api/my/photo-requests",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "5aeb35befea3"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotosByHashtag",
+        "path": "/api/hashtags/{name}/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
+        },
+        "fingerprint": "828d13345d57"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/items/items/photo` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyBookmarks",
+        "path": "/api/my/bookmarks",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "245eb1a1d5e3"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/photos/items/imageHeight` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyDraftPhotos",
+        "path": "/api/my/drafts",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "2f5bebf551d9"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/photos/items/imageWidth` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyDraftPhotos",
+        "path": "/api/my/drafts",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "ce8a8dc73dd7"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/photos/items/thumbnail/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyDraftPhotos",
+        "path": "/api/my/drafts",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "f5cc5dab0912"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/photos/items/thumbnail/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyDraftPhotos",
+        "path": "/api/my/drafts",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "f6e9b4e6b29c"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getDraftPhoto-lYrMTg8",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "49fc2486ee59"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getDraftPhoto-lYrMTg8",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "e28fa862f9e3"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateDraftPhoto-DTCb-Co",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "9b6f333ecd3e"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateDraftPhoto-DTCb-Co",
+        "path": "/api/my/drafts/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "f6b9e4e5f50d"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/imageHeight` to the response with the `200` status",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto-lYrMTg8",
+        "path": "/api/my/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "74e1a0be9569"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/imageWidth` to the response with the `200` status",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "publishDraftPhoto-lYrMTg8",
+        "path": "/api/my/drafts/{id}/publish",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "4810a13d5a10"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/submissions/items/photo/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getSubmissionsForRequest-FO2Zqu0",
+        "path": "/api/my/photo-requests/{id}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "de8ecf94e4c3"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/submissions/items/photo/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getSubmissionsForRequest-FO2Zqu0",
+        "path": "/api/my/photo-requests/{id}/submissions",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "4c467a5ff897"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/draftPhotos/items/imageHeight` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "00e8a41684d1"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/draftPhotos/items/imageWidth` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "2707e3813d0d"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/draftPhotos/items/thumbnail/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "9ccea1fe8ce2"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/draftPhotos/items/thumbnail/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "cc62052b1836"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/publishPhotos/items/imageHeight` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "e5242776c33e"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/publishPhotos/items/imageWidth` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPhotos",
+        "path": "/api/my/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "a7c6bdd48ed5"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/photos/items/imageHeight` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos",
+        "path": "/api/my/photos/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "0f35af1db808"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/photos/items/imageWidth` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyPublishedPhotos",
+        "path": "/api/my/photos/published",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "3c667068a9d9"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublishedPhoto-lYrMTg8",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "650918b265e1"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublishedPhoto-lYrMTg8",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "02548cba8f7b"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updatePublishedPhoto-DTCb-Co",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "a467811b1d7a"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updatePublishedPhoto-DTCb-Co",
+        "path": "/api/my/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "21900cac5b52"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/photos/items/imageHeight` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/api/public/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "86757cdfa4ed"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/photos/items/imageWidth` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotos",
+        "path": "/api/public/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "464661d3db06"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/items/image/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetails",
+        "path": "/api/public/photos/bulk",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "44bb583aaff0"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/items/image/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetails",
+        "path": "/api/public/photos/bulk",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "8565527c3bcb"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/photos/items/imageHeight` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "4483bfbdde5d"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/photos/items/imageWidth` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotosInClusterArea",
+        "path": "/api/public/photos/cluster-area",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "a1aa3d30364e"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/clusters/items/thumbnail/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "77e83d878b2e"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/clusters/items/thumbnail/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotoClusters",
+        "path": "/api/public/photos/clusters",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "51301b6e4f48"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/photos/items/imageHeight` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getClusterPhotos",
+        "path": "/api/public/photos/clusters/{clusterId}/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "1548814825eb"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/photos/items/imageWidth` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getClusterPhotos",
+        "path": "/api/public/photos/clusters/{clusterId}/photos",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "bf319ddeb8e9"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/height` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetail-DTCb-Co",
+        "path": "/api/public/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "69f56e8af83d"
+      },
+      {
+        "id": "response-optional-property-added",
+        "text": "added the optional property `body/image/width` to the response with the `200` status",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPublicPhotoDetail-DTCb-Co",
+        "path": "/api/public/photos/{id}",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "fingerprint": "30110a5a24d6"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "convertShots",
+        "path": "/api/shutter/convert",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
+        },
+        "fingerprint": "81b82b697e83"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getMyBalance",
+        "path": "/api/wallet/me/balance",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
+        },
+        "fingerprint": "3d1acbc426e3"
+      }
+    ],
+    "admin": [
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getExternalEvents",
+        "path": "/api/admin/external/events",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-admin.json",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-admin.json"
+        },
+        "fingerprint": "f4a599124d7c"
+      }
+    ]
+  }
+}

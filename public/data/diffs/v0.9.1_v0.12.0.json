@@ -184,8 +184,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "tileBounds",
-                                                    "clusterId"
+                                                    "clusterId",
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -234,8 +234,8 @@
               "UpdateUserProfileRequest"
             ],
             "deleted": [
-              "PhotoClusterRequest",
               "ShutterSummary",
+              "PhotoClusterRequest",
               "ClusterAreaRequest",
               "UserSignUpRequest"
             ],
@@ -260,12 +260,12 @@
                               },
                               "properties": {
                                 "added": [
-                                  "tileBounds",
-                                  "clusterId"
+                                  "clusterId",
+                                  "tileBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ],
                                 "modified": {
                                   "center": {
@@ -369,8 +369,8 @@
                 },
                 "properties": {
                   "added": [
-                    "clusterId",
-                    "tileBounds"
+                    "tileBounds",
+                    "clusterId"
                   ],
                   "deleted": [
                     "avgDistanceMeters",
@@ -409,12 +409,12 @@
                         },
                         "properties": {
                           "added": [
-                            "tileBounds",
-                            "clusterId"
+                            "clusterId",
+                            "tileBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ],
                           "modified": {
                             "center": {
@@ -884,10 +884,10 @@
         },
         "paths": {
           "added": [
+            "/api/admin/missions/{id}",
             "/api/admin/missions/{id}/close",
             "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions",
-            "/api/admin/missions/{id}"
+            "/api/admin/missions"
           ],
           "modified": {
             "/api/admin/users": {
@@ -961,18 +961,18 @@
         "components": {
           "schemas": {
             "added": [
-              "SystemMissionResponse",
-              "Absent",
-              "PatchString",
-              "Value",
-              "UpdateSystemMissionRequest",
               "BaseResponseSystemMissionsResponse",
-              "Clear",
-              "Gps",
-              "CreateSystemMissionRequest",
               "ReviewSystemMissionSubmissionRequest",
               "SystemMissionsResponse",
-              "BaseResponseSystemMissionResponse"
+              "Value",
+              "UpdateSystemMissionRequest",
+              "CreateSystemMissionRequest",
+              "Gps",
+              "SystemMissionResponse",
+              "BaseResponseSystemMissionResponse",
+              "Clear",
+              "PatchString",
+              "Absent"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

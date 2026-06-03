@@ -1,13 +1,13 @@
 {
   "fromVersion": "v0.20.0",
-  "toVersion": "v0.25.0",
+  "toVersion": "v0.26.0",
   "groups": {
     "api": {
       "diff": {
         "info": {
           "version": {
             "from": "0.20.0",
-            "to": "0.25.0"
+            "to": "0.26.0"
           }
         },
         "paths": {
@@ -78,8 +78,8 @@
                                               "items": {
                                                 "properties": {
                                                   "added": [
-                                                    "imageWidth",
-                                                    "imageHeight"
+                                                    "imageHeight",
+                                                    "imageWidth"
                                                   ],
                                                   "modified": {
                                                     "thumbnail": {
@@ -129,8 +129,8 @@
                                             "image": {
                                               "properties": {
                                                 "added": [
-                                                  "width",
-                                                  "height"
+                                                  "height",
+                                                  "width"
                                                 ]
                                               }
                                             }
@@ -163,8 +163,8 @@
                                             "image": {
                                               "properties": {
                                                 "added": [
-                                                  "width",
-                                                  "height"
+                                                  "height",
+                                                  "width"
                                                 ]
                                               }
                                             }
@@ -281,8 +281,8 @@
                                                       },
                                                       "properties": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ]
                                                       }
                                                     }
@@ -394,14 +394,14 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ]
                                                 }
                                               }
@@ -657,8 +657,8 @@
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "width",
-                                                          "height"
+                                                          "height",
+                                                          "width"
                                                         ]
                                                       }
                                                     }
@@ -780,15 +780,15 @@
         "components": {
           "schemas": {
             "added": [
-              "BookmarkedPhotoView",
-              "ConvertShotsResponse",
               "WalletBalanceResponse",
-              "BookmarkedPhotoUrls",
+              "ConvertShotsResponse",
               "BaseResponseWalletBalanceResponse",
+              "HashtagPhotoOwnerResponse",
+              "BookmarkedPhotoView",
+              "HashtagPhotoResponse",
+              "BookmarkedPhotoUrls",
               "CursorPageHashtagPhotoResponse",
               "BaseResponseConvertShotsResponse",
-              "HashtagPhotoOwnerResponse",
-              "HashtagPhotoResponse",
               "BaseResponseCursorPageHashtagPhotoResponse"
             ],
             "modified": {
@@ -843,15 +843,15 @@
                             "items": {
                               "properties": {
                                 "added": [
-                                  "imageWidth",
-                                  "imageHeight"
+                                  "imageHeight",
+                                  "imageWidth"
                                 ],
                                 "modified": {
                                   "thumbnail": {
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -875,8 +875,8 @@
                             "image": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -897,15 +897,15 @@
                             "items": {
                               "properties": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ],
                                 "modified": {
                                   "thumbnail": {
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -1020,8 +1020,8 @@
                           "image": {
                             "properties": {
                               "added": [
-                                "width",
-                                "height"
+                                "height",
+                                "width"
                               ]
                             }
                           }
@@ -1078,8 +1078,8 @@
                                     },
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -1151,8 +1151,8 @@
                     "thumbnail": {
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -1166,15 +1166,15 @@
                       "items": {
                         "properties": {
                           "added": [
-                            "imageWidth",
-                            "imageHeight"
+                            "imageHeight",
+                            "imageWidth"
                           ],
                           "modified": {
                             "thumbnail": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -1188,8 +1188,8 @@
               "ImageResponse": {
                 "properties": {
                   "added": [
-                    "width",
-                    "height"
+                    "height",
+                    "width"
                   ]
                 }
               },
@@ -1200,15 +1200,15 @@
                       "items": {
                         "properties": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ],
                           "modified": {
                             "thumbnail": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -1313,8 +1313,8 @@
                     "image": {
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -1355,8 +1355,8 @@
                       },
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -1366,8 +1366,8 @@
               "RequestSubmissionPhotoInfoDto": {
                 "required": {
                   "added": [
-                    "width",
-                    "height"
+                    "height",
+                    "width"
                   ]
                 },
                 "properties": {
@@ -1393,8 +1393,8 @@
                               },
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -1408,8 +1408,8 @@
               "ThumbnailResponse": {
                 "properties": {
                   "added": [
-                    "height",
-                    "width"
+                    "width",
+                    "height"
                   ]
                 }
               }
@@ -1425,7 +1425,7 @@
           "operation": "POST",
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "5aeb35befea3"
         },
@@ -1436,10 +1436,10 @@
           "operation": "GET",
           "operationId": "getPhotosByHashtag",
           "path": "/api/hashtags/{name}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
           },
           "fingerprint": "828d13345d57"
         },
@@ -1450,7 +1450,7 @@
           "operation": "GET",
           "operationId": "getMyBookmarks",
           "path": "/api/my/bookmarks",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "245eb1a1d5e3"
         },
@@ -1461,7 +1461,7 @@
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "2f5bebf551d9"
         },
@@ -1472,7 +1472,7 @@
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "ce8a8dc73dd7"
         },
@@ -1483,7 +1483,7 @@
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "f5cc5dab0912"
         },
@@ -1494,7 +1494,7 @@
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "f6e9b4e6b29c"
         },
@@ -1505,7 +1505,7 @@
           "operation": "GET",
           "operationId": "getDraftPhoto-lYrMTg8",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "49fc2486ee59"
         },
@@ -1516,7 +1516,7 @@
           "operation": "GET",
           "operationId": "getDraftPhoto-lYrMTg8",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "e28fa862f9e3"
         },
@@ -1527,7 +1527,7 @@
           "operation": "PATCH",
           "operationId": "updateDraftPhoto-DTCb-Co",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "9b6f333ecd3e"
         },
@@ -1538,7 +1538,7 @@
           "operation": "PATCH",
           "operationId": "updateDraftPhoto-DTCb-Co",
           "path": "/api/my/drafts/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "f6b9e4e5f50d"
         },
@@ -1549,7 +1549,7 @@
           "operation": "POST",
           "operationId": "publishDraftPhoto-lYrMTg8",
           "path": "/api/my/drafts/{id}/publish",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "74e1a0be9569"
         },
@@ -1560,7 +1560,7 @@
           "operation": "POST",
           "operationId": "publishDraftPhoto-lYrMTg8",
           "path": "/api/my/drafts/{id}/publish",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "4810a13d5a10"
         },
@@ -1571,7 +1571,7 @@
           "operation": "GET",
           "operationId": "getSubmissionsForRequest-FO2Zqu0",
           "path": "/api/my/photo-requests/{id}/submissions",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "de8ecf94e4c3"
         },
@@ -1582,7 +1582,7 @@
           "operation": "GET",
           "operationId": "getSubmissionsForRequest-FO2Zqu0",
           "path": "/api/my/photo-requests/{id}/submissions",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "4c467a5ff897"
         },
@@ -1593,7 +1593,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "00e8a41684d1"
         },
@@ -1604,7 +1604,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "2707e3813d0d"
         },
@@ -1615,7 +1615,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "9ccea1fe8ce2"
         },
@@ -1626,7 +1626,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "cc62052b1836"
         },
@@ -1637,7 +1637,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "e5242776c33e"
         },
@@ -1648,7 +1648,7 @@
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a7c6bdd48ed5"
         },
@@ -1659,7 +1659,7 @@
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "0f35af1db808"
         },
@@ -1670,7 +1670,7 @@
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "3c667068a9d9"
         },
@@ -1681,7 +1681,7 @@
           "operation": "GET",
           "operationId": "getPublishedPhoto-lYrMTg8",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "650918b265e1"
         },
@@ -1692,7 +1692,7 @@
           "operation": "GET",
           "operationId": "getPublishedPhoto-lYrMTg8",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "02548cba8f7b"
         },
@@ -1703,7 +1703,7 @@
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto-DTCb-Co",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a467811b1d7a"
         },
@@ -1714,7 +1714,7 @@
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto-DTCb-Co",
           "path": "/api/my/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "21900cac5b52"
         },
@@ -1725,7 +1725,7 @@
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "86757cdfa4ed"
         },
@@ -1736,7 +1736,7 @@
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "464661d3db06"
         },
@@ -1747,7 +1747,7 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "44bb583aaff0"
         },
@@ -1758,7 +1758,7 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "8565527c3bcb"
         },
@@ -1769,7 +1769,7 @@
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "4483bfbdde5d"
         },
@@ -1780,7 +1780,7 @@
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "a1aa3d30364e"
         },
@@ -1791,7 +1791,7 @@
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "77e83d878b2e"
         },
@@ -1802,7 +1802,7 @@
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "51301b6e4f48"
         },
@@ -1813,7 +1813,7 @@
           "operation": "GET",
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "1548814825eb"
         },
@@ -1824,7 +1824,7 @@
           "operation": "GET",
           "operationId": "getClusterPhotos",
           "path": "/api/public/photos/clusters/{clusterId}/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "bf319ddeb8e9"
         },
@@ -1835,7 +1835,7 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetail-DTCb-Co",
           "path": "/api/public/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "69f56e8af83d"
         },
@@ -1846,7 +1846,7 @@
           "operation": "GET",
           "operationId": "getPublicPhotoDetail-DTCb-Co",
           "path": "/api/public/photos/{id}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "30110a5a24d6"
         },
@@ -1857,10 +1857,10 @@
           "operation": "POST",
           "operationId": "convertShots",
           "path": "/api/shutter/convert",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
           },
           "fingerprint": "81b82b697e83"
         },
@@ -1871,10 +1871,10 @@
           "operation": "GET",
           "operationId": "getMyBalance",
           "path": "/api/wallet/me/balance",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
           },
           "fingerprint": "3d1acbc426e3"
         }
@@ -1887,7 +1887,7 @@
           "operation": "POST",
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "5aeb35befea3"
         }
@@ -1904,14 +1904,48 @@
         "info": {
           "version": {
             "from": "0.20.0",
-            "to": "0.25.0"
+            "to": "0.26.0"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/admin/external/events"
+          ]
+        },
+        "tags": {
+          "added": [
+            "Admin 외부 이벤트"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "BaseResponseExternalEventPageResponse",
+              "ExternalEventResponse",
+              "ExternalEventPageResponse"
+            ]
           }
         }
       },
-      "changelog": [],
+      "changelog": [
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getExternalEvents",
+          "path": "/api/admin/external/events",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-admin.json",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-admin.json"
+          },
+          "fingerprint": "f4a599124d7c"
+        }
+      ],
       "breaking": [],
       "summary": {
-        "added": 0,
+        "added": 1,
         "removed": 0,
         "modified": 0,
         "breaking": 0

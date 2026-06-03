@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/public/profiles/{userId}/reviews",
             "/api/settings",
-            "/api/public/profiles/{userId}/review-summary"
+            "/api/public/profiles/{userId}/review-summary",
+            "/api/public/profiles/{userId}/reviews",
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review"
           ],
           "modified": {
             "/api/explore/photos": {
@@ -3659,24 +3659,24 @@
         "components": {
           "schemas": {
             "added": [
+              "SubmissionReviewResponse",
               "Value",
               "CommissionStatsInfo",
-              "PatchBoolean",
-              "BaseResponseCursorPageSubmissionReviewResponse",
-              "Absent",
-              "BaseResponseReviewSummaryResponse",
-              "Clear",
-              "BaseResponseUserSettingsResponse",
-              "BaseResponseSubmissionReviewResponse",
-              "CursorPageSubmissionReviewResponse",
-              "CursorRequest",
-              "UserSettingsResponse",
-              "SubmissionReviewResponse",
-              "CreateSubmissionReviewRequest",
-              "UpdateUserSettingsRequest",
-              "ReviewSummaryInfo",
               "ReviewSummaryResponse",
-              "UpdateSubmissionReviewRequest"
+              "Clear",
+              "PatchBoolean",
+              "BaseResponseUserSettingsResponse",
+              "UserSettingsResponse",
+              "BaseResponseReviewSummaryResponse",
+              "Absent",
+              "CursorRequest",
+              "UpdateUserSettingsRequest",
+              "BaseResponseSubmissionReviewResponse",
+              "UpdateSubmissionReviewRequest",
+              "ReviewSummaryInfo",
+              "CursorPageSubmissionReviewResponse",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "CreateSubmissionReviewRequest"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {

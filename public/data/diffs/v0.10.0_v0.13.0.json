@@ -2618,9 +2618,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
+                                                    "tileBounds",
                                                     "clusterId",
-                                                    "photoBounds",
-                                                    "tileBounds"
+                                                    "photoBounds"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -2634,8 +2634,8 @@
                                                     "photoBounds"
                                                   ],
                                                   "deleted": [
-                                                    "maxDistanceMeters",
-                                                    "avgDistanceMeters"
+                                                    "avgDistanceMeters",
+                                                    "maxDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "center": {
@@ -3234,11 +3234,11 @@
         "components": {
           "schemas": {
             "added": [
-              "BoundingBoxResponse",
               "UpdateUserProfileRequest",
               "BaseResponsePublicProfileResponse",
+              "OwnerResponse",
               "PublicProfileResponse",
-              "OwnerResponse"
+              "BoundingBoxResponse"
             ],
             "deleted": [
               "UserSignUpRequest"
@@ -3790,20 +3790,20 @@
                             "items": {
                               "required": {
                                 "added": [
+                                  "clusterId",
                                   "photoBounds",
-                                  "tileBounds",
-                                  "clusterId"
+                                  "tileBounds"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ]
                               },
                               "properties": {
                                 "added": [
+                                  "photoBounds",
                                   "tileBounds",
-                                  "clusterId",
-                                  "photoBounds"
+                                  "clusterId"
                                 ],
                                 "deleted": [
                                   "avgDistanceMeters",
@@ -5127,9 +5127,9 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
-                    "tileBounds",
                     "clusterId",
-                    "photoBounds"
+                    "photoBounds",
+                    "tileBounds"
                   ],
                   "deleted": [
                     "maxDistanceMeters",
@@ -5143,8 +5143,8 @@
                     "tileBounds"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ],
                   "modified": {
                     "center": {
@@ -5189,20 +5189,20 @@
                       "items": {
                         "required": {
                           "added": [
+                            "clusterId",
                             "photoBounds",
-                            "tileBounds",
-                            "clusterId"
+                            "tileBounds"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ]
                         },
                         "properties": {
                           "added": [
+                            "photoBounds",
                             "tileBounds",
-                            "clusterId",
-                            "photoBounds"
+                            "clusterId"
                           ],
                           "deleted": [
                             "avgDistanceMeters",
@@ -8638,10 +8638,10 @@
         },
         "paths": {
           "added": [
-            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
             "/api/admin/missions",
             "/api/admin/missions/{id}",
-            "/api/admin/missions/{id}/close"
+            "/api/admin/missions/{id}/close",
+            "/api/admin/missions/{missionId}/submissions/{submissionId}/review"
           ],
           "modified": {
             "/api/admin/users": {
@@ -8932,17 +8932,17 @@
           "schemas": {
             "added": [
               "Value",
-              "Absent",
-              "UpdateSystemMissionRequest",
               "Clear",
+              "Absent",
               "Gps",
-              "CreateSystemMissionRequest",
               "SystemMissionResponse",
               "BaseResponseSystemMissionsResponse",
+              "CreateSystemMissionRequest",
               "PatchString",
               "ReviewSystemMissionSubmissionRequest",
               "SystemMissionsResponse",
-              "BaseResponseSystemMissionResponse"
+              "BaseResponseSystemMissionResponse",
+              "UpdateSystemMissionRequest"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

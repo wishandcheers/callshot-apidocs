@@ -160,14 +160,14 @@
         "components": {
           "schemas": {
             "added": [
-              "ShutterSummaryInfo",
-              "UpdateUserProfileRequest"
+              "UpdateUserProfileRequest",
+              "ShutterSummaryInfo"
             ],
             "deleted": [
-              "PhotoClusterRequest",
               "UserSignUpRequest",
-              "ClusterAreaRequest",
-              "ShutterSummary"
+              "PhotoClusterRequest",
+              "ShutterSummary",
+              "ClusterAreaRequest"
             ],
             "modified": {
               "BaseResponseUserProfileResponse": {
@@ -593,10 +593,10 @@
         },
         "paths": {
           "added": [
-            "/api/admin/missions",
-            "/api/admin/missions/{id}",
             "/api/admin/missions/{id}/close",
-            "/api/admin/missions/{missionId}/submissions/{submissionId}/review"
+            "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
+            "/api/admin/missions",
+            "/api/admin/missions/{id}"
           ],
           "modified": {
             "/api/admin/users": {
@@ -655,18 +655,18 @@
         "components": {
           "schemas": {
             "added": [
-              "Clear",
-              "CreateSystemMissionRequest",
-              "ReviewSystemMissionSubmissionRequest",
-              "SystemMissionsResponse",
-              "PatchString",
               "Absent",
               "BaseResponseSystemMissionResponse",
-              "Gps",
-              "BaseResponseSystemMissionsResponse",
+              "SystemMissionResponse",
+              "CreateSystemMissionRequest",
               "UpdateSystemMissionRequest",
               "Value",
-              "SystemMissionResponse"
+              "Clear",
+              "Gps",
+              "SystemMissionsResponse",
+              "BaseResponseSystemMissionsResponse",
+              "PatchString",
+              "ReviewSystemMissionSubmissionRequest"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
