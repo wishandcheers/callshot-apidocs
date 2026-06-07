@@ -12,17 +12,17 @@
         },
         "paths": {
           "added": [
-            "/api/my/photos/published",
-            "/api/my/drafts",
             "/api/my/photos",
-            "/api/public/photos/clusters",
-            "/api/my/drafts/{id}",
-            "/api/public/photos/cluster-area",
-            "/api/my/photos/{id}",
-            "/api/public/photos/bulk",
-            "/api/public/photos/{id}",
             "/api/my/drafts/{id}/publish",
-            "/api/public/photos"
+            "/api/my/drafts",
+            "/api/my/photos/published",
+            "/api/public/photos",
+            "/api/my/drafts/{id}",
+            "/api/public/photos/{id}",
+            "/api/public/photos/clusters",
+            "/api/public/photos/bulk",
+            "/api/my/photos/{id}",
+            "/api/public/photos/cluster-area"
           ],
           "modified": {
             "/api/photos": {

@@ -20,23 +20,23 @@
         },
         "paths": {
           "added": [
-            "/api/shutter/users/{userId}",
-            "/api/storage/presigned-url",
-            "/api/storage/complete",
             "/api/shutter/statistics",
             "/api/shutter/leaderboard",
-            "/api/shutter/me"
+            "/api/shutter/users/{userId}",
+            "/api/storage/complete",
+            "/api/shutter/me",
+            "/api/storage/presigned-url"
           ],
           "deleted": [
-            "/api/photos/{id}",
-            "/api/photos/my",
+            "/api/photos/clusters",
             "/api/photos/cluster-area",
             "/api/photos/drafts/{id}",
-            "/api/photos",
             "/api/my/submissions",
-            "/api/photos/drafts/{id}/publish",
-            "/api/photos/clusters",
+            "/api/photos",
             "/api/photos/my/published",
+            "/api/photos/drafts/{id}/publish",
+            "/api/photos/my",
+            "/api/photos/{id}",
             "/api/photos/my/drafts"
           ],
           "modified": {
@@ -3695,27 +3695,27 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponsePresignedUrlResponse",
-              "ShutterResponse",
-              "PresignedUrlRequest",
               "BaseResponseRankStatisticsResponse",
-              "BaseResponseShutterResponse",
-              "LeaderboardEntryResponse",
-              "PresignedUrlResponse",
-              "RankStatisticsResponse",
-              "CompleteUploadRequest",
-              "BaseResponseLeaderboardResponse",
+              "ShutterSummaryInfo",
               "LeaderboardResponse",
-              "ShutterSummaryInfo"
+              "PresignedUrlResponse",
+              "BaseResponsePresignedUrlResponse",
+              "CompleteUploadRequest",
+              "BaseResponseShutterResponse",
+              "PresignedUrlRequest",
+              "RankStatisticsResponse",
+              "BaseResponseLeaderboardResponse",
+              "ShutterResponse",
+              "LeaderboardEntryResponse"
             ],
             "deleted": [
-              "SubmissionRequestInfoDto",
-              "MySubmissionItemDto",
+              "ClusterAreaRequest",
               "PhotoClusterRequest",
               "SubmissionPhotoInfoDto",
-              "ClusterAreaRequest",
-              "BaseResponseMySubmissionsResponse",
-              "MySubmissionsResponse"
+              "MySubmissionsResponse",
+              "MySubmissionItemDto",
+              "SubmissionRequestInfoDto",
+              "BaseResponseMySubmissionsResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -7195,7 +7195,7 @@
         {
           "id": "request-parameter-removed",
           "text": "deleted the `query` request parameter `request`",
-          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
@@ -7207,7 +7207,7 @@
         {
           "id": "request-parameter-removed",
           "text": "deleted the `query` request parameter `request`",
-          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPhotoClusters",
@@ -7789,7 +7789,7 @@
         {
           "id": "request-parameter-removed",
           "text": "deleted the `query` request parameter `request`",
-          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
@@ -7801,7 +7801,7 @@
         {
           "id": "request-parameter-removed",
           "text": "deleted the `query` request parameter `request`",
-          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPhotoClusters",
@@ -7836,15 +7836,15 @@
         },
         "paths": {
           "added": [
-            "/api/admin/users/{id}",
             "/api/admin/users/{id}/profile",
-            "/api/admin/users"
+            "/api/admin/users",
+            "/api/admin/users/{id}"
           ],
           "deleted": [
-            "/internal/admin/photos",
-            "/internal/admin/users",
             "/internal/admin/users/{id}",
-            "/internal/admin/users/{id}/profile"
+            "/internal/admin/users/{id}/profile",
+            "/internal/admin/photos",
+            "/internal/admin/users"
           ]
         },
         "tags": {
@@ -7859,18 +7859,18 @@
         "components": {
           "schemas": {
             "added": [
-              "UserAuthority",
-              "User"
+              "User",
+              "UserAuthority"
             ],
             "deleted": [
-              "BaseResponsePhotosResponse",
               "PhotoResponse",
-              "UserAuthorities",
-              "BoundingBox",
-              "Gps",
-              "PhotosResponse",
               "UrlResult",
-              "Users"
+              "UserAuthorities",
+              "PhotosResponse",
+              "Users",
+              "BaseResponsePhotosResponse",
+              "Gps",
+              "BoundingBox"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -7906,8 +7906,8 @@
                             "profile": {
                               "required": {
                                 "deleted": [
-                                  "updatedAt",
-                                  "createdAt"
+                                  "createdAt",
+                                  "updatedAt"
                                 ]
                               },
                               "properties": {
@@ -8044,8 +8044,8 @@
                           "providerId"
                         ],
                         "deleted": [
-                          "providerKey",
-                          "createdAt"
+                          "createdAt",
+                          "providerKey"
                         ]
                       },
                       "properties": {
@@ -8090,8 +8090,8 @@
                             },
                             "required": {
                               "deleted": [
-                                "createdAt",
-                                "updatedAt"
+                                "updatedAt",
+                                "createdAt"
                               ]
                             },
                             "properties": {
@@ -8256,14 +8256,14 @@
                     "providerId"
                   ],
                   "deleted": [
-                    "createdAt",
-                    "providerKey"
+                    "providerKey",
+                    "createdAt"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "provider",
-                    "providerId"
+                    "providerId",
+                    "provider"
                   ],
                   "deleted": [
                     "providerKey"
@@ -8302,8 +8302,8 @@
                       },
                       "required": {
                         "deleted": [
-                          "createdAt",
-                          "updatedAt"
+                          "updatedAt",
+                          "createdAt"
                         ]
                       },
                       "properties": {
@@ -8333,8 +8333,8 @@
                 },
                 "properties": {
                   "added": [
-                    "createdAt",
-                    "user"
+                    "user",
+                    "createdAt"
                   ],
                   "deleted": [
                     "users"
@@ -8343,8 +8343,8 @@
                     "profile": {
                       "required": {
                         "deleted": [
-                          "updatedAt",
-                          "createdAt"
+                          "createdAt",
+                          "updatedAt"
                         ]
                       },
                       "properties": {
@@ -8369,14 +8369,14 @@
               "UserProfile": {
                 "required": {
                   "deleted": [
-                    "createdAt",
-                    "updatedAt"
+                    "updatedAt",
+                    "createdAt"
                   ]
                 },
                 "properties": {
                   "deleted": [
-                    "updatedAt",
-                    "createdAt"
+                    "createdAt",
+                    "updatedAt"
                   ]
                 }
               }

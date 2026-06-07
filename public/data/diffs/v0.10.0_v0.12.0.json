@@ -109,8 +109,8 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "clusterId",
-                                                    "tileBounds"
+                                                    "tileBounds",
+                                                    "clusterId"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -123,8 +123,8 @@
                                                     "tileBounds"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "center": {
@@ -195,8 +195,8 @@
                                   "tileBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ],
                                 "modified": {
                                   "center": {
@@ -242,18 +242,18 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
-                    "clusterId",
-                    "tileBounds"
+                    "tileBounds",
+                    "clusterId"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "tileBounds",
-                    "clusterId"
+                    "clusterId",
+                    "tileBounds"
                   ],
                   "deleted": [
                     "avgDistanceMeters",
@@ -296,8 +296,8 @@
                             "tileBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ],
                           "modified": {
                             "center": {
@@ -529,10 +529,10 @@
         },
         "paths": {
           "added": [
+            "/api/admin/missions/{id}",
             "/api/admin/missions/{id}/close",
             "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions",
-            "/api/admin/missions/{id}"
+            "/api/admin/missions"
           ],
           "modified": {
             "/api/admin/users": {
@@ -606,18 +606,18 @@
         "components": {
           "schemas": {
             "added": [
-              "SystemMissionsResponse",
-              "Clear",
-              "CreateSystemMissionRequest",
-              "BaseResponseSystemMissionResponse",
-              "Value",
-              "BaseResponseSystemMissionsResponse",
               "Gps",
-              "UpdateSystemMissionRequest",
+              "ReviewSystemMissionSubmissionRequest",
+              "SystemMissionsResponse",
+              "CreateSystemMissionRequest",
               "SystemMissionResponse",
+              "Clear",
               "Absent",
+              "Value",
               "PatchString",
-              "ReviewSystemMissionSubmissionRequest"
+              "UpdateSystemMissionRequest",
+              "BaseResponseSystemMissionsResponse",
+              "BaseResponseSystemMissionResponse"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -742,7 +742,7 @@
         {
           "id": "response-property-enum-value-added",
           "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
-          "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+          "comment": "Adding new enum values to a response can be unexpected for clients; use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
           "operationId": "findAll",
@@ -865,7 +865,7 @@
         {
           "id": "response-property-enum-value-added",
           "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
-          "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+          "comment": "Adding new enum values to a response can be unexpected for clients; use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
           "operationId": "findAll",

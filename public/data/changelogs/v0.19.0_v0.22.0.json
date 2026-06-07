@@ -61,7 +61,7 @@
       {
         "id": "request-parameter-property-type-changed",
         "text": "for the `query` request parameter `ids`, the type/format of property `items/` was changed from `integer`/`int64` to `string`/``",
-        "comment": "This is a warning because parameter objects can be passed in differnt ways, some of which allow this type change and others do not.",
+        "comment": "This is a warning because parameter objects can be passed in different ways, some of which allow this type change while others do not.",
         "level": 2,
         "operation": "GET",
         "operationId": "getPublicPhotoDetails",

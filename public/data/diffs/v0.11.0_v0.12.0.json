@@ -47,8 +47,8 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "clusterId",
-                                                    "tileBounds"
+                                                    "tileBounds",
+                                                    "clusterId"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -115,8 +115,8 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "tileBounds",
-                                  "clusterId"
+                                  "clusterId",
+                                  "tileBounds"
                                 ],
                                 "deleted": [
                                   "avgDistanceMeters",
@@ -158,8 +158,8 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
-                    "clusterId",
-                    "tileBounds"
+                    "tileBounds",
+                    "clusterId"
                   ],
                   "deleted": [
                     "avgDistanceMeters",
@@ -198,8 +198,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "tileBounds",
-                            "clusterId"
+                            "clusterId",
+                            "tileBounds"
                           ],
                           "deleted": [
                             "avgDistanceMeters",
@@ -507,7 +507,7 @@
         {
           "id": "response-property-enum-value-added",
           "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
-          "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+          "comment": "Adding new enum values to a response can be unexpected for clients; use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
           "operationId": "findAll",
@@ -521,7 +521,7 @@
         {
           "id": "response-property-enum-value-added",
           "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
-          "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+          "comment": "Adding new enum values to a response can be unexpected for clients; use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
           "operationId": "findAll",

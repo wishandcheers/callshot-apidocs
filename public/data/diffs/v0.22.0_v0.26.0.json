@@ -95,12 +95,12 @@
         "components": {
           "schemas": {
             "added": [
-              "BookmarkedPhotoView",
               "BookmarkedPhotoUrls",
-              "WalletBalanceResponse",
-              "BaseResponseConvertShotsResponse",
               "BaseResponseWalletBalanceResponse",
-              "ConvertShotsResponse"
+              "WalletBalanceResponse",
+              "ConvertShotsResponse",
+              "BookmarkedPhotoView",
+              "BaseResponseConvertShotsResponse"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {
@@ -255,9 +255,9 @@
         "components": {
           "schemas": {
             "added": [
+              "ExternalEventPageResponse",
               "BaseResponseExternalEventPageResponse",
-              "ExternalEventResponse",
-              "ExternalEventPageResponse"
+              "ExternalEventResponse"
             ]
           }
         }

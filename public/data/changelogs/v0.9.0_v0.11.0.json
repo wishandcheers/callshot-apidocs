@@ -235,7 +235,7 @@
       {
         "id": "request-parameter-removed",
         "text": "deleted the `query` request parameter `request`",
-        "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+        "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
         "level": 2,
         "operation": "GET",
         "operationId": "getPhotosInClusterArea",
@@ -247,7 +247,7 @@
       {
         "id": "request-parameter-removed",
         "text": "deleted the `query` request parameter `request`",
-        "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+        "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
         "level": 2,
         "operation": "GET",
         "operationId": "getPhotoClusters",

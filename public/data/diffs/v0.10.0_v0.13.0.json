@@ -2618,9 +2618,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "tileBounds",
                                                     "clusterId",
-                                                    "photoBounds"
+                                                    "photoBounds",
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -2629,13 +2629,13 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "tileBounds",
                                                     "clusterId",
-                                                    "photoBounds"
+                                                    "photoBounds",
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "center": {
@@ -3234,11 +3234,11 @@
         "components": {
           "schemas": {
             "added": [
+              "BoundingBoxResponse",
               "UpdateUserProfileRequest",
-              "BaseResponsePublicProfileResponse",
               "OwnerResponse",
               "PublicProfileResponse",
-              "BoundingBoxResponse"
+              "BaseResponsePublicProfileResponse"
             ],
             "deleted": [
               "UserSignUpRequest"
@@ -3790,9 +3790,9 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "clusterId",
                                   "photoBounds",
-                                  "tileBounds"
+                                  "tileBounds",
+                                  "clusterId"
                                 ],
                                 "deleted": [
                                   "avgDistanceMeters",
@@ -3801,13 +3801,13 @@
                               },
                               "properties": {
                                 "added": [
+                                  "clusterId",
                                   "photoBounds",
-                                  "tileBounds",
-                                  "clusterId"
+                                  "tileBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ],
                                 "modified": {
                                   "center": {
@@ -5138,13 +5138,13 @@
                 },
                 "properties": {
                   "added": [
+                    "tileBounds",
                     "clusterId",
-                    "photoBounds",
-                    "tileBounds"
+                    "photoBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ],
                   "modified": {
                     "center": {
@@ -5189,9 +5189,9 @@
                       "items": {
                         "required": {
                           "added": [
-                            "clusterId",
                             "photoBounds",
-                            "tileBounds"
+                            "tileBounds",
+                            "clusterId"
                           ],
                           "deleted": [
                             "avgDistanceMeters",
@@ -5200,13 +5200,13 @@
                         },
                         "properties": {
                           "added": [
+                            "clusterId",
                             "photoBounds",
-                            "tileBounds",
-                            "clusterId"
+                            "tileBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ],
                           "modified": {
                             "center": {
@@ -8931,18 +8931,18 @@
         "components": {
           "schemas": {
             "added": [
-              "Value",
+              "SystemMissionsResponse",
               "Clear",
-              "Absent",
-              "Gps",
-              "SystemMissionResponse",
-              "BaseResponseSystemMissionsResponse",
+              "BaseResponseSystemMissionResponse",
               "CreateSystemMissionRequest",
               "PatchString",
+              "UpdateSystemMissionRequest",
+              "Gps",
+              "Absent",
+              "BaseResponseSystemMissionsResponse",
+              "SystemMissionResponse",
               "ReviewSystemMissionSubmissionRequest",
-              "SystemMissionsResponse",
-              "BaseResponseSystemMissionResponse",
-              "UpdateSystemMissionRequest"
+              "Value"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -9522,7 +9522,7 @@
         {
           "id": "response-property-enum-value-added",
           "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
-          "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+          "comment": "Adding new enum values to a response can be unexpected for clients; use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
           "operationId": "findAll",
@@ -9744,7 +9744,7 @@
         {
           "id": "response-property-enum-value-added",
           "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
-          "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+          "comment": "Adding new enum values to a response can be unexpected for clients; use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
           "operationId": "findAll",

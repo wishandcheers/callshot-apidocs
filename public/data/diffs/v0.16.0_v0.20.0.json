@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/settings",
             "/api/public/profiles/{userId}/review-summary",
+            "/api/settings",
             "/api/public/profiles/{userId}/reviews",
             "/api/photo-requests/{requestId}/submissions/{submissionId}/review"
           ],
@@ -3659,24 +3659,24 @@
         "components": {
           "schemas": {
             "added": [
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "UpdateSubmissionReviewRequest",
               "SubmissionReviewResponse",
-              "Value",
-              "CommissionStatsInfo",
-              "ReviewSummaryResponse",
+              "CreateSubmissionReviewRequest",
+              "CursorRequest",
               "Clear",
+              "UpdateUserSettingsRequest",
+              "UserSettingsResponse",
+              "CommissionStatsInfo",
+              "BaseResponseSubmissionReviewResponse",
+              "Value",
+              "CursorPageSubmissionReviewResponse",
+              "ReviewSummaryInfo",
               "PatchBoolean",
               "BaseResponseUserSettingsResponse",
-              "UserSettingsResponse",
-              "BaseResponseReviewSummaryResponse",
+              "ReviewSummaryResponse",
               "Absent",
-              "CursorRequest",
-              "UpdateUserSettingsRequest",
-              "BaseResponseSubmissionReviewResponse",
-              "UpdateSubmissionReviewRequest",
-              "ReviewSummaryInfo",
-              "CursorPageSubmissionReviewResponse",
-              "BaseResponseCursorPageSubmissionReviewResponse",
-              "CreateSubmissionReviewRequest"
+              "BaseResponseReviewSummaryResponse"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {
@@ -7283,7 +7283,7 @@
         {
           "id": "request-parameter-property-type-changed",
           "text": "for the `query` request parameter `ids`, the type/format of property `items/` was changed from `integer`/`int64` to `string`/``",
-          "comment": "This is a warning because parameter objects can be passed in differnt ways, some of which allow this type change and others do not.",
+          "comment": "This is a warning because parameter objects can be passed in different ways, some of which allow this type change while others do not.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
@@ -7755,7 +7755,7 @@
         {
           "id": "request-parameter-property-type-changed",
           "text": "for the `query` request parameter `ids`, the type/format of property `items/` was changed from `integer`/`int64` to `string`/``",
-          "comment": "This is a warning because parameter objects can be passed in differnt ways, some of which allow this type change and others do not.",
+          "comment": "This is a warning because parameter objects can be passed in different ways, some of which allow this type change while others do not.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",

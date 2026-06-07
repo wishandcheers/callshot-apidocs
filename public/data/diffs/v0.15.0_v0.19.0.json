@@ -12,11 +12,11 @@
         },
         "paths": {
           "added": [
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/settings",
             "/api/public/profiles/{userId}/review-summary",
             "/api/public/profiles/{userId}/reviews",
-            "/api/explore/photos",
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/settings"
+            "/api/explore/photos"
           ],
           "modified": {
             "/api/profile": {
@@ -98,28 +98,28 @@
         "components": {
           "schemas": {
             "added": [
+              "CursorPageSubmissionReviewResponse",
               "BaseResponseUserSettingsResponse",
-              "UserSettingsResponse",
-              "BaseResponseCursorPageSubmissionReviewResponse",
+              "SubmissionReviewResponse",
               "BaseResponseReviewSummaryResponse",
-              "CursorRequest",
-              "Value",
               "ReviewSummaryInfo",
               "ExplorePhotoResponse",
-              "BaseResponseCursorPageExplorePhotoResponse",
-              "UpdateUserSettingsRequest",
-              "CursorPageExplorePhotoResponse",
-              "ReviewSummaryResponse",
-              "CursorPageSubmissionReviewResponse",
-              "Absent",
-              "PatchBoolean",
-              "CommissionStatsInfo",
-              "FeedOwnerResponse",
-              "BaseResponseSubmissionReviewResponse",
-              "CreateSubmissionReviewRequest",
               "UpdateSubmissionReviewRequest",
+              "CursorRequest",
+              "UserSettingsResponse",
+              "BaseResponseSubmissionReviewResponse",
+              "CommissionStatsInfo",
+              "CreateSubmissionReviewRequest",
+              "Absent",
+              "Value",
+              "ReviewSummaryResponse",
+              "PatchBoolean",
+              "UpdateUserSettingsRequest",
               "Clear",
-              "SubmissionReviewResponse"
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "FeedOwnerResponse",
+              "CursorPageExplorePhotoResponse",
+              "BaseResponseCursorPageExplorePhotoResponse"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {

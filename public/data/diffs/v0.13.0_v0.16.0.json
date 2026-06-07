@@ -12,12 +12,12 @@
         },
         "paths": {
           "added": [
-            "/api/my/bookmarks",
             "/api/photos/{photoId}/comments",
-            "/api/photos/{photoId}/bookmark",
-            "/api/photos/{photoId}/comments/{commentId}",
             "/api/explore/photos",
-            "/api/photos/{photoId}/comments/{commentId}/replies"
+            "/api/photos/{photoId}/comments/{commentId}/replies",
+            "/api/photos/{photoId}/bookmark",
+            "/api/my/bookmarks",
+            "/api/photos/{photoId}/comments/{commentId}"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -36,9 +36,9 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "isBookmarkedByUser",
+                                            "commentCount",
                                             "bookmarkCount",
-                                            "commentCount"
+                                            "isBookmarkedByUser"
                                           ]
                                         },
                                         "properties": {
@@ -74,22 +74,22 @@
         "components": {
           "schemas": {
             "added": [
-              "CommentPageResponse",
-              "BookmarkedPhotosResponse",
-              "CursorPageExplorePhotoResponse",
-              "CreateCommentRequest",
-              "BaseResponseCursorPageExplorePhotoResponse",
-              "PageCursor",
-              "FeedOwnerResponse",
               "ExplorePhotoResponse",
-              "BaseResponseCommentResponse",
-              "BaseResponseBookmarkedPhotosResponse",
               "CommentResponse",
-              "UpdateCommentRequest",
-              "BookmarkedPhotoItem",
+              "FeedOwnerResponse",
+              "BaseResponseToggleBookmarkResponse",
               "ToggleBookmarkResponse",
               "BaseResponseCommentPageResponse",
-              "BaseResponseToggleBookmarkResponse"
+              "CreateCommentRequest",
+              "BaseResponseBookmarkedPhotosResponse",
+              "BookmarkedPhotosResponse",
+              "BaseResponseCommentResponse",
+              "BookmarkedPhotoItem",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "CommentPageResponse",
+              "UpdateCommentRequest",
+              "PageCursor",
+              "CursorPageExplorePhotoResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -98,16 +98,16 @@
                     "body": {
                       "required": {
                         "added": [
+                          "isBookmarkedByUser",
                           "bookmarkCount",
-                          "commentCount",
-                          "isBookmarkedByUser"
+                          "commentCount"
                         ]
                       },
                       "properties": {
                         "added": [
+                          "isBookmarkedByUser",
                           "bookmarkCount",
-                          "commentCount",
-                          "isBookmarkedByUser"
+                          "commentCount"
                         ]
                       }
                     }
@@ -117,16 +117,16 @@
               "EngagementResponse": {
                 "required": {
                   "added": [
-                    "bookmarkCount",
                     "isBookmarkedByUser",
+                    "bookmarkCount",
                     "commentCount"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "bookmarkCount",
                     "commentCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "bookmarkCount"
                   ]
                 }
               }

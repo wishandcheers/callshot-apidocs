@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
+            "/api/public/profiles/{userId}",
             "/api/public/photos/clusters/{clusterId}/photos",
             "/api/photos/{photoId}/bookmark",
-            "/api/my/bookmarks",
-            "/api/public/profiles/{userId}"
+            "/api/my/bookmarks"
           ],
           "modified": {
             "/api/my/drafts": {
@@ -2068,8 +2068,8 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "isBookmarkedByUser",
-                                            "bookmarkCount"
+                                            "bookmarkCount",
+                                            "isBookmarkedByUser"
                                           ],
                                           "modified": {
                                             "dislikeCount": {
@@ -2598,9 +2598,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
+                                                    "clusterId",
                                                     "photoBounds",
-                                                    "tileBounds",
-                                                    "clusterId"
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -2609,9 +2609,9 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "tileBounds",
                                                     "clusterId",
-                                                    "photoBounds"
+                                                    "photoBounds",
+                                                    "tileBounds"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -3215,16 +3215,16 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseToggleBookmarkResponse",
-              "ToggleBookmarkResponse",
               "PageCursor",
-              "BookmarkedPhotoItem",
-              "PublicProfileResponse",
               "BookmarkedPhotosResponse",
               "OwnerResponse",
+              "BookmarkedPhotoItem",
+              "ToggleBookmarkResponse",
+              "BaseResponseBookmarkedPhotosResponse",
               "BaseResponsePublicProfileResponse",
               "BoundingBoxResponse",
-              "BaseResponseBookmarkedPhotosResponse"
+              "PublicProfileResponse",
+              "BaseResponseToggleBookmarkResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3783,13 +3783,13 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "photoBounds",
                                   "tileBounds",
-                                  "clusterId"
+                                  "clusterId",
+                                  "photoBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ]
                               },
                               "properties": {
@@ -4830,8 +4830,8 @@
                 },
                 "properties": {
                   "added": [
-                    "isBookmarkedByUser",
-                    "bookmarkCount"
+                    "bookmarkCount",
+                    "isBookmarkedByUser"
                   ],
                   "modified": {
                     "dislikeCount": {
@@ -5122,13 +5122,13 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
-                    "tileBounds",
                     "clusterId",
-                    "photoBounds"
+                    "photoBounds",
+                    "tileBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ]
                 },
                 "properties": {
@@ -5138,8 +5138,8 @@
                     "photoBounds"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ],
                   "modified": {
                     "center": {
@@ -5184,13 +5184,13 @@
                       "items": {
                         "required": {
                           "added": [
-                            "photoBounds",
                             "tileBounds",
-                            "clusterId"
+                            "clusterId",
+                            "photoBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ]
                         },
                         "properties": {
@@ -10208,7 +10208,7 @@
         {
           "id": "response-property-enum-value-added",
           "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
-          "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+          "comment": "Adding new enum values to a response can be unexpected for clients; use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
           "operationId": "findAll",
@@ -10519,7 +10519,7 @@
         {
           "id": "response-property-enum-value-added",
           "text": "added the new `SYSTEM` enum value to the `body/items/user/providerKey/provider` response property for the response status `200`",
-          "comment": "Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.",
+          "comment": "Adding new enum values to a response can be unexpected for clients; use x-extensible-enum instead.",
           "level": 2,
           "operation": "GET",
           "operationId": "findAll",

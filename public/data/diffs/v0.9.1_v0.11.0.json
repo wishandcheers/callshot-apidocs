@@ -160,14 +160,14 @@
         "components": {
           "schemas": {
             "added": [
-              "UpdateUserProfileRequest",
-              "ShutterSummaryInfo"
+              "ShutterSummaryInfo",
+              "UpdateUserProfileRequest"
             ],
             "deleted": [
               "UserSignUpRequest",
-              "PhotoClusterRequest",
+              "ClusterAreaRequest",
               "ShutterSummary",
-              "ClusterAreaRequest"
+              "PhotoClusterRequest"
             ],
             "modified": {
               "BaseResponseUserProfileResponse": {
@@ -351,7 +351,7 @@
         {
           "id": "request-parameter-removed",
           "text": "deleted the `query` request parameter `request`",
-          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
@@ -363,7 +363,7 @@
         {
           "id": "request-parameter-removed",
           "text": "deleted the `query` request parameter `request`",
-          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPhotoClusters",
@@ -554,7 +554,7 @@
         {
           "id": "request-parameter-removed",
           "text": "deleted the `query` request parameter `request`",
-          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
@@ -566,7 +566,7 @@
         {
           "id": "request-parameter-removed",
           "text": "deleted the `query` request parameter `request`",
-          "comment": "This is a warning because some apps may return an error when receiving a parameter that they do not expect. It is recommended to deprecate the parameter first.",
+          "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPhotoClusters",
@@ -593,10 +593,10 @@
         },
         "paths": {
           "added": [
+            "/api/admin/missions/{id}",
             "/api/admin/missions/{id}/close",
             "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions",
-            "/api/admin/missions/{id}"
+            "/api/admin/missions"
           ],
           "modified": {
             "/api/admin/users": {
@@ -655,18 +655,18 @@
         "components": {
           "schemas": {
             "added": [
-              "Absent",
-              "BaseResponseSystemMissionResponse",
-              "SystemMissionResponse",
-              "CreateSystemMissionRequest",
-              "UpdateSystemMissionRequest",
               "Value",
-              "Clear",
               "Gps",
-              "SystemMissionsResponse",
-              "BaseResponseSystemMissionsResponse",
               "PatchString",
-              "ReviewSystemMissionSubmissionRequest"
+              "SystemMissionsResponse",
+              "CreateSystemMissionRequest",
+              "SystemMissionResponse",
+              "BaseResponseSystemMissionResponse",
+              "UpdateSystemMissionRequest",
+              "Absent",
+              "BaseResponseSystemMissionsResponse",
+              "ReviewSystemMissionSubmissionRequest",
+              "Clear"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

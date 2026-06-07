@@ -13,8 +13,8 @@
         "paths": {
           "added": [
             "/api/shutter/convert",
-            "/api/hashtags/{name}/photos",
-            "/api/wallet/me/balance"
+            "/api/wallet/me/balance",
+            "/api/hashtags/{name}/photos"
           ],
           "modified": {
             "/api/my/bookmarks": {
@@ -78,8 +78,8 @@
                                               "items": {
                                                 "properties": {
                                                   "added": [
-                                                    "imageWidth",
-                                                    "imageHeight"
+                                                    "imageHeight",
+                                                    "imageWidth"
                                                   ],
                                                   "modified": {
                                                     "thumbnail": {
@@ -129,8 +129,8 @@
                                             "image": {
                                               "properties": {
                                                 "added": [
-                                                  "width",
-                                                  "height"
+                                                  "height",
+                                                  "width"
                                                 ]
                                               }
                                             }
@@ -163,8 +163,8 @@
                                             "image": {
                                               "properties": {
                                                 "added": [
-                                                  "width",
-                                                  "height"
+                                                  "height",
+                                                  "width"
                                                 ]
                                               }
                                             }
@@ -275,14 +275,14 @@
                                                     "photo": {
                                                       "required": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ]
                                                       },
                                                       "properties": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ]
                                                       }
                                                     }
@@ -441,8 +441,8 @@
                                             "image": {
                                               "properties": {
                                                 "added": [
-                                                  "height",
-                                                  "width"
+                                                  "width",
+                                                  "height"
                                                 ]
                                               }
                                             }
@@ -475,8 +475,8 @@
                                             "image": {
                                               "properties": {
                                                 "added": [
-                                                  "height",
-                                                  "width"
+                                                  "width",
+                                                  "height"
                                                 ]
                                               }
                                             }
@@ -564,8 +564,8 @@
                                               "image": {
                                                 "properties": {
                                                   "added": [
-                                                    "height",
-                                                    "width"
+                                                    "width",
+                                                    "height"
                                                   ]
                                                 }
                                               }
@@ -657,8 +657,8 @@
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "width",
-                                                          "height"
+                                                          "height",
+                                                          "width"
                                                         ]
                                                       }
                                                     }
@@ -749,8 +749,8 @@
                                             "image": {
                                               "properties": {
                                                 "added": [
-                                                  "height",
-                                                  "width"
+                                                  "width",
+                                                  "height"
                                                 ]
                                               }
                                             }
@@ -780,16 +780,16 @@
         "components": {
           "schemas": {
             "added": [
-              "BookmarkedPhotoView",
-              "ConvertShotsResponse",
-              "WalletBalanceResponse",
-              "BookmarkedPhotoUrls",
-              "BaseResponseWalletBalanceResponse",
-              "CursorPageHashtagPhotoResponse",
-              "BaseResponseConvertShotsResponse",
               "HashtagPhotoOwnerResponse",
+              "WalletBalanceResponse",
+              "ConvertShotsResponse",
+              "BaseResponseCursorPageHashtagPhotoResponse",
+              "BaseResponseWalletBalanceResponse",
+              "BaseResponseConvertShotsResponse",
+              "CursorPageHashtagPhotoResponse",
+              "BookmarkedPhotoView",
               "HashtagPhotoResponse",
-              "BaseResponseCursorPageHashtagPhotoResponse"
+              "BookmarkedPhotoUrls"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {
@@ -822,8 +822,8 @@
                           "image": {
                             "properties": {
                               "added": [
-                                "width",
-                                "height"
+                                "height",
+                                "width"
                               ]
                             }
                           }
@@ -850,8 +850,8 @@
                                   "thumbnail": {
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -904,8 +904,8 @@
                                   "thumbnail": {
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -948,8 +948,8 @@
                                   "thumbnail": {
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -1041,8 +1041,8 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ]
                               },
                               "properties": {
@@ -1133,8 +1133,8 @@
                     "image": {
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -1151,8 +1151,8 @@
                     "thumbnail": {
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -1173,8 +1173,8 @@
                             "thumbnail": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -1207,8 +1207,8 @@
                             "thumbnail": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -1241,8 +1241,8 @@
                     "thumbnail": {
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -1259,8 +1259,8 @@
                             "thumbnail": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -1328,8 +1328,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ]
                         },
                         "properties": {
