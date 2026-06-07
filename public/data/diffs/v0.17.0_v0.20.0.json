@@ -3905,14 +3905,14 @@
         "components": {
           "schemas": {
             "added": [
-              "Value",
-              "UpdateUserSettingsRequest",
-              "Absent",
-              "PatchBoolean",
-              "UserSettingsResponse",
               "Clear",
               "CommissionStatsInfo",
-              "BaseResponseUserSettingsResponse"
+              "UserSettingsResponse",
+              "Absent",
+              "UpdateUserSettingsRequest",
+              "BaseResponseUserSettingsResponse",
+              "PatchBoolean",
+              "Value"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {

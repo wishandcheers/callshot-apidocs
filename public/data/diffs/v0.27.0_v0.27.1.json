@@ -1,0 +1,131 @@
+{
+  "fromVersion": "v0.27.0",
+  "toVersion": "v0.27.1",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.27.0",
+            "to": "0.27.1"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.27.0",
+            "to": "0.27.1"
+          }
+        },
+        "paths": {
+          "modified": {
+            "/api/admin/external/events/refresh": {
+              "operations": {
+                "modified": {
+                  "POST": {
+                    "summary": {
+                      "from": "외부 이벤트 수동 동기화",
+                      "to": "외부 이벤트 수동 동기화 (비동기)"
+                    },
+                    "description": {
+                      "from": "외부 API 전량을 받아 로컬 DB로 트랜잭션 교체한다. 운영자가 최신 데이터를 즉시 반영할 때 사용.",
+                      "to": "외부 API 전량 동기화를 백그라운드로 시작하고 즉시 202를 반환한다(전량 fetch가 수십 초 걸려 동기 호출은 504가 나기 때문). 완료까지 ~1분 뒤 목록을 다시 조회하면 반영된다. 이미 진행 중이면 새로 시작하지 않고 accepted=false로 응답한다."
+                    },
+                    "responses": {
+                      "added": [
+                        "202"
+                      ],
+                      "deleted": [
+                        "200"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "BaseResponseExternalEventRefreshResponse",
+              "ExternalEventRefreshResponse"
+            ],
+            "deleted": [
+              "BaseResponseExternalEventSyncResponse",
+              "ExternalEventSyncResponse"
+            ]
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "response-success-status-removed",
+          "text": "removed the success response with the status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "refresh",
+          "path": "/api/admin/external/events/refresh",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
+          "section": "paths",
+          "fingerprint": "98ccda62466b"
+        },
+        {
+          "id": "api-schema-removed",
+          "text": "removed the schema `BaseResponseExternalEventSyncResponse`",
+          "level": 1,
+          "section": "components",
+          "fingerprint": "66288b5b3549"
+        },
+        {
+          "id": "api-schema-removed",
+          "text": "removed the schema `ExternalEventSyncResponse`",
+          "level": 1,
+          "section": "components",
+          "fingerprint": "95d26552e9e3"
+        },
+        {
+          "id": "response-success-status-added",
+          "text": "added the success response with the status `202`",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "refresh",
+          "path": "/api/admin/external/events/refresh",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
+          "section": "paths",
+          "fingerprint": "7fb9ca75f8d1"
+        }
+      ],
+      "breaking": [
+        {
+          "id": "response-success-status-removed",
+          "text": "removed the success response with the status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "refresh",
+          "path": "/api/admin/external/events/refresh",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
+          "section": "paths",
+          "fingerprint": "98ccda62466b"
+        }
+      ],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 1,
+        "breaking": 1
+      }
+    }
+  }
+}

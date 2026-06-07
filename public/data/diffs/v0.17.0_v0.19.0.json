@@ -87,14 +87,14 @@
         "components": {
           "schemas": {
             "added": [
-              "Absent",
-              "BaseResponseUserSettingsResponse",
-              "PatchBoolean",
-              "Value",
               "UpdateUserSettingsRequest",
-              "Clear",
+              "PatchBoolean",
               "UserSettingsResponse",
-              "CommissionStatsInfo"
+              "Value",
+              "Absent",
+              "CommissionStatsInfo",
+              "BaseResponseUserSettingsResponse",
+              "Clear"
             ],
             "modified": {
               "BaseResponseUserProfileResponse": {

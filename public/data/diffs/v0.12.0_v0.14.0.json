@@ -2067,8 +2067,8 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "bookmarkCount",
-                                            "isBookmarkedByUser"
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
                                           ],
                                           "modified": {
                                             "dislikeCount": {
@@ -3292,15 +3292,15 @@
         "components": {
           "schemas": {
             "added": [
-              "BookmarkedPhotoItem",
-              "PublicProfileResponse",
-              "OwnerResponse",
-              "ToggleBookmarkResponse",
               "BaseResponsePublicProfileResponse",
+              "OwnerResponse",
               "BaseResponseBookmarkedPhotosResponse",
+              "PageCursor",
               "BaseResponseToggleBookmarkResponse",
+              "BookmarkedPhotoItem",
               "BookmarkedPhotosResponse",
-              "PageCursor"
+              "PublicProfileResponse",
+              "ToggleBookmarkResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {

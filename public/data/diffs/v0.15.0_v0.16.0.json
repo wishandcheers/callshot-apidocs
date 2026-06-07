@@ -23,10 +23,10 @@
         "components": {
           "schemas": {
             "added": [
-              "ExplorePhotoResponse",
+              "CursorPageExplorePhotoResponse",
               "BaseResponseCursorPageExplorePhotoResponse",
               "FeedOwnerResponse",
-              "CursorPageExplorePhotoResponse"
+              "ExplorePhotoResponse"
             ]
           }
         }

@@ -1,13 +1,13 @@
 {
   "fromVersion": "v0.25.0",
-  "toVersion": "v0.27.0",
+  "toVersion": "v0.27.1",
   "groups": {
     "api": {
       "diff": {
         "info": {
           "version": {
             "from": "0.25.0",
-            "to": "0.27.0"
+            "to": "0.27.1"
           }
         }
       },
@@ -25,13 +25,13 @@
         "info": {
           "version": {
             "from": "0.25.0",
-            "to": "0.27.0"
+            "to": "0.27.1"
           }
         },
         "paths": {
           "added": [
-            "/api/admin/external/events/refresh",
-            "/api/admin/external/events"
+            "/api/admin/external/events",
+            "/api/admin/external/events/refresh"
           ]
         },
         "tags": {
@@ -42,10 +42,10 @@
         "components": {
           "schemas": {
             "added": [
-              "ExternalEventSyncResponse",
+              "ExternalEventRefreshResponse",
               "ExternalEventResponse",
-              "BaseResponseExternalEventSyncResponse",
               "BaseResponseExternalEventPageResponse",
+              "BaseResponseExternalEventRefreshResponse",
               "ExternalEventPageResponse"
             ]
           }
@@ -59,10 +59,10 @@
           "operation": "GET",
           "operationId": "getExternalEvents",
           "path": "/api/admin/external/events",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json"
           },
           "fingerprint": "f4a599124d7c"
         },
@@ -73,10 +73,10 @@
           "operation": "POST",
           "operationId": "refresh",
           "path": "/api/admin/external/events/refresh",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json"
           },
           "fingerprint": "9f99ae084712"
         }

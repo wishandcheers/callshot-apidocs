@@ -1,0 +1,45 @@
+{
+  "fromVersion": "v0.27.0",
+  "toVersion": "v0.27.1",
+  "groups": {
+    "api": [],
+    "admin": [
+      {
+        "id": "response-success-status-removed",
+        "text": "removed the success response with the status `200`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "refresh",
+        "path": "/api/admin/external/events/refresh",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
+        "section": "paths",
+        "fingerprint": "98ccda62466b"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema `BaseResponseExternalEventSyncResponse`",
+        "level": 1,
+        "section": "components",
+        "fingerprint": "66288b5b3549"
+      },
+      {
+        "id": "api-schema-removed",
+        "text": "removed the schema `ExternalEventSyncResponse`",
+        "level": 1,
+        "section": "components",
+        "fingerprint": "95d26552e9e3"
+      },
+      {
+        "id": "response-success-status-added",
+        "text": "added the success response with the status `202`",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "refresh",
+        "path": "/api/admin/external/events/refresh",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
+        "section": "paths",
+        "fingerprint": "7fb9ca75f8d1"
+      }
+    ]
+  }
+}

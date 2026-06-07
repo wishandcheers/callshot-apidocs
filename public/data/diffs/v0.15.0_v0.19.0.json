@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/settings",
-            "/api/public/profiles/{userId}/review-summary",
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/public/profiles/{userId}/reviews",
+            "/api/public/profiles/{userId}/review-summary",
             "/api/explore/photos"
           ],
           "modified": {
@@ -98,28 +98,28 @@
         "components": {
           "schemas": {
             "added": [
-              "CursorPageSubmissionReviewResponse",
-              "BaseResponseUserSettingsResponse",
-              "SubmissionReviewResponse",
-              "BaseResponseReviewSummaryResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
               "ReviewSummaryInfo",
-              "ExplorePhotoResponse",
-              "UpdateSubmissionReviewRequest",
-              "CursorRequest",
-              "UserSettingsResponse",
+              "BaseResponseUserSettingsResponse",
+              "CursorPageExplorePhotoResponse",
+              "PatchBoolean",
               "BaseResponseSubmissionReviewResponse",
+              "FeedOwnerResponse",
+              "CursorRequest",
+              "UpdateUserSettingsRequest",
               "CommissionStatsInfo",
+              "BaseResponseReviewSummaryResponse",
+              "UpdateSubmissionReviewRequest",
+              "Value",
               "CreateSubmissionReviewRequest",
               "Absent",
-              "Value",
-              "ReviewSummaryResponse",
-              "PatchBoolean",
-              "UpdateUserSettingsRequest",
-              "Clear",
               "BaseResponseCursorPageSubmissionReviewResponse",
-              "FeedOwnerResponse",
-              "CursorPageExplorePhotoResponse",
-              "BaseResponseCursorPageExplorePhotoResponse"
+              "CursorPageSubmissionReviewResponse",
+              "ExplorePhotoResponse",
+              "ReviewSummaryResponse",
+              "UserSettingsResponse",
+              "Clear",
+              "SubmissionReviewResponse"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {

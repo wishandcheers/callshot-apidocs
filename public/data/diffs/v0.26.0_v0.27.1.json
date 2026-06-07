@@ -1,13 +1,13 @@
 {
   "fromVersion": "v0.26.0",
-  "toVersion": "v0.27.0",
+  "toVersion": "v0.27.1",
   "groups": {
     "api": {
       "diff": {
         "info": {
           "version": {
             "from": "0.26.0",
-            "to": "0.27.0"
+            "to": "0.27.1"
           }
         }
       },
@@ -25,7 +25,7 @@
         "info": {
           "version": {
             "from": "0.26.0",
-            "to": "0.27.0"
+            "to": "0.27.1"
           }
         },
         "paths": {
@@ -36,8 +36,8 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseExternalEventSyncResponse",
-              "ExternalEventSyncResponse"
+              "ExternalEventRefreshResponse",
+              "BaseResponseExternalEventRefreshResponse"
             ]
           }
         }
@@ -50,10 +50,10 @@
           "operation": "POST",
           "operationId": "refresh",
           "path": "/api/admin/external/events/refresh",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json",
+          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json"
           },
           "fingerprint": "9f99ae084712"
         }

@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/wallet/me/balance",
-            "/api/shutter/convert"
+            "/api/shutter/convert",
+            "/api/wallet/me/balance"
           ],
           "modified": {
             "/api/my/bookmarks": {
@@ -95,12 +95,12 @@
         "components": {
           "schemas": {
             "added": [
-              "BookmarkedPhotoUrls",
-              "BaseResponseWalletBalanceResponse",
               "WalletBalanceResponse",
-              "ConvertShotsResponse",
               "BookmarkedPhotoView",
-              "BaseResponseConvertShotsResponse"
+              "BaseResponseConvertShotsResponse",
+              "BaseResponseWalletBalanceResponse",
+              "ConvertShotsResponse",
+              "BookmarkedPhotoUrls"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {
@@ -255,9 +255,9 @@
         "components": {
           "schemas": {
             "added": [
+              "ExternalEventResponse",
               "ExternalEventPageResponse",
-              "BaseResponseExternalEventPageResponse",
-              "ExternalEventResponse"
+              "BaseResponseExternalEventPageResponse"
             ]
           }
         }

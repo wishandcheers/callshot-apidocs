@@ -12,11 +12,11 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/comments",
-            "/api/explore/photos",
             "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/photos/{photoId}/bookmark",
             "/api/my/bookmarks",
+            "/api/photos/{photoId}/bookmark",
+            "/api/explore/photos",
+            "/api/photos/{photoId}/comments",
             "/api/photos/{photoId}/comments/{commentId}"
           ],
           "modified": {
@@ -36,9 +36,9 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "commentCount",
+                                            "isBookmarkedByUser",
                                             "bookmarkCount",
-                                            "isBookmarkedByUser"
+                                            "commentCount"
                                           ]
                                         },
                                         "properties": {
@@ -74,21 +74,21 @@
         "components": {
           "schemas": {
             "added": [
-              "ExplorePhotoResponse",
-              "CommentResponse",
-              "FeedOwnerResponse",
-              "BaseResponseToggleBookmarkResponse",
-              "ToggleBookmarkResponse",
-              "BaseResponseCommentPageResponse",
-              "CreateCommentRequest",
-              "BaseResponseBookmarkedPhotosResponse",
-              "BookmarkedPhotosResponse",
-              "BaseResponseCommentResponse",
-              "BookmarkedPhotoItem",
               "BaseResponseCursorPageExplorePhotoResponse",
-              "CommentPageResponse",
+              "CommentResponse",
               "UpdateCommentRequest",
+              "ToggleBookmarkResponse",
+              "CommentPageResponse",
+              "BaseResponseToggleBookmarkResponse",
+              "BaseResponseBookmarkedPhotosResponse",
+              "CreateCommentRequest",
+              "BaseResponseCommentPageResponse",
+              "BaseResponseCommentResponse",
               "PageCursor",
+              "BookmarkedPhotosResponse",
+              "FeedOwnerResponse",
+              "ExplorePhotoResponse",
+              "BookmarkedPhotoItem",
               "CursorPageExplorePhotoResponse"
             ],
             "modified": {
@@ -98,9 +98,9 @@
                     "body": {
                       "required": {
                         "added": [
-                          "isBookmarkedByUser",
                           "bookmarkCount",
-                          "commentCount"
+                          "commentCount",
+                          "isBookmarkedByUser"
                         ]
                       },
                       "properties": {
@@ -117,16 +117,16 @@
               "EngagementResponse": {
                 "required": {
                   "added": [
-                    "isBookmarkedByUser",
                     "bookmarkCount",
-                    "commentCount"
+                    "commentCount",
+                    "isBookmarkedByUser"
                   ]
                 },
                 "properties": {
                   "added": [
+                    "bookmarkCount",
                     "commentCount",
-                    "isBookmarkedByUser",
-                    "bookmarkCount"
+                    "isBookmarkedByUser"
                   ]
                 }
               }

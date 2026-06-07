@@ -1,0 +1,23 @@
+{
+  "fromVersion": "v0.26.0",
+  "toVersion": "v0.27.1",
+  "groups": {
+    "api": [],
+    "admin": [
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "refresh",
+        "path": "/api/admin/external/events/refresh",
+        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json"
+        },
+        "fingerprint": "9f99ae084712"
+      }
+    ]
+  }
+}
