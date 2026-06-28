@@ -1,13 +1,13 @@
 {
   "fromVersion": "v0.27.1",
-  "toVersion": "v0.29.1",
+  "toVersion": "v0.29.2",
   "groups": {
     "api": {
       "diff": {
         "info": {
           "version": {
             "from": "0.27.1",
-            "to": "0.29.1"
+            "to": "0.29.2"
           }
         },
         "paths": {
@@ -308,12 +308,13 @@
         "info": {
           "version": {
             "from": "0.27.1",
-            "to": "0.29.1"
+            "to": "0.29.2"
           }
         },
         "paths": {
           "added": [
             "/api/admin/photos/seed/{source}",
+            "/api/admin/photos/seed/candidates",
             "/api/admin/photos/seed/import"
           ]
         },
@@ -325,11 +326,15 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseSeedImportResponse",
+              "SeedCandidateResponse",
+              "SeedImportResponse",
+              "SeedCandidatesResponse",
               "SeedDeleteResponse",
               "SeedImportRequest",
-              "SeedImportResponse",
-              "BaseResponseSeedDeleteResponse"
+              "SeedImportItemResponse",
+              "BaseResponseSeedCandidatesResponse",
+              "BaseResponseSeedDeleteResponse",
+              "BaseResponseSeedImportResponse"
             ]
           }
         }
@@ -339,12 +344,25 @@
           "id": "endpoint-added",
           "text": "endpoint added",
           "level": 1,
+          "operation": "GET",
+          "operationId": "candidates",
+          "path": "/api/admin/photos/seed/candidates",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
+          },
+          "fingerprint": "47cb08ddfd24"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
           "operation": "POST",
           "operationId": "import",
           "path": "/api/admin/photos/seed/import",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.1/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "e84197d82809"
         },
@@ -357,14 +375,14 @@
           "path": "/api/admin/photos/seed/{source}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.1/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "36f39176efca"
         }
       ],
       "breaking": [],
       "summary": {
-        "added": 2,
+        "added": 3,
         "removed": 0,
         "modified": 0,
         "breaking": 0

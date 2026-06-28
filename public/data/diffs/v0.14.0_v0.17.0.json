@@ -12,12 +12,12 @@
         },
         "paths": {
           "added": [
+            "/api/public/profiles/{userId}/reviews",
             "/api/photos/{photoId}/comments",
             "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/explore/photos",
-            "/api/public/profiles/{userId}/reviews",
             "/api/photos/{photoId}/comments/{commentId}/replies",
             "/api/photos/{photoId}/comments/{commentId}",
+            "/api/explore/photos",
             "/api/public/profiles/{userId}/review-summary"
           ],
           "modified": {
@@ -105,26 +105,26 @@
         "components": {
           "schemas": {
             "added": [
-              "ReviewSummaryInfo",
-              "UpdateCommentRequest",
-              "UpdateSubmissionReviewRequest",
-              "CreateCommentRequest",
-              "BaseResponseCursorPageSubmissionReviewResponse",
               "BaseResponseSubmissionReviewResponse",
-              "BaseResponseCommentResponse",
-              "CursorPageExplorePhotoResponse",
-              "CommentResponse",
-              "CreateSubmissionReviewRequest",
-              "BaseResponseReviewSummaryResponse",
-              "BaseResponseCommentPageResponse",
-              "CommentPageResponse",
-              "FeedOwnerResponse",
+              "ReviewSummaryResponse",
               "SubmissionReviewResponse",
-              "BaseResponseCursorPageExplorePhotoResponse",
-              "CursorRequest",
+              "FeedOwnerResponse",
+              "CommentResponse",
+              "BaseResponseCommentPageResponse",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "CommentPageResponse",
               "CursorPageSubmissionReviewResponse",
+              "UpdateCommentRequest",
+              "CursorRequest",
+              "ReviewSummaryInfo",
+              "CreateCommentRequest",
+              "CreateSubmissionReviewRequest",
+              "CursorPageExplorePhotoResponse",
+              "BaseResponseReviewSummaryResponse",
               "ExplorePhotoResponse",
-              "ReviewSummaryResponse"
+              "UpdateSubmissionReviewRequest",
+              "BaseResponseCommentResponse",
+              "BaseResponseCursorPageExplorePhotoResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {

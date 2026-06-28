@@ -2586,13 +2586,13 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
+                                                    "tileBounds",
                                                     "clusterId",
-                                                    "photoBounds",
-                                                    "tileBounds"
+                                                    "photoBounds"
                                                   ],
                                                   "deleted": [
-                                                    "maxDistanceMeters",
-                                                    "avgDistanceMeters"
+                                                    "avgDistanceMeters",
+                                                    "maxDistanceMeters"
                                                   ]
                                                 },
                                                 "properties": {
@@ -3202,10 +3202,10 @@
         "components": {
           "schemas": {
             "added": [
-              "BoundingBoxResponse",
-              "PublicProfileResponse",
               "BaseResponsePublicProfileResponse",
-              "OwnerResponse"
+              "OwnerResponse",
+              "BoundingBoxResponse",
+              "PublicProfileResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3754,13 +3754,13 @@
                             "items": {
                               "required": {
                                 "added": [
+                                  "tileBounds",
                                   "clusterId",
-                                  "photoBounds",
-                                  "tileBounds"
+                                  "photoBounds"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ]
                               },
                               "properties": {
@@ -3770,8 +3770,8 @@
                                   "clusterId"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ],
                                 "modified": {
                                   "center": {
@@ -5088,19 +5088,19 @@
                     "photoBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ]
                 },
                 "properties": {
                   "added": [
+                    "tileBounds",
                     "clusterId",
-                    "photoBounds",
-                    "tileBounds"
+                    "photoBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ],
                   "modified": {
                     "center": {
@@ -5145,13 +5145,13 @@
                       "items": {
                         "required": {
                           "added": [
+                            "tileBounds",
                             "clusterId",
-                            "photoBounds",
-                            "tileBounds"
+                            "photoBounds"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ]
                         },
                         "properties": {
@@ -5161,8 +5161,8 @@
                             "clusterId"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ],
                           "modified": {
                             "center": {

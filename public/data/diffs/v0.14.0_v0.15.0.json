@@ -13,8 +13,8 @@
         "paths": {
           "added": [
             "/api/photos/{photoId}/comments/{commentId}",
-            "/api/photos/{photoId}/comments",
-            "/api/photos/{photoId}/comments/{commentId}/replies"
+            "/api/photos/{photoId}/comments/{commentId}/replies",
+            "/api/photos/{photoId}/comments"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -65,12 +65,12 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseCommentPageResponse",
-              "UpdateCommentRequest",
-              "BaseResponseCommentResponse",
               "CommentPageResponse",
-              "CommentResponse",
-              "CreateCommentRequest"
+              "UpdateCommentRequest",
+              "CreateCommentRequest",
+              "BaseResponseCommentPageResponse",
+              "BaseResponseCommentResponse",
+              "CommentResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {

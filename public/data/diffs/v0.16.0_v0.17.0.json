@@ -13,8 +13,8 @@
         "paths": {
           "added": [
             "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-            "/api/public/profiles/{userId}/review-summary",
-            "/api/public/profiles/{userId}/reviews"
+            "/api/public/profiles/{userId}/reviews",
+            "/api/public/profiles/{userId}/review-summary"
           ],
           "modified": {
             "/api/public/profiles/{userId}": {
@@ -61,16 +61,16 @@
         "components": {
           "schemas": {
             "added": [
-              "CreateSubmissionReviewRequest",
-              "CursorRequest",
-              "BaseResponseCursorPageSubmissionReviewResponse",
               "SubmissionReviewResponse",
-              "ReviewSummaryResponse",
-              "CursorPageSubmissionReviewResponse",
+              "UpdateSubmissionReviewRequest",
+              "BaseResponseReviewSummaryResponse",
               "BaseResponseSubmissionReviewResponse",
               "ReviewSummaryInfo",
-              "UpdateSubmissionReviewRequest",
-              "BaseResponseReviewSummaryResponse"
+              "CursorRequest",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "CreateSubmissionReviewRequest",
+              "CursorPageSubmissionReviewResponse",
+              "ReviewSummaryResponse"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {

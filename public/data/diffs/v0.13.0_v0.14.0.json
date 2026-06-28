@@ -67,11 +67,11 @@
           "schemas": {
             "added": [
               "ToggleBookmarkResponse",
-              "BookmarkedPhotosResponse",
-              "BaseResponseToggleBookmarkResponse",
               "BookmarkedPhotoItem",
               "PageCursor",
-              "BaseResponseBookmarkedPhotosResponse"
+              "BookmarkedPhotosResponse",
+              "BaseResponseBookmarkedPhotosResponse",
+              "BaseResponseToggleBookmarkResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -86,8 +86,8 @@
                       },
                       "properties": {
                         "added": [
-                          "isBookmarkedByUser",
-                          "bookmarkCount"
+                          "bookmarkCount",
+                          "isBookmarkedByUser"
                         ]
                       }
                     }
@@ -103,8 +103,8 @@
                 },
                 "properties": {
                   "added": [
-                    "isBookmarkedByUser",
-                    "bookmarkCount"
+                    "bookmarkCount",
+                    "isBookmarkedByUser"
                   ]
                 }
               }
