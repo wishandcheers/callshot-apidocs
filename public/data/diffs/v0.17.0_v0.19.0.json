@@ -87,14 +87,14 @@
         "components": {
           "schemas": {
             "added": [
-              "UpdateUserSettingsRequest",
-              "PatchBoolean",
+              "Absent",
               "UserSettingsResponse",
               "Value",
-              "Absent",
+              "UpdateUserSettingsRequest",
               "CommissionStatsInfo",
-              "BaseResponseUserSettingsResponse",
-              "Clear"
+              "PatchBoolean",
+              "Clear",
+              "BaseResponseUserSettingsResponse"
             ],
             "modified": {
               "BaseResponseUserProfileResponse": {
@@ -129,7 +129,6 @@
           "operation": "GET",
           "operationId": "getExploreFeed",
           "path": "/api/explore/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "bc28924dc1a6"
         },
@@ -140,7 +139,6 @@
           "operation": "GET",
           "operationId": "profile",
           "path": "/api/profile",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "c15eb7377d61"
         },
@@ -151,7 +149,6 @@
           "operation": "GET",
           "operationId": "getSettings",
           "path": "/api/settings",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
@@ -165,7 +162,6 @@
           "operation": "PUT",
           "operationId": "updateSettings",
           "path": "/api/settings",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"

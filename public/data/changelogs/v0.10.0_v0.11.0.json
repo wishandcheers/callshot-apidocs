@@ -10,7 +10,6 @@
         "operation": "GET",
         "operationId": "getPhotoClusters",
         "path": "/api/public/photos/clusters",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
         "section": "paths",
         "fingerprint": "1e026d2cf9a9"
       },
@@ -21,7 +20,6 @@
         "operation": "POST",
         "operationId": "signup",
         "path": "/api/signup",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json",
         "section": "paths",
         "baseSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
@@ -42,7 +40,6 @@
         "operation": "GET",
         "operationId": "profile",
         "path": "/api/profile",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
         "section": "paths",
         "fingerprint": "62835e915788"
       },
@@ -53,7 +50,6 @@
         "operation": "PUT",
         "operationId": "updateProfile",
         "path": "/api/profile",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-api.json"
@@ -69,7 +65,6 @@
         "operation": "GET",
         "operationId": "getSystemMissions",
         "path": "/api/admin/missions",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json"
@@ -83,7 +78,6 @@
         "operation": "POST",
         "operationId": "createSystemMission",
         "path": "/api/admin/missions",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json"
@@ -97,7 +91,6 @@
         "operation": "DELETE",
         "operationId": "cancelMission",
         "path": "/api/admin/missions/{id}",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json"
@@ -111,7 +104,6 @@
         "operation": "GET",
         "operationId": "getSystemMissionDetail",
         "path": "/api/admin/missions/{id}",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json"
@@ -125,7 +117,6 @@
         "operation": "PATCH",
         "operationId": "updateSystemMission",
         "path": "/api/admin/missions/{id}",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json"
@@ -139,7 +130,6 @@
         "operation": "POST",
         "operationId": "closeMission",
         "path": "/api/admin/missions/{id}/close",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json"
@@ -153,7 +143,6 @@
         "operation": "POST",
         "operationId": "reviewSubmission",
         "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json"
@@ -167,7 +156,6 @@
         "operation": "GET",
         "operationId": "findAll",
         "path": "/api/admin/users",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.11.0/apiDocs-admin.json",
         "section": "paths",
         "fingerprint": "ec58497b7797"
       }

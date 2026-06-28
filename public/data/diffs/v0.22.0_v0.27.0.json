@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/wallet/me/balance",
-            "/api/shutter/convert"
+            "/api/shutter/convert",
+            "/api/wallet/me/balance"
           ],
           "modified": {
             "/api/my/bookmarks": {
@@ -95,11 +95,11 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseWalletBalanceResponse",
-              "BaseResponseConvertShotsResponse",
-              "ConvertShotsResponse",
               "BookmarkedPhotoView",
+              "BaseResponseConvertShotsResponse",
               "WalletBalanceResponse",
+              "BaseResponseWalletBalanceResponse",
+              "ConvertShotsResponse",
               "BookmarkedPhotoUrls"
             ],
             "modified": {
@@ -170,7 +170,6 @@
           "operation": "POST",
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "5aeb35befea3"
         },
@@ -181,7 +180,6 @@
           "operation": "GET",
           "operationId": "getMyBookmarks",
           "path": "/api/my/bookmarks",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "245eb1a1d5e3"
         },
@@ -192,7 +190,6 @@
           "operation": "POST",
           "operationId": "convertShots",
           "path": "/api/shutter/convert",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-api.json"
@@ -206,7 +203,6 @@
           "operation": "GET",
           "operationId": "getMyBalance",
           "path": "/api/wallet/me/balance",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-api.json"
@@ -222,7 +218,6 @@
           "operation": "POST",
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "5aeb35befea3"
         }
@@ -256,11 +251,11 @@
         "components": {
           "schemas": {
             "added": [
+              "BaseResponseExternalEventPageResponse",
               "ExternalEventResponse",
-              "BaseResponseExternalEventSyncResponse",
               "ExternalEventPageResponse",
-              "ExternalEventSyncResponse",
-              "BaseResponseExternalEventPageResponse"
+              "BaseResponseExternalEventSyncResponse",
+              "ExternalEventSyncResponse"
             ]
           }
         }
@@ -273,7 +268,6 @@
           "operation": "GET",
           "operationId": "getExternalEvents",
           "path": "/api/admin/external/events",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json"
@@ -287,7 +281,6 @@
           "operation": "POST",
           "operationId": "refresh",
           "path": "/api/admin/external/events/refresh",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json"

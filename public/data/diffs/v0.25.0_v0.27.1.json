@@ -42,11 +42,11 @@
         "components": {
           "schemas": {
             "added": [
+              "ExternalEventPageResponse",
+              "BaseResponseExternalEventPageResponse",
               "ExternalEventRefreshResponse",
               "ExternalEventResponse",
-              "BaseResponseExternalEventPageResponse",
-              "BaseResponseExternalEventRefreshResponse",
-              "ExternalEventPageResponse"
+              "BaseResponseExternalEventRefreshResponse"
             ]
           }
         }
@@ -59,7 +59,6 @@
           "operation": "GET",
           "operationId": "getExternalEvents",
           "path": "/api/admin/external/events",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json"
@@ -73,7 +72,6 @@
           "operation": "POST",
           "operationId": "refresh",
           "path": "/api/admin/external/events/refresh",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.1/apiDocs-admin.json"

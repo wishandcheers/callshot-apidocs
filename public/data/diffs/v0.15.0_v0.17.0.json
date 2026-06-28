@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
-            "/api/explore/photos",
-            "/api/public/profiles/{userId}/review-summary",
             "/api/public/profiles/{userId}/reviews",
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review"
+            "/api/explore/photos",
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/public/profiles/{userId}/review-summary"
           ],
           "modified": {
             "/api/public/profiles/{userId}": {
@@ -64,19 +64,19 @@
           "schemas": {
             "added": [
               "CursorRequest",
-              "CursorPageSubmissionReviewResponse",
-              "BaseResponseSubmissionReviewResponse",
-              "CreateSubmissionReviewRequest",
-              "SubmissionReviewResponse",
-              "ExplorePhotoResponse",
-              "UpdateSubmissionReviewRequest",
-              "BaseResponseCursorPageExplorePhotoResponse",
-              "BaseResponseCursorPageSubmissionReviewResponse",
-              "CursorPageExplorePhotoResponse",
               "ReviewSummaryInfo",
-              "FeedOwnerResponse",
+              "BaseResponseReviewSummaryResponse",
+              "BaseResponseSubmissionReviewResponse",
+              "CursorPageSubmissionReviewResponse",
+              "SubmissionReviewResponse",
+              "BaseResponseCursorPageSubmissionReviewResponse",
               "ReviewSummaryResponse",
-              "BaseResponseReviewSummaryResponse"
+              "CursorPageExplorePhotoResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "UpdateSubmissionReviewRequest",
+              "ExplorePhotoResponse",
+              "CreateSubmissionReviewRequest",
+              "FeedOwnerResponse"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {
@@ -111,7 +111,6 @@
           "operation": "GET",
           "operationId": "getExploreFeed",
           "path": "/api/explore/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
@@ -125,7 +124,6 @@
           "operation": "POST",
           "operationId": "createReview",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
@@ -139,7 +137,6 @@
           "operation": "PUT",
           "operationId": "updateReview",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
@@ -153,7 +150,6 @@
           "operation": "GET",
           "operationId": "getPublicProfile",
           "path": "/api/public/profiles/{userId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "f66838a93928"
         },
@@ -164,7 +160,6 @@
           "operation": "GET",
           "operationId": "getReviewSummary",
           "path": "/api/public/profiles/{userId}/review-summary",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"
@@ -178,7 +173,6 @@
           "operation": "GET",
           "operationId": "getReviewsForUser",
           "path": "/api/public/profiles/{userId}/reviews",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.17.0/apiDocs-api.json"

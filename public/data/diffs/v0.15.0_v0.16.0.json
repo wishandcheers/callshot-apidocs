@@ -23,10 +23,10 @@
         "components": {
           "schemas": {
             "added": [
-              "CursorPageExplorePhotoResponse",
+              "ExplorePhotoResponse",
               "BaseResponseCursorPageExplorePhotoResponse",
               "FeedOwnerResponse",
-              "ExplorePhotoResponse"
+              "CursorPageExplorePhotoResponse"
             ]
           }
         }
@@ -39,7 +39,6 @@
           "operation": "GET",
           "operationId": "getExploreFeed",
           "path": "/api/explore/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"

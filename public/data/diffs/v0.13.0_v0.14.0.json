@@ -32,8 +32,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "bookmarkCount",
-                                            "isBookmarkedByUser"
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
                                           ]
                                         },
                                         "properties": {
@@ -66,12 +66,12 @@
         "components": {
           "schemas": {
             "added": [
-              "BookmarkedPhotosResponse",
               "ToggleBookmarkResponse",
-              "BaseResponseBookmarkedPhotosResponse",
-              "PageCursor",
+              "BookmarkedPhotosResponse",
+              "BaseResponseToggleBookmarkResponse",
               "BookmarkedPhotoItem",
-              "BaseResponseToggleBookmarkResponse"
+              "PageCursor",
+              "BaseResponseBookmarkedPhotosResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -86,8 +86,8 @@
                       },
                       "properties": {
                         "added": [
-                          "bookmarkCount",
-                          "isBookmarkedByUser"
+                          "isBookmarkedByUser",
+                          "bookmarkCount"
                         ]
                       }
                     }
@@ -103,8 +103,8 @@
                 },
                 "properties": {
                   "added": [
-                    "bookmarkCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "bookmarkCount"
                   ]
                 }
               }
@@ -120,7 +120,6 @@
           "operation": "GET",
           "operationId": "getMyBookmarks",
           "path": "/api/my/bookmarks",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
@@ -134,7 +133,6 @@
           "operation": "POST",
           "operationId": "toggleBookmark",
           "path": "/api/photos/{photoId}/bookmark",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
@@ -148,7 +146,6 @@
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "94c29ae24b53"
         },
@@ -159,7 +156,6 @@
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "c4c58ea21c06"
         }

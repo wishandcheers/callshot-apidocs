@@ -10,7 +10,6 @@
         "operation": "POST",
         "operationId": "createPhotoRequest",
         "path": "/api/my/photo-requests",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
         "section": "paths",
         "fingerprint": "5aeb35befea3"
       },
@@ -21,7 +20,6 @@
         "operation": "GET",
         "operationId": "getMyBookmarks",
         "path": "/api/my/bookmarks",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
         "section": "paths",
         "fingerprint": "245eb1a1d5e3"
       },
@@ -32,7 +30,6 @@
         "operation": "POST",
         "operationId": "convertShots",
         "path": "/api/shutter/convert",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"
@@ -46,7 +43,6 @@
         "operation": "GET",
         "operationId": "getMyBalance",
         "path": "/api/wallet/me/balance",
-        "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json",
         "section": "paths",
         "revisionSource": {
           "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.25.0/apiDocs-api.json"

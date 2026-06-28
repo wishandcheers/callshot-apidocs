@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/explore/photos",
             "/api/photos/{photoId}/comments/{commentId}",
-            "/api/photos/{photoId}/comments"
+            "/api/photos/{photoId}/comments",
+            "/api/explore/photos",
+            "/api/photos/{photoId}/comments/{commentId}/replies"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -67,16 +67,16 @@
         "components": {
           "schemas": {
             "added": [
-              "CreateCommentRequest",
-              "CursorPageExplorePhotoResponse",
-              "CommentPageResponse",
-              "UpdateCommentRequest",
-              "FeedOwnerResponse",
-              "BaseResponseCommentPageResponse",
-              "CommentResponse",
-              "BaseResponseCursorPageExplorePhotoResponse",
               "ExplorePhotoResponse",
-              "BaseResponseCommentResponse"
+              "CommentPageResponse",
+              "CursorPageExplorePhotoResponse",
+              "FeedOwnerResponse",
+              "CreateCommentRequest",
+              "BaseResponseCommentResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "UpdateCommentRequest",
+              "CommentResponse",
+              "BaseResponseCommentPageResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -121,7 +121,6 @@
           "operation": "GET",
           "operationId": "getExploreFeed",
           "path": "/api/explore/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -135,7 +134,6 @@
           "operation": "GET",
           "operationId": "getComments",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -149,7 +147,6 @@
           "operation": "POST",
           "operationId": "createComment",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -163,7 +160,6 @@
           "operation": "DELETE",
           "operationId": "deleteComment",
           "path": "/api/photos/{photoId}/comments/{commentId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -177,7 +173,6 @@
           "operation": "PATCH",
           "operationId": "updateComment",
           "path": "/api/photos/{photoId}/comments/{commentId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -191,7 +186,6 @@
           "operation": "GET",
           "operationId": "getReplies",
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -205,7 +199,6 @@
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "cce356bf1927"
         }

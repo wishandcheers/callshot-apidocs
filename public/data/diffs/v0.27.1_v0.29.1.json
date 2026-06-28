@@ -1,0 +1,374 @@
+{
+  "fromVersion": "v0.27.1",
+  "toVersion": "v0.29.1",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.27.1",
+            "to": "0.29.1"
+          }
+        },
+        "paths": {
+          "modified": {
+            "/api/my/photos/{id}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "added": [
+                                            "attribution"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "PATCH": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "added": [
+                                            "attribution"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "parameters": {
+                      "modified": {
+                        "query": {
+                          "sort": {
+                            "schema": {
+                              "enum": {
+                                "added": [
+                                  "CREATED_AT_DESC"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/bulk": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "items": {
+                                          "properties": {
+                                            "added": [
+                                              "attribution"
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/cluster-area": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "parameters": {
+                      "modified": {
+                        "query": {
+                          "sort": {
+                            "schema": {
+                              "enum": {
+                                "added": [
+                                  "CREATED_AT_DESC"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/public/photos/{id}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "added": [
+                                            "attribution"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "ExternalAttributionResponse"
+            ],
+            "modified": {
+              "BaseResponseListPublishedPhotoDetailResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "items": {
+                        "properties": {
+                          "added": [
+                            "attribution"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePublishedPhotoDetailResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "added": [
+                          "attribution"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "PublishedPhotoDetailResponse": {
+                "properties": {
+                  "added": [
+                    "attribution"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/attribution` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto-lYrMTg8",
+          "path": "/api/my/photos/{id}",
+          "section": "paths",
+          "fingerprint": "2fb4bdec8500"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/attribution` to the response with the `200` status",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto-DTCb-Co",
+          "path": "/api/my/photos/{id}",
+          "section": "paths",
+          "fingerprint": "0f4688b68e56"
+        },
+        {
+          "id": "request-parameter-enum-value-added",
+          "text": "added the new enum value `CREATED_AT_DESC` to the `query` request parameter `sort`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/public/photos",
+          "section": "paths",
+          "fingerprint": "dba2cda5d4d2"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/items/attribution` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetails",
+          "path": "/api/public/photos/bulk",
+          "section": "paths",
+          "fingerprint": "05260aa4678f"
+        },
+        {
+          "id": "request-parameter-enum-value-added",
+          "text": "added the new enum value `CREATED_AT_DESC` to the `query` request parameter `sort`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "section": "paths",
+          "fingerprint": "52ffbb270222"
+        },
+        {
+          "id": "response-optional-property-added",
+          "text": "added the optional property `body/attribution` to the response with the `200` status",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetail-DTCb-Co",
+          "path": "/api/public/photos/{id}",
+          "section": "paths",
+          "fingerprint": "d682b3aee083"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 5,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.27.1",
+            "to": "0.29.1"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/admin/photos/seed/{source}",
+            "/api/admin/photos/seed/import"
+          ]
+        },
+        "tags": {
+          "added": [
+            "Admin 사진 시딩"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "BaseResponseSeedDeleteResponse",
+              "SeedImportResponse",
+              "SeedImportRequest",
+              "BaseResponseSeedImportResponse",
+              "SeedDeleteResponse"
+            ]
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "import",
+          "path": "/api/admin/photos/seed/import",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.1/apiDocs-admin.json"
+          },
+          "fingerprint": "e84197d82809"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "DELETE",
+          "operationId": "deleteBySource",
+          "path": "/api/admin/photos/seed/{source}",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.1/apiDocs-admin.json"
+          },
+          "fingerprint": "36f39176efca"
+        }
+      ],
+      "breaking": [],
+      "summary": {
+        "added": 2,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    }
+  }
+}

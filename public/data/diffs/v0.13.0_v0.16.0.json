@@ -12,12 +12,12 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/comments/{commentId}/replies",
+            "/api/explore/photos",
             "/api/my/bookmarks",
             "/api/photos/{photoId}/bookmark",
-            "/api/explore/photos",
-            "/api/photos/{photoId}/comments",
-            "/api/photos/{photoId}/comments/{commentId}"
+            "/api/photos/{photoId}/comments/{commentId}/replies",
+            "/api/photos/{photoId}/comments/{commentId}",
+            "/api/photos/{photoId}/comments"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -36,16 +36,16 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "isBookmarkedByUser",
                                             "bookmarkCount",
-                                            "commentCount"
+                                            "commentCount",
+                                            "isBookmarkedByUser"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
+                                            "commentCount",
                                             "isBookmarkedByUser",
-                                            "bookmarkCount",
-                                            "commentCount"
+                                            "bookmarkCount"
                                           ]
                                         }
                                       }
@@ -74,22 +74,22 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseCursorPageExplorePhotoResponse",
-              "CommentResponse",
+              "BookmarkedPhotoItem",
+              "CursorPageExplorePhotoResponse",
               "UpdateCommentRequest",
-              "ToggleBookmarkResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
               "CommentPageResponse",
               "BaseResponseToggleBookmarkResponse",
-              "BaseResponseBookmarkedPhotosResponse",
               "CreateCommentRequest",
-              "BaseResponseCommentPageResponse",
-              "BaseResponseCommentResponse",
-              "PageCursor",
-              "BookmarkedPhotosResponse",
-              "FeedOwnerResponse",
               "ExplorePhotoResponse",
-              "BookmarkedPhotoItem",
-              "CursorPageExplorePhotoResponse"
+              "FeedOwnerResponse",
+              "BaseResponseCommentResponse",
+              "CommentResponse",
+              "BaseResponseCommentPageResponse",
+              "BookmarkedPhotosResponse",
+              "ToggleBookmarkResponse",
+              "PageCursor",
+              "BaseResponseBookmarkedPhotosResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -98,16 +98,16 @@
                     "body": {
                       "required": {
                         "added": [
-                          "bookmarkCount",
+                          "isBookmarkedByUser",
                           "commentCount",
-                          "isBookmarkedByUser"
+                          "bookmarkCount"
                         ]
                       },
                       "properties": {
                         "added": [
+                          "commentCount",
                           "isBookmarkedByUser",
-                          "bookmarkCount",
-                          "commentCount"
+                          "bookmarkCount"
                         ]
                       }
                     }
@@ -118,8 +118,8 @@
                 "required": {
                   "added": [
                     "bookmarkCount",
-                    "commentCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "commentCount"
                   ]
                 },
                 "properties": {
@@ -142,7 +142,6 @@
           "operation": "GET",
           "operationId": "getExploreFeed",
           "path": "/api/explore/photos",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -156,7 +155,6 @@
           "operation": "GET",
           "operationId": "getMyBookmarks",
           "path": "/api/my/bookmarks",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -170,7 +168,6 @@
           "operation": "POST",
           "operationId": "toggleBookmark",
           "path": "/api/photos/{photoId}/bookmark",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -184,7 +181,6 @@
           "operation": "GET",
           "operationId": "getComments",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -198,7 +194,6 @@
           "operation": "POST",
           "operationId": "createComment",
           "path": "/api/photos/{photoId}/comments",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -212,7 +207,6 @@
           "operation": "DELETE",
           "operationId": "deleteComment",
           "path": "/api/photos/{photoId}/comments/{commentId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -226,7 +220,6 @@
           "operation": "PATCH",
           "operationId": "updateComment",
           "path": "/api/photos/{photoId}/comments/{commentId}",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -240,7 +233,6 @@
           "operation": "GET",
           "operationId": "getReplies",
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "revisionSource": {
             "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json"
@@ -254,7 +246,6 @@
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "94c29ae24b53"
         },
@@ -265,7 +256,6 @@
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "cce356bf1927"
         },
@@ -276,7 +266,6 @@
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
-          "source": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.16.0/apiDocs-api.json",
           "section": "paths",
           "fingerprint": "c4c58ea21c06"
         }
