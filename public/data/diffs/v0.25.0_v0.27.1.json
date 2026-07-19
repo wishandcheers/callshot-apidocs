@@ -42,8 +42,8 @@
         "components": {
           "schemas": {
             "added": [
-              "ExternalEventPageResponse",
               "BaseResponseExternalEventPageResponse",
+              "ExternalEventPageResponse",
               "ExternalEventRefreshResponse",
               "ExternalEventResponse",
               "BaseResponseExternalEventRefreshResponse"

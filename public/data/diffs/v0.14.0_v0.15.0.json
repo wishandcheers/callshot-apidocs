@@ -65,12 +65,12 @@
         "components": {
           "schemas": {
             "added": [
-              "CommentPageResponse",
-              "UpdateCommentRequest",
-              "CreateCommentRequest",
               "BaseResponseCommentPageResponse",
+              "UpdateCommentRequest",
+              "CommentPageResponse",
+              "CommentResponse",
               "BaseResponseCommentResponse",
-              "CommentResponse"
+              "CreateCommentRequest"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {

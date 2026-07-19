@@ -313,8 +313,8 @@
         },
         "paths": {
           "added": [
-            "/api/admin/photos/seed/import",
             "/api/admin/photos/seed/candidates",
+            "/api/admin/photos/seed/import",
             "/api/admin/photos/seed/{source}"
           ],
           "modified": {
@@ -352,16 +352,16 @@
         "components": {
           "schemas": {
             "added": [
+              "SeedImportItemResponse",
               "BaseResponseSeedCandidatesResponse",
-              "SeedImportRequest",
-              "SeedDeleteResponse",
+              "BaseResponseSeedDeleteResponse",
               "ExternalEventRefreshResponse",
               "SeedCandidateResponse",
               "SeedImportResponse",
-              "SeedCandidatesResponse",
+              "SeedImportRequest",
               "BaseResponseSeedImportResponse",
-              "SeedImportItemResponse",
-              "BaseResponseSeedDeleteResponse",
+              "SeedCandidatesResponse",
+              "SeedDeleteResponse",
               "BaseResponseExternalEventRefreshResponse"
             ],
             "deleted": [

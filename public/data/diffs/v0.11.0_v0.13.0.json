@@ -2586,9 +2586,9 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
+                                                    "photoBounds",
                                                     "tileBounds",
-                                                    "clusterId",
-                                                    "photoBounds"
+                                                    "clusterId"
                                                   ],
                                                   "deleted": [
                                                     "avgDistanceMeters",
@@ -2602,8 +2602,8 @@
                                                     "tileBounds"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "center": {
@@ -3202,10 +3202,10 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponsePublicProfileResponse",
-              "OwnerResponse",
               "BoundingBoxResponse",
-              "PublicProfileResponse"
+              "OwnerResponse",
+              "PublicProfileResponse",
+              "BaseResponsePublicProfileResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3754,20 +3754,20 @@
                             "items": {
                               "required": {
                                 "added": [
+                                  "photoBounds",
                                   "tileBounds",
-                                  "clusterId",
-                                  "photoBounds"
+                                  "clusterId"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ]
                               },
                               "properties": {
                                 "added": [
+                                  "clusterId",
                                   "photoBounds",
-                                  "tileBounds",
-                                  "clusterId"
+                                  "tileBounds"
                                 ],
                                 "deleted": [
                                   "maxDistanceMeters",
@@ -5083,24 +5083,24 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
+                    "photoBounds",
                     "tileBounds",
-                    "clusterId",
-                    "photoBounds"
+                    "clusterId"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ]
                 },
                 "properties": {
                   "added": [
+                    "photoBounds",
                     "tileBounds",
-                    "clusterId",
-                    "photoBounds"
+                    "clusterId"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ],
                   "modified": {
                     "center": {
@@ -5145,20 +5145,20 @@
                       "items": {
                         "required": {
                           "added": [
+                            "photoBounds",
                             "tileBounds",
-                            "clusterId",
-                            "photoBounds"
+                            "clusterId"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ]
                         },
                         "properties": {
                           "added": [
+                            "clusterId",
                             "photoBounds",
-                            "tileBounds",
-                            "clusterId"
+                            "tileBounds"
                           ],
                           "deleted": [
                             "maxDistanceMeters",
@@ -6115,753 +6115,753 @@
       "changelog": [
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "section": "paths",
-          "fingerprint": "ab18ba7eb481"
+          "fingerprint": "da6b0766ea00"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "section": "paths",
-          "fingerprint": "4ff29fa23058"
+          "fingerprint": "2804a74f6528"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/thumbnail/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/thumbnail/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "section": "paths",
-          "fingerprint": "47491c5e58e8"
+          "fingerprint": "c85c34738931"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "ef79b5919583"
+          "fingerprint": "c13f145c801a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "a5ae33addd71"
+          "fingerprint": "7006e0b671e1"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "eb964ff56205"
+          "fingerprint": "ab1ac664b347"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "8e183f713f91"
+          "fingerprint": "3dc53addd187"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "f2f55ade966e"
+          "fingerprint": "15486df94fc4"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "2e34d4d2d00e"
+          "fingerprint": "b208f8985606"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "5709c0232807"
+          "fingerprint": "201a28f460d5"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "2819d8e744c7"
+          "fingerprint": "fa7b301b63cc"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "section": "paths",
-          "fingerprint": "bbf65a0a8c60"
+          "fingerprint": "2849417f9278"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "section": "paths",
-          "fingerprint": "aa0ba76b6568"
+          "fingerprint": "ef995d90095d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requests/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requests/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "section": "paths",
-          "fingerprint": "327d2f3891e5"
+          "fingerprint": "1932611f6d6f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requests/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requests/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "section": "paths",
-          "fingerprint": "3bf47b0321b4"
+          "fingerprint": "fb2e9af8149a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "section": "paths",
-          "fingerprint": "4e6e1aa813de"
+          "fingerprint": "20dcea5fbc21"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "section": "paths",
-          "fingerprint": "72688f5878cf"
+          "fingerprint": "5157d9f44365"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "9664e4361cdc"
+          "fingerprint": "44819bc8878f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "1b6b69556ca4"
+          "fingerprint": "9966ea19ed94"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "0d5328ef8aca"
+          "fingerprint": "9779dfd353ac"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "a1cd9539a542"
+          "fingerprint": "a5ca7a333bfb"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "section": "paths",
-          "fingerprint": "b17c46ea8ded"
+          "fingerprint": "38759d094b6f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "section": "paths",
-          "fingerprint": "e64fc7be1e10"
+          "fingerprint": "78146ab5af02"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/submissions/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/submissions/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "section": "paths",
-          "fingerprint": "f3d48076a8a3"
+          "fingerprint": "623934b96025"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/submissions/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/submissions/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "section": "paths",
-          "fingerprint": "63dd14baec3a"
+          "fingerprint": "cc13ab52c48b"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/submissions/items/photo/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/submissions/items/photo/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "section": "paths",
-          "fingerprint": "a80cda1e0275"
+          "fingerprint": "264987e1293b"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/submissions/items/submitter/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/submissions/items/submitter/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "section": "paths",
-          "fingerprint": "b80c491697ab"
+          "fingerprint": "35fb8bd8ccaf"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
-          "fingerprint": "22195a31a116"
+          "fingerprint": "0c2960f53afd"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
-          "fingerprint": "6c0acca292c7"
+          "fingerprint": "505c7dafb327"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/draftPhotos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/draftPhotos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "21408039d86d"
+          "fingerprint": "5dbc4b6874a1"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/draftPhotos/items/thumbnail/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/draftPhotos/items/thumbnail/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "29149d68d027"
+          "fingerprint": "4d2db8fcbe45"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "e5c06cb0ffc8"
+          "fingerprint": "56c6564be82f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/publishPhotos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/publishPhotos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "d19b47571dbe"
+          "fingerprint": "3117cea79306"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/publishPhotos/items/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/publishPhotos/items/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "9a1a05f0b3e1"
+          "fingerprint": "333676fd2d9b"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "section": "paths",
-          "fingerprint": "2a8c8b30bf09"
+          "fingerprint": "212473ffc8ce"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "section": "paths",
-          "fingerprint": "602d580441b4"
+          "fingerprint": "d07f6288b8db"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "section": "paths",
-          "fingerprint": "1d44f29493aa"
+          "fingerprint": "3cb6415ba478"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "deletePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "25b4f57e7e56"
+          "fingerprint": "eff9cd757f7e"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "f2db9b3af2c6"
+          "fingerprint": "5b4fa72e10b8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "b4dec22ceeac"
+          "fingerprint": "0d9adb04c12c"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "ad662b2db249"
+          "fingerprint": "11539fa0b08c"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "6e75b2120d46"
+          "fingerprint": "541d6d0ed31d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "20587965ad09"
+          "fingerprint": "d41b2675dc3b"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "74b3de0f5fd6"
+          "fingerprint": "1e250f19ae2a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "10dea1a1e211"
+          "fingerprint": "bf749c9ccbbf"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "b3ce72a4096f"
+          "fingerprint": "740b942d2742"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requests/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requests/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "section": "paths",
-          "fingerprint": "e0df1dc10b13"
+          "fingerprint": "1ec6fcdb630a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requests/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requests/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "section": "paths",
-          "fingerprint": "797f4ce4800a"
+          "fingerprint": "bbbc4b9d2a54"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "66817acb53b6"
+          "fingerprint": "60ca764c1dba"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "d7fec4046116"
+          "fingerprint": "1f28c05d9a6a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requester/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requester/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "baf9d7ccb1cf"
+          "fingerprint": "845bb3499b3d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "c47adb1ef0ac"
+          "fingerprint": "6477527b9d01"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "section": "paths",
-          "fingerprint": "580f637f60c4"
+          "fingerprint": "e964e2f2b13a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "section": "paths",
-          "fingerprint": "729f852e9cea"
+          "fingerprint": "db7f5864fbf2"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "section": "paths",
-          "fingerprint": "0b527c7abf1e"
+          "fingerprint": "6aed775b80f4"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "section": "paths",
-          "fingerprint": "9dc197fdc087"
+          "fingerprint": "149e84e63cfd"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/dislikeCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/dislikeCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "toggleDislike",
           "path": "/api/photos/{photoId}/dislike",
           "section": "paths",
-          "fingerprint": "375f34dcc525"
+          "fingerprint": "d2ad6711c198"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/dislikeCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/dislikeCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "section": "paths",
-          "fingerprint": "fa7f31ed164a"
+          "fingerprint": "f9bd64a99ff3"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/likeCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/likeCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "section": "paths",
-          "fingerprint": "25b1270e4359"
+          "fingerprint": "bbfad6a27fd0"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "section": "paths",
-          "fingerprint": "de9750d23def"
+          "fingerprint": "01272b0671e0"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/viewCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/viewCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "section": "paths",
-          "fingerprint": "894b00914285"
+          "fingerprint": "e0cbe769cbf0"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/likeCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/likeCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "toggleLike",
           "path": "/api/photos/{photoId}/like",
           "section": "paths",
-          "fingerprint": "92d580bd52b8"
+          "fingerprint": "34e26266e54f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "profile",
           "path": "/api/profile",
           "section": "paths",
-          "fingerprint": "4faae669d944"
+          "fingerprint": "e54279f54081"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "section": "paths",
-          "fingerprint": "31a1cfa2f66d"
+          "fingerprint": "fa1f5954e0de"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "section": "paths",
-          "fingerprint": "1d3985aa09c2"
+          "fingerprint": "f7d071023c43"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "section": "paths",
-          "fingerprint": "50a93bf249fc"
+          "fingerprint": "dedaefe40322"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "d3744a3e8c02"
+          "fingerprint": "aaf9edeecc87"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "5fb795fb37b6"
+          "fingerprint": "8c770a99e5ce"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "424f6488a3c4"
+          "fingerprint": "fac81571670d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "db0a89344960"
+          "fingerprint": "41eafca26d06"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "section": "paths",
-          "fingerprint": "4456237436a5"
+          "fingerprint": "018bb9e40ae4"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "section": "paths",
-          "fingerprint": "33cbff1f6ef5"
+          "fingerprint": "c15bd191bd6d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "section": "paths",
-          "fingerprint": "5a8e8986e4bc"
+          "fingerprint": "6484d48ff6c9"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/clusters/items/thumbnail/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/clusters/items/thumbnail/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "section": "paths",
-          "fingerprint": "df15c21f5647"
+          "fingerprint": "dfd0ad8dd422"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "section": "paths",
-          "fingerprint": "09c078635ca1"
+          "fingerprint": "a3b72d04170a"
         },
         {
           "id": "response-required-property-removed",
@@ -6885,263 +6885,343 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "section": "paths",
-          "fingerprint": "5cfaa6932696"
+          "fingerprint": "ba9cac9e5ace"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "section": "paths",
-          "fingerprint": "d3a598d54af4"
+          "fingerprint": "2bb69f0ed8a8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "section": "paths",
-          "fingerprint": "6e8539a1eb49"
+          "fingerprint": "8064ff199994"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "section": "paths",
-          "fingerprint": "3e396c6d70b5"
+          "fingerprint": "229b70521920"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/entries/items/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/entries/items/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getLeaderboard",
           "path": "/api/shutter/leaderboard",
           "section": "paths",
-          "fingerprint": "7e024f098f94"
+          "fingerprint": "99830326c0ad"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalLikesReceived` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/totalLikesReceived` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "section": "paths",
-          "fingerprint": "0dfebb7cfd3c"
+          "fingerprint": "bb156a65910f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalLikesReceived` response's property type/format changed from `integer`/`int64` to `string`/`` for status `401`",
+          "text": "the `body/totalLikesReceived` response's property `type/format` changed from `integer/int64` to `string` for status `401`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "section": "paths",
-          "fingerprint": "1f7b91e8b1f5"
+          "fingerprint": "a741c8027ecd"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "section": "paths",
-          "fingerprint": "9517fbdd4ce6"
+          "fingerprint": "654910406fb7"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `401`",
+          "text": "the `body/userId` response's property `type/format` changed from `integer/int64` to `string` for status `401`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "section": "paths",
-          "fingerprint": "3a88ce8eb1cc"
+          "fingerprint": "4284ad10c0fd"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalUsers` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/totalUsers` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getRankStatistics",
           "path": "/api/shutter/statistics",
           "section": "paths",
-          "fingerprint": "d22944d1cd10"
+          "fingerprint": "aa401cbfb332"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalLikesReceived` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/totalLikesReceived` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "section": "paths",
-          "fingerprint": "3efa68334f47"
+          "fingerprint": "d5bcc8c84ef7"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalLikesReceived` response's property type/format changed from `integer`/`int64` to `string`/`` for status `404`",
+          "text": "the `body/totalLikesReceived` response's property `type/format` changed from `integer/int64` to `string` for status `404`",
           "level": 3,
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "section": "paths",
-          "fingerprint": "57b559a5ac4b"
+          "fingerprint": "97bbcd408889"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "section": "paths",
-          "fingerprint": "4c15709ae234"
+          "fingerprint": "11b078eb6f8d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `404`",
+          "text": "the `body/userId` response's property `type/format` changed from `integer/int64` to `string` for status `404`",
           "level": 3,
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "section": "paths",
-          "fingerprint": "6d07bc1dfed5"
+          "fingerprint": "78a370587c3d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/expiresAt` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/expiresAt` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "presignedUrl",
           "path": "/api/storage/presigned-url",
           "section": "paths",
-          "fingerprint": "1f529164eee9"
+          "fingerprint": "e91016db854c"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "af9e49212c90"
+          "fingerprint": "f2d04485205a"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "fb5b3964f28b"
+          "fingerprint": "44dc2f5343f2"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "section": "paths",
-          "fingerprint": "5960de35a8f1"
+          "fingerprint": "6888f834f9fe"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/likeCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto",
+          "path": "/api/my/drafts/{id}/publish",
+          "section": "paths",
+          "fingerprint": "add60853a551"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/viewCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "publishDraftPhoto",
+          "path": "/api/my/drafts/{id}/publish",
+          "section": "paths",
+          "fingerprint": "a1d97e908947"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "DELETE",
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "e7a99ca61fa2"
+          "fingerprint": "b542d83cb5a4"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "PATCH",
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "3b89c0bfe021"
+          "fingerprint": "69cc38b780dd"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "section": "paths",
-          "fingerprint": "a371b22ef54f"
+          "fingerprint": "04364c2d271b"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "section": "paths",
-          "fingerprint": "5049fa6c611e"
+          "fingerprint": "806f544e3c31"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `requestId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `requestId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
-          "fingerprint": "582c9f7cf39a"
+          "fingerprint": "d2f7b642d13f"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `submissionId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `submissionId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
-          "fingerprint": "6673235a076d"
+          "fingerprint": "43a0fb2e29d8"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/publishPhotos/items/likeCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/my/photos",
+          "section": "paths",
+          "fingerprint": "d70088a204c6"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/publishPhotos/items/viewCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPhotos",
+          "path": "/api/my/photos",
+          "section": "paths",
+          "fingerprint": "16c0c46cdfb7"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/photos/items/likeCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos",
+          "path": "/api/my/photos/published",
+          "section": "paths",
+          "fingerprint": "4b944f21c6d9"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/photos/items/viewCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getMyPublishedPhotos",
+          "path": "/api/my/photos/published",
+          "section": "paths",
+          "fingerprint": "165e0866c721"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "DELETE",
           "operationId": "deletePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "4f04cd0bc8dd"
+          "fingerprint": "aa6aee5bbddc"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "d2c4979cfaa8"
+          "fingerprint": "7114f4b1cd31"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/likeCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto",
+          "path": "/api/my/photos/{id}",
+          "section": "paths",
+          "fingerprint": "af3a012f4fa7"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/viewCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublishedPhoto",
+          "path": "/api/my/photos/{id}",
+          "section": "paths",
+          "fingerprint": "600836ec6bcc"
         },
         {
           "id": "response-required-property-added",
@@ -7155,13 +7235,33 @@
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "d4d1cd592c45"
+          "fingerprint": "152559ff8325"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/likeCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto",
+          "path": "/api/my/photos/{id}",
+          "section": "paths",
+          "fingerprint": "634db855d8a5"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/viewCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updatePublishedPhoto",
+          "path": "/api/my/photos/{id}",
+          "section": "paths",
+          "fingerprint": "87bc339daefa"
         },
         {
           "id": "response-required-property-added",
@@ -7175,73 +7275,113 @@
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "6cabdc690bd3"
+          "fingerprint": "362a5ce8d175"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `requestId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `requestId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "section": "paths",
-          "fingerprint": "d49cb95d848f"
+          "fingerprint": "402cc73c19e8"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `requestId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `requestId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "DELETE",
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "section": "paths",
-          "fingerprint": "9ccfc9d48d6e"
+          "fingerprint": "e4924776c05f"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `submissionId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `submissionId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "DELETE",
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "section": "paths",
-          "fingerprint": "cacf546f05f9"
+          "fingerprint": "08dafcfc2fdf"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `photoId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `photoId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "toggleDislike",
           "path": "/api/photos/{photoId}/dislike",
           "section": "paths",
-          "fingerprint": "39e8ca910133"
+          "fingerprint": "b0b3bac1cfad"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `photoId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `photoId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "section": "paths",
-          "fingerprint": "a166617f3bae"
+          "fingerprint": "dd21a2c3734c"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `photoId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `photoId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "toggleLike",
           "path": "/api/photos/{photoId}/like",
           "section": "paths",
-          "fingerprint": "b3a9cd8dd245"
+          "fingerprint": "dc91803fc5b1"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/photos/items/likeCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/public/photos",
+          "section": "paths",
+          "fingerprint": "fef154b29327"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/photos/items/viewCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotos",
+          "path": "/api/public/photos",
+          "section": "paths",
+          "fingerprint": "72c3a81d60db"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/items/likeCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetails",
+          "path": "/api/public/photos/bulk",
+          "section": "paths",
+          "fingerprint": "ed861209e362"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/items/viewCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetails",
+          "path": "/api/public/photos/bulk",
+          "section": "paths",
+          "fingerprint": "042eaf887f3d"
         },
         {
           "id": "response-required-property-added",
@@ -7262,6 +7402,26 @@
           "path": "/api/public/photos/cluster-area",
           "section": "paths",
           "fingerprint": "dd30ca12705a"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/photos/items/likeCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "section": "paths",
+          "fingerprint": "0b3a682ea05a"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/photos/items/viewCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPhotosInClusterArea",
+          "path": "/api/public/photos/cluster-area",
+          "section": "paths",
+          "fingerprint": "ab5ce200bc70"
         },
         {
           "id": "response-required-property-added",
@@ -7308,13 +7468,33 @@
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "section": "paths",
-          "fingerprint": "9f81093bd20c"
+          "fingerprint": "7c802fb4186c"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/likeCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetail",
+          "path": "/api/public/photos/{id}",
+          "section": "paths",
+          "fingerprint": "e7527b8979dd"
+        },
+        {
+          "id": "response-property-type-specialized",
+          "text": "the `body/viewCount` response's property `format` was narrowed from `int64` to `int32` for status `200`",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "getPublicPhotoDetail",
+          "path": "/api/public/photos/{id}",
+          "section": "paths",
+          "fingerprint": "06aede44d993"
         },
         {
           "id": "response-required-property-added",
@@ -7341,765 +7521,765 @@
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `userId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `userId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "section": "paths",
-          "fingerprint": "5409bc686594"
+          "fingerprint": "29d0c713efa0"
         }
       ],
       "breaking": [
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "section": "paths",
-          "fingerprint": "ab18ba7eb481"
+          "fingerprint": "da6b0766ea00"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "section": "paths",
-          "fingerprint": "4ff29fa23058"
+          "fingerprint": "2804a74f6528"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/thumbnail/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/thumbnail/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyDraftPhotos",
           "path": "/api/my/drafts",
           "section": "paths",
-          "fingerprint": "47491c5e58e8"
+          "fingerprint": "c85c34738931"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "ef79b5919583"
+          "fingerprint": "c13f145c801a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "a5ae33addd71"
+          "fingerprint": "7006e0b671e1"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "eb964ff56205"
+          "fingerprint": "ab1ac664b347"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "8e183f713f91"
+          "fingerprint": "3dc53addd187"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "f2f55ade966e"
+          "fingerprint": "15486df94fc4"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "2e34d4d2d00e"
+          "fingerprint": "b208f8985606"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "5709c0232807"
+          "fingerprint": "201a28f460d5"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateDraftPhoto",
           "path": "/api/my/drafts/{id}",
           "section": "paths",
-          "fingerprint": "2819d8e744c7"
+          "fingerprint": "fa7b301b63cc"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "section": "paths",
-          "fingerprint": "bbf65a0a8c60"
+          "fingerprint": "2849417f9278"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "publishDraftPhoto",
           "path": "/api/my/drafts/{id}/publish",
           "section": "paths",
-          "fingerprint": "aa0ba76b6568"
+          "fingerprint": "ef995d90095d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requests/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requests/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "section": "paths",
-          "fingerprint": "327d2f3891e5"
+          "fingerprint": "1932611f6d6f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requests/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requests/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotoRequests",
           "path": "/api/my/photo-requests",
           "section": "paths",
-          "fingerprint": "3bf47b0321b4"
+          "fingerprint": "fb2e9af8149a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "section": "paths",
-          "fingerprint": "4e6e1aa813de"
+          "fingerprint": "20dcea5fbc21"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createPhotoRequest",
           "path": "/api/my/photo-requests",
           "section": "paths",
-          "fingerprint": "72688f5878cf"
+          "fingerprint": "5157d9f44365"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "9664e4361cdc"
+          "fingerprint": "44819bc8878f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "cancelPhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "1b6b69556ca4"
+          "fingerprint": "9966ea19ed94"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "0d5328ef8aca"
+          "fingerprint": "9779dfd353ac"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePhotoRequest",
           "path": "/api/my/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "a1cd9539a542"
+          "fingerprint": "a5ca7a333bfb"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "section": "paths",
-          "fingerprint": "b17c46ea8ded"
+          "fingerprint": "38759d094b6f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "closePhotoRequest",
           "path": "/api/my/photo-requests/{id}/close",
           "section": "paths",
-          "fingerprint": "e64fc7be1e10"
+          "fingerprint": "78146ab5af02"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/submissions/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/submissions/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "section": "paths",
-          "fingerprint": "f3d48076a8a3"
+          "fingerprint": "623934b96025"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/submissions/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/submissions/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "section": "paths",
-          "fingerprint": "63dd14baec3a"
+          "fingerprint": "cc13ab52c48b"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/submissions/items/photo/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/submissions/items/photo/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "section": "paths",
-          "fingerprint": "a80cda1e0275"
+          "fingerprint": "264987e1293b"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/submissions/items/submitter/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/submissions/items/submitter/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSubmissionsForRequest",
           "path": "/api/my/photo-requests/{id}/submissions",
           "section": "paths",
-          "fingerprint": "b80c491697ab"
+          "fingerprint": "35fb8bd8ccaf"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
-          "fingerprint": "22195a31a116"
+          "fingerprint": "0c2960f53afd"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/my/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
-          "fingerprint": "6c0acca292c7"
+          "fingerprint": "505c7dafb327"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/draftPhotos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/draftPhotos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "21408039d86d"
+          "fingerprint": "5dbc4b6874a1"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/draftPhotos/items/thumbnail/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/draftPhotos/items/thumbnail/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "29149d68d027"
+          "fingerprint": "4d2db8fcbe45"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "e5c06cb0ffc8"
+          "fingerprint": "56c6564be82f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/publishPhotos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/publishPhotos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "d19b47571dbe"
+          "fingerprint": "3117cea79306"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/publishPhotos/items/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/publishPhotos/items/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPhotos",
           "path": "/api/my/photos",
           "section": "paths",
-          "fingerprint": "9a1a05f0b3e1"
+          "fingerprint": "333676fd2d9b"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "section": "paths",
-          "fingerprint": "2a8c8b30bf09"
+          "fingerprint": "212473ffc8ce"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "section": "paths",
-          "fingerprint": "602d580441b4"
+          "fingerprint": "d07f6288b8db"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyPublishedPhotos",
           "path": "/api/my/photos/published",
           "section": "paths",
-          "fingerprint": "1d44f29493aa"
+          "fingerprint": "3cb6415ba478"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "deletePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "25b4f57e7e56"
+          "fingerprint": "eff9cd757f7e"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "f2db9b3af2c6"
+          "fingerprint": "5b4fa72e10b8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "b4dec22ceeac"
+          "fingerprint": "0d9adb04c12c"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "ad662b2db249"
+          "fingerprint": "11539fa0b08c"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "6e75b2120d46"
+          "fingerprint": "541d6d0ed31d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "20587965ad09"
+          "fingerprint": "d41b2675dc3b"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "74b3de0f5fd6"
+          "fingerprint": "1e250f19ae2a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "10dea1a1e211"
+          "fingerprint": "bf749c9ccbbf"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updatePublishedPhoto",
           "path": "/api/my/photos/{id}",
           "section": "paths",
-          "fingerprint": "b3ce72a4096f"
+          "fingerprint": "740b942d2742"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requests/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requests/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "section": "paths",
-          "fingerprint": "e0df1dc10b13"
+          "fingerprint": "1ec6fcdb630a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requests/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requests/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequests",
           "path": "/api/photo-requests",
           "section": "paths",
-          "fingerprint": "797f4ce4800a"
+          "fingerprint": "bbbc4b9d2a54"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "66817acb53b6"
+          "fingerprint": "60ca764c1dba"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "d7fec4046116"
+          "fingerprint": "1f28c05d9a6a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/requester/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/requester/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "baf9d7ccb1cf"
+          "fingerprint": "845bb3499b3d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoRequestDetail",
           "path": "/api/photo-requests/{id}",
           "section": "paths",
-          "fingerprint": "c47adb1ef0ac"
+          "fingerprint": "6477527b9d01"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "section": "paths",
-          "fingerprint": "580f637f60c4"
+          "fingerprint": "e964e2f2b13a"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "submitPhoto",
           "path": "/api/photo-requests/{requestId}/submissions",
           "section": "paths",
-          "fingerprint": "729f852e9cea"
+          "fingerprint": "db7f5864fbf2"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "section": "paths",
-          "fingerprint": "0b527c7abf1e"
+          "fingerprint": "6aed775b80f4"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "DELETE",
           "operationId": "withdrawSubmission",
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}",
           "section": "paths",
-          "fingerprint": "9dc197fdc087"
+          "fingerprint": "149e84e63cfd"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/dislikeCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/dislikeCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "toggleDislike",
           "path": "/api/photos/{photoId}/dislike",
           "section": "paths",
-          "fingerprint": "375f34dcc525"
+          "fingerprint": "d2ad6711c198"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/dislikeCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/dislikeCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "section": "paths",
-          "fingerprint": "fa7f31ed164a"
+          "fingerprint": "f9bd64a99ff3"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/likeCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/likeCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "section": "paths",
-          "fingerprint": "25b1270e4359"
+          "fingerprint": "bbfad6a27fd0"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "section": "paths",
-          "fingerprint": "de9750d23def"
+          "fingerprint": "01272b0671e0"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/viewCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/viewCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getEngagement",
           "path": "/api/photos/{photoId}/engagement",
           "section": "paths",
-          "fingerprint": "894b00914285"
+          "fingerprint": "e0cbe769cbf0"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/likeCount` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/likeCount` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "toggleLike",
           "path": "/api/photos/{photoId}/like",
           "section": "paths",
-          "fingerprint": "92d580bd52b8"
+          "fingerprint": "34e26266e54f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "profile",
           "path": "/api/profile",
           "section": "paths",
-          "fingerprint": "4faae669d944"
+          "fingerprint": "e54279f54081"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "section": "paths",
-          "fingerprint": "31a1cfa2f66d"
+          "fingerprint": "fa1f5954e0de"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "section": "paths",
-          "fingerprint": "1d3985aa09c2"
+          "fingerprint": "f7d071023c43"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotos",
           "path": "/api/public/photos",
           "section": "paths",
-          "fingerprint": "50a93bf249fc"
+          "fingerprint": "dedaefe40322"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "d3744a3e8c02"
+          "fingerprint": "aaf9edeecc87"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "5fb795fb37b6"
+          "fingerprint": "8c770a99e5ce"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "424f6488a3c4"
+          "fingerprint": "fac81571670d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "db0a89344960"
+          "fingerprint": "41eafca26d06"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "section": "paths",
-          "fingerprint": "4456237436a5"
+          "fingerprint": "018bb9e40ae4"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "section": "paths",
-          "fingerprint": "33cbff1f6ef5"
+          "fingerprint": "c15bd191bd6d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/photos/items/urls/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/photos/items/urls/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotosInClusterArea",
           "path": "/api/public/photos/cluster-area",
           "section": "paths",
-          "fingerprint": "5a8e8986e4bc"
+          "fingerprint": "6484d48ff6c9"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/clusters/items/thumbnail/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/clusters/items/thumbnail/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "section": "paths",
-          "fingerprint": "df15c21f5647"
+          "fingerprint": "dfd0ad8dd422"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/generatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/generatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPhotoClusters",
           "path": "/api/public/photos/clusters",
           "section": "paths",
-          "fingerprint": "09c078635ca1"
+          "fingerprint": "a3b72d04170a"
         },
         {
           "id": "response-required-property-removed",
@@ -8123,153 +8303,153 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "section": "paths",
-          "fingerprint": "5cfaa6932696"
+          "fingerprint": "ba9cac9e5ace"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "section": "paths",
-          "fingerprint": "d3a598d54af4"
+          "fingerprint": "2bb69f0ed8a8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/image/photoId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/image/photoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "section": "paths",
-          "fingerprint": "6e8539a1eb49"
+          "fingerprint": "8064ff199994"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getPublicPhotoDetail",
           "path": "/api/public/photos/{id}",
           "section": "paths",
-          "fingerprint": "3e396c6d70b5"
+          "fingerprint": "229b70521920"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/entries/items/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/entries/items/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getLeaderboard",
           "path": "/api/shutter/leaderboard",
           "section": "paths",
-          "fingerprint": "7e024f098f94"
+          "fingerprint": "99830326c0ad"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalLikesReceived` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/totalLikesReceived` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "section": "paths",
-          "fingerprint": "0dfebb7cfd3c"
+          "fingerprint": "bb156a65910f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalLikesReceived` response's property type/format changed from `integer`/`int64` to `string`/`` for status `401`",
+          "text": "the `body/totalLikesReceived` response's property `type/format` changed from `integer/int64` to `string` for status `401`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "section": "paths",
-          "fingerprint": "1f7b91e8b1f5"
+          "fingerprint": "a741c8027ecd"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "section": "paths",
-          "fingerprint": "9517fbdd4ce6"
+          "fingerprint": "654910406fb7"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `401`",
+          "text": "the `body/userId` response's property `type/format` changed from `integer/int64` to `string` for status `401`",
           "level": 3,
           "operation": "GET",
           "operationId": "getMyShutter",
           "path": "/api/shutter/me",
           "section": "paths",
-          "fingerprint": "3a88ce8eb1cc"
+          "fingerprint": "4284ad10c0fd"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalUsers` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/totalUsers` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getRankStatistics",
           "path": "/api/shutter/statistics",
           "section": "paths",
-          "fingerprint": "d22944d1cd10"
+          "fingerprint": "aa401cbfb332"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalLikesReceived` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/totalLikesReceived` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "section": "paths",
-          "fingerprint": "3efa68334f47"
+          "fingerprint": "d5bcc8c84ef7"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/totalLikesReceived` response's property type/format changed from `integer`/`int64` to `string`/`` for status `404`",
+          "text": "the `body/totalLikesReceived` response's property `type/format` changed from `integer/int64` to `string` for status `404`",
           "level": 3,
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "section": "paths",
-          "fingerprint": "57b559a5ac4b"
+          "fingerprint": "97bbcd408889"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "section": "paths",
-          "fingerprint": "4c15709ae234"
+          "fingerprint": "11b078eb6f8d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `404`",
+          "text": "the `body/userId` response's property `type/format` changed from `integer/int64` to `string` for status `404`",
           "level": 3,
           "operation": "GET",
           "operationId": "getUserShutter",
           "path": "/api/shutter/users/{userId}",
           "section": "paths",
-          "fingerprint": "6d07bc1dfed5"
+          "fingerprint": "78a370587c3d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/expiresAt` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/expiresAt` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "presignedUrl",
           "path": "/api/storage/presigned-url",
           "section": "paths",
-          "fingerprint": "1f529164eee9"
+          "fingerprint": "e91016db854c"
         }
       ],
       "summary": {
@@ -9694,193 +9874,193 @@
       "changelog": [
         {
           "id": "response-property-type-changed",
-          "text": "the `body/missions/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/missions/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "da935587e9e3"
+          "fingerprint": "bcaa6a5c8d46"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/missions/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/missions/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "a124de3a5134"
+          "fingerprint": "722e59b3d594"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/missions/items/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/missions/items/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "c0d717431d96"
+          "fingerprint": "a4c5e278eb1f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "3d824cb69007"
+          "fingerprint": "f37b0b0e3ff8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "6c694861e983"
+          "fingerprint": "3a60fa44be5e"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "05e794981a31"
+          "fingerprint": "0addb5535175"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "f460245f87c5"
+          "fingerprint": "238c2e1d94c0"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "bae81549a99b"
+          "fingerprint": "a23507cb58f7"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "73b9e95fd741"
+          "fingerprint": "95d681e2fc81"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "a38f4c66a813"
+          "fingerprint": "fbfe6092d008"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "c13f193f99f8"
+          "fingerprint": "9caf81d3a1f8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "1005ad7cbc71"
+          "fingerprint": "485d2fcaaadb"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/profile/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/profile/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "3fc99e166618"
+          "fingerprint": "aaf26ce708d8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/user/authorities/items/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/user/authorities/items/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "fd6fbc30aea5"
+          "fingerprint": "c307c2482d0d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/user/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/user/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "b6ce9892ab28"
+          "fingerprint": "d83ef54ce998"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/user/profile/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/user/profile/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "21c85ffa1a49"
+          "fingerprint": "f28b55599f43"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/userAuthorities/items/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/userAuthorities/items/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "6ce8d6f8d279"
+          "fingerprint": "51724b7735c9"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "section": "paths",
-          "fingerprint": "dced74acad84"
+          "fingerprint": "1a738b11bf71"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/profile/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/profile/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "section": "paths",
-          "fingerprint": "597c316f619c"
+          "fingerprint": "d34ae21e00d5"
         },
         {
           "id": "response-property-enum-value-added",
@@ -9895,275 +10075,275 @@
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "DELETE",
           "operationId": "cancelMission",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "28d6ae45bf21"
+          "fingerprint": "e3b5fc4814a2"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "GET",
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "038c33095978"
+          "fingerprint": "984b1eb5be88"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "PATCH",
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "162a7e45eb25"
+          "fingerprint": "01ddb45cf04c"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "closeMission",
           "path": "/api/admin/missions/{id}/close",
           "section": "paths",
-          "fingerprint": "76419f8fb681"
+          "fingerprint": "b778dea7aa8a"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `missionId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `missionId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
           "section": "paths",
-          "fingerprint": "e772ee449083"
+          "fingerprint": "133da8b46f88"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `submissionId`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `submissionId`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "POST",
           "operationId": "reviewSubmission",
           "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
           "section": "paths",
-          "fingerprint": "c4fd6c3090f1"
+          "fingerprint": "85b4b099e7aa"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "GET",
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "section": "paths",
-          "fingerprint": "375435137671"
+          "fingerprint": "83078c0ee1a8"
         },
         {
           "id": "request-parameter-type-generalized",
-          "text": "for the `path` request parameter `id`, the type/format was generalized from `integer`/`int64` to `string`/``",
+          "text": "for the `path` request parameter `id`, the `type/format` was widened from `integer/int64` to `string`",
           "level": 1,
           "operation": "PUT",
           "operationId": "modifyProfile",
           "path": "/api/admin/users/{id}/profile",
           "section": "paths",
-          "fingerprint": "3d3ffe35535e"
+          "fingerprint": "a2df134a7743"
         }
       ],
       "breaking": [
         {
           "id": "response-property-type-changed",
-          "text": "the `body/missions/items/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/missions/items/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "da935587e9e3"
+          "fingerprint": "bcaa6a5c8d46"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/missions/items/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/missions/items/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "a124de3a5134"
+          "fingerprint": "722e59b3d594"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/missions/items/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/missions/items/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissions",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "c0d717431d96"
+          "fingerprint": "a4c5e278eb1f"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "3d824cb69007"
+          "fingerprint": "f37b0b0e3ff8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "6c694861e983"
+          "fingerprint": "3a60fa44be5e"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createSystemMission",
           "path": "/api/admin/missions",
           "section": "paths",
-          "fingerprint": "05e794981a31"
+          "fingerprint": "0addb5535175"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "f460245f87c5"
+          "fingerprint": "238c2e1d94c0"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "bae81549a99b"
+          "fingerprint": "a23507cb58f7"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getSystemMissionDetail",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "73b9e95fd741"
+          "fingerprint": "95d681e2fc81"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/createdAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/createdAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "a38f4c66a813"
+          "fingerprint": "fbfe6092d008"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "c13f193f99f8"
+          "fingerprint": "9caf81d3a1f8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/updatedAtEpochMilli` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/updatedAtEpochMilli` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateSystemMission",
           "path": "/api/admin/missions/{id}",
           "section": "paths",
-          "fingerprint": "1005ad7cbc71"
+          "fingerprint": "485d2fcaaadb"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/profile/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/profile/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "3fc99e166618"
+          "fingerprint": "aaf26ce708d8"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/user/authorities/items/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/user/authorities/items/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "fd6fbc30aea5"
+          "fingerprint": "c307c2482d0d"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/user/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/user/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "b6ce9892ab28"
+          "fingerprint": "d83ef54ce998"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/user/profile/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/user/profile/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "21c85ffa1a49"
+          "fingerprint": "f28b55599f43"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/items/userAuthorities/items/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/items/userAuthorities/items/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findAll",
           "path": "/api/admin/users",
           "section": "paths",
-          "fingerprint": "6ce8d6f8d279"
+          "fingerprint": "51724b7735c9"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/id` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/id` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "section": "paths",
-          "fingerprint": "dced74acad84"
+          "fingerprint": "1a738b11bf71"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/profile/userId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/profile/userId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "findById",
           "path": "/api/admin/users/{id}",
           "section": "paths",
-          "fingerprint": "597c316f619c"
+          "fingerprint": "d34ae21e00d5"
         },
         {
           "id": "response-property-enum-value-added",

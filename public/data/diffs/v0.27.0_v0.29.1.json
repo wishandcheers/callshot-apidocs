@@ -313,8 +313,8 @@
         },
         "paths": {
           "added": [
-            "/api/admin/photos/seed/{source}",
-            "/api/admin/photos/seed/import"
+            "/api/admin/photos/seed/import",
+            "/api/admin/photos/seed/{source}"
           ],
           "modified": {
             "/api/admin/external/events/refresh": {
@@ -351,13 +351,13 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseSeedDeleteResponse",
-              "BaseResponseSeedImportResponse",
-              "SeedDeleteResponse",
-              "ExternalEventRefreshResponse",
               "BaseResponseExternalEventRefreshResponse",
               "SeedImportRequest",
-              "SeedImportResponse"
+              "BaseResponseSeedDeleteResponse",
+              "ExternalEventRefreshResponse",
+              "SeedDeleteResponse",
+              "SeedImportResponse",
+              "BaseResponseSeedImportResponse"
             ],
             "deleted": [
               "BaseResponseExternalEventSyncResponse",

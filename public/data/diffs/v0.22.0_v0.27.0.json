@@ -95,12 +95,12 @@
         "components": {
           "schemas": {
             "added": [
+              "BookmarkedPhotoView",
+              "ConvertShotsResponse",
+              "BaseResponseWalletBalanceResponse",
               "BookmarkedPhotoUrls",
               "BaseResponseConvertShotsResponse",
-              "BaseResponseWalletBalanceResponse",
-              "WalletBalanceResponse",
-              "BookmarkedPhotoView",
-              "ConvertShotsResponse"
+              "WalletBalanceResponse"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {
@@ -239,8 +239,8 @@
         },
         "paths": {
           "added": [
-            "/api/admin/external/events/refresh",
-            "/api/admin/external/events"
+            "/api/admin/external/events",
+            "/api/admin/external/events/refresh"
           ]
         },
         "tags": {
@@ -251,11 +251,11 @@
         "components": {
           "schemas": {
             "added": [
+              "ExternalEventSyncResponse",
               "BaseResponseExternalEventSyncResponse",
-              "BaseResponseExternalEventPageResponse",
               "ExternalEventPageResponse",
               "ExternalEventResponse",
-              "ExternalEventSyncResponse"
+              "BaseResponseExternalEventPageResponse"
             ]
           }
         }

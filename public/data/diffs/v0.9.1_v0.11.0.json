@@ -160,14 +160,14 @@
         "components": {
           "schemas": {
             "added": [
-              "ShutterSummaryInfo",
-              "UpdateUserProfileRequest"
+              "UpdateUserProfileRequest",
+              "ShutterSummaryInfo"
             ],
             "deleted": [
-              "UserSignUpRequest",
-              "PhotoClusterRequest",
               "ClusterAreaRequest",
-              "ShutterSummary"
+              "ShutterSummary",
+              "PhotoClusterRequest",
+              "UserSignUpRequest"
             ],
             "modified": {
               "BaseResponseUserProfileResponse": {
@@ -634,18 +634,18 @@
         "components": {
           "schemas": {
             "added": [
-              "SystemMissionResponse",
-              "UpdateSystemMissionRequest",
-              "Gps",
-              "CreateSystemMissionRequest",
-              "ReviewSystemMissionSubmissionRequest",
-              "Clear",
-              "SystemMissionsResponse",
-              "BaseResponseSystemMissionResponse",
-              "Absent",
               "BaseResponseSystemMissionsResponse",
+              "CreateSystemMissionRequest",
+              "Gps",
+              "Value",
+              "Absent",
+              "BaseResponseSystemMissionResponse",
+              "SystemMissionsResponse",
               "PatchString",
-              "Value"
+              "UpdateSystemMissionRequest",
+              "SystemMissionResponse",
+              "Clear",
+              "ReviewSystemMissionSubmissionRequest"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {

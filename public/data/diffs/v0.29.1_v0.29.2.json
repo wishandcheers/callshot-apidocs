@@ -55,11 +55,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
+                                  "minLat",
+                                  "minLng",
                                   "limit",
                                   "maxLat",
-                                  "maxLng",
-                                  "minLat",
-                                  "minLng"
+                                  "maxLng"
                                 ]
                               },
                               "properties": {
@@ -67,11 +67,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
+                                  "minLat",
                                   "minLng",
                                   "limit",
                                   "maxLat",
-                                  "maxLng",
-                                  "minLat"
+                                  "maxLng"
                                 ]
                               }
                             }
@@ -127,9 +127,9 @@
           "schemas": {
             "added": [
               "SeedImportItemResponse",
+              "BaseResponseSeedCandidatesResponse",
               "SeedCandidateResponse",
-              "SeedCandidatesResponse",
-              "BaseResponseSeedCandidatesResponse"
+              "SeedCandidatesResponse"
             ],
             "modified": {
               "BaseResponseSeedImportResponse": {
@@ -147,8 +147,8 @@
                       },
                       "properties": {
                         "added": [
-                          "requested",
-                          "results"
+                          "results",
+                          "requested"
                         ],
                         "deleted": [
                           "fetched"
@@ -176,11 +176,11 @@
                     "sourceIds"
                   ],
                   "deleted": [
+                    "minLat",
+                    "minLng",
                     "limit",
                     "maxLat",
-                    "maxLng",
-                    "minLat",
-                    "minLng"
+                    "maxLng"
                   ]
                 }
               },

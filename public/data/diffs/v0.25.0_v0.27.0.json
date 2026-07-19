@@ -30,8 +30,8 @@
         },
         "paths": {
           "added": [
-            "/api/admin/external/events/refresh",
-            "/api/admin/external/events"
+            "/api/admin/external/events",
+            "/api/admin/external/events/refresh"
           ]
         },
         "tags": {
@@ -42,10 +42,10 @@
         "components": {
           "schemas": {
             "added": [
-              "ExternalEventResponse",
-              "ExternalEventSyncResponse",
-              "BaseResponseExternalEventPageResponse",
               "BaseResponseExternalEventSyncResponse",
+              "ExternalEventResponse",
+              "BaseResponseExternalEventPageResponse",
+              "ExternalEventSyncResponse",
               "ExternalEventPageResponse"
             ]
           }

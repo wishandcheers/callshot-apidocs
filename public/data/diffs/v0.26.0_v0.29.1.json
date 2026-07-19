@@ -326,13 +326,13 @@
         "components": {
           "schemas": {
             "added": [
-              "SeedImportResponse",
-              "BaseResponseSeedImportResponse",
-              "BaseResponseExternalEventRefreshResponse",
-              "BaseResponseSeedDeleteResponse",
               "ExternalEventRefreshResponse",
               "SeedDeleteResponse",
-              "SeedImportRequest"
+              "SeedImportRequest",
+              "BaseResponseExternalEventRefreshResponse",
+              "BaseResponseSeedDeleteResponse",
+              "BaseResponseSeedImportResponse",
+              "SeedImportResponse"
             ]
           }
         }

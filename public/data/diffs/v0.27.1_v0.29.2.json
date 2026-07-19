@@ -313,9 +313,9 @@
         },
         "paths": {
           "added": [
+            "/api/admin/photos/seed/import",
             "/api/admin/photos/seed/{source}",
-            "/api/admin/photos/seed/candidates",
-            "/api/admin/photos/seed/import"
+            "/api/admin/photos/seed/candidates"
           ]
         },
         "tags": {
@@ -327,14 +327,14 @@
           "schemas": {
             "added": [
               "SeedCandidateResponse",
-              "SeedImportResponse",
-              "SeedCandidatesResponse",
+              "BaseResponseSeedDeleteResponse",
               "SeedDeleteResponse",
+              "BaseResponseSeedImportResponse",
+              "SeedCandidatesResponse",
               "SeedImportRequest",
               "SeedImportItemResponse",
               "BaseResponseSeedCandidatesResponse",
-              "BaseResponseSeedDeleteResponse",
-              "BaseResponseSeedImportResponse"
+              "SeedImportResponse"
             ]
           }
         }

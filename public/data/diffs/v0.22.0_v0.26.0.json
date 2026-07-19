@@ -95,12 +95,12 @@
         "components": {
           "schemas": {
             "added": [
+              "ConvertShotsResponse",
               "BaseResponseConvertShotsResponse",
-              "BaseResponseWalletBalanceResponse",
               "BookmarkedPhotoView",
               "WalletBalanceResponse",
               "BookmarkedPhotoUrls",
-              "ConvertShotsResponse"
+              "BaseResponseWalletBalanceResponse"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {

@@ -12,9 +12,9 @@
         },
         "paths": {
           "added": [
-            "/api/wallet/me/balance",
             "/api/shutter/convert",
-            "/api/hashtags/{name}/photos"
+            "/api/hashtags/{name}/photos",
+            "/api/wallet/me/balance"
           ],
           "modified": {
             "/api/explore/photos": {
@@ -269,8 +269,8 @@
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ],
                                                         "modified": {
                                                           "photoId": {
@@ -408,8 +408,8 @@
                                             "image": {
                                               "properties": {
                                                 "added": [
-                                                  "height",
-                                                  "width"
+                                                  "width",
+                                                  "height"
                                                 ],
                                                 "modified": {
                                                   "photoId": {
@@ -559,8 +559,8 @@
                                             "image": {
                                               "properties": {
                                                 "added": [
-                                                  "height",
-                                                  "width"
+                                                  "width",
+                                                  "height"
                                                 ],
                                                 "modified": {
                                                   "photoId": {
@@ -920,8 +920,8 @@
                                               "items": {
                                                 "properties": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ],
                                                   "modified": {
                                                     "gps": {
@@ -943,8 +943,8 @@
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ],
                                                         "modified": {
                                                           "photoId": {
@@ -1096,8 +1096,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "imageWidth",
-                                                    "imageHeight"
+                                                    "imageHeight",
+                                                    "imageWidth"
                                                   ],
                                                   "modified": {
                                                     "gps": {
@@ -2984,8 +2984,8 @@
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "width",
-                                                          "height"
+                                                          "height",
+                                                          "width"
                                                         ],
                                                         "modified": {
                                                           "photoId": {
@@ -4064,15 +4064,15 @@
         "components": {
           "schemas": {
             "added": [
-              "WalletBalanceResponse",
-              "BaseResponseConvertShotsResponse",
-              "BaseResponseWalletBalanceResponse",
-              "HashtagPhotoResponse",
-              "BaseResponseCursorPageHashtagPhotoResponse",
-              "CursorPageHashtagPhotoResponse",
-              "BookmarkedPhotoUrls",
-              "ConvertShotsResponse",
               "HashtagPhotoOwnerResponse",
+              "BaseResponseWalletBalanceResponse",
+              "BookmarkedPhotoUrls",
+              "CursorPageHashtagPhotoResponse",
+              "BaseResponseCursorPageHashtagPhotoResponse",
+              "WalletBalanceResponse",
+              "HashtagPhotoResponse",
+              "ConvertShotsResponse",
+              "BaseResponseConvertShotsResponse",
               "BookmarkedPhotoView"
             ],
             "modified": {
@@ -4680,8 +4680,8 @@
                             "items": {
                               "properties": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ],
                                 "modified": {
                                   "gps": {
@@ -4941,8 +4941,8 @@
                             "image": {
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ],
                                 "modified": {
                                   "photoId": {
@@ -5083,8 +5083,8 @@
                             "items": {
                               "properties": {
                                 "added": [
-                                  "imageWidth",
-                                  "imageHeight"
+                                  "imageHeight",
+                                  "imageWidth"
                                 ],
                                 "modified": {
                                   "gps": {
@@ -5305,8 +5305,8 @@
                     "body": {
                       "required": {
                         "added": [
-                          "imageWidth",
-                          "imageHeight"
+                          "imageHeight",
+                          "imageWidth"
                         ]
                       },
                       "properties": {
@@ -5389,8 +5389,8 @@
                               },
                               "properties": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ],
                                 "modified": {
                                   "gps": {
@@ -5563,8 +5563,8 @@
                           "image": {
                             "properties": {
                               "added": [
-                                "width",
-                                "height"
+                                "height",
+                                "width"
                               ],
                               "modified": {
                                 "photoId": {
@@ -5678,8 +5678,8 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "imageWidth",
-                                  "imageHeight"
+                                  "imageHeight",
+                                  "imageWidth"
                                 ]
                               },
                               "properties": {
@@ -5763,14 +5763,14 @@
                                   "photo": {
                                     "required": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     },
                                     "properties": {
                                       "added": [
-                                        "width",
-                                        "height"
+                                        "height",
+                                        "width"
                                       ]
                                     }
                                   }
@@ -6690,8 +6690,8 @@
                       "items": {
                         "properties": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ],
                           "modified": {
                             "gps": {
@@ -7136,8 +7136,8 @@
                       "items": {
                         "properties": {
                           "added": [
-                            "imageWidth",
-                            "imageHeight"
+                            "imageHeight",
+                            "imageWidth"
                           ],
                           "modified": {
                             "gps": {
@@ -7498,8 +7498,8 @@
                         },
                         "properties": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ],
                           "modified": {
                             "gps": {
@@ -7660,8 +7660,8 @@
                     "image": {
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ],
                         "modified": {
                           "photoId": {
@@ -7769,8 +7769,8 @@
                       "items": {
                         "required": {
                           "added": [
-                            "imageWidth",
-                            "imageHeight"
+                            "imageHeight",
+                            "imageWidth"
                           ]
                         },
                         "properties": {
@@ -7844,14 +7844,14 @@
                     "photo": {
                       "required": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       },
                       "properties": {
                         "added": [
-                          "width",
-                          "height"
+                          "height",
+                          "width"
                         ]
                       }
                     }
@@ -7861,8 +7861,8 @@
               "RequestSubmissionPhotoInfoDto": {
                 "required": {
                   "added": [
-                    "width",
-                    "height"
+                    "height",
+                    "width"
                   ]
                 },
                 "properties": {
@@ -7882,14 +7882,14 @@
                             "photo": {
                               "required": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               },
                               "properties": {
                                 "added": [
-                                  "width",
-                                  "height"
+                                  "height",
+                                  "width"
                                 ]
                               }
                             }
@@ -8143,64 +8143,64 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/comments/items/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/comments/items/parentId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getComments-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
-          "fingerprint": "d473d0566799"
+          "fingerprint": "45f370d0de5c"
         },
         {
           "id": "request-property-type-changed",
-          "text": "the `parentId` request property type/format changed from `integer`/`int64` to `string`/``",
+          "text": "the `parentId` request property `type/format` changed from `integer/int64` to `string`",
           "level": 3,
           "operation": "POST",
           "operationId": "createComment-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
-          "fingerprint": "9c406a498bc2"
+          "fingerprint": "d0945d124348"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/parentId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createComment-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
-          "fingerprint": "a10c32327083"
+          "fingerprint": "ec1608ae7dc9"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/parentId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateComment-4pyTHqI",
           "path": "/api/photos/{photoId}/comments/{commentId}",
           "section": "paths",
-          "fingerprint": "b66260d43a52"
+          "fingerprint": "a834141af536"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/comments/items/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/comments/items/parentId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getReplies-4pyTHqI",
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
           "section": "paths",
-          "fingerprint": "3489a2076cb4"
+          "fingerprint": "f6dba432780a"
         },
         {
           "id": "request-parameter-property-type-changed",
-          "text": "for the `query` request parameter `ids`, the type/format of property `items/` was changed from `integer`/`int64` to `string`/``",
+          "text": "for the `query` request parameter `ids`, the `type/format` of property `items/` was changed from `integer/int64` to `string`",
           "comment": "This is a warning because parameter objects can be passed in different ways, some of which allow this type change while others do not.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "2d3c041f0924"
+          "fingerprint": "3859992328b4"
         },
         {
           "id": "endpoint-added",
@@ -8925,64 +8925,64 @@
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/comments/items/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/comments/items/parentId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getComments-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
-          "fingerprint": "d473d0566799"
+          "fingerprint": "45f370d0de5c"
         },
         {
           "id": "request-property-type-changed",
-          "text": "the `parentId` request property type/format changed from `integer`/`int64` to `string`/``",
+          "text": "the `parentId` request property `type/format` changed from `integer/int64` to `string`",
           "level": 3,
           "operation": "POST",
           "operationId": "createComment-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
-          "fingerprint": "9c406a498bc2"
+          "fingerprint": "d0945d124348"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/parentId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "POST",
           "operationId": "createComment-DTCb-Co",
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
-          "fingerprint": "a10c32327083"
+          "fingerprint": "ec1608ae7dc9"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/parentId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "PATCH",
           "operationId": "updateComment-4pyTHqI",
           "path": "/api/photos/{photoId}/comments/{commentId}",
           "section": "paths",
-          "fingerprint": "b66260d43a52"
+          "fingerprint": "a834141af536"
         },
         {
           "id": "response-property-type-changed",
-          "text": "the `body/comments/items/parentId` response's property type/format changed from `integer`/`int64` to `string`/`` for status `200`",
+          "text": "the `body/comments/items/parentId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
           "level": 3,
           "operation": "GET",
           "operationId": "getReplies-4pyTHqI",
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
           "section": "paths",
-          "fingerprint": "3489a2076cb4"
+          "fingerprint": "f6dba432780a"
         },
         {
           "id": "request-parameter-property-type-changed",
-          "text": "for the `query` request parameter `ids`, the type/format of property `items/` was changed from `integer`/`int64` to `string`/``",
+          "text": "for the `query` request parameter `ids`, the `type/format` of property `items/` was changed from `integer/int64` to `string`",
           "comment": "This is a warning because parameter objects can be passed in different ways, some of which allow this type change while others do not.",
           "level": 2,
           "operation": "GET",
           "operationId": "getPublicPhotoDetails",
           "path": "/api/public/photos/bulk",
           "section": "paths",
-          "fingerprint": "2d3c041f0924"
+          "fingerprint": "3859992328b4"
         }
       ],
       "summary": {

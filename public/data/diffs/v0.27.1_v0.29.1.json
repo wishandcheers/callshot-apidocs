@@ -313,8 +313,8 @@
         },
         "paths": {
           "added": [
-            "/api/admin/photos/seed/{source}",
-            "/api/admin/photos/seed/import"
+            "/api/admin/photos/seed/import",
+            "/api/admin/photos/seed/{source}"
           ]
         },
         "tags": {
@@ -325,11 +325,11 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseSeedImportResponse",
-              "SeedDeleteResponse",
               "SeedImportRequest",
+              "BaseResponseSeedDeleteResponse",
               "SeedImportResponse",
-              "BaseResponseSeedDeleteResponse"
+              "BaseResponseSeedImportResponse",
+              "SeedDeleteResponse"
             ]
           }
         }
