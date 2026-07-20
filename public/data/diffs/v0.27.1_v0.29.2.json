@@ -326,15 +326,15 @@
         "components": {
           "schemas": {
             "added": [
-              "SeedDeleteResponse",
               "SeedImportRequest",
-              "SeedImportResponse",
-              "SeedCandidateResponse",
               "BaseResponseSeedCandidatesResponse",
-              "SeedCandidatesResponse",
-              "BaseResponseSeedImportResponse",
+              "SeedImportResponse",
+              "SeedDeleteResponse",
+              "SeedImportItemResponse",
+              "SeedCandidateResponse",
               "BaseResponseSeedDeleteResponse",
-              "SeedImportItemResponse"
+              "BaseResponseSeedImportResponse",
+              "SeedCandidatesResponse"
             ]
           }
         }
@@ -349,7 +349,7 @@
           "path": "/api/admin/photos/seed/candidates",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "47cb08ddfd24"
         },
@@ -362,7 +362,7 @@
           "path": "/api/admin/photos/seed/import",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "e84197d82809"
         },
@@ -375,7 +375,7 @@
           "path": "/api/admin/photos/seed/{source}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "36f39176efca"
         }

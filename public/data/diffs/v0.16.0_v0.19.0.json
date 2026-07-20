@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
-            "/api/public/profiles/{userId}/review-summary",
             "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
+            "/api/public/profiles/{userId}/reviews",
             "/api/settings",
-            "/api/public/profiles/{userId}/reviews"
+            "/api/public/profiles/{userId}/review-summary"
           ],
           "modified": {
             "/api/explore/photos": {
@@ -126,23 +126,23 @@
           "schemas": {
             "added": [
               "ReviewSummaryResponse",
-              "CreateSubmissionReviewRequest",
               "CursorPageSubmissionReviewResponse",
-              "SubmissionReviewResponse",
-              "UpdateSubmissionReviewRequest",
-              "UserSettingsResponse",
-              "Clear",
-              "BaseResponseReviewSummaryResponse",
-              "BaseResponseSubmissionReviewResponse",
-              "ReviewSummaryInfo",
-              "BaseResponseCursorPageSubmissionReviewResponse",
-              "UpdateUserSettingsRequest",
-              "BaseResponseUserSettingsResponse",
-              "CommissionStatsInfo",
-              "PatchBoolean",
-              "Absent",
               "CursorRequest",
-              "Value"
+              "ReviewSummaryInfo",
+              "Absent",
+              "UpdateUserSettingsRequest",
+              "Value",
+              "BaseResponseUserSettingsResponse",
+              "PatchBoolean",
+              "SubmissionReviewResponse",
+              "CommissionStatsInfo",
+              "UserSettingsResponse",
+              "UpdateSubmissionReviewRequest",
+              "Clear",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "CreateSubmissionReviewRequest",
+              "BaseResponseReviewSummaryResponse",
+              "BaseResponseSubmissionReviewResponse"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {
@@ -209,7 +209,7 @@
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "1f719ed0d618"
         },
@@ -222,7 +222,7 @@
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "7982f437fea8"
         },
@@ -255,7 +255,7 @@
           "path": "/api/public/profiles/{userId}/review-summary",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "fb30c69629dd"
         },
@@ -268,7 +268,7 @@
           "path": "/api/public/profiles/{userId}/reviews",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "500f37450a0d"
         },
@@ -281,7 +281,7 @@
           "path": "/api/settings",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "6a486a39aa50"
         },
@@ -294,7 +294,7 @@
           "path": "/api/settings",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "832acf4e4655"
         }

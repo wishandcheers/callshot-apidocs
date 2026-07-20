@@ -1,0 +1,149 @@
+{
+  "fromVersion": "v0.31.0",
+  "toVersion": "v0.31.1",
+  "groups": {
+    "api": [],
+    "admin": [
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/places/items/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "search",
+        "path": "/api/admin/places",
+        "section": "paths",
+        "fingerprint": "e193032e2148"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/places/items/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "search",
+        "path": "/api/admin/places",
+        "section": "paths",
+        "fingerprint": "a4673eac3a44"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "get",
+        "path": "/api/admin/places/{placeId}",
+        "section": "paths",
+        "fingerprint": "1d032d36c4e8"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "get",
+        "path": "/api/admin/places/{placeId}",
+        "section": "paths",
+        "fingerprint": "c7e012054707"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/source/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "merge",
+        "path": "/api/admin/places/{placeId}/merge",
+        "section": "paths",
+        "fingerprint": "df39d6e6ed89"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/source/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "merge",
+        "path": "/api/admin/places/{placeId}/merge",
+        "section": "paths",
+        "fingerprint": "612bf779dda4"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/target/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "merge",
+        "path": "/api/admin/places/{placeId}/merge",
+        "section": "paths",
+        "fingerprint": "6407aa4beec6"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/target/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "merge",
+        "path": "/api/admin/places/{placeId}/merge",
+        "section": "paths",
+        "fingerprint": "6425f050f9e2"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "rollbackRevision",
+        "path": "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+        "section": "paths",
+        "fingerprint": "c2ad543674e0"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "rollbackRevision",
+        "path": "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+        "section": "paths",
+        "fingerprint": "8c2203dbcb27"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "changeStatus",
+        "path": "/api/admin/places/{placeId}/status",
+        "section": "paths",
+        "fingerprint": "6ef616e0f8d6"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "changeStatus",
+        "path": "/api/admin/places/{placeId}/status",
+        "section": "paths",
+        "fingerprint": "19238c9502f2"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/spots/items/placeId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "GET",
+        "operationId": "listSpots",
+        "path": "/api/admin/topics/{topicId}/stamp-spots",
+        "section": "paths",
+        "fingerprint": "96bd5d15970e"
+      },
+      {
+        "id": "response-property-type-changed",
+        "text": "the `body/placeId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+        "level": 3,
+        "operation": "PATCH",
+        "operationId": "updateSpot",
+        "path": "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
+        "section": "paths",
+        "fingerprint": "048718e3b0e4"
+      }
+    ]
+  }
+}

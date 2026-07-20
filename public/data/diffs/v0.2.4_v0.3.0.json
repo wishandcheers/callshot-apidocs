@@ -12,11 +12,11 @@
         },
         "paths": {
           "added": [
-            "/api/photos/drafts/{id}",
             "/api/photos/my/published",
             "/api/photos/my/drafts",
-            "/api/photos/{id}",
-            "/api/photos/drafts/{id}/publish"
+            "/api/photos/drafts/{id}",
+            "/api/photos/drafts/{id}/publish",
+            "/api/photos/{id}"
           ],
           "modified": {
             "/api/photos/my": {
@@ -77,22 +77,22 @@
         "components": {
           "schemas": {
             "added": [
-              "ImageResponse",
-              "CursorPhotosRequest",
-              "UpdateDraftPhotoRequest",
-              "BaseResponsePublishedPhotoDetailResponse",
-              "BaseResponsePhotoResponse",
-              "BaseResponseDraftPhotoDetailResponse",
-              "BaseResponsePublishedPhotosResponse",
-              "PageCursorResponse",
               "UpdatePublishedPhotoRequest",
+              "PageCursorResponse",
+              "DraftPhotoDetailResponse",
+              "ImageResponse",
               "DraftPhotosResponse",
               "BaseResponseDeletePhotoResponse",
-              "DeletePhotoResponse",
+              "UpdateDraftPhotoRequest",
+              "BaseResponseDraftPhotoDetailResponse",
+              "BaseResponsePhotoResponse",
+              "PublishedPhotoDetailResponse",
+              "CursorPhotosRequest",
+              "BaseResponsePublishedPhotoDetailResponse",
               "PublishedPhotosResponse",
+              "DeletePhotoResponse",
               "BaseResponseDraftPhotosResponse",
-              "DraftPhotoDetailResponse",
-              "PublishedPhotoDetailResponse"
+              "BaseResponsePublishedPhotosResponse"
             ],
             "modified": {
               "BaseResponseMyPhotosResponse": {
@@ -152,7 +152,7 @@
           "path": "/api/photos/drafts/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
           },
           "fingerprint": "f1f7fb891f52"
         },
@@ -165,7 +165,7 @@
           "path": "/api/photos/drafts/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
           },
           "fingerprint": "7edb695729b1"
         },
@@ -178,7 +178,7 @@
           "path": "/api/photos/drafts/{id}/publish",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
           },
           "fingerprint": "eb90d031b089"
         },
@@ -201,7 +201,7 @@
           "path": "/api/photos/my/drafts",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
           },
           "fingerprint": "919f9bee08a8"
         },
@@ -214,7 +214,7 @@
           "path": "/api/photos/my/published",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
           },
           "fingerprint": "27785152319c"
         },
@@ -227,7 +227,7 @@
           "path": "/api/photos/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
           },
           "fingerprint": "299658fd3103"
         },
@@ -240,7 +240,7 @@
           "path": "/api/photos/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
           },
           "fingerprint": "77adb57f031d"
         },
@@ -253,7 +253,7 @@
           "path": "/api/photos/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.3.0/apiDocs-api.json"
           },
           "fingerprint": "3d2cec98e886"
         }

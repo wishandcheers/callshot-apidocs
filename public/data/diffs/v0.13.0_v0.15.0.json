@@ -12,11 +12,11 @@
         },
         "paths": {
           "added": [
-            "/api/my/bookmarks",
             "/api/photos/{photoId}/comments/{commentId}",
-            "/api/photos/{photoId}/bookmark",
             "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/photos/{photoId}/comments"
+            "/api/photos/{photoId}/comments",
+            "/api/photos/{photoId}/bookmark",
+            "/api/my/bookmarks"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -35,16 +35,16 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "isBookmarkedByUser",
                                             "bookmarkCount",
+                                            "isBookmarkedByUser",
                                             "commentCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
                                             "bookmarkCount",
-                                            "commentCount",
-                                            "isBookmarkedByUser"
+                                            "isBookmarkedByUser",
+                                            "commentCount"
                                           ]
                                         }
                                       }
@@ -72,18 +72,18 @@
         "components": {
           "schemas": {
             "added": [
-              "PageCursor",
               "CreateCommentRequest",
-              "BaseResponseCommentPageResponse",
-              "BookmarkedPhotoItem",
               "BaseResponseToggleBookmarkResponse",
               "UpdateCommentRequest",
-              "BookmarkedPhotosResponse",
-              "CommentResponse",
               "CommentPageResponse",
+              "ToggleBookmarkResponse",
+              "BookmarkedPhotoItem",
               "BaseResponseBookmarkedPhotosResponse",
+              "BaseResponseCommentPageResponse",
+              "PageCursor",
               "BaseResponseCommentResponse",
-              "ToggleBookmarkResponse"
+              "BookmarkedPhotosResponse",
+              "CommentResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -99,8 +99,8 @@
                       },
                       "properties": {
                         "added": [
-                          "isBookmarkedByUser",
                           "bookmarkCount",
+                          "isBookmarkedByUser",
                           "commentCount"
                         ]
                       }
@@ -112,15 +112,15 @@
                 "required": {
                   "added": [
                     "commentCount",
-                    "bookmarkCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "bookmarkCount"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "commentCount",
+                    "bookmarkCount",
                     "isBookmarkedByUser",
-                    "bookmarkCount"
+                    "commentCount"
                   ]
                 }
               }
@@ -138,7 +138,7 @@
           "path": "/api/my/bookmarks",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "66e836a0295e"
         },
@@ -151,7 +151,7 @@
           "path": "/api/photos/{photoId}/bookmark",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "bdd42eb2a952"
         },
@@ -164,7 +164,7 @@
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "97d13f016941"
         },
@@ -177,7 +177,7 @@
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "816a40c705bf"
         },
@@ -190,7 +190,7 @@
           "path": "/api/photos/{photoId}/comments/{commentId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "01a82c0eaeb1"
         },
@@ -203,7 +203,7 @@
           "path": "/api/photos/{photoId}/comments/{commentId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "274495a3567d"
         },
@@ -216,7 +216,7 @@
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "a2085245736b"
         },

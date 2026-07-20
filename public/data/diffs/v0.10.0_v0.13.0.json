@@ -2618,24 +2618,24 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
+                                                    "tileBounds",
                                                     "clusterId",
-                                                    "photoBounds",
-                                                    "tileBounds"
+                                                    "photoBounds"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
+                                                    "tileBounds",
                                                     "clusterId",
-                                                    "photoBounds",
-                                                    "tileBounds"
+                                                    "photoBounds"
                                                   ],
                                                   "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
+                                                    "maxDistanceMeters",
+                                                    "avgDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "center": {
@@ -3234,10 +3234,10 @@
         "components": {
           "schemas": {
             "added": [
-              "OwnerResponse",
               "BoundingBoxResponse",
-              "PublicProfileResponse",
               "BaseResponsePublicProfileResponse",
+              "PublicProfileResponse",
+              "OwnerResponse",
               "UpdateUserProfileRequest"
             ],
             "deleted": [
@@ -3790,13 +3790,13 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "photoBounds",
                                   "tileBounds",
-                                  "clusterId"
+                                  "clusterId",
+                                  "photoBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ]
                               },
                               "properties": {
@@ -3806,8 +3806,8 @@
                                   "clusterId"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ],
                                 "modified": {
                                   "center": {
@@ -5127,13 +5127,13 @@
               "PhotoClusterResponse": {
                 "required": {
                   "added": [
-                    "tileBounds",
                     "clusterId",
-                    "photoBounds"
+                    "photoBounds",
+                    "tileBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ]
                 },
                 "properties": {
@@ -5189,13 +5189,13 @@
                       "items": {
                         "required": {
                           "added": [
-                            "photoBounds",
                             "tileBounds",
-                            "clusterId"
+                            "clusterId",
+                            "photoBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ]
                         },
                         "properties": {
@@ -5205,8 +5205,8 @@
                             "clusterId"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ],
                           "modified": {
                             "center": {
@@ -7094,7 +7094,7 @@
           "path": "/api/signup",
           "section": "paths",
           "baseSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
           },
           "fingerprint": "73f1e114ef49"
         },
@@ -7444,7 +7444,7 @@
           "path": "/api/profile",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json"
           },
           "fingerprint": "eb03e8322710"
         },
@@ -7567,7 +7567,7 @@
           "path": "/api/public/photos/clusters/{clusterId}/photos",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json"
           },
           "fingerprint": "ccd74ca77626"
         },
@@ -7620,7 +7620,7 @@
           "path": "/api/public/profiles/{userId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-api.json"
           },
           "fingerprint": "d26ebfd2aa2f"
         },
@@ -8565,7 +8565,7 @@
           "path": "/api/signup",
           "section": "paths",
           "baseSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.10.0/apiDocs-api.json"
           },
           "fingerprint": "73f1e114ef49"
         },
@@ -8890,17 +8890,17 @@
         "components": {
           "schemas": {
             "added": [
-              "Absent",
-              "BaseResponseSystemMissionsResponse",
-              "Gps",
-              "PatchString",
-              "BaseResponseSystemMissionResponse",
-              "SystemMissionResponse",
-              "Value",
-              "Clear",
-              "ReviewSystemMissionSubmissionRequest",
-              "SystemMissionsResponse",
               "CreateSystemMissionRequest",
+              "SystemMissionsResponse",
+              "Gps",
+              "SystemMissionResponse",
+              "BaseResponseSystemMissionResponse",
+              "ReviewSystemMissionSubmissionRequest",
+              "Absent",
+              "Clear",
+              "Value",
+              "BaseResponseSystemMissionsResponse",
+              "PatchString",
               "UpdateSystemMissionRequest"
             ],
             "modified": {
@@ -9491,7 +9491,7 @@
           "path": "/api/admin/missions",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
           },
           "fingerprint": "fcf417febacc"
         },
@@ -9504,7 +9504,7 @@
           "path": "/api/admin/missions",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
           },
           "fingerprint": "19233def30e2"
         },
@@ -9517,7 +9517,7 @@
           "path": "/api/admin/missions/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
           },
           "fingerprint": "2b65f294ce1f"
         },
@@ -9530,7 +9530,7 @@
           "path": "/api/admin/missions/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
           },
           "fingerprint": "a1af7e9a77b0"
         },
@@ -9543,7 +9543,7 @@
           "path": "/api/admin/missions/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
           },
           "fingerprint": "71390c29e2a2"
         },
@@ -9556,7 +9556,7 @@
           "path": "/api/admin/missions/{id}/close",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
           },
           "fingerprint": "57674685b23e"
         },
@@ -9569,7 +9569,7 @@
           "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.13.0/apiDocs-admin.json"
           },
           "fingerprint": "664d08088634"
         },

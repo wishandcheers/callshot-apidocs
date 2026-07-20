@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
+            "/api/settings",
             "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/public/profiles/{userId}/review-summary",
             "/api/public/profiles/{userId}/reviews",
-            "/api/settings",
             "/api/explore/photos"
           ],
           "modified": {
@@ -98,28 +98,28 @@
         "components": {
           "schemas": {
             "added": [
-              "CommissionStatsInfo",
-              "CursorRequest",
-              "SubmissionReviewResponse",
-              "BaseResponseUserSettingsResponse",
-              "UpdateSubmissionReviewRequest",
-              "PatchBoolean",
-              "BaseResponseReviewSummaryResponse",
-              "BaseResponseSubmissionReviewResponse",
-              "Value",
-              "UserSettingsResponse",
-              "FeedOwnerResponse",
-              "CursorPageExplorePhotoResponse",
-              "Absent",
-              "CreateSubmissionReviewRequest",
-              "ReviewSummaryInfo",
-              "ExplorePhotoResponse",
-              "ReviewSummaryResponse",
               "BaseResponseCursorPageSubmissionReviewResponse",
-              "Clear",
-              "CursorPageSubmissionReviewResponse",
+              "ExplorePhotoResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "SubmissionReviewResponse",
+              "FeedOwnerResponse",
               "UpdateUserSettingsRequest",
-              "BaseResponseCursorPageExplorePhotoResponse"
+              "Absent",
+              "ReviewSummaryInfo",
+              "CreateSubmissionReviewRequest",
+              "UpdateSubmissionReviewRequest",
+              "Clear",
+              "CursorRequest",
+              "CursorPageSubmissionReviewResponse",
+              "BaseResponseSubmissionReviewResponse",
+              "BaseResponseReviewSummaryResponse",
+              "CursorPageExplorePhotoResponse",
+              "BaseResponseUserSettingsResponse",
+              "Value",
+              "ReviewSummaryResponse",
+              "UserSettingsResponse",
+              "CommissionStatsInfo",
+              "PatchBoolean"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {
@@ -176,7 +176,7 @@
           "path": "/api/explore/photos",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "b078be2e13d4"
         },
@@ -189,7 +189,7 @@
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "1f719ed0d618"
         },
@@ -202,7 +202,7 @@
           "path": "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "7982f437fea8"
         },
@@ -235,7 +235,7 @@
           "path": "/api/public/profiles/{userId}/review-summary",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "fb30c69629dd"
         },
@@ -248,7 +248,7 @@
           "path": "/api/public/profiles/{userId}/reviews",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "500f37450a0d"
         },
@@ -261,7 +261,7 @@
           "path": "/api/settings",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "6a486a39aa50"
         },
@@ -274,7 +274,7 @@
           "path": "/api/settings",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.19.0/apiDocs-api.json"
           },
           "fingerprint": "832acf4e4655"
         }

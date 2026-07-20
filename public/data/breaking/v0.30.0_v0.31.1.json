@@ -1,0 +1,31 @@
+{
+  "fromVersion": "v0.30.0",
+  "toVersion": "v0.31.1",
+  "groups": {
+    "api": [],
+    "admin": [
+      {
+        "id": "request-parameter-max-set",
+        "text": "for the `query` request parameter `limit`, the max was set to `9223372036854775808.00`",
+        "comment": "This is a warning because the restriction is sometimes legitimately required, for security reasons or to correct an error in the specification. Before making such a change, confirm that clients can handle the new restriction.",
+        "level": 2,
+        "operation": "GET",
+        "operationId": "listByStatus",
+        "path": "/api/admin/topics",
+        "section": "paths",
+        "fingerprint": "27bf54406928"
+      },
+      {
+        "id": "request-parameter-min-set",
+        "text": "for the `query` request parameter `limit`, the min was set to `0.00`",
+        "comment": "This is a warning because the restriction is sometimes legitimately required, for security reasons or to correct an error in the specification. Before making such a change, confirm that clients can handle the new restriction.",
+        "level": 2,
+        "operation": "GET",
+        "operationId": "listByStatus",
+        "path": "/api/admin/topics",
+        "section": "paths",
+        "fingerprint": "128887139b9d"
+      }
+    ]
+  }
+}

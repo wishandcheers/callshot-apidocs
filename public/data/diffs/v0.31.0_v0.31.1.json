@@ -1,0 +1,2212 @@
+{
+  "fromVersion": "v0.31.0",
+  "toVersion": "v0.31.1",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.31.0",
+            "to": "0.31.1"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.31.0",
+            "to": "0.31.1"
+          }
+        },
+        "paths": {
+          "modified": {
+            "/api/admin/places": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "places": {
+                                              "items": {
+                                                "properties": {
+                                                  "modified": {
+                                                    "attribution": {
+                                                      "description": {
+                                                        "from": "출처표시 문구 (KOGL 등)",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "category": {
+                                                      "description": {
+                                                        "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "createdBy": {
+                                                      "type": {
+                                                        "added": [
+                                                          "string"
+                                                        ],
+                                                        "deleted": [
+                                                          "integer"
+                                                        ]
+                                                      },
+                                                      "format": {
+                                                        "from": "int64",
+                                                        "to": ""
+                                                      },
+                                                      "description": {
+                                                        "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "externalId": {
+                                                      "description": {
+                                                        "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "mergedIntoId": {
+                                                      "type": {
+                                                        "added": [
+                                                          "string"
+                                                        ],
+                                                        "deleted": [
+                                                          "integer"
+                                                        ]
+                                                      },
+                                                      "format": {
+                                                        "from": "int64",
+                                                        "to": ""
+                                                      },
+                                                      "description": {
+                                                        "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "provenance": {
+                                                      "description": {
+                                                        "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "source": {
+                                                      "description": {
+                                                        "from": "행 생성 출처 (USER | KR_TOUR)",
+                                                        "to": ""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/admin/places/import-runs": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "runs": {
+                                              "items": {
+                                                "properties": {
+                                                  "modified": {
+                                                    "params": {
+                                                      "description": {
+                                                        "from": "실행 파라미터 (스크립트가 기록한 그대로)",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "totalFetched": {
+                                                      "description": {
+                                                        "from": "외부 API에서 읽은 원본 행 수",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "updated": {
+                                                      "description": {
+                                                        "from": "실변경 update 수 — 멱등 재실행이면 0",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "validCount": {
+                                                      "description": {
+                                                        "from": "검증 통과(스테이징 적재) 행 수",
+                                                        "to": ""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/admin/places/{placeId}": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "attribution": {
+                                              "description": {
+                                                "from": "출처표시 문구 (KOGL 등)",
+                                                "to": ""
+                                              }
+                                            },
+                                            "category": {
+                                              "description": {
+                                                "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                                "to": ""
+                                              }
+                                            },
+                                            "createdBy": {
+                                              "type": {
+                                                "added": [
+                                                  "string"
+                                                ],
+                                                "deleted": [
+                                                  "integer"
+                                                ]
+                                              },
+                                              "format": {
+                                                "from": "int64",
+                                                "to": ""
+                                              },
+                                              "description": {
+                                                "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                                "to": ""
+                                              }
+                                            },
+                                            "externalId": {
+                                              "description": {
+                                                "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                                "to": ""
+                                              }
+                                            },
+                                            "mergedIntoId": {
+                                              "type": {
+                                                "added": [
+                                                  "string"
+                                                ],
+                                                "deleted": [
+                                                  "integer"
+                                                ]
+                                              },
+                                              "format": {
+                                                "from": "int64",
+                                                "to": ""
+                                              },
+                                              "description": {
+                                                "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                                "to": ""
+                                              }
+                                            },
+                                            "provenance": {
+                                              "description": {
+                                                "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                                "to": ""
+                                              }
+                                            },
+                                            "source": {
+                                              "description": {
+                                                "from": "행 생성 출처 (USER | KR_TOUR)",
+                                                "to": ""
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/admin/places/{placeId}/merge": {
+              "operations": {
+                "modified": {
+                  "POST": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "source": {
+                                              "properties": {
+                                                "modified": {
+                                                  "attribution": {
+                                                    "description": {
+                                                      "from": "출처표시 문구 (KOGL 등)",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "category": {
+                                                    "description": {
+                                                      "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "createdBy": {
+                                                    "type": {
+                                                      "added": [
+                                                        "string"
+                                                      ],
+                                                      "deleted": [
+                                                        "integer"
+                                                      ]
+                                                    },
+                                                    "format": {
+                                                      "from": "int64",
+                                                      "to": ""
+                                                    },
+                                                    "description": {
+                                                      "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "externalId": {
+                                                    "description": {
+                                                      "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "mergedIntoId": {
+                                                    "type": {
+                                                      "added": [
+                                                        "string"
+                                                      ],
+                                                      "deleted": [
+                                                        "integer"
+                                                      ]
+                                                    },
+                                                    "format": {
+                                                      "from": "int64",
+                                                      "to": ""
+                                                    },
+                                                    "description": {
+                                                      "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "provenance": {
+                                                    "description": {
+                                                      "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "source": {
+                                                    "description": {
+                                                      "from": "행 생성 출처 (USER | KR_TOUR)",
+                                                      "to": ""
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "target": {
+                                              "properties": {
+                                                "modified": {
+                                                  "attribution": {
+                                                    "description": {
+                                                      "from": "출처표시 문구 (KOGL 등)",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "category": {
+                                                    "description": {
+                                                      "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "createdBy": {
+                                                    "type": {
+                                                      "added": [
+                                                        "string"
+                                                      ],
+                                                      "deleted": [
+                                                        "integer"
+                                                      ]
+                                                    },
+                                                    "format": {
+                                                      "from": "int64",
+                                                      "to": ""
+                                                    },
+                                                    "description": {
+                                                      "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "externalId": {
+                                                    "description": {
+                                                      "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "mergedIntoId": {
+                                                    "type": {
+                                                      "added": [
+                                                        "string"
+                                                      ],
+                                                      "deleted": [
+                                                        "integer"
+                                                      ]
+                                                    },
+                                                    "format": {
+                                                      "from": "int64",
+                                                      "to": ""
+                                                    },
+                                                    "description": {
+                                                      "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "provenance": {
+                                                    "description": {
+                                                      "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                                      "to": ""
+                                                    }
+                                                  },
+                                                  "source": {
+                                                    "description": {
+                                                      "from": "행 생성 출처 (USER | KR_TOUR)",
+                                                      "to": ""
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/admin/places/{placeId}/revisions": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "revisions": {
+                                              "items": {
+                                                "properties": {
+                                                  "modified": {
+                                                    "changeType": {
+                                                      "description": {
+                                                        "from": "이력 유형 (EDIT | MERGE | ROLLBACK)",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "changes": {
+                                                      "description": {
+                                                        "from": "필드별 변경 내역 (MERGE는 mergedFrom 합성 diff)",
+                                                        "to": ""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/admin/places/{placeId}/revisions/{revisionId}/rollback": {
+              "operations": {
+                "modified": {
+                  "POST": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "attribution": {
+                                              "description": {
+                                                "from": "출처표시 문구 (KOGL 등)",
+                                                "to": ""
+                                              }
+                                            },
+                                            "category": {
+                                              "description": {
+                                                "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                                "to": ""
+                                              }
+                                            },
+                                            "createdBy": {
+                                              "type": {
+                                                "added": [
+                                                  "string"
+                                                ],
+                                                "deleted": [
+                                                  "integer"
+                                                ]
+                                              },
+                                              "format": {
+                                                "from": "int64",
+                                                "to": ""
+                                              },
+                                              "description": {
+                                                "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                                "to": ""
+                                              }
+                                            },
+                                            "externalId": {
+                                              "description": {
+                                                "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                                "to": ""
+                                              }
+                                            },
+                                            "mergedIntoId": {
+                                              "type": {
+                                                "added": [
+                                                  "string"
+                                                ],
+                                                "deleted": [
+                                                  "integer"
+                                                ]
+                                              },
+                                              "format": {
+                                                "from": "int64",
+                                                "to": ""
+                                              },
+                                              "description": {
+                                                "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                                "to": ""
+                                              }
+                                            },
+                                            "provenance": {
+                                              "description": {
+                                                "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                                "to": ""
+                                              }
+                                            },
+                                            "source": {
+                                              "description": {
+                                                "from": "행 생성 출처 (USER | KR_TOUR)",
+                                                "to": ""
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/admin/places/{placeId}/status": {
+              "operations": {
+                "modified": {
+                  "PATCH": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "attribution": {
+                                              "description": {
+                                                "from": "출처표시 문구 (KOGL 등)",
+                                                "to": ""
+                                              }
+                                            },
+                                            "category": {
+                                              "description": {
+                                                "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                                "to": ""
+                                              }
+                                            },
+                                            "createdBy": {
+                                              "type": {
+                                                "added": [
+                                                  "string"
+                                                ],
+                                                "deleted": [
+                                                  "integer"
+                                                ]
+                                              },
+                                              "format": {
+                                                "from": "int64",
+                                                "to": ""
+                                              },
+                                              "description": {
+                                                "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                                "to": ""
+                                              }
+                                            },
+                                            "externalId": {
+                                              "description": {
+                                                "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                                "to": ""
+                                              }
+                                            },
+                                            "mergedIntoId": {
+                                              "type": {
+                                                "added": [
+                                                  "string"
+                                                ],
+                                                "deleted": [
+                                                  "integer"
+                                                ]
+                                              },
+                                              "format": {
+                                                "from": "int64",
+                                                "to": ""
+                                              },
+                                              "description": {
+                                                "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                                "to": ""
+                                              }
+                                            },
+                                            "provenance": {
+                                              "description": {
+                                                "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                                "to": ""
+                                              }
+                                            },
+                                            "source": {
+                                              "description": {
+                                                "from": "행 생성 출처 (USER | KR_TOUR)",
+                                                "to": ""
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/admin/topics/{topicId}/stamp-spots": {
+              "operations": {
+                "modified": {
+                  "GET": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "spots": {
+                                              "items": {
+                                                "properties": {
+                                                  "modified": {
+                                                    "direction": {
+                                                      "description": {
+                                                        "from": "권장 촬영 방향 (degrees 0~360) — 표시용",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "hiddenDesc": {
+                                                      "description": {
+                                                        "from": "숨겨진 이야기 — 어드민 뷰는 게이팅 없음",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "hint": {
+                                                      "description": {
+                                                        "from": "촬영 가이드 (항상 공개)",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "placeId": {
+                                                      "type": {
+                                                        "added": [
+                                                          "string"
+                                                        ],
+                                                        "deleted": [
+                                                          "integer"
+                                                        ]
+                                                      },
+                                                      "format": {
+                                                        "from": "int64",
+                                                        "to": ""
+                                                      },
+                                                      "description": {
+                                                        "from": "canonical POI 참조 (옵션)",
+                                                        "to": ""
+                                                      }
+                                                    },
+                                                    "seq": {
+                                                      "description": {
+                                                        "from": "순번 (지도 마커 번호, 1부터) — 불변, 삭제 시 결번 허용",
+                                                        "to": ""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/admin/topics/{topicId}/stamp-spots/{spotId}": {
+              "operations": {
+                "modified": {
+                  "PATCH": {
+                    "responses": {
+                      "modified": {
+                        "200": {
+                          "content": {
+                            "modified": {
+                              "*/*": {
+                                "schema": {
+                                  "properties": {
+                                    "modified": {
+                                      "body": {
+                                        "properties": {
+                                          "modified": {
+                                            "direction": {
+                                              "description": {
+                                                "from": "권장 촬영 방향 (degrees 0~360) — 표시용",
+                                                "to": ""
+                                              }
+                                            },
+                                            "hiddenDesc": {
+                                              "description": {
+                                                "from": "숨겨진 이야기 — 어드민 뷰는 게이팅 없음",
+                                                "to": ""
+                                              }
+                                            },
+                                            "hint": {
+                                              "description": {
+                                                "from": "촬영 가이드 (항상 공개)",
+                                                "to": ""
+                                              }
+                                            },
+                                            "placeId": {
+                                              "type": {
+                                                "added": [
+                                                  "string"
+                                                ],
+                                                "deleted": [
+                                                  "integer"
+                                                ]
+                                              },
+                                              "format": {
+                                                "from": "int64",
+                                                "to": ""
+                                              },
+                                              "description": {
+                                                "from": "canonical POI 참조 (옵션)",
+                                                "to": ""
+                                              }
+                                            },
+                                            "seq": {
+                                              "description": {
+                                                "from": "순번 (지도 마커 번호, 1부터) — 불변, 삭제 시 결번 허용",
+                                                "to": ""
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "modified": {
+              "AdminPlaceListResponse": {
+                "properties": {
+                  "modified": {
+                    "places": {
+                      "items": {
+                        "properties": {
+                          "modified": {
+                            "attribution": {
+                              "description": {
+                                "from": "출처표시 문구 (KOGL 등)",
+                                "to": ""
+                              }
+                            },
+                            "category": {
+                              "description": {
+                                "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                "to": ""
+                              }
+                            },
+                            "createdBy": {
+                              "type": {
+                                "added": [
+                                  "string"
+                                ],
+                                "deleted": [
+                                  "integer"
+                                ]
+                              },
+                              "format": {
+                                "from": "int64",
+                                "to": ""
+                              },
+                              "description": {
+                                "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                "to": ""
+                              }
+                            },
+                            "externalId": {
+                              "description": {
+                                "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                "to": ""
+                              }
+                            },
+                            "mergedIntoId": {
+                              "type": {
+                                "added": [
+                                  "string"
+                                ],
+                                "deleted": [
+                                  "integer"
+                                ]
+                              },
+                              "format": {
+                                "from": "int64",
+                                "to": ""
+                              },
+                              "description": {
+                                "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                "to": ""
+                              }
+                            },
+                            "provenance": {
+                              "description": {
+                                "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                "to": ""
+                              }
+                            },
+                            "source": {
+                              "description": {
+                                "from": "행 생성 출처 (USER | KR_TOUR)",
+                                "to": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "AdminPlaceResponse": {
+                "properties": {
+                  "modified": {
+                    "attribution": {
+                      "description": {
+                        "from": "출처표시 문구 (KOGL 등)",
+                        "to": ""
+                      }
+                    },
+                    "category": {
+                      "description": {
+                        "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                        "to": ""
+                      }
+                    },
+                    "createdBy": {
+                      "type": {
+                        "added": [
+                          "string"
+                        ],
+                        "deleted": [
+                          "integer"
+                        ]
+                      },
+                      "format": {
+                        "from": "int64",
+                        "to": ""
+                      },
+                      "description": {
+                        "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                        "to": ""
+                      }
+                    },
+                    "externalId": {
+                      "description": {
+                        "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                        "to": ""
+                      }
+                    },
+                    "mergedIntoId": {
+                      "type": {
+                        "added": [
+                          "string"
+                        ],
+                        "deleted": [
+                          "integer"
+                        ]
+                      },
+                      "format": {
+                        "from": "int64",
+                        "to": ""
+                      },
+                      "description": {
+                        "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                        "to": ""
+                      }
+                    },
+                    "provenance": {
+                      "description": {
+                        "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                        "to": ""
+                      }
+                    },
+                    "source": {
+                      "description": {
+                        "from": "행 생성 출처 (USER | KR_TOUR)",
+                        "to": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "AdminPlaceRevisionListResponse": {
+                "properties": {
+                  "modified": {
+                    "revisions": {
+                      "items": {
+                        "properties": {
+                          "modified": {
+                            "changeType": {
+                              "description": {
+                                "from": "이력 유형 (EDIT | MERGE | ROLLBACK)",
+                                "to": ""
+                              }
+                            },
+                            "changes": {
+                              "description": {
+                                "from": "필드별 변경 내역 (MERGE는 mergedFrom 합성 diff)",
+                                "to": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "AdminPlaceRevisionResponse": {
+                "properties": {
+                  "modified": {
+                    "changeType": {
+                      "description": {
+                        "from": "이력 유형 (EDIT | MERGE | ROLLBACK)",
+                        "to": ""
+                      }
+                    },
+                    "changes": {
+                      "description": {
+                        "from": "필드별 변경 내역 (MERGE는 mergedFrom 합성 diff)",
+                        "to": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "AdminStampSpotListResponse": {
+                "properties": {
+                  "modified": {
+                    "spots": {
+                      "items": {
+                        "properties": {
+                          "modified": {
+                            "direction": {
+                              "description": {
+                                "from": "권장 촬영 방향 (degrees 0~360) — 표시용",
+                                "to": ""
+                              }
+                            },
+                            "hiddenDesc": {
+                              "description": {
+                                "from": "숨겨진 이야기 — 어드민 뷰는 게이팅 없음",
+                                "to": ""
+                              }
+                            },
+                            "hint": {
+                              "description": {
+                                "from": "촬영 가이드 (항상 공개)",
+                                "to": ""
+                              }
+                            },
+                            "placeId": {
+                              "type": {
+                                "added": [
+                                  "string"
+                                ],
+                                "deleted": [
+                                  "integer"
+                                ]
+                              },
+                              "format": {
+                                "from": "int64",
+                                "to": ""
+                              },
+                              "description": {
+                                "from": "canonical POI 참조 (옵션)",
+                                "to": ""
+                              }
+                            },
+                            "seq": {
+                              "description": {
+                                "from": "순번 (지도 마커 번호, 1부터) — 불변, 삭제 시 결번 허용",
+                                "to": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "AdminStampSpotResponse": {
+                "properties": {
+                  "modified": {
+                    "direction": {
+                      "description": {
+                        "from": "권장 촬영 방향 (degrees 0~360) — 표시용",
+                        "to": ""
+                      }
+                    },
+                    "hiddenDesc": {
+                      "description": {
+                        "from": "숨겨진 이야기 — 어드민 뷰는 게이팅 없음",
+                        "to": ""
+                      }
+                    },
+                    "hint": {
+                      "description": {
+                        "from": "촬영 가이드 (항상 공개)",
+                        "to": ""
+                      }
+                    },
+                    "placeId": {
+                      "type": {
+                        "added": [
+                          "string"
+                        ],
+                        "deleted": [
+                          "integer"
+                        ]
+                      },
+                      "format": {
+                        "from": "int64",
+                        "to": ""
+                      },
+                      "description": {
+                        "from": "canonical POI 참조 (옵션)",
+                        "to": ""
+                      }
+                    },
+                    "seq": {
+                      "description": {
+                        "from": "순번 (지도 마커 번호, 1부터) — 불변, 삭제 시 결번 허용",
+                        "to": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponseAdminPlaceListResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "places": {
+                            "items": {
+                              "properties": {
+                                "modified": {
+                                  "attribution": {
+                                    "description": {
+                                      "from": "출처표시 문구 (KOGL 등)",
+                                      "to": ""
+                                    }
+                                  },
+                                  "category": {
+                                    "description": {
+                                      "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                      "to": ""
+                                    }
+                                  },
+                                  "createdBy": {
+                                    "type": {
+                                      "added": [
+                                        "string"
+                                      ],
+                                      "deleted": [
+                                        "integer"
+                                      ]
+                                    },
+                                    "format": {
+                                      "from": "int64",
+                                      "to": ""
+                                    },
+                                    "description": {
+                                      "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                      "to": ""
+                                    }
+                                  },
+                                  "externalId": {
+                                    "description": {
+                                      "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                      "to": ""
+                                    }
+                                  },
+                                  "mergedIntoId": {
+                                    "type": {
+                                      "added": [
+                                        "string"
+                                      ],
+                                      "deleted": [
+                                        "integer"
+                                      ]
+                                    },
+                                    "format": {
+                                      "from": "int64",
+                                      "to": ""
+                                    },
+                                    "description": {
+                                      "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                      "to": ""
+                                    }
+                                  },
+                                  "provenance": {
+                                    "description": {
+                                      "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                      "to": ""
+                                    }
+                                  },
+                                  "source": {
+                                    "description": {
+                                      "from": "행 생성 출처 (USER | KR_TOUR)",
+                                      "to": ""
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponseAdminPlaceResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "attribution": {
+                            "description": {
+                              "from": "출처표시 문구 (KOGL 등)",
+                              "to": ""
+                            }
+                          },
+                          "category": {
+                            "description": {
+                              "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                              "to": ""
+                            }
+                          },
+                          "createdBy": {
+                            "type": {
+                              "added": [
+                                "string"
+                              ],
+                              "deleted": [
+                                "integer"
+                              ]
+                            },
+                            "format": {
+                              "from": "int64",
+                              "to": ""
+                            },
+                            "description": {
+                              "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                              "to": ""
+                            }
+                          },
+                          "externalId": {
+                            "description": {
+                              "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                              "to": ""
+                            }
+                          },
+                          "mergedIntoId": {
+                            "type": {
+                              "added": [
+                                "string"
+                              ],
+                              "deleted": [
+                                "integer"
+                              ]
+                            },
+                            "format": {
+                              "from": "int64",
+                              "to": ""
+                            },
+                            "description": {
+                              "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                              "to": ""
+                            }
+                          },
+                          "provenance": {
+                            "description": {
+                              "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                              "to": ""
+                            }
+                          },
+                          "source": {
+                            "description": {
+                              "from": "행 생성 출처 (USER | KR_TOUR)",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponseAdminPlaceRevisionListResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "revisions": {
+                            "items": {
+                              "properties": {
+                                "modified": {
+                                  "changeType": {
+                                    "description": {
+                                      "from": "이력 유형 (EDIT | MERGE | ROLLBACK)",
+                                      "to": ""
+                                    }
+                                  },
+                                  "changes": {
+                                    "description": {
+                                      "from": "필드별 변경 내역 (MERGE는 mergedFrom 합성 diff)",
+                                      "to": ""
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponseAdminStampSpotListResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "spots": {
+                            "items": {
+                              "properties": {
+                                "modified": {
+                                  "direction": {
+                                    "description": {
+                                      "from": "권장 촬영 방향 (degrees 0~360) — 표시용",
+                                      "to": ""
+                                    }
+                                  },
+                                  "hiddenDesc": {
+                                    "description": {
+                                      "from": "숨겨진 이야기 — 어드민 뷰는 게이팅 없음",
+                                      "to": ""
+                                    }
+                                  },
+                                  "hint": {
+                                    "description": {
+                                      "from": "촬영 가이드 (항상 공개)",
+                                      "to": ""
+                                    }
+                                  },
+                                  "placeId": {
+                                    "type": {
+                                      "added": [
+                                        "string"
+                                      ],
+                                      "deleted": [
+                                        "integer"
+                                      ]
+                                    },
+                                    "format": {
+                                      "from": "int64",
+                                      "to": ""
+                                    },
+                                    "description": {
+                                      "from": "canonical POI 참조 (옵션)",
+                                      "to": ""
+                                    }
+                                  },
+                                  "seq": {
+                                    "description": {
+                                      "from": "순번 (지도 마커 번호, 1부터) — 불변, 삭제 시 결번 허용",
+                                      "to": ""
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponseAdminStampSpotResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "direction": {
+                            "description": {
+                              "from": "권장 촬영 방향 (degrees 0~360) — 표시용",
+                              "to": ""
+                            }
+                          },
+                          "hiddenDesc": {
+                            "description": {
+                              "from": "숨겨진 이야기 — 어드민 뷰는 게이팅 없음",
+                              "to": ""
+                            }
+                          },
+                          "hint": {
+                            "description": {
+                              "from": "촬영 가이드 (항상 공개)",
+                              "to": ""
+                            }
+                          },
+                          "placeId": {
+                            "type": {
+                              "added": [
+                                "string"
+                              ],
+                              "deleted": [
+                                "integer"
+                              ]
+                            },
+                            "format": {
+                              "from": "int64",
+                              "to": ""
+                            },
+                            "description": {
+                              "from": "canonical POI 참조 (옵션)",
+                              "to": ""
+                            }
+                          },
+                          "seq": {
+                            "description": {
+                              "from": "순번 (지도 마커 번호, 1부터) — 불변, 삭제 시 결번 허용",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePlaceImportRunListResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "runs": {
+                            "items": {
+                              "properties": {
+                                "modified": {
+                                  "params": {
+                                    "description": {
+                                      "from": "실행 파라미터 (스크립트가 기록한 그대로)",
+                                      "to": ""
+                                    }
+                                  },
+                                  "totalFetched": {
+                                    "description": {
+                                      "from": "외부 API에서 읽은 원본 행 수",
+                                      "to": ""
+                                    }
+                                  },
+                                  "updated": {
+                                    "description": {
+                                      "from": "실변경 update 수 — 멱등 재실행이면 0",
+                                      "to": ""
+                                    }
+                                  },
+                                  "validCount": {
+                                    "description": {
+                                      "from": "검증 통과(스테이징 적재) 행 수",
+                                      "to": ""
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "BaseResponsePlaceMergeResponse": {
+                "properties": {
+                  "modified": {
+                    "body": {
+                      "properties": {
+                        "modified": {
+                          "source": {
+                            "properties": {
+                              "modified": {
+                                "attribution": {
+                                  "description": {
+                                    "from": "출처표시 문구 (KOGL 등)",
+                                    "to": ""
+                                  }
+                                },
+                                "category": {
+                                  "description": {
+                                    "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                    "to": ""
+                                  }
+                                },
+                                "createdBy": {
+                                  "type": {
+                                    "added": [
+                                      "string"
+                                    ],
+                                    "deleted": [
+                                      "integer"
+                                    ]
+                                  },
+                                  "format": {
+                                    "from": "int64",
+                                    "to": ""
+                                  },
+                                  "description": {
+                                    "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                    "to": ""
+                                  }
+                                },
+                                "externalId": {
+                                  "description": {
+                                    "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                    "to": ""
+                                  }
+                                },
+                                "mergedIntoId": {
+                                  "type": {
+                                    "added": [
+                                      "string"
+                                    ],
+                                    "deleted": [
+                                      "integer"
+                                    ]
+                                  },
+                                  "format": {
+                                    "from": "int64",
+                                    "to": ""
+                                  },
+                                  "description": {
+                                    "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                    "to": ""
+                                  }
+                                },
+                                "provenance": {
+                                  "description": {
+                                    "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                    "to": ""
+                                  }
+                                },
+                                "source": {
+                                  "description": {
+                                    "from": "행 생성 출처 (USER | KR_TOUR)",
+                                    "to": ""
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "target": {
+                            "properties": {
+                              "modified": {
+                                "attribution": {
+                                  "description": {
+                                    "from": "출처표시 문구 (KOGL 등)",
+                                    "to": ""
+                                  }
+                                },
+                                "category": {
+                                  "description": {
+                                    "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                                    "to": ""
+                                  }
+                                },
+                                "createdBy": {
+                                  "type": {
+                                    "added": [
+                                      "string"
+                                    ],
+                                    "deleted": [
+                                      "integer"
+                                    ]
+                                  },
+                                  "format": {
+                                    "from": "int64",
+                                    "to": ""
+                                  },
+                                  "description": {
+                                    "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                                    "to": ""
+                                  }
+                                },
+                                "externalId": {
+                                  "description": {
+                                    "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                                    "to": ""
+                                  }
+                                },
+                                "mergedIntoId": {
+                                  "type": {
+                                    "added": [
+                                      "string"
+                                    ],
+                                    "deleted": [
+                                      "integer"
+                                    ]
+                                  },
+                                  "format": {
+                                    "from": "int64",
+                                    "to": ""
+                                  },
+                                  "description": {
+                                    "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                                    "to": ""
+                                  }
+                                },
+                                "provenance": {
+                                  "description": {
+                                    "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                                    "to": ""
+                                  }
+                                },
+                                "source": {
+                                  "description": {
+                                    "from": "행 생성 출처 (USER | KR_TOUR)",
+                                    "to": ""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "PlaceImportRunListResponse": {
+                "properties": {
+                  "modified": {
+                    "runs": {
+                      "items": {
+                        "properties": {
+                          "modified": {
+                            "params": {
+                              "description": {
+                                "from": "실행 파라미터 (스크립트가 기록한 그대로)",
+                                "to": ""
+                              }
+                            },
+                            "totalFetched": {
+                              "description": {
+                                "from": "외부 API에서 읽은 원본 행 수",
+                                "to": ""
+                              }
+                            },
+                            "updated": {
+                              "description": {
+                                "from": "실변경 update 수 — 멱등 재실행이면 0",
+                                "to": ""
+                              }
+                            },
+                            "validCount": {
+                              "description": {
+                                "from": "검증 통과(스테이징 적재) 행 수",
+                                "to": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "PlaceImportRunResponse": {
+                "properties": {
+                  "modified": {
+                    "params": {
+                      "description": {
+                        "from": "실행 파라미터 (스크립트가 기록한 그대로)",
+                        "to": ""
+                      }
+                    },
+                    "totalFetched": {
+                      "description": {
+                        "from": "외부 API에서 읽은 원본 행 수",
+                        "to": ""
+                      }
+                    },
+                    "updated": {
+                      "description": {
+                        "from": "실변경 update 수 — 멱등 재실행이면 0",
+                        "to": ""
+                      }
+                    },
+                    "validCount": {
+                      "description": {
+                        "from": "검증 통과(스테이징 적재) 행 수",
+                        "to": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "PlaceMergeResponse": {
+                "properties": {
+                  "modified": {
+                    "source": {
+                      "properties": {
+                        "modified": {
+                          "attribution": {
+                            "description": {
+                              "from": "출처표시 문구 (KOGL 등)",
+                              "to": ""
+                            }
+                          },
+                          "category": {
+                            "description": {
+                              "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                              "to": ""
+                            }
+                          },
+                          "createdBy": {
+                            "type": {
+                              "added": [
+                                "string"
+                              ],
+                              "deleted": [
+                                "integer"
+                              ]
+                            },
+                            "format": {
+                              "from": "int64",
+                              "to": ""
+                            },
+                            "description": {
+                              "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                              "to": ""
+                            }
+                          },
+                          "externalId": {
+                            "description": {
+                              "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                              "to": ""
+                            }
+                          },
+                          "mergedIntoId": {
+                            "type": {
+                              "added": [
+                                "string"
+                              ],
+                              "deleted": [
+                                "integer"
+                              ]
+                            },
+                            "format": {
+                              "from": "int64",
+                              "to": ""
+                            },
+                            "description": {
+                              "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                              "to": ""
+                            }
+                          },
+                          "provenance": {
+                            "description": {
+                              "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                              "to": ""
+                            }
+                          },
+                          "source": {
+                            "description": {
+                              "from": "행 생성 출처 (USER | KR_TOUR)",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "target": {
+                      "properties": {
+                        "modified": {
+                          "attribution": {
+                            "description": {
+                              "from": "출처표시 문구 (KOGL 등)",
+                              "to": ""
+                            }
+                          },
+                          "category": {
+                            "description": {
+                              "from": "자체 경량 카테고리 (외부 시드: ATTRACTION/CULTURE)",
+                              "to": ""
+                            }
+                          },
+                          "createdBy": {
+                            "type": {
+                              "added": [
+                                "string"
+                              ],
+                              "deleted": [
+                                "integer"
+                              ]
+                            },
+                            "format": {
+                              "from": "int64",
+                              "to": ""
+                            },
+                            "description": {
+                              "from": "생성 유저 — 시스템 벌크 임포트 행은 null",
+                              "to": ""
+                            }
+                          },
+                          "externalId": {
+                            "description": {
+                              "from": "외부 소스 원본 ID — (source, externalId)가 벌크 upsert 키",
+                              "to": ""
+                            }
+                          },
+                          "mergedIntoId": {
+                            "type": {
+                              "added": [
+                                "string"
+                              ],
+                              "deleted": [
+                                "integer"
+                              ]
+                            },
+                            "format": {
+                              "from": "int64",
+                              "to": ""
+                            },
+                            "description": {
+                              "from": "병합 tombstone(MERGED)이 가리키는 마스터 place ID",
+                              "to": ""
+                            }
+                          },
+                          "provenance": {
+                            "description": {
+                              "from": "필드별 최종 출처 {\"phone\": \"USER\"} — USER 필드는 재임포트에서 보존",
+                              "to": ""
+                            }
+                          },
+                          "source": {
+                            "description": {
+                              "from": "행 생성 출처 (USER | KR_TOUR)",
+                              "to": ""
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/places/items/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "search",
+          "path": "/api/admin/places",
+          "section": "paths",
+          "fingerprint": "e193032e2148"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/places/items/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "search",
+          "path": "/api/admin/places",
+          "section": "paths",
+          "fingerprint": "a4673eac3a44"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "get",
+          "path": "/api/admin/places/{placeId}",
+          "section": "paths",
+          "fingerprint": "1d032d36c4e8"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "get",
+          "path": "/api/admin/places/{placeId}",
+          "section": "paths",
+          "fingerprint": "c7e012054707"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/source/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "merge",
+          "path": "/api/admin/places/{placeId}/merge",
+          "section": "paths",
+          "fingerprint": "df39d6e6ed89"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/source/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "merge",
+          "path": "/api/admin/places/{placeId}/merge",
+          "section": "paths",
+          "fingerprint": "612bf779dda4"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/target/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "merge",
+          "path": "/api/admin/places/{placeId}/merge",
+          "section": "paths",
+          "fingerprint": "6407aa4beec6"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/target/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "merge",
+          "path": "/api/admin/places/{placeId}/merge",
+          "section": "paths",
+          "fingerprint": "6425f050f9e2"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "rollbackRevision",
+          "path": "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+          "section": "paths",
+          "fingerprint": "c2ad543674e0"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "rollbackRevision",
+          "path": "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+          "section": "paths",
+          "fingerprint": "8c2203dbcb27"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "PATCH",
+          "operationId": "changeStatus",
+          "path": "/api/admin/places/{placeId}/status",
+          "section": "paths",
+          "fingerprint": "6ef616e0f8d6"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "PATCH",
+          "operationId": "changeStatus",
+          "path": "/api/admin/places/{placeId}/status",
+          "section": "paths",
+          "fingerprint": "19238c9502f2"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/spots/items/placeId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "listSpots",
+          "path": "/api/admin/topics/{topicId}/stamp-spots",
+          "section": "paths",
+          "fingerprint": "96bd5d15970e"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/placeId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "PATCH",
+          "operationId": "updateSpot",
+          "path": "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
+          "section": "paths",
+          "fingerprint": "048718e3b0e4"
+        }
+      ],
+      "breaking": [
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/places/items/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "search",
+          "path": "/api/admin/places",
+          "section": "paths",
+          "fingerprint": "e193032e2148"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/places/items/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "search",
+          "path": "/api/admin/places",
+          "section": "paths",
+          "fingerprint": "a4673eac3a44"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "get",
+          "path": "/api/admin/places/{placeId}",
+          "section": "paths",
+          "fingerprint": "1d032d36c4e8"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "get",
+          "path": "/api/admin/places/{placeId}",
+          "section": "paths",
+          "fingerprint": "c7e012054707"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/source/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "merge",
+          "path": "/api/admin/places/{placeId}/merge",
+          "section": "paths",
+          "fingerprint": "df39d6e6ed89"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/source/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "merge",
+          "path": "/api/admin/places/{placeId}/merge",
+          "section": "paths",
+          "fingerprint": "612bf779dda4"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/target/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "merge",
+          "path": "/api/admin/places/{placeId}/merge",
+          "section": "paths",
+          "fingerprint": "6407aa4beec6"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/target/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "merge",
+          "path": "/api/admin/places/{placeId}/merge",
+          "section": "paths",
+          "fingerprint": "6425f050f9e2"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "rollbackRevision",
+          "path": "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+          "section": "paths",
+          "fingerprint": "c2ad543674e0"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "POST",
+          "operationId": "rollbackRevision",
+          "path": "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+          "section": "paths",
+          "fingerprint": "8c2203dbcb27"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/createdBy` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "PATCH",
+          "operationId": "changeStatus",
+          "path": "/api/admin/places/{placeId}/status",
+          "section": "paths",
+          "fingerprint": "6ef616e0f8d6"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/mergedIntoId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "PATCH",
+          "operationId": "changeStatus",
+          "path": "/api/admin/places/{placeId}/status",
+          "section": "paths",
+          "fingerprint": "19238c9502f2"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/spots/items/placeId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "GET",
+          "operationId": "listSpots",
+          "path": "/api/admin/topics/{topicId}/stamp-spots",
+          "section": "paths",
+          "fingerprint": "96bd5d15970e"
+        },
+        {
+          "id": "response-property-type-changed",
+          "text": "the `body/placeId` response's property `type/format` changed from `integer/int64` to `string` for status `200`",
+          "level": 3,
+          "operation": "PATCH",
+          "operationId": "updateSpot",
+          "path": "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
+          "section": "paths",
+          "fingerprint": "048718e3b0e4"
+        }
+      ],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 9,
+        "breaking": 14
+      }
+    }
+  }
+}

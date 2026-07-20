@@ -55,11 +55,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
-                                  "minLng",
                                   "limit",
                                   "maxLat",
                                   "maxLng",
-                                  "minLat"
+                                  "minLat",
+                                  "minLng"
                                 ]
                               },
                               "properties": {
@@ -67,11 +67,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
+                                  "maxLng",
+                                  "minLat",
                                   "minLng",
                                   "limit",
-                                  "maxLat",
-                                  "maxLng",
-                                  "minLat"
+                                  "maxLat"
                                 ]
                               }
                             }
@@ -100,8 +100,8 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "results",
-                                            "requested"
+                                            "requested",
+                                            "results"
                                           ],
                                           "deleted": [
                                             "fetched"
@@ -127,9 +127,9 @@
           "schemas": {
             "added": [
               "SeedCandidateResponse",
+              "SeedCandidatesResponse",
               "SeedImportItemResponse",
-              "BaseResponseSeedCandidatesResponse",
-              "SeedCandidatesResponse"
+              "BaseResponseSeedCandidatesResponse"
             ],
             "modified": {
               "BaseResponseSeedImportResponse": {
@@ -164,11 +164,11 @@
                     "sourceIds"
                   ],
                   "deleted": [
+                    "minLng",
+                    "limit",
                     "maxLat",
                     "maxLng",
-                    "minLat",
-                    "minLng",
-                    "limit"
+                    "minLat"
                   ]
                 },
                 "properties": {
@@ -176,11 +176,11 @@
                     "sourceIds"
                   ],
                   "deleted": [
+                    "minLng",
                     "limit",
                     "maxLat",
                     "maxLng",
-                    "minLat",
-                    "minLng"
+                    "minLat"
                   ]
                 }
               },
@@ -288,7 +288,7 @@
           "path": "/api/admin/photos/seed/candidates",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "47cb08ddfd24"
         },

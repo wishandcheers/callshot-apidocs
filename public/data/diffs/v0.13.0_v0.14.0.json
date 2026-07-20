@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/bookmark",
-            "/api/my/bookmarks"
+            "/api/my/bookmarks",
+            "/api/photos/{photoId}/bookmark"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -32,14 +32,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "bookmarkCount",
-                                            "isBookmarkedByUser"
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "isBookmarkedByUser",
-                                            "bookmarkCount"
+                                            "bookmarkCount",
+                                            "isBookmarkedByUser"
                                           ]
                                         }
                                       }
@@ -66,12 +66,12 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseToggleBookmarkResponse",
-              "PageCursor",
+              "BookmarkedPhotosResponse",
               "ToggleBookmarkResponse",
-              "BaseResponseBookmarkedPhotosResponse",
+              "PageCursor",
               "BookmarkedPhotoItem",
-              "BookmarkedPhotosResponse"
+              "BaseResponseBookmarkedPhotosResponse",
+              "BaseResponseToggleBookmarkResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -97,8 +97,8 @@
               "EngagementResponse": {
                 "required": {
                   "added": [
-                    "bookmarkCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "bookmarkCount"
                   ]
                 },
                 "properties": {
@@ -122,7 +122,7 @@
           "path": "/api/my/bookmarks",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
           },
           "fingerprint": "66e836a0295e"
         },
@@ -135,7 +135,7 @@
           "path": "/api/photos/{photoId}/bookmark",
           "section": "paths",
           "revisionSource": {
-            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.14.0/apiDocs-api.json"
           },
           "fingerprint": "bdd42eb2a952"
         },
