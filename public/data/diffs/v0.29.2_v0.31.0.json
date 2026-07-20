@@ -12,32 +12,32 @@
         },
         "paths": {
           "added": [
-            "/api/topics/{topicId}/comments/{commentId}",
-            "/api/my/topics/{topicId}/stamp-participants",
-            "/api/my/topics",
-            "/api/places/{placeId}/fields",
-            "/api/my/topics/{topicId}",
-            "/api/topics/{topicId}/spots/{spotId}/stamps",
             "/api/topics/trending",
-            "/api/topics/{topicId}",
-            "/api/topics/{topicId}/spots/{spotId}/photos",
-            "/api/topics/{topicId}/comments/{commentId}/replies",
-            "/api/my/topics/{topicId}/stamp-participants/{participantUserId}/confirm",
-            "/api/topics/{topicId}/bookmark",
-            "/api/topics/{topicId}/places",
-            "/api/topics",
+            "/api/topics/area",
             "/api/topics/{topicId}/stamps/completion-cert",
+            "/api/places/search",
+            "/api/places/{placeId}/fields",
+            "/api/places/fields/{fieldId}/votes",
+            "/api/topics/{topicId}/bookmark",
+            "/api/my/topics/{topicId}",
+            "/api/topics/{topicId}/photos",
+            "/api/topics/{topicId}/comments/{commentId}",
+            "/api/topics/{topicId}/comments/{commentId}/replies",
             "/api/my/topics/{topicId}/scope",
             "/api/topics/{topicId}/like",
+            "/api/topics/{topicId}/comments",
             "/api/topics/{topicId}/stamps/me",
-            "/api/places/{placeId}",
-            "/api/topics/area",
+            "/api/topics",
+            "/api/my/topics",
+            "/api/topics/{topicId}/places",
+            "/api/topics/{topicId}",
+            "/api/my/topics/{topicId}/stamp-participants",
             "/api/places/area",
-            "/api/places/search",
-            "/api/topics/{topicId}/photos",
             "/api/places/{placeId}/revisions",
-            "/api/places/fields/{fieldId}/votes",
-            "/api/topics/{topicId}/comments"
+            "/api/my/topics/{topicId}/stamp-participants/{participantUserId}/confirm",
+            "/api/topics/{topicId}/spots/{spotId}/stamps",
+            "/api/topics/{topicId}/spots/{spotId}/photos",
+            "/api/places/{placeId}"
           ],
           "modified": {
             "/api/settings": {
@@ -624,61 +624,61 @@
         "components": {
           "schemas": {
             "added": [
-              "CertifyStampRequest",
-              "TopicListResponse",
-              "PlaceLensRequest",
-              "BaseResponseLiveFieldResponse",
-              "StampParticipantListResponse",
-              "PlaceFieldChangeResponse",
-              "PatchInteger",
-              "BaseResponsePlaceListResponse",
-              "TopicPhotoOwnerResponse",
-              "BaseResponsePlaceResponse",
-              "PlaceSearchRequest",
-              "BaseResponseCursorPageTopicPhotoResponse",
-              "TopicLensRequest",
-              "BaseResponseToggleTopicBookmarkResponse",
-              "CursorPageTopicPhotoResponse",
-              "BaseResponseSpotPhotoListResponse",
-              "BaseResponseTopicResponse",
-              "ToggleTopicBookmarkResponse",
-              "TopicPhotoResponse",
-              "SpotPhotoResponse",
               "PlaceRevisionResponse",
-              "BaseResponsePlaceRevisionListResponse",
+              "BaseResponseSpotPhotoListResponse",
+              "PlaceLensRequest",
+              "TopicPhotoOwnerResponse",
+              "RegisterStampSpotRequest",
+              "PatchString",
+              "BaseResponseLiveFieldResponse",
+              "BaseResponsePlaceListResponse",
+              "BaseResponseCursorPageTopicResponse",
+              "PlaceRevisionListResponse",
+              "BaseResponseStampParticipantListResponse",
+              "PlaceListResponse",
+              "ChangeTopicScopeRequest",
+              "BaseResponseTopicResponse",
+              "TopicPhotoResponse",
+              "VoteLiveFieldRequest",
+              "PlaceSearchResponse",
+              "BaseResponsePlaceSearchResponse",
+              "SpotPhotoListResponse",
               "BaseResponseTopicListResponse",
               "PromotionProgressResponse",
-              "PatchString",
-              "PlaceListResponse",
-              "SpotPhotosRequest",
-              "ToggleTopicLikeResponse",
-              "BaseResponseCursorPageTopicResponse",
-              "LiveFieldResponse",
-              "CursorPageTopicResponse",
-              "PlaceResponse",
-              "SpotPhotoListResponse",
-              "BaseResponseStampParticipantListResponse",
-              "AddPlaceRequest",
-              "StampSpotResponse",
-              "VoteLiveFieldRequest",
-              "BaseResponseToggleTopicLikeResponse",
-              "PlaceSearchItemResponse",
-              "ChangeTopicScopeRequest",
-              "PlaceDetailResponse",
-              "RegisterTopicRequest",
-              "BaseResponsePlaceSearchResponse",
-              "BaseResponseStampProgressResponse",
-              "RegisterStampSpotRequest",
-              "StampCompletionResponse",
-              "PlaceSearchResponse",
               "UpsertLiveFieldRequest",
-              "UpdatePlaceInfoRequest",
-              "BaseResponseStampCompletionResponse",
+              "BaseResponsePlaceResponse",
+              "PlaceResponse",
               "StampParticipantResponse",
+              "CertifyStampRequest",
+              "StampSpotResponse",
+              "StampCompletionResponse",
+              "BaseResponseCursorPageTopicPhotoResponse",
+              "PlaceSearchRequest",
+              "AddPlaceRequest",
+              "TopicLensRequest",
+              "RegisterTopicRequest",
+              "BaseResponseStampCompletionResponse",
+              "BaseResponsePlaceRevisionListResponse",
               "StampProgressResponse",
+              "LiveFieldResponse",
+              "StampParticipantListResponse",
+              "BaseResponseStampProgressResponse",
+              "BaseResponsePlaceDetailResponse",
+              "CursorPageTopicResponse",
+              "CursorPageTopicPhotoResponse",
+              "PlaceSearchItemResponse",
+              "BaseResponseToggleTopicLikeResponse",
+              "BaseResponseToggleTopicBookmarkResponse",
+              "PatchInteger",
+              "ToggleTopicBookmarkResponse",
+              "SpotPhotosRequest",
+              "PlaceFieldChangeResponse",
+              "TopicListResponse",
+              "SpotPhotoResponse",
               "TopicResponse",
-              "PlaceRevisionListResponse",
-              "BaseResponsePlaceDetailResponse"
+              "UpdatePlaceInfoRequest",
+              "ToggleTopicLikeResponse",
+              "PlaceDetailResponse"
             ],
             "modified": {
               "Absent": {
@@ -1289,7 +1289,7 @@
           "path": "/api/my/topics",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "efbb2d313ecd"
         },
@@ -1302,7 +1302,7 @@
           "path": "/api/my/topics/{topicId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "cc67042ac577"
         },
@@ -1315,7 +1315,7 @@
           "path": "/api/my/topics/{topicId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "f08bc1b1a525"
         },
@@ -1328,7 +1328,7 @@
           "path": "/api/my/topics/{topicId}/scope",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "95dafc9cd4f8"
         },
@@ -1341,7 +1341,7 @@
           "path": "/api/my/topics/{topicId}/stamp-participants",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "ec2e30a8ffdb"
         },
@@ -1354,7 +1354,7 @@
           "path": "/api/my/topics/{topicId}/stamp-participants/{participantUserId}/confirm",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "45c09d371ad9"
         },
@@ -1367,7 +1367,7 @@
           "path": "/api/places/area",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "80e6004f0ba8"
         },
@@ -1380,7 +1380,7 @@
           "path": "/api/places/fields/{fieldId}/votes",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "387d8f9256e5"
         },
@@ -1393,7 +1393,7 @@
           "path": "/api/places/search",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "c36f6da0613f"
         },
@@ -1406,7 +1406,7 @@
           "path": "/api/places/{placeId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "b5cd051039e4"
         },
@@ -1419,7 +1419,7 @@
           "path": "/api/places/{placeId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "0590dc988eb2"
         },
@@ -1432,7 +1432,7 @@
           "path": "/api/places/{placeId}/fields",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "4458809caff7"
         },
@@ -1445,7 +1445,7 @@
           "path": "/api/places/{placeId}/revisions",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "6f015a1e0ac4"
         },
@@ -1668,7 +1668,7 @@
           "path": "/api/topics",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "b194b8867aed"
         },
@@ -1681,7 +1681,7 @@
           "path": "/api/topics/area",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "b4743226e541"
         },
@@ -1694,7 +1694,7 @@
           "path": "/api/topics/trending",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "9461c81f9c64"
         },
@@ -1707,7 +1707,7 @@
           "path": "/api/topics/{topicId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "e5e63f13e0cf"
         },
@@ -1720,7 +1720,7 @@
           "path": "/api/topics/{topicId}/bookmark",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "621c771e8f77"
         },
@@ -1733,7 +1733,7 @@
           "path": "/api/topics/{topicId}/comments",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "98a2ae8d10c4"
         },
@@ -1746,7 +1746,7 @@
           "path": "/api/topics/{topicId}/comments",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "2782d9619993"
         },
@@ -1759,7 +1759,7 @@
           "path": "/api/topics/{topicId}/comments/{commentId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "a3f5c6c6cd14"
         },
@@ -1772,7 +1772,7 @@
           "path": "/api/topics/{topicId}/comments/{commentId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "b1872fbd119a"
         },
@@ -1785,7 +1785,7 @@
           "path": "/api/topics/{topicId}/comments/{commentId}/replies",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "f35163a00b1e"
         },
@@ -1798,7 +1798,7 @@
           "path": "/api/topics/{topicId}/like",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "ff60879fb88f"
         },
@@ -1811,7 +1811,7 @@
           "path": "/api/topics/{topicId}/photos",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "f6b9bcb25110"
         },
@@ -1824,7 +1824,7 @@
           "path": "/api/topics/{topicId}/places",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "d3a6c1315829"
         },
@@ -1837,7 +1837,7 @@
           "path": "/api/topics/{topicId}/places",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "640f2df1a0e0"
         },
@@ -1850,7 +1850,7 @@
           "path": "/api/topics/{topicId}/spots/{spotId}/photos",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "14dd90fda7a2"
         },
@@ -1863,7 +1863,7 @@
           "path": "/api/topics/{topicId}/spots/{spotId}/stamps",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "9d15baf015de"
         },
@@ -1876,7 +1876,7 @@
           "path": "/api/topics/{topicId}/stamps/completion-cert",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "21a3a422dbdb"
         },
@@ -1889,7 +1889,7 @@
           "path": "/api/topics/{topicId}/stamps/me",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
           },
           "fingerprint": "2d74a0975949"
         }
@@ -1912,21 +1912,21 @@
         },
         "paths": {
           "added": [
-            "/api/admin/topics/{topicId}/stamp-participants",
-            "/api/admin/places/import-runs",
-            "/api/admin/topics/{topicId}/reject",
-            "/api/admin/places/{placeId}/merge",
             "/api/admin/topics",
-            "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
-            "/api/admin/places/{placeId}",
             "/api/admin/topics/{topicId}/stamp-spots",
+            "/api/admin/topics/{topicId}/status",
             "/api/admin/topics/{topicId}/promote",
-            "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
-            "/api/admin/topics/{topicId}/stamp-participants/{participantUserId}/confirm-cert",
+            "/api/admin/topics/{topicId}/reject",
             "/api/admin/places",
             "/api/admin/places/{placeId}/status",
+            "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
             "/api/admin/places/{placeId}/revisions",
-            "/api/admin/topics/{topicId}/status"
+            "/api/admin/topics/{topicId}/stamp-participants",
+            "/api/admin/places/{placeId}",
+            "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+            "/api/admin/places/{placeId}/merge",
+            "/api/admin/topics/{topicId}/stamp-participants/{participantUserId}/confirm-cert",
+            "/api/admin/places/import-runs"
           ],
           "modified": {
             "/api/admin/missions/{id}": {
@@ -2119,41 +2119,41 @@
         "components": {
           "schemas": {
             "added": [
-              "AdminUpdateStampSpotRequest",
-              "ModerateTopicRequest",
-              "BaseResponseAdminPlaceResponse",
-              "PlaceImportRunListResponse",
-              "AdminPlaceListResponse",
-              "PromotionProgressResponse",
+              "BaseResponseAdminStampSpotResponse",
+              "AdminStampSpotListResponse",
+              "BaseResponsePlaceMergeResponse",
               "StampParticipantResponse",
+              "BaseResponseTopicListResponse",
               "TopicListResponse",
-              "PatchDouble",
-              "AdminPlaceResponse",
-              "BaseResponseStampCompletionResponse",
+              "AdminPlaceRevisionResponse",
+              "PromotionProgressResponse",
               "MergePlaceRequest",
+              "BaseResponseAdminPlaceResponse",
+              "BaseResponseStampParticipantListResponse",
+              "TopicResponse",
+              "AdminPlaceListResponse",
+              "RegisterStampSpotRequest",
+              "BaseResponseAdminStampSpotListResponse",
+              "PatchLong",
+              "PlaceImportRunResponse",
+              "PlaceMergeResponse",
+              "ModerateTopicRequest",
+              "PlaceImportRunListResponse",
+              "StampCompletionResponse",
+              "AdminPlaceRevisionListResponse",
+              "AdminUpdateStampSpotRequest",
+              "StampParticipantListResponse",
               "PlaceFieldChange",
               "BaseResponsePlaceImportRunListResponse",
-              "BaseResponseAdminPlaceRevisionListResponse",
-              "AdminStampSpotListResponse",
-              "PlaceMergeResponse",
-              "AdminPlaceRevisionListResponse",
-              "RegisterTopicRequest",
-              "BaseResponsePlaceMergeResponse",
-              "PlaceImportRunResponse",
-              "BaseResponseAdminStampSpotListResponse",
-              "AdminStampSpotResponse",
               "BaseResponseTopicResponse",
-              "AdminPlaceRevisionResponse",
-              "BaseResponseAdminPlaceListResponse",
-              "StampParticipantListResponse",
+              "BaseResponseAdminPlaceRevisionListResponse",
+              "RegisterTopicRequest",
+              "BaseResponseStampCompletionResponse",
               "ChangePlaceStatusRequest",
-              "BaseResponseTopicListResponse",
-              "BaseResponseAdminStampSpotResponse",
-              "RegisterStampSpotRequest",
-              "TopicResponse",
-              "PatchLong",
-              "BaseResponseStampParticipantListResponse",
-              "StampCompletionResponse"
+              "BaseResponseAdminPlaceListResponse",
+              "AdminStampSpotResponse",
+              "PatchDouble",
+              "AdminPlaceResponse"
             ],
             "modified": {
               "Absent": {
@@ -2434,7 +2434,7 @@
           "path": "/api/admin/places",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "a2e9bb5619f7"
         },
@@ -2447,7 +2447,7 @@
           "path": "/api/admin/places/import-runs",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "b8cfbd207f4e"
         },
@@ -2460,7 +2460,7 @@
           "path": "/api/admin/places/{placeId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "e63d3d62af86"
         },
@@ -2473,7 +2473,7 @@
           "path": "/api/admin/places/{placeId}/merge",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "71aca4172b9e"
         },
@@ -2486,7 +2486,7 @@
           "path": "/api/admin/places/{placeId}/revisions",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "2f867c586e71"
         },
@@ -2499,7 +2499,7 @@
           "path": "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "561ecd13c291"
         },
@@ -2512,7 +2512,7 @@
           "path": "/api/admin/places/{placeId}/status",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "c0ceb91d75f9"
         },
@@ -2525,7 +2525,7 @@
           "path": "/api/admin/topics",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "89ef5abd3b8f"
         },
@@ -2538,7 +2538,7 @@
           "path": "/api/admin/topics",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "59cbf4c70122"
         },
@@ -2551,7 +2551,7 @@
           "path": "/api/admin/topics/{topicId}/promote",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "cfc31cc11839"
         },
@@ -2564,7 +2564,7 @@
           "path": "/api/admin/topics/{topicId}/reject",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "fdd0b9905f15"
         },
@@ -2577,7 +2577,7 @@
           "path": "/api/admin/topics/{topicId}/stamp-participants",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "90bad943a432"
         },
@@ -2590,7 +2590,7 @@
           "path": "/api/admin/topics/{topicId}/stamp-participants/{participantUserId}/confirm-cert",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "4c351e651c6f"
         },
@@ -2603,7 +2603,7 @@
           "path": "/api/admin/topics/{topicId}/stamp-spots",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "6466e53f3537"
         },
@@ -2616,7 +2616,7 @@
           "path": "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "33b1461c3396"
         },
@@ -2629,7 +2629,7 @@
           "path": "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "4b5e9a6296ef"
         },
@@ -2642,7 +2642,7 @@
           "path": "/api/admin/topics/{topicId}/status",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
           },
           "fingerprint": "8acc573797f9"
         }

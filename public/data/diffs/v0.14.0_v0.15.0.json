@@ -12,9 +12,9 @@
         },
         "paths": {
           "added": [
+            "/api/photos/{photoId}/comments/{commentId}",
             "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/photos/{photoId}/comments",
-            "/api/photos/{photoId}/comments/{commentId}"
+            "/api/photos/{photoId}/comments"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -65,12 +65,12 @@
         "components": {
           "schemas": {
             "added": [
-              "CreateCommentRequest",
               "CommentResponse",
+              "BaseResponseCommentResponse",
               "CommentPageResponse",
-              "UpdateCommentRequest",
               "BaseResponseCommentPageResponse",
-              "BaseResponseCommentResponse"
+              "CreateCommentRequest",
+              "UpdateCommentRequest"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -117,7 +117,7 @@
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "97d13f016941"
         },
@@ -130,7 +130,7 @@
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "816a40c705bf"
         },
@@ -143,7 +143,7 @@
           "path": "/api/photos/{photoId}/comments/{commentId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "01a82c0eaeb1"
         },
@@ -156,7 +156,7 @@
           "path": "/api/photos/{photoId}/comments/{commentId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "274495a3567d"
         },
@@ -169,7 +169,7 @@
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "a2085245736b"
         },

@@ -36,8 +36,8 @@
         "components": {
           "schemas": {
             "added": [
-              "ExternalEventSyncResponse",
-              "BaseResponseExternalEventSyncResponse"
+              "BaseResponseExternalEventSyncResponse",
+              "ExternalEventSyncResponse"
             ]
           }
         }
@@ -52,7 +52,7 @@
           "path": "/api/admin/external/events/refresh",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.27.0/apiDocs-admin.json"
           },
           "fingerprint": "9f99ae084712"
         }

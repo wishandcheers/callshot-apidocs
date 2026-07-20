@@ -313,8 +313,8 @@
         },
         "paths": {
           "added": [
-            "/api/admin/photos/seed/import",
             "/api/admin/photos/seed/{source}",
+            "/api/admin/photos/seed/import",
             "/api/admin/photos/seed/candidates"
           ],
           "modified": {
@@ -352,21 +352,21 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseSeedCandidatesResponse",
               "SeedCandidatesResponse",
-              "SeedDeleteResponse",
-              "SeedImportRequest",
-              "SeedImportResponse",
               "BaseResponseSeedImportResponse",
-              "BaseResponseSeedDeleteResponse",
+              "SeedDeleteResponse",
+              "SeedImportResponse",
+              "SeedCandidateResponse",
+              "BaseResponseSeedCandidatesResponse",
               "BaseResponseExternalEventRefreshResponse",
-              "SeedImportItemResponse",
               "ExternalEventRefreshResponse",
-              "SeedCandidateResponse"
+              "SeedImportItemResponse",
+              "SeedImportRequest",
+              "BaseResponseSeedDeleteResponse"
             ],
             "deleted": [
-              "BaseResponseExternalEventSyncResponse",
-              "ExternalEventSyncResponse"
+              "ExternalEventSyncResponse",
+              "BaseResponseExternalEventSyncResponse"
             ]
           }
         }
@@ -415,7 +415,7 @@
           "path": "/api/admin/photos/seed/candidates",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "47cb08ddfd24"
         },
@@ -428,7 +428,7 @@
           "path": "/api/admin/photos/seed/import",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "e84197d82809"
         },
@@ -441,7 +441,7 @@
           "path": "/api/admin/photos/seed/{source}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "36f39176efca"
         }

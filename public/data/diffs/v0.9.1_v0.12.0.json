@@ -174,18 +174,18 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "clusterId",
-                                                    "tileBounds"
+                                                    "tileBounds",
+                                                    "clusterId"
                                                   ],
                                                   "deleted": [
-                                                    "maxDistanceMeters",
-                                                    "avgDistanceMeters"
+                                                    "avgDistanceMeters",
+                                                    "maxDistanceMeters"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "clusterId",
-                                                    "tileBounds"
+                                                    "tileBounds",
+                                                    "clusterId"
                                                   ],
                                                   "deleted": [
                                                     "maxDistanceMeters",
@@ -234,10 +234,10 @@
               "ShutterSummaryInfo"
             ],
             "deleted": [
+              "ClusterAreaRequest",
               "PhotoClusterRequest",
               "ShutterSummary",
-              "UserSignUpRequest",
-              "ClusterAreaRequest"
+              "UserSignUpRequest"
             ],
             "modified": {
               "BaseResponsePhotoClustersResponse": {
@@ -250,12 +250,12 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "tileBounds",
-                                  "clusterId"
+                                  "clusterId",
+                                  "tileBounds"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ]
                               },
                               "properties": {
@@ -363,8 +363,8 @@
                     "tileBounds"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ]
                 },
                 "properties": {
@@ -373,8 +373,8 @@
                     "tileBounds"
                   ],
                   "deleted": [
-                    "avgDistanceMeters",
-                    "maxDistanceMeters"
+                    "maxDistanceMeters",
+                    "avgDistanceMeters"
                   ],
                   "modified": {
                     "center": {
@@ -399,12 +399,12 @@
                       "items": {
                         "required": {
                           "added": [
-                            "tileBounds",
-                            "clusterId"
+                            "clusterId",
+                            "tileBounds"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ]
                         },
                         "properties": {
@@ -560,7 +560,7 @@
           "path": "/api/signup",
           "section": "paths",
           "baseSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.9.1/apiDocs-api.json"
           },
           "fingerprint": "73f1e114ef49"
         },
@@ -683,7 +683,7 @@
           "path": "/api/profile",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
           },
           "fingerprint": "eb03e8322710"
         },
@@ -746,7 +746,7 @@
           "path": "/api/public/photos/clusters/{clusterId}/photos",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.12.0/apiDocs-api.json"
           },
           "fingerprint": "ccd74ca77626"
         }
@@ -811,7 +811,7 @@
           "path": "/api/signup",
           "section": "paths",
           "baseSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.9.1/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.9.1/apiDocs-api.json"
           },
           "fingerprint": "73f1e114ef49"
         },
@@ -855,10 +855,10 @@
         },
         "paths": {
           "added": [
-            "/api/admin/missions/{id}",
-            "/api/admin/missions/{id}/close",
             "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
-            "/api/admin/missions"
+            "/api/admin/missions",
+            "/api/admin/missions/{id}",
+            "/api/admin/missions/{id}/close"
           ],
           "modified": {
             "/api/admin/users": {
@@ -932,18 +932,18 @@
         "components": {
           "schemas": {
             "added": [
-              "UpdateSystemMissionRequest",
-              "PatchString",
-              "BaseResponseSystemMissionsResponse",
               "Gps",
+              "SystemMissionResponse",
+              "BaseResponseSystemMissionsResponse",
+              "SystemMissionsResponse",
+              "PatchString",
+              "UpdateSystemMissionRequest",
+              "CreateSystemMissionRequest",
               "ReviewSystemMissionSubmissionRequest",
               "Value",
-              "SystemMissionResponse",
-              "Clear",
-              "CreateSystemMissionRequest",
               "Absent",
-              "SystemMissionsResponse",
-              "BaseResponseSystemMissionResponse"
+              "BaseResponseSystemMissionResponse",
+              "Clear"
             ],
             "modified": {
               "BaseResponseListUserDetailsResult": {
@@ -1085,7 +1085,7 @@
           "path": "/api/admin/missions",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
           "fingerprint": "fcf417febacc"
         },
@@ -1098,7 +1098,7 @@
           "path": "/api/admin/missions",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
           "fingerprint": "19233def30e2"
         },
@@ -1111,7 +1111,7 @@
           "path": "/api/admin/missions/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
           "fingerprint": "2b65f294ce1f"
         },
@@ -1124,7 +1124,7 @@
           "path": "/api/admin/missions/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
           "fingerprint": "a1af7e9a77b0"
         },
@@ -1137,7 +1137,7 @@
           "path": "/api/admin/missions/{id}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
           "fingerprint": "71390c29e2a2"
         },
@@ -1150,7 +1150,7 @@
           "path": "/api/admin/missions/{id}/close",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
           "fingerprint": "57674685b23e"
         },
@@ -1163,7 +1163,7 @@
           "path": "/api/admin/missions/{missionId}/submissions/{submissionId}/review",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.12.0/apiDocs-admin.json"
           },
           "fingerprint": "664d08088634"
         },

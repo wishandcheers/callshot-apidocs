@@ -12,9 +12,9 @@
         },
         "paths": {
           "added": [
+            "/api/shutter/convert",
             "/api/wallet/me/balance",
-            "/api/hashtags/{name}/photos",
-            "/api/shutter/convert"
+            "/api/hashtags/{name}/photos"
           ],
           "modified": {
             "/api/my/bookmarks": {
@@ -85,8 +85,8 @@
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "width",
-                                                          "height"
+                                                          "height",
+                                                          "width"
                                                         ]
                                                       }
                                                     }
@@ -200,14 +200,14 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "imageHeight",
-                                            "imageWidth"
+                                            "imageWidth",
+                                            "imageHeight"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "imageHeight",
-                                            "imageWidth"
+                                            "imageWidth",
+                                            "imageHeight"
                                           ]
                                         }
                                       }
@@ -281,8 +281,8 @@
                                                       },
                                                       "properties": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ]
                                                       }
                                                     }
@@ -326,15 +326,15 @@
                                               "items": {
                                                 "properties": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ],
                                                   "modified": {
                                                     "thumbnail": {
                                                       "properties": {
                                                         "added": [
-                                                          "width",
-                                                          "height"
+                                                          "height",
+                                                          "width"
                                                         ]
                                                       }
                                                     }
@@ -346,14 +346,14 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "imageWidth",
-                                                    "imageHeight"
+                                                    "imageHeight",
+                                                    "imageWidth"
                                                   ]
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "imageWidth",
-                                                    "imageHeight"
+                                                    "imageHeight",
+                                                    "imageWidth"
                                                   ]
                                                 }
                                               }
@@ -400,8 +400,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ]
                                                 }
                                               }
@@ -780,16 +780,16 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseWalletBalanceResponse",
-              "CursorPageHashtagPhotoResponse",
-              "BookmarkedPhotoView",
-              "BaseResponseConvertShotsResponse",
               "BookmarkedPhotoUrls",
-              "HashtagPhotoOwnerResponse",
-              "HashtagPhotoResponse",
-              "ConvertShotsResponse",
+              "BaseResponseWalletBalanceResponse",
               "WalletBalanceResponse",
-              "BaseResponseCursorPageHashtagPhotoResponse"
+              "HashtagPhotoOwnerResponse",
+              "BookmarkedPhotoView",
+              "CursorPageHashtagPhotoResponse",
+              "ConvertShotsResponse",
+              "BaseResponseConvertShotsResponse",
+              "BaseResponseCursorPageHashtagPhotoResponse",
+              "HashtagPhotoResponse"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {
@@ -975,8 +975,8 @@
                       },
                       "properties": {
                         "added": [
-                          "imageWidth",
-                          "imageHeight"
+                          "imageHeight",
+                          "imageWidth"
                         ]
                       }
                     }
@@ -1041,14 +1041,14 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ]
                               },
                               "properties": {
                                 "added": [
-                                  "imageWidth",
-                                  "imageHeight"
+                                  "imageHeight",
+                                  "imageWidth"
                                 ]
                               }
                             }
@@ -1072,14 +1072,14 @@
                                   "photo": {
                                     "required": {
                                       "added": [
-                                        "height",
-                                        "width"
+                                        "width",
+                                        "height"
                                       ]
                                     },
                                     "properties": {
                                       "added": [
-                                        "height",
-                                        "width"
+                                        "width",
+                                        "height"
                                       ]
                                     }
                                   }
@@ -1328,14 +1328,14 @@
                       "items": {
                         "required": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ]
                         },
                         "properties": {
                           "added": [
-                            "imageWidth",
-                            "imageHeight"
+                            "imageHeight",
+                            "imageWidth"
                           ]
                         }
                       }
@@ -1349,14 +1349,14 @@
                     "photo": {
                       "required": {
                         "added": [
-                          "height",
-                          "width"
+                          "width",
+                          "height"
                         ]
                       },
                       "properties": {
                         "added": [
-                          "height",
-                          "width"
+                          "width",
+                          "height"
                         ]
                       }
                     }
@@ -1387,14 +1387,14 @@
                             "photo": {
                               "required": {
                                 "added": [
-                                  "height",
-                                  "width"
+                                  "width",
+                                  "height"
                                 ]
                               },
                               "properties": {
                                 "added": [
-                                  "height",
-                                  "width"
+                                  "width",
+                                  "height"
                                 ]
                               }
                             }
@@ -1437,7 +1437,7 @@
           "path": "/api/hashtags/{name}/photos",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
           },
           "fingerprint": "828d13345d57"
         },
@@ -1820,7 +1820,7 @@
           "path": "/api/shutter/convert",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
           },
           "fingerprint": "81b82b697e83"
         },
@@ -1833,7 +1833,7 @@
           "path": "/api/wallet/me/balance",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.26.0/apiDocs-api.json"
           },
           "fingerprint": "3d1acbc426e3"
         }
@@ -1878,8 +1878,8 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseExternalEventPageResponse",
               "ExternalEventResponse",
+              "BaseResponseExternalEventPageResponse",
               "ExternalEventPageResponse"
             ]
           }
@@ -1895,7 +1895,7 @@
           "path": "/api/admin/external/events",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.26.0/apiDocs-admin.json"
           },
           "fingerprint": "f4a599124d7c"
         }

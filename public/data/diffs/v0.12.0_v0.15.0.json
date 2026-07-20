@@ -12,11 +12,11 @@
         },
         "paths": {
           "added": [
+            "/api/photos/{photoId}/comments",
+            "/api/my/bookmarks",
+            "/api/public/profiles/{userId}",
             "/api/photos/{photoId}/bookmark",
             "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/public/profiles/{userId}",
-            "/api/my/bookmarks",
-            "/api/photos/{photoId}/comments",
             "/api/photos/{photoId}/comments/{commentId}"
           ],
           "modified": {
@@ -2065,8 +2065,8 @@
                                         "required": {
                                           "added": [
                                             "commentCount",
-                                            "bookmarkCount",
-                                            "isBookmarkedByUser"
+                                            "isBookmarkedByUser",
+                                            "bookmarkCount"
                                           ]
                                         },
                                         "properties": {
@@ -3298,21 +3298,21 @@
         "components": {
           "schemas": {
             "added": [
-              "UpdateCommentRequest",
-              "ToggleBookmarkResponse",
-              "BookmarkedPhotoItem",
-              "BaseResponseCommentPageResponse",
-              "BaseResponseBookmarkedPhotosResponse",
-              "CommentPageResponse",
-              "PageCursor",
               "CommentResponse",
-              "OwnerResponse",
-              "BaseResponseCommentResponse",
-              "PublicProfileResponse",
-              "CreateCommentRequest",
               "BaseResponsePublicProfileResponse",
+              "PageCursor",
+              "BaseResponseCommentResponse",
+              "BaseResponseBookmarkedPhotosResponse",
+              "CreateCommentRequest",
               "BookmarkedPhotosResponse",
-              "BaseResponseToggleBookmarkResponse"
+              "BookmarkedPhotoItem",
+              "ToggleBookmarkResponse",
+              "PublicProfileResponse",
+              "OwnerResponse",
+              "BaseResponseToggleBookmarkResponse",
+              "CommentPageResponse",
+              "BaseResponseCommentPageResponse",
+              "UpdateCommentRequest"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3489,16 +3489,16 @@
                     "body": {
                       "required": {
                         "added": [
-                          "bookmarkCount",
                           "commentCount",
-                          "isBookmarkedByUser"
+                          "isBookmarkedByUser",
+                          "bookmarkCount"
                         ]
                       },
                       "properties": {
                         "added": [
+                          "commentCount",
                           "isBookmarkedByUser",
-                          "bookmarkCount",
-                          "commentCount"
+                          "bookmarkCount"
                         ],
                         "modified": {
                           "dislikeCount": {
@@ -4903,9 +4903,9 @@
                 },
                 "properties": {
                   "added": [
-                    "isBookmarkedByUser",
                     "bookmarkCount",
-                    "commentCount"
+                    "commentCount",
+                    "isBookmarkedByUser"
                   ],
                   "modified": {
                     "dislikeCount": {
@@ -7129,7 +7129,7 @@
           "path": "/api/my/bookmarks",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "66e836a0295e"
         },
@@ -7422,7 +7422,7 @@
           "path": "/api/photos/{photoId}/bookmark",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "bdd42eb2a952"
         },
@@ -7435,7 +7435,7 @@
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "97d13f016941"
         },
@@ -7448,7 +7448,7 @@
           "path": "/api/photos/{photoId}/comments",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "816a40c705bf"
         },
@@ -7461,7 +7461,7 @@
           "path": "/api/photos/{photoId}/comments/{commentId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "01a82c0eaeb1"
         },
@@ -7474,7 +7474,7 @@
           "path": "/api/photos/{photoId}/comments/{commentId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "274495a3567d"
         },
@@ -7487,7 +7487,7 @@
           "path": "/api/photos/{photoId}/comments/{commentId}/replies",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "a2085245736b"
         },
@@ -7700,7 +7700,7 @@
           "path": "/api/public/profiles/{userId}",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.15.0/apiDocs-api.json"
           },
           "fingerprint": "d26ebfd2aa2f"
         },

@@ -41,9 +41,9 @@
         "components": {
           "schemas": {
             "added": [
-              "ExternalEventResponse",
               "BaseResponseExternalEventPageResponse",
-              "ExternalEventPageResponse"
+              "ExternalEventPageResponse",
+              "ExternalEventResponse"
             ]
           }
         }
@@ -58,7 +58,7 @@
           "path": "/api/admin/external/events",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.26.0/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.26.0/apiDocs-admin.json"
           },
           "fingerprint": "f4a599124d7c"
         }

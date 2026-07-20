@@ -3905,13 +3905,13 @@
         "components": {
           "schemas": {
             "added": [
-              "PatchBoolean",
               "CommissionStatsInfo",
+              "PatchBoolean",
               "UpdateUserSettingsRequest",
               "Clear",
+              "UserSettingsResponse",
               "Value",
               "Absent",
-              "UserSettingsResponse",
               "BaseResponseUserSettingsResponse"
             ],
             "modified": {
@@ -8067,7 +8067,7 @@
           "path": "/api/settings",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
           },
           "fingerprint": "6a486a39aa50"
         },
@@ -8080,7 +8080,7 @@
           "path": "/api/settings",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.20.0/apiDocs-api.json"
           },
           "fingerprint": "832acf4e4655"
         },

@@ -55,11 +55,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
+                                  "minLng",
+                                  "limit",
                                   "maxLat",
                                   "maxLng",
-                                  "minLat",
-                                  "minLng",
-                                  "limit"
+                                  "minLat"
                                 ]
                               },
                               "properties": {
@@ -67,11 +67,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
+                                  "minLng",
                                   "limit",
                                   "maxLat",
                                   "maxLng",
-                                  "minLat",
-                                  "minLng"
+                                  "minLat"
                                 ]
                               }
                             }
@@ -91,8 +91,8 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "requested",
-                                            "results"
+                                            "results",
+                                            "requested"
                                           ],
                                           "deleted": [
                                             "fetched"
@@ -126,10 +126,10 @@
         "components": {
           "schemas": {
             "added": [
-              "SeedCandidatesResponse",
-              "BaseResponseSeedCandidatesResponse",
               "SeedCandidateResponse",
-              "SeedImportItemResponse"
+              "SeedImportItemResponse",
+              "BaseResponseSeedCandidatesResponse",
+              "SeedCandidatesResponse"
             ],
             "modified": {
               "BaseResponseSeedImportResponse": {
@@ -164,11 +164,11 @@
                     "sourceIds"
                   ],
                   "deleted": [
+                    "maxLat",
                     "maxLng",
                     "minLat",
                     "minLng",
-                    "limit",
-                    "maxLat"
+                    "limit"
                   ]
                 },
                 "properties": {
@@ -176,11 +176,11 @@
                     "sourceIds"
                   ],
                   "deleted": [
-                    "minLng",
                     "limit",
                     "maxLat",
                     "maxLng",
-                    "minLat"
+                    "minLat",
+                    "minLng"
                   ]
                 }
               },
@@ -288,7 +288,7 @@
           "path": "/api/admin/photos/seed/candidates",
           "section": "paths",
           "revisionSource": {
-            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
+            "file": "/Users/jay.axz/IdeaProjects/Jay/callshot-apidocs/specs/v0.29.2/apiDocs-admin.json"
           },
           "fingerprint": "47cb08ddfd24"
         },
