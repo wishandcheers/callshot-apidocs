@@ -1,0 +1,79 @@
+{
+  "fromVersion": "v0.29.1",
+  "toVersion": "v0.31.0",
+  "groups": {
+    "api": [],
+    "admin": [
+      {
+        "id": "new-required-request-property",
+        "text": "added the new required request property `sourceIds`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "662930e1376d"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property `body/fetched` from the response with the `200` status",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "537606fa16a8"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `limit`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "2159b441ed7d"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `maxLat`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "9602638eb11e"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `maxLng`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "8af450021069"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `minLat`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "cb713afe3361"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `minLng`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "ebc5a157ac88"
+      }
+    ]
+  }
+}

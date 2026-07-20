@@ -352,16 +352,16 @@
           "schemas": {
             "added": [
               "BaseResponseExternalEventRefreshResponse",
-              "SeedImportRequest",
-              "BaseResponseSeedDeleteResponse",
               "ExternalEventRefreshResponse",
+              "BaseResponseSeedDeleteResponse",
+              "SeedImportRequest",
               "SeedDeleteResponse",
-              "SeedImportResponse",
-              "BaseResponseSeedImportResponse"
+              "BaseResponseSeedImportResponse",
+              "SeedImportResponse"
             ],
             "deleted": [
-              "BaseResponseExternalEventSyncResponse",
-              "ExternalEventSyncResponse"
+              "ExternalEventSyncResponse",
+              "BaseResponseExternalEventSyncResponse"
             ]
           }
         }

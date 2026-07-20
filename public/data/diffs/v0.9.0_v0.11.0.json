@@ -22,23 +22,23 @@
           "added": [
             "/api/storage/complete",
             "/api/shutter/me",
+            "/api/shutter/statistics",
             "/api/shutter/users/{userId}",
-            "/api/shutter/leaderboard",
             "/api/storage/presigned-url",
-            "/api/shutter/statistics"
+            "/api/shutter/leaderboard"
           ],
           "deleted": [
-            "/api/photos/cluster-area",
-            "/api/photos/my/drafts",
-            "/api/photos/drafts/{id}",
-            "/api/my/submissions",
+            "/api/photos/clusters",
             "/api/photos",
+            "/api/photos/my",
+            "/api/photos/drafts/{id}/publish",
+            "/api/signup",
+            "/api/photos/my/drafts",
+            "/api/photos/cluster-area",
             "/api/photos/my/published",
             "/api/photos/{id}",
-            "/api/photos/clusters",
-            "/api/photos/drafts/{id}/publish",
-            "/api/photos/my",
-            "/api/signup"
+            "/api/photos/drafts/{id}",
+            "/api/my/submissions"
           ],
           "modified": {
             "/api/hashtags": {
@@ -3572,29 +3572,29 @@
         "components": {
           "schemas": {
             "added": [
-              "RankStatisticsResponse",
-              "ShutterResponse",
-              "BaseResponseLeaderboardResponse",
               "BaseResponseRankStatisticsResponse",
               "BaseResponsePresignedUrlResponse",
-              "PresignedUrlRequest",
               "LeaderboardEntryResponse",
-              "BaseResponseShutterResponse",
               "LeaderboardResponse",
-              "ShutterSummaryInfo",
+              "BaseResponseShutterResponse",
+              "CompleteUploadRequest",
               "PresignedUrlResponse",
+              "ShutterResponse",
+              "BaseResponseLeaderboardResponse",
+              "ShutterSummaryInfo",
               "UpdateUserProfileRequest",
-              "CompleteUploadRequest"
+              "PresignedUrlRequest",
+              "RankStatisticsResponse"
             ],
             "deleted": [
-              "MySubmissionItemDto",
-              "MySubmissionsResponse",
               "SubmissionPhotoInfoDto",
+              "MySubmissionsResponse",
               "BaseResponseMySubmissionsResponse",
-              "SubmissionRequestInfoDto",
-              "ClusterAreaRequest",
               "PhotoClusterRequest",
-              "UserSignUpRequest"
+              "SubmissionRequestInfoDto",
+              "MySubmissionItemDto",
+              "UserSignUpRequest",
+              "ClusterAreaRequest"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -7698,27 +7698,27 @@
         "components": {
           "schemas": {
             "added": [
-              "Value",
-              "PatchString",
+              "ReviewSystemMissionSubmissionRequest",
               "UpdateSystemMissionRequest",
+              "CreateSystemMissionRequest",
+              "PatchString",
+              "BaseResponseSystemMissionResponse",
+              "SystemMissionsResponse",
+              "SystemMissionResponse",
+              "UserAuthority",
+              "Value",
               "Absent",
               "Clear",
               "User",
-              "BaseResponseSystemMissionResponse",
-              "BaseResponseSystemMissionsResponse",
-              "SystemMissionResponse",
-              "SystemMissionsResponse",
-              "UserAuthority",
-              "CreateSystemMissionRequest",
-              "ReviewSystemMissionSubmissionRequest"
+              "BaseResponseSystemMissionsResponse"
             ],
             "deleted": [
               "UrlResult",
-              "Users",
               "BaseResponsePhotosResponse",
               "BoundingBox",
               "PhotosResponse",
               "UserAuthorities",
+              "Users",
               "PhotoResponse"
             ],
             "modified": {
@@ -7755,14 +7755,14 @@
                             "profile": {
                               "required": {
                                 "deleted": [
-                                  "updatedAt",
-                                  "createdAt"
+                                  "createdAt",
+                                  "updatedAt"
                                 ]
                               },
                               "properties": {
                                 "deleted": [
-                                  "updatedAt",
-                                  "createdAt"
+                                  "createdAt",
+                                  "updatedAt"
                                 ]
                               }
                             },
@@ -7893,8 +7893,8 @@
                           "providerId"
                         ],
                         "deleted": [
-                          "createdAt",
-                          "providerKey"
+                          "providerKey",
+                          "createdAt"
                         ]
                       },
                       "properties": {
@@ -8105,8 +8105,8 @@
                     "providerId"
                   ],
                   "deleted": [
-                    "providerKey",
-                    "createdAt"
+                    "createdAt",
+                    "providerKey"
                   ]
                 },
                 "properties": {
@@ -8192,14 +8192,14 @@
                     "profile": {
                       "required": {
                         "deleted": [
-                          "updatedAt",
-                          "createdAt"
+                          "createdAt",
+                          "updatedAt"
                         ]
                       },
                       "properties": {
                         "deleted": [
-                          "updatedAt",
-                          "createdAt"
+                          "createdAt",
+                          "updatedAt"
                         ]
                       }
                     },

@@ -1,0 +1,1007 @@
+{
+  "fromVersion": "v0.29.1",
+  "toVersion": "v0.31.0",
+  "groups": {
+    "api": [
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "listMyTopics",
+        "path": "/api/my/topics",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "efbb2d313ecd"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "deleteMyTopic",
+        "path": "/api/my/topics/{topicId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "cc67042ac577"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "viewDetail",
+        "path": "/api/my/topics/{topicId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "f08bc1b1a525"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "changeScope",
+        "path": "/api/my/topics/{topicId}/scope",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "95dafc9cd4f8"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "listStampParticipants",
+        "path": "/api/my/topics/{topicId}/stamp-participants",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "ec2e30a8ffdb"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "confirmStampCert",
+        "path": "/api/my/topics/{topicId}/stamp-participants/{participantUserId}/confirm",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "45c09d371ad9"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "queryByArea_1",
+        "path": "/api/places/area",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "80e6004f0ba8"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "voteLiveField",
+        "path": "/api/places/fields/{fieldId}/votes",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "387d8f9256e5"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "search",
+        "path": "/api/places/search",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "c36f6da0613f"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getDetail",
+        "path": "/api/places/{placeId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "b5cd051039e4"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updatePlaceInfo",
+        "path": "/api/places/{placeId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "0590dc988eb2"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "upsertLiveField",
+        "path": "/api/places/{placeId}/fields",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "4458809caff7"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "listRevisions",
+        "path": "/api/places/{placeId}/revisions",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "6f015a1e0ac4"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `emailEnabled/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "468e6a80a2e3"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `emailEnabled/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "d2707d2d6421"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `emailEnabled/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "e2e4aa16b974"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `emailPublic/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "ec364c0774cc"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `emailPublic/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "33b24587a52a"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `emailPublic/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "2822fffea96a"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `locationVisible/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "cafa615e7326"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `locationVisible/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "826372ed60fd"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `locationVisible/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "f5e9ee34fe58"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `messageAllowed/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "c90361f07dce"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `messageAllowed/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "6b7d475b23e3"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `messageAllowed/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "f38d26ac1a1a"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `missionEnabled/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "93aa8f2fbf81"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `missionEnabled/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "ec2a8338ab0d"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `missionEnabled/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "a49932be5c50"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `profilePublic/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "57289fbb9462"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `profilePublic/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "569f4c8f44db"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `profilePublic/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "65e178e9dddc"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `pushEnabled/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "1739c00850ad"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `pushEnabled/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "f7b589dd0e3f"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchString, #/components/schemas/PatchInteger` to the `pushEnabled/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PUT",
+        "operationId": "updateSettings",
+        "path": "/api/settings",
+        "section": "paths",
+        "fingerprint": "baf776a84c76"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "register",
+        "path": "/api/topics",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "b194b8867aed"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "queryByArea",
+        "path": "/api/topics/area",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "b4743226e541"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "trending",
+        "path": "/api/topics/trending",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "9461c81f9c64"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getDetail_1",
+        "path": "/api/topics/{topicId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "e5e63f13e0cf"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "toggleBookmark",
+        "path": "/api/topics/{topicId}/bookmark",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "621c771e8f77"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getComments",
+        "path": "/api/topics/{topicId}/comments",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "98a2ae8d10c4"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "createComment",
+        "path": "/api/topics/{topicId}/comments",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "2782d9619993"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "deleteComment-iVm3aGA",
+        "path": "/api/topics/{topicId}/comments/{commentId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "a3f5c6c6cd14"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateComment-I7YTsBw",
+        "path": "/api/topics/{topicId}/comments/{commentId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "b1872fbd119a"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getReplies-I7YTsBw",
+        "path": "/api/topics/{topicId}/comments/{commentId}/replies",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "f35163a00b1e"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "toggleLike",
+        "path": "/api/topics/{topicId}/like",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "ff60879fb88f"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "getPhotosByTopic",
+        "path": "/api/topics/{topicId}/photos",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "f6b9bcb25110"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "listPlaces",
+        "path": "/api/topics/{topicId}/places",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "d3a6c1315829"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "addPlace",
+        "path": "/api/topics/{topicId}/places",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "640f2df1a0e0"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "spotPhotos",
+        "path": "/api/topics/{topicId}/spots/{spotId}/photos",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "14dd90fda7a2"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "certify",
+        "path": "/api/topics/{topicId}/spots/{spotId}/stamps",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "9d15baf015de"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "sendCompletionCert",
+        "path": "/api/topics/{topicId}/stamps/completion-cert",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "21a3a422dbdb"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "myProgress",
+        "path": "/api/topics/{topicId}/stamps/me",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-api.json"
+        },
+        "fingerprint": "2d74a0975949"
+      }
+    ],
+    "admin": [
+      {
+        "id": "new-required-request-property",
+        "text": "added the new required request property `sourceIds`",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "662930e1376d"
+      },
+      {
+        "id": "response-required-property-removed",
+        "text": "removed the required property `body/fetched` from the response with the `200` status",
+        "level": 3,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "537606fa16a8"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `limit`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "2159b441ed7d"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `maxLat`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "9602638eb11e"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `maxLng`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "8af450021069"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `minLat`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "cb713afe3361"
+      },
+      {
+        "id": "request-property-removed",
+        "text": "removed the request property `minLng`",
+        "level": 2,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "ebc5a157ac88"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `campaignId/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission-FO2Zqu0",
+        "path": "/api/admin/missions/{id}",
+        "section": "paths",
+        "fingerprint": "4166119a3338"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `campaignId/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission-FO2Zqu0",
+        "path": "/api/admin/missions/{id}",
+        "section": "paths",
+        "fingerprint": "0f4060ccaf3e"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `campaignId/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission-FO2Zqu0",
+        "path": "/api/admin/missions/{id}",
+        "section": "paths",
+        "fingerprint": "917cafe73bbd"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `rewardDescription/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission-FO2Zqu0",
+        "path": "/api/admin/missions/{id}",
+        "section": "paths",
+        "fingerprint": "fcaa61c1fa8a"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `rewardDescription/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission-FO2Zqu0",
+        "path": "/api/admin/missions/{id}",
+        "section": "paths",
+        "fingerprint": "3b46d00783e6"
+      },
+      {
+        "id": "request-property-all-of-added-annotation-only",
+        "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `rewardDescription/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateSystemMission-FO2Zqu0",
+        "path": "/api/admin/missions/{id}",
+        "section": "paths",
+        "fingerprint": "564472b9c6d5"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "candidates",
+        "path": "/api/admin/photos/seed/candidates",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "47cb08ddfd24"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/requested` to the response with the `200` status",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "28d30d09de52"
+      },
+      {
+        "id": "response-required-property-added",
+        "text": "added the required property `body/results` to the response with the `200` status",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "import",
+        "path": "/api/admin/photos/seed/import",
+        "section": "paths",
+        "fingerprint": "510576f04f07"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "search",
+        "path": "/api/admin/places",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "a2e9bb5619f7"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "listImportRuns",
+        "path": "/api/admin/places/import-runs",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "b8cfbd207f4e"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "get",
+        "path": "/api/admin/places/{placeId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "e63d3d62af86"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "merge",
+        "path": "/api/admin/places/{placeId}/merge",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "71aca4172b9e"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "listRevisions",
+        "path": "/api/admin/places/{placeId}/revisions",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "2f867c586e71"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "rollbackRevision",
+        "path": "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "561ecd13c291"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "changeStatus",
+        "path": "/api/admin/places/{placeId}/status",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "c0ceb91d75f9"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "listByStatus",
+        "path": "/api/admin/topics",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "89ef5abd3b8f"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "register",
+        "path": "/api/admin/topics",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "59cbf4c70122"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "promote",
+        "path": "/api/admin/topics/{topicId}/promote",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "cfc31cc11839"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "reject",
+        "path": "/api/admin/topics/{topicId}/reject",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "fdd0b9905f15"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "listParticipants",
+        "path": "/api/admin/topics/{topicId}/stamp-participants",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "90bad943a432"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "POST",
+        "operationId": "confirmParticipantCert",
+        "path": "/api/admin/topics/{topicId}/stamp-participants/{participantUserId}/confirm-cert",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "4c351e651c6f"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "GET",
+        "operationId": "listSpots",
+        "path": "/api/admin/topics/{topicId}/stamp-spots",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "6466e53f3537"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "DELETE",
+        "operationId": "deleteSpot",
+        "path": "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "33b1461c3396"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "updateSpot",
+        "path": "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "4b5e9a6296ef"
+      },
+      {
+        "id": "endpoint-added",
+        "text": "endpoint added",
+        "level": 1,
+        "operation": "PATCH",
+        "operationId": "moderate",
+        "path": "/api/admin/topics/{topicId}/status",
+        "section": "paths",
+        "revisionSource": {
+          "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+        },
+        "fingerprint": "8acc573797f9"
+      }
+    ]
+  }
+}

@@ -55,11 +55,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
+                                  "maxLat",
+                                  "maxLng",
                                   "minLat",
                                   "minLng",
-                                  "limit",
-                                  "maxLat",
-                                  "maxLng"
+                                  "limit"
                                 ]
                               },
                               "properties": {
@@ -67,11 +67,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
-                                  "minLat",
-                                  "minLng",
                                   "limit",
                                   "maxLat",
-                                  "maxLng"
+                                  "maxLng",
+                                  "minLat",
+                                  "minLng"
                                 ]
                               }
                             }
@@ -100,8 +100,8 @@
                                         },
                                         "properties": {
                                           "added": [
-                                            "requested",
-                                            "results"
+                                            "results",
+                                            "requested"
                                           ],
                                           "deleted": [
                                             "fetched"
@@ -126,10 +126,10 @@
         "components": {
           "schemas": {
             "added": [
-              "SeedImportItemResponse",
+              "SeedCandidatesResponse",
               "BaseResponseSeedCandidatesResponse",
               "SeedCandidateResponse",
-              "SeedCandidatesResponse"
+              "SeedImportItemResponse"
             ],
             "modified": {
               "BaseResponseSeedImportResponse": {
@@ -147,8 +147,8 @@
                       },
                       "properties": {
                         "added": [
-                          "results",
-                          "requested"
+                          "requested",
+                          "results"
                         ],
                         "deleted": [
                           "fetched"
@@ -176,11 +176,11 @@
                     "sourceIds"
                   ],
                   "deleted": [
-                    "minLat",
                     "minLng",
                     "limit",
                     "maxLat",
-                    "maxLng"
+                    "maxLng",
+                    "minLat"
                   ]
                 }
               },

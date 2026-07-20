@@ -115,12 +115,12 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "clusterId",
-                                  "tileBounds"
+                                  "tileBounds",
+                                  "clusterId"
                                 ],
                                 "deleted": [
-                                  "avgDistanceMeters",
-                                  "maxDistanceMeters"
+                                  "maxDistanceMeters",
+                                  "avgDistanceMeters"
                                 ]
                               },
                               "properties": {
@@ -168,12 +168,12 @@
                 },
                 "properties": {
                   "added": [
-                    "tileBounds",
-                    "clusterId"
+                    "clusterId",
+                    "tileBounds"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ],
                   "modified": {
                     "center": {
@@ -198,12 +198,12 @@
                       "items": {
                         "required": {
                           "added": [
-                            "clusterId",
-                            "tileBounds"
+                            "tileBounds",
+                            "clusterId"
                           ],
                           "deleted": [
-                            "avgDistanceMeters",
-                            "maxDistanceMeters"
+                            "maxDistanceMeters",
+                            "avgDistanceMeters"
                           ]
                         },
                         "properties": {

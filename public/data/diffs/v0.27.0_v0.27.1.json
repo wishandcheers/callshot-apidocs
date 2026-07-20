@@ -59,8 +59,8 @@
         "components": {
           "schemas": {
             "added": [
-              "ExternalEventRefreshResponse",
-              "BaseResponseExternalEventRefreshResponse"
+              "BaseResponseExternalEventRefreshResponse",
+              "ExternalEventRefreshResponse"
             ],
             "deleted": [
               "ExternalEventSyncResponse",

@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/bookmark",
-            "/api/my/bookmarks"
+            "/api/my/bookmarks",
+            "/api/photos/{photoId}/bookmark"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -66,12 +66,12 @@
         "components": {
           "schemas": {
             "added": [
-              "BookmarkedPhotoItem",
               "PageCursor",
               "ToggleBookmarkResponse",
               "BaseResponseBookmarkedPhotosResponse",
-              "BookmarkedPhotosResponse",
-              "BaseResponseToggleBookmarkResponse"
+              "BookmarkedPhotoItem",
+              "BaseResponseToggleBookmarkResponse",
+              "BookmarkedPhotosResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {
@@ -103,8 +103,8 @@
                 },
                 "properties": {
                   "added": [
-                    "bookmarkCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "bookmarkCount"
                   ]
                 }
               }

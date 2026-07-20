@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/settings",
-            "/api/hashtags/{name}/photos"
+            "/api/hashtags/{name}/photos",
+            "/api/settings"
           ],
           "modified": {
             "/api/explore/photos": {
@@ -263,8 +263,8 @@
                                               "items": {
                                                 "properties": {
                                                   "added": [
-                                                    "imageWidth",
-                                                    "imageHeight"
+                                                    "imageHeight",
+                                                    "imageWidth"
                                                   ],
                                                   "modified": {
                                                     "gps": {
@@ -852,8 +852,8 @@
                                                     "photo": {
                                                       "required": {
                                                         "added": [
-                                                          "height",
-                                                          "width"
+                                                          "width",
+                                                          "height"
                                                         ]
                                                       },
                                                       "properties": {
@@ -1091,8 +1091,8 @@
                                                 },
                                                 "properties": {
                                                   "added": [
-                                                    "imageHeight",
-                                                    "imageWidth"
+                                                    "imageWidth",
+                                                    "imageHeight"
                                                   ],
                                                   "modified": {
                                                     "gps": {
@@ -4056,18 +4056,18 @@
         "components": {
           "schemas": {
             "added": [
-              "PatchBoolean",
-              "CommissionStatsInfo",
-              "HashtagPhotoResponse",
-              "BaseResponseCursorPageHashtagPhotoResponse",
-              "Value",
-              "HashtagPhotoOwnerResponse",
-              "CursorPageHashtagPhotoResponse",
               "BaseResponseUserSettingsResponse",
-              "Clear",
               "UpdateUserSettingsRequest",
+              "Value",
+              "BaseResponseCursorPageHashtagPhotoResponse",
+              "HashtagPhotoResponse",
+              "Clear",
+              "PatchBoolean",
+              "Absent",
+              "HashtagPhotoOwnerResponse",
+              "CommissionStatsInfo",
               "UserSettingsResponse",
-              "Absent"
+              "CursorPageHashtagPhotoResponse"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {
@@ -4596,8 +4596,8 @@
                           "image": {
                             "properties": {
                               "added": [
-                                "height",
-                                "width"
+                                "width",
+                                "height"
                               ],
                               "modified": {
                                 "photoId": {
@@ -4671,8 +4671,8 @@
                             "items": {
                               "properties": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ],
                                 "modified": {
                                   "gps": {
@@ -4932,8 +4932,8 @@
                             "image": {
                               "properties": {
                                 "added": [
-                                  "height",
-                                  "width"
+                                  "width",
+                                  "height"
                                 ],
                                 "modified": {
                                   "photoId": {
@@ -5142,14 +5142,14 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ]
                               },
                               "properties": {
                                 "added": [
-                                  "imageHeight",
-                                  "imageWidth"
+                                  "imageWidth",
+                                  "imageHeight"
                                 ],
                                 "modified": {
                                   "gps": {
@@ -5227,8 +5227,8 @@
                                   "thumbnail": {
                                     "properties": {
                                       "added": [
-                                        "height",
-                                        "width"
+                                        "width",
+                                        "height"
                                       ],
                                       "modified": {
                                         "photoId": {
@@ -5296,8 +5296,8 @@
                     "body": {
                       "required": {
                         "added": [
-                          "imageWidth",
-                          "imageHeight"
+                          "imageHeight",
+                          "imageWidth"
                         ]
                       },
                       "properties": {
@@ -5554,8 +5554,8 @@
                           "image": {
                             "properties": {
                               "added": [
-                                "height",
-                                "width"
+                                "width",
+                                "height"
                               ],
                               "modified": {
                                 "photoId": {
@@ -6525,8 +6525,8 @@
                     "image": {
                       "properties": {
                         "added": [
-                          "height",
-                          "width"
+                          "width",
+                          "height"
                         ],
                         "modified": {
                           "photoId": {
@@ -6590,8 +6590,8 @@
               "DraftPhotoResponse": {
                 "properties": {
                   "added": [
-                    "imageWidth",
-                    "imageHeight"
+                    "imageHeight",
+                    "imageWidth"
                   ],
                   "modified": {
                     "gps": {
@@ -6660,8 +6660,8 @@
                       "items": {
                         "properties": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ],
                           "modified": {
                             "gps": {
@@ -7174,14 +7174,14 @@
                       "items": {
                         "required": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ]
                         },
                         "properties": {
                           "added": [
-                            "imageHeight",
-                            "imageWidth"
+                            "imageWidth",
+                            "imageHeight"
                           ],
                           "modified": {
                             "gps": {
@@ -7281,8 +7281,8 @@
                     "thumbnail": {
                       "properties": {
                         "added": [
-                          "height",
-                          "width"
+                          "width",
+                          "height"
                         ],
                         "modified": {
                           "photoId": {
@@ -7321,8 +7321,8 @@
                             "thumbnail": {
                               "properties": {
                                 "added": [
-                                  "height",
-                                  "width"
+                                  "width",
+                                  "height"
                                 ],
                                 "modified": {
                                   "photoId": {
@@ -7390,8 +7390,8 @@
               "PhotoResponse": {
                 "required": {
                   "added": [
-                    "imageWidth",
-                    "imageHeight"
+                    "imageHeight",
+                    "imageWidth"
                   ]
                 },
                 "properties": {
@@ -7630,8 +7630,8 @@
                     "image": {
                       "properties": {
                         "added": [
-                          "height",
-                          "width"
+                          "width",
+                          "height"
                         ],
                         "modified": {
                           "photoId": {
@@ -7831,14 +7831,14 @@
               "RequestSubmissionPhotoInfoDto": {
                 "required": {
                   "added": [
-                    "width",
-                    "height"
+                    "height",
+                    "width"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "width",
-                    "height"
+                    "height",
+                    "width"
                   ]
                 }
               },

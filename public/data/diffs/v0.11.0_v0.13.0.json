@@ -2586,17 +2586,6 @@
                                               "items": {
                                                 "required": {
                                                   "added": [
-                                                    "photoBounds",
-                                                    "tileBounds",
-                                                    "clusterId"
-                                                  ],
-                                                  "deleted": [
-                                                    "avgDistanceMeters",
-                                                    "maxDistanceMeters"
-                                                  ]
-                                                },
-                                                "properties": {
-                                                  "added": [
                                                     "clusterId",
                                                     "photoBounds",
                                                     "tileBounds"
@@ -2604,6 +2593,17 @@
                                                   "deleted": [
                                                     "maxDistanceMeters",
                                                     "avgDistanceMeters"
+                                                  ]
+                                                },
+                                                "properties": {
+                                                  "added": [
+                                                    "tileBounds",
+                                                    "clusterId",
+                                                    "photoBounds"
+                                                  ],
+                                                  "deleted": [
+                                                    "avgDistanceMeters",
+                                                    "maxDistanceMeters"
                                                   ],
                                                   "modified": {
                                                     "center": {
@@ -3204,8 +3204,8 @@
             "added": [
               "BoundingBoxResponse",
               "OwnerResponse",
-              "PublicProfileResponse",
-              "BaseResponsePublicProfileResponse"
+              "BaseResponsePublicProfileResponse",
+              "PublicProfileResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3754,24 +3754,24 @@
                             "items": {
                               "required": {
                                 "added": [
-                                  "photoBounds",
-                                  "tileBounds",
-                                  "clusterId"
-                                ],
-                                "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
-                                ]
-                              },
-                              "properties": {
-                                "added": [
                                   "clusterId",
                                   "photoBounds",
                                   "tileBounds"
                                 ],
                                 "deleted": [
-                                  "maxDistanceMeters",
-                                  "avgDistanceMeters"
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
+                                ]
+                              },
+                              "properties": {
+                                "added": [
+                                  "photoBounds",
+                                  "tileBounds",
+                                  "clusterId"
+                                ],
+                                "deleted": [
+                                  "avgDistanceMeters",
+                                  "maxDistanceMeters"
                                 ],
                                 "modified": {
                                   "center": {
@@ -5099,8 +5099,8 @@
                     "clusterId"
                   ],
                   "deleted": [
-                    "maxDistanceMeters",
-                    "avgDistanceMeters"
+                    "avgDistanceMeters",
+                    "maxDistanceMeters"
                   ],
                   "modified": {
                     "center": {
@@ -5145,24 +5145,24 @@
                       "items": {
                         "required": {
                           "added": [
-                            "photoBounds",
-                            "tileBounds",
-                            "clusterId"
-                          ],
-                          "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
-                          ]
-                        },
-                        "properties": {
-                          "added": [
                             "clusterId",
                             "photoBounds",
                             "tileBounds"
                           ],
                           "deleted": [
-                            "maxDistanceMeters",
-                            "avgDistanceMeters"
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
+                          ]
+                        },
+                        "properties": {
+                          "added": [
+                            "photoBounds",
+                            "tileBounds",
+                            "clusterId"
+                          ],
+                          "deleted": [
+                            "avgDistanceMeters",
+                            "maxDistanceMeters"
                           ],
                           "modified": {
                             "center": {

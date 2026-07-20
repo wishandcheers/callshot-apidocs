@@ -313,9 +313,9 @@
         },
         "paths": {
           "added": [
+            "/api/admin/photos/seed/{source}",
             "/api/admin/photos/seed/import",
-            "/api/admin/external/events/refresh",
-            "/api/admin/photos/seed/{source}"
+            "/api/admin/external/events/refresh"
           ]
         },
         "tags": {
@@ -329,10 +329,10 @@
               "ExternalEventRefreshResponse",
               "SeedDeleteResponse",
               "SeedImportRequest",
-              "BaseResponseExternalEventRefreshResponse",
-              "BaseResponseSeedDeleteResponse",
+              "SeedImportResponse",
               "BaseResponseSeedImportResponse",
-              "SeedImportResponse"
+              "BaseResponseExternalEventRefreshResponse",
+              "BaseResponseSeedDeleteResponse"
             ]
           }
         }

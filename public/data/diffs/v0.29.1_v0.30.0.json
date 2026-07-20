@@ -12,32 +12,32 @@
         },
         "paths": {
           "added": [
-            "/api/places/fields/{fieldId}/votes",
-            "/api/my/topics/{topicId}",
-            "/api/topics/{topicId}/comments/{commentId}",
-            "/api/topics/{topicId}/places",
-            "/api/places/search",
-            "/api/topics/{topicId}/stamps/me",
-            "/api/my/topics",
             "/api/places/{placeId}/revisions",
-            "/api/my/topics/{topicId}/stamp-participants",
-            "/api/topics/{topicId}/bookmark",
-            "/api/topics",
-            "/api/topics/{topicId}/comments",
-            "/api/topics/{topicId}/spots/{spotId}/stamps",
-            "/api/topics/{topicId}/like",
-            "/api/topics/{topicId}/photos",
-            "/api/topics/{topicId}/comments/{commentId}/replies",
-            "/api/places/{placeId}/fields",
-            "/api/places/area",
-            "/api/my/topics/{topicId}/scope",
+            "/api/topics/{topicId}/comments/{commentId}",
             "/api/my/topics/{topicId}/stamp-participants/{participantUserId}/confirm",
-            "/api/places/{placeId}",
+            "/api/topics/{topicId}/like",
+            "/api/places/area",
+            "/api/topics",
+            "/api/my/topics/{topicId}/stamp-participants",
+            "/api/topics/{topicId}/comments/{commentId}/replies",
+            "/api/topics/{topicId}/photos",
             "/api/topics/trending",
-            "/api/topics/area",
+            "/api/places/fields/{fieldId}/votes",
+            "/api/topics/{topicId}",
+            "/api/my/topics",
+            "/api/places/search",
+            "/api/topics/{topicId}/places",
             "/api/topics/{topicId}/stamps/completion-cert",
             "/api/topics/{topicId}/spots/{spotId}/photos",
-            "/api/topics/{topicId}"
+            "/api/topics/area",
+            "/api/topics/{topicId}/spots/{spotId}/stamps",
+            "/api/topics/{topicId}/comments",
+            "/api/my/topics/{topicId}",
+            "/api/places/{placeId}/fields",
+            "/api/my/topics/{topicId}/scope",
+            "/api/places/{placeId}",
+            "/api/topics/{topicId}/bookmark",
+            "/api/topics/{topicId}/stamps/me"
           ],
           "modified": {
             "/api/settings": {
@@ -624,61 +624,61 @@
         "components": {
           "schemas": {
             "added": [
-              "StampProgressResponse",
+              "ToggleTopicLikeResponse",
+              "TopicResponse",
+              "BaseResponsePlaceSearchResponse",
+              "BaseResponseTopicListResponse",
+              "BaseResponseSpotPhotoListResponse",
+              "BaseResponsePlaceListResponse",
+              "CertifyStampRequest",
+              "RegisterTopicRequest",
               "CursorPageTopicResponse",
-              "BaseResponsePlaceRevisionListResponse",
-              "BaseResponseTopicResponse",
               "PlaceRevisionListResponse",
+              "LiveFieldResponse",
+              "BaseResponsePlaceDetailResponse",
               "PatchString",
-              "TopicPhotoResponse",
-              "ChangeTopicScopeRequest",
-              "VoteLiveFieldRequest",
+              "BaseResponseStampProgressResponse",
               "PlaceDetailResponse",
+              "TopicPhotoOwnerResponse",
+              "BaseResponseCursorPageTopicResponse",
+              "StampParticipantListResponse",
+              "TopicLensRequest",
+              "PromotionProgressResponse",
+              "BaseResponseTopicResponse",
+              "PlaceSearchResponse",
+              "BaseResponsePlaceRevisionListResponse",
+              "PlaceLensRequest",
+              "RegisterStampSpotRequest",
+              "BaseResponseToggleTopicLikeResponse",
+              "ToggleTopicBookmarkResponse",
+              "TopicPhotoResponse",
               "BaseResponseLiveFieldResponse",
               "BaseResponseToggleTopicBookmarkResponse",
-              "SpotPhotoListResponse",
-              "StampSpotResponse",
-              "TopicLensRequest",
-              "StampParticipantResponse",
-              "BaseResponseSpotPhotoListResponse",
-              "BaseResponseStampCompletionResponse",
-              "BaseResponseStampParticipantListResponse",
-              "TopicResponse",
-              "PlaceListResponse",
-              "PlaceRevisionResponse",
-              "PlaceSearchResponse",
-              "BaseResponsePlaceSearchResponse",
-              "PlaceLensRequest",
-              "ToggleTopicLikeResponse",
-              "BaseResponsePlaceDetailResponse",
-              "PlaceResponse",
-              "BaseResponsePlaceListResponse",
-              "PlaceFieldChangeResponse",
-              "BaseResponsePlaceResponse",
-              "SpotPhotosRequest",
-              "UpsertLiveFieldRequest",
-              "RegisterTopicRequest",
-              "RegisterStampSpotRequest",
-              "StampCompletionResponse",
-              "SpotPhotoResponse",
-              "BaseResponseCursorPageTopicPhotoResponse",
-              "PromotionProgressResponse",
-              "PlaceSearchRequest",
+              "StampProgressResponse",
               "CursorPageTopicPhotoResponse",
-              "ToggleTopicBookmarkResponse",
-              "StampParticipantListResponse",
-              "TopicListResponse",
-              "UpdatePlaceInfoRequest",
-              "BaseResponseCursorPageTopicResponse",
-              "BaseResponseToggleTopicLikeResponse",
-              "BaseResponseTopicListResponse",
-              "LiveFieldResponse",
+              "PlaceRevisionResponse",
+              "BaseResponseStampCompletionResponse",
               "PatchInteger",
-              "CertifyStampRequest",
-              "TopicPhotoOwnerResponse",
-              "BaseResponseStampProgressResponse",
+              "SpotPhotoResponse",
+              "PlaceSearchRequest",
+              "UpdatePlaceInfoRequest",
+              "AddPlaceRequest",
+              "StampParticipantResponse",
+              "VoteLiveFieldRequest",
+              "SpotPhotoListResponse",
+              "BaseResponsePlaceResponse",
+              "BaseResponseCursorPageTopicPhotoResponse",
+              "PlaceResponse",
               "PlaceSearchItemResponse",
-              "AddPlaceRequest"
+              "SpotPhotosRequest",
+              "TopicListResponse",
+              "PlaceFieldChangeResponse",
+              "PlaceListResponse",
+              "UpsertLiveFieldRequest",
+              "StampCompletionResponse",
+              "ChangeTopicScopeRequest",
+              "BaseResponseStampParticipantListResponse",
+              "StampSpotResponse"
             ],
             "modified": {
               "Absent": {
@@ -1913,10 +1913,10 @@
         "paths": {
           "added": [
             "/api/admin/topics",
-            "/api/admin/photos/seed/candidates",
             "/api/admin/topics/{topicId}/promote",
-            "/api/admin/topics/{topicId}/reject",
-            "/api/admin/topics/{topicId}/status"
+            "/api/admin/photos/seed/candidates",
+            "/api/admin/topics/{topicId}/status",
+            "/api/admin/topics/{topicId}/reject"
           ],
           "modified": {
             "/api/admin/photos/seed/import": {
@@ -1941,11 +1941,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
-                                  "maxLng",
                                   "minLat",
                                   "minLng",
                                   "limit",
-                                  "maxLat"
+                                  "maxLat",
+                                  "maxLng"
                                 ]
                               },
                               "properties": {
@@ -1953,11 +1953,11 @@
                                   "sourceIds"
                                 ],
                                 "deleted": [
+                                  "maxLat",
+                                  "maxLng",
                                   "minLat",
                                   "minLng",
-                                  "limit",
-                                  "maxLat",
-                                  "maxLng"
+                                  "limit"
                                 ]
                               }
                             }
@@ -2017,16 +2017,16 @@
         "components": {
           "schemas": {
             "added": [
-              "PromotionProgressResponse",
+              "SeedCandidateResponse",
               "ModerateTopicRequest",
-              "TopicResponse",
+              "BaseResponseSeedCandidatesResponse",
               "SeedImportItemResponse",
               "BaseResponseTopicListResponse",
               "TopicListResponse",
-              "BaseResponseSeedCandidatesResponse",
+              "PromotionProgressResponse",
+              "SeedCandidatesResponse",
               "BaseResponseTopicResponse",
-              "SeedCandidateResponse",
-              "SeedCandidatesResponse"
+              "TopicResponse"
             ],
             "modified": {
               "BaseResponseSeedImportResponse": {
@@ -2044,8 +2044,8 @@
                       },
                       "properties": {
                         "added": [
-                          "results",
-                          "requested"
+                          "requested",
+                          "results"
                         ],
                         "deleted": [
                           "fetched"
@@ -2073,11 +2073,11 @@
                     "sourceIds"
                   ],
                   "deleted": [
+                    "limit",
+                    "maxLat",
                     "maxLng",
                     "minLat",
-                    "minLng",
-                    "limit",
-                    "maxLat"
+                    "minLng"
                   ]
                 }
               },

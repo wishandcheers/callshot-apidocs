@@ -12,8 +12,8 @@
         },
         "paths": {
           "added": [
-            "/api/my/bookmarks",
             "/api/photos/{photoId}/bookmark",
+            "/api/my/bookmarks",
             "/api/public/profiles/{userId}"
           ],
           "modified": {
@@ -3292,15 +3292,15 @@
         "components": {
           "schemas": {
             "added": [
+              "BaseResponseBookmarkedPhotosResponse",
+              "OwnerResponse",
+              "BaseResponseToggleBookmarkResponse",
+              "PageCursor",
               "ToggleBookmarkResponse",
               "BookmarkedPhotoItem",
               "BookmarkedPhotosResponse",
               "PublicProfileResponse",
-              "PageCursor",
-              "BaseResponseBookmarkedPhotosResponse",
-              "BaseResponsePublicProfileResponse",
-              "BaseResponseToggleBookmarkResponse",
-              "OwnerResponse"
+              "BaseResponsePublicProfileResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3483,8 +3483,8 @@
                       },
                       "properties": {
                         "added": [
-                          "isBookmarkedByUser",
-                          "bookmarkCount"
+                          "bookmarkCount",
+                          "isBookmarkedByUser"
                         ],
                         "modified": {
                           "dislikeCount": {
@@ -4882,14 +4882,14 @@
               "EngagementResponse": {
                 "required": {
                   "added": [
-                    "isBookmarkedByUser",
-                    "bookmarkCount"
+                    "bookmarkCount",
+                    "isBookmarkedByUser"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "bookmarkCount",
-                    "isBookmarkedByUser"
+                    "isBookmarkedByUser",
+                    "bookmarkCount"
                   ],
                   "modified": {
                     "dislikeCount": {

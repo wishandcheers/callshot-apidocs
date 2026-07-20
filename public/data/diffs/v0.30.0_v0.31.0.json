@@ -1,0 +1,788 @@
+{
+  "fromVersion": "v0.30.0",
+  "toVersion": "v0.31.0",
+  "groups": {
+    "api": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.30.0",
+            "to": "0.31.0"
+          }
+        }
+      },
+      "changelog": [],
+      "breaking": [],
+      "summary": {
+        "added": 0,
+        "removed": 0,
+        "modified": 0,
+        "breaking": 0
+      }
+    },
+    "admin": {
+      "diff": {
+        "info": {
+          "version": {
+            "from": "0.30.0",
+            "to": "0.31.0"
+          }
+        },
+        "paths": {
+          "added": [
+            "/api/admin/places",
+            "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+            "/api/admin/places/{placeId}",
+            "/api/admin/places/{placeId}/status",
+            "/api/admin/places/{placeId}/revisions",
+            "/api/admin/places/import-runs",
+            "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
+            "/api/admin/topics/{topicId}/stamp-spots",
+            "/api/admin/topics/{topicId}/stamp-participants/{participantUserId}/confirm-cert",
+            "/api/admin/places/{placeId}/merge",
+            "/api/admin/topics/{topicId}/stamp-participants"
+          ],
+          "modified": {
+            "/api/admin/missions/{id}": {
+              "operations": {
+                "modified": {
+                  "PATCH": {
+                    "requestBody": {
+                      "content": {
+                        "modified": {
+                          "application/json": {
+                            "schema": {
+                              "properties": {
+                                "modified": {
+                                  "campaignId": {
+                                    "oneOf": {
+                                      "modified": [
+                                        {
+                                          "base": {
+                                            "index": 0,
+                                            "component": "Absent"
+                                          },
+                                          "revision": {
+                                            "index": 0,
+                                            "component": "Absent"
+                                          },
+                                          "diff": {
+                                            "allOf": {
+                                              "added": [
+                                                {
+                                                  "index": 1,
+                                                  "component": "PatchDouble"
+                                                },
+                                                {
+                                                  "index": 2,
+                                                  "component": "PatchLong"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "base": {
+                                            "index": 1,
+                                            "component": "Clear"
+                                          },
+                                          "revision": {
+                                            "index": 1,
+                                            "component": "Clear"
+                                          },
+                                          "diff": {
+                                            "allOf": {
+                                              "added": [
+                                                {
+                                                  "index": 1,
+                                                  "component": "PatchDouble"
+                                                },
+                                                {
+                                                  "index": 2,
+                                                  "component": "PatchLong"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "base": {
+                                            "index": 2,
+                                            "component": "Value"
+                                          },
+                                          "revision": {
+                                            "index": 2,
+                                            "component": "Value"
+                                          },
+                                          "diff": {
+                                            "allOf": {
+                                              "added": [
+                                                {
+                                                  "index": 2,
+                                                  "component": "PatchDouble"
+                                                },
+                                                {
+                                                  "index": 3,
+                                                  "component": "PatchLong"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "rewardDescription": {
+                                    "oneOf": {
+                                      "modified": [
+                                        {
+                                          "base": {
+                                            "index": 0,
+                                            "component": "Absent"
+                                          },
+                                          "revision": {
+                                            "index": 0,
+                                            "component": "Absent"
+                                          },
+                                          "diff": {
+                                            "allOf": {
+                                              "added": [
+                                                {
+                                                  "index": 1,
+                                                  "component": "PatchDouble"
+                                                },
+                                                {
+                                                  "index": 2,
+                                                  "component": "PatchLong"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "base": {
+                                            "index": 1,
+                                            "component": "Clear"
+                                          },
+                                          "revision": {
+                                            "index": 1,
+                                            "component": "Clear"
+                                          },
+                                          "diff": {
+                                            "allOf": {
+                                              "added": [
+                                                {
+                                                  "index": 1,
+                                                  "component": "PatchDouble"
+                                                },
+                                                {
+                                                  "index": 2,
+                                                  "component": "PatchLong"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "base": {
+                                            "index": 2,
+                                            "component": "Value"
+                                          },
+                                          "revision": {
+                                            "index": 2,
+                                            "component": "Value"
+                                          },
+                                          "diff": {
+                                            "allOf": {
+                                              "added": [
+                                                {
+                                                  "index": 2,
+                                                  "component": "PatchDouble"
+                                                },
+                                                {
+                                                  "index": 3,
+                                                  "component": "PatchLong"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "/api/admin/topics": {
+              "operations": {
+                "added": [
+                  "POST"
+                ],
+                "modified": {
+                  "GET": {
+                    "parameters": {
+                      "modified": {
+                        "query": {
+                          "limit": {
+                            "schema": {
+                              "min": {
+                                "from": null,
+                                "to": 0
+                              },
+                              "max": {
+                                "from": null,
+                                "to": 9223372036854776000
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": {
+          "added": [
+            "Admin 스탬프",
+            "Admin 장소"
+          ]
+        },
+        "components": {
+          "schemas": {
+            "added": [
+              "BaseResponseStampCompletionResponse",
+              "BaseResponseAdminPlaceRevisionListResponse",
+              "BaseResponseAdminStampSpotResponse",
+              "AdminStampSpotResponse",
+              "AdminStampSpotListResponse",
+              "PatchDouble",
+              "PlaceMergeResponse",
+              "BaseResponseAdminPlaceResponse",
+              "BaseResponsePlaceMergeResponse",
+              "PlaceImportRunListResponse",
+              "StampParticipantResponse",
+              "AdminPlaceRevisionResponse",
+              "PatchLong",
+              "RegisterTopicRequest",
+              "AdminPlaceResponse",
+              "StampCompletionResponse",
+              "AdminPlaceListResponse",
+              "ChangePlaceStatusRequest",
+              "PlaceImportRunResponse",
+              "BaseResponseAdminPlaceListResponse",
+              "AdminPlaceRevisionListResponse",
+              "StampParticipantListResponse",
+              "RegisterStampSpotRequest",
+              "MergePlaceRequest",
+              "PlaceFieldChange",
+              "BaseResponseAdminStampSpotListResponse",
+              "BaseResponseStampParticipantListResponse",
+              "BaseResponsePlaceImportRunListResponse",
+              "AdminUpdateStampSpotRequest"
+            ],
+            "modified": {
+              "Absent": {
+                "allOf": {
+                  "added": [
+                    {
+                      "index": 1,
+                      "component": "PatchDouble"
+                    },
+                    {
+                      "index": 2,
+                      "component": "PatchLong"
+                    }
+                  ]
+                }
+              },
+              "Clear": {
+                "allOf": {
+                  "added": [
+                    {
+                      "index": 1,
+                      "component": "PatchDouble"
+                    },
+                    {
+                      "index": 2,
+                      "component": "PatchLong"
+                    }
+                  ]
+                }
+              },
+              "UpdateSystemMissionRequest": {
+                "properties": {
+                  "modified": {
+                    "campaignId": {
+                      "oneOf": {
+                        "modified": [
+                          {
+                            "base": {
+                              "index": 0,
+                              "component": "Absent"
+                            },
+                            "revision": {
+                              "index": 0,
+                              "component": "Absent"
+                            },
+                            "diff": {
+                              "allOf": {
+                                "added": [
+                                  {
+                                    "index": 1,
+                                    "component": "PatchDouble"
+                                  },
+                                  {
+                                    "index": 2,
+                                    "component": "PatchLong"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "base": {
+                              "index": 1,
+                              "component": "Clear"
+                            },
+                            "revision": {
+                              "index": 1,
+                              "component": "Clear"
+                            },
+                            "diff": {
+                              "allOf": {
+                                "added": [
+                                  {
+                                    "index": 1,
+                                    "component": "PatchDouble"
+                                  },
+                                  {
+                                    "index": 2,
+                                    "component": "PatchLong"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "base": {
+                              "index": 2,
+                              "component": "Value"
+                            },
+                            "revision": {
+                              "index": 2,
+                              "component": "Value"
+                            },
+                            "diff": {
+                              "allOf": {
+                                "added": [
+                                  {
+                                    "index": 2,
+                                    "component": "PatchDouble"
+                                  },
+                                  {
+                                    "index": 3,
+                                    "component": "PatchLong"
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "rewardDescription": {
+                      "oneOf": {
+                        "modified": [
+                          {
+                            "base": {
+                              "index": 0,
+                              "component": "Absent"
+                            },
+                            "revision": {
+                              "index": 0,
+                              "component": "Absent"
+                            },
+                            "diff": {
+                              "allOf": {
+                                "added": [
+                                  {
+                                    "index": 1,
+                                    "component": "PatchDouble"
+                                  },
+                                  {
+                                    "index": 2,
+                                    "component": "PatchLong"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "base": {
+                              "index": 1,
+                              "component": "Clear"
+                            },
+                            "revision": {
+                              "index": 1,
+                              "component": "Clear"
+                            },
+                            "diff": {
+                              "allOf": {
+                                "added": [
+                                  {
+                                    "index": 1,
+                                    "component": "PatchDouble"
+                                  },
+                                  {
+                                    "index": 2,
+                                    "component": "PatchLong"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "base": {
+                              "index": 2,
+                              "component": "Value"
+                            },
+                            "revision": {
+                              "index": 2,
+                              "component": "Value"
+                            },
+                            "diff": {
+                              "allOf": {
+                                "added": [
+                                  {
+                                    "index": 2,
+                                    "component": "PatchDouble"
+                                  },
+                                  {
+                                    "index": 3,
+                                    "component": "PatchLong"
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "Value": {
+                "allOf": {
+                  "added": [
+                    {
+                      "index": 2,
+                      "component": "PatchDouble"
+                    },
+                    {
+                      "index": 3,
+                      "component": "PatchLong"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "changelog": [
+        {
+          "id": "request-parameter-max-set",
+          "text": "for the `query` request parameter `limit`, the max was set to `9223372036854775808.00`",
+          "comment": "This is a warning because the restriction is sometimes legitimately required, for security reasons or to correct an error in the specification. Before making such a change, confirm that clients can handle the new restriction.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "listByStatus",
+          "path": "/api/admin/topics",
+          "section": "paths",
+          "fingerprint": "27bf54406928"
+        },
+        {
+          "id": "request-parameter-min-set",
+          "text": "for the `query` request parameter `limit`, the min was set to `0.00`",
+          "comment": "This is a warning because the restriction is sometimes legitimately required, for security reasons or to correct an error in the specification. Before making such a change, confirm that clients can handle the new restriction.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "listByStatus",
+          "path": "/api/admin/topics",
+          "section": "paths",
+          "fingerprint": "128887139b9d"
+        },
+        {
+          "id": "request-property-all-of-added-annotation-only",
+          "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `campaignId/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateSystemMission-FO2Zqu0",
+          "path": "/api/admin/missions/{id}",
+          "section": "paths",
+          "fingerprint": "4166119a3338"
+        },
+        {
+          "id": "request-property-all-of-added-annotation-only",
+          "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `campaignId/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateSystemMission-FO2Zqu0",
+          "path": "/api/admin/missions/{id}",
+          "section": "paths",
+          "fingerprint": "0f4060ccaf3e"
+        },
+        {
+          "id": "request-property-all-of-added-annotation-only",
+          "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `campaignId/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateSystemMission-FO2Zqu0",
+          "path": "/api/admin/missions/{id}",
+          "section": "paths",
+          "fingerprint": "917cafe73bbd"
+        },
+        {
+          "id": "request-property-all-of-added-annotation-only",
+          "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `rewardDescription/oneOf[#/components/schemas/Absent]/` request property `allOf` list",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateSystemMission-FO2Zqu0",
+          "path": "/api/admin/missions/{id}",
+          "section": "paths",
+          "fingerprint": "fcaa61c1fa8a"
+        },
+        {
+          "id": "request-property-all-of-added-annotation-only",
+          "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `rewardDescription/oneOf[#/components/schemas/Clear]/` request property `allOf` list",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateSystemMission-FO2Zqu0",
+          "path": "/api/admin/missions/{id}",
+          "section": "paths",
+          "fingerprint": "3b46d00783e6"
+        },
+        {
+          "id": "request-property-all-of-added-annotation-only",
+          "text": "added annotation-only `#/components/schemas/PatchDouble, #/components/schemas/PatchLong` to the `rewardDescription/oneOf[#/components/schemas/Value]/` request property `allOf` list",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateSystemMission-FO2Zqu0",
+          "path": "/api/admin/missions/{id}",
+          "section": "paths",
+          "fingerprint": "564472b9c6d5"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "search",
+          "path": "/api/admin/places",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "a2e9bb5619f7"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "listImportRuns",
+          "path": "/api/admin/places/import-runs",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "b8cfbd207f4e"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "get",
+          "path": "/api/admin/places/{placeId}",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "e63d3d62af86"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "merge",
+          "path": "/api/admin/places/{placeId}/merge",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "71aca4172b9e"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "listRevisions",
+          "path": "/api/admin/places/{placeId}/revisions",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "2f867c586e71"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "rollbackRevision",
+          "path": "/api/admin/places/{placeId}/revisions/{revisionId}/rollback",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "561ecd13c291"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "changeStatus",
+          "path": "/api/admin/places/{placeId}/status",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "c0ceb91d75f9"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "register",
+          "path": "/api/admin/topics",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "59cbf4c70122"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "listParticipants",
+          "path": "/api/admin/topics/{topicId}/stamp-participants",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "90bad943a432"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "POST",
+          "operationId": "confirmParticipantCert",
+          "path": "/api/admin/topics/{topicId}/stamp-participants/{participantUserId}/confirm-cert",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "4c351e651c6f"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "GET",
+          "operationId": "listSpots",
+          "path": "/api/admin/topics/{topicId}/stamp-spots",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "6466e53f3537"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "DELETE",
+          "operationId": "deleteSpot",
+          "path": "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "33b1461c3396"
+        },
+        {
+          "id": "endpoint-added",
+          "text": "endpoint added",
+          "level": 1,
+          "operation": "PATCH",
+          "operationId": "updateSpot",
+          "path": "/api/admin/topics/{topicId}/stamp-spots/{spotId}",
+          "section": "paths",
+          "revisionSource": {
+            "file": "/home/runner/work/callshot-apidocs/callshot-apidocs/specs/v0.31.0/apiDocs-admin.json"
+          },
+          "fingerprint": "4b5e9a6296ef"
+        }
+      ],
+      "breaking": [
+        {
+          "id": "request-parameter-max-set",
+          "text": "for the `query` request parameter `limit`, the max was set to `9223372036854775808.00`",
+          "comment": "This is a warning because the restriction is sometimes legitimately required, for security reasons or to correct an error in the specification. Before making such a change, confirm that clients can handle the new restriction.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "listByStatus",
+          "path": "/api/admin/topics",
+          "section": "paths",
+          "fingerprint": "27bf54406928"
+        },
+        {
+          "id": "request-parameter-min-set",
+          "text": "for the `query` request parameter `limit`, the min was set to `0.00`",
+          "comment": "This is a warning because the restriction is sometimes legitimately required, for security reasons or to correct an error in the specification. Before making such a change, confirm that clients can handle the new restriction.",
+          "level": 2,
+          "operation": "GET",
+          "operationId": "listByStatus",
+          "path": "/api/admin/topics",
+          "section": "paths",
+          "fingerprint": "128887139b9d"
+        }
+      ],
+      "summary": {
+        "added": 11,
+        "removed": 0,
+        "modified": 2,
+        "breaking": 2
+      }
+    }
+  }
+}

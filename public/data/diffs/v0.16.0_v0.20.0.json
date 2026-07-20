@@ -3659,24 +3659,24 @@
         "components": {
           "schemas": {
             "added": [
+              "Value",
+              "CommissionStatsInfo",
+              "SubmissionReviewResponse",
+              "UpdateSubmissionReviewRequest",
+              "ReviewSummaryResponse",
+              "BaseResponseReviewSummaryResponse",
+              "CursorPageSubmissionReviewResponse",
+              "Clear",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "UpdateUserSettingsRequest",
+              "CursorRequest",
+              "ReviewSummaryInfo",
+              "UserSettingsResponse",
               "Absent",
               "BaseResponseSubmissionReviewResponse",
-              "UpdateSubmissionReviewRequest",
-              "UserSettingsResponse",
-              "CursorRequest",
-              "Clear",
-              "CreateSubmissionReviewRequest",
+              "BaseResponseUserSettingsResponse",
               "PatchBoolean",
-              "SubmissionReviewResponse",
-              "BaseResponseReviewSummaryResponse",
-              "ReviewSummaryResponse",
-              "UpdateUserSettingsRequest",
-              "BaseResponseCursorPageSubmissionReviewResponse",
-              "Value",
-              "CursorPageSubmissionReviewResponse",
-              "CommissionStatsInfo",
-              "ReviewSummaryInfo",
-              "BaseResponseUserSettingsResponse"
+              "CreateSubmissionReviewRequest"
             ],
             "modified": {
               "BaseResponseBookmarkedPhotosResponse": {

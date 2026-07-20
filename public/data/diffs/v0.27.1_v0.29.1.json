@@ -325,11 +325,11 @@
         "components": {
           "schemas": {
             "added": [
-              "SeedImportRequest",
               "BaseResponseSeedDeleteResponse",
+              "SeedDeleteResponse",
               "SeedImportResponse",
               "BaseResponseSeedImportResponse",
-              "SeedDeleteResponse"
+              "SeedImportRequest"
             ]
           }
         }

@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/public/profiles/{userId}/reviews",
-            "/api/public/profiles/{userId}/review-summary",
             "/api/settings",
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review"
+            "/api/public/profiles/{userId}/review-summary"
           ],
           "modified": {
             "/api/explore/photos": {
@@ -125,24 +125,24 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseUserSettingsResponse",
-              "SubmissionReviewResponse",
-              "BaseResponseCursorPageSubmissionReviewResponse",
-              "ReviewSummaryInfo",
-              "BaseResponseReviewSummaryResponse",
-              "ReviewSummaryResponse",
-              "UpdateUserSettingsRequest",
-              "Clear",
-              "Absent",
-              "PatchBoolean",
-              "CreateSubmissionReviewRequest",
-              "CursorRequest",
               "Value",
-              "BaseResponseSubmissionReviewResponse",
+              "Absent",
+              "CursorRequest",
+              "BaseResponseCursorPageSubmissionReviewResponse",
+              "CommissionStatsInfo",
               "UpdateSubmissionReviewRequest",
-              "UserSettingsResponse",
+              "BaseResponseSubmissionReviewResponse",
               "CursorPageSubmissionReviewResponse",
-              "CommissionStatsInfo"
+              "PatchBoolean",
+              "UpdateUserSettingsRequest",
+              "ReviewSummaryInfo",
+              "CreateSubmissionReviewRequest",
+              "SubmissionReviewResponse",
+              "UserSettingsResponse",
+              "Clear",
+              "BaseResponseUserSettingsResponse",
+              "BaseResponseReviewSummaryResponse",
+              "ReviewSummaryResponse"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {

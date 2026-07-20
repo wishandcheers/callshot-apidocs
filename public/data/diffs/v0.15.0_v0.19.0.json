@@ -12,10 +12,10 @@
         },
         "paths": {
           "added": [
-            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/explore/photos",
-            "/api/settings",
             "/api/public/profiles/{userId}/reviews",
+            "/api/settings",
+            "/api/photo-requests/{requestId}/submissions/{submissionId}/review",
             "/api/public/profiles/{userId}/review-summary"
           ],
           "modified": {
@@ -98,28 +98,28 @@
         "components": {
           "schemas": {
             "added": [
-              "CreateSubmissionReviewRequest",
-              "SubmissionReviewResponse",
-              "ExplorePhotoResponse",
-              "BaseResponseCursorPageExplorePhotoResponse",
-              "ReviewSummaryInfo",
-              "BaseResponseUserSettingsResponse",
-              "FeedOwnerResponse",
-              "CursorPageExplorePhotoResponse",
-              "UpdateUserSettingsRequest",
               "PatchBoolean",
               "ReviewSummaryResponse",
-              "BaseResponseSubmissionReviewResponse",
-              "Absent",
-              "UpdateSubmissionReviewRequest",
-              "BaseResponseReviewSummaryResponse",
-              "CursorRequest",
-              "CursorPageSubmissionReviewResponse",
-              "CommissionStatsInfo",
-              "Value",
               "Clear",
+              "CursorRequest",
+              "SubmissionReviewResponse",
+              "UserSettingsResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "BaseResponseSubmissionReviewResponse",
               "BaseResponseCursorPageSubmissionReviewResponse",
-              "UserSettingsResponse"
+              "FeedOwnerResponse",
+              "CursorPageExplorePhotoResponse",
+              "BaseResponseReviewSummaryResponse",
+              "UpdateUserSettingsRequest",
+              "UpdateSubmissionReviewRequest",
+              "CursorPageSubmissionReviewResponse",
+              "Absent",
+              "ExplorePhotoResponse",
+              "CommissionStatsInfo",
+              "CreateSubmissionReviewRequest",
+              "BaseResponseUserSettingsResponse",
+              "Value",
+              "ReviewSummaryInfo"
             ],
             "modified": {
               "BaseResponsePublicProfileResponse": {

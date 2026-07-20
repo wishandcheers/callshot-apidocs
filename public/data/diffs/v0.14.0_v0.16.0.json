@@ -14,8 +14,8 @@
           "added": [
             "/api/explore/photos",
             "/api/photos/{photoId}/comments",
-            "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/photos/{photoId}/comments/{commentId}"
+            "/api/photos/{photoId}/comments/{commentId}",
+            "/api/photos/{photoId}/comments/{commentId}/replies"
           ],
           "modified": {
             "/api/photos/{photoId}/engagement": {
@@ -67,16 +67,16 @@
         "components": {
           "schemas": {
             "added": [
-              "CursorPageExplorePhotoResponse",
-              "CommentResponse",
               "BaseResponseCommentResponse",
-              "BaseResponseCursorPageExplorePhotoResponse",
+              "CommentResponse",
               "CreateCommentRequest",
-              "BaseResponseCommentPageResponse",
               "UpdateCommentRequest",
+              "CursorPageExplorePhotoResponse",
               "CommentPageResponse",
               "FeedOwnerResponse",
-              "ExplorePhotoResponse"
+              "ExplorePhotoResponse",
+              "BaseResponseCursorPageExplorePhotoResponse",
+              "BaseResponseCommentPageResponse"
             ],
             "modified": {
               "BaseResponseEngagementResponse": {

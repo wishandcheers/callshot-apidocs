@@ -88,13 +88,13 @@
           "schemas": {
             "added": [
               "CommissionStatsInfo",
-              "BaseResponseUserSettingsResponse",
-              "Clear",
-              "PatchBoolean",
-              "Value",
               "UpdateUserSettingsRequest",
-              "UserSettingsResponse",
-              "Absent"
+              "PatchBoolean",
+              "Absent",
+              "Clear",
+              "Value",
+              "BaseResponseUserSettingsResponse",
+              "UserSettingsResponse"
             ],
             "modified": {
               "BaseResponseUserProfileResponse": {

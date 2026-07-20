@@ -12,12 +12,12 @@
         },
         "paths": {
           "added": [
-            "/api/photos/{photoId}/comments/{commentId}",
-            "/api/my/bookmarks",
-            "/api/public/profiles/{userId}",
             "/api/photos/{photoId}/bookmark",
             "/api/photos/{photoId}/comments/{commentId}/replies",
-            "/api/photos/{photoId}/comments"
+            "/api/public/profiles/{userId}",
+            "/api/my/bookmarks",
+            "/api/photos/{photoId}/comments",
+            "/api/photos/{photoId}/comments/{commentId}"
           ],
           "modified": {
             "/api/my/drafts": {
@@ -2064,15 +2064,15 @@
                                       "body": {
                                         "required": {
                                           "added": [
-                                            "bookmarkCount",
                                             "commentCount",
+                                            "bookmarkCount",
                                             "isBookmarkedByUser"
                                           ]
                                         },
                                         "properties": {
                                           "added": [
-                                            "commentCount",
                                             "bookmarkCount",
+                                            "commentCount",
                                             "isBookmarkedByUser"
                                           ],
                                           "modified": {
@@ -3298,21 +3298,21 @@
         "components": {
           "schemas": {
             "added": [
-              "BaseResponseToggleBookmarkResponse",
-              "PageCursor",
-              "BaseResponseCommentResponse",
-              "CreateCommentRequest",
-              "BaseResponsePublicProfileResponse",
               "UpdateCommentRequest",
-              "CommentPageResponse",
-              "BookmarkedPhotosResponse",
-              "OwnerResponse",
               "ToggleBookmarkResponse",
+              "BookmarkedPhotoItem",
               "BaseResponseCommentPageResponse",
               "BaseResponseBookmarkedPhotosResponse",
+              "CommentPageResponse",
+              "PageCursor",
               "CommentResponse",
-              "BookmarkedPhotoItem",
-              "PublicProfileResponse"
+              "OwnerResponse",
+              "BaseResponseCommentResponse",
+              "PublicProfileResponse",
+              "CreateCommentRequest",
+              "BaseResponsePublicProfileResponse",
+              "BookmarkedPhotosResponse",
+              "BaseResponseToggleBookmarkResponse"
             ],
             "modified": {
               "BaseResponseDeletePhotoResponse": {
@@ -3497,8 +3497,8 @@
                       "properties": {
                         "added": [
                           "isBookmarkedByUser",
-                          "commentCount",
-                          "bookmarkCount"
+                          "bookmarkCount",
+                          "commentCount"
                         ],
                         "modified": {
                           "dislikeCount": {
@@ -4896,16 +4896,16 @@
               "EngagementResponse": {
                 "required": {
                   "added": [
+                    "bookmarkCount",
                     "commentCount",
-                    "isBookmarkedByUser",
-                    "bookmarkCount"
+                    "isBookmarkedByUser"
                   ]
                 },
                 "properties": {
                   "added": [
-                    "commentCount",
+                    "isBookmarkedByUser",
                     "bookmarkCount",
-                    "isBookmarkedByUser"
+                    "commentCount"
                   ],
                   "modified": {
                     "dislikeCount": {
